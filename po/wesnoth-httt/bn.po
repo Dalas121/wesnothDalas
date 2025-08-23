@@ -1,25 +1,32 @@
+# #-#-#-#-#  wesnoth-httt  #-#-#-#-#
+# Bengali translation of Wesnoth.
+# Copyright (C) 2025 Wesnoth development team
+# Subhraman Sarkar <suvrax@gmail.com>, 2025.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2025-04-28 03:22 UTC\n"
-"PO-Revision-Date: 2024-02-19 12:43 UTC\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2025-06-16 03:18 UTC\n"
+"PO-Revision-Date: 2025-08-08 13:33+0530\n"
+"Last-Translator: Subhraman Sarkar <suvrax@gmail.com>\n"
+"Language-Team: Bengali < >\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:9
 msgid "Heir to the Throne"
-msgstr ""
+msgstr "সিংহাসনের উত্তরাধিকারী"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:12
 msgid "HttT"
-msgstr ""
+msgstr "HttT"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:19
@@ -28,64 +35,66 @@ msgid ""
 "heir.\n"
 "\n"
 msgstr ""
+"ওয়েসনথের সিংহাসন ফিরে পাওয়ার জন্য লড়াই করুন, আপনি যার বৈধ উত্তরাধিকারী\n"
+"\n"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:21
 msgid "(Novice level, 23 scenarios.)"
-msgstr ""
+msgstr "(শিক্ষানবিস পর্যায়, 23টি ঘটনাক্রম ।)"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:23
 msgid "Easy"
-msgstr ""
+msgstr "সহজ"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:23
 #: data/campaigns/Heir_To_The_Throne/units/Fighter.cfg:4
 msgid "Fighter"
-msgstr ""
+msgstr "লড়াকু"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:24
 #: data/campaigns/Heir_To_The_Throne/units/Commander.cfg:4
 msgid "Commander"
-msgstr ""
+msgstr "সেনাপতি"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:24
 msgid "Normal"
-msgstr ""
+msgstr "সাধারণ"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:25
 msgid "Challenging"
-msgstr ""
+msgstr "ঝুঁকিপূর্ণ"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:25
 #: data/campaigns/Heir_To_The_Throne/units/Lord.cfg:4
 msgid "Lord"
-msgstr ""
+msgstr "নায়ক"
 
 #. [about]
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:32
 msgid "Campaign Design"
-msgstr ""
+msgstr "অভিযান পরিকল্পনা"
 
 #. [about]
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:38
 msgid "Campaign Maintenance"
-msgstr ""
+msgstr "অভিযান রক্ষণাবেক্ষণ"
 
 #. [about]
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:51
 msgid "Artwork and Graphics Design"
-msgstr ""
+msgstr "শিল্পকর্ম এবং গ্রাফিক্স ডিজ়াইন"
 
 #. [about]
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:75
 msgid "Miscellaneous"
-msgstr ""
+msgstr "বিবিধ"
 
 #. [scenario]: id=01_The_Elves_Besieged
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:4
@@ -95,7 +104,7 @@ msgstr ""
 #. [objective]: condition=win
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:33
 msgid "Move Konrad to the signpost in the northwest"
-msgstr ""
+msgstr "কনরাডকে উত্তরপশ্চিমে থাকা সাইনপোস্টটির কাছে সরান"
 
 #. [objective]: condition=lose
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:37
@@ -127,7 +136,7 @@ msgstr ""
 #: data/campaigns/Heir_To_The_Throne/scenarios/23_Test_of_the_Clans.cfg:75
 #: data/campaigns/Heir_To_The_Throne/scenarios/24_Battle_for_Wesnoth.cfg:31
 msgid "Death of Konrad"
-msgstr ""
+msgstr "কনরাডের মৃত্যু"
 
 #. [objective]: condition=lose
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:41
@@ -155,7 +164,7 @@ msgstr ""
 #: data/campaigns/Heir_To_The_Throne/scenarios/23_Test_of_the_Clans.cfg:79
 #: data/campaigns/Heir_To_The_Throne/scenarios/24_Battle_for_Wesnoth.cfg:35
 msgid "Death of Delfador"
-msgstr ""
+msgstr "ডেলফাডোরের মৃত্যু"
 
 #. [side]: type=Fighter, id=Konrad
 #. [side]: type=Commander, id=Konrad
@@ -189,7 +198,7 @@ msgstr ""
 #: data/campaigns/Heir_To_The_Throne/scenarios/24_Battle_for_Wesnoth.cfg:97
 #: data/campaigns/Heir_To_The_Throne/scenarios/25_HttT_Epilogue.cfg:46
 msgid "Konrad"
-msgstr ""
+msgstr "কনরাড"
 
 #. [side]: type=Fighter, id=Konrad
 #. [side]: type=Elvish Champion, id=Galdrad
@@ -235,13 +244,13 @@ msgstr ""
 #: data/campaigns/Heir_To_The_Throne/scenarios/23_Test_of_the_Clans.cfg:104
 #: data/campaigns/Heir_To_The_Throne/scenarios/24_Battle_for_Wesnoth.cfg:106
 msgid "Rebels"
-msgstr ""
+msgstr "বিপ্লবীরা"
 
 #. [side]: type=Orcish Warlord, id=Urug-Telfar
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:165
 #: data/campaigns/Heir_To_The_Throne/scenarios/18_A_Choice_Must_Be_Made.cfg:90
 msgid "Urug-Telfar"
-msgstr ""
+msgstr "উরুগ-টেলফার"
 
 #. [side]: type=Orcish Warlord, id=Urug-Telfar
 #. [side]: type=Orcish Warlord, id=Knafa-Tan
@@ -288,27 +297,27 @@ msgstr ""
 #: data/campaigns/Heir_To_The_Throne/scenarios/19a_Snow_Plains.cfg:80
 #: data/campaigns/Heir_To_The_Throne/scenarios/20a_North_Elves.cfg:143
 msgid "Orcs"
-msgstr ""
+msgstr "ওর্করা"
 
 #. [side]: type=Orcish Warlord, id=Knafa-Tan
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:187
 msgid "Knafa-Tan"
-msgstr ""
+msgstr "নাফা-টান"
 
 #. [side]: type=Orcish Warlord, id=Maga-Knafa
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:207
 msgid "Maga-Knafa"
-msgstr ""
+msgstr "মাগা-নাফা"
 
 #. [side]: type=Elvish Champion, id=Galdrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:228
 msgid "Galdrad"
-msgstr ""
+msgstr "গ্যালড্রাড"
 
 #. [side]: type=Elvish Shyde, id=Chantal
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:244
 msgid "Chantal"
-msgstr ""
+msgstr "চান্টাল"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:266
@@ -317,23 +326,26 @@ msgid ""
 "living in the great forest southwest of Wesnoth, whom she despised. Orcish "
 "mercenaries were hired and dispatched to bring about their ruin."
 msgstr ""
+"তার শাসনের কুড়ি বছর পরে, আশেভিয়ের ওয়েসনোথের দক্ষিণ-পশ্চিমে বিরাট অরণ্যে "
+"বসবাসকারী অরণ্য-এল্ফদের দিকে মনোনিবেশ করেছিলেন, যাঁদের তিনি ঘৃণা করতেন । ওর্ক "
+"ভাড়াটে সৈন্যদের ভাড়া করে তাদের ধ্বংস করার জন্য প্রেরণ করা হয়েছিল ।"
 
 #. [message]: speaker=Konrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:270
 msgid ""
 "Master Delfador! Look, there are orcs coming from all directions! What shall "
 "we do?"
-msgstr ""
+msgstr "ডেলফাডোর মহাশয়! দেখুন, ওর্করা সবদিক থেকে আসছে! এবারে আমরা কী করব?"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:274
 msgid "There are too many to fight, far too many. We must escape!"
-msgstr ""
+msgstr "লড়াই করার জন্য ওদের সংখ্যাটা বেশী, অনেক বেশী । আমাদের পালাতেই হবে!"
 
 #. [message]: speaker=Konrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:279
 msgid "But to where? This is the only home we have! What about the elves?"
-msgstr ""
+msgstr "কিন্তু কোথায়? এটাই আমাদের একমাত্র থাকার জায়গা! আর এল্ফদের কী হবে?"
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:283
@@ -341,6 +353,8 @@ msgid ""
 "We will fight them, but you must escape, Konrad. It is imperative that you "
 "escape!"
 msgstr ""
+"আমরা ওদের সঙ্গে লড়াই চালিয়ে যাব, কিন্তু তোমাকে পালাতেই হবে, কনরাড । তোমার "
+"পালানোটা অত্যন্ত জরুরী!"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:287
@@ -350,11 +364,15 @@ msgid ""
 "us, and then you must make it to the sign post in the northwest. I will "
 "protect you!"
 msgstr ""
+"আমরা উত্তরে যাবো । হয়তো আমরা আলডুইন দ্বীপে পৌঁছাতে পারব । ওখানে পৌঁছালে আমরা "
+"নিশ্চয়ই সুরক্ষিত হতে পারব । কনরাড, আমাদের সাহায্যের জন্য কিছু এল্ফদের নিয়োগ করতে "
+"হবে, আর তারপর তোমাকে উত্তর-পশ্চিমে থাকা সাইনপোস্টটার কাছে পৌঁছতে হবে । আমি "
+"তোমাকে রক্ষা করব!"
 
 #. [message]: speaker=Konrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:291
 msgid "Very well, let us hurry!"
-msgstr ""
+msgstr "আচ্ছা বেশ, কিন্তু তাড়াতাড়ি করুন!"
 
 #. [message]: speaker=Urug-Telfar
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:295
@@ -383,7 +401,7 @@ msgstr ""
 #. [message]: speaker=Chantal
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:316
 msgid "Be careful, Konrad! Guard him well, Delfador!"
-msgstr ""
+msgstr "সাবধান, কনরাড! ওকে ভালোভাবে রক্ষা করবেন, ডেলফাডোর!"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:320
@@ -7641,6 +7659,18 @@ msgstr ""
 
 #. [firststrike]: id=initiative
 #: data/campaigns/Heir_To_The_Throne/utils/abilities.cfg:8
+msgid "first strike"
+msgstr ""
+
+#. [firststrike]: id=initiative
+#: data/campaigns/Heir_To_The_Throne/utils/abilities.cfg:9
+msgid ""
+"When under initiative influence, this unit always strikes first when "
+"attacked by melee weapon, even if they are defending."
+msgstr ""
+
+#. [firststrike]: id=initiative
+#: data/campaigns/Heir_To_The_Throne/utils/abilities.cfg:10
 msgid ""
 "This unit’s grasp of melee tactics allows adjacent allies to strike the "
 "first blow even when defending."

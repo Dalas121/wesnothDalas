@@ -168,13 +168,7 @@ battle_context_unit_stats::battle_context_unit_stats(nonempty_unit_const_ptr up,
 	}
 
 	// Compute chance to hit.
-	signed int cth = opp.defense_modifier(resources::gameboard->map().get_terrain(opp_loc)) + weapon->accuracy()
-		- (opp_weapon ? opp_weapon->parry() : 0);
-
-	cth = std::clamp(cth, 0, 100);
-
-	cth = weapon->composite_value(weapon->get_specials_and_abilities("chance_to_hit"), cth);
-
+	signed int cth = weapon->modified_chance_to_hit(opp.defense_modifier(resources::gameboard->map().get_terrain(opp_loc)));
 
 	if(opp.get_state("invulnerable")) {
 		cth = 0;
@@ -310,10 +304,7 @@ battle_context_unit_stats::battle_context_unit_stats(const unit_type* u_type,
 		}
 	}
 
-	signed int cth = 100 - opp_terrain_defense + weapon->accuracy() - (opp_weapon ? opp_weapon->parry() : 0);
-	cth = std::clamp(cth, 0, 100);
-
-	cth = weapon->composite_value(weapon->get_specials("chance_to_hit"), cth);
+	signed int cth = weapon->modified_chance_to_hit(100 - opp_terrain_defense, true);
 
 	chance_to_hit = std::clamp(cth, 0, 100);
 
@@ -360,8 +351,8 @@ battle_context::battle_context(
 	, attacker_combatant_()
 	, defender_combatant_()
 {
-	size_t a_wep_uindex = static_cast<size_t>(a_wep_index);
-	size_t d_wep_uindex = static_cast<size_t>(d_wep_index);
+	std::size_t a_wep_uindex = static_cast<std::size_t>(a_wep_index);
+	std::size_t d_wep_uindex = static_cast<std::size_t>(d_wep_index);
 
 	const_attack_ptr a_wep(a_wep_uindex < attacker->attacks().size() ? attacker->attacks()[a_wep_index].shared_from_this() : nullptr);
 	const_attack_ptr d_wep(d_wep_uindex < defender->attacks().size() ? defender->attacks()[d_wep_index].shared_from_this() : nullptr);
@@ -535,7 +526,7 @@ battle_context battle_context::choose_attacker_weapon(nonempty_unit_const_ptr at
 	std::vector<battle_context> choices;
 
 	// What options does attacker have?
-	for(size_t i = 0; i < attacker->attacks().size(); ++i) {
+	for(std::size_t i = 0; i < attacker->attacks().size(); ++i) {
 		const attack_type& att = attacker->attacks()[i];
 
 		if(att.attack_weight() <= 0) {
@@ -592,7 +583,7 @@ battle_context battle_context::choose_defender_weapon(nonempty_unit_const_ptr at
 	std::vector<battle_context> choices;
 
 	// What options does defender have?
-	for(size_t i = 0; i < defender->attacks().size(); ++i) {
+	for(std::size_t i = 0; i < defender->attacks().size(); ++i) {
 		const attack_type& def = defender->attacks()[i];
 		if(def.range() != att.range() || def.defense_weight() <= 0) {
 			//no need to calculate the battle_context here.
@@ -1080,6 +1071,10 @@ bool attack::perform_hit(bool attacker_turn, statistics_attack_context& stats)
 						   << '\n';
 
 				extra_hit_sounds.push_back(game_config::sounds::status::petrified);
+			}
+		} else {
+			if(prefs::get().show_attack_miss_indicator()) {
+				float_text << _("attack^miss");
 			}
 		}
 

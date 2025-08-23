@@ -19,6 +19,10 @@
 #include "gui/dialogs/message.hpp"
 #include "log.hpp"
 
+#ifdef __ANDROID__
+#include <SDL2/SDL_system.h>
+#endif
+
 #include <curl/curl.h>
 
 static lg::log_domain log_network("network");
@@ -27,9 +31,9 @@ static lg::log_domain log_network("network");
 
 namespace network
 {
-	static size_t write_callback(char* contents, size_t size, size_t nmemb, void* buffer)
+	static std::size_t write_callback(char* contents, std::size_t size, std::size_t nmemb, void* buffer)
 	{
-		size_t amount = size * nmemb;
+		std::size_t amount = size * nmemb;
 		static_cast<std::string*>(buffer)->append(contents, amount);
 		DBG_NW << "Downloaded " << amount << " bytes.";
 		return amount;
@@ -64,7 +68,12 @@ namespace network
 		}
 
 		CURLcode res;
-		if((res = curl_easy_setopt(curl.get(), CURLOPT_URL, url.c_str())) != CURLE_OK ||
+
+		if(
+#ifdef __ANDROID__
+			(res = curl_easy_setopt(curl.get(), CURLOPT_CAINFO, (game_config::path + "/certificates/cacert.pem").c_str()) ) != CURLE_OK ||
+#endif
+			(res = curl_easy_setopt(curl.get(), CURLOPT_URL, url.c_str())) != CURLE_OK ||
 			(res = curl_easy_setopt(curl.get(), CURLOPT_WRITEFUNCTION, write_callback)) != CURLE_OK ||
 			(res = curl_easy_setopt(curl.get(), CURLOPT_WRITEDATA, &buffer)) != CURLE_OK ||
 			(res = curl_easy_setopt(curl.get(), CURLOPT_ERRORBUFFER, error)) != CURLE_OK ||

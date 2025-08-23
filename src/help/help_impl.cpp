@@ -148,20 +148,14 @@ bool section_is_referenced(const std::string &section_id, const config &cfg)
 {
 	if (auto toplevel = cfg.optional_child("toplevel"))
 	{
-		const std::vector<std::string> toplevel_refs
-			= utils::quoted_split(toplevel["sections"]);
-		if (std::find(toplevel_refs.begin(), toplevel_refs.end(), section_id)
-			!= toplevel_refs.end()) {
+		if(utils::contains(utils::quoted_split(toplevel["sections"]), section_id)) {
 			return true;
 		}
 	}
 
 	for (const config &section : cfg.child_range("section"))
 	{
-		const std::vector<std::string> sections_refd
-			= utils::quoted_split(section["sections"]);
-		if (std::find(sections_refd.begin(), sections_refd.end(), section_id)
-			!= sections_refd.end()) {
+		if(utils::contains(utils::quoted_split(section["sections"]), section_id)) {
 			return true;
 		}
 	}
@@ -172,20 +166,14 @@ bool topic_is_referenced(const std::string &topic_id, const config &cfg)
 {
 	if (auto toplevel = cfg.optional_child("toplevel"))
 	{
-		const std::vector<std::string> toplevel_refs
-			= utils::quoted_split(toplevel["topics"]);
-		if (std::find(toplevel_refs.begin(), toplevel_refs.end(), topic_id)
-			!= toplevel_refs.end()) {
+		if(utils::contains(utils::quoted_split(toplevel["topics"]), topic_id)) {
 			return true;
 		}
 	}
 
 	for (const config &section : cfg.child_range("section"))
 	{
-		const std::vector<std::string> topics_refd
-			= utils::quoted_split(section["topics"]);
-		if (std::find(topics_refd.begin(), topics_refd.end(), topic_id)
-			!= topics_refd.end()) {
+		if(utils::contains(utils::quoted_split(section["topics"]), topic_id)) {
 			return true;
 		}
 	}
@@ -211,10 +199,9 @@ void parse_config_internal(const config *help_cfg, const config *section_cfg,
 		std::string title = level == 0 ? "" : (*section_cfg)["title"].str();
 		sec.id = id;
 		sec.title = title;
-		std::vector<std::string>::const_iterator it;
 		// Find all child sections.
-		for (it = sections.begin(); it != sections.end(); ++it) {
-			if (auto child_cfg = help_cfg->find_child("section", "id", *it))
+		for(const std::string& sec_id : sections) {
+			if (auto child_cfg = help_cfg->find_child("section", "id", sec_id))
 			{
 				section child_section;
 				parse_config_internal(help_cfg, child_cfg.ptr(), child_section, level + 1);
@@ -222,7 +209,7 @@ void parse_config_internal(const config *help_cfg, const config *section_cfg,
 			}
 			else {
 				std::stringstream ss;
-				ss << "Help-section '" << *it << "' referenced from '"
+				ss << "Help-section '" << sec_id << "' referenced from '"
 				   << id << "' but could not be found.";
 				throw parse_error(ss.str());
 			}
@@ -252,13 +239,11 @@ void parse_config_internal(const config *help_cfg, const config *section_cfg,
 		}
 
 		std::vector<topic> generated_topics = generate_topics(sort_generated,(*section_cfg)["generator"]);
-
-		const std::vector<std::string> topics_id = utils::quoted_split((*section_cfg)["topics"]);
 		std::vector<topic> topics;
 
 		// Find all topics in this section.
-		for (it = topics_id.begin(); it != topics_id.end(); ++it) {
-			if (auto topic_cfg = help_cfg->find_child("topic", "id", *it))
+		for(const std::string& topic_id : utils::quoted_split((*section_cfg)["topics"])) {
+			if (auto topic_cfg = help_cfg->find_child("topic", "id", topic_id))
 			{
 				std::string text = topic_cfg["text"];
 				text += generate_topic_text(topic_cfg["generator"], help_cfg, sec);
@@ -272,7 +257,7 @@ void parse_config_internal(const config *help_cfg, const config *section_cfg,
 			}
 			else {
 				std::stringstream ss;
-				ss << "Help-topic '" << *it << "' referenced from '" << id
+				ss << "Help-topic '" << topic_id << "' referenced from '" << id
 				   << "' but could not be found." << std::endl;
 				throw parse_error(ss.str());
 			}
@@ -449,20 +434,15 @@ std::vector<topic> generate_weapon_special_topics(const bool sort_generated)
 	std::map<t_string, std::string> special_description;
 	std::map<t_string, std::set<std::string, string_less>> special_units;
 
-	for (const unit_type_data::unit_type_map::value_type &type_mapping : unit_types.types())
-	{
-		const unit_type &type = type_mapping.second;
+	for(const auto& [type_id, type] : unit_types.types()) {
 		// Only show the weapon special if we find it on a unit that
 		// detailed description should be shown about.
 		if (description_type(type) != FULL_DESCRIPTION)
 			continue;
 
-		for (const attack_type& atk : type.attacks()) {
-
-			std::vector<std::pair<t_string, t_string>> specials = atk.special_tooltips();
-			for ( std::size_t i = 0; i != specials.size(); ++i )
-			{
-				special_description.emplace(specials[i].first, specials[i].second);
+		for(const attack_type& atk : type.attacks()) {
+			for(const auto& [name, description] : atk.special_tooltips()) {
+				special_description.emplace(name, description);
 
 				if (!type.hide_help()) {
 					//add a link in the list of units having this special
@@ -473,13 +453,13 @@ std::vector<topic> generate_weapon_special_topics(const bool sort_generated)
 					//we put the translated name at the beginning of the hyperlink,
 					//so the automatic alphabetic sorting of std::set can use it
 					std::string link = markup::make_link(type_name, ref_id);
-					special_units[specials[i].first].insert(link);
+					special_units[name].insert(link);
 				}
 			}
 		}
 
-		for(config adv : type.modification_advancements()) {
-			for(config effect : adv.child_range("effect")) {
+		for(const config& adv : type.modification_advancements()) {
+			for(const config& effect : adv.child_range("effect")) {
 				if(effect["apply_to"] == "new_attack" && effect.has_child("specials")) {
 					for(const auto [key, special] : effect.mandatory_child("specials").all_children_view()) {
 						if(!special["name"].empty()) {
@@ -519,19 +499,17 @@ std::vector<topic> generate_weapon_special_topics(const bool sort_generated)
 		}
 	}
 
-	for (std::map<t_string, std::string>::iterator s = special_description.begin();
-			s != special_description.end(); ++s) {
+	for(const auto& [name, description] : special_description) {
 		// use untranslated name to have universal topic id
-		std::string id = "weaponspecial_" + s->first.base_str();
+		std::string id = "weaponspecial_" + name.base_str();
 		std::stringstream text;
-		text << s->second;
+		text << description;
 		text << "\n\n" << markup::tag("header", _("Units with this special attack")) << "\n";
-		std::set<std::string, string_less> &units = special_units[s->first];
-		for (std::set<std::string, string_less>::iterator u = units.begin(); u != units.end(); ++u) {
-			text << font::unicode_bullet << " " << (*u) << "\n";
+		for(const std::string& type_id : special_units[name]) {
+			text << font::unicode_bullet << " " << type_id << "\n";
 		}
 
-		topics.emplace_back(s->first, id, text.str());
+		topics.emplace_back(name, id, text.str());
 	}
 
 	if (sort_generated)
@@ -567,9 +545,7 @@ std::vector<topic> generate_ability_topics(const bool sort_generated)
 	// Look through all the unit types. If a unit of that type would have a full
 	// description, add its abilities to the potential topic list. We don't want
 	// to show abilities that the user has not encountered yet.
-	for(const auto& type_mapping : unit_types.types()) {
-		const unit_type& type = type_mapping.second;
-
+	for(const auto& [type_id, type] : unit_types.types()) {
 		if(description_type(type) != FULL_DESCRIPTION) {
 			continue;
 		}
@@ -1216,10 +1192,9 @@ std::string generate_contents_links(const std::string& section_name, config cons
 	typedef std::pair<std::string,std::string> link;
 	std::vector<link> topics_links;
 
-	std::vector<std::string>::iterator t;
 	// Find all topics in this section.
-	for (t = topics.begin(); t != topics.end(); ++t) {
-		if (auto topic_cfg = help_cfg->find_child("topic", "id", *t)) {
+	for(const std::string& topic : topics) {
+		if (auto topic_cfg = help_cfg->find_child("topic", "id", topic)) {
 			std::string id = topic_cfg["id"];
 			if (is_visible_id(id))
 				topics_links.emplace_back(topic_cfg["title"], id);
@@ -1230,9 +1205,8 @@ std::string generate_contents_links(const std::string& section_name, config cons
 		std::sort(topics_links.begin(),topics_links.end());
 	}
 
-	std::vector<link>::iterator l;
-	for (l = topics_links.begin(); l != topics_links.end(); ++l) {
-		std::string link = markup::make_link(l->first, l->second);
+	for(const auto& [text, target] : topics_links) {
+		std::string link = markup::make_link(text, target);
 		res << font::unicode_bullet << " " << link << "\n";
 	}
 

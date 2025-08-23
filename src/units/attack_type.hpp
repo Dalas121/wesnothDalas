@@ -47,6 +47,7 @@ public:
 	int min_range() const { return min_range_; }
 	int max_range() const { return max_range_; }
 	std::string accuracy_parry_description() const;
+	std::string accuracy_parry_tooltip() const;
 	int accuracy() const { return accuracy_; }
 	int parry() const { return parry_; }
 	int damage() const { return damage_; }
@@ -78,12 +79,11 @@ public:
 	 * @return True iff the special @a special is active.
 	 * @param special The special being checked.
 	 * @param simple_check If true, check whether the unit has the special. Else, check whether the special is currently active.
-	 * @param special_id If true, match @a special against the @c id of special tags.
-	 * @param special_tags If true, match @a special against the tag name of special tags.
 	 */
-	bool has_special(const std::string& special, bool simple_check = false, bool special_id = false, bool special_tags = true) const;
+	bool has_special(const std::string& special, bool simple_check = false) const;
 	unit_ability_list get_specials(const std::string& special) const;
 	std::vector<std::pair<t_string, t_string>> special_tooltips(boost::dynamic_bitset<>* active_list = nullptr) const;
+	std::vector<std::pair<t_string, t_string>> abilities_special_tooltips(boost::dynamic_bitset<>* active_list = nullptr) const;
 	std::string weapon_specials() const;
 	std::string weapon_specials_value(const std::set<std::string>& checking_tags) const;
 
@@ -105,6 +105,11 @@ public:
 
 	/** Returns the damage per attack of this weapon, considering specials. */
 	double modified_damage() const;
+	/** Return the defense value, considering specials.
+	 * @param cth The chance_to_hit value modified or not by function.
+	 * @param special_only Decide if get_specials() or get_specials_and_abilities()should be used.
+	 */
+	int modified_chance_to_hit(int cth, bool special_only = false) const;
 
 	/** Return the special weapon value, considering specials.
 	 * @param abil_list The list of special checked.
@@ -118,20 +123,17 @@ public:
 	 * @return list which contains get_weapon_ability and get_specials list for each ability type, with overwritten items removed
 	 */
 	unit_ability_list get_specials_and_abilities(const std::string& special) const;
-	/** used for abilities used like weapon
-	 * @return True if the ability @a special is active.
-	 * @param special The special being checked.
-	 * @param special_id If true, match @a special against the @c id of special tags.
-	 * @param special_tags If true, match @a special against the tag name of special tags.
-	 */
-	bool has_weapon_ability(const std::string& special, bool special_id = false, bool special_tags = true) const;
 	/** used for abilities used like weapon and true specials
 	 * @return True if the ability @a special is active.
 	 * @param special The special being checked.
-	 * @param special_id If true, match @a special against the @c id of special tags.
-	 * @param special_tags If true, match @a special against the tag name of special tags.
 	 */
-	bool has_special_or_ability(const std::string& special, bool special_id = false, bool special_tags = true) const;
+	bool has_special_or_ability(const std::string& special) const;
+	/** check if special matche
+	 * @return True if special matche with filter(if 'active' filter is true, check if special active).
+	 * @param simple_check If true, check whether the unit has the special. Else, check whether the special is currently active.
+	 * @param filter contain attributes to check(special_id, special_type etc...).
+	 */
+	bool has_filter_special_or_ability(const config& filter, bool simple_check = false) const;
 	/**
 	 * Returns true if this is a dummy attack_type, for example the placeholder that the unit_attack dialog
 	 * uses when a defender has no weapon for a given range.
@@ -145,8 +147,6 @@ public:
 	 * @return True if special matche with filter(if 'active' filter is true, check if special active).
 	 * @param filter if special check with filter, return true.
 	 */
-	bool has_special_with_filter(const config & filter) const;
-	bool has_ability_with_filter(const config & filter) const;
 	bool has_special_or_ability_with_filter(const config & filter) const;
 
 	// In unit_types.cpp:
@@ -257,22 +257,7 @@ private:
 	 * @param tag_name type of abilitie/special checked.
 	 */
 	bool overwrite_special_checking(unit_ability_list& overwriters, const config& cfg, const std::string& tag_name) const;
-	/** check_self_abilities : return an boolean value for checking of activities of abilities used like weapon
-	 * @return True if the special @a special is active.
-	 * @param cfg the config to one special ability checked.
-	 * @param special The special ability type who is being checked.
-	 */
-	bool check_self_abilities(const config& cfg, const std::string& special) const;
-	/** check_adj_abilities : return an boolean value for checking of activities of abilities used like weapon
-	 * @return True if the special @a special is active.
-	 * @param cfg the config to one special ability checked.
-	 * @param special The special ability type who is being checked.
-	 * @param dist distance between unit distant and self_.
-	 * @param dir direction to research a unit distant to self_.
-	 * @param from unit distant to self_ is checked.
-	 * @param from_loc location of @a from
-	 */
-	bool check_adj_abilities(const config& cfg, const std::string& special, std::size_t dist, int dir, const unit& from, const map_location& from_loc) const;
+
 	bool special_active(const config& special, AFFECTS whom, const std::string& tag_name,
 	                    bool in_abilities_tag = false) const;
 
@@ -372,6 +357,44 @@ private:
 		const std::string& tag_name,
 		bool in_abilities_tag = false
 	);
+
+	/** has_ability_impl : return an boolean value for checking of activities of abilities used like weapon
+	 * @return True if  @a special is active.
+	 * @param self_attack the attack used by unit who fight.
+	 * @param other_attack the attack used by opponent.
+	 * @param self the unit who fight.
+	 * @param self_loc location of @a self.
+	 * @param whom determine if unit affected or not by special ability.
+	 * @param special The special ability type who is being checked.
+	 */
+	static bool has_ability_impl(
+		const const_attack_ptr& self_attack,
+		const unit_const_ptr& self,
+		const map_location& self_loc,
+		const const_attack_ptr& other_attack,
+		AFFECTS whom,
+		const std::string& special);
+
+	/** special_distant_filtering_impl : return an boolean value if special matche with filter
+	 * @return True if the @a special is active.
+	 * @param self_attack the attack used by unit who fight.
+	 * @param other_attack the attack used by opponent.
+	 * @param self the unit who fight.
+	 * @param self_loc location of @a self.
+	 * @param whom determine if unit affected or not by special ability.
+	 * @param filter if special check with filter, return true.
+	 * @param sub_filter if true, check the attributes of [filter_special], else, check special(_id/type)(_active).
+	 * @param leader_bool If true, [leadership] abilities are checked.
+	 */
+	static bool special_distant_filtering_impl(
+		const const_attack_ptr& self_attack,
+		const unit_const_ptr& self,
+		const map_location& self_loc,
+		const const_attack_ptr& other_attack,
+		AFFECTS whom,
+		const config & filter,
+		bool sub_filter,
+		bool leader_bool=false);
 
 	// Used via specials_context() to control which specials are
 	// considered active.

@@ -29,7 +29,6 @@
 #include "units/animation.hpp"
 #include "units/unit.hpp"
 
-#include "gui/auxiliary/typed_formula.hpp"
 #include "gui/dialogs/loading_screen.hpp"
 
 #include <boost/range/algorithm_ext/erase.hpp>
@@ -252,7 +251,14 @@ void unit_type::build_help_index(
 
 	if(auto abil_cfg = cfg.optional_child("abilities")) {
 		for(const auto [key, cfg] : abil_cfg->all_children_view()) {
-			abilities_.emplace_back(cfg);
+			config subst_cfg(cfg);
+			subst_cfg["name"] = unit_abilities::substitute_variables(cfg["name"], key, cfg);
+			subst_cfg["female_name"] = unit_abilities::substitute_variables(cfg["female_name"], key, cfg);
+			subst_cfg["description"] = unit_abilities::substitute_variables(cfg["description"], key, cfg);
+			subst_cfg["name_inactive"] = unit_abilities::substitute_variables(cfg["name_inactive"], key, cfg);
+			subst_cfg["female_name_inactive"] = unit_abilities::substitute_variables(cfg["female_name_inactive"], key, cfg);
+			subst_cfg["description_inactive"] = unit_abilities::substitute_variables(cfg["description_inactive"], key, cfg);
+			abilities_.emplace_back(subst_cfg);
 		}
 	}
 
@@ -450,8 +456,7 @@ static void append_special_note(std::vector<t_string>& notes, const t_string& ne
 	std::string_view note_plain = new_note.c_str();
 	utils::trim(note_plain);
 	if(note_plain.empty()) return;
-	auto iter = std::find(notes.begin(), notes.end(), new_note);
-	if(iter != notes.end()) return;
+	if(utils::contains(notes, new_note)) return;
 	notes.push_back(new_note);
 }
 
@@ -643,9 +648,7 @@ bool unit_type::musthave_status(const std::string& status_name) const
 			const std::string& ut = effect["unit_type"];
 
 			if(!ut.empty()) {
-				const std::vector<std::string>& types = utils::split(ut);
-
-				if(std::find(types.begin(), types.end(), id()) == types.end()) {
+				if(!utils::contains(utils::split(ut), id())) {
 					continue;
 				}
 			}
@@ -691,6 +694,11 @@ bool unit_type::has_random_traits() const
 	}
 
 	return false;
+}
+
+bool unit_type::has_gender_variation(const unit_race::GENDER gender) const
+{
+	return utils::contains(genders_, gender);
 }
 
 std::vector<std::string> unit_type::variations() const
@@ -767,9 +775,7 @@ bool unit_type::resistance_filter_matches(
 	if(!apply_to.empty()) {
 		if(damage_name != apply_to) {
 			if(apply_to.find(',') != std::string::npos && apply_to.find(damage_name) != std::string::npos) {
-				const std::vector<std::string>& vals = utils::split(apply_to);
-
-				if(std::find(vals.begin(), vals.end(), damage_name) == vals.end()) {
+				if(!utils::contains(utils::split(apply_to), damage_name)) {
 					return false;
 				}
 			} else {
@@ -892,7 +898,7 @@ void patch_movetype(movetype& mt,
 		// before the formula is evaluated.
 		std::list<config> config_copies;
 
-		gui2::typed_formula<int> formula(formula_str, default_val);
+		auto formula = wfl::formula(formula_str);
 		wfl::map_formula_callable original;
 
 		// These three need to follow movetype's fallback system, where values for
@@ -928,8 +934,12 @@ void patch_movetype(movetype& mt,
 			}
 		}
 
-		LOG_CONFIG << " formula=" << formula_str << ", resolves to " << formula(original);
-		temp_cfg[new_key] = formula(original);
+		try {
+			temp_cfg[new_key] = formula.evaluate(original).as_int(default_val);
+		} catch(const wfl::formula_error&) {
+			ERR_CF << "Error evaluating movetype formula: " << formula_str;
+			return;
+		}
 	}
 	mt.merge(temp_cfg, type_to_patch, true);
 }
@@ -949,7 +959,7 @@ void unit_type_data::apply_base_unit(unit_type& type, std::vector<std::string>& 
 	}
 
 	// Detect recursion so the WML author is made aware of an error.
-	if(std::find(base_tree.begin(), base_tree.end(), type.base_unit_id_) != base_tree.end()) {
+	if(utils::contains(base_tree, type.base_unit_id_)) {
 		throw_base_unit_recursion_error(base_tree, type.base_unit_id_);
 	}
 

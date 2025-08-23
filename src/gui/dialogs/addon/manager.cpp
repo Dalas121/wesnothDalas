@@ -469,8 +469,7 @@ void addon_manager::pre_show()
 		const sort_order::type saved_order_direction = prefs::get().addon_manager_saved_order_direction();
 
 		if(!saved_order_name.empty()) {
-			auto order_it = std::find_if(all_orders_.begin(), all_orders_.end(),
-				[&saved_order_name](const addon_order& order) {return order.as_preference == saved_order_name;});
+			auto order_it = utils::ranges::find(all_orders_, saved_order_name, &addon_order::as_preference);
 			if(order_it != all_orders_.end()) {
 				int index = 2 * (std::distance(all_orders_.begin(), order_it));
 				addon_list::addon_sort_func func;
@@ -655,11 +654,8 @@ boost::dynamic_bitset<> addon_manager::get_name_filter_visibility() const
 
 	for(const auto& a : addons_)
 	{
-		const config& addon_cfg = *std::find_if(addon_cfgs.begin(), addon_cfgs.end(),
-			[&a](const config& cfg)
-		{
-			return cfg["name"] == a.first;
-		});
+		const config& addon_cfg = *utils::ranges::find(addon_cfgs, a.first,
+			[](const config& cfg) { return cfg["name"]; });
 
 		res.push_back(filter(addon_cfg));
 	}
@@ -734,11 +730,8 @@ boost::dynamic_bitset<> addon_manager::get_type_filter_visibility() const
 
 		for(const auto& a : addons_) {
 			int index = std::distance(type_filter_types_.begin(),
-				std::find_if(type_filter_types_.begin(), type_filter_types_.end(),
-					[&a](const std::pair<ADDON_TYPE, std::string>& entry) {
-						return entry.first == a.second.type;
-					})
-				);
+				utils::ranges::find(type_filter_types_, a.second.type,
+					[](const std::pair<ADDON_TYPE, std::string>& entry) { return entry.first; }));
 			res.push_back(toggle_states[index]);
 		}
 		return res;
@@ -824,8 +817,7 @@ void addon_manager::order_addons()
 void addon_manager::on_order_changed(unsigned int sort_column, sort_order::type order)
 {
 	menu_button& order_menu = find_widget<menu_button>("order_dropdown");
-	auto order_it = std::find_if(all_orders_.begin(), all_orders_.end(),
-		[sort_column](const addon_order& order) {return order.column_index == static_cast<int>(sort_column);});
+	auto order_it = utils::ranges::find(all_orders_, static_cast<int>(sort_column), &addon_order::column_index);
 	int index = 2 * (std::distance(all_orders_.begin(), order_it));
 	if(order == sort_order::type::descending) {
 		++index;
@@ -862,9 +854,13 @@ void addon_manager::install_addon(const addon_info& addon)
 {
 	addon_info versioned_addon = addon;
 	if(addon.id == find_widget<addon_list>("addons").get_selected_addon()->id) {
-		if (menu_button* list = find_widget<menu_button>("version_filter", false, false)) {
-			versioned_addon.current_version = list->get_value_string();
+		widget* parent = this;
+		if(stacked_widget* stk = find_widget<stacked_widget>("main_stack", false, false)) {
+			parent = stk->get_layer_grid(1);
 		}
+		// At this point the version list should always be found, so error if it's not there
+		menu_button& list = parent->find_widget<menu_button>("version_filter");
+		versioned_addon.current_version = list.get_value_string();
 	}
 
 	addons_client::install_result result = client_.install_addon_with_checks(addons_, versioned_addon);
@@ -880,7 +876,7 @@ void addon_manager::install_addon(const addon_info& addon)
 void addon_manager::uninstall_addon(const addon_info& addon)
 {
 	if(have_addon_pbl_info(addon.id) || have_addon_in_vcs_tree(addon.id)) {
-		show_error_message(
+		gui2::show_error_message(
 			_("The following add-on appears to have publishing or version control information stored locally, and will not be removed:")
 			+ " " +	addon.display_title_full());
 		return;
@@ -1194,11 +1190,13 @@ void addon_manager::on_addon_select()
 void addon_manager::on_selected_version_change()
 {
 	widget* parent = this;
+	const addon_info* info = nullptr;
 	if(stacked_widget* stk = find_widget<stacked_widget>("main_stack", false, false)) {
-		parent = stk->get_layer_grid(0);
+		parent = stk->get_layer_grid(1);
+		info = stk->get_layer_grid(0)->find_widget<addon_list>("addons").get_selected_addon();
+	} else {
+		info = find_widget<addon_list>("addons").get_selected_addon();
 	}
-
-	const addon_info* info = parent->find_widget<addon_list>("addons").get_selected_addon();
 
 	if(info == nullptr) {
 		return;

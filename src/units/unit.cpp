@@ -43,11 +43,11 @@
 #include "units/abilities.hpp"           // for effect, filter_base_matches
 #include "units/animation_component.hpp" // for unit_animation_component
 #include "units/filter.hpp"
-#include "units/formula_manager.hpp" // for unit_formula_manager
 #include "units/id.hpp"
 #include "units/map.hpp" // for unit_map, etc
 #include "units/types.hpp"
 #include "utils/config_filters.hpp"
+#include "utils/general.hpp"
 #include "variable.hpp" // for vconfig, etc
 
 #include <cassert>                     // for assert
@@ -277,7 +277,6 @@ unit::unit(const unit& o)
 	, dismiss_message_(o.dismiss_message_)
 	, side_(o.side_)
 	, gender_(o.gender_)
-	, formula_man_(new unit_formula_manager(o.formula_manager()))
 	, movement_(o.movement_)
 	, max_movement_(o.max_movement_)
 	, vision_(o.vision_)
@@ -325,10 +324,10 @@ unit::unit(const unit& o)
 	, small_profile_(o.small_profile_)
 	, changed_attributes_(o.changed_attributes_)
 	, invisibility_cache_()
-	, has_ability_distant_(o.has_ability_distant_)
-	, has_ability_distant_image_(o.has_ability_distant_image_)
+	, max_ability_radius_(o.max_ability_radius_)
+	, max_ability_radius_image_(o.max_ability_radius_image_)
 {
-	affect_distant_ = o.affect_distant_;
+	max_ability_radius_type_ = o.max_ability_radius_type_;
 	// Copy the attacks rather than just copying references
 	for(auto& a : attacks_) {
 		a.reset(new attack_type(*a));
@@ -363,7 +362,6 @@ unit::unit(unit_ctor_t)
 	, dismiss_message_(_("This unit cannot be dismissed."))
 	, side_(0)
 	, gender_(unit_race::NUM_GENDERS)
-	, formula_man_(new unit_formula_manager())
 	, movement_(0)
 	, max_movement_(0)
 	, vision_(-1)
@@ -409,31 +407,31 @@ unit::unit(unit_ctor_t)
 	, upkeep_(upkeep_full{})
 	, changed_attributes_(0)
 	, invisibility_cache_()
-	, has_ability_distant_(utils::nullopt)
-	, has_ability_distant_image_(utils::nullopt)
+	, max_ability_radius_(0)
+	, max_ability_radius_image_(0)
 {
-	affect_distant_.clear();
+	max_ability_radius_type_.clear();
 }
 
 void unit::set_has_ability_distant()
 {
 	// check if unit own abilities with [affect_adjacent/distant]
 	// else variables are false or erased.
-	affect_distant_.clear();
-	has_ability_distant_ = utils::nullopt;
-	has_ability_distant_image_ = utils::nullopt;
+	max_ability_radius_type_.clear();
+	max_ability_radius_ = 0;
+	max_ability_radius_image_ = 0;
 	for(const auto [key, ability] : abilities_.all_children_view()) {
 		for (const config &i : ability.child_range("affect_adjacent")) {
 			// if 'radius' = "all_map" then radius is to maximum.
 			unsigned int radius = i["radius"] != "all_map" ? i["radius"].to_int(1) : INT_MAX;
-			if(!affect_distant_[key] || *affect_distant_[key] < radius) {
-				affect_distant_[key] = radius;
+			if(!max_ability_radius_type_[key] || max_ability_radius_type_[key] < radius) {
+				max_ability_radius_type_[key] = radius;
 			}
-			if(!has_ability_distant_ || *has_ability_distant_ < radius) {
-				has_ability_distant_ =  radius;
+			if(!max_ability_radius_ || max_ability_radius_ < radius) {
+				max_ability_radius_ =  radius;
 			}
-			if((!has_ability_distant_image_ || *has_ability_distant_image_ < radius) && (ability.has_attribute("halo_image") || ability.has_attribute("overlay_image"))) {
-				has_ability_distant_image_ = radius;
+			if((!max_ability_radius_image_ || max_ability_radius_image_ < radius) && (ability.has_attribute("halo_image") || ability.has_attribute("overlay_image"))) {
+				max_ability_radius_image_ = radius;
 			}
 		}
 	}
@@ -472,26 +470,20 @@ void unit::init(const config& cfg, bool use_traits, const vconfig* vcfg)
 		if(!filter_recall.null())
 			filter_recall_ = filter_recall.get_config();
 
-		const vconfig::child_list& events = vcfg->get_children("event");
-		for(const vconfig& e : events) {
+		for(const vconfig& e : vcfg->get_children("event")) {
 			events_.add_child("event", e.get_config());
 		}
-		const vconfig::child_list& abilities_tags = vcfg->get_children("abilities");
-		for(const vconfig& abilities_tag : abilities_tags) {
+		for(const vconfig& abilities_tag : vcfg->get_children("abilities")) {
 			for(const auto& [key, child] : abilities_tag.all_ordered()) {
-				const vconfig::child_list& ability_events = child.get_children("event");
-				for(const vconfig& ability_event : ability_events) {
+				for(const vconfig& ability_event : child.get_children("event")) {
 					events_.add_child("event", ability_event.get_config());
 				}
 			}
 		}
-		const vconfig::child_list& attacks = vcfg->get_children("attack");
-		for(const vconfig& attack : attacks) {
-			const vconfig::child_list& specials_tags = attack.get_children("specials");
-			for(const vconfig& specials_tag : specials_tags) {
+		for(const vconfig& attack : vcfg->get_children("attack")) {
+			for(const vconfig& specials_tag : attack.get_children("specials")) {
 				for(const auto& [key, child] : specials_tag.all_ordered()) {
-					const vconfig::child_list& special_events = child.get_children("event");
-					for(const vconfig& special_event : special_events) {
+					for(const vconfig& special_event : child.get_children("event")) {
 						events_.add_child("event", special_event.get_config());
 					}
 				}
@@ -628,7 +620,6 @@ void unit::init(const config& cfg, bool use_traits, const vconfig* vcfg)
 	}
 
 	if(auto ai = cfg.optional_child("ai")) {
-		formula_man_->read(*ai);
 		config ai_events;
 		for(config mai : ai->child_range("micro_ai")) {
 			mai.clear_children("filter");
@@ -1627,9 +1618,6 @@ void unit::write(config& cfg, bool write_all) const
 		cfg["parent_type"] = type().parent_id();
 	}
 
-	// Support for unit formulas in [ai] and unit-specific variables in [ai] [vars]
-	formula_man_->write(cfg);
-
 	cfg["gender"] = gender_string(gender_);
 	cfg["variation"] = variation_;
 	cfg["role"] = role_;
@@ -1783,10 +1771,8 @@ bool unit::resistance_filter_matches(const config& cfg, const std::string& damag
 	const std::string& apply_to = cfg["apply_to"];
 	if(!apply_to.empty()) {
 		if(damage_name != apply_to) {
-			if(apply_to.find(',') != std::string::npos  &&
-			     apply_to.find(damage_name) != std::string::npos) {
-				const std::vector<std::string>& vals = utils::split(apply_to);
-				if(std::find(vals.begin(),vals.end(),damage_name) == vals.end()) {
+			if(apply_to.find(',') != std::string::npos && apply_to.find(damage_name) != std::string::npos) {
+				if(!utils::contains(utils::split(apply_to), damage_name)) {
 					return false;
 				}
 			} else {
@@ -1827,9 +1813,9 @@ static bool resistance_filter_matches_base(const config& cfg, bool attacker)
 	return true;
 }
 
-int unit::resistance_against(const std::string& damage_name, bool attacker, const map_location& loc, const_attack_ptr weapon, const const_attack_ptr& opp_weapon, bool for_tooltip) const
+int unit::resistance_against(const std::string& damage_name, bool attacker, const map_location& loc, const_attack_ptr weapon, const const_attack_ptr& opp_weapon) const
 {
-	if(opp_weapon && !for_tooltip) {
+	if(opp_weapon) {
 		return opp_weapon->effective_damage_type().second;
 	}
 	unit_ability_list resistance_list = get_abilities_weapons("resistance",loc, std::move(weapon), opp_weapon);
@@ -2270,7 +2256,7 @@ void unit::apply_builtin_effect(const std::string& apply_to, const config& effec
 		{
 			set_state(to_remove, false);
 		}
-	} else if(std::find(movetype::effects.cbegin(), movetype::effects.cend(), apply_to) != movetype::effects.cend()) {
+	} else if(utils::contains(movetype::effects, apply_to)) {
 		// "movement_costs", "vision_costs", "jamming_costs", "defense", "resistance"
 		if(auto ap = effect.optional_child(apply_to)) {
 			set_attr_changed(UA_MOVEMENT_TYPE);

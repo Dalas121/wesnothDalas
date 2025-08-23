@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 1.4.2+dev\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2025-05-20 17:31-0500\n"
+"POT-Creation-Date: 2025-08-19 10:14-0500\n"
 "PO-Revision-Date: 2025-03-23 10:23+0100\n"
 "Last-Translator: Mejri Ziad <nouveau.dep@gmail.com>\n"
 "Language-Team: none\n"
@@ -1884,7 +1884,7 @@ msgstr "مخصص لعمل فني"
 #: data/core/terrain.cfg:3214
 #: data/gui/themes/default/dialogs/editor_edit_side.cfg:206
 #: data/gui/themes/default/dialogs/game_stats.cfg:384
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:405
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:390
 msgid "Shroud"
 msgstr "حجاب"
 
@@ -2300,7 +2300,7 @@ msgstr "لا توجد خيارات مخصصة متاحة للعصر أو الل�
 #. [button]: id=orb_defaults
 #: data/gui/macros/custom_options_tree.cfg:250
 #: data/gui/themes/default/dialogs/mp_alerts_options.cfg:227
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:474
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:459
 #: data/gui/themes/default/dialogs/preferences/02_hotkeys.cfg:294
 #: data/gui/themes/default/dialogs/reachmap_options.cfg:160
 #: data/gui/themes/default/dialogs/select_orb_colors.cfg:170
@@ -2408,7 +2408,7 @@ msgstr "ابدأ حملة لاعب واحد جديدة"
 #: data/gui/themes/default/dialogs/mp_method_selection.cfg:55
 #: data/gui/themes/default/dialogs/preferences.cfg:365
 #: data/gui/themes/default/dialogs/title_screen.cfg:257
-#: src/gui/dialogs/game_load.cpp:367
+#: src/gui/dialogs/game_load.cpp:362
 msgid "Multiplayer"
 msgstr "متعدد اللاعبين"
 
@@ -2481,7 +2481,7 @@ msgstr "بدء تشغيل محرر الخرائط"
 #. [grid]
 #. [tab]
 #: data/gui/themes/celes/dialogs/title_screen.cfg:295
-#: data/gui/themes/default/dialogs/game_version.cfg:904
+#: data/gui/themes/default/dialogs/game_version.cfg:903
 #: data/gui/themes/default/dialogs/title_screen.cfg:262
 msgid "Community"
 msgstr "مجتمع"
@@ -2503,7 +2503,7 @@ msgstr "تكوين إعدادات اللعبة"
 #. [button]: id=show_preferences
 #. [label]: id=title
 #: data/gui/themes/celes/dialogs/title_screen.cfg:296
-#: data/gui/themes/default/dialogs/lobby_main.cfg:571
+#: data/gui/themes/default/dialogs/lobby_main.cfg:600
 #: data/gui/themes/default/dialogs/preferences.cfg:213
 #: data/gui/themes/default/dialogs/title_screen.cfg:263
 #: src/hotkey/hotkey_command.cpp:127
@@ -2528,7 +2528,7 @@ msgstr "قم بزيارة المساعدة داخل اللعبة"
 #. [button]: id=cancel
 #. [button]: id=quit_without_surrender
 #: data/gui/themes/celes/dialogs/title_screen.cfg:298
-#: data/gui/themes/default/dialogs/formula_debugger.cfg:234
+#: data/gui/themes/default/dialogs/formula_debugger.cfg:205
 #: data/gui/themes/default/dialogs/surrender_quit.cfg:99
 #: data/gui/themes/default/dialogs/title_screen.cfg:264
 msgid "Quit"
@@ -2562,17 +2562,17 @@ msgstr "<b><span font_family='DejaVu Sans'>✔</span></b><b>تم نسخها</b>"
 #. [button]: id=ok
 #. [button]: id=cancel
 #. [button]: id=close_window
-#: data/gui/themes/celes/widgets/window_default.cfg:106
+#: data/gui/themes/celes/widgets/window_default.cfg:57
 #: data/gui/themes/default/dialogs/achievements_dialog.cfg:307
 #: data/gui/themes/default/dialogs/attack_predictions.cfg:302
 #: data/gui/themes/default/dialogs/chat_log.cfg:201
 #: data/gui/themes/default/dialogs/end_credits.cfg:145
 #: data/gui/themes/default/dialogs/game_cache_options.cfg:247
 #: data/gui/themes/default/dialogs/game_stats.cfg:843
-#: data/gui/themes/default/dialogs/game_version.cfg:992
+#: data/gui/themes/default/dialogs/game_version.cfg:991
 #: data/gui/themes/default/dialogs/gamestate_inspector.cfg:398
 #: data/gui/themes/default/dialogs/generator_settings.cfg:190
-#: data/gui/themes/default/dialogs/help_browser.cfg:274
+#: data/gui/themes/default/dialogs/help_browser.cfg:296
 #: data/gui/themes/default/dialogs/lobby_player_info.cfg:292
 #: data/gui/themes/default/dialogs/lua_interpreter.cfg:130
 #: data/gui/themes/default/dialogs/message.cfg:135
@@ -2603,7 +2603,7 @@ msgstr "اسم المستخدم:"
 #. [grid]
 #: data/gui/themes/default/dialogs/addon_auth.cfg:95
 #: data/gui/themes/default/dialogs/editor_edit_pbl.cfg:217
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:1036
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:1021
 #: data/gui/themes/default/dialogs/mp_join_game_password_prompt.cfg:90
 #: data/gui/themes/default/dialogs/mp_login.cfg:143
 msgid "Password:"
@@ -2630,13 +2630,13 @@ msgstr "حفظ كلمة المرور محليا (مشفرة)"
 #: data/gui/themes/default/dialogs/editor_edit_scenario.cfg:287
 #: data/gui/themes/default/dialogs/editor_edit_side.cfg:469
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1243
-#: data/gui/themes/default/dialogs/file_dialog.cfg:506
+#: data/gui/themes/default/dialogs/file_dialog.cfg:504
 #: data/gui/themes/default/dialogs/folder_create.cfg:119
 #: data/gui/themes/default/dialogs/label_settings.cfg:137
 #: data/gui/themes/default/dialogs/logging.cfg:259
 #: data/gui/themes/default/dialogs/migrate_version_selection.cfg:114
 #: data/gui/themes/default/dialogs/mp_change_control.cfg:203
-#: data/gui/themes/default/dialogs/mp_faction_select.cfg:381
+#: data/gui/themes/default/dialogs/mp_faction_select.cfg:411
 #: data/gui/themes/default/dialogs/mp_join_game_password_prompt.cfg:136
 #: data/gui/themes/default/dialogs/mp_login.cfg:243
 #: data/gui/themes/default/dialogs/mp_method_selection.cfg:356
@@ -2681,7 +2681,7 @@ msgstr "موافق"
 #: data/gui/themes/default/dialogs/editor_generate_map.cfg:214
 #: data/gui/themes/default/dialogs/editor_new_map.cfg:126
 #: data/gui/themes/default/dialogs/editor_resize_map.cfg:282
-#: data/gui/themes/default/dialogs/file_dialog.cfg:519
+#: data/gui/themes/default/dialogs/file_dialog.cfg:517
 #: data/gui/themes/default/dialogs/file_progress.cfg:94
 #: data/gui/themes/default/dialogs/folder_create.cfg:133
 #: data/gui/themes/default/dialogs/game_load.cfg:653
@@ -2692,10 +2692,10 @@ msgstr "موافق"
 #: data/gui/themes/default/dialogs/message.cfg:149
 #: data/gui/themes/default/dialogs/mp_change_control.cfg:216
 #: data/gui/themes/default/dialogs/mp_connect.cfg:314
-#: data/gui/themes/default/dialogs/mp_create_game/default_resolution.cfg:460
-#: data/gui/themes/default/dialogs/mp_create_game/small_resolution.cfg:378
-#: data/gui/themes/default/dialogs/mp_create_game/tiny_resolution.cfg:335
-#: data/gui/themes/default/dialogs/mp_faction_select.cfg:393
+#: data/gui/themes/default/dialogs/mp_create_game/default_resolution.cfg:475
+#: data/gui/themes/default/dialogs/mp_create_game/small_resolution.cfg:393
+#: data/gui/themes/default/dialogs/mp_create_game/tiny_resolution.cfg:350
+#: data/gui/themes/default/dialogs/mp_faction_select.cfg:423
 #: data/gui/themes/default/dialogs/mp_join_game_password_prompt.cfg:149
 #: data/gui/themes/default/dialogs/mp_login.cfg:257
 #: data/gui/themes/default/dialogs/mp_method_selection.cfg:370
@@ -2710,7 +2710,7 @@ msgstr "موافق"
 #: data/gui/themes/default/dialogs/theme_list.cfg:155
 #: data/gui/themes/default/dialogs/tod_new_schedule.cfg:139
 #: data/gui/themes/default/dialogs/unit_attack.cfg:233
-#: data/gui/themes/default/dialogs/units_dialog.cfg:621
+#: data/gui/themes/default/dialogs/units_dialog.cfg:623
 #: src/gui/dialogs/units_dialog.cpp:79 src/hotkey/hotkey_command.cpp:79
 msgid "Cancel"
 msgstr "إلغاء"
@@ -2810,7 +2810,7 @@ msgstr "محدّثة :"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [scroll_label]: id=description
 #: data/gui/themes/default/dialogs/addon_manager.cfg:415
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:656
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:713
 msgid "No description available."
 msgstr "لا يوجد وصف متوفر."
 
@@ -2855,7 +2855,7 @@ msgstr "تحديث الإضافة"
 #. [button]: id=single_uninstall
 #: data/gui/themes/default/dialogs/addon_manager.cfg:622
 #: data/gui/themes/default/widgets/addon_list.cfg:435
-#: src/gui/dialogs/addon/manager.cpp:1060
+#: src/gui/dialogs/addon/manager.cpp:1056
 msgid "Uninstall add-on"
 msgstr "إلغاء تثبيت الإضافة"
 
@@ -2864,7 +2864,7 @@ msgstr "إلغاء تثبيت الإضافة"
 #. [button]: id=single_publish
 #: data/gui/themes/default/dialogs/addon_manager.cfg:645
 #: data/gui/themes/default/widgets/addon_list.cfg:412
-#: src/gui/widgets/addon_list.cpp:260
+#: src/gui/widgets/addon_list.cpp:262
 msgid "Publish add-on"
 msgstr "نشر الإضافة"
 
@@ -2883,7 +2883,7 @@ msgstr "الارتباطات:"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=dependencies
 #: data/gui/themes/default/dialogs/addon_manager.cfg:713
-#: src/gui/dialogs/addon/manager.cpp:1135
+#: src/gui/dialogs/addon/manager.cpp:1131
 msgid "addon_dependencies^None"
 msgstr "لا شيء"
 
@@ -2897,7 +2897,7 @@ msgstr "الترجمات:"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=translations
 #: data/gui/themes/default/dialogs/addon_manager.cfg:748
-#: src/gui/dialogs/addon/manager.cpp:1149
+#: src/gui/dialogs/addon/manager.cpp:1145
 msgid "translations^None"
 msgstr "لا شيء"
 
@@ -2932,8 +2932,8 @@ msgstr "إدارة قائمة الإضافات"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=details_toggle
 #: data/gui/themes/default/dialogs/addon_manager.cfg:1099
-#: src/gui/dialogs/addon/manager.cpp:570 src/gui/dialogs/addon/manager.cpp:844
-#: src/gui/dialogs/addon/manager.cpp:941
+#: src/gui/dialogs/addon/manager.cpp:569 src/gui/dialogs/addon/manager.cpp:836
+#: src/gui/dialogs/addon/manager.cpp:937
 msgid "Add-on Details"
 msgstr "تفاصيل الإضافة"
 
@@ -3091,6 +3091,7 @@ msgstr ""
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:248
 #: data/gui/themes/default/dialogs/game_load.cfg:170
 #: data/gui/themes/default/dialogs/mp_connect.cfg:159
+#: data/gui/themes/default/dialogs/mp_faction_select.cfg:33
 #: data/gui/themes/default/dialogs/terrain_layers.cfg:45
 #: data/gui/themes/default/dialogs/units_dialog.cfg:48
 #: data/gui/themes/default/widgets/addon_list.cfg:78
@@ -3171,7 +3172,7 @@ msgstr "عرض الحملات المكتملة"
 #. [label]
 #. [label]: id=mods_header
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:347
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:220
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:209
 msgid "Modifications:"
 msgstr "التعديلات:"
 
@@ -3340,7 +3341,7 @@ msgstr "تحميل النواة الأساسية"
 #: data/gui/themes/default/dialogs/language_selection.cfg:293
 #: src/gui/dialogs/editor/custom_tod.cpp:172
 #: src/gui/dialogs/editor/edit_unit.cpp:308
-#: src/preferences/preferences.cpp:1344
+#: src/preferences/preferences.cpp:1342
 msgid "Select"
 msgstr "اختر"
 
@@ -3410,7 +3411,7 @@ msgstr "تحرير الجدول الزمني"
 #: data/gui/themes/default/dialogs/screenshot_notification.cfg:120
 #: data/gui/themes/default/dialogs/tod_new_schedule.cfg:86
 #: src/gui/dialogs/multiplayer/mp_connect.cpp:183
-#: src/gui/dialogs/units_dialog.cpp:240
+#: src/gui/dialogs/units_dialog.cpp:239
 msgid "Name:"
 msgstr "اسم:"
 
@@ -3486,11 +3487,11 @@ msgstr "عرض تغير الألوان على الخريطة"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/themes/default/dialogs/depcheck_confirm_change.cfg:40
-#: src/gui/dialogs/addon/manager.cpp:1033
+#: src/gui/dialogs/addon/manager.cpp:1029
 #: src/gui/dialogs/editor/custom_tod.cpp:187
 #: src/gui/dialogs/editor/edit_unit.cpp:323
 #: src/gui/dialogs/editor/edit_unit.cpp:1030
-#: src/gui/dialogs/file_dialog.cpp:364 src/gui/dialogs/file_dialog.cpp:791
+#: src/gui/dialogs/file_dialog.cpp:371 src/gui/dialogs/file_dialog.cpp:799
 msgid "Confirm"
 msgstr "تأكيد"
 
@@ -3784,7 +3785,7 @@ msgstr "إضافة"
 #. [button]: id=delete
 #. [button]: id=server_delete
 #: data/gui/themes/default/dialogs/editor_edit_pbl.cfg:421
-#: data/gui/themes/default/dialogs/file_dialog.cfg:349
+#: data/gui/themes/default/dialogs/file_dialog.cfg:347
 #: data/gui/themes/default/dialogs/game_load.cfg:605
 #: data/gui/themes/default/dialogs/mp_connect.cfg:284
 msgid "Delete"
@@ -3801,7 +3802,7 @@ msgstr "موافقة"
 #: data/gui/themes/default/dialogs/editor_edit_pbl.cfg:464
 #: data/gui/themes/default/dialogs/game_save.cfg:120
 #: data/gui/themes/default/dialogs/screenshot_notification.cfg:201
-#: src/gui/dialogs/file_dialog.cpp:230 src/hotkey/hotkey_command.cpp:185
+#: src/gui/dialogs/file_dialog.cpp:237 src/hotkey/hotkey_command.cpp:185
 msgid "Save"
 msgstr "حفظ"
 
@@ -4060,7 +4061,7 @@ msgstr "الحركة:"
 #. [tab]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:524
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1206
-#: src/gui/widgets/unit_preview_pane.cpp:220
+#: src/gui/widgets/unit_preview_pane.cpp:218
 msgid "Attacks"
 msgstr "الهجمات"
 
@@ -4122,7 +4123,7 @@ msgstr "نوع الحركة:"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=movement_costs_label
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:908
-#: src/gui/widgets/unit_preview_pane.cpp:152
+#: src/gui/widgets/unit_preview_pane.cpp:151
 msgid "Movement Costs:"
 msgstr "تكاليف الحركة:"
 
@@ -4179,7 +4180,7 @@ msgstr "اختيار مولد الخرائط:"
 #. [button]: id=settings
 #. [button]: id=random_map_settings
 #: data/gui/themes/default/dialogs/editor_generate_map.cfg:128
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:923
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:908
 #: src/gui/dialogs/multiplayer/lobby.cpp:451
 msgid "Settings"
 msgstr "الإعدادات"
@@ -4218,7 +4219,7 @@ msgstr "الطول:"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=ok
 #: data/gui/themes/default/dialogs/editor_new_map.cfg:116
-#: src/gui/dialogs/units_dialog.cpp:470
+#: src/gui/dialogs/units_dialog.cpp:467
 msgid "Create"
 msgstr "إنشاء"
 
@@ -4275,33 +4276,33 @@ msgid "File:"
 msgstr "الملف:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/file_dialog.cfg:190
+#: data/gui/themes/default/dialogs/file_dialog.cfg:189
 msgid "Places"
 msgstr "الأماكن"
 
 #. [button]: id=add_bookmark
-#: data/gui/themes/default/dialogs/file_dialog.cfg:281
+#: data/gui/themes/default/dialogs/file_dialog.cfg:280
 msgid "Bookmarks the current folder"
 msgstr "وضع إشارة مرجعية على المجلد الحالي"
 
 #. [button]: id=remove_bookmark
-#: data/gui/themes/default/dialogs/file_dialog.cfg:293
+#: data/gui/themes/default/dialogs/file_dialog.cfg:292
 msgid "Removes the current bookmark"
 msgstr "إزالة الإشارة المرجعية الحالية"
 
 #. [button]: id=open_ext
-#: data/gui/themes/default/dialogs/file_dialog.cfg:320
+#: data/gui/themes/default/dialogs/file_dialog.cfg:319
 msgid "Open External"
 msgstr "فتح ملف خارجي"
 
 #. [button]: id=open_ext
-#: data/gui/themes/default/dialogs/file_dialog.cfg:321
+#: data/gui/themes/default/dialogs/file_dialog.cfg:320
 msgid "Open selected using platform’s default applications"
 msgstr "فتح المحدد باستخدام التطبيقات الافتراضية للمنصة"
 
 #. [button]: id=new_dir
 #. [label]: id=title
-#: data/gui/themes/default/dialogs/file_dialog.cfg:335
+#: data/gui/themes/default/dialogs/file_dialog.cfg:334
 #: data/gui/themes/default/dialogs/folder_create.cfg:43
 msgid "New Folder"
 msgstr "مجلّد جديد"
@@ -4312,48 +4313,48 @@ msgid "Formula debugger"
 msgstr "مصحح أخطاء الصيغة"
 
 #. [label]
-#: data/gui/themes/default/dialogs/formula_debugger.cfg:59
+#: data/gui/themes/default/dialogs/formula_debugger.cfg:54
 msgid "Welcome"
 msgstr "مرحبًا"
 
 #. [label]: id=state
-#: data/gui/themes/default/dialogs/formula_debugger.cfg:71
+#: data/gui/themes/default/dialogs/formula_debugger.cfg:66
 msgid "state"
 msgstr "الحالة"
 
 # arabic: need details
 #. [label]
-#: data/gui/themes/default/dialogs/formula_debugger.cfg:85
+#: data/gui/themes/default/dialogs/formula_debugger.cfg:79
 msgid "Call stack"
 msgstr "مكدس الاستدعاءات"
 
 #. [label]
-#: data/gui/themes/default/dialogs/formula_debugger.cfg:94
+#: data/gui/themes/default/dialogs/formula_debugger.cfg:89
 msgid "Actions"
 msgstr "الإجراءات"
 
 #. [button]: id=step
-#: data/gui/themes/default/dialogs/formula_debugger.cfg:128
+#: data/gui/themes/default/dialogs/formula_debugger.cfg:122
 msgid "Step operation"
 msgstr "خطوة العملية"
 
 #. [button]: id=next
-#: data/gui/themes/default/dialogs/formula_debugger.cfg:139
+#: data/gui/themes/default/dialogs/formula_debugger.cfg:134
 msgid "Next operation"
 msgstr "العملية التالية"
 
 #. [button]: id=stepout
-#: data/gui/themes/default/dialogs/formula_debugger.cfg:150
+#: data/gui/themes/default/dialogs/formula_debugger.cfg:146
 msgid "Step out"
 msgstr "مغادرة"
 
 #. [button]: id=continue
-#: data/gui/themes/default/dialogs/formula_debugger.cfg:161
+#: data/gui/themes/default/dialogs/formula_debugger.cfg:158
 msgid "Continue"
 msgstr "مواصلة"
 
 #. [label]
-#: data/gui/themes/default/dialogs/formula_debugger.cfg:178
+#: data/gui/themes/default/dialogs/formula_debugger.cfg:174
 msgid "Execution trace"
 msgstr "أثر التنفيذ"
 
@@ -4428,7 +4429,7 @@ msgstr "التاريخ"
 #. [label]: id=lblTitle
 #. [button]: id=load_game
 #: data/gui/themes/default/dialogs/game_load.cfg:308
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:944
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:929
 #: src/hotkey/hotkey_command.cpp:109
 msgid "Load Game"
 msgstr "تحميل لعبة"
@@ -4611,7 +4612,7 @@ msgstr "إعدادات السيناريو"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=ok
 #: data/gui/themes/default/dialogs/game_stats.cfg:832
-#: src/gui/dialogs/units_dialog.cpp:559
+#: src/gui/dialogs/units_dialog.cpp:556
 msgid "Scroll To"
 msgstr "انتقل إلى"
 
@@ -4656,23 +4657,23 @@ msgstr ""
 "<i><span font_family='DejaVu Sans'>➤</span> الإبلاغ عن مشكلة أو طلب ميزة:</i>"
 
 #. [button]: id=issue
-#: data/gui/themes/default/dialogs/game_version.cfg:313
+#: data/gui/themes/default/dialogs/game_version.cfg:312
 msgid "Report Issue"
 msgstr "رفع تقرير"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:322
+#: data/gui/themes/default/dialogs/game_version.cfg:321
 msgid "<i><span font_family='DejaVu Sans'>➤</span> View Game Manual:</i>"
 msgstr "<i><span font_family='DejaVu Sans'>➤</span> عرض دليل اللعبة:</i>"
 
 #. [button]: id=view_manual
 #. button to open the game manual in the platform's browser.
-#: data/gui/themes/default/dialogs/game_version.cfg:335
+#: data/gui/themes/default/dialogs/game_version.cfg:334
 msgid "View Manual"
 msgstr "رؤية دليل الاستعمال"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:343
+#: data/gui/themes/default/dialogs/game_version.cfg:342
 msgid ""
 "<i><span font_family='DejaVu Sans'>➤</span> Re-open the version migrator "
 "dialog:</i>"
@@ -4682,52 +4683,52 @@ msgstr ""
 
 #. [button]: id=run_migrator
 #. button to open the version migration dialog manually to re-migrate add-ons and the preferences file
-#: data/gui/themes/default/dialogs/game_version.cfg:356
+#: data/gui/themes/default/dialogs/game_version.cfg:355
 msgid "Migrate"
 msgstr "ترحيل"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:393
+#: data/gui/themes/default/dialogs/game_version.cfg:392
 msgid "Game data:"
 msgstr "بيانات اللعبة:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:395
+#: data/gui/themes/default/dialogs/game_version.cfg:394
 msgid "User data:"
 msgstr "بيانات المستخدم:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:397
+#: data/gui/themes/default/dialogs/game_version.cfg:396
 msgid "Saved games:"
 msgstr "الألعاب المحفوظة:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:399
+#: data/gui/themes/default/dialogs/game_version.cfg:398
 msgid "Add-ons:"
 msgstr "الإضافات:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:401
+#: data/gui/themes/default/dialogs/game_version.cfg:400
 msgid "Cache:"
 msgstr "ذاكرة التخزين المؤقت:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:403
+#: data/gui/themes/default/dialogs/game_version.cfg:402
 msgid "Logs:"
 msgstr "السجلات:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:405
+#: data/gui/themes/default/dialogs/game_version.cfg:404
 msgid "Screenshots:"
 msgstr "لقطات الشاشة:"
 
 #. [button]: id=open_stderr
-#: data/gui/themes/default/dialogs/game_version.cfg:439
+#: data/gui/themes/default/dialogs/game_version.cfg:438
 msgid "Log File"
 msgstr "ملف السجل"
 
 #. [button]: id=open_stderr
-#: data/gui/themes/default/dialogs/game_version.cfg:440
+#: data/gui/themes/default/dialogs/game_version.cfg:439
 msgid ""
 "Opens the log file pertaining to the current session, which may contain "
 "useful debug information"
@@ -4735,64 +4736,64 @@ msgstr ""
 "فتح ملف السجل المتعلق بالجلسة الحالية، والذي قد يحتوي على معلومات تصحيح مفيدة"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:470
+#: data/gui/themes/default/dialogs/game_version.cfg:469
 msgid "library^Name"
 msgstr "الاسم"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:481
+#: data/gui/themes/default/dialogs/game_version.cfg:480
 msgid "library^Build version"
 msgstr "نسخة البناء"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:493
+#: data/gui/themes/default/dialogs/game_version.cfg:492
 msgid "library^Runtime version"
 msgstr "إصدار وقت التشغيل"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:574
+#: data/gui/themes/default/dialogs/game_version.cfg:573
 msgid ""
 "The following features were selected when building this version of Wesnoth:"
 msgstr "تم اختيار الميزات التالية عند إنشاء هذا الإصدار من ويسنوث:"
 
 #. [button]: id=forums
 #. this is on a button that opens the Wesnoth forums webpage
-#: data/gui/themes/default/dialogs/game_version.cfg:654
+#: data/gui/themes/default/dialogs/game_version.cfg:653
 msgid "Forums"
 msgstr "المنتدى"
 
 #. [button]: id=discord
 #. this is on a button that opens the Wesnoth Discord server webpage
-#: data/gui/themes/default/dialogs/game_version.cfg:673
+#: data/gui/themes/default/dialogs/game_version.cfg:672
 msgid "Discord"
 msgstr "Discord"
 
 #. [button]: id=irc
 #. this is on a button that opens the Wesnoth IRC webpage. IRC is an acronym for Internet Relay Chat
-#: data/gui/themes/default/dialogs/game_version.cfg:692
+#: data/gui/themes/default/dialogs/game_version.cfg:691
 msgid "IRC"
 msgstr "IRC"
 
 #. [button]: id=steam
 #. this is on a button that opens the Wesnoth Steam forums webpage
-#: data/gui/themes/default/dialogs/game_version.cfg:711
+#: data/gui/themes/default/dialogs/game_version.cfg:710
 msgid "Steam"
 msgstr "Steam"
 
 #. [button]: id=reddit
 #. this is on a button that opens the Wesnoth Reddit webpage
-#: data/gui/themes/default/dialogs/game_version.cfg:730
+#: data/gui/themes/default/dialogs/game_version.cfg:729
 msgid "Reddit"
 msgstr "Reddit"
 
 #. [button]: id=donate
 #. this is on a button that opens the Wesnoth SPI webpage for sending donations
-#: data/gui/themes/default/dialogs/game_version.cfg:749
+#: data/gui/themes/default/dialogs/game_version.cfg:748
 msgid "Donate"
 msgstr "تبرع"
 
 #. [label]: id=description
-#: data/gui/themes/default/dialogs/game_version.cfg:845
+#: data/gui/themes/default/dialogs/game_version.cfg:844
 msgid "An open source, turn-based strategy game with a high fantasy theme."
 msgstr "لعبة استراتيجية مفتوحة المصدر تعتمد على الأدوار و ذات طابع خيالي."
 
@@ -4800,8 +4801,8 @@ msgstr "لعبة استراتيجية مفتوحة المصدر تعتمد عل�
 #. [tab]
 #. [widget]: id=tab_label
 #. [widget]: id=label
-#: data/gui/themes/default/dialogs/game_version.cfg:880
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:579
+#: data/gui/themes/default/dialogs/game_version.cfg:879
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:564
 #: data/gui/themes/default/dialogs/preferences.cfg:292
 #: data/gui/themes/default/dialogs/preferences/05_multiplayer.cfg:402
 #: data/gui/themes/default/dialogs/server_info.cfg:181
@@ -4810,27 +4811,27 @@ msgid "General"
 msgstr "عام"
 
 #. [tab]
-#: data/gui/themes/default/dialogs/game_version.cfg:886
+#: data/gui/themes/default/dialogs/game_version.cfg:885
 msgid "Paths"
 msgstr "مسارات"
 
 #. [tab]
-#: data/gui/themes/default/dialogs/game_version.cfg:892
+#: data/gui/themes/default/dialogs/game_version.cfg:891
 msgid "Libraries"
 msgstr "المكتبات"
 
 #. [tab]
-#: data/gui/themes/default/dialogs/game_version.cfg:898
+#: data/gui/themes/default/dialogs/game_version.cfg:897
 msgid "Features"
 msgstr "الميزات"
 
 #. [button]: id=credits
-#: data/gui/themes/default/dialogs/game_version.cfg:958
+#: data/gui/themes/default/dialogs/game_version.cfg:957
 msgid "Credits"
 msgstr "الاعتمادات"
 
 #. [button]: id=license
-#: data/gui/themes/default/dialogs/game_version.cfg:973
+#: data/gui/themes/default/dialogs/game_version.cfg:972
 msgid "License"
 msgstr "الترخيص"
 
@@ -4865,7 +4866,7 @@ msgstr "إعدادات مولد الخريطة"
 #. [grid]
 #. [label]
 #: data/gui/themes/default/dialogs/generator_settings.cfg:105
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:729
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:714
 #: data/gui/themes/default/dialogs/mp_create_game/default_resolution.cfg:132
 #: data/gui/themes/default/dialogs/mp_create_game/small_resolution.cfg:151
 #: data/gui/themes/default/dialogs/mp_create_game/tiny_resolution.cfg:137
@@ -4983,57 +4984,74 @@ msgstr "الردهة العامة"
 msgid "Matchmaking"
 msgstr "صياغة التوافيق"
 
+#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
+#. [widget]: id=tab_label
+#. saved settings to start a game with, such as era, map, fog, etc
+#: data/gui/themes/default/dialogs/lobby_main.cfg:102
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:129
+#, fuzzy
+#| msgid "Reset"
+msgid "Presets"
+msgstr "إعادة التنضيد"
+
 #. [label]: id=map
-#: data/gui/themes/default/dialogs/lobby_main.cfg:140
+#: data/gui/themes/default/dialogs/lobby_main.cfg:153
 msgid "Games"
 msgstr "الألعاب"
 
 #. [image]: id=needs_password
-#: data/gui/themes/default/dialogs/lobby_main.cfg:259
+#: data/gui/themes/default/dialogs/lobby_main.cfg:272
 msgid "Requires a password to join"
 msgstr "يتطلب كلمة مرور للانضمام"
 
+#. [button]: id=delete_preset
+#: data/gui/themes/default/dialogs/lobby_main.cfg:305
+#, fuzzy
+#| msgid "Delete Unit"
+msgid "Delete this preset"
+msgstr "حذف الوحدة"
+
 #. [toggle_button]: id=filter_vacant_slots
-#: data/gui/themes/default/dialogs/lobby_main.cfg:448
+#: data/gui/themes/default/dialogs/lobby_main.cfg:477
 msgid "Vacant slots"
 msgstr "الأماكن الشاغرة"
 
 #. [toggle_button]: id=filter_vacant_slots
-#: data/gui/themes/default/dialogs/lobby_main.cfg:449
+#: data/gui/themes/default/dialogs/lobby_main.cfg:478
 msgid "Only show games with vacant slots"
 msgstr "إظهار الألعاب ذات الأماكن الشاغرة فقط"
 
 #. [toggle_button]: id=filter_with_friends
 #. [widget]: id=tab_label
-#: data/gui/themes/default/dialogs/lobby_main.cfg:461
+#: data/gui/themes/default/dialogs/lobby_main.cfg:490
 #: data/gui/themes/default/dialogs/preferences/05_multiplayer.cfg:415
 msgid "Friends"
 msgstr "الأصدقاء"
 
 #. [toggle_button]: id=filter_with_friends
-#: data/gui/themes/default/dialogs/lobby_main.cfg:462
+#: data/gui/themes/default/dialogs/lobby_main.cfg:491
 msgid "Only show games with friends"
 msgstr "إظهار الألعاب مع الأصدقاء فقط"
 
 #. [toggle_button]: id=filter_with_ignored
-#: data/gui/themes/default/dialogs/lobby_main.cfg:474
+#: data/gui/themes/default/dialogs/lobby_main.cfg:503
 msgid "Blocked players"
 msgstr "اللاعبين المحظورين"
 
 #. [toggle_button]: id=filter_with_ignored
-#: data/gui/themes/default/dialogs/lobby_main.cfg:475
+#: data/gui/themes/default/dialogs/lobby_main.cfg:504
 msgid "Show games that include players you have blocked"
 msgstr "إظهار الألعاب التي تتضمن لاعبين قمت بحظرهم"
 
 #. [toggle_button]: id=filter_invert
-#: data/gui/themes/default/dialogs/lobby_main.cfg:487
+#: data/gui/themes/default/dialogs/lobby_main.cfg:516
 msgid "Invert filter"
 msgstr "عكس الفلتر"
 
 #. [button]: id=create
 #. [label]
 #. [button]: id=ok
-#: data/gui/themes/default/dialogs/lobby_main.cfg:512
+#: data/gui/themes/default/dialogs/lobby_main.cfg:541
 #: data/gui/themes/default/dialogs/mp_create_game/default_resolution.cfg:45
 #: data/gui/themes/default/dialogs/mp_create_game/default_resolution.cfg:445
 #: data/gui/themes/default/dialogs/mp_create_game/small_resolution.cfg:44
@@ -5045,29 +5063,29 @@ msgstr "إنشاء لعبة"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=join_global
-#: data/gui/themes/default/dialogs/lobby_main.cfg:532
-#: src/gui/dialogs/multiplayer/lobby.cpp:975
+#: data/gui/themes/default/dialogs/lobby_main.cfg:561
+#: src/gui/dialogs/multiplayer/lobby.cpp:996
 msgid "Join"
 msgstr "انضمام"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=observe_global
-#: data/gui/themes/default/dialogs/lobby_main.cfg:544
-#: src/gui/dialogs/multiplayer/lobby.cpp:943
+#: data/gui/themes/default/dialogs/lobby_main.cfg:573
+#: src/gui/dialogs/multiplayer/lobby.cpp:966
 msgid "Observe"
 msgstr "مشاهدة"
 
 #. [button]: id=server_info
 #. [widget]: id=tab_label
-#: data/gui/themes/default/dialogs/lobby_main.cfg:559
+#: data/gui/themes/default/dialogs/lobby_main.cfg:588
 #: data/gui/themes/default/dialogs/server_info.cfg:168
 msgid "Announcements"
 msgstr "الإعلامات"
 
 #. [button]: id=view_profile
 #. [button]: id=type_profile
-#: data/gui/themes/default/dialogs/lobby_main.cfg:621
-#: data/gui/themes/default/dialogs/mp_faction_select.cfg:157
+#: data/gui/themes/default/dialogs/lobby_main.cfg:650
+#: data/gui/themes/default/dialogs/mp_faction_select.cfg:187
 #: data/gui/themes/default/widgets/unit_preview_pane.cfg:132
 #: data/gui/themes/default/widgets/unit_preview_pane.cfg:362
 #: data/gui/themes/default/widgets/unit_preview_pane.cfg:422
@@ -5076,55 +5094,55 @@ msgstr "الملف الشخصي"
 
 #. [button]: id=view_match_history
 #. [label]: id=title
-#: data/gui/themes/default/dialogs/lobby_main.cfg:633
+#: data/gui/themes/default/dialogs/lobby_main.cfg:662
 #: data/gui/themes/default/dialogs/mp_match_history.cfg:299
 msgid "Match History"
 msgstr "تاريخ المباراة"
 
 #. [button]: id=quit
-#: data/gui/themes/default/dialogs/lobby_main.cfg:650
+#: data/gui/themes/default/dialogs/lobby_main.cfg:679
 msgid "Log Out"
 msgstr "تسجيل الخروج"
 
 #. [option]
-#: data/gui/themes/default/dialogs/lobby_main.cfg:670
+#: data/gui/themes/default/dialogs/lobby_main.cfg:699
 msgid "Normal Replays"
 msgstr "الإعادة العادية"
 
 #. [option]
-#: data/gui/themes/default/dialogs/lobby_main.cfg:674
+#: data/gui/themes/default/dialogs/lobby_main.cfg:703
 msgid "Quick Replays"
 msgstr "الاعادة السريعة"
 
 #. [option]
-#: data/gui/themes/default/dialogs/lobby_main.cfg:675
+#: data/gui/themes/default/dialogs/lobby_main.cfg:704
 msgid "Skip quickly to the active turn when observing"
 msgstr "التخطي بسرعة إلى المنعطف النشط عند المراقبة"
 
 #. [option]
-#: data/gui/themes/default/dialogs/lobby_main.cfg:679
+#: data/gui/themes/default/dialogs/lobby_main.cfg:708
 msgid "Enter Blindfolded"
 msgstr "أدخل معصوب العينين"
 
 #. [option]
-#: data/gui/themes/default/dialogs/lobby_main.cfg:680
+#: data/gui/themes/default/dialogs/lobby_main.cfg:709
 msgid "Do not show the map until given control of a side"
 msgstr "لا تظهر الخريطة حتى يتم السيطرة على الجانب"
 
 #. [button]: id=join_queue
-#: data/gui/themes/default/dialogs/lobby_main.cfg:695
+#: data/gui/themes/default/dialogs/lobby_main.cfg:728
 msgid "Join Queue"
 msgstr ""
 
 #. [button]: id=leave_queue
-#: data/gui/themes/default/dialogs/lobby_main.cfg:702
+#: data/gui/themes/default/dialogs/lobby_main.cfg:738
 #, fuzzy
 #| msgid "Leave"
 msgid "Leave Queue"
 msgstr "مغادرة"
 
 #. [label]
-#: data/gui/themes/default/dialogs/lobby_main.cfg:801
+#: data/gui/themes/default/dialogs/lobby_main.cfg:844
 msgid "Multiplayer Lobby"
 msgstr "ردهة اللاعبين المتعددين"
 
@@ -5443,244 +5461,244 @@ msgid "Address"
 msgstr "العنوان"
 
 #. [label]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:119
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:108
 msgid "Eras:"
 msgstr "العصور:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:155
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:144
 msgid "Random Faction Matchups:"
 msgstr "الفصائل العشوائية المتواجهة:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:156
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:145
 msgid "Allow for mirror matchups when random factions are chosen"
 msgstr "السماح بمطابقات التناظر عند اختيار فصائل عشوائية"
 
 #. [option]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:177
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:166
 msgid "Independent"
 msgstr "مستقل"
 
 #. [option]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:178
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:167
 msgid "Independent: Random factions assigned independently"
 msgstr "مستقلة: فصائل عشوائية يتم تعيينها بشكل مستقل"
 
 #. [option]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:182
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:171
 msgid "No Mirror"
 msgstr "لا تناظر"
 
 #. [option]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:183
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:172
 msgid "No Mirror: No two players will get the same faction"
 msgstr "لا تناظر: لن يحصل أي لاعبين على نفس الفصيل"
 
 #. [option]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:187
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:176
 msgid "No Ally Mirror"
 msgstr "لا تناظر مع الحليف"
 
 #. [option]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:188
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:177
 msgid "No Ally Mirror: No two allied players will get the same faction"
 msgstr "لا تناظر بين الحلفاء: لن يحصل أي لاعبين متحالفين على نفس الفصيل"
 
 #. [toggle_button]: id=use_map_settings
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:330
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:319
 msgid "Use Map Settings"
 msgstr "استخدم إعدادات الخريطة"
 
 #. [toggle_button]: id=use_map_settings
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:331
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:320
 msgid "Use scenario specific settings"
 msgstr "استخدم إعدادات السيناريو المحددة"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:347
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:336
 msgid "Number of Turns"
 msgstr "عدد الأدوار"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:347
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:336
 msgid "The maximum number of turns the game can last"
 msgstr "الحد الأقصى لعدد الأدوار التي يمكن أن تستمر بها اللعبة"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:348
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:337
 msgid "unlimited"
 msgstr "غير محدود"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:351
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:340
 msgid "The amount of income each village yields per turn"
 msgstr "مقدار الدخل الذي تنتجه كل قرية لكل دور"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:351
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:340
 msgid "Village Gold"
 msgstr "قرية ذهب"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:353
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:342
 msgid "The number of unit levels each village can support"
 msgstr "عدد مستويات الوحدات التي يمكن لكل قرية دعمها"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:353
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:342
 msgid "Village Support"
 msgstr "دعم القرية"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:355
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:344
 msgid "Experience Modifier"
 msgstr "تعديلات الخبرة"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:355
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:344
 msgid "The amount of experience a unit needs to advance"
 msgstr "مقدار الخبرة التي تحتاجها الوحدة للتقدم"
 
 #. [toggle_button]: id=fog
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:389
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:374
 msgid "Fog of War"
 msgstr "ضباب الحرب"
 
 #. [toggle_button]: id=fog
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:390
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:375
 msgid "Enemy units cannot be seen unless they are in range of your units"
 msgstr "لا يمكن رؤية وحدات العدو إلا إذا كانت في نطاق وحداتك"
 
 #. [toggle_button]: id=shroud
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:406
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:391
 msgid "The map is unknown until your units explore it"
 msgstr "الخريطة غير معروفة حتى تستكشفها وحداتك"
 
 #. [toggle_button]: id=random_start_time
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:422
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:407
 msgid "Random Start Time"
 msgstr "وقت بداية عشوائي"
 
 #. [toggle_button]: id=random_start_time
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:423
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:408
 msgid "Randomize the starting time of day"
 msgstr "عشوائية وقت البدء من اليوم"
 
 #. [toggle_button]: id=time_limit
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:459
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:444
 msgid "Time Limit"
 msgstr "المهلة"
 
 #. [toggle_button]: id=time_limit
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:460
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:445
 msgid "Enable custom time limits"
 msgstr "تمكين الحدود الزمنية المخصصة"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:497
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:482
 msgid "Initial Limit"
 msgstr "الحد الأولي"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:497
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:482
 msgid "Longest time allowed for first turn (seconds)"
 msgstr "أطول وقت مسموح به للدور الأول (بالثواني)"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:499
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:484
 msgid "Time for general tasks each turn (seconds)"
 msgstr "وقت المهام العامة في كل دور (بالثواني)"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:499
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:484
 msgid "Turn Bonus"
 msgstr "مكافأة الدور"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:501
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:486
 msgid "Longest time possible for any turn (seconds)"
 msgstr "أطول وقت ممكن لأي دور (بالثواني)"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:501
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:486
 msgid "Reservoir"
 msgstr "الخزان"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:503
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:488
 msgid "Action Bonus"
 msgstr "مكافأة الاجراء"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:503
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:488
 msgid "Time for each attack, recruit, and capture"
 msgstr "وقت كل هجوم وتجنيد وسيطرة"
 
 #. [widget]: id=tab_label
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:592
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:577
 msgid "Custom Options"
 msgstr "خيارات مخصصة"
 
 #. [widget]: id=tab_label
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:605
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:590
 msgid "Game Settings"
 msgstr "إعدادات اللعبة"
 
 #. [slider]: id=num_players
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:748
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:733
 msgid "Any"
 msgstr "أي كان"
 
 #. [label]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:881
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:866
 msgid "Random map options: "
 msgstr "خيارات الخريطة العشوائية: "
 
 #. [button]: id=random_map_regenerate
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:902
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:887
 msgid "Regenerate"
 msgstr "تجديد"
 
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:975
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:960
 msgid "Assign sides to players at random"
 msgstr "تعيين الجوانب للاعبين بشكل عشوائي"
 
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:975
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:960
 msgid "Shuffle Sides"
 msgstr "خلط الجوانب"
 
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:979
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:964
 msgid "Allow users who are not playing to watch the game"
 msgstr "السماح للمستخدمين الذين لا يلعبون بمشاهدة المباراة"
 
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:979
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:964
 msgid "Observers"
 msgstr "المراقبون"
 
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:983
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:968
 msgid "Strict Synchronization"
 msgstr "تزامن صارم"
 
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:983
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:968
 msgid "Stricter checks for out-of-sync errors"
 msgstr "عمليات فحص أكثر صرامة للأخطاء خارج-المزامنة"
 
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:987
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:972
 msgid "Private Replay"
 msgstr "إعادة خاصة"
 
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:987
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:972
 msgid "Whether the replay will be publicly available"
 msgstr "ما إذا كانت الإعادة ستكون متاحة للعموم أم لا"
 
 #. [label]
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:1003
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:988
 msgid "Name of game:"
 msgstr "اسم اللعبة:"
 
 #. [text_box]: id=game_password
-#: data/gui/themes/default/dialogs/mp_create_game.cfg:1050
+#: data/gui/themes/default/dialogs/mp_create_game.cfg:1035
 msgid ""
 "Set the password that people wanting to join your game as players must enter"
 msgstr ""
@@ -5696,32 +5714,41 @@ msgstr ""
 msgid "Map size:"
 msgstr "حجم الخريطة:"
 
+#. [button]: id=save_preset
+#: data/gui/themes/default/dialogs/mp_create_game/default_resolution.cfg:460
+#: data/gui/themes/default/dialogs/mp_create_game/small_resolution.cfg:378
+#: data/gui/themes/default/dialogs/mp_create_game/tiny_resolution.cfg:335
+#, fuzzy
+#| msgid "Saved Games"
+msgid "Save Preset"
+msgstr "الألعاب المحفوظة"
+
 #. [row]
-#: data/gui/themes/default/dialogs/mp_faction_select.cfg:180
+#: data/gui/themes/default/dialogs/mp_faction_select.cfg:210
 msgid "gender^Random"
 msgstr "عشوائي"
 
 #. [row]
 #. [toggle_button]: id=male_toggle
-#: data/gui/themes/default/dialogs/mp_faction_select.cfg:182
-#: data/gui/themes/default/dialogs/units_dialog.cfg:496
+#: data/gui/themes/default/dialogs/mp_faction_select.cfg:212
+#: data/gui/themes/default/dialogs/units_dialog.cfg:498
 msgid "Male"
 msgstr "مذكّر"
 
 #. [row]
 #. [toggle_button]: id=female_toggle
-#: data/gui/themes/default/dialogs/mp_faction_select.cfg:184
-#: data/gui/themes/default/dialogs/units_dialog.cfg:507
+#: data/gui/themes/default/dialogs/mp_faction_select.cfg:214
+#: data/gui/themes/default/dialogs/units_dialog.cfg:509
 msgid "Female"
 msgstr "مؤنث"
 
 #. [label]
-#: data/gui/themes/default/dialogs/mp_faction_select.cfg:217
+#: data/gui/themes/default/dialogs/mp_faction_select.cfg:247
 msgid "Recruits"
 msgstr "المجندون"
 
 #. [label]
-#: data/gui/themes/default/dialogs/mp_faction_select.cfg:308
+#: data/gui/themes/default/dialogs/mp_faction_select.cfg:338
 msgid "Choose Your Leader"
 msgstr "اختر قائدك"
 
@@ -5756,7 +5783,7 @@ msgstr "فصيل:"
 #. [label]: id=status_label
 #: data/gui/themes/default/dialogs/mp_join_game.cfg:364
 #: data/gui/themes/default/dialogs/mp_staging.cfg:671
-#: src/gui/dialogs/multiplayer/mp_staging.cpp:516
+#: src/gui/dialogs/multiplayer/mp_staging.cpp:514
 msgid "Waiting for players to join..."
 msgstr "في انتظار انضمام اللاعبين..."
 
@@ -6026,12 +6053,14 @@ msgstr "لا تسمح بالحركات التلقائية في بداية الد
 
 #. [toggle_button]: id=show_turn_dialog
 #: data/gui/themes/default/dialogs/preferences/01_general.cfg:114
-msgid "Turn dialog"
-msgstr "رسالة بداية الدور"
+msgid "Turn prompt"
+msgstr ""
 
 #. [toggle_button]: id=show_turn_dialog
 #: data/gui/themes/default/dialogs/preferences/01_general.cfg:115
-msgid "Display a dialog at the beginning of your turn"
+#, fuzzy
+#| msgid "Display a dialog at the beginning of your turn"
+msgid "Display a prompt at the beginning of your turn"
 msgstr "إظهار رسالة في بداية دورك"
 
 #. [toggle_button]: id=whiteboard_on_start
@@ -6137,7 +6166,7 @@ msgstr "مفتاح التشغيل السريع"
 #. [toggle_button]: id=sort_2
 #. Translate G as the initial letter for Game
 #: data/gui/themes/default/dialogs/preferences/02_hotkeys.cfg:126
-#: src/gui/dialogs/preferences_dialog.cpp:908
+#: src/gui/dialogs/preferences_dialog.cpp:890
 msgid "game_hotkeys^G"
 msgstr "ل"
 
@@ -6150,7 +6179,7 @@ msgstr "متاح في اللعبة"
 #. [toggle_button]: id=sort_3
 #. Translate E as the initial letter for Editor
 #: data/gui/themes/default/dialogs/preferences/02_hotkeys.cfg:141
-#: src/gui/dialogs/preferences_dialog.cpp:909
+#: src/gui/dialogs/preferences_dialog.cpp:891
 msgid "editor_hotkeys^E"
 msgstr "م"
 
@@ -6163,7 +6192,7 @@ msgstr "متوفر في المحرر"
 #. [toggle_button]: id=sort_4
 #. Translate M as the initial letter for Main Menu
 #: data/gui/themes/default/dialogs/preferences/02_hotkeys.cfg:156
-#: src/gui/dialogs/preferences_dialog.cpp:910
+#: src/gui/dialogs/preferences_dialog.cpp:892
 msgid "mainmenu_hotkeys^M"
 msgstr "ق"
 
@@ -6366,72 +6395,72 @@ msgid "Volume:"
 msgstr "المجلد:"
 
 #. [toggle_button]: id=sound_toggle_stop_music_in_background
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:82
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:80
 msgid "Pause music on focus loss"
 msgstr "إيقاف الموسيقى مؤقتًا عند فقدان التركيز"
 
 #. [toggle_button]: id=sound_toggle_stop_music_in_background
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:83
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:81
 msgid "Pause the music when you switch to any other window"
 msgstr "إيقاف الموسيقى مؤقتًا عند التبديل إلى أي نافذة أخرى"
 
 #. [column]
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:104
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:96
 msgid "Sound effects"
 msgstr "المؤثرات الصوتية"
 
 #. [column]
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:104
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:96
 msgid "Sound effects on/off"
 msgstr "التأثيرات الصوتية تشغيل/مغلق"
 
 #. [column]
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:105
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:97
 msgid "Change the sound effects volume"
 msgstr "تغيير مستوى صوت التأثيرات الصوتية"
 
 #. [column]
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:115
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:109
 msgid "Music"
 msgstr "الموسيقى"
 
 #. [column]
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:115
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:109
 msgid "Music on/off"
 msgstr "الموسيقى بدء/ايقاف"
 
 #. [column]
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:116
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:110
 msgid "Change the music volume"
 msgstr "تغيير مستوى صوت الموسيقى"
 
 #. [column]
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:127
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:123
 msgid "Play a bell sound at the beginning of your turn"
 msgstr "سماع صوت الجرس عند بداية دورك"
 
 #. [column]
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:127
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:123
 msgid "Turn bell"
 msgstr "جرس الإعلان بالدور"
 
 #. [column]
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:128
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:124
 msgid "Change the bell volume"
 msgstr "تغيير مستوى صوت الجرس"
 
 #. [column]
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:137
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:135
 msgid "Turn menu and button sounds on/off"
 msgstr "تشغيل/إيقاف أصوات القائمة والأزرار"
 
 #. [column]
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:137
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:135
 msgid "User interface sounds"
 msgstr "أصوات واجهة المُستخدِم"
 
 #. [column]
-#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:138
+#: data/gui/themes/default/dialogs/preferences/04_sound.cfg:136
 msgid "Change the sound volume for button clicks, etc."
 msgstr "تغيير مستوى الصوت عند النقر على زر، الخ."
 
@@ -6851,7 +6880,7 @@ msgstr "مهاجمة العدو"
 #. Filled five pointed star, used as favorite unit marker
 #. Filled five pointed star, used as favorite unit marker
 #: data/gui/themes/default/dialogs/units_dialog.cfg:24
-#: data/gui/themes/default/dialogs/units_dialog.cfg:572
+#: data/gui/themes/default/dialogs/units_dialog.cfg:574
 msgid "★"
 msgstr ""
 
@@ -6890,28 +6919,28 @@ msgstr "الحالة"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [toggle_button]: id=unit_traits
 #: data/gui/themes/default/dialogs/units_dialog.cfg:147
-#: src/gui/widgets/unit_preview_pane.cpp:390
-#: src/gui/widgets/unit_preview_pane.cpp:525
+#: src/gui/widgets/unit_preview_pane.cpp:398
+#: src/gui/widgets/unit_preview_pane.cpp:533
 msgid "Traits"
 msgstr "السمات"
 
 #. [text_box]: id=filter_box
-#: data/gui/themes/default/dialogs/units_dialog.cfg:403
+#: data/gui/themes/default/dialogs/units_dialog.cfg:405
 msgid "Search for unit name, unit type name, unit level, or trait"
 msgstr "ابحث عن اسم الوحدة أو اسم نوع الوحدة أو مستوى الوحدة أو السمة"
 
 #. [button]: id=dismiss
-#: data/gui/themes/default/dialogs/units_dialog.cfg:548
+#: data/gui/themes/default/dialogs/units_dialog.cfg:550
 msgid "Dismiss"
 msgstr "صرف"
 
 #. [button]: id=rename
-#: data/gui/themes/default/dialogs/units_dialog.cfg:559
+#: data/gui/themes/default/dialogs/units_dialog.cfg:561
 msgid "Rename"
 msgstr "إعادة تسمية"
 
 #. [button]: id=mark_favorite
-#: data/gui/themes/default/dialogs/units_dialog.cfg:573
+#: data/gui/themes/default/dialogs/units_dialog.cfg:575
 msgid "Mark/unmark the selected unit as favorite"
 msgstr ""
 
@@ -6978,7 +7007,7 @@ msgstr "النهاية الخلفية لإشعارات Win32"
 msgid "feature^Cocoa notifications back end"
 msgstr "النهاية الخلفية لإشعارات Cocoa"
 
-#: src/build_info.cpp:346 src/desktop/version.cpp:125
+#: src/build_info.cpp:346 src/desktop/version.cpp:129
 msgid "cpu_architecture^<unknown>"
 msgstr "<غير معروف>"
 
@@ -7010,7 +7039,7 @@ msgstr "الصفحة الرئيسية"
 msgid "filesystem_path_system^Root"
 msgstr "الجذر"
 
-#: src/desktop/version.cpp:405
+#: src/desktop/version.cpp:413
 msgid "operating_system^<unknown>"
 msgstr "<غير معروف>"
 
@@ -7024,7 +7053,7 @@ msgstr "<غير معروف>"
 #. other's resources rather than duplicating them. For example,
 #. Swedish (sv) and Danish (da) are such, so Swedish translator could
 #. translate this message as "sv,da", while Danish as "da,sv".
-#: src/filesystem.cpp:1838
+#: src/filesystem.cpp:1845
 msgid "language code for localized resources^en_US"
 msgstr "ar"
 
@@ -7068,7 +7097,7 @@ msgstr "$prefix, $next"
 msgid "disjunct end^$prefix, or $last"
 msgstr "$prefix, أو $last"
 
-#: src/gui/core/canvas.cpp:258
+#: src/gui/core/canvas.cpp:259
 msgid "Image doesn’t fit on canvas."
 msgstr "الصورة غير مناسبة على المحمل."
 
@@ -7080,7 +7109,7 @@ msgstr "لم يتم تحديد قسم السحب للحالة."
 msgid "No resolution defined for "
 msgstr "لم يتم تحديد الدقة بالنسبة إلى "
 
-#: src/gui/core/window_builder.cpp:147 src/gui/widgets/addon_list.cpp:427
+#: src/gui/core/window_builder.cpp:147 src/gui/widgets/addon_list.cpp:430
 #: src/gui/widgets/multi_page.cpp:181 src/gui/widgets/panel.cpp:131
 #: src/gui/widgets/size_lock.cpp:110 src/gui/widgets/stacked_widget.cpp:229
 #: src/gui/widgets/toggle_panel.cpp:321
@@ -7110,13 +7139,13 @@ msgstr "اكتملت $count/$total"
 #: src/gui/dialogs/addon/addon_server_info.cpp:95
 #: src/gui/dialogs/addon/addon_server_info.cpp:120
 #: src/gui/dialogs/addon/addon_server_info.cpp:148
-#: src/gui/dialogs/addon/manager.cpp:999 src/gui/dialogs/addon/manager.cpp:1041
+#: src/gui/dialogs/addon/manager.cpp:995 src/gui/dialogs/addon/manager.cpp:1037
 msgid "The server responded with an error:"
 msgstr "استجاب الخادم بخطأ:"
 
 #: src/gui/dialogs/addon/addon_server_info.cpp:97
-#: src/gui/dialogs/addon/manager.cpp:1017
-#: src/gui/dialogs/addon/manager.cpp:1044
+#: src/gui/dialogs/addon/manager.cpp:1013
+#: src/gui/dialogs/addon/manager.cpp:1040
 #: src/gui/dialogs/multiplayer/mp_join_game.cpp:514
 msgid "Response"
 msgstr "الرد"
@@ -7365,23 +7394,23 @@ msgstr "تنازليّا"
 msgid "newest to oldest"
 msgstr "من الأحدث إلى الأقدم"
 
-#: src/gui/dialogs/addon/manager.cpp:567
+#: src/gui/dialogs/addon/manager.cpp:566
 msgid "addons^Back to List"
 msgstr "العودة إلى القائمة"
 
-#: src/gui/dialogs/addon/manager.cpp:579
+#: src/gui/dialogs/addon/manager.cpp:578
 msgid "An error occurred while downloading the add-ons list from the server."
 msgstr "حدث خطأ أثناء تنزيل قائمة الإضافات من الخادم."
 
-#: src/gui/dialogs/addon/manager.cpp:617
+#: src/gui/dialogs/addon/manager.cpp:616
 msgid "No Add-ons Available"
 msgstr "لا توجد إضافات متاحة"
 
-#: src/gui/dialogs/addon/manager.cpp:617
+#: src/gui/dialogs/addon/manager.cpp:616
 msgid "There are no add-ons available for download from this server."
 msgstr "لا توجد إضافات متاحة للتنزيل من هذا الخادم."
 
-#: src/gui/dialogs/addon/manager.cpp:884
+#: src/gui/dialogs/addon/manager.cpp:880
 msgid ""
 "The following add-on appears to have publishing or version control "
 "information stored locally, and will not be removed:"
@@ -7389,15 +7418,15 @@ msgstr ""
 "يبدو أن الإضافة التالية تحتوي على معلومات النشر أو التحكم في الإصدار مخزنة "
 "محليًا، ولن تتم إزالتها:"
 
-#: src/gui/dialogs/addon/manager.cpp:892
+#: src/gui/dialogs/addon/manager.cpp:888
 msgid "The following add-on could not be deleted properly:"
 msgstr "لا يمكن حذف الإضافة التالية بشكل صحيح:"
 
-#: src/gui/dialogs/addon/manager.cpp:972
+#: src/gui/dialogs/addon/manager.cpp:968
 msgid "Warning"
 msgstr "تحذير"
 
-#: src/gui/dialogs/addon/manager.cpp:973
+#: src/gui/dialogs/addon/manager.cpp:969
 msgid ""
 "The remote version of this add-on is greater or equal to the version being "
 "uploaded. Do you really wish to continue?"
@@ -7405,19 +7434,19 @@ msgstr ""
 "الإصدار البعيد من هذه الإضافة أكبر أو يساوي الإصدار الذي يتم تحميله. هل ترغب "
 "حقا في الاستمرار؟"
 
-#: src/gui/dialogs/addon/manager.cpp:991
+#: src/gui/dialogs/addon/manager.cpp:987
 msgid "The passphrase attribute cannot be present when forum_auth is used."
 msgstr "لا يمكن أن تكون سمة عبارة المرور موجودة عند استخدام forum_auth."
 
-#: src/gui/dialogs/addon/manager.cpp:996
+#: src/gui/dialogs/addon/manager.cpp:992
 msgid "Invalid icon path. Make sure the path points to a valid image."
 msgstr "مسار الأيقونة غير صالح. تأكد من أن المسار يشير إلى صورة صالحة."
 
-#: src/gui/dialogs/addon/manager.cpp:1002
+#: src/gui/dialogs/addon/manager.cpp:998
 msgid "The add-on was rejected by the server:"
 msgstr "وقع رفض الإضافة من قبل الخادم:"
 
-#: src/gui/dialogs/addon/manager.cpp:1029
+#: src/gui/dialogs/addon/manager.cpp:1025
 msgid ""
 "Deleting '$addon|' will permanently erase its download and upload counts on "
 "the add-ons server. Do you really wish to continue?"
@@ -7425,23 +7454,23 @@ msgstr ""
 "حذف '$addon|' سوف يمحو بشكل دائم عدد التنزيلات والتحميلات على خادم الإضافات. "
 "هل ترغب حقا في الاستمرار؟"
 
-#: src/gui/dialogs/addon/manager.cpp:1061
+#: src/gui/dialogs/addon/manager.cpp:1057
 msgid "Do you want to uninstall '$addon|'?"
 msgstr "أتريد فعلاً محو الإضافة '$addon|'؟"
 
 #. TRANSLATORS: Month + day of month + year + 12-hour time, eg 'November 02 2021, 1:59 PM'. Format for your locale.
 #. Format reference: https://www.boost.org/doc/libs/1_85_0/doc/html/date_time/date_time_io.html#date_time.format_flags
-#: src/gui/dialogs/addon/manager.cpp:1094
+#: src/gui/dialogs/addon/manager.cpp:1090
 msgid "%B %d %Y, %I:%M %p"
 msgstr "%B %d %Y, %I:%M %p"
 
 #. TRANSLATORS: Month + day of month + year + 24-hour time, eg 'November 02 2021, 13:59'. Format for your locale.
 #. Format reference: https://www.boost.org/doc/libs/1_85_0/doc/html/date_time/date_time_io.html#date_time.format_flags
-#: src/gui/dialogs/addon/manager.cpp:1097
+#: src/gui/dialogs/addon/manager.cpp:1093
 msgid "%B %d %Y, %H:%M"
 msgstr "%B %d %Y, %H:%M"
 
-#: src/gui/dialogs/addon/manager.cpp:1152
+#: src/gui/dialogs/addon/manager.cpp:1148
 msgid "url^None"
 msgstr "لا شيء"
 
@@ -7643,67 +7672,62 @@ msgstr "ستفقد التغييرات غير المحفوظة. هل تريد ا�
 msgid "Unit type saved."
 msgstr "نوع الوحدة تم حفظه."
 
-#: src/gui/dialogs/editor/generator_settings.cpp:70
-msgid "/1000 tiles"
+#: src/gui/dialogs/editor/generator_settings.cpp:38
+#, fuzzy
+#| msgid "/1000 tiles"
+msgid "$count/1000 tiles"
 msgstr "1000/ خانة"
 
-#: src/gui/dialogs/editor/generator_settings.cpp:73
+#: src/gui/dialogs/editor/generator_settings.cpp:43
 msgid "Coastal"
 msgstr "ساحلي"
 
-#: src/gui/dialogs/editor/generator_settings.cpp:73
+#: src/gui/dialogs/editor/generator_settings.cpp:43
 msgid "Inland"
 msgstr "أرضي"
 
-#: src/gui/dialogs/editor/generator_settings.cpp:73
+#: src/gui/dialogs/editor/generator_settings.cpp:43
 msgid "Island"
 msgstr "جزيرة"
 
-#: src/gui/dialogs/file_dialog.cpp:105
+#: src/gui/dialogs/file_dialog.cpp:116
 msgid "Find File"
 msgstr "البحث عن الملف"
 
-#: src/gui/dialogs/file_dialog.cpp:180
-msgid "<span color='#00dcff' size='small'>please enter a filename</span>"
-msgstr "<span color='#00dcff' size='small'>يُرجى إدخال اسم الملف</span>"
+#: src/gui/dialogs/file_dialog.cpp:191
+#, fuzzy
+msgid "enter filename"
+msgstr "إنشاء خريطة جديدة"
 
-#: src/gui/dialogs/file_dialog.cpp:202
-msgid ""
-"<span color='red'><span face='DejaVuSans'>✘</span> <span size='small'>wrong "
-"extension, use $extensions</span></span>"
+#: src/gui/dialogs/file_dialog.cpp:201
+msgid "invalid extension (use $extensions)"
 msgstr ""
-"<span color='red'><span face='DejaVuSans'>✘</span> <span size='small'>ملحق "
-"خاطئ، استخدم $extensions</span></span>"
 
-#: src/gui/dialogs/file_dialog.cpp:205
-msgid ""
-"<span color='red'><span face='DejaVuSans'>✘</span> <span "
-"size='small'>whitespace is not allowed in filename</span></span>"
+#: src/gui/dialogs/file_dialog.cpp:208
+msgid "filename contains whitespace"
 msgstr ""
-"<span color='red'><span face='DejaVuSans'>✘</span> <span "
-"size='small'>المسافة البيضاء غير مسموح بها في اسم الملف</span></span>"
 
-#: src/gui/dialogs/file_dialog.cpp:230
+#: src/gui/dialogs/file_dialog.cpp:237
 msgid "Open"
 msgstr "فتح"
 
-#: src/gui/dialogs/file_dialog.cpp:306
+#: src/gui/dialogs/file_dialog.cpp:313
 msgid "Opening files is not supported, contact your packager"
 msgstr "فتح الملفات غير مدعوم، اتصل بوكيل التعبئة الخاص بك"
 
-#: src/gui/dialogs/file_dialog.cpp:363
+#: src/gui/dialogs/file_dialog.cpp:370
 msgid "The file already exists. Do you wish to overwrite it?"
 msgstr "الملف موجود بالفعل. هل ترغب في الكتابة فوقه؟"
 
-#: src/gui/dialogs/file_dialog.cpp:387
+#: src/gui/dialogs/file_dialog.cpp:395
 msgid "The file or folder $path cannot be created."
 msgstr "لا يمكن إنشاء $path الملف أو المجلد."
 
-#: src/gui/dialogs/file_dialog.cpp:393
+#: src/gui/dialogs/file_dialog.cpp:401
 msgid "The file or folder $path does not exist."
 msgstr "$path الملف أو المجلد غير موجود."
 
-#: src/gui/dialogs/file_dialog.cpp:769
+#: src/gui/dialogs/file_dialog.cpp:777
 msgid ""
 "Could not create a new folder at $path|. Make sure you have the appropriate "
 "permissions to write to this location."
@@ -7711,19 +7735,19 @@ msgstr ""
 "تعذر إنشاء مجلد جديد في $path|. تأكد من أن لديك الأذونات المناسبة للكتابة "
 "إلى هذا الموقع."
 
-#: src/gui/dialogs/file_dialog.cpp:787
+#: src/gui/dialogs/file_dialog.cpp:795
 msgid "The following folder and its contents will be permanently deleted:"
 msgstr "سيتم حذف المجلد التالي ومحتوياته نهائيًا:"
 
-#: src/gui/dialogs/file_dialog.cpp:788
+#: src/gui/dialogs/file_dialog.cpp:796
 msgid "The following file will be permanently deleted:"
 msgstr "سيتم حذف الملف التالي نهائيا:"
 
-#: src/gui/dialogs/file_dialog.cpp:789
+#: src/gui/dialogs/file_dialog.cpp:797
 msgid "Do you wish to continue?"
 msgstr "أتريد فعلاً المواصلة؟"
 
-#: src/gui/dialogs/file_dialog.cpp:801
+#: src/gui/dialogs/file_dialog.cpp:809
 msgid ""
 "Could not delete $path|. Make sure you have the appropriate permissions to "
 "write to this location."
@@ -7798,39 +7822,39 @@ msgstr "الملف المحدد تالف: "
 msgid "(Invalid)"
 msgstr "(غير صالح)"
 
-#: src/gui/dialogs/game_load.cpp:358
+#: src/gui/dialogs/game_load.cpp:353
 msgid "Campaign: $campaign_name"
 msgstr "الحملة: $campaign_name"
 
-#: src/gui/dialogs/game_load.cpp:370
+#: src/gui/dialogs/game_load.cpp:365
 msgid "Tutorial"
 msgstr "البرنامج التعليمي"
 
-#: src/gui/dialogs/game_load.cpp:373
+#: src/gui/dialogs/game_load.cpp:368
 msgid "Test scenario"
 msgstr "سيناريو اختبار"
 
-#: src/gui/dialogs/game_load.cpp:383
+#: src/gui/dialogs/game_load.cpp:378
 msgid "Replay"
 msgstr "الإعادة"
 
-#: src/gui/dialogs/game_load.cpp:385
+#: src/gui/dialogs/game_load.cpp:380
 msgid "Turn"
 msgstr "دور"
 
-#: src/gui/dialogs/game_load.cpp:387
+#: src/gui/dialogs/game_load.cpp:382
 msgid "Scenario start"
 msgstr "بداية السيناريو"
 
-#: src/gui/dialogs/game_load.cpp:406
+#: src/gui/dialogs/game_load.cpp:394
 msgid "Difficulty: "
 msgstr "الصعوبة: "
 
-#: src/gui/dialogs/game_load.cpp:429
+#: src/gui/dialogs/game_load.cpp:417
 msgid "Version: "
 msgstr "النسخة: "
 
-#: src/gui/dialogs/game_load.cpp:434
+#: src/gui/dialogs/game_load.cpp:422
 msgid "Modifications: "
 msgstr "التعديلات: "
 
@@ -7982,8 +8006,8 @@ msgstr ""
 "سيؤدي ذلك إلى استيراد الإعدادات من إصدار سابق من ويسنوث، ولكن لم يتم العثور "
 "على أي إصدار آخر على هذا الجهاز"
 
-#: src/gui/dialogs/multiplayer/faction_select.cpp:134
-#: src/gui/dialogs/multiplayer/mp_staging.cpp:500
+#: src/gui/dialogs/multiplayer/faction_select.cpp:200
+#: src/gui/dialogs/multiplayer/mp_staging.cpp:498
 msgid "Random"
 msgstr "عشوائي"
 
@@ -8066,17 +8090,17 @@ msgstr "السماح بالمراقبين"
 msgid "Observers not allowed"
 msgstr "غير مسموح للمراقبين"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:621
+#: src/gui/dialogs/multiplayer/lobby.cpp:641
 msgid "lobby"
 msgstr "الردهة"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:943
+#: src/gui/dialogs/multiplayer/lobby.cpp:966
 msgid ""
 "This game doesn’t allow observers. Observe using moderator rights anyway?"
 msgstr ""
 "هذه اللعبة لا تسمح بالمراقبين. المراقبة باستخدام حقوق المشرفين على أي حال؟"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:954
+#: src/gui/dialogs/multiplayer/lobby.cpp:977
 msgid ""
 "Something is wrong with the addon version check database supporting the "
 "multiplayer lobby. Please report this at https://bugs.wesnoth.org."
@@ -8084,7 +8108,7 @@ msgstr ""
 "هناك خطأ ما في قاعدة بيانات التحقق من إصدار الملحق التي تدعم الردهة متعددة "
 "اللاعبين. يرجى الإبلاغ عن هذا على https://bugs.wesnoth.org."
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:975
+#: src/gui/dialogs/multiplayer/lobby.cpp:996
 msgid "This game is password protected. Join using moderator rights anyway?"
 msgstr "هذه اللعبة محمية بكلمة مرور. الانضمام باستخدام حقوق المشرف على أي حال؟"
 
@@ -8104,65 +8128,65 @@ msgstr "الجانب $side"
 msgid "Add Server"
 msgstr "إضافة خادم"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:122
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:123
 msgid "Scenarios"
 msgstr "سيناريوهات"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:123
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:124
 msgid "Multiplayer Campaigns"
 msgstr "حملات متعددة اللاعبين"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:124
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:125
 msgid "Singleplayer Campaigns"
 msgstr "حملات اللعب الفردي"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:125
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:126
 msgid "Custom Maps"
 msgstr "خرائط مخصصة"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:126
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:127
 msgid "Custom Scenarios"
 msgstr "السيناريوهات المخصصة"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:127
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:128
 msgid "Random Maps"
 msgstr "الخرائط العشوائية"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:271
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:272
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:285
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:286
 msgid "No games found."
 msgstr "لم يتم العثور على أي ألعاب."
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:332
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:347
 msgid "No eras found."
 msgstr "لم يتم العثور على عصور."
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:333
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:348
 msgid "No eras found"
 msgstr "لم يتم العثور على عصور"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:602
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:617
 msgid "No eras available for this game."
 msgstr "لا توجد عصور متاحة لهذه اللعبة."
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:806
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:869
 msgid "number of players^$min to $max"
 msgstr "$min إلى $max"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:919
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1023
 msgid "The selected game has no sides!"
 msgstr "اللعبة المختارة ليس لها جوانب!"
 
 #. TRANSLATORS: This sentence will be followed by some details of the error, most likely the "Map could not be loaded" message from create_engine.cpp
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:926
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1030
 msgid "The selected game cannot be created."
 msgstr "لا يمكن إنشاء اللعبة المحددة."
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:999
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1103
 msgid "Choose Starting Scenario"
 msgstr "اختر سيناريو البداية"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:999
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1103
 msgid "Select at which point to begin this campaign."
 msgstr "حدد عند أي نقطة تبدأ هذه الحملة."
 
@@ -8187,7 +8211,7 @@ msgid "empty"
 msgstr "فارغ"
 
 #: src/gui/dialogs/multiplayer/mp_join_game.cpp:258
-#: src/gui/dialogs/multiplayer/mp_staging.cpp:107
+#: src/gui/dialogs/multiplayer/mp_staging.cpp:105
 msgid "this game"
 msgstr "هذه اللعبة"
 
@@ -8199,11 +8223,17 @@ msgstr "الردهة"
 msgid "Game"
 msgstr "اللعبة"
 
-#: src/gui/dialogs/multiplayer/mp_staging.cpp:310
+#: src/gui/dialogs/multiplayer/mp_staging.cpp:81
+#, fuzzy
+#| msgid "Hotkey Settings"
+msgid "Hotkey(s): $bindings"
+msgstr "تفضيلتات مفتاح الاختصار"
+
+#: src/gui/dialogs/multiplayer/mp_staging.cpp:308
 msgid "Invalid Color"
 msgstr "لون غير صالح"
 
-#: src/gui/dialogs/multiplayer/mp_staging.cpp:517
+#: src/gui/dialogs/multiplayer/mp_staging.cpp:515
 msgid "Waiting for players to choose factions..."
 msgstr "في انتظار اللاعبين لاختيار الفصائل..."
 
@@ -8232,12 +8262,12 @@ msgstr "اسم غير صالح"
 msgid "Not on friends or ignore lists"
 msgstr "ليس موجودًا في قوائم الأصدقاء أو التجاهل"
 
-#: src/gui/dialogs/preferences_dialog.cpp:954
-#: src/gui/dialogs/preferences_dialog.cpp:1018
+#: src/gui/dialogs/preferences_dialog.cpp:936
+#: src/gui/dialogs/preferences_dialog.cpp:1000
 msgid "No hotkey selected"
 msgstr "لم يتم تحديد مفتاح التشغيل السريع"
 
-#: src/gui/dialogs/preferences_dialog.cpp:982
+#: src/gui/dialogs/preferences_dialog.cpp:964
 msgid ""
 "“<b>$hotkey_sequence|</b>” is in use by “<b>$old_hotkey_action|</b>”.\n"
 "Do you wish to reassign it to “<b>$new_hotkey_action|</b>”?"
@@ -8245,15 +8275,15 @@ msgstr ""
 "“<b>$hotkey_sequence|</b>” مستعمل من طرف “<b>$old_hotkey_action|</b>”.\n"
 "هل تريد منحه إلى “<b>$new_hotkey_action|</b>”?"
 
-#: src/gui/dialogs/preferences_dialog.cpp:988
+#: src/gui/dialogs/preferences_dialog.cpp:970
 msgid "Reassign Hotkey"
 msgstr "إعادة تعيين مفتاح التشغيل السريع"
 
-#: src/gui/dialogs/preferences_dialog.cpp:1005
+#: src/gui/dialogs/preferences_dialog.cpp:987
 msgid "All hotkeys have been reset to their default values."
 msgstr "تم إعادة تعيين كافة مفاتيح التشغيل السريع إلى قيمها الافتراضية."
 
-#: src/gui/dialogs/preferences_dialog.cpp:1005
+#: src/gui/dialogs/preferences_dialog.cpp:987
 msgid "Hotkeys Reset"
 msgstr "إعادة ضبط مفاتيح التشغيل السريع"
 
@@ -8340,71 +8370,71 @@ msgstr "لقطة شاشة"
 msgid "Version $version"
 msgstr "النسخة $version"
 
-#: src/gui/dialogs/title_screen.cpp:471 src/hotkey/hotkey_command.cpp:311
+#: src/gui/dialogs/title_screen.cpp:468 src/hotkey/hotkey_command.cpp:311
 msgid "Choose Test Scenario"
 msgstr "اختر سيناريو اختبار"
 
-#: src/gui/dialogs/units_dialog.cpp:240 src/hotkey/hotkey_command.cpp:103
+#: src/gui/dialogs/units_dialog.cpp:239 src/hotkey/hotkey_command.cpp:103
 msgid "Rename Unit"
 msgstr "إعادة تسمية الوحدة"
 
-#: src/gui/dialogs/units_dialog.cpp:273
+#: src/gui/dialogs/units_dialog.cpp:272
 #, fuzzy
 #| msgid "This unit is loyal and requires no upkeep."
 msgid "This unit requires no upkeep."
 msgstr "هذه الوحدة مخلصة ولا تحتاج إلى تكلفة صيانة."
 
-#: src/gui/dialogs/units_dialog.cpp:274 src/gui/dialogs/units_dialog.cpp:279
-#: src/gui/dialogs/units_dialog.cpp:284
+#: src/gui/dialogs/units_dialog.cpp:273 src/gui/dialogs/units_dialog.cpp:278
+#: src/gui/dialogs/units_dialog.cpp:283
 msgid "Do you really want to dismiss him?"
 msgstr "أتريد فعلاً صرفه؟"
 
-#: src/gui/dialogs/units_dialog.cpp:275 src/gui/dialogs/units_dialog.cpp:280
-#: src/gui/dialogs/units_dialog.cpp:285
+#: src/gui/dialogs/units_dialog.cpp:274 src/gui/dialogs/units_dialog.cpp:279
+#: src/gui/dialogs/units_dialog.cpp:284
 msgid "Do you really want to dismiss her?"
 msgstr "أتريد فعلاً صرفها؟"
 
-#: src/gui/dialogs/units_dialog.cpp:278
+#: src/gui/dialogs/units_dialog.cpp:277
 msgid "This unit is an experienced one, having advanced levels."
 msgstr "هذه الوحدة ذات خبرة ولها مستويات متقدمة."
 
-#: src/gui/dialogs/units_dialog.cpp:283
+#: src/gui/dialogs/units_dialog.cpp:282
 msgid "This unit is close to advancing a level."
 msgstr "هذه الوحدة على وشك التقدم في المستوى."
 
-#: src/gui/dialogs/units_dialog.cpp:289
+#: src/gui/dialogs/units_dialog.cpp:288
 msgid "Dismiss Unit"
 msgstr "طرد الوحدة"
 
-#: src/gui/dialogs/units_dialog.cpp:433
+#: src/gui/dialogs/units_dialog.cpp:430
 msgid "unit_variation^Default Variation"
 msgstr "الصنف القياسي"
 
-#: src/gui/dialogs/units_dialog.cpp:469
+#: src/gui/dialogs/units_dialog.cpp:466
 msgid "Create Unit"
 msgstr "إنشاء وحدة"
 
-#: src/gui/dialogs/units_dialog.cpp:540
+#: src/gui/dialogs/units_dialog.cpp:537
 msgid "Recruit Unit"
 msgstr "تجنيد وحدة"
 
-#: src/gui/dialogs/units_dialog.cpp:541 src/hotkey/hotkey_command.cpp:111
+#: src/gui/dialogs/units_dialog.cpp:538 src/hotkey/hotkey_command.cpp:111
 msgid "Recruit"
 msgstr "تجنيد"
 
-#: src/gui/dialogs/units_dialog.cpp:558 src/hotkey/hotkey_command.cpp:129
+#: src/gui/dialogs/units_dialog.cpp:555 src/hotkey/hotkey_command.cpp:129
 msgid "Unit List"
 msgstr "قائمة الوحدات"
 
-#: src/gui/dialogs/units_dialog.cpp:706
+#: src/gui/dialogs/units_dialog.cpp:699
 msgid "Recall Unit"
 msgstr "استدعاء وحدة"
 
-#: src/gui/dialogs/units_dialog.cpp:707 src/hotkey/hotkey_command.cpp:113
+#: src/gui/dialogs/units_dialog.cpp:700 src/hotkey/hotkey_command.cpp:113
 msgid "Recall"
 msgstr "استدعاء"
 
-#: src/gui/dialogs/units_dialog.cpp:837
+#: src/gui/dialogs/units_dialog.cpp:830
 msgid ""
 "This unit cannot be recalled because you will not have enough gold at this "
 "point in your plan."
@@ -8412,11 +8442,11 @@ msgstr ""
 "لا يمكن استدعاء هذه الوحدة لأنه لن يكون لديك ما يكفي من الذهب في هذه المرحلة "
 "من خطتك."
 
-#: src/gui/dialogs/units_dialog.cpp:839
+#: src/gui/dialogs/units_dialog.cpp:832
 msgid "This unit cannot be recalled because you do not have enough gold."
 msgstr "لا يمكن استدعاء هذه الوحدة لأنه ليس لديك ما يكفي من الذهب."
 
-#: src/gui/gui.cpp:130
+#: src/gui/gui.cpp:133
 msgid "No default gui defined."
 msgstr "لم يتم تعريف واجهة المستخدم الرسومية القياسية."
 
@@ -8436,7 +8466,7 @@ msgstr "مثبتة، قديمة على الخادم"
 msgid "addon_state^Published, outdated on server"
 msgstr "منشورة، قديمة على الخادم"
 
-#: src/gui/widgets/addon_list.cpp:291
+#: src/gui/widgets/addon_list.cpp:293
 msgid "Delete add-on from server"
 msgstr "حذف الإضافة من الخادم"
 
@@ -8445,15 +8475,15 @@ msgstr "حذف الإضافة من الخادم"
 msgid "NEW"
 msgstr "جديد"
 
-#: src/gui/widgets/chatbox.cpp:300
+#: src/gui/widgets/chatbox.cpp:298
 msgid "whisper to $receiver"
 msgstr "همس إلى $receiver"
 
-#: src/gui/widgets/chatbox.cpp:384
+#: src/gui/widgets/chatbox.cpp:382
 msgid "Joined <i>$name</i>"
 msgstr "انضم إلى <i>$name</i>"
 
-#: src/gui/widgets/chatbox.cpp:390
+#: src/gui/widgets/chatbox.cpp:388
 msgid ""
 "Started private message with <i>$name</i>. If you do not want to receive "
 "messages from this player, type <i>/ignore $name</i>"
@@ -8473,17 +8503,17 @@ msgstr "فتح الرابط؟"
 msgid "Copied link!"
 msgstr "تم نسخ الرابط!"
 
-#: src/gui/widgets/listbox.cpp:724 src/gui/widgets/multi_page.cpp:224
+#: src/gui/widgets/listbox.cpp:695 src/gui/widgets/multi_page.cpp:224
 msgid ""
 "‘list_data’ must have the same number of columns as the ‘list_definition’."
 msgstr ""
 "يجب أن تحتوي 'list_data' على نفس عدد الأعمدة الموجودة في 'list_definition'."
 
-#: src/gui/widgets/listbox.cpp:760 src/gui/widgets/scrollbar_panel.cpp:86
+#: src/gui/widgets/listbox.cpp:730 src/gui/widgets/scrollbar_panel.cpp:86
 msgid "No list defined."
 msgstr "لم يتم تحديد قائمة."
 
-#: src/gui/widgets/listbox.cpp:765
+#: src/gui/widgets/listbox.cpp:735
 msgid "A ‘list_definition’ should contain one row."
 msgstr "يجب أن تحتوي ‘list_definition’ على صف واحد."
 
@@ -8533,7 +8563,7 @@ msgstr "حجم غير صالح."
 msgid "No widget defined."
 msgstr "لم يتم تحديد القطعة."
 
-#: src/gui/widgets/slider.cpp:355
+#: src/gui/widgets/slider.cpp:356
 msgid "The number of value_labels and values don’t match."
 msgstr "عدد value_labels والقيم غير متطابقة."
 
@@ -8541,7 +8571,7 @@ msgstr "عدد value_labels والقيم غير متطابقة."
 msgid "No stack layers defined."
 msgstr "لم يتم تحديد طبقات المكدس."
 
-#: src/gui/widgets/styled_widget.cpp:592
+#: src/gui/widgets/styled_widget.cpp:591
 msgid "Found a widget with a helptip and without a tooltip."
 msgstr ""
 "تم العثور على عنصر واجهة مستخدم يحتوي على تلميح تعليمات وبدون تلميح أدوات."
@@ -8550,11 +8580,11 @@ msgstr ""
 msgid "No grid defined for tab container control"
 msgstr "لا توجد شبكة محددة لعنصر التحكم في حاوية علامة التبويب"
 
-#: src/gui/widgets/tree_view.cpp:288
+#: src/gui/widgets/tree_view.cpp:287
 msgid "No nodes defined for a tree view."
 msgstr "لم يتم تحديد عقد لشجرة العرض."
 
-#: src/gui/widgets/tree_view.cpp:318
+#: src/gui/widgets/tree_view.cpp:317
 msgid "[node]id ‘root’ is reserved for the implementation."
 msgstr "[node]id ‘root’ محجوز للتنفيذ."
 
@@ -8562,23 +8592,23 @@ msgstr "[node]id ‘root’ محجوز للتنفيذ."
 msgid "Unknown builder id for tree view node."
 msgstr "معرف منشئ غير معروف لعقدة العرض."
 
-#: src/gui/widgets/unit_preview_pane.cpp:136
+#: src/gui/widgets/unit_preview_pane.cpp:135
 msgid "Resistances: "
 msgstr "المقاومات: "
 
-#: src/gui/widgets/unit_preview_pane.cpp:138
+#: src/gui/widgets/unit_preview_pane.cpp:137
 msgid "(Att / Def)"
 msgstr "(ه / د)"
 
-#: src/gui/widgets/unit_preview_pane.cpp:224
+#: src/gui/widgets/unit_preview_pane.cpp:222
 msgid "Remaining: $left/$max"
 msgstr ""
 
-#: src/gui/widgets/unit_preview_pane.cpp:227
+#: src/gui/widgets/unit_preview_pane.cpp:225
 msgid "This unit can attack multiple times per turn."
 msgstr ""
 
-#: src/gui/widgets/unit_preview_pane.cpp:269
+#: src/gui/widgets/unit_preview_pane.cpp:277
 msgid "uses $num attack"
 msgid_plural "uses $num attacks"
 msgstr[0] ""
@@ -8588,53 +8618,52 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#: src/gui/widgets/unit_preview_pane.cpp:312
-#: src/gui/widgets/unit_preview_pane.cpp:343
-#: src/gui/widgets/unit_preview_pane.cpp:452
-#: src/gui/widgets/unit_preview_pane.cpp:484
+#: src/gui/widgets/unit_preview_pane.cpp:320
+#: src/gui/widgets/unit_preview_pane.cpp:351
+#: src/gui/widgets/unit_preview_pane.cpp:460
+#: src/gui/widgets/unit_preview_pane.cpp:492
 msgid "Lvl $lvl"
 msgstr "المستوى $lvl"
 
-#: src/gui/widgets/unit_preview_pane.cpp:350
-#: src/gui/widgets/unit_preview_pane.cpp:363
-#: src/gui/widgets/unit_preview_pane.cpp:491
-#: src/gui/widgets/unit_preview_pane.cpp:508
+#: src/gui/widgets/unit_preview_pane.cpp:358
+#: src/gui/widgets/unit_preview_pane.cpp:371
+#: src/gui/widgets/unit_preview_pane.cpp:499
+#: src/gui/widgets/unit_preview_pane.cpp:516
 msgid "HP: "
 msgstr "نقاط الحياة: "
 
-#: src/gui/widgets/unit_preview_pane.cpp:352
-#: src/gui/widgets/unit_preview_pane.cpp:368
-#: src/gui/widgets/unit_preview_pane.cpp:494
-#: src/gui/widgets/unit_preview_pane.cpp:496
-#: src/gui/widgets/unit_preview_pane.cpp:513
+#: src/gui/widgets/unit_preview_pane.cpp:360
+#: src/gui/widgets/unit_preview_pane.cpp:376
+#: src/gui/widgets/unit_preview_pane.cpp:502
+#: src/gui/widgets/unit_preview_pane.cpp:504
+#: src/gui/widgets/unit_preview_pane.cpp:521
 msgid "XP: "
 msgstr "نقاط الخبرة: "
 
-#: src/gui/widgets/unit_preview_pane.cpp:370
-#: src/gui/widgets/unit_preview_pane.cpp:515
+#: src/gui/widgets/unit_preview_pane.cpp:378
+#: src/gui/widgets/unit_preview_pane.cpp:523
 msgid "Experience Modifier: "
 msgstr "معدل الخبرة: "
 
-#: src/gui/widgets/unit_preview_pane.cpp:373
-#: src/gui/widgets/unit_preview_pane.cpp:518
+#: src/gui/widgets/unit_preview_pane.cpp:381
+#: src/gui/widgets/unit_preview_pane.cpp:526
 msgid "MP: "
 msgstr "نقاط الحركة: "
 
-#: src/gui/widgets/unit_preview_pane.cpp:400
-#: src/gui/widgets/unit_preview_pane.cpp:539
+#: src/gui/widgets/unit_preview_pane.cpp:408
+#: src/gui/widgets/unit_preview_pane.cpp:547
 msgid "Abilities"
 msgstr "القدرات"
 
-#: src/gui/widgets/window.cpp:288
+#: src/gui/widgets/window.cpp:287
 msgid "Linked ‘$id’ group has multiple definitions."
 msgstr "تحتوي مجموعة ‘$id’ المرتبطة على تعريفات متعددة."
 
-#: src/gui/widgets/window.cpp:887
+#: src/gui/widgets/window.cpp:884
 msgid "Click dismiss needs a ‘click_dismiss’ or ‘ok’ button."
 msgstr "للنقر فوق استبعاد تحتاج إلى زر ’click_dismiss’ أو ’موافق’."
 
-#: src/gui/widgets/window.cpp:912 src/gui/widgets/window.cpp:949
-#: src/tests/gui/test_gui2.cpp:739
+#: src/gui/widgets/window.cpp:909 src/gui/widgets/window.cpp:945
 msgid "Failed to show a dialog, which doesn’t fit on the screen."
 msgstr "فشل في إظهار مربع حوار لا يتناسب مع الشاشة."
 
@@ -8723,7 +8752,9 @@ msgid "Select/Move/Attack"
 msgstr "تحديد/نقل/هجوم"
 
 #: src/hotkey/hotkey_command.cpp:84
-msgid "Touch"
+#, fuzzy
+#| msgid "Touch"
+msgid "Touch Hex"
 msgstr "المس"
 
 #: src/hotkey/hotkey_command.cpp:85
@@ -9486,11 +9517,11 @@ msgstr "عرض وحدة تحكم Lua"
 msgid "Unrecognized Command"
 msgstr "أمر غير معروف"
 
-#: src/preferences/preferences.cpp:1301
+#: src/preferences/preferences.cpp:1299
 msgid "No known themes. Try changing from within an existing game."
 msgstr "ليست هناك أية نمط عرض معروف. حاول تبديلها انطلاقا من لعبة موجودة."
 
-#: src/preferences/preferences.cpp:1338
+#: src/preferences/preferences.cpp:1336
 msgid ""
 "The <b>$filename</b> server application provides multiplayer server "
 "functionality and is required for hosting local network games. It will "
@@ -9500,15 +9531,15 @@ msgstr ""
 "لاستضافة ألعاب الشبكة المحلية. عادةً ما يتم العثور عليه في نفس المجلد الذي "
 "توجد فيه اللعبة القابلة للتنفيذ."
 
-#: src/preferences/preferences.cpp:1342
+#: src/preferences/preferences.cpp:1340
 msgid "Find Server Application"
 msgstr "البحث عن تطبيق الخادم"
 
-#: src/preferences/preferences.cpp:1797
+#: src/preferences/preferences.cpp:1822
 msgid "[%H:%M]"
 msgstr "[%H:%M]"
 
-#: src/preferences/preferences.cpp:1799
+#: src/preferences/preferences.cpp:1824
 msgid "[%I:%M %p]"
 msgstr "[%I:%M %p]"
 
@@ -9539,6 +9570,26 @@ msgstr "في القسم ‘[$section|]’ لم يتم تعيين المفتاح 
 #: src/wml_exception.cpp:104
 msgid "In section ‘[$section|]’ the mandatory subtag ‘[$tag|]’ is missing."
 msgstr "في القسم ‘[$section|]’ العلامة الفرعية الإلزامية ‘[$tag|]’ مفقودة."
+
+#~ msgid "Turn dialog"
+#~ msgstr "رسالة بداية الدور"
+
+#~ msgid "<span color='#00dcff' size='small'>please enter a filename</span>"
+#~ msgstr "<span color='#00dcff' size='small'>يُرجى إدخال اسم الملف</span>"
+
+#~ msgid ""
+#~ "<span color='red'><span face='DejaVuSans'>✘</span> <span "
+#~ "size='small'>wrong extension, use $extensions</span></span>"
+#~ msgstr ""
+#~ "<span color='red'><span face='DejaVuSans'>✘</span> <span "
+#~ "size='small'>ملحق خاطئ، استخدم $extensions</span></span>"
+
+#~ msgid ""
+#~ "<span color='red'><span face='DejaVuSans'>✘</span> <span "
+#~ "size='small'>whitespace is not allowed in filename</span></span>"
+#~ msgstr ""
+#~ "<span color='red'><span face='DejaVuSans'>✘</span> <span "
+#~ "size='small'>المسافة البيضاء غير مسموح بها في اسم الملف</span></span>"
 
 #~ msgid "Battle For Wesnoth Help"
 #~ msgstr "المساعدة في ملحمة ويسنوث"
@@ -10217,9 +10268,6 @@ msgstr "في القسم ‘[$section|]’ العلامة الفرعية الإل
 #~ msgid "Purge Cache"
 #~ msgstr "تحديث مخبإ الصورة"
 
-#~ msgid "Hotkey Settings"
-#~ msgstr "تفضيلتات مفتاح الاختصار"
-
 #, fuzzy
 #~| msgid "Prefs section^Sound"
 #~ msgid "Prefs section^Title Screen"
@@ -10386,9 +10434,6 @@ msgstr "في القسم ‘[$section|]’ العلامة الفرعية الإل
 #~ msgid "Stop"
 #~ msgstr "وقوف"
 
-#~ msgid "Reset"
-#~ msgstr "إعادة التنضيد"
-
 #, fuzzy
 #~ msgid "Saved preference:"
 #~ msgstr "السمة المفضلة المحفوظة:"
@@ -10430,10 +10475,6 @@ msgstr "في القسم ‘[$section|]’ العلامة الفرعية الإل
 #, fuzzy
 #~ msgid "Select unit:"
 #~ msgstr "انتقاء الكل"
-
-#, fuzzy
-#~ msgid "Generate name"
-#~ msgstr "إنشاء خريطة جديدة"
 
 #~ msgid "Mushroom Grove Lit"
 #~ msgstr "بُسْتان الفُطر منوَّر"

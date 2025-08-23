@@ -44,8 +44,7 @@ public:
 	saved_game& operator=(const saved_game& other) = delete;
 	saved_game& operator=(saved_game&& other);
 	void swap(saved_game& other);
-	/** destroys the passed config. */
-	void set_data(config& cfg);
+	void set_data(config&& cfg);
 	void clear();
 	/** writes the config information into a stream (file) */
 	void write_config(config_writer& out) const;
@@ -79,7 +78,7 @@ public:
 	 */
 	void expand_mp_events();
 	/** helper for expand_mp_events(); */
-	void load_non_scenario(const std::string& type, const std::string& id, size_t pos);
+	void load_non_scenario(const std::string& type, const std::string& id, std::size_t pos);
 	/**
 	 * adds values of [option]s into [carryover_sides_start][variables] so that they are applied in the next level.
 	 * Note that since [variabels] are persistent we only use this once at the beginning

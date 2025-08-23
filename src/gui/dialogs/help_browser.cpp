@@ -21,7 +21,6 @@
 #include "gui/widgets/label.hpp"
 #include "gui/widgets/rich_label.hpp"
 #include "gui/widgets/scroll_label.hpp"
-#include "gui/widgets/scrollbar_panel.hpp"
 #include "gui/widgets/text_box.hpp"
 #include "gui/widgets/toggle_button.hpp"
 #include "gui/widgets/tree_view.hpp"
@@ -42,7 +41,7 @@ namespace gui2::dialogs
 namespace
 {
 	int win_w = 0;
-	int tree_w = 0;
+	int rl_init_w = 0;
 }
 
 REGISTER_DIALOG(help_browser)
@@ -71,33 +70,45 @@ void help_browser::pre_show()
 	button& next_button = find_widget<button>("next");
 
 	rich_label& topic_text = find_widget<rich_label>("topic_text");
+	panel& topic_panel = find_widget<panel>("topic_panel");
 
 	next_button.set_active(false);
 	back_button.set_active(false);
 	connect_signal_mouse_left_click(back_button, std::bind(&help_browser::on_history_navigate, this, true));
 	connect_signal_mouse_left_click(next_button, std::bind(&help_browser::on_history_navigate, this, false));
 
+	connect_signal<event::BACK_BUTTON_CLICK>([this](auto&&...) {
+		on_history_navigate(true);
+	}, event::dispatcher::front_pre_child);
+	connect_signal<event::FORWARD_BUTTON_CLICK>([this](auto&&...) {
+		on_history_navigate(false);
+	}, event::dispatcher::front_pre_child);
+
 	toggle_button& contents = find_widget<toggle_button>("contents");
 
 	contents.set_value(true);
-	topic_tree.set_visible(true);
+	topic_panel.set_visible(true);
 	connect_signal_mouse_left_click(contents, [&](auto&&...) {
-		auto parent = topic_text.get_window();
+		auto parent = topic_panel.get_window();
 		// Cache the initial values, get_best_size() keeps changing
+		// initial width of the window
 		if ((parent != nullptr) && (win_w == 0)) {
 			win_w = parent->get_best_size().x;
 		}
-		if (tree_w == 0) {
-			tree_w = topic_tree.get_best_size().x;
+
+		// initial width of the rich label
+		if(rl_init_w == 0) {
+			rl_init_w = topic_text.get_width();
+			PLAIN_LOG << "RL init width: " << rl_init_w;
 		}
 
 		// Set RL's width and reshow
-		bool is_contents_visible = (topic_tree.get_visible() == widget::visibility::visible);
-		if (topic_text.get_window()) {
-			topic_text.set_width(win_w - (is_contents_visible ? 0 : tree_w) - 20 /* Padding */);
-			show_topic(history_.at(history_pos_), false);
+		bool is_contents_visible = (topic_panel.get_visible() == widget::visibility::visible);
+		if (parent) {
+			topic_text.set_width(is_contents_visible ? win_w : rl_init_w);
+			show_topic(history_.at(history_pos_), false, true);
 		}
-		topic_tree.set_visible(!is_contents_visible);
+		topic_panel.set_visible(!is_contents_visible);
 		invalidate_layout();
 	});
 
@@ -105,7 +116,7 @@ void help_browser::pre_show()
 	add_to_keyboard_chain(&filter);
 	filter.on_modified([this](const auto& box) { update_list(box.text()); });
 
-	topic_text.register_link_callback(std::bind(&help_browser::show_topic, this, std::placeholders::_1, true));
+	topic_text.register_link_callback(std::bind(&help_browser::show_topic, this, std::placeholders::_1, true, false));
 
 	connect_signal_notify_modified(topic_tree, std::bind(&help_browser::on_topic_select, this));
 
@@ -113,8 +124,13 @@ void help_browser::pre_show()
 
 	add_topics_for_section(toplevel_, topic_tree.get_root_node());
 
-	tree_view_node& initial_node = topic_tree.find_widget<tree_view_node>(initial_topic_);
-	initial_node.select_node(true);
+	tree_view_node* initial_node = topic_tree.find_widget<tree_view_node>(initial_topic_, false, false);
+	if(initial_node) {
+		initial_node->select_node(true);
+	} else {
+		ERR_HP << "Help browser tried to show topic with id '" << initial_topic_
+		       << "' but that topic could not be found." << std::endl;
+	}
 
 	on_topic_select();
 }
@@ -148,6 +164,10 @@ bool help_browser::add_topics_for_section(const help::section& parent_section, t
 	}
 
 	for(const help::topic& topic : parent_section.topics) {
+		if (topic.id[0] == '.') {
+			continue;
+		}
+
 		if ((match(topic.id) || match(topic.title)) && (topic.id.compare(0, 2, "..") != 0)) {
 			add_topic(topic.id, topic.title, false, parent_node);
 			topics_added = true;
@@ -172,8 +192,15 @@ tree_view_node& help_browser::add_topic(const std::string& topic_id, const std::
 	return new_node;
 }
 
-void help_browser::show_topic(std::string topic_id, bool add_to_history)
+void help_browser::show_topic(std::string topic_id, bool add_to_history, bool reshow)
 {
+	if(reshow) {
+		const help::topic* topic = help::find_topic(toplevel_, topic_id);
+		find_widget<rich_label>("topic_text").set_dom(topic->text.parsed_text());
+		invalidate_layout();
+		return;
+	}
+
 	if(topic_id.empty() || topic_id == current_topic_) {
 		return;
 	} else {
@@ -193,7 +220,7 @@ void help_browser::show_topic(std::string topic_id, bool add_to_history)
 		const help::topic* topic = help::find_topic(toplevel_, topic_id);
 		if(!topic) {
 			ERR_HP << "Help browser tried to show topic with id '" << topic_id
-				  << "' but that topic could not be found." << std::endl;
+			       << "' but that topic could not be found." << std::endl;
 			return;
 		}
 
@@ -207,7 +234,7 @@ void help_browser::show_topic(std::string topic_id, bool add_to_history)
 		}
 		tree_view& topic_tree = find_widget<tree_view>("topic_tree");
 		tree_view_node& selected_node = topic_tree.find_widget<tree_view_node>(topic_id_temp);
-		selected_node.select_node(true);
+		selected_node.select_node(true, false);
 
 		find_widget<label>("topic_title").set_label(topic->title);
 		find_widget<rich_label>("topic_text").set_dom(topic->text.parsed_text());
@@ -215,7 +242,7 @@ void help_browser::show_topic(std::string topic_id, bool add_to_history)
 		invalidate_layout();
 	}
 
-	if (add_to_history) {
+	if(add_to_history) {
 		// history pos is 0 initially, so it's already at first entry
 		// no need to increment first time
 		if (!history_.empty()) {
@@ -248,9 +275,17 @@ void help_browser::on_topic_select()
 void help_browser::on_history_navigate(bool backwards)
 {
 	if(backwards) {
-		history_pos_--;
+		if (history_pos_ > 0) {
+			history_pos_--;
+		} else {
+			return;
+		}
 	} else {
-		history_pos_++;
+		if (history_pos_ < history_.size() - 1) {
+			history_pos_++;
+		} else {
+			return;
+		}
 	}
 	find_widget<button>("back").set_active(!history_.empty() && history_pos_ != 0);
 	find_widget<button>("next").set_active(!history_.empty() && history_pos_ != (history_.size()-1));

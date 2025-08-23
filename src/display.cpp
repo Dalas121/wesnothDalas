@@ -157,7 +157,7 @@ display::display(const display_context* dc,
 	, fake_unit_man_(new fake_unit_manager(*this))
 	, builder_(new terrain_builder(level, (dc_ ? &context().map() : nullptr), theme_.border().tile_image, theme_.border().show_border))
 	, minimap_renderer_(nullptr)
-	, minimap_location_(sdl::empty_rect)
+	, minimap_location_()
 	, redraw_background_(false)
 	, invalidateAll_(true)
 	, diagnostic_label_(0)
@@ -275,15 +275,13 @@ void display::reinit_flags_for_team(const team& t)
 	// Must recolor flag image
 	animated<image::locator> temp_anim;
 
-	std::vector<std::string> items = utils::square_parenthetical_split(flag);
-
-	for(const std::string& item : items) {
-		const std::vector<std::string>& sub_items = utils::split(item, ':');
-		std::string str = item;
+	for(const std::string& item : utils::square_parenthetical_split(flag)) {
+		const std::vector<std::string> sub_items = utils::split(item, ':');
+		std::string img_path = item;
 		auto time = 100ms;
 
 		if(sub_items.size() > 1) {
-			str = sub_items.front();
+			img_path = sub_items.front();
 			try {
 				time = std::max(1ms, std::chrono::milliseconds{std::stoi(sub_items.back())});
 			} catch(const std::invalid_argument&) {
@@ -291,9 +289,7 @@ void display::reinit_flags_for_team(const team& t)
 			}
 		}
 
-		std::stringstream temp;
-		temp << str << "~RC(" << old_rgb << ">"<< new_rgb << ")";
-		image::locator flag_image(temp.str());
+		image::locator flag_image(img_path, formatter{} << "~RC(" << old_rgb << ">" << new_rgb << ")");
 		temp_anim.add_frame(time, flag_image);
 	}
 
@@ -520,7 +516,7 @@ rect display::map_outside_area() const
 	}
 }
 
-bool display::outside_area(const SDL_Rect& area, const int x, const int y)
+bool display::outside_area(const rect& area, const int x, const int y)
 {
 	const int x_thresh = hex_size();
 	const int y_thresh = hex_size();
@@ -732,7 +728,7 @@ surface display::screenshot(bool map_screenshot)
 	viewport_origin_ = {0, 0};
 
 	// Reroute render output to a separate texture until the end of scope.
-	SDL_Rect area = max_map_area();
+	rect area = max_map_area();
 	if (area.w > 1 << 16 || area.h > 1 << 16) {
 		WRN_DP << "Excessively large map screenshot area";
 	}
@@ -952,11 +948,9 @@ std::vector<texture> display::get_fog_shroud_images(const map_location& loc, ima
 
 	for(int v = FOG; v != CLEAR; ++v) {
 		// Find somewhere that doesn't have overlap to use as a starting point
-		int start;
-		for(start = 0; start != 6; ++start) {
-			if(tiles[start] != v) {
-				break;
-			}
+		int start{0};
+		while(start < 6 && tiles[start] == v) {
+			++start;
 		}
 
 		if(start == 6) {
@@ -3003,7 +2997,7 @@ bool display::propagate_invalidation(const std::set<map_location>& locs)
 			// propagate invalidation
 			// 'i' is already in, but I suspect that splitting the range is bad
 			// especially because locs are often adjacents
-			size_t previous_size = invalidated_.size();
+			std::size_t previous_size = invalidated_.size();
 			invalidated_.insert(locs.begin(), locs.end());
 			result = previous_size < invalidated_.size();
 		}
@@ -3011,12 +3005,12 @@ bool display::propagate_invalidation(const std::set<map_location>& locs)
 	return result;
 }
 
-bool display::invalidate_visible_locations_in_rect(const SDL_Rect& rect)
+bool display::invalidate_visible_locations_in_rect(const rect& rect)
 {
 	return invalidate_locations_in_rect(map_area().intersect(rect));
 }
 
-bool display::invalidate_locations_in_rect(const SDL_Rect& rect)
+bool display::invalidate_locations_in_rect(const rect& rect)
 {
 	if(invalidateAll_ && !map_screenshot_)
 		return false;

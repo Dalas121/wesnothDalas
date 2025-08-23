@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 1.3-dev\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2025-05-20 17:31-0500\n"
+"POT-Creation-Date: 2025-08-19 10:14-0500\n"
 "PO-Revision-Date: 2008-09-24 02:09+0100\n"
 "Last-Translator: Mavorte <mavorte1@yahoo.es>\n"
 "Language-Team: none\n"
@@ -75,7 +75,7 @@ msgstr ""
 #. [trait]: id=loyal_dummy
 #. [trait]: id=loyal
 #: data/campaigns/The_Deceivers_Gambit/scenarios/00_Graduation.cfg:112
-#: data/campaigns/The_Deceivers_Gambit/scenarios/11_Clan_Blackcrest.cfg:737
+#: data/campaigns/The_Deceivers_Gambit/scenarios/11_Clan_Blackcrest.cfg:738
 #: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:19
 #: data/core/macros/traits.cfg:12
 msgid "loyal"
@@ -83,7 +83,7 @@ msgstr "lleal"
 
 #. [trait]: id=loyal_dummy
 #: data/campaigns/The_Deceivers_Gambit/scenarios/00_Graduation.cfg:113
-#: data/campaigns/The_Deceivers_Gambit/scenarios/11_Clan_Blackcrest.cfg:738
+#: data/campaigns/The_Deceivers_Gambit/scenarios/11_Clan_Blackcrest.cfg:739
 #: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:20
 #, fuzzy
 #| msgid "Zero upkeep"
@@ -130,130 +130,6 @@ msgstr ""
 "Les unitats sabudes requerixen un 20% menys d'experiència de lo normal per a "
 "pujar de nivell."
 
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:50
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:57
-msgid "Methor"
-msgstr ""
-
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:64
-msgid "Deoran"
-msgstr ""
-
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:74
-msgid "Arand"
-msgstr ""
-
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:83
-msgid "Asheviere"
-msgstr ""
-
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:92
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:101
-msgid "Eldred"
-msgstr ""
-
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:111
-msgid "Lionel"
-msgstr ""
-
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:125
-msgid "Lord Maddock"
-msgstr ""
-
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:133
-msgid "Colonel Dommel"
-msgstr ""
-
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:142
-msgid "Kestrel"
-msgstr ""
-
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:150
-msgid "Omaranth"
-msgstr ""
-
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:174
-msgid "Iliah-Malal"
-msgstr ""
-
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:210
-msgid "Garard II"
-msgstr ""
-
-#. [message]: speaker=Delfador
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:515
-msgid "No, it can’t end yet! I have so much left to do..."
-msgstr ""
-
-#. [message]: speaker=Delfador
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:526
-msgid "No! Magic, why have you failed me..."
-msgstr ""
-
-#. [message]: speaker=Delfador
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:537
-msgid "If only I had been a little wiser..."
-msgstr ""
-
-#. [message]: speaker=Methor
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:549
-msgid "War, pain, death... I tried so hard to change things..."
-msgstr ""
-
-#. [message]: speaker=Deoran
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:561
-msgid "I have failed my kingdom and my duty..."
-msgstr ""
-
-#. [message]: speaker=Garard
-#. reference to Shakespeare's Richard III
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:573
-msgid "A horse! A horse! My kingdom for a horse..."
-msgstr ""
-
-#. [message]: speaker=Asheviere
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:583
-msgid "It’s finally over..."
-msgstr ""
-
-#. [message]: speaker=Lionel
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:593
-msgid "Blasted orcs..."
-msgstr ""
-
-#. [message]: speaker=Kalenz
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:605
-msgid "Nobody can cheat death forever..."
-msgstr ""
-
-#. [message]: speaker=Chantal
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:616
-msgid "Deoran, I never had a chance to tell you—"
-msgstr ""
-
-#. [message]: speaker=Lynyan
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:631
-msgid "Boss, I ain’t feelin’ too hot..."
-msgstr ""
-
-#. [message]: speaker=Lynyan
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:636
-msgid "I ain’t feelin’ too hot..."
-msgstr ""
-
-#. [message]: speaker=Barin
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:647
-msgid "I shoulda never left my swamp..."
-msgstr ""
-
-#. [message]: speaker=Kaylan
-#. since he reappears in HttT's blackwater port, he can't die here.
-#: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:657
-msgid ""
-"I am grievously injured; I can be of no further aid in your quest. Fight on "
-"without me, Delfador!"
-msgstr ""
-
 #. [resistance]: id=garak_steadfast
 #. [resistance]: id=steadfast
 #: data/campaigns/Under_the_Burning_Suns/scenarios/03_Stirring_in_the_Night.cfg:703
@@ -273,26 +149,26 @@ msgstr "ferm"
 #. [illuminates]: id=illumination
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:346
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:347
-#: data/core/macros/abilities.cfg:238
+#: data/core/macros/abilities.cfg:240
 #, fuzzy
 msgid "female^illuminates"
 msgstr "allumena"
 
 #. [heals]: id=healing
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:682
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:684
 #: data/core/macros/abilities.cfg:9
 msgid "heals +4"
 msgstr "sana +4"
 
 #. [heals]: id=healing
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:683
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:685
 #: data/core/macros/abilities.cfg:10
 #, fuzzy
 msgid "female^heals +4"
 msgstr "sana"
 
 #. [heals]: id=healing
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:684
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:686
 #, fuzzy
 msgid ""
 "Allows the unit to heal adjacent allied units at the beginning of our turn.\n"
@@ -314,29 +190,29 @@ msgstr ""
 
 #. [heals]: id=healing
 #. [heals]
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:688
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:727
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:757
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:690
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:729
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:759
 #, fuzzy
 #| msgid " This unit is capable of basic healing."
 msgid "This unit is capable of basic healing and slowing dehydration."
 msgstr " Esta unitat és capaç de realisar sanament bàsic."
 
 #. [heals]: id=healing
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:706
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:708
 #: data/core/macros/abilities.cfg:35
 msgid "heals +8"
 msgstr "sana +8"
 
 #. [heals]: id=healing
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:707
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:709
 #: data/core/macros/abilities.cfg:36
 #, fuzzy
 msgid "female^heals +8"
 msgstr "sana"
 
 #. [heals]: id=healing
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:708
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:710
 #, fuzzy
 #| msgid ""
 #| "Heals +8:\n"
@@ -367,20 +243,20 @@ msgstr ""
 "de buscar l'ajuda en una aldea o d'una unitat ab l'habilitat de cura."
 
 #. [heals]: id=healing
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:736
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:738
 #, fuzzy
 #| msgid "heals +4"
 msgid "heals +12"
 msgstr "sana +4"
 
 #. [heals]: id=healing
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:737
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:739
 #, fuzzy
 msgid "female^heals +12"
 msgstr "sana"
 
 #. [heals]: id=healing
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:738
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:740
 #, fuzzy
 #| msgid ""
 #| "Heals +8:\n"
@@ -411,7 +287,7 @@ msgstr ""
 "de buscar l'ajuda en una aldea o d'una unitat ab l'habilitat de cura."
 
 #. [heals]
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:763
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:765
 #, fuzzy
 #| msgid ""
 #| " This unit is capable of healing those around it, and curing them of "
@@ -428,7 +304,7 @@ msgstr ""
 #. [teleport]: id=teleport
 #: data/campaigns/World_Conquest/resources/data/artifacts.cfg:699
 #: data/campaigns/World_Conquest/resources/data/training.cfg:786
-#: data/core/macros/abilities.cfg:253
+#: data/core/macros/abilities.cfg:255
 msgid "teleport"
 msgstr "teletransport"
 
@@ -457,20 +333,20 @@ msgstr "punyalada per l'esquena"
 #. [chance]
 #. [dummy]: id=feeding
 #: data/campaigns/World_Conquest/resources/data/training.cfg:501
-#: data/core/macros/abilities.cfg:408
+#: data/core/macros/abilities.cfg:409
 msgid "feeding"
 msgstr "alimentació"
 
 #. [chance]
 #. [leadership]: id=leadership
 #: data/campaigns/World_Conquest/resources/data/training.cfg:528
-#: data/core/macros/abilities.cfg:199
+#: data/core/macros/abilities.cfg:201
 msgid "leadership"
 msgstr "liderage"
 
 #. [hides]: id=ambush
 #: data/campaigns/World_Conquest/resources/strings/mainline.cfg:12
-#: data/core/macros/abilities.cfg:285
+#: data/core/macros/abilities.cfg:287
 msgid "ambush"
 msgstr "emboscada"
 
@@ -484,13 +360,13 @@ msgstr "Cova"
 
 #. [hides]: id=concealment
 #: data/campaigns/World_Conquest/resources/strings/mainline.cfg:21
-#: data/core/macros/abilities.cfg:348
+#: data/core/macros/abilities.cfg:349
 msgid "concealment"
 msgstr "ocultació"
 
 #. [drains]: id=drains
 #: data/campaigns/World_Conquest/resources/strings/mainline.cfg:24
-#: data/core/macros/weapon_specials.cfg:207
+#: data/core/macros/weapon_specials.cfg:209
 msgid "drains"
 msgstr "drena"
 
@@ -522,13 +398,13 @@ msgstr "Boscage de Bolets"
 
 #. [hides]: id=nightstalk
 #: data/campaigns/World_Conquest/resources/strings/mainline.cfg:45
-#: data/core/macros/abilities.cfg:328 data/core/macros/abilities.cfg:329
+#: data/core/macros/abilities.cfg:329 data/core/macros/abilities.cfg:330
 msgid "nightstalk"
 msgstr "aguait nocturn"
 
 #. [poison]: id=poison
 #: data/campaigns/World_Conquest/resources/strings/mainline.cfg:51
-#: data/core/macros/weapon_specials.cfg:229
+#: data/core/macros/weapon_specials.cfg:231
 msgid "poison"
 msgstr "verí"
 
@@ -538,7 +414,7 @@ msgstr "Arena"
 
 #. [skirmisher]: id=skirmisher
 #: data/campaigns/World_Conquest/resources/strings/mainline.cfg:60
-#: data/core/macros/abilities.cfg:219
+#: data/core/macros/abilities.cfg:221
 msgid "skirmisher"
 msgstr "fustigador"
 
@@ -4723,14 +4599,24 @@ msgstr ""
 "mentres se li ataca, esta unitat pot apunyalar a l'objectiu per la esquena, "
 "infligint-li aixina el doble de dany, pel fet d'atacar per darrere."
 
+#. [chance_to_hit]: id=diversion
+#: data/core/macros/abilities.cfg:149
+msgid "accuracy:"
+msgstr ""
+
+#. [chance_to_hit]: id=diversion
+#: data/core/macros/abilities.cfg:150
+msgid "Due to the diversion, the accuracy of this attack is reduced by 20%."
+msgstr ""
+
 #. [leadership]: id=leadership
-#: data/core/macros/abilities.cfg:200
+#: data/core/macros/abilities.cfg:202
 #, fuzzy
 msgid "female^leadership"
 msgstr "liderage"
 
 #. [leadership]: id=leadership
-#: data/core/macros/abilities.cfg:201
+#: data/core/macros/abilities.cfg:203
 msgid ""
 "This unit can lead other troops in battle.\n"
 "\n"
@@ -4739,13 +4625,13 @@ msgid ""
 msgstr ""
 
 #. [skirmisher]: id=skirmisher
-#: data/core/macros/abilities.cfg:220
+#: data/core/macros/abilities.cfg:222
 #, fuzzy
 msgid "female^skirmisher"
 msgstr "fustigador"
 
 #. [skirmisher]: id=skirmisher
-#: data/core/macros/abilities.cfg:221
+#: data/core/macros/abilities.cfg:223
 #, fuzzy
 #| msgid ""
 #| "Skirmisher:\n"
@@ -4760,12 +4646,12 @@ msgstr ""
 "les zones de control."
 
 #. [illuminates]: id=illumination
-#: data/core/macros/abilities.cfg:237
+#: data/core/macros/abilities.cfg:239
 msgid "illuminates"
 msgstr "allumena"
 
 #. [illuminates]: id=illumination
-#: data/core/macros/abilities.cfg:239
+#: data/core/macros/abilities.cfg:241
 #, fuzzy
 #| msgid ""
 #| "Illuminates:\n"
@@ -4789,13 +4675,13 @@ msgstr ""
 "nit, i com ho faria de dia quan és de vespre."
 
 #. [teleport]: id=teleport
-#: data/core/macros/abilities.cfg:254
+#: data/core/macros/abilities.cfg:256
 #, fuzzy
 msgid "female^teleport"
 msgstr "sabuda"
 
 #. [teleport]: id=teleport
-#: data/core/macros/abilities.cfg:255
+#: data/core/macros/abilities.cfg:257
 #, fuzzy
 #| msgid ""
 #| "Teleport:\n"
@@ -4810,13 +4696,13 @@ msgstr ""
 "instantàneament en u dels seus moviments."
 
 #. [hides]: id=ambush
-#: data/core/macros/abilities.cfg:286
+#: data/core/macros/abilities.cfg:288
 #, fuzzy
 msgid "female^ambush"
 msgstr "lleal"
 
 #. [hides]: id=ambush
-#: data/core/macros/abilities.cfg:287
+#: data/core/macros/abilities.cfg:289
 #, fuzzy
 #| msgid ""
 #| "Ambush:\n"
@@ -4840,18 +4726,18 @@ msgstr ""
 "que descubra ad esta unitat, perd inmediatament tot el seu moviment restant."
 
 #. [hides]: id=burrow
-#: data/core/macros/abilities.cfg:306
+#: data/core/macros/abilities.cfg:308
 msgid "burrow"
 msgstr ""
 
 #. [hides]: id=burrow
-#: data/core/macros/abilities.cfg:307
+#: data/core/macros/abilities.cfg:309
 #, fuzzy
 msgid "female^burrow"
 msgstr "lleal"
 
 #. [hides]: id=burrow
-#: data/core/macros/abilities.cfg:308
+#: data/core/macros/abilities.cfg:310
 #, fuzzy
 #| msgid ""
 #| "Ambush:\n"
@@ -4876,7 +4762,7 @@ msgstr ""
 "que descubra ad esta unitat, perd inmediatament tot el seu moviment restant."
 
 #. [hides]: id=nightstalk
-#: data/core/macros/abilities.cfg:330
+#: data/core/macros/abilities.cfg:331
 #, fuzzy
 #| msgid ""
 #| "Nightstalk:\n"
@@ -4900,13 +4786,13 @@ msgstr ""
 "descubra ad esta unitat, perd inmediatament tot el seu moviment restant."
 
 #. [hides]: id=concealment
-#: data/core/macros/abilities.cfg:349
+#: data/core/macros/abilities.cfg:350
 #, fuzzy
 msgid "female^concealment"
 msgstr "ocultació"
 
 #. [hides]: id=concealment
-#: data/core/macros/abilities.cfg:350
+#: data/core/macros/abilities.cfg:351
 #, fuzzy
 #| msgid ""
 #| "Concealment:\n"
@@ -4935,18 +4821,18 @@ msgstr ""
 "que descubra ad esta unitat, perd inmediatament tot el seu moviment restant."
 
 #. [hides]: id=submerge
-#: data/core/macros/abilities.cfg:368
+#: data/core/macros/abilities.cfg:369
 msgid "submerge"
 msgstr "sumergir"
 
 #. [hides]: id=submerge
-#: data/core/macros/abilities.cfg:369
+#: data/core/macros/abilities.cfg:370
 #, fuzzy
 msgid "female^submerge"
 msgstr "forta"
 
 #. [hides]: id=submerge
-#: data/core/macros/abilities.cfg:370
+#: data/core/macros/abilities.cfg:371
 #, fuzzy
 #| msgid ""
 #| "Submerge:\n"
@@ -4972,18 +4858,18 @@ msgstr ""
 "moviment restant."
 
 #. [hides]: id=swamp_lurk
-#: data/core/macros/abilities.cfg:388
+#: data/core/macros/abilities.cfg:389
 msgid "swamp lurk"
 msgstr ""
 
 #. [hides]: id=swamp_lurk
-#: data/core/macros/abilities.cfg:389
+#: data/core/macros/abilities.cfg:390
 #, fuzzy
 msgid "female^swamp lurk"
 msgstr "no morta"
 
 #. [hides]: id=swamp_lurk
-#: data/core/macros/abilities.cfg:390
+#: data/core/macros/abilities.cfg:391
 #, fuzzy
 #| msgid ""
 #| "Ambush:\n"
@@ -5007,13 +4893,13 @@ msgstr ""
 "que descubra ad esta unitat, perd inmediatament tot el seu moviment restant."
 
 #. [dummy]: id=feeding
-#: data/core/macros/abilities.cfg:409
+#: data/core/macros/abilities.cfg:410
 #, fuzzy
 msgid "female^feeding"
 msgstr "intrèpida"
 
 #. [dummy]: id=feeding
-#: data/core/macros/abilities.cfg:410
+#: data/core/macros/abilities.cfg:411
 #, fuzzy
 #| msgid ""
 #| " This unit gains 1 hitpoint added to its maximum whenever it kills a "
@@ -6239,32 +6125,68 @@ msgstr ""
 "Quan s'utilisa ofensivament, est atac sempre té un 60% de possibilitats de "
 "colpejar."
 
-#. [disable]: id=naval_ram
+#. [dummy]: id=naval
 #: data/core/macros/weapon_specials.cfg:129
-msgid "naval ram"
+msgid "naval"
 msgstr ""
 
-#. [disable]: id=naval_ram
+#. [dummy]: id=naval
 #: data/core/macros/weapon_specials.cfg:130
-msgid "This attack can only be used against units in water terrain."
+msgid ""
+"This attack can only be used when both the attacker and the defender are in "
+"water or swamp."
 msgstr ""
 
-#. [disable]: id=naval_ram
-#: data/core/macros/weapon_specials.cfg:138
+#. [dummy]: id=naval
+#: data/core/macros/weapon_specials.cfg:131
 msgid ""
-"This unit has an attack that can only be used against units in watery "
-"terrain."
+"This unit has an attack that can only be used when both the attacker and the "
+"defender are in water or swamp."
 msgstr ""
+
+#. [chance_to_hit]: id=honed
+#: data/core/macros/weapon_specials.cfg:158
+msgid "honed"
+msgstr ""
+
+#. [chance_to_hit]: id=honed
+#: data/core/macros/weapon_specials.cfg:159
+msgid "This attack is 10% more accurate than other attacks."
+msgstr ""
+
+#. [chance_to_hit]: id=honed
+#: data/core/macros/weapon_specials.cfg:160
+msgid ""
+"This unit’s “honed” attack is slightly more accurate than other attacks."
+msgstr ""
+
+#. [swarm]: id=swarm
+#: data/core/macros/weapon_specials.cfg:171
+msgid "swarm"
+msgstr "eixam"
+
+#. [swarm]: id=swarm
+#: data/core/macros/weapon_specials.cfg:172
+#, fuzzy
+msgid ""
+"The number of strikes of this attack decreases when the unit is wounded. The "
+"number of strikes is proportional to the percentage of its of maximum HP the "
+"unit has. For example a unit with 3/4 of its maximum HP will get 3/4 of the "
+"number of strikes."
+msgstr ""
+"Eixam:\n"
+"El número de colps d'est atac disminuïx quan l'unitat està ferida. El número "
+"de colps és proporcional als punts de vida de l'unitat respecte als punts de "
+"vida màxims que pot tindre. Per eixemple, una unitat ab 3/4 parts dels seus "
+"punts de vida màxims tindrà 3/4 dels seus colps."
 
 #. [damage]: id=charge
-#: data/core/macros/weapon_specials.cfg:142
-#: data/core/macros/weapon_specials.cfg:180
+#: data/core/macros/weapon_specials.cfg:182
 msgid "charge"
 msgstr "càrrega"
 
 #. [damage]: id=charge
-#: data/core/macros/weapon_specials.cfg:143
-#: data/core/macros/weapon_specials.cfg:181
+#: data/core/macros/weapon_specials.cfg:183
 #, fuzzy
 #| msgid ""
 #| "Charge:\n"
@@ -6279,61 +6201,25 @@ msgstr ""
 "Quan s'usa ofensivament, est atac causa el doble de dany a l'enemic. També "
 "fa que esta unitat reba el doble de dany dels contraatacs enemics."
 
-#. [chance_to_hit]: id=honed
-#: data/core/macros/weapon_specials.cfg:156
-msgid "honed"
-msgstr ""
-
-#. [chance_to_hit]: id=honed
-#: data/core/macros/weapon_specials.cfg:157
-msgid "This attack is 10% more accurate than other attacks."
-msgstr ""
-
-#. [chance_to_hit]: id=honed
-#: data/core/macros/weapon_specials.cfg:158
-msgid ""
-"This unit’s “honed” attack is slightly more accurate than other attacks."
-msgstr ""
-
-#. [swarm]: id=swarm
-#: data/core/macros/weapon_specials.cfg:169
-msgid "swarm"
-msgstr "eixam"
-
-#. [swarm]: id=swarm
-#: data/core/macros/weapon_specials.cfg:170
-#, fuzzy
-msgid ""
-"The number of strikes of this attack decreases when the unit is wounded. The "
-"number of strikes is proportional to the percentage of its of maximum HP the "
-"unit has. For example a unit with 3/4 of its maximum HP will get 3/4 of the "
-"number of strikes."
-msgstr ""
-"Eixam:\n"
-"El número de colps d'est atac disminuïx quan l'unitat està ferida. El número "
-"de colps és proporcional als punts de vida de l'unitat respecte als punts de "
-"vida màxims que pot tindre. Per eixemple, una unitat ab 3/4 parts dels seus "
-"punts de vida màxims tindrà 3/4 dels seus colps."
-
 #. [damage]: id=guard
-#: data/core/macros/weapon_specials.cfg:194
+#: data/core/macros/weapon_specials.cfg:196
 msgid "guard"
 msgstr ""
 
 #. [damage]: id=guard
-#: data/core/macros/weapon_specials.cfg:195
+#: data/core/macros/weapon_specials.cfg:197
 msgid "This attack blocks half of the damage from its target’s strikes."
 msgstr ""
 
 #. [damage]: id=guard
-#: data/core/macros/weapon_specials.cfg:196
+#: data/core/macros/weapon_specials.cfg:198
 msgid ""
 "This unit’s guarding attack can halve incoming damage, but only when used in "
 "combat."
 msgstr ""
 
 #. [drains]: id=drains
-#: data/core/macros/weapon_specials.cfg:208
+#: data/core/macros/weapon_specials.cfg:210
 #, fuzzy
 #| msgid ""
 #| "Drain:\n"
@@ -6348,14 +6234,14 @@ msgstr ""
 "la mitat de la cantitat drenada (arredonint cap avall)."
 
 #. [firststrike]: id=firststrike
-#: data/core/macros/weapon_specials.cfg:218
+#: data/core/macros/weapon_specials.cfg:220
 #, fuzzy
 #| msgid "firststrike"
 msgid "first strike"
 msgstr "primer atac"
 
 #. [firststrike]: id=firststrike
-#: data/core/macros/weapon_specials.cfg:219
+#: data/core/macros/weapon_specials.cfg:221
 #, fuzzy
 #| msgid ""
 #| "First Strike:\n"
@@ -6368,7 +6254,7 @@ msgstr ""
 "Esta unitat sempre ataca primer, encara que estiga defenent."
 
 #. [poison]: id=poison
-#: data/core/macros/weapon_specials.cfg:230
+#: data/core/macros/weapon_specials.cfg:232
 #, fuzzy
 #| msgid ""
 #| "Poison:\n"
@@ -6386,19 +6272,19 @@ msgstr ""
 "pot, per si mateix, matar a una unitat."
 
 #. [stun]: id=stun
-#: data/core/macros/weapon_specials.cfg:240
+#: data/core/macros/weapon_specials.cfg:242
 msgid "stun"
 msgstr ""
 
 #. [stun]: id=stun
-#: data/core/macros/weapon_specials.cfg:241
+#: data/core/macros/weapon_specials.cfg:243
 msgid ""
 "This attack hits so hard that the opponent is dazed and can no longer "
 "enforce a zone of control. The effect wears off on the opponent’s next turn."
 msgstr ""
 
 #. [stun]: id=stun
-#: data/core/macros/weapon_specials.cfg:242
+#: data/core/macros/weapon_specials.cfg:244
 #, fuzzy
 #| msgid ""
 #| " This unit is able to slow its enemies, halving their movement speed and "
@@ -6410,19 +6296,19 @@ msgstr ""
 "seua velocitat de moviment i dany d'atac fins que acabe la tanda."
 
 #. [damage_type]: id=arcane_damage
-#: data/core/macros/weapon_specials.cfg:251
+#: data/core/macros/weapon_specials.cfg:253
 msgid "arcane"
 msgstr ""
 
 #. [damage_type]: id=arcane_damage
-#: data/core/macros/weapon_specials.cfg:252
+#: data/core/macros/weapon_specials.cfg:254
 msgid ""
 "This attack combines the arcane type with the type of weapon used so that "
 "resistance to the arcane type does not penalize the user."
 msgstr ""
 
 #. [damage_type]: id=arcane_damage
-#: data/core/macros/weapon_specials.cfg:253
+#: data/core/macros/weapon_specials.cfg:255
 msgid ""
 "This unit can use the arcane type when the opponent is particularly "
 "sensitive to it in relation to the weapon on which it is applied."
@@ -7113,32 +6999,29 @@ msgstr "Mecànics"
 #: data/core/units.cfg:296
 msgid ""
 "Ships are not living beings, but they are crafted and (usually) controlled "
-"by living beings. Although inanimate objects, they are very dear to their "
-"masters, needing care and attention in return for providing sustenance and "
-"protection. For this reason, most are given names and attributed traits. "
-"Those traits may be technical or they may simply reflect the collective "
-"attitude of the crew, but they are real."
+"by living beings. Most ships neither move nor think on their own, but some "
+"do so as a result of magical enchantment."
 msgstr ""
 
 #. [race]: id=merman
-#: data/core/units.cfg:310
+#: data/core/units.cfg:328
 msgid "race^Merman"
 msgstr "Sirènit"
 
 #. [race]: id=merman
-#: data/core/units.cfg:311
+#: data/core/units.cfg:329
 msgid "race^Mermaid"
 msgstr "Sirena"
 
 #. [race]: id=merman
-#: data/core/units.cfg:312
+#: data/core/units.cfg:330
 #, fuzzy
 #| msgid "race^Troll"
 msgid "race^Merfolk"
 msgstr "Troll"
 
 #. [race]: id=merman
-#: data/core/units.cfg:314
+#: data/core/units.cfg:332
 msgid ""
 "Something like a fusion between humans and fish, the merfolk are an "
 "enigmatic race with both piscine and humanoid attributes. They have strong "
@@ -7152,24 +7035,24 @@ msgid ""
 msgstr ""
 
 #. [race]: id=monster
-#: data/core/units.cfg:322
+#: data/core/units.cfg:340
 msgid "race^Monster"
 msgstr "Mònstruo"
 
 #. [race]: id=monster
-#: data/core/units.cfg:323
+#: data/core/units.cfg:341
 #, fuzzy
 #| msgid "race^Monster"
 msgid "race+female^Monster"
 msgstr "Mònstruo"
 
 #. [race]: id=monster
-#: data/core/units.cfg:324
+#: data/core/units.cfg:342
 msgid "race^Monsters"
 msgstr "Mònstruos"
 
 #. [race]: id=monster
-#: data/core/units.cfg:325
+#: data/core/units.cfg:343
 msgid ""
 "The term “monster” incorporates many hideous beasts that haunt the caves, "
 "wilderness, ocean depths, and other climes of the world. They figure largely "
@@ -7177,24 +7060,24 @@ msgid ""
 msgstr ""
 
 #. [race]: id=naga
-#: data/core/units.cfg:332
+#: data/core/units.cfg:350
 msgid "race^Naga"
 msgstr "Naga"
 
 #. [race]: id=naga
-#: data/core/units.cfg:333
+#: data/core/units.cfg:351
 #, fuzzy
 #| msgid "race^Nagani"
 msgid "race^Nagini"
 msgstr "Naga"
 
 #. [race]: id=naga
-#: data/core/units.cfg:334
+#: data/core/units.cfg:352
 msgid "race^Nagas"
 msgstr "Nagues"
 
 #. [race]: id=naga
-#: data/core/units.cfg:335
+#: data/core/units.cfg:353
 msgid ""
 "The serpentine nagas are one of the least understood races of the Great "
 "Continent. Part of this is due to their xenophobic nature and part is due to "
@@ -7212,22 +7095,22 @@ msgid ""
 msgstr ""
 
 #. [race]: id=ogre
-#: data/core/units.cfg:343
+#: data/core/units.cfg:361
 msgid "race^Ogre"
 msgstr "Ogre"
 
 #. [race]: id=ogre
-#: data/core/units.cfg:344
+#: data/core/units.cfg:362
 msgid "race+female^Ogre"
 msgstr "Ogra"
 
 #. [race]: id=ogre
-#: data/core/units.cfg:345
+#: data/core/units.cfg:363
 msgid "race^Ogres"
 msgstr "Ogres"
 
 #. [race]: id=ogre
-#: data/core/units.cfg:346
+#: data/core/units.cfg:364
 msgid ""
 "Ogres are a wild and uncivilized race who dwell mainly in the wilderness of "
 "the Great Continent. Physically, they resemble humans and orcs but are "
@@ -7246,22 +7129,22 @@ msgid ""
 msgstr ""
 
 #. [race]: id=orc
-#: data/core/units.cfg:354
+#: data/core/units.cfg:372
 msgid "race^Orc"
 msgstr "Orc"
 
 #. [race]: id=orc
-#: data/core/units.cfg:355
+#: data/core/units.cfg:373
 msgid "race+female^Orc"
 msgstr "Orca"
 
 #. [race]: id=orc
-#: data/core/units.cfg:356
+#: data/core/units.cfg:374
 msgid "race^Orcs"
 msgstr "Orcs"
 
 #. [race]: id=orc
-#: data/core/units.cfg:357
+#: data/core/units.cfg:375
 msgid ""
 "In appearance, orcs resemble humans but with some bestial features. They are "
 "taller, sturdier and stronger than humans. They are warlike, savage, and "
@@ -7315,7 +7198,7 @@ msgid ""
 msgstr ""
 
 #. [race]: id=orc
-#: data/core/units.cfg:368
+#: data/core/units.cfg:386
 msgid ""
 "\n"
 "\n"
@@ -7324,28 +7207,28 @@ msgid ""
 msgstr ""
 
 #. [race]: id=raven
-#: data/core/units.cfg:377
+#: data/core/units.cfg:395
 #, fuzzy
 #| msgid "race^Dwarves"
 msgid "race^Raven"
 msgstr "Nanos"
 
 #. [race]: id=raven
-#: data/core/units.cfg:378
+#: data/core/units.cfg:396
 #, fuzzy
 #| msgid "race+female^Drake"
 msgid "race+female^Raven"
 msgstr "Draca"
 
 #. [race]: id=raven
-#: data/core/units.cfg:379
+#: data/core/units.cfg:397
 #, fuzzy
 #| msgid "race^Dwarves"
 msgid "race^Ravens"
 msgstr "Nanos"
 
 #. [race]: id=raven
-#: data/core/units.cfg:380
+#: data/core/units.cfg:398
 msgid ""
 "Ravens are general scavengers, often associating with hunters or predators "
 "in the hope of sharing in the kill. They do not have the powerful beak or "
@@ -7365,22 +7248,22 @@ msgid ""
 msgstr ""
 
 #. [race]: id=troll
-#: data/core/units.cfg:391
+#: data/core/units.cfg:409
 msgid "race^Troll"
 msgstr "Troll"
 
 #. [race]: id=troll
-#: data/core/units.cfg:392
+#: data/core/units.cfg:410
 msgid "race+female^Troll"
 msgstr "Troll"
 
 #. [race]: id=troll
-#: data/core/units.cfg:393
+#: data/core/units.cfg:411
 msgid "race^Trolls"
 msgstr "Trolls"
 
 #. [race]: id=troll
-#: data/core/units.cfg:394
+#: data/core/units.cfg:412
 msgid ""
 "Trolls are ancient creatures, one of the oldest known races known to inhabit "
 "the Great Continent. They are large, slow, simple, and live extremely long "
@@ -7419,22 +7302,22 @@ msgid ""
 msgstr ""
 
 #. [race]: id=undead
-#: data/core/units.cfg:414
+#: data/core/units.cfg:432
 msgid "race^Undead"
 msgstr "No morts"
 
 #. [race]: id=undead
-#: data/core/units.cfg:415
+#: data/core/units.cfg:433
 msgid "race+female^Undead"
 msgstr "No morta"
 
 #. [race]: id=undead
-#: data/core/units.cfg:416
+#: data/core/units.cfg:434
 msgid "race+plural^Undead"
 msgstr "No morts"
 
 #. [race]: id=undead
-#: data/core/units.cfg:417
+#: data/core/units.cfg:435
 msgid ""
 "Undead are not really a single race of creatures, although often treated as "
 "such. Most ordinary creatures can, by a sufficiently skilled necromancer, be "
@@ -7471,24 +7354,24 @@ msgid ""
 msgstr ""
 
 #. [race]: id=wolf
-#: data/core/units.cfg:430
+#: data/core/units.cfg:448
 msgid "race^Wolf"
 msgstr ""
 
 #. [race]: id=wolf
-#: data/core/units.cfg:431
+#: data/core/units.cfg:449
 #, fuzzy
 #| msgid "race+female^Elf"
 msgid "race+female^Wolf"
 msgstr "Elfa"
 
 #. [race]: id=wolf
-#: data/core/units.cfg:432
+#: data/core/units.cfg:450
 msgid "race^Wolves"
 msgstr ""
 
 #. [race]: id=wolf
-#: data/core/units.cfg:433
+#: data/core/units.cfg:451
 msgid ""
 "Wolves are predatory canines encountered frequently in the wilderness. "
 "Quick, tough, and durable, a solitary wolf suffices to maim or kill "
@@ -7500,17 +7383,17 @@ msgid ""
 msgstr ""
 
 #. [race]: id=wose
-#: data/core/units.cfg:442
+#: data/core/units.cfg:460
 msgid "race^Wose"
 msgstr "Wose"
 
 #. [race]: id=wose
-#: data/core/units.cfg:443
+#: data/core/units.cfg:461
 msgid "race^Woses"
 msgstr "Woses"
 
 #. [race]: id=wose
-#: data/core/units.cfg:444
+#: data/core/units.cfg:462
 msgid ""
 "The mighty wose resides within the deepest forests of the known world. To "
 "the untrained eye, the wose appears to be nothing more than an oddly shaped, "
@@ -7830,35 +7713,35 @@ msgstr "Tipo d'atac"
 msgid "Resistance"
 msgstr "Resistència"
 
-#: src/help/help_topic_generators.cpp:833
+#: src/help/help_topic_generators.cpp:832
 #, fuzzy
 #| msgid "Terrain Modifiers"
 msgid "Terrain Modifiers"
 msgstr "Modificadors de terreny"
 
-#: src/help/help_topic_generators.cpp:837
+#: src/help/help_topic_generators.cpp:836
 msgid "Terrain"
 msgstr "Terreny"
 
-#: src/help/help_topic_generators.cpp:838
+#: src/help/help_topic_generators.cpp:837
 msgid "Defense"
 msgstr "Defensa"
 
-#: src/help/help_topic_generators.cpp:839
+#: src/help/help_topic_generators.cpp:838
 msgid "Movement Cost"
 msgstr "Cost de moviment"
 
-#: src/help/help_topic_generators.cpp:840
+#: src/help/help_topic_generators.cpp:839
 #, fuzzy
 #| msgid "Defense"
 msgid "Defense Cap"
 msgstr "Defensa"
 
-#: src/help/help_topic_generators.cpp:841
+#: src/help/help_topic_generators.cpp:840
 msgid "Vision Cost"
 msgstr ""
 
-#: src/help/help_topic_generators.cpp:842
+#: src/help/help_topic_generators.cpp:841
 msgid "Jamming Cost"
 msgstr ""
 

@@ -614,7 +614,7 @@ bool mouse_handler::mouse_button_event(const SDL_MouseButtonEvent& event, uint8_
 		"mouse5"	// SDL_BUTTON_X2
 	};
 
-	if (gui().view_locked() || button < SDL_BUTTON_LEFT || button > buttons.size()) {
+	if (gui().view_locked() || button < SDL_BUTTON_LEFT || button >= buttons.size()) {
 		return false;
 	} else if (event.state > SDL_PRESSED || !pc_.get_map().on_board(loc)) {
 		return false;
@@ -915,7 +915,13 @@ void mouse_handler::select_or_action(bool browse)
 	  (clicked_u->side() == side_num_ && clicked_u->id() != selected_u->id()))
 	) {
 		select_hex(last_hex_, false);
-	} else {
+	}
+#ifdef __ANDROID__
+	else if (clicked_u && clicked_u->side() != side_num_) {
+		select_hex(last_hex_, false);
+	}
+#endif
+	else {
 		move_action(browse);
 	}
 	teleport_selected_ = false;
@@ -1118,12 +1124,19 @@ void mouse_handler::move_action(bool browse)
 void mouse_handler::touch_action(const map_location touched_hex, bool browse)
 {
 	unit_map::iterator unit = find_unit(touched_hex);
-
-	if (touched_hex.valid() && unit.valid() && !unit->get_hidden()) {
-		select_or_action(browse);
-	} else {
-		deselect_hex();
+#ifdef __ANDROID__
+	if(touched_hex.valid() && unit.valid() && !unit->get_hidden()) {
+		if(touched_hex == selected_hex_) {
+			deselect_hex();
+		} else {
+			select_or_action(browse);
+		}
 	}
+#else
+	if(touched_hex.valid() && unit.valid() && !unit->get_hidden()) {
+		select_or_action(browse);
+	}
+#endif
 }
 
 void mouse_handler::select_hex(const map_location& hex, const bool browse, const bool highlight, const bool fire_event, const bool force_unhighlight)
@@ -1187,16 +1200,15 @@ void mouse_handler::select_hex(const map_location& hex, const bool browse, const
 		pathfind::paths clicked_location;
 		clicked_location.destinations.insert(hex);
 
-		for(unit_map::iterator u = pc_.get_units().begin(); u != pc_.get_units().end();
-				++u) {
-			bool invisible = u->invisible(u->get_location());
+		for(const ::unit& u : pc_.get_units()) {
+			bool invisible = u.invisible(u.get_location());
 
-			if(!gui_->fogged(u->get_location()) && !u->incapacitated() && !invisible) {
+			if(!gui_->fogged(u.get_location()) && !u.incapacitated() && !invisible) {
 				const pathfind::paths& path =
-					pathfind::paths(*u, false, true, gui().viewing_team(), path_turns_, false, false);
+					pathfind::paths(u, false, true, gui().viewing_team(), path_turns_, false, false);
 
 				if(path.destinations.find(hex) != path.destinations.end()) {
-					reaching_unit_locations.destinations.insert(u->get_location());
+					reaching_unit_locations.destinations.insert(u.get_location());
 					gui_->highlight_another_reach(clicked_location);
 				}
 			}
@@ -1445,7 +1457,7 @@ int mouse_handler::show_attack_dialog(const map_location& attacker_loc, const ma
 				defw_type = string_table["type_" + defw_type];
 			}
 
-			const std::set<std::string> checking_tags_other = {"damage_type", "disable", "berserk", "drains",
+			const std::set<std::string> checking_tags_other = {"defense", "damage_type", "disable", "berserk", "drains",
 				"heal_on_hit", "plague", "slow", "petrifies", "firststrike", "poison"};
 			std::string attw_specials = attacker_weapon.weapon_specials();
 			std::string attw_specials_dmg = attacker_weapon.weapon_specials_value({"leadership", "damage"});
@@ -1627,7 +1639,7 @@ void mouse_handler::attack_enemy_(const map_location& att_loc, const map_locatio
 	gui().clear_attack_indicator();
 	gui().unhighlight_reach();
 
-	current_team().set_action_bonus_count(1 + current_team().action_bonus_count());
+	current_team().increment_action_bonus_count();
 	// TODO: change ToD to be location specific for the defender
 
 	const tod_manager& tod_man = pc_.get_tod_manager();
@@ -1646,23 +1658,6 @@ void mouse_handler::attack_enemy_(const map_location& att_loc, const map_locatio
 			tod_man.get_time_of_day()
 		)
 	);
-}
-
-std::set<map_location> mouse_handler::get_adj_enemies(const map_location& loc, int side) const
-{
-	std::set<map_location> res;
-
-	const team& uteam = pc_.get_teams()[side - 1];
-
-	for(const map_location& aloc : get_adjacent_tiles(loc)) {
-		unit_map::const_iterator i = find_unit(aloc);
-
-		if(i && uteam.is_enemy(i->side())) {
-			res.insert(aloc);
-		}
-	}
-
-	return res;
 }
 
 bool mouse_handler::unit_in_cycle(const unit_map::const_iterator& it)

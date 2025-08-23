@@ -434,6 +434,7 @@ void preferences_dialog::initialize_callbacks()
 
 	// Set the value label transform function.
 	find_widget<slider>("turbo_slider").set_value_labels(
+		// TODO: this should probably be a locale dependent string (use comma/dot depending on language)
 		[this](int pos, int /*max*/)->t_string { return lexical_cast<std::string>(accl_speeds_[pos]); }
 	);
 
@@ -491,10 +492,11 @@ void preferences_dialog::initialize_callbacks()
 	//
 
 	/* FULLSCREEN TOGGLE */
-	toggle_button& toggle_fullscreen =
-			find_widget<toggle_button>("fullscreen");
-
+	toggle_button& toggle_fullscreen = find_widget<toggle_button>("fullscreen");
 	toggle_fullscreen.set_value(prefs::get().fullscreen());
+#ifdef __ANDROID__
+	toggle_fullscreen.set_active(false);
+#endif
 
 	// We bind a special callback function, so setup_single_toggle() is not used
 	connect_signal_mouse_left_click(toggle_fullscreen,
@@ -504,7 +506,11 @@ void preferences_dialog::initialize_callbacks()
 	menu_button& res_list = find_widget<menu_button>("resolution_set");
 
 	res_list.set_use_markup(true);
+#ifdef __ANDROID__
+	res_list.set_active(false);
+#else
 	res_list.set_active(!prefs::get().fullscreen());
+#endif
 
 	set_resolution_list(res_list);
 
@@ -514,21 +520,26 @@ void preferences_dialog::initialize_callbacks()
 	connect_signal<event::SDL_VIDEO_RESIZE>(
 		[this, &res_list](auto&&...) { set_resolution_list(res_list); });
 
-	/* PIXEL SCALE */
-	register_integer("pixel_scale_slider", true,
-		[]() {return prefs::get().pixel_scale();},
-		[](int v) {prefs::get().set_pixel_scale(v);});
+	if (video::get_max_pixel_scale() > 1) {
+		/* PIXEL SCALE */
+		register_integer("pixel_scale_slider", true,
+			[]() {return prefs::get().pixel_scale();},
+			[](int v) {prefs::get().set_pixel_scale(v);});
 
-	slider& ps_slider =
-		find_widget<slider>("pixel_scale_slider");
-	connect_signal_mouse_left_release(ps_slider,
-		[this](auto&&...) { apply_pixel_scale(); });
+		slider& ps_slider = find_widget<slider>("pixel_scale_slider");
+		ps_slider.set_value_range(1, video::get_max_pixel_scale());
+		connect_signal_mouse_left_release(ps_slider,
+			[this](auto&&...) { apply_pixel_scale(); });
 
-	/* AUTOMATIC PIXEL SCALE */
-	register_bool("auto_pixel_scale", true,
-		[]() {return prefs::get().auto_pixel_scale();},
-		[](bool v) {prefs::get().set_auto_pixel_scale(v);},
-		[&](widget& w) { disable_widget_on_toggle_inverted<slider>(*this, w, "pixel_scale_slider"); }, true);
+		/* AUTOMATIC PIXEL SCALE */
+		register_bool("auto_pixel_scale", true,
+			[]() {return prefs::get().auto_pixel_scale();},
+			[](bool v) {prefs::get().set_auto_pixel_scale(v);},
+			[&](widget& w) { disable_widget_on_toggle_inverted<slider>(*this, w, "pixel_scale_slider"); }, true);
+	} else {
+		find_widget<slider>("pixel_scale_slider").set_active(false);
+		find_widget<toggle_button>("auto_pixel_scale").set_active(false);
+	}
 
 	toggle_button& auto_ps_toggle =
 		find_widget<toggle_button>("auto_pixel_scale");
@@ -733,9 +744,7 @@ void preferences_dialog::initialize_callbacks()
 				connect_signal_mouse_left_click(toggle_box,
 					[&, pref_name](auto&&...) { preferences_dialog_friend::set(pref_name, toggle_box.get_value_bool()); });
 
-				gui2::bind_status_label<toggle_button>(
-					main_grid, "value_toggle", default_status_value_getter<toggle_button>, "value");
-
+				gui2::bind_default_status_label(toggle_box, "value");
 				break;
 			}
 
@@ -755,8 +764,7 @@ void preferences_dialog::initialize_callbacks()
 				connect_signal_notify_modified(slide,
 					[&, pref_name](auto&&...) { preferences_dialog_friend::set(pref_name, slide.get_value()); });
 
-				gui2::bind_status_label<slider>(main_grid, "setter", default_status_value_getter<slider>, "value");
-
+				gui2::bind_default_status_label(slide, "value");
 				break;
 			}
 
@@ -797,8 +805,7 @@ void preferences_dialog::initialize_callbacks()
 				connect_signal_notify_modified(menu,
 					[=](widget& w, auto&&...) { preferences_dialog_friend::set(pref_name, option_ids[dynamic_cast<menu_button&>(w).get_value()]); });
 
-				gui2::bind_status_label<menu_button>(main_grid, "setter", default_status_value_getter<menu_button>, "value");
-
+				gui2::bind_default_status_label(menu, "value");
 				break;
 			}
 
@@ -809,7 +816,6 @@ void preferences_dialog::initialize_callbacks()
 				value_widget->set_label("icons/arrows/arrows_blank_right_25.png~CROP(3,3,18,18)");
 
 				main_grid->swap_child("value", std::move(value_widget), true);
-
 				break;
 			}
 		}
@@ -1109,13 +1115,9 @@ void preferences_dialog::pre_show()
 	// is not the case for those in Advanced
 	//
 
-	gui2::bind_status_label<slider>(this, "max_saves_slider");
-	gui2::bind_status_label<slider>(this, "turbo_slider");
-	gui2::bind_status_label<slider>(this, "pixel_scale_slider");
-
-	//gui2::bind_status_label<slider>("scaling_slider",   [](slider& s)->std::string {
-	//	return s.get_value_label() + "%";
-	//});
+	gui2::bind_default_status_label(find_widget<slider>("max_saves_slider"));
+	gui2::bind_default_status_label(find_widget<slider>("turbo_slider"));
+	gui2::bind_default_status_label(find_widget<slider>("pixel_scale_slider"));
 
 	listbox& selector = find_widget<listbox>("selector");
 	stacked_widget& pager = find_widget<stacked_widget>("pager");

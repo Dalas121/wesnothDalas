@@ -517,7 +517,7 @@ void map_context::load_scenario()
 		}
 
 		for(const config& music : evt.child_range("music")) {
-			music_tracks_.emplace(music["name"], sound::music_track(music));
+			music_tracks_.emplace_back(sound::music_track::create(music));
 		}
 
 		for(config& a_unit : evt.child_range("unit")) {
@@ -531,6 +531,20 @@ void map_context::load_scenario()
 bool map_context::select_area(int index)
 {
 	return map_.set_selection(tod_manager_->get_area_by_index(index));
+}
+
+bool map_context::playlist_contains(const std::shared_ptr<sound::music_track>& track) const
+{
+	return utils::contains(music_tracks_, track);
+}
+
+void map_context::toggle_track(const std::shared_ptr<sound::music_track>& track)
+{
+	if(playlist_contains(track)) {
+		music_tracks_.remove(track);
+	} else {
+		music_tracks_.push_back(track);
+	}
 }
 
 void map_context::draw_terrain(const t_translation::terrain_code& terrain, const map_location& loc, bool one_layer_only)
@@ -684,24 +698,24 @@ config map_context::to_config()
 	// write out all the scenario data below
 
 	// [time]s and [time_area]s
-	// put the [time_area]s into the event to keep as much editor-specific stuff separated in its own event as possible
 	config times = tod_manager_->to_config(current_textdomain);
-	times.remove_attribute("turn_at");
-	times.remove_attribute("it_is_a_new_turn");
-	if(scenario["turns"].to_int() == -1) {
+
+	// TODO: random_start_time is written separately above. Should we use the value from the ToD manager?
+	times.remove_attributes("turn_at", "it_is_a_new_turn", "random_start_time");
+
+	if(times["turns"].to_int() == -1) {
 		times.remove_attribute("turns");
-	} else {
-		scenario["turns"] = times["turns"];
 	}
 
-	for(const config& time : times.child_range("time")) {
-		config& t = scenario.add_child("time");
-		t.append(time);
+	if(times["current_time"].to_int() == 0) {
+		times.remove_attribute("current_time");
 	}
-	for(const config& time_area : times.child_range("time_area")) {
-		config& t = event.add_child("time_area");
-		t.append(time_area);
-	}
+
+	scenario.merge_attributes(times);
+	scenario.append_children_by_move(times, "time");
+
+	// put the [time_area]s into the event to keep as much editor-specific stuff separated in its own event as possible
+	event.append_children_by_move(times, "time_area");
 
 	// [label]s
 	labels_.write(event);
@@ -730,13 +744,13 @@ config map_context::to_config()
 	}
 
 	// [music]s
-	for(const music_map::value_type& track : music_tracks_) {
-		track.second.write(event, true);
+	for(const auto& track : music_tracks_) {
+		track->write(event, true);
 	}
 
 	// [unit]s
 	preproc_map traits_map;
-	preprocess_file(game_config::path + "/data/core/macros/traits.cfg", &traits_map);
+	preprocess_file(game_config::path + "/data/core/macros/traits.cfg", traits_map);
 
 	for(const auto& unit : units_) {
 		config& u = event.add_child("unit");
@@ -762,8 +776,7 @@ config map_context::to_config()
 
 		config& mods = u.add_child("modifications");
 		if(unit.loyal()) {
-			config trait_loyal = io::read(preprocess_string("{TRAIT_LOYAL}", &traits_map, "wesnoth-help"));
-			mods.append(std::move(trait_loyal));
+			mods.append(io::read(*preprocess_string("{TRAIT_LOYAL}", "wesnoth-help", traits_map)));
 		}
 		//TODO this entire block could also be replaced by unit.write(u, true)
 		//however, the resultant config is massive and contains many attributes we don't need.
@@ -792,7 +805,7 @@ config map_context::to_config()
 		side["share_vision"] = team_shared_vision::get_string(team.share_vision());
 
 		side["gold"] = team.gold();
-		side["income"] = team.base_income();
+		side["income"] = team.raw_income();
 
 		for(const map_location& village : team.villages()) {
 			village.write(side.add_child("village"));
@@ -818,8 +831,8 @@ void map_context::save_schedule(const std::string& schedule_id, const std::strin
 			/* If exists, read the schedule.cfg
 			 * and insert [editor_times] block at correct place */
 			preproc_map editor_map;
-			editor_map["EDITOR"] = preproc_define("true");
-			schedule = io::read(*preprocess_file(schedule_path, &editor_map));
+			editor_map.try_emplace("EDITOR");
+			schedule = io::read(*preprocess_file(schedule_path, editor_map));
 		}
 	} catch(const filesystem::io_exception& e) {
 		utils::string_map symbols;

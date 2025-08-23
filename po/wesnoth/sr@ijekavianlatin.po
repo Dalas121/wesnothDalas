@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2025-05-20 17:31-0500\n"
+"POT-Creation-Date: 2025-08-19 10:14-0500\n"
 "PO-Revision-Date: 2012-04-01 16:53+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian\n"
@@ -263,11 +263,21 @@ msgid ""
 "for this to take effect."
 msgstr ""
 
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:192
+msgid "Show missed attack indicator"
+msgstr ""
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:193
+msgid "Display a visual indicator above a defender when an attack misses."
+msgstr ""
+
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [unstore_unit]
 #. [lua]: set_status
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:369
-#: data/lua/wml/harm_unit.lua:124 src/actions/attack.cpp:1066
+#: data/lua/wml/harm_unit.lua:124 src/actions/attack.cpp:1057
 msgid "poisoned"
 msgstr "otrovan"
 
@@ -345,59 +355,59 @@ msgid "Programming"
 msgstr "Programiranje"
 
 #. [about]
-#: data/core/about.cfg:282
+#: data/core/about.cfg:287
 msgid "General Purpose Administration and Coordination"
 msgstr "Opšta administracija i koordinacija"
 
 #. [about]
-#: data/core/about.cfg:319
+#: data/core/about.cfg:324
 msgid "Internationalization Managers"
 msgstr "Upravljanje internacionalizacijom"
 
 #. [about]
-#: data/core/about.cfg:344
+#: data/core/about.cfg:349
 #, fuzzy
 #| msgid "Traits"
 msgid "Trailers"
 msgstr "Osobine"
 
 #. [about]
-#: data/core/about.cfg:360
+#: data/core/about.cfg:365
 msgid "Artwork and Graphics"
 msgstr "Grafika i crtanje"
 
 #. [about]
-#: data/core/about.cfg:818
+#: data/core/about.cfg:823
 msgid "Music"
 msgstr "Muzika"
 
 #. [about]
-#: data/core/about.cfg:855
+#: data/core/about.cfg:860
 msgid "Sound Effects"
 msgstr "Zvučni efekti"
 
 #. [about]
-#: data/core/about.cfg:879
+#: data/core/about.cfg:884
 msgid "Campaign Design"
 msgstr "Dizajn pohoda"
 
 #. [about]
-#: data/core/about.cfg:970
+#: data/core/about.cfg:975
 msgid "Multiplayer Maps and Balancing"
 msgstr "Višeigračke mape i uravnotežavanje"
 
 #. [about]
-#: data/core/about.cfg:1019
+#: data/core/about.cfg:1024
 msgid "Packagers"
 msgstr "Priprema paketa"
 
 #. [about]
-#: data/core/about.cfg:1131
+#: data/core/about.cfg:1136
 msgid "Miscellaneous Contributors"
 msgstr "Razni doprinosi"
 
 #. [about]
-#: data/core/about.cfg:1889
+#: data/core/about.cfg:1890
 msgid "Bots"
 msgstr "Botovi"
 
@@ -438,260 +448,260 @@ msgid "Bengali Translation"
 msgstr "Bugarski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:77
+#: data/core/about_i18n.cfg:78
 msgid "Bulgarian Translation"
 msgstr "Bugarski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:113
+#: data/core/about_i18n.cfg:114
 msgid "Catalan Translation"
 msgstr "Katalonski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:159
+#: data/core/about_i18n.cfg:160
 msgid "Chinese Translation"
 msgstr "Kineski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:257
+#: data/core/about_i18n.cfg:258
 msgid "Chinese (Taiwan) Translation"
 msgstr "Kineski (Tajvan) prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:270
+#: data/core/about_i18n.cfg:271
 msgid "Croatian Translation"
 msgstr "Hrvatski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:280
+#: data/core/about_i18n.cfg:281
 msgid "Czech Translation"
 msgstr "Češki prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:352
+#: data/core/about_i18n.cfg:353
 msgid "Danish Translation"
 msgstr "Danski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:383
+#: data/core/about_i18n.cfg:384
 msgid "Dutch Translation"
 msgstr "Holandski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:457
+#: data/core/about_i18n.cfg:458
 msgid "English (GB) Translation"
 msgstr "Britanski engleski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:482
+#: data/core/about_i18n.cfg:483
 msgid "English (Shaw) Translation"
 msgstr "Engleski (šovijanski) prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:500
+#: data/core/about_i18n.cfg:501
 msgid "Esperanto Translation"
 msgstr "Esperanto prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:529
+#: data/core/about_i18n.cfg:530
 msgid "Estonian Translation"
 msgstr "Estonski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:539
+#: data/core/about_i18n.cfg:540
 msgid "Filipino Translation"
 msgstr "Filipinski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:549
+#: data/core/about_i18n.cfg:550
 msgid "Finnish Translation"
 msgstr "Finski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:614
+#: data/core/about_i18n.cfg:615
 msgid "French Translation"
 msgstr "Francuski prevod"
 
 # каже овако на Википедији
 # well-spelled: Фурлански
 #. [about]
-#: data/core/about_i18n.cfg:782
+#: data/core/about_i18n.cfg:783
 msgid "Friulian Translation"
 msgstr "Furlanski prevod"
 
 # well-spelled: Галицијански
 #. [about]
-#: data/core/about_i18n.cfg:786
+#: data/core/about_i18n.cfg:787
 msgid "Galician Translation"
 msgstr "Galicijanski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:822
+#: data/core/about_i18n.cfg:823
 msgid "German Translation"
 msgstr "Njemački prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:951
+#: data/core/about_i18n.cfg:952
 msgid "Greek Translation"
 msgstr "Grčki prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:994
+#: data/core/about_i18n.cfg:995
 msgid "Hebrew Translation"
 msgstr "Hebrejski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1007
+#: data/core/about_i18n.cfg:1008
 msgid "Hungarian Translation"
 msgstr "Mađarski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1068
+#: data/core/about_i18n.cfg:1069
 msgid "Icelandic Translation"
 msgstr "Islandski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1078
+#: data/core/about_i18n.cfg:1079
 msgid "Indonesian Translation"
 msgstr "Indonežanski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1106
+#: data/core/about_i18n.cfg:1107
 msgid "Irish Translation"
 msgstr "Irski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1113
+#: data/core/about_i18n.cfg:1114
 msgid "Italian Translation"
 msgstr "Italijanski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1160
+#: data/core/about_i18n.cfg:1161
 msgid "Japanese Translation"
 msgstr "Japanski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1253
+#: data/core/about_i18n.cfg:1254
 msgid "Korean Translation"
 msgstr "Korejski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1261
+#: data/core/about_i18n.cfg:1262
 msgid "Latin Translation"
 msgstr "Latinski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1287
+#: data/core/about_i18n.cfg:1288
 msgid "Latvian Translation"
 msgstr "Letonski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1302
+#: data/core/about_i18n.cfg:1303
 msgid "Lithuanian Translation"
 msgstr "Litvanski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1327
+#: data/core/about_i18n.cfg:1328
 msgid "Macedonian Translation"
 msgstr "Makedonski prevod"
 
 # well-spelled: Марати
 #. [about]
-#: data/core/about_i18n.cfg:1334
+#: data/core/about_i18n.cfg:1335
 msgid "Marathi Translation"
 msgstr "Marati prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1343
+#: data/core/about_i18n.cfg:1344
 msgid "Norwegian Translation"
 msgstr "Norveški prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1372
+#: data/core/about_i18n.cfg:1373
 msgid "Old English Translation"
 msgstr "Staroengleski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1390
+#: data/core/about_i18n.cfg:1391
 msgid "Polish Translation"
 msgstr "Poljski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1465
+#: data/core/about_i18n.cfg:1466
 msgid "Portuguese Translation"
 msgstr "Portugalski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1479
+#: data/core/about_i18n.cfg:1480
 msgid "Portuguese (Brazil) Translation"
 msgstr "Portugalski brazilski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1537
+#: data/core/about_i18n.cfg:1538
 msgid "Romanian Translation"
 msgstr "Rumunski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1545
+#: data/core/about_i18n.cfg:1546
 msgid "Russian Translation"
 msgstr "Ruski prevod"
 
 # well-spelled: Галицијански
 #. [about]
-#: data/core/about_i18n.cfg:1652
+#: data/core/about_i18n.cfg:1653
 #, fuzzy
 #| msgid "Galician Translation"
 msgid "Scottish Gaelic Translation"
 msgstr "Galicijanski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1661
+#: data/core/about_i18n.cfg:1662
 msgid "Serbian Translation"
 msgstr "Srpski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1680
+#: data/core/about_i18n.cfg:1681
 msgid "Slovak Translation"
 msgstr "Slovački prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1715
+#: data/core/about_i18n.cfg:1716
 msgid "Slovenian Translation"
 msgstr "Slovenački prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1731
+#: data/core/about_i18n.cfg:1732
 msgid "Spanish Translation"
 msgstr "Španski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1821
+#: data/core/about_i18n.cfg:1822
 msgid "Swedish Translation"
 msgstr "Švedski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1866
+#: data/core/about_i18n.cfg:1867
 msgid "Turkish Translation"
 msgstr "Turski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1891
+#: data/core/about_i18n.cfg:1892
 msgid "Ukrainian Translation"
 msgstr "Ukrajinski prevod"
 
 # well-spelled: јужнокаталонски
 #. [about]
-#: data/core/about_i18n.cfg:1925
+#: data/core/about_i18n.cfg:1926
 msgid "Valencian (southern Catalan) Translation"
 msgstr "Valensijski (južnokatalonski) prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1938
+#: data/core/about_i18n.cfg:1939
 msgid "Vietnamese Translation"
 msgstr "Vijetnamski prevod"
 
 #. [about]
-#: data/core/about_i18n.cfg:1957
+#: data/core/about_i18n.cfg:1958
 #, fuzzy
 #| msgid "Polish Translation"
 msgid "Welsh Translation"
@@ -699,7 +709,7 @@ msgstr "Poljski prevod"
 
 #. [about]
 #. Real Acadèmia de Cultura Valenciana
-#: data/core/about_i18n.cfg:1966
+#: data/core/about_i18n.cfg:1967
 msgid "RACV’s Translation"
 msgstr "Valensijski (RACV) prevod"
 
@@ -3606,7 +3616,8 @@ msgid "Traveling Minstrels"
 msgstr ""
 
 #. [music]
-#: data/core/macros/sound-utils.cfg:331
+#. [time]: id=underground_noweather
+#: data/core/macros/sound-utils.cfg:331 data/internal/Weather/_main.cfg:222
 msgid "Underground"
 msgstr ""
 
@@ -3830,14 +3841,14 @@ msgstr ""
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=fog
-#: data/core/team-colors.cfg:243 src/game_initialization/lobby_data.cpp:383
+#: data/core/team-colors.cfg:243 src/game_initialization/lobby_data.cpp:384
 msgid "Fog"
 msgstr "magla"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=shroud
-#: data/core/team-colors.cfg:249 src/game_initialization/lobby_data.cpp:386
-#: src/game_initialization/lobby_data.cpp:389
+#: data/core/team-colors.cfg:249 src/game_initialization/lobby_data.cpp:387
+#: src/game_initialization/lobby_data.cpp:390
 msgid "Shroud"
 msgstr "pokrov"
 
@@ -4161,7 +4172,7 @@ msgstr "nema"
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=title
 #: data/gui/themes/default/dialogs/screenshot_notification.cfg:95
-#: src/hotkey/command_executor.cpp:636
+#: src/hotkey/command_executor.cpp:654
 msgid "Screenshot"
 msgstr ""
 
@@ -4177,8 +4188,10 @@ msgstr ""
 
 #. [fonts]
 #: data/hardwired/fonts.cfg:20
-msgid "Oldania ADF Std"
-msgstr ""
+#, fuzzy
+#| msgid "Description"
+msgid "WesScript"
+msgstr "Opis"
 
 #. [terrain_type]: id=urbanjungle
 #: data/internal/Urban_Jungle/terrain.cfg:8
@@ -4468,31 +4481,31 @@ msgstr ""
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:124 src/actions/attack.cpp:1066
+#: data/lua/wml/harm_unit.lua:124 src/actions/attack.cpp:1057
 msgid "female^poisoned"
 msgstr "otrovana"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:1073
+#: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:1064
 msgid "female^slowed"
 msgstr "usporena"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:1073
+#: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:1064
 msgid "slowed"
 msgstr "usporen"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:127 src/actions/attack.cpp:1079
+#: data/lua/wml/harm_unit.lua:127 src/actions/attack.cpp:1070
 msgid "female^petrified"
 msgstr "okamenjena"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:127 src/actions/attack.cpp:1079
+#: data/lua/wml/harm_unit.lua:127 src/actions/attack.cpp:1070
 msgid "petrified"
 msgstr "okamenjen"
 
@@ -4508,8 +4521,8 @@ msgstr "neiscjeljiv"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: wesnoth.wml_actions.message
-#: data/lua/wml/message.lua:433 src/scripting/game_lua_kernel.cpp:3749
-#: src/scripting/game_lua_kernel.cpp:3784
+#: data/lua/wml/message.lua:433 src/scripting/game_lua_kernel.cpp:3752
+#: src/scripting/game_lua_kernel.cpp:3787
 msgid "input"
 msgstr ""
 
@@ -4582,8 +4595,9 @@ msgid "No planned advancement"
 msgstr "bez napredovanja"
 
 #. [label]
+#. [lua]: map_has_keeps
 #: data/modifications/pick_advance/gui/pick_advance.cfg:14
-#: data/modifications/pick_advance/main.lua:10
+#: data/modifications/pick_advance/main.lua:190
 #, fuzzy
 #| msgid "Advancements"
 msgid "Plan Advancement"
@@ -4870,6 +4884,7 @@ msgstr ""
 #: data/tips.cfg:181 data/tips.cfg:189 data/tips.cfg:198 data/tips.cfg:202
 #: data/tips.cfg:206 data/tips.cfg:214 data/tips.cfg:234 data/tips.cfg:242
 #: data/tips.cfg:250 data/tips.cfg:266 data/tips.cfg:271 data/tips.cfg:276
+#: data/tips.cfg:282
 msgid "<i>― The Wesnoth Tactical Guide</i>"
 msgstr "<i>— Taktički vodič Vesnota</i>"
 
@@ -5416,10 +5431,18 @@ msgstr ""
 
 #. [tip]
 #: data/tips.cfg:188
+#, fuzzy
+#| msgid ""
+#| "Instead of leveling up, high-level units gain an <i>After Maximum Level "
+#| "Advancement</i> (AMLA) bonus, which usually increases the unit’s maximum "
+#| "hitpoints by three and fully heals it. This is much less than the normal "
+#| "benefits of advancing a level, so it is generally wiser to advance your "
+#| "lower-level units instead."
 msgid ""
-"Instead of leveling up, high-level units gain an <i>After Maximum Level "
-"Advancement</i> (AMLA) bonus, which usually increases the unit’s maximum "
-"hitpoints by three and fully heals it. This is much less than the normal "
+"Once a unit reaches maximum level, further advancement provides a minor "
+"bonus called an “AMLA” — “After Maximum Level Advancement.” Some campaigns "
+"let you choose between several AMLA options, but the only default AMLA is a "
+"+3 bonus to maximum hitpoints. AMLAs are usually weaker than the normal "
 "benefits of advancing a level, so it is generally wiser to advance your "
 "lower-level units instead."
 msgstr ""
@@ -5698,6 +5721,15 @@ msgstr ""
 "izbegavaće sela. Čak i kada stanu na polje sa selom, ne dobijaju odbrambenih "
 "prednosti; mada će ipak biti lečene."
 
+#. [tip]
+#: data/tips.cfg:281
+msgid ""
+"Nearly every hotkey can be customized in the <b>Preferences</b> > "
+"<b>Hotkeys</b> tab. Rebinding frequently used actions (Undo, Show Enemy "
+"Moves, End Turn, Recruit/Recall) to comfortable keys can noticeably speed up "
+"your turns and improve your quality of life."
+msgstr ""
+
 #. TRANSLATORS: In networked games, when one player has the choice
 #. between multiple advancements of a unit, this text is sent to
 #. other players. It will be embedded within a message.
@@ -5707,9 +5739,15 @@ msgstr ""
 msgid "waiting for^an advancement choice"
 msgstr "bez napredovanja"
 
-#: src/actions/attack.cpp:588 src/actions/attack.cpp:1387
+#: src/actions/attack.cpp:579 src/actions/attack.cpp:1382
 msgid "An invalid attacker weapon got selected."
 msgstr "Izabrano je loše oružje za napadača."
+
+#: src/actions/attack.cpp:1077
+#, fuzzy
+#| msgid "Attacks: "
+msgid "attack^miss"
+msgstr "napada: "
 
 #: src/actions/create.cpp:340
 msgid "You do not have a leader to recall with."
@@ -5827,6 +5865,10 @@ msgstr "Greška"
 msgid ""
 "The redo stack is out of sync. This is most commonly caused by a corrupt "
 "save file or by faulty WML code in the scenario or era. Details:"
+msgstr ""
+
+#: src/actions/undo.cpp:342
+msgid "Unhandled choices while redoing"
 msgstr ""
 
 #: src/addon/client.cpp:78
@@ -6077,95 +6119,95 @@ msgstr "Želite li da nastavite?"
 
 # >> @title:window
 #: src/addon/client.cpp:721 src/addon/manager_ui.cpp:171
-#: src/game_initialization/multiplayer.cpp:381
+#: src/game_initialization/multiplayer.cpp:374
 msgid "Confirm"
 msgstr "Potvrda"
 
-#: src/addon/info.cpp:256
+#: src/addon/info.cpp:252
 msgid "addon_type^Campaign"
 msgstr "pohod"
 
-#: src/addon/info.cpp:258
+#: src/addon/info.cpp:254
 msgid "addon_type^Scenario"
 msgstr "scenario"
 
 # well-spelled: вигр
-#: src/addon/info.cpp:260
+#: src/addon/info.cpp:256
 #, fuzzy
 #| msgid "addon_type^MP campaign"
 msgid "addon_type^SP/MP Campaign"
 msgstr "vigr. pohod"
 
 # well-spelled: вигр
-#: src/addon/info.cpp:262
+#: src/addon/info.cpp:258
 msgid "addon_type^MP era"
 msgstr "vigr. razdoblje"
 
 # well-spelled: вигр
-#: src/addon/info.cpp:264
+#: src/addon/info.cpp:260
 msgid "addon_type^MP faction"
 msgstr "vigr. frakcija"
 
 # well-spelled: вигр
-#: src/addon/info.cpp:266
+#: src/addon/info.cpp:262
 msgid "addon_type^MP map-pack"
 msgstr "vigr. paketa mapa"
 
 # well-spelled: вигр
-#: src/addon/info.cpp:268
+#: src/addon/info.cpp:264
 msgid "addon_type^MP scenario"
 msgstr "vigr. scenario"
 
 # well-spelled: вигр
-#: src/addon/info.cpp:270
+#: src/addon/info.cpp:266
 msgid "addon_type^MP campaign"
 msgstr "vigr. pohod"
 
 # well-spelled: вигр
-#: src/addon/info.cpp:272
+#: src/addon/info.cpp:268
 #, fuzzy
 #| msgid "addon_type^MP faction"
 msgid "addon_type^Modification"
 msgstr "vigr. frakcija"
 
-#: src/addon/info.cpp:274
+#: src/addon/info.cpp:270
 #, fuzzy
 #| msgid "addon_type^Resources"
 msgid "addon_type^Core"
 msgstr "resursi"
 
-#: src/addon/info.cpp:276
+#: src/addon/info.cpp:272
 msgid "addon_type^Resources"
 msgstr "resursi"
 
-#: src/addon/info.cpp:278
+#: src/addon/info.cpp:274
 msgid "addon_type^Other"
 msgstr "drugo"
 
-#: src/addon/info.cpp:280
+#: src/addon/info.cpp:276
 msgid "addon_type^(unknown)"
 msgstr "(nepoznato)"
 
-#: src/addon/info.cpp:317
+#: src/addon/info.cpp:313
 msgid "unit_byte^B"
 msgstr "B"
 
-#: src/addon/manager_ui.cpp:81 src/addon/manager_ui.cpp:322
+#: src/addon/manager_ui.cpp:81 src/addon/manager_ui.cpp:320
 msgid "Network communication error."
 msgstr "Greška u mrežnoj komunikaciji."
 
-#: src/addon/manager_ui.cpp:84 src/addon/manager_ui.cpp:325
+#: src/addon/manager_ui.cpp:84 src/addon/manager_ui.cpp:323
 msgid "Remote host disconnected."
 msgstr "Udaljeni domaćin je prekinuo vezu."
 
-#: src/addon/manager_ui.cpp:87 src/addon/manager_ui.cpp:328
+#: src/addon/manager_ui.cpp:87 src/addon/manager_ui.cpp:326
 msgid ""
 "A problem occurred when trying to create the files necessary to install this "
 "add-on."
 msgstr ""
 "Problem pri stvaranju datoteka neophodnih za instaliranje ovog dodatka."
 
-#: src/addon/manager_ui.cpp:96 src/addon/manager_ui.cpp:337
+#: src/addon/manager_ui.cpp:96 src/addon/manager_ui.cpp:335
 msgid ""
 "A local file with add-on publishing information could not be read.\n"
 "\n"
@@ -6173,7 +6215,7 @@ msgid ""
 "Error message: $msg"
 msgstr ""
 
-#: src/addon/manager_ui.cpp:104 src/addon/manager_ui.cpp:343
+#: src/addon/manager_ui.cpp:104 src/addon/manager_ui.cpp:341
 msgid "The add-ons server address specified is not valid."
 msgstr ""
 
@@ -6239,7 +6281,7 @@ msgstr[3] "Sledeći dodatak uspešno je obrisan:"
 msgid "An error occurred while downloading the add-ons list from the server."
 msgstr "Greška u komunikaciji sa serverom."
 
-#: src/addon/manager_ui.cpp:315
+#: src/addon/manager_ui.cpp:313
 #, fuzzy
 #| msgid "Could not find any updated add-ons on this server."
 msgid ""
@@ -6439,11 +6481,11 @@ msgstr "spisak prijatelja i ignorisanih"
 msgid "version"
 msgstr "verzija"
 
-#: src/chat_command_handler.cpp:138
+#: src/chat_command_handler.cpp:134
 msgid "nick registration"
 msgstr "registrujem nadimak"
 
-#: src/chat_command_handler.cpp:138
+#: src/chat_command_handler.cpp:134
 msgid "requesting information for user $nick"
 msgstr "tražim podatke o korisniku $nick"
 
@@ -6453,7 +6495,7 @@ msgid "(A) — admin command"
 msgstr "(A) — admin. naredba"
 
 # well-spelled: админ
-#: src/chat_command_handler.hpp:58 src/menu_events.cpp:1178
+#: src/chat_command_handler.hpp:58 src/menu_events.cpp:1209
 msgid "(admin only)"
 msgstr "(samo admin.)"
 
@@ -6501,9 +6543,7 @@ msgid "Mute/Unmute all observers. (toggles)"
 msgstr "Utišava ili ukida utišanost svih posmatrača."
 
 #: src/chat_command_handler.hpp:92
-msgid ""
-"Send some data to the server. Can be used to verify the network connection "
-"and notice disconnects."
+msgid "Measure roundtrip packet time between client and server."
 msgstr ""
 
 #: src/chat_command_handler.hpp:94
@@ -6574,7 +6614,7 @@ msgstr "Prikazuje podatak o verziji."
 msgid "Request information about a nickname."
 msgstr "Zatražite podatke o nadimku."
 
-#: src/chat_command_handler.hpp:121 src/menu_events.cpp:1228
+#: src/chat_command_handler.hpp:121 src/menu_events.cpp:1259
 msgid "Clear chat history."
 msgstr "Čisti istorijat ćaskanja."
 
@@ -6594,11 +6634,11 @@ msgstr "Nepoznat ispravljački domen: ‘$domain|’."
 msgid "Switched domain: '$domain' to level: '$level'."
 msgstr "Domen prebačen: ‘$domain|’ na nivo: ‘$level|’."
 
-#: src/chat_events.cpp:145
+#: src/chat_events.cpp:144
 msgid "whisper to $receiver"
 msgstr "šapat za $receiver"
 
-#: src/chat_events.cpp:152
+#: src/chat_events.cpp:151
 msgid "whisper: $sender"
 msgstr "šapat: $sender"
 
@@ -6628,7 +6668,7 @@ msgstr ""
 msgid "Chat message"
 msgstr "Starenje poruka u ćaskanju"
 
-#: src/desktop/windows_tray_notification.cpp:126 src/game_config.cpp:592
+#: src/desktop/windows_tray_notification.cpp:126 src/game_config.cpp:588
 msgid "The Battle for Wesnoth"
 msgstr "Boj za Vesnot"
 
@@ -6737,7 +6777,7 @@ msgstr[3] ""
 msgid "timespan^expired"
 msgstr ""
 
-#: src/game_config.cpp:540
+#: src/game_config.cpp:536
 #, fuzzy
 #| msgid "Invalid color range: "
 msgid "Invalid color in range: "
@@ -6837,7 +6877,7 @@ msgstr ""
 msgid "instead, use the macro with the same name in the [campaign] tag"
 msgstr ""
 
-#: src/game_config_manager.cpp:634
+#: src/game_config_manager.cpp:630
 msgid "The following add-on had errors and could not be loaded:"
 msgid_plural "The following add-ons had errors and could not be loaded:"
 msgstr[0] "Sljedeći dodaci imaju grešku i ne mogu se učitati:"
@@ -6845,7 +6885,7 @@ msgstr[1] "Sljedeći dodaci imaju grešku i ne mogu se učitati:"
 msgstr[2] "Sljedeći dodaci imaju grešku i ne mogu se učitati:"
 msgstr[3] "Sljedeći dodatak ima grešku i ne može se učitati:"
 
-#: src/game_config_manager.cpp:638
+#: src/game_config_manager.cpp:634
 msgid "Please report this to the author or maintainer of this add-on."
 msgid_plural ""
 "Please report this to the respective authors or maintainers of these add-ons."
@@ -6870,43 +6910,43 @@ msgstr "Ispravljanje: "
 msgid "Info: "
 msgstr "Podatak: "
 
-#: src/game_initialization/connect_engine.cpp:98
+#: src/game_initialization/connect_engine.cpp:94
 msgid "Team"
 msgstr "tim"
 
-#: src/game_initialization/connect_engine.cpp:944
+#: src/game_initialization/connect_engine.cpp:874
 #, fuzzy
 #| msgid "Anonymous local player"
 msgid "Anonymous player"
 msgstr "Nikogović"
 
-#: src/game_initialization/connect_engine.cpp:949
-#: src/game_initialization/connect_engine.cpp:1192
+#: src/game_initialization/connect_engine.cpp:879
+#: src/game_initialization/connect_engine.cpp:1123
 msgid "Computer Player"
 msgstr "računarski igrač"
 
-#: src/game_initialization/connect_engine.cpp:991
+#: src/game_initialization/connect_engine.cpp:921
 msgid "$playername $side"
 msgstr "$playername ($side)"
 
-#: src/game_initialization/connect_engine.cpp:1188
+#: src/game_initialization/connect_engine.cpp:1119
 msgid "Network Player"
 msgstr "mrežni igrač"
 
-#: src/game_initialization/connect_engine.cpp:1191
+#: src/game_initialization/connect_engine.cpp:1122
 msgid "Local Player"
 msgstr "lokalni igrač"
 
-#: src/game_initialization/connect_engine.cpp:1193
+#: src/game_initialization/connect_engine.cpp:1124
 msgid "Nobody"
 msgstr ""
 
-#: src/game_initialization/connect_engine.cpp:1196
+#: src/game_initialization/connect_engine.cpp:1127
 msgid "Reserved"
 msgstr "rezervisano"
 
 #: src/game_initialization/create_engine.cpp:74
-#: src/game_initialization/create_engine.cpp:675
+#: src/game_initialization/create_engine.cpp:683
 #, fuzzy
 #| msgid "The game could not be loaded: "
 msgid "Map could not be loaded: "
@@ -6930,40 +6970,46 @@ msgstr " Pomoć nije dostupna."
 msgid "Custom map."
 msgstr "naredba:"
 
+#: src/game_initialization/create_engine.cpp:412
+#, fuzzy
+#| msgid "Multiplayer"
+msgid "multiplayer^MP"
+msgstr "Višeigranje"
+
 # >> @title:window
-#: src/game_initialization/depcheck.cpp:505
+#: src/game_initialization/depcheck.cpp:504
 #, fuzzy
 #| msgid "Install dependencies"
 msgid "Failed to resolve dependencies"
 msgstr "Instaliranje zavisnosti"
 
-#: src/game_initialization/depcheck.cpp:505
+#: src/game_initialization/depcheck.cpp:504
 msgid "OK"
 msgstr "U redu"
 
-#: src/game_initialization/depcheck.cpp:530
+#: src/game_initialization/depcheck.cpp:529
 msgid "Scenario can’t be activated. Some dependencies are missing: "
 msgstr ""
 
-#: src/game_initialization/depcheck.cpp:584
-#: src/game_initialization/depcheck.cpp:707
+#: src/game_initialization/depcheck.cpp:583
+#: src/game_initialization/depcheck.cpp:706
 #, fuzzy
 #| msgid "No eras found."
 msgid "No compatible eras found."
 msgstr "Nema nijedne epohe."
 
-#: src/game_initialization/depcheck.cpp:599
+#: src/game_initialization/depcheck.cpp:598
 msgid "Era can’t be activated. Some dependencies are missing: "
 msgstr ""
 
-#: src/game_initialization/depcheck.cpp:652
-#: src/game_initialization/depcheck.cpp:744
+#: src/game_initialization/depcheck.cpp:651
+#: src/game_initialization/depcheck.cpp:743
 #, fuzzy
 #| msgid "No multiplayer sides found"
 msgid "No compatible scenarios found."
 msgstr "Nema višeigračkih strana"
 
-#: src/game_initialization/depcheck.cpp:681
+#: src/game_initialization/depcheck.cpp:680
 msgid ""
 "Not all of the chosen modifications are compatible. Some of them will be "
 "disabled."
@@ -6974,59 +7020,59 @@ msgstr ""
 msgid "A component"
 msgstr ""
 
-#: src/game_initialization/flg_manager.cpp:216
+#: src/game_initialization/flg_manager.cpp:218
 msgid "Only random sides in the current era."
 msgstr "Samo nasumične strane u izabranoj epohi."
 
-#: src/game_initialization/flg_manager.cpp:238
+#: src/game_initialization/flg_manager.cpp:240
 msgid "Unable to find a leader type for faction $faction"
 msgstr "Ne mogu da nađem tip vođa za frakciju $faction"
 
-#: src/game_initialization/flg_manager.cpp:261
+#: src/game_initialization/flg_manager.cpp:263
 msgid "Cannot obtain genders for invalid leader $leader"
 msgstr ""
 
-#: src/game_initialization/lobby_data.cpp:161
+#: src/game_initialization/lobby_data.cpp:162
 #, fuzzy
 #| msgid "Missing argument $arg_id"
 msgid "Missing addon: $name"
 msgstr "Nedostaje argument $arg_id"
 
-#: src/game_initialization/lobby_data.cpp:163
+#: src/game_initialization/lobby_data.cpp:164
 #, fuzzy
 #| msgid "Missing argument $arg_id"
 msgid "Missing addon: $id"
 msgstr "Nedostaje argument $arg_id"
 
-#: src/game_initialization/lobby_data.cpp:195
+#: src/game_initialization/lobby_data.cpp:196
 msgid "Unknown era"
 msgstr "nepoznata epoha"
 
-#: src/game_initialization/lobby_data.cpp:262
-#: src/game_initialization/lobby_data.cpp:297
+#: src/game_initialization/lobby_data.cpp:263
+#: src/game_initialization/lobby_data.cpp:298
 #, fuzzy
 #| msgid "scenario settings^Side"
 msgid "scenario_abbreviation^S"
 msgstr "strana"
 
-#: src/game_initialization/lobby_data.cpp:283
+#: src/game_initialization/lobby_data.cpp:284
 msgid "Remote scenario"
 msgstr "udaljeni scenario"
 
-#: src/game_initialization/lobby_data.cpp:304
-#: src/game_initialization/lobby_data.cpp:328
+#: src/game_initialization/lobby_data.cpp:305
+#: src/game_initialization/lobby_data.cpp:329
 msgid "campaign_abbreviation^C"
 msgstr ""
 
-#: src/game_initialization/lobby_data.cpp:334
+#: src/game_initialization/lobby_data.cpp:335
 msgid "Unknown scenario"
 msgstr "nepoznat scenario"
 
-#: src/game_initialization/lobby_data.cpp:348
+#: src/game_initialization/lobby_data.cpp:349
 msgid "Reloaded game"
 msgstr "učitana pozicija"
 
-#: src/game_initialization/lobby_data.cpp:363
+#: src/game_initialization/lobby_data.cpp:364
 msgid "Vacant Slot:"
 msgid_plural "Vacant Slots:"
 msgstr[0] "slobodna mjesta:"
@@ -7034,34 +7080,34 @@ msgstr[1] "slobodna mjesta:"
 msgstr[2] "slobodna mjesta:"
 msgstr[3] "slobodno mjesto:"
 
-#: src/game_initialization/lobby_data.cpp:365
+#: src/game_initialization/lobby_data.cpp:366
 msgid "mp_game_available_slots^Full"
 msgstr ""
 
-#: src/game_initialization/lobby_data.cpp:376
-#: src/game_initialization/lobby_data.cpp:378 src/savegame.cpp:652
+#: src/game_initialization/lobby_data.cpp:377
+#: src/game_initialization/lobby_data.cpp:379 src/savegame.cpp:631
 msgid "Turn"
 msgstr "potez"
 
-#: src/game_initialization/lobby_data.cpp:391
+#: src/game_initialization/lobby_data.cpp:392
 #, fuzzy
 #| msgid "Version: "
 msgid "vision^none"
 msgstr "Verzija: "
 
-#: src/game_initialization/lobby_data.cpp:400
+#: src/game_initialization/lobby_data.cpp:401
 #, fuzzy
 #| msgid "Time limit"
 msgid "time limit^none"
 msgstr "vremenski limit"
 
-#: src/game_initialization/lobby_data.cpp:444
+#: src/game_initialization/lobby_data.cpp:445
 msgid ""
 "The host’s version of <i>$addon</i> is incompatible. They have version "
 "<b>$host_ver</b> while you have version <b>$local_ver</b>."
 msgstr ""
 
-#: src/game_initialization/lobby_data.cpp:458
+#: src/game_initialization/lobby_data.cpp:459
 msgid ""
 "Your version of <i>$addon</i> is incompatible. You have version "
 "<b>$local_ver</b> while the host has version <b>$host_ver</b>."
@@ -7077,11 +7123,11 @@ msgstr "Poraziš li protivničke vođe"
 msgid "Cannot find era ‘$era’"
 msgstr "Ne mogu da nađem epohu $era"
 
-#: src/game_initialization/multiplayer.cpp:256
+#: src/game_initialization/multiplayer.cpp:255
 msgid "Invalid address specified for multiplayer server"
 msgstr ""
 
-#: src/game_initialization/multiplayer.cpp:291
+#: src/game_initialization/multiplayer.cpp:290
 #, fuzzy
 #| msgid ""
 #| "The server requires version '$version1' while you are using version "
@@ -7091,11 +7137,11 @@ msgid ""
 "‘$your_version’"
 msgstr "Server zahtijeva verziju '$version1', dok je vaša '$version2'."
 
-#: src/game_initialization/multiplayer.cpp:304
+#: src/game_initialization/multiplayer.cpp:303
 msgid "Server-side redirect loop"
 msgstr "Petlja preusmjeravanja na strani servera"
 
-#: src/game_initialization/multiplayer.cpp:354
+#: src/game_initialization/multiplayer.cpp:347
 msgid ""
 "The nickname ‘$nick’ is inactive. You cannot claim ownership of this "
 "nickname until you activate your account via email or ask an administrator "
@@ -7105,28 +7151,28 @@ msgstr ""
 "dok ne aktivirate svoj nalog, preko e-pošte ili zahtevom administratoru da "
 "to uradi za vas."
 
-#: src/game_initialization/multiplayer.cpp:363
+#: src/game_initialization/multiplayer.cpp:356
 msgid "Do you want to continue?"
 msgstr "Želite li da nastavite?"
 
-#: src/game_initialization/multiplayer.cpp:365
+#: src/game_initialization/multiplayer.cpp:358
 msgid "Warning"
 msgstr "Upozorenje"
 
-#: src/game_initialization/multiplayer.cpp:429
+#: src/game_initialization/multiplayer.cpp:420
 msgid ""
 "The remote server requested a password while using an insecure connection."
 msgstr ""
 
-#: src/game_initialization/multiplayer.cpp:431
+#: src/game_initialization/multiplayer.cpp:422
 msgid "You must login first."
 msgstr "Morate se prvo prijaviti."
 
-#: src/game_initialization/multiplayer.cpp:433
+#: src/game_initialization/multiplayer.cpp:424
 msgid "The nickname ‘$nick’ is already taken."
 msgstr "Nadimak „$nick“ već je zauzet."
 
-#: src/game_initialization/multiplayer.cpp:435
+#: src/game_initialization/multiplayer.cpp:426
 #, fuzzy
 #| msgid ""
 #| "The nickname ‘$nick’ contains invalid characters. Only alpha-numeric "
@@ -7138,57 +7184,57 @@ msgstr ""
 "Nadimak „$nick“ sadrži loše znakove. Dozvoljena su samo slova, brojevi, "
 "podvlake i crtice."
 
-#: src/game_initialization/multiplayer.cpp:439
+#: src/game_initialization/multiplayer.cpp:430
 msgid "The nickname ‘$nick’ is too long. Nicks must be 20 characters or less."
 msgstr "Nadimak „$nick“ je predugačak. Ne može imati više od 20 znakova."
 
-#: src/game_initialization/multiplayer.cpp:441
+#: src/game_initialization/multiplayer.cpp:432
 msgid "The nickname ‘$nick’ is reserved and cannot be used by players."
 msgstr "Nadimak „$nick“ je rezervisan i igrači ga ne mogu uzeti."
 
-#: src/game_initialization/multiplayer.cpp:443
+#: src/game_initialization/multiplayer.cpp:434
 msgid "The nickname ‘$nick’ is not registered on this server."
 msgstr "Nadimak „$nick“ nije registrovan na ovom serveru."
 
-#: src/game_initialization/multiplayer.cpp:444
+#: src/game_initialization/multiplayer.cpp:435
 msgid " This server disallows unregistered nicknames."
 msgstr " Ovaj server ne dozvoljava neregistrovane nadimke."
 
-#: src/game_initialization/multiplayer.cpp:447
+#: src/game_initialization/multiplayer.cpp:438
 #, fuzzy
 #| msgid "The nickname ‘$nick’ is registered on this server."
 msgid "Your IP address is banned on this server for $duration|."
 msgstr "Nadimak „$nick“ registrovan je na ovom serveru."
 
-#: src/game_initialization/multiplayer.cpp:449
+#: src/game_initialization/multiplayer.cpp:440
 #, fuzzy
 #| msgid "The nickname ‘$nick’ is registered on this server."
 msgid "Your IP address is banned on this server."
 msgstr "Nadimak „$nick“ registrovan je na ovom serveru."
 
-#: src/game_initialization/multiplayer.cpp:453
+#: src/game_initialization/multiplayer.cpp:444
 #, fuzzy
 #| msgid "The nickname ‘$nick’ is registered on this server."
 msgid "The nickname ‘$nick’ is banned on this server’s forums for $duration|."
 msgstr "Nadimak „$nick“ registrovan je na ovom serveru."
 
-#: src/game_initialization/multiplayer.cpp:455
+#: src/game_initialization/multiplayer.cpp:446
 #, fuzzy
 #| msgid "The nickname ‘$nick’ is registered on this server."
 msgid "The nickname ‘$nick’ is banned on this server’s forums."
 msgstr "Nadimak „$nick“ registrovan je na ovom serveru."
 
-#: src/game_initialization/multiplayer.cpp:459
+#: src/game_initialization/multiplayer.cpp:450
 #, fuzzy
 #| msgid "The nickname ‘$nick’ is registered on this server."
 msgid "Your IP address is banned on this server’s forums for $duration|."
 msgstr "Nadimak „$nick“ registrovan je na ovom serveru."
 
-#: src/game_initialization/multiplayer.cpp:461
+#: src/game_initialization/multiplayer.cpp:452
 msgid "Your IP address is banned on this server’s forums."
 msgstr ""
 
-#: src/game_initialization/multiplayer.cpp:465
+#: src/game_initialization/multiplayer.cpp:456
 #, fuzzy
 #| msgid "The nickname ‘$nick’ is registered on this server."
 msgid ""
@@ -7196,19 +7242,19 @@ msgid ""
 "for $duration|."
 msgstr "Nadimak „$nick“ registrovan je na ovom serveru."
 
-#: src/game_initialization/multiplayer.cpp:467
+#: src/game_initialization/multiplayer.cpp:458
 #, fuzzy
 #| msgid "The nickname ‘$nick’ is registered on this server."
 msgid ""
 "The email address for the nickname ‘$nick’ is banned on this server’s forums."
 msgstr "Nadimak „$nick“ registrovan je na ovom serveru."
 
-#: src/game_initialization/multiplayer.cpp:470
-#: src/game_initialization/multiplayer.cpp:472
+#: src/game_initialization/multiplayer.cpp:461
+#: src/game_initialization/multiplayer.cpp:463
 msgid "The nickname ‘$nick’ is registered on this server."
 msgstr "Nadimak „$nick“ registrovan je na ovom serveru."
 
-#: src/game_initialization/multiplayer.cpp:473
+#: src/game_initialization/multiplayer.cpp:464
 msgid ""
 "WARNING: There is already a client using this nickname, logging in will "
 "cause that client to be kicked!"
@@ -7216,15 +7262,15 @@ msgstr ""
 "UPOZORENJE: Jedan klijent već ima ovaj nadimak, prijavljivanjem ćete ga "
 "izbaciti!"
 
-#: src/game_initialization/multiplayer.cpp:476
+#: src/game_initialization/multiplayer.cpp:467
 msgid "The password you provided was incorrect."
 msgstr "Dali ste neispravnu lozinku."
 
-#: src/game_initialization/multiplayer.cpp:478
+#: src/game_initialization/multiplayer.cpp:469
 msgid "You have made too many login attempts."
 msgstr "Previše puta ste pokušali da se prijavite."
 
-#: src/game_initialization/multiplayer.cpp:480
+#: src/game_initialization/multiplayer.cpp:471
 msgid "Password hashing failed."
 msgstr ""
 
@@ -7270,13 +7316,13 @@ msgstr "Nepoznat scenario: ‘$scenario|’"
 msgid "No campaigns are available."
 msgstr "Nema nijednog pohoda.\n"
 
-#: src/game_launcher.cpp:685 src/game_launcher.cpp:704 src/replay.cpp:663
+#: src/game_launcher.cpp:685 src/game_launcher.cpp:704
+#: src/hotkey/hotkey_handler_sp.cpp:327 src/replay.cpp:664 src/savegame.cpp:142
+#: src/savegame.cpp:184 src/savegame.cpp:288
 msgid "The file you have tried to load is corrupt"
 msgstr "Datoteka koju ste pokušali da otvorite iskvarena je"
 
 #: src/game_launcher.cpp:687 src/game_launcher.cpp:706
-#: src/hotkey/hotkey_handler_sp.cpp:338 src/savegame.cpp:149
-#: src/savegame.cpp:310
 msgid "The file you have tried to load is corrupt: '"
 msgstr "Datoteka koju ste pokušali da učitate iskvarena je: '"
 
@@ -7298,13 +7344,13 @@ msgstr "Greška pri pokretanju servera: "
 msgid "Connection failed: "
 msgstr "Veza je istekla."
 
-#: src/generators/default_map_generator_job.cpp:707
+#: src/generators/default_map_generator_job.cpp:708
 #, fuzzy
 #| msgid "Random maps with an odd width aren't supported."
 msgid "Random maps with an odd width aren’t supported."
 msgstr "Nasumične mape neparne širine nisu podržane."
 
-#: src/generators/default_map_generator_job.cpp:964
+#: src/generators/default_map_generator_job.cpp:965
 #, fuzzy
 #| msgid ""
 #| "No valid castle location found. Too many or too few mountain hexes? "
@@ -7471,175 +7517,175 @@ msgstr "ja"
 msgid "Error"
 msgstr "Greška"
 
-#: src/gui/widgets/status_label_helper.hpp:37
+#: src/gui/widgets/status_label_helper.hpp:39
 msgid "no"
 msgstr "ne"
 
-#: src/gui/widgets/status_label_helper.hpp:37
+#: src/gui/widgets/status_label_helper.hpp:39
 msgid "yes"
 msgstr "da"
 
-#: src/help/help_impl.cpp:401
+#: src/help/help_impl.cpp:386
 msgid "Only available during a scenario."
 msgstr ""
 
-#: src/help/help_impl.cpp:402 src/help/help_impl.cpp:441
+#: src/help/help_impl.cpp:387 src/help/help_impl.cpp:426
 #, fuzzy
 #| msgid "Time of day: "
 msgid "Time of Day Schedule"
 msgstr "doba dana: "
 
-#: src/help/help_impl.cpp:432
+#: src/help/help_impl.cpp:417
 #, fuzzy
 #| msgid "Lawful units: "
 msgid "Lawful Bonus:"
 msgstr "zakonite jedinice: "
 
-#: src/help/help_impl.cpp:433
+#: src/help/help_impl.cpp:418
 #, fuzzy
 #| msgid "Neutral units: "
 msgid "Neutral Bonus:"
 msgstr "neutralne jedinice: "
 
-#: src/help/help_impl.cpp:434
+#: src/help/help_impl.cpp:419
 #, fuzzy
 #| msgid "Chaotic units: "
 msgid "Chaotic Bonus:"
 msgstr "haotične jedinice: "
 
-#: src/help/help_impl.cpp:435
+#: src/help/help_impl.cpp:420
 #, fuzzy
 #| msgid "Liminal units: "
 msgid "Liminal Bonus:"
 msgstr "dvojstvene jedinice: "
 
-#: src/help/help_impl.cpp:436
+#: src/help/help_impl.cpp:421
 msgid "Schedule"
 msgstr ""
 
-#: src/help/help_impl.cpp:528
+#: src/help/help_impl.cpp:507
 msgid "Units with this special attack"
 msgstr ""
 
-#: src/help/help_impl.cpp:592
+#: src/help/help_impl.cpp:568
 msgid "Units with this ability"
 msgstr ""
 
-#: src/help/help_impl.cpp:628
+#: src/help/help_impl.cpp:604
 #, fuzzy
 #| msgid "Actions"
 msgid "Factions"
 msgstr "Radnje"
 
-#: src/help/help_impl.cpp:676
+#: src/help/help_impl.cpp:652
 #, fuzzy
 #| msgid "Race: "
 msgid "Races: "
 msgstr "rasa: "
 
-#: src/help/help_impl.cpp:685 src/help/help_impl.cpp:1133
+#: src/help/help_impl.cpp:661 src/help/help_impl.cpp:1109
 #, fuzzy
 #| msgid "Alignment: "
 msgid "Alignments: "
 msgstr "poredak: "
 
-#: src/help/help_impl.cpp:692
+#: src/help/help_impl.cpp:668
 #, fuzzy
 #| msgid "Leader"
 msgid "Leaders"
 msgstr "vođ"
 
-#: src/help/help_impl.cpp:701
+#: src/help/help_impl.cpp:677
 msgid "Recruits"
 msgstr "unajmljeno"
 
-#: src/help/help_impl.cpp:786 src/units/types.cpp:489
+#: src/help/help_impl.cpp:762 src/units/types.cpp:444
 msgid "No description available."
 msgstr "Opis nije dostupan."
 
-#: src/help/help_impl.cpp:896 src/help/help_impl.cpp:1110
+#: src/help/help_impl.cpp:872 src/help/help_impl.cpp:1086
 msgid "race^Miscellaneous"
 msgstr ""
 
-#: src/help/help_impl.cpp:1133 src/reports.cpp:394 src/reports.cpp:974
+#: src/help/help_impl.cpp:1109
 msgid "Alignment: "
 msgstr "poredak: "
 
 #. TRANSLATORS: this is expected to say "[Dunefolk are] a group of units, all of whom are Humans",
 #. or "[Quenoth Elves are] a group of units, all of whom are Elves".
-#: src/help/help_impl.cpp:1152
+#: src/help/help_impl.cpp:1128
 msgid ""
 "This is a group of units, all of whom are <ref "
 "dst='$topic_id'>$help_taxonomy</ref>."
 msgstr ""
 
-#: src/help/help_impl.cpp:1157
+#: src/help/help_impl.cpp:1133
 msgid "Subgroups of units within this group"
 msgstr ""
 
-#: src/help/help_impl.cpp:1159
+#: src/help/help_impl.cpp:1135
 msgid "Groups of units within this race"
 msgstr ""
 
-#: src/help/help_impl.cpp:1168
+#: src/help/help_impl.cpp:1144
 msgid "Units of this group"
 msgstr ""
 
-#: src/help/help_impl.cpp:1170
+#: src/help/help_impl.cpp:1146
 msgid "Units of this race"
 msgstr ""
 
-#: src/hotkey/command_executor.cpp:404
+#: src/hotkey/command_executor.cpp:402
 #, fuzzy
 #| msgid "Do you really want to start the server?"
 msgid "Do you really want to surrender the game?"
 msgstr "Želite li zaista da pokrenete server?"
 
-#: src/hotkey/command_executor.cpp:404
+#: src/hotkey/command_executor.cpp:402
 msgid "Surrender"
 msgstr ""
 
-#: src/hotkey/command_executor.cpp:812
+#: src/hotkey/command_executor.cpp:834
 msgid "Map-Screenshot"
 msgstr ""
 
-#: src/hotkey/hotkey_handler.cpp:225
+#: src/hotkey/hotkey_handler.cpp:193
 #, fuzzy
 #| msgid "(press $hotkey to keep moving)"
 msgid "(press $hk to disable)"
 msgstr "(pritisnite $hotkey da produži)"
 
-#: src/hotkey/hotkey_handler.cpp:225
+#: src/hotkey/hotkey_handler.cpp:193
 msgid "Accelerated speed enabled!"
 msgstr ""
 
-#: src/hotkey/hotkey_handler.cpp:229
+#: src/hotkey/hotkey_handler.cpp:195
 msgid "Accelerated speed disabled!"
 msgstr ""
 
-#: src/hotkey/hotkey_handler.cpp:430
+#: src/hotkey/hotkey_handler.cpp:404
+#, fuzzy
+#| msgid "Back to turn "
+msgid "Back to Turn $number"
+msgstr "Nazad na potez "
+
+#: src/hotkey/hotkey_handler.cpp:405
 #, fuzzy
 #| msgid "Back to turn "
 msgid "Back to Start"
 msgstr "Nazad na potez "
 
-#: src/hotkey/hotkey_handler.cpp:430
+#: src/hotkey/hotkey_handler.cpp:419
 #, fuzzy
-#| msgid "Back to turn "
-msgid "Back to Turn "
-msgstr "Nazad na potez "
+#| msgid "play turn"
+msgid "Replay from Turn $number"
+msgstr "pusti potez"
 
-#: src/hotkey/hotkey_handler.cpp:446
+#: src/hotkey/hotkey_handler.cpp:420
 #, fuzzy
 #| msgid "Back to turn "
 msgid "Replay from Start"
 msgstr "Nazad na potez "
-
-#: src/hotkey/hotkey_handler.cpp:446
-#, fuzzy
-#| msgid "play turn"
-msgid "Replay from Turn "
-msgstr "pusti potez"
 
 #: src/hotkey/hotkey_handler_sp.cpp:155
 #, fuzzy
@@ -7647,27 +7693,21 @@ msgstr "pusti potez"
 msgid "(press $hotkey to deactivate)"
 msgstr "(pritisnite $hotkey da produži)"
 
-#: src/hotkey/hotkey_handler_sp.cpp:155 src/menu_events.cpp:2081
+#: src/hotkey/hotkey_handler_sp.cpp:155 src/menu_events.cpp:2096
 msgid "Planning mode activated!"
 msgstr "Režim planiranja aktiviran!"
 
-#: src/hotkey/hotkey_handler_sp.cpp:157 src/menu_events.cpp:2084
+#: src/hotkey/hotkey_handler_sp.cpp:157 src/menu_events.cpp:2099
 msgid "Planning mode deactivated!"
 msgstr "Režim planiranja deaktiviran!"
 
-#: src/hotkey/hotkey_handler_sp.cpp:326
-#, fuzzy
-#| msgid "Do you want to continue?"
-msgid "Do you want to load it anyway?"
-msgstr "Želite li da nastavite?"
-
-#: src/hotkey/hotkey_handler_sp.cpp:342
+#: src/hotkey/hotkey_handler_sp.cpp:331
 #, fuzzy
 #| msgid "The file you have tried to load is corrupt"
-msgid "The file you have tried to load has no replay information. "
+msgid "The file you have tried to load has no replay information."
 msgstr "Datoteka koju ste pokušali da otvorite iskvarena je"
 
-#: src/hotkey/hotkey_handler_sp.cpp:346
+#: src/hotkey/hotkey_handler_sp.cpp:335
 #, fuzzy
 #| msgid "The file you have tried to load is corrupt"
 msgid "The file you have tried to load is not from the current session."
@@ -7820,10 +7860,7 @@ msgstr "Pošalji samo posmatračima"
 msgid "Send to allies only"
 msgstr "Pošalji samo saveznicima"
 
-#. TRANSLATORS: An error that should never happen, might happen when loading an old savegame. If there are
-#. any units that the player can recruit then their standard recruitment dialog will be shown after this
-#. error message, otherwise they'll get the "You have no units available to recruit." error after this one.
-#: src/menu_events.cpp:301
+#: src/menu_events.cpp:303
 msgid "Error: there’s an unknown unit type on your recruit list: $unknown_ids"
 msgid_plural ""
 "Error: there are several unknown unit types on your recruit list: "
@@ -7833,17 +7870,17 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: src/menu_events.cpp:309
+#: src/menu_events.cpp:311
 msgid "You have no units available to recruit."
 msgstr "Nema jedinica spremnih za unajmljivanje."
 
-#: src/menu_events.cpp:359
+#: src/menu_events.cpp:392
 #, fuzzy
 #| msgid "You are separated from your soldiers and may not recall them"
 msgid "You are separated from your soldiers and may not recall them."
 msgstr "Rastavljeni ste od svojih vojnika i ne možete ih sazvati"
 
-#: src/menu_events.cpp:378
+#: src/menu_events.cpp:411
 #, fuzzy
 #| msgid ""
 #| "There are no troops available to recall\n"
@@ -7855,13 +7892,13 @@ msgstr ""
 "Nema veterana koje biste mogli sazvati.\n"
 "(Morate imati neke preživjele iz prethodnog scenarija)"
 
-#: src/menu_events.cpp:383
+#: src/menu_events.cpp:416
 #, fuzzy
 #| msgid "You currently can't recall at the highlighted location"
 msgid "You currently can’t recall at the highlighted location."
 msgstr "Trenutno ne možete sazivati na istaknutoj lokaciji"
 
-#: src/menu_events.cpp:411
+#: src/menu_events.cpp:444
 #, fuzzy
 #| msgid "You must have at least 1 gold piece to recall a unit"
 #| msgid_plural "You must have at least $cost gold pieces to recall a unit"
@@ -7872,42 +7909,42 @@ msgstr[1] "Morate imati barem $cost zlatnika da biste sazvali jedinicu"
 msgstr[2] "Morate imati barem $cost zlatnika da biste sazvali jedinicu"
 msgstr[3] "Morate imati barem jedan zlatnik da biste sazvali jedinicu"
 
-#: src/menu_events.cpp:556
+#: src/menu_events.cpp:589
 msgid "You cannot end your turn yet!"
 msgstr "Još ne možete završiti potez!"
 
-#: src/menu_events.cpp:571
+#: src/menu_events.cpp:604
 msgid ""
 "You have not started your turn yet. Do you really want to end your turn?"
 msgstr "Niste ni započeli potez, želite li zaista već da ga okončate?"
 
-#: src/menu_events.cpp:580
+#: src/menu_events.cpp:613
 msgid "Some units have movement left. Do you really want to end your turn?"
 msgstr "Neke jedinice se još mogu kretati. Želite li zaista da završite potez?"
 
-#: src/menu_events.cpp:589
+#: src/menu_events.cpp:622
 #, fuzzy
 #| msgid "Some units have movement left. Do you really want to end your turn?"
 msgid "Some units have not moved. Do you really want to end your turn?"
 msgstr "Neke jedinice se još mogu kretati. Želite li zaista da završite potez?"
 
-#: src/menu_events.cpp:645
+#: src/menu_events.cpp:678
 msgid "Rename Unit"
 msgstr "Preimenuj jedinicu"
 
-#: src/menu_events.cpp:646
+#: src/menu_events.cpp:679 src/reports.cpp:176
 #, fuzzy
 #| msgid "Name: "
 msgid "Name:"
 msgstr "Ime: "
 
-#: src/menu_events.cpp:824
+#: src/menu_events.cpp:855
 #, fuzzy
 #| msgid "Clear all orders"
 msgid "Clear Labels"
 msgstr "Očisti sva naređenja"
 
-#: src/menu_events.cpp:825
+#: src/menu_events.cpp:856
 #, fuzzy
 #| msgid "Are you sure you want to remove the following installed add-on?"
 #| msgid_plural ""
@@ -7915,55 +7952,55 @@ msgstr "Očisti sva naređenja"
 msgid "Are you sure you want to clear map labels?"
 msgstr "Želite li zaista da uklonite sledeće instalirane dodatke?"
 
-#: src/menu_events.cpp:1029
+#: src/menu_events.cpp:1060
 msgid "Search"
 msgstr "Traži"
 
 # well-spelled: админ
-#: src/menu_events.cpp:1169
+#: src/menu_events.cpp:1200
 msgid "(D) — debug only, (N) — network only, (A) — admin only"
 msgstr "(D) — samo ispravljanje, (N) — samo mreža, (A) — samo admin"
 
-#: src/menu_events.cpp:1176
+#: src/menu_events.cpp:1207
 msgid "(debug command)"
 msgstr "(ispravljačka naredba)"
 
-#: src/menu_events.cpp:1177
+#: src/menu_events.cpp:1208
 msgid "(network only)"
 msgstr "(samo mreža)"
 
-#: src/menu_events.cpp:1179
+#: src/menu_events.cpp:1210
 msgid "(not during other events)"
 msgstr ""
 
-#: src/menu_events.cpp:1209
+#: src/menu_events.cpp:1240
 msgid "Refresh gui."
 msgstr "Osvježava sučelje."
 
-#: src/menu_events.cpp:1210
+#: src/menu_events.cpp:1241
 msgid "Switch a side to/from AI control."
 msgstr "Daje ili oduzima upravljanje stranom VI."
 
 #. TRANSLATORS: These are the arguments accepted by the "droid" command,
 #. which must be a side-number and then optionally one of "on", "off" or "full".
 #. As with the command's name, "on", "off" and "full" are hardcoded, and shouldn't change in the translation.
-#: src/menu_events.cpp:1214
+#: src/menu_events.cpp:1245
 msgid ""
 "[<side> [on/off/full]]\n"
 "“on” = enable but retain vision, “full” = as if it’s controlled by another "
 "player"
 msgstr ""
 
-#: src/menu_events.cpp:1215
+#: src/menu_events.cpp:1246
 msgid "Change terrain type of current hex"
 msgstr ""
 
 #. TRANSLATORS: [both|base|overlay] are hardcoded literal arguments and shouldn't be translated.
-#: src/menu_events.cpp:1217
+#: src/menu_events.cpp:1248
 msgid "<terrain type> [both|base|overlay]"
 msgstr ""
 
-#: src/menu_events.cpp:1218
+#: src/menu_events.cpp:1249
 #, fuzzy
 #| msgid "Switch a side to/from AI control."
 msgid "Switch a side to/from idle state."
@@ -7972,85 +8009,85 @@ msgstr "Daje ili oduzima upravljanje stranom VI."
 #. TRANSLATORS: These are the arguments accepted by the "idle" command,
 #. which must be a side-number and then optionally "on" or "off".
 #. As with the command's name, "on" and "off" are hardcoded, and shouldn't change in the translation.
-#: src/menu_events.cpp:1222
+#: src/menu_events.cpp:1253
 #, fuzzy
 #| msgid "do not translate the on/off^[<side> [on/off]]"
 msgid "command_idle^[<side> [on/off]]"
 msgstr "[<strana> [on/off]]"
 
-#: src/menu_events.cpp:1223
+#: src/menu_events.cpp:1254
 msgid "Change the in-game theme."
 msgstr ""
 
-#: src/menu_events.cpp:1225
+#: src/menu_events.cpp:1256
 msgid "<side> <nickname>"
 msgstr "<strana> <nadimak>"
 
-#: src/menu_events.cpp:1225
+#: src/menu_events.cpp:1256
 msgid "Assign control of a side to a different player or observer."
 msgstr "Dodjeljuje upravljanje stranom drugom igraču ili posmatraču."
 
-#: src/menu_events.cpp:1226
+#: src/menu_events.cpp:1257
 msgid "Query the controller status of a side."
 msgstr ""
 
-#: src/menu_events.cpp:1227
+#: src/menu_events.cpp:1258
 msgid "<side>"
 msgstr ""
 
-#: src/menu_events.cpp:1229
+#: src/menu_events.cpp:1260
 msgid "Debug foreground terrain."
 msgstr "Isprava prednji plan terena."
 
-#: src/menu_events.cpp:1231
+#: src/menu_events.cpp:1262
 msgid "Debug layers from terrain under the mouse."
 msgstr "Ispravlja slojeva terena pod mišem."
 
-#: src/menu_events.cpp:1232
+#: src/menu_events.cpp:1263
 msgid "Display and log fps (Frames Per Second)."
 msgstr ""
 
-#: src/menu_events.cpp:1233
+#: src/menu_events.cpp:1264
 msgid ""
 "Similar to the ‘fps’ command, but also forces everything to redraw instead "
 "of only things that have changed."
 msgstr ""
 
-#: src/menu_events.cpp:1234
+#: src/menu_events.cpp:1265
 msgid "Save game."
 msgstr "Upisuje poziciju."
 
-#: src/menu_events.cpp:1236
+#: src/menu_events.cpp:1267
 msgid "Quit game."
 msgstr "Napušta igru."
 
-#: src/menu_events.cpp:1239
+#: src/menu_events.cpp:1270
 msgid "Save and quit."
 msgstr "Upisuje i napušta."
 
-#: src/menu_events.cpp:1241
+#: src/menu_events.cpp:1272
 msgid "Ignore replay errors."
 msgstr "Ignoriše greške u snimku."
 
-#: src/menu_events.cpp:1242
+#: src/menu_events.cpp:1273
 msgid "Disable autosaves."
 msgstr "Isključuje autopozicije."
 
-#: src/menu_events.cpp:1244
+#: src/menu_events.cpp:1275
 msgid "<id>"
 msgstr "<id>"
 
-#: src/menu_events.cpp:1244
+#: src/menu_events.cpp:1275
 #, fuzzy
 #| msgid "Advance to the next scenario, or scenario identified by 'id'"
 msgid "Advance to the next scenario, or scenario identified by ‘id’"
 msgstr "Prelazi na sljedeći scenario, ili onaj sa datim identifikatorom."
 
-#: src/menu_events.cpp:1246
+#: src/menu_events.cpp:1277
 msgid "Choose next scenario"
 msgstr "Izbor narednog scenarija."
 
-#: src/menu_events.cpp:1249
+#: src/menu_events.cpp:1280
 msgid ""
 "Change turn number (and time of day), or increase by one if no number is "
 "specified."
@@ -8058,11 +8095,11 @@ msgstr ""
 "Menja broj poteza (i doba dana), ili ga povećava za jedan ako se broj ne "
 "zada."
 
-#: src/menu_events.cpp:1249
+#: src/menu_events.cpp:1280
 msgid "[turn]"
 msgstr "[potez]"
 
-#: src/menu_events.cpp:1252
+#: src/menu_events.cpp:1283
 msgid ""
 "Change turn limit, or turn the turn limit off if no number is specified or "
 "it’s −1."
@@ -8070,68 +8107,68 @@ msgstr ""
 "Menja ograničenje poteza, ili ga isključuje ako se ne zada broj ili se zada "
 "−1."
 
-#: src/menu_events.cpp:1252
+#: src/menu_events.cpp:1283
 msgid "[limit]"
 msgstr "[ograničenje]"
 
-#: src/menu_events.cpp:1254
+#: src/menu_events.cpp:1285
 msgid "Turn debug mode on."
 msgstr "Uključuje ispravljački režim."
 
-#: src/menu_events.cpp:1255
+#: src/menu_events.cpp:1286
 msgid "Turn debug mode off."
 msgstr "Isključuje ispravljački režim."
 
-#: src/menu_events.cpp:1257 src/menu_events.cpp:1261
+#: src/menu_events.cpp:1288 src/menu_events.cpp:1292
 msgid "<command>[;<command>...]"
 msgstr "<naredba>[;<naredba>...]"
 
-#: src/menu_events.cpp:1257
+#: src/menu_events.cpp:1288
 msgid "Execute a Lua statement."
 msgstr "Izvršava Lua iskaz."
 
-#: src/menu_events.cpp:1259
+#: src/menu_events.cpp:1290
 msgid "Grant higher privileges to Lua scripts."
 msgstr "Daje veća ovlašćenja Lua skriptama."
 
-#: src/menu_events.cpp:1260
+#: src/menu_events.cpp:1291
 msgid "Set the command used by the custom command hotkey"
 msgstr "Postavlja naredbu na prečicu posebne naredbe."
 
-#: src/menu_events.cpp:1263
+#: src/menu_events.cpp:1294
 msgid "Invoke a dialog allowing changing control of MP sides."
 msgstr "Poziva dijalog za promenu upravljanja nad višeigračkim stranama."
 
-#: src/menu_events.cpp:1264
+#: src/menu_events.cpp:1295
 msgid "Launch the gamestate inspector"
 msgstr "Pokreće ispitivač stanja igre."
 
-#: src/menu_events.cpp:1266
+#: src/menu_events.cpp:1297
 msgid "<name>[=<command>]"
 msgstr "<ime>[=<naredba>]"
 
-#: src/menu_events.cpp:1266
+#: src/menu_events.cpp:1297
 msgid "Set or show alias to a command"
 msgstr "Postavlja ili prikazuje alijas naredbe."
 
-#: src/menu_events.cpp:1268 src/menu_events.cpp:1273
+#: src/menu_events.cpp:1299 src/menu_events.cpp:1304
 msgid "<var>=<value>"
 msgstr "<promjenljiva>=<vrijednost>"
 
-#: src/menu_events.cpp:1268
+#: src/menu_events.cpp:1299
 msgid "Set a scenario variable."
 msgstr "Postavlja promjenljivu scenarija."
 
-#: src/menu_events.cpp:1269
+#: src/menu_events.cpp:1300
 msgid "<var>"
 msgstr "<promjenljiva>"
 
-#: src/menu_events.cpp:1269
+#: src/menu_events.cpp:1300
 msgid "Show a scenario variable."
 msgstr "Prikazuje promjenljivu scenarija."
 
 #. TRANSLATORS: Do not translate the word "advances"; it is a hardcoded literal argument.
-#: src/menu_events.cpp:1272
+#: src/menu_events.cpp:1303
 #, fuzzy
 #| msgid "Modify a unit variable. (Only top level keys are supported.)"
 msgid ""
@@ -8140,208 +8177,208 @@ msgid ""
 msgstr ""
 "Mijenja promjenljivu jedinice. (Podržani su samo ključevi najvišeg nivoa.)"
 
-#: src/menu_events.cpp:1279
+#: src/menu_events.cpp:1310
 msgid "Discover all units in help."
 msgstr "Otkriva sve jedinice u pomoći."
 
 # well-spelled: Одоткрива
-#: src/menu_events.cpp:1280
+#: src/menu_events.cpp:1311
 #, fuzzy
 #| msgid "'Undiscover' all units in help."
 msgid "‘Undiscover’ all units in help."
 msgstr "„Odotkriva“ sve jedinice u pomoći."
 
-#: src/menu_events.cpp:1281
+#: src/menu_events.cpp:1312
 msgid "<unit type id>"
 msgstr ""
 
-#: src/menu_events.cpp:1281
+#: src/menu_events.cpp:1312
 msgid "Create a unit."
 msgstr "Stvara jedinicu."
 
-#: src/menu_events.cpp:1282
+#: src/menu_events.cpp:1313
 msgid "Toggle fog for the current player."
 msgstr "Magla za tekućeg igrača."
 
-#: src/menu_events.cpp:1283
+#: src/menu_events.cpp:1314
 msgid "Toggle shroud for the current player."
 msgstr "Sa ili bez pokrova za tekućeg igrača."
 
-#: src/menu_events.cpp:1284
+#: src/menu_events.cpp:1315
 msgid "<amount>"
 msgstr ""
 
-#: src/menu_events.cpp:1284
+#: src/menu_events.cpp:1315
 msgid "Give gold to the current player."
 msgstr "Daje zlato tekućem igraču."
 
-#: src/menu_events.cpp:1285
+#: src/menu_events.cpp:1316
 #, fuzzy
 #| msgid "<nickname>"
 msgid "<event name>"
 msgstr "<nadimak>"
 
-#: src/menu_events.cpp:1285
+#: src/menu_events.cpp:1316
 msgid "Fire a game event."
 msgstr "Okida događaj u igri."
 
-#: src/menu_events.cpp:1288
+#: src/menu_events.cpp:1319
 msgid "Toggle overlaying of x,y coordinates on hexes."
 msgstr "Preklapanje x- i y-koordinata po poljima."
 
-#: src/menu_events.cpp:1291
+#: src/menu_events.cpp:1322
 msgid "Toggle overlaying of terrain codes on hexes."
 msgstr "Preklapanje terenskih kodova po poljima."
 
-#: src/menu_events.cpp:1294
+#: src/menu_events.cpp:1325
 #, fuzzy
 #| msgid "Toggle overlaying of terrain codes on hexes."
 msgid "Toggle overlaying of number of bitmaps on hexes."
 msgstr "Preklapanje terenskih kodova po poljima."
 
-#: src/menu_events.cpp:1296
+#: src/menu_events.cpp:1327
 msgid "Toggle planning mode."
 msgstr "Režim planiranja."
 
-#: src/menu_events.cpp:1299
+#: src/menu_events.cpp:1330
 msgid "Access whiteboard options dialog."
 msgstr "Pristup dijalogu opcija blokčeta."
 
-#: src/menu_events.cpp:1413
+#: src/menu_events.cpp:1443
 #, fuzzy
 #| msgid "Couldn't find label or unit containing the string '$search'."
 msgid "Could not find label or unit containing the string ‘$search’."
 msgstr "Ne mogu da nađem etiketu ili jedinicu koja sadrži ‘$search|’."
 
 # well-spelled: дроидовати
-#: src/menu_events.cpp:1460
+#: src/menu_events.cpp:1490
 #, fuzzy
 #| msgid "Can't droid invalid side: '$side'."
 msgid "Can’t droid invalid side: ‘$side’."
 msgstr "Ne može se droidovati loša strana: ‘$side|’."
 
 # well-spelled: дроидовати
-#: src/menu_events.cpp:1463
+#: src/menu_events.cpp:1493
 #, fuzzy
 #| msgid "Can't droid networked side: '$side'."
 msgid "Can’t droid networked side: ‘$side’."
 msgstr "Ne može se droidovati umrežena strana: ‘$side|’."
 
-#: src/menu_events.cpp:1475 src/menu_events.cpp:1491 src/menu_events.cpp:1523
+#: src/menu_events.cpp:1505 src/menu_events.cpp:1521 src/menu_events.cpp:1553
 msgid ""
 "It is not allowed to change a side from AI to human control when it’s not "
 "your turn."
 msgstr ""
 
-#: src/menu_events.cpp:1485 src/menu_events.cpp:1541
+#: src/menu_events.cpp:1515 src/menu_events.cpp:1571
 msgid "Side ‘$side’ controller is now controlled by: AI."
 msgstr ""
 
-#: src/menu_events.cpp:1487
+#: src/menu_events.cpp:1517
 #, fuzzy
 #| msgid "The nickname ‘$nick’ is already taken."
 msgid "Side ‘$side’ is already droided."
 msgstr "Nadimak „$nick“ već je zauzet."
 
-#: src/menu_events.cpp:1501 src/menu_events.cpp:1533
+#: src/menu_events.cpp:1531 src/menu_events.cpp:1563
 msgid "Side ‘$side’ controller is now controlled by: human."
 msgstr ""
 
-#: src/menu_events.cpp:1503
+#: src/menu_events.cpp:1533
 #, fuzzy
 #| msgid "The nickname ‘$nick’ is already taken."
 msgid "Side ‘$side’ is already not droided."
 msgstr "Nadimak „$nick“ već je zauzet."
 
-#: src/menu_events.cpp:1507
+#: src/menu_events.cpp:1537
 msgid ""
 "It is not allowed to change a side from human to AI control when it’s not "
 "your turn."
 msgstr ""
 
-#: src/menu_events.cpp:1517
+#: src/menu_events.cpp:1547
 msgid "Side ‘$side’ controller is now fully controlled by: AI."
 msgstr ""
 
-#: src/menu_events.cpp:1519
+#: src/menu_events.cpp:1549
 msgid "Side ‘$side’ is already fully AI controlled."
 msgstr ""
 
-#: src/menu_events.cpp:1544
+#: src/menu_events.cpp:1574
 msgid ""
 "Invalid action provided for side ‘$side’. Valid actions are: on, off, full."
 msgstr ""
 
-#: src/menu_events.cpp:1553
+#: src/menu_events.cpp:1583
 msgid "Side ‘$side’ is not a human or AI player."
 msgstr ""
 
 # well-spelled: дроидовати
-#: src/menu_events.cpp:1589
+#: src/menu_events.cpp:1619
 #, fuzzy
 #| msgid "Can't droid invalid side: '$side'."
 msgid "Can’t idle invalid side: ‘$side’."
 msgstr "Ne može se droidovati loša strana: ‘$side|’."
 
 # well-spelled: дроидовати
-#: src/menu_events.cpp:1594
+#: src/menu_events.cpp:1624
 #, fuzzy
 #| msgid "Can't droid networked side: '$side'."
 msgid "Can’t idle networked side: ‘$side’."
 msgstr "Ne može se droidovati umrežena strana: ‘$side|’."
 
 # well-spelled: дроидовати
-#: src/menu_events.cpp:1599
+#: src/menu_events.cpp:1629
 #, fuzzy
 #| msgid "Can't droid invalid side: '$side'."
 msgid "Can’t idle local ai side: ‘$side’."
 msgstr "Ne može se droidovati loša strana: ‘$side|’."
 
-#: src/menu_events.cpp:1660
+#: src/menu_events.cpp:1675
 #, fuzzy
 #| msgid "Can't change control of invalid side: '$side'."
 msgid "Can’t change control of invalid side: ‘$side’."
 msgstr "Ne može se promijeniti upravljanje nad lošom stranom: ‘$side|’."
 
-#: src/menu_events.cpp:1670
+#: src/menu_events.cpp:1685
 #, fuzzy
 #| msgid "Can't change control of out-of-bounds side: '$side'."
 msgid "Can’t change control of out-of-bounds side: ‘$side’."
 msgstr "Ne može se promijeniti upravljanje nad stranom van granica: ‘$side|’."
 
-#: src/menu_events.cpp:1687
+#: src/menu_events.cpp:1702
 #, fuzzy
 #| msgid "Can't change control of invalid side: '$side'."
 msgid "Can’t query control of invalid side: ‘$side’."
 msgstr "Ne može se promijeniti upravljanje nad lošom stranom: ‘$side|’."
 
-#: src/menu_events.cpp:1694
+#: src/menu_events.cpp:1709
 #, fuzzy
 #| msgid "Can't change control of out-of-bounds side: '$side'."
 msgid "Can’t query control of out-of-bounds side: ‘$side’."
 msgstr "Ne može se promijeniti upravljanje nad stranom van granica: ‘$side|’."
 
-#: src/menu_events.cpp:1816
+#: src/menu_events.cpp:1831
 msgid "Choose Scenario (Debug!)"
 msgstr "Izbor scenarija (ispr.!)"
 
-#: src/menu_events.cpp:1852
+#: src/menu_events.cpp:1867
 msgid "Debug mode activated!"
 msgstr "Ispravljanje aktivirano!"
 
-#: src/menu_events.cpp:1855
+#: src/menu_events.cpp:1870
 msgid "Debug mode not available in network games"
 msgstr "Ispravljanje nije dostupno u mrežnim partijama."
 
-#: src/menu_events.cpp:1862
+#: src/menu_events.cpp:1877
 msgid "Debug mode deactivated!"
 msgstr "Ispravljanje deaktivirano!"
 
-#: src/menu_events.cpp:1882
+#: src/menu_events.cpp:1897
 msgid "WARNING! Unsafe Lua Mode"
 msgstr ""
 
-#: src/menu_events.cpp:1883
+#: src/menu_events.cpp:1898
 msgid ""
 "Executing Lua code in in this manner opens your computer to potential "
 "security breaches from any malicious add-ons or other programs you may have "
@@ -8350,19 +8387,19 @@ msgid ""
 "Do not continue unless you really know what you are doing."
 msgstr ""
 
-#: src/menu_events.cpp:1888
+#: src/menu_events.cpp:1903
 msgid "Unsafe mode enabled!"
 msgstr "Uključen nebezbijedan režim!"
 
-#: src/menu_events.cpp:1937
+#: src/menu_events.cpp:1952
 msgid "Variable not found"
 msgstr "Promjenljiva nije nađena"
 
-#: src/menu_events.cpp:1970
+#: src/menu_events.cpp:1985
 msgid "Debug command ‘unit: $unit’ failed: no unit selected or hovered over."
 msgstr ""
 
-#: src/menu_events.cpp:1988
+#: src/menu_events.cpp:2003
 #, fuzzy
 #| msgid ""
 #| "Invalid alignment: '$alignment', needs to be one of lawful, neutral, "
@@ -8374,29 +8411,29 @@ msgstr ""
 "Loš argument: ‘$alignment’ mora biti jedno od lawful, neutral, chaotic ili "
 "liminal."
 
-#: src/menu_events.cpp:2014
+#: src/menu_events.cpp:2029
 msgid "Do you wish to clear all of your discovered units from help?"
 msgstr "Želite li da očistite sve otkrivene jedinice iz pomoći?"
 
-#: src/menu_events.cpp:2028
+#: src/menu_events.cpp:2043
 msgid "Invalid unit type"
 msgstr "Loš tip jedinice"
 
-#: src/menu_events.cpp:2035
+#: src/menu_events.cpp:2050
 msgid "Invalid location"
 msgstr "Loša lokacija"
 
-#: src/menu_events.cpp:2108
+#: src/menu_events.cpp:2125
 msgid "prompt^Command:"
 msgstr "naredba:"
 
-#: src/menu_events.cpp:2134
+#: src/menu_events.cpp:2151
 #, fuzzy
 #| msgid "prompt^Command:"
 msgid "prompt^Formula:"
 msgstr "naredba:"
 
-#: src/mouse_events.cpp:1295
+#: src/mouse_events.cpp:1307
 msgid ""
 "You cannot move your leader away from the keep with some planned recruits or "
 "recalls left."
@@ -8404,43 +8441,41 @@ msgstr ""
 "Ne možete pomeriti vođa sa kule dok ima još planiranih unajmljivanja ili "
 "sazivanja."
 
-#: src/mouse_events.cpp:1399
+#: src/mouse_events.cpp:1411
 #, fuzzy
 #| msgid "Attacker"
 msgid "No Attacks"
 msgstr "napadač"
 
-#: src/mouse_events.cpp:1399
+#: src/mouse_events.cpp:1411
 #, fuzzy
 #| msgid "No usable weapon"
 msgid "This unit has no usable weapons."
 msgstr "bez pogodnog oružja"
 
-#: src/mouse_events.cpp:1481 src/mouse_events.cpp:1497
+#: src/mouse_events.cpp:1493 src/mouse_events.cpp:1509
 #, fuzzy
 #| msgid "Observe Game"
 msgid "Other aspects: "
 msgstr "Posmatraj partiju"
 
-#: src/mouse_events.cpp:1510 src/mouse_events.cpp:1524 src/reports.cpp:821
-#: src/reports.cpp:1109 src/reports.cpp:1121
+#: src/mouse_events.cpp:1522 src/mouse_events.cpp:1536
 msgid "Weapon: "
 msgstr "oružje: "
 
-#: src/mouse_events.cpp:1511 src/mouse_events.cpp:1525 src/reports.cpp:196
+#: src/mouse_events.cpp:1523 src/mouse_events.cpp:1537
 msgid "Type: "
 msgstr "tip: "
 
-#: src/mouse_events.cpp:1512 src/mouse_events.cpp:1526 src/reports.cpp:822
-#: src/reports.cpp:1110
+#: src/mouse_events.cpp:1524 src/mouse_events.cpp:1538
 msgid "Damage: "
 msgstr "šteta: "
 
-#: src/mouse_events.cpp:1513 src/mouse_events.cpp:1527 src/reports.cpp:843
+#: src/mouse_events.cpp:1525 src/mouse_events.cpp:1539
 msgid "Attacks: "
 msgstr "napada: "
 
-#: src/mouse_events.cpp:1514 src/mouse_events.cpp:1528
+#: src/mouse_events.cpp:1526 src/mouse_events.cpp:1540
 #, fuzzy
 #| msgid "Advances to:"
 msgid "Chance to hit: "
@@ -8481,8 +8516,27 @@ msgstr "$name preuze upravljanje"
 msgid "Turn changed"
 msgstr "Promjena poteza"
 
-#: src/network_download_file.cpp:68 src/network_download_file.cpp:83
-#: src/network_download_file.cpp:91
+#: src/network_download_file.cpp:44
+msgid "Confirm overwrite"
+msgstr ""
+
+#: src/network_download_file.cpp:44
+msgid "Overwrite existing file?"
+msgstr ""
+
+#: src/network_download_file.cpp:50
+#, fuzzy
+#| msgid "Downloads"
+msgid "Download complete"
+msgstr "preuzeto"
+
+#: src/network_download_file.cpp:50
+#, fuzzy
+#| msgid "The game has been saved"
+msgid "The file has been downloaded."
+msgstr "Pozicija je sačuvana"
+
+#: src/network_download_file.cpp:52
 #, fuzzy
 #| msgid "An error occurred while communicating with the server."
 msgid ""
@@ -8490,32 +8544,11 @@ msgid ""
 "information."
 msgstr "Greška u komunikaciji sa serverom."
 
-#: src/network_download_file.cpp:68 src/network_download_file.cpp:83
-#: src/network_download_file.cpp:91
+#: src/network_download_file.cpp:52
 #, fuzzy
 #| msgid "Downloads"
 msgid "Download error"
 msgstr "preuzeto"
-
-#: src/network_download_file.cpp:72
-msgid "Confirm overwrite"
-msgstr ""
-
-#: src/network_download_file.cpp:72
-msgid "Overwrite existing file?"
-msgstr ""
-
-#: src/network_download_file.cpp:85
-#, fuzzy
-#| msgid "Downloads"
-msgid "Download complete"
-msgstr "preuzeto"
-
-#: src/network_download_file.cpp:85
-#, fuzzy
-#| msgid "The game has been saved"
-msgid "The file has been downloaded."
-msgstr "Pozicija je sačuvana"
 
 #: src/pathfind/pathfind.cpp:754
 msgid "Terrain with a movement cost less than 1 encountered."
@@ -8552,13 +8585,13 @@ msgstr ""
 msgid "Error details:"
 msgstr "Detalji greške:"
 
-#: src/play_controller.cpp:1244
+#: src/play_controller.cpp:1243
 msgid "Warning: broken campaign branches"
 msgstr ""
 
 #. TRANSLATORS: This is an error that will hopefully only be seen by UMC authors and by players who have already
 #. said "okay" to a "loading saves from an old version might not work" dialog.
-#: src/play_controller.cpp:1250
+#: src/play_controller.cpp:1249
 msgid ""
 "The next scenario is missing, you will not be able to finish this campaign."
 msgid_plural ""
@@ -8569,7 +8602,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: src/play_controller.cpp:1257
+#: src/play_controller.cpp:1256
 msgid ""
 "Please report the following missing scenario to the campaign’s author:\n"
 "$unknown_list|"
@@ -8581,19 +8614,19 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: src/play_controller.cpp:1261
+#: src/play_controller.cpp:1260
 msgid "Once this is fixed, you will need to restart this scenario."
 msgstr ""
 
-#: src/play_controller.cpp:1340
+#: src/play_controller.cpp:1339
 msgid "No objectives available"
 msgstr "Nema ciljeva"
 
-#: src/playmp_controller.cpp:138
+#: src/playmp_controller.cpp:139
 msgid "Undoing moves not yet transmitted to the server."
 msgstr "Opoziv pokreta se ne može odaslati na server."
 
-#: src/playmp_controller.cpp:238
+#: src/playmp_controller.cpp:239
 msgid ""
 "The game is out of sync, and cannot continue. There are a number of reasons "
 "this could happen: this can occur if you or another player have modified "
@@ -8609,44 +8642,44 @@ msgstr ""
 "\n"
 "Želite li da sačuvate dnevnik grešaka tekuće partije?"
 
-#: src/playmp_controller.cpp:269
+#: src/playmp_controller.cpp:270
 msgid ""
 "This side is in an idle state. To proceed with the game, it must be assigned "
 "to another controller. You may use :droid, :control or :give_control for "
 "example."
 msgstr ""
 
-#: src/playmp_controller.cpp:539
+#: src/playmp_controller.cpp:578
 #, fuzzy
 #| msgid "Give gold to the current player."
 msgid "Give control to their ally $player"
 msgstr "Daje zlato tekućem igraču."
 
-#: src/playmp_controller.cpp:548
+#: src/playmp_controller.cpp:587
 #, fuzzy
 #| msgid "Give gold to the current player."
 msgid "Give control to observer $player"
 msgstr "Daje zlato tekućem igraču."
 
-#: src/playmp_controller.cpp:553
+#: src/playmp_controller.cpp:592
 msgid "Replace with AI"
 msgstr "Zameni sa VI"
 
-#: src/playmp_controller.cpp:554
+#: src/playmp_controller.cpp:593
 msgid "Replace with local player"
 msgstr "Zameni lokalnim igračem"
 
-#: src/playmp_controller.cpp:555
+#: src/playmp_controller.cpp:594
 msgid "Set side to idle"
 msgstr ""
 
-#: src/playmp_controller.cpp:556
+#: src/playmp_controller.cpp:595
 #, fuzzy
 #| msgid "Abort game"
 msgid "Save and abort game"
 msgstr "Prekini igru"
 
-#: src/playmp_controller.cpp:560
+#: src/playmp_controller.cpp:599
 #, fuzzy
 #| msgid "$player has left the game. What do you want to do?"
 msgid ""
@@ -8709,9 +8742,11 @@ msgstr "Napusti"
 msgid "Do you really want to quit?"
 msgstr "Želite li zaista da ga otpustite?"
 
-#: src/reports.cpp:176 src/savegame.cpp:425
-msgid "Name: "
-msgstr "Ime: "
+#: src/reports.cpp:196
+#, fuzzy
+#| msgid "Type: "
+msgid "Type:"
+msgstr "tip: "
 
 #: src/reports.cpp:199
 #, fuzzy
@@ -8720,7 +8755,9 @@ msgid "Special Notes:"
 msgstr "svojstvo oružja: "
 
 #: src/reports.cpp:223
-msgid "Race: "
+#, fuzzy
+#| msgid "Race: "
+msgid "Race:"
 msgstr "rasa: "
 
 #: src/reports.cpp:242
@@ -8728,11 +8765,15 @@ msgid "Side: <b>$side_name</b> ($color_name)"
 msgstr ""
 
 #: src/reports.cpp:320
-msgid "Trait: "
+#, fuzzy
+#| msgid "Trait: "
+msgid "Trait:"
 msgstr "osobina: "
 
 #: src/reports.cpp:343
-msgid "invisible: "
+#, fuzzy
+#| msgid "invisible: "
+msgid "invisible:"
 msgstr "nevidljiva: "
 
 #: src/reports.cpp:344
@@ -8741,7 +8782,9 @@ msgstr ""
 "Ova jedinica je nevidljiva. Neprijatelji je ne mogu vidjeti niti napasti."
 
 #: src/reports.cpp:347
-msgid "slowed: "
+#, fuzzy
+#| msgid "slowed: "
+msgid "slowed:"
 msgstr "usporena: "
 
 #: src/reports.cpp:348
@@ -8753,7 +8796,9 @@ msgstr ""
 "a trošak kretanja joj je udvostručen."
 
 #: src/reports.cpp:351
-msgid "poisoned: "
+#, fuzzy
+#| msgid "poisoned: "
+msgid "poisoned:"
 msgstr "otrovana: "
 
 #: src/reports.cpp:352
@@ -8771,7 +8816,9 @@ msgstr ""
 "Jedinice ne mogu biti ubijene samo otrovom. Otrov neće smanjiti UP ispod 1."
 
 #: src/reports.cpp:355
-msgid "petrified: "
+#, fuzzy
+#| msgid "petrified: "
+msgid "petrified:"
 msgstr "okamenjena: "
 
 #: src/reports.cpp:356
@@ -8781,7 +8828,7 @@ msgstr "Ova jedinica je okamenjena. Ne može se kretati niti napadati."
 #: src/reports.cpp:359
 #, fuzzy
 #| msgid "unhealable"
-msgid "unhealable: "
+msgid "unhealable:"
 msgstr "neiscjeljiv"
 
 #: src/reports.cpp:360
@@ -8793,7 +8840,7 @@ msgstr ""
 #: src/reports.cpp:363
 #, fuzzy
 #| msgid "invisible: "
-msgid "invulnerable: "
+msgid "invulnerable:"
 msgstr "nevidljiva: "
 
 #: src/reports.cpp:364
@@ -8804,16 +8851,26 @@ msgid "This unit is invulnerable. It cannot be harmed by any attack."
 msgstr ""
 "Ova jedinica je nevidljiva. Neprijatelji je ne mogu vidjeti niti napasti."
 
+#: src/reports.cpp:394 src/reports.cpp:975
+#, fuzzy
+#| msgid "Alignment: "
+msgid "Alignment:"
+msgstr "poredak: "
+
 #: src/reports.cpp:441
-msgid "Ability: "
+#, fuzzy
+#| msgid "Ability: "
+msgid "Ability:"
 msgstr "sposobnost: "
 
-#: src/reports.cpp:443 src/reports.cpp:1017
+#: src/reports.cpp:443 src/reports.cpp:1010 src/reports.cpp:1050
 msgid " (inactive)"
 msgstr ""
 
 #: src/reports.cpp:507
-msgid "Resistances: "
+#, fuzzy
+#| msgid "Resistances: "
+msgid "Resistances:"
 msgstr "otpornosti: "
 
 #: src/reports.cpp:509
@@ -8821,11 +8878,15 @@ msgid "(Att / Def)"
 msgstr "(npd/obr)"
 
 #: src/reports.cpp:538
-msgid "Experience Modifier: "
+#, fuzzy
+#| msgid "Experience Modifier: "
+msgid "Experience Modifier:"
 msgstr "modifikator iskustva: "
 
 #: src/reports.cpp:588
-msgid "Terrain: "
+#, fuzzy
+#| msgid "Terrain: "
+msgid "Terrain:"
 msgstr "teren: "
 
 #: src/reports.cpp:605
@@ -8837,7 +8898,9 @@ msgid "minimum^min."
 msgstr "min."
 
 #: src/reports.cpp:610
-msgid "Defense: "
+#, fuzzy
+#| msgid "Defense: "
+msgid "Defense:"
 msgstr "odbrana: "
 
 #: src/reports.cpp:645 src/reports.cpp:646
@@ -8856,85 +8919,115 @@ msgstr "Upozorenje: "
 msgid "Movement Costs:"
 msgstr ""
 
+#: src/reports.cpp:821 src/reports.cpp:1142 src/reports.cpp:1154
+#, fuzzy
+#| msgid "Weapon: "
+msgid "Weapon:"
+msgstr "oružje: "
+
+#: src/reports.cpp:822 src/reports.cpp:1143
+#, fuzzy
+#| msgid "Damage: "
+msgid "Damage:"
+msgstr "šteta: "
+
 #: src/reports.cpp:826
-msgid "Base damage: "
+#, fuzzy
+#| msgid "Base damage: "
+msgid "Base damage:"
 msgstr "bazna šteta: "
 
 #: src/reports.cpp:828 src/reports.cpp:862 src/reports.cpp:872
 #, fuzzy
 #| msgid "Weapon special: "
-msgid "With specials: "
+msgid "With specials:"
 msgstr "svojstvo oružja: "
 
-#: src/reports.cpp:831
-msgid "Time of day: "
+#: src/reports.cpp:831 src/reports.cpp:1367
+#, fuzzy
+#| msgid "Time of day: "
+msgid "Time of day:"
 msgstr "doba dana: "
 
 #: src/reports.cpp:835
-msgid "Leadership: "
+#, fuzzy
+#| msgid "Leadership: "
+msgid "Leadership:"
 msgstr "vođstvo: "
 
 #: src/reports.cpp:839
-msgid "Slowed: "
+#, fuzzy
+#| msgid "Slowed: "
+msgid "Slowed:"
 msgstr "usporena: "
+
+#: src/reports.cpp:843
+#, fuzzy
+#| msgid "Attacks: "
+msgid "Attacks:"
+msgstr "napada: "
 
 #: src/reports.cpp:847
 #, fuzzy
 #| msgid "Turn bonus: "
-msgid "Max swarm bonus: "
+msgid "Max swarm bonus:"
 msgstr "bonus poteza: "
 
 #: src/reports.cpp:848 src/reports.cpp:867
-msgid "Swarm: "
+#, fuzzy
+#| msgid "Swarm: "
+msgid "Swarm:"
 msgstr "roj: "
 
 #: src/reports.cpp:849 src/reports.cpp:860 src/reports.cpp:871
-msgid "Base attacks: "
+#, fuzzy
+#| msgid "Base attacks: "
+msgid "Base attacks:"
 msgstr "baznih napada: "
 
 #: src/reports.cpp:855
 #, fuzzy
 #| msgid "Weapon special: "
-msgid "Specials: "
+msgid "Specials:"
 msgstr "svojstvo oružja: "
 
 #: src/reports.cpp:865
-msgid "Subject to swarm: "
+msgid "Subject to swarm:"
 msgstr ""
 
 #: src/reports.cpp:905
-msgid "Weapon range: "
+#, fuzzy
+#| msgid "Weapon range: "
+msgid "Weapon range:"
 msgstr "domet oružja: "
 
 #: src/reports.cpp:906
-msgid "Damage type: "
+#, fuzzy
+#| msgid "Damage type: "
+msgid "Damage type:"
 msgstr "vid štete: "
 
 #: src/reports.cpp:907
-msgid "Damage versus: "
+#, fuzzy
+#| msgid "Damage versus: "
+msgid "Damage versus:"
 msgstr "šteta protiv: "
 
-#: src/reports.cpp:986
-msgid "Accuracy:"
-msgstr "preciznost: "
-
-#: src/reports.cpp:990
-msgid "Parry:"
-msgstr "pariranje: "
-
-#: src/reports.cpp:1015
-msgid "Weapon special: "
+#: src/reports.cpp:1008 src/reports.cpp:1048
+#, fuzzy
+#| msgid "Weapon special: "
+msgid "Weapon special:"
 msgstr "svojstvo oružja: "
 
-#: src/reports.cpp:1092
+#: src/reports.cpp:1125
 msgid "weapon^None"
 msgstr ""
 
-#: src/reports.cpp:1122
+#: src/reports.cpp:1155
 msgid "Total damage"
 msgstr "ukupna šteta"
 
-#: src/reports.cpp:1180
+#: src/reports.cpp:1213
 #, fuzzy
 #| msgid "Attacker"
 msgid "Attack"
@@ -8945,86 +9038,86 @@ msgstr[2] "napadač"
 msgstr[3] "napadač"
 
 #. TRANSLATORS: This string is shown in the sidebar beneath the word "Attacks" when a unit can attack multiple times per turn
-#: src/reports.cpp:1187
+#: src/reports.cpp:1220
 msgid "Remaining: $left/$max"
 msgstr ""
 
-#: src/reports.cpp:1191
+#: src/reports.cpp:1224
 #, fuzzy
 #| msgid "This is not a multiplayer save"
 msgid "This unit can attack multiple times per turn."
 msgstr "Ovo nije višeigračka pozicija"
 
-#: src/reports.cpp:1283
+#: src/reports.cpp:1316
 #, fuzzy
 #| msgid "Time of day: "
 msgid "Time of day schedule:"
 msgstr "doba dana: "
 
-#: src/reports.cpp:1334
-#, fuzzy
-#| msgid "Time of day: "
-msgid "Time of day:"
-msgstr "doba dana: "
-
-#: src/reports.cpp:1335 src/reports.cpp:1389
+#: src/reports.cpp:1368 src/reports.cpp:1422
 #, fuzzy
 #| msgid "Lawful units: "
-msgid "Lawful units: "
+msgid "Lawful units:"
 msgstr "zakonite jedinice: "
 
-#: src/reports.cpp:1337 src/reports.cpp:1391
-msgid "Neutral units: "
+#: src/reports.cpp:1370 src/reports.cpp:1424
+#, fuzzy
+#| msgid "Neutral units: "
+msgid "Neutral units:"
 msgstr "neutralne jedinice: "
 
-#: src/reports.cpp:1338 src/reports.cpp:1392
-msgid "Chaotic units: "
+#: src/reports.cpp:1371 src/reports.cpp:1425
+#, fuzzy
+#| msgid "Chaotic units: "
+msgid "Chaotic units:"
 msgstr "haotične jedinice: "
 
-#: src/reports.cpp:1340 src/reports.cpp:1394
-msgid "Liminal units: "
+#: src/reports.cpp:1373 src/reports.cpp:1427
+#, fuzzy
+#| msgid "Liminal units: "
+msgid "Liminal units:"
 msgstr "dvojstvene jedinice: "
 
-#: src/reports.cpp:1455
+#: src/reports.cpp:1488
 #, fuzzy
 #| msgid "Turn "
 msgid "Turn Number"
 msgstr "potez "
 
-#: src/reports.cpp:1459
+#: src/reports.cpp:1492
 msgid ""
 "When the game exceeds the number of turns indicated by the second number, it "
 "will end."
 msgstr ""
 
-#: src/reports.cpp:1482
+#: src/reports.cpp:1515
 msgid "Gold"
 msgstr "zlato"
 
-#: src/reports.cpp:1482
+#: src/reports.cpp:1515
 msgid ""
 "The amount of gold currently available to recruit and maintain your army."
 msgstr ""
 
-#: src/reports.cpp:1500
+#: src/reports.cpp:1533
 msgid "The fraction of known villages that your side has captured."
 msgstr ""
 
-#: src/reports.cpp:1500
+#: src/reports.cpp:1533
 msgid "Villages"
 msgstr "sela"
 
-#: src/reports.cpp:1505
+#: src/reports.cpp:1538
 msgid "The total number of units on your side."
 msgstr ""
 
-#: src/reports.cpp:1505
+#: src/reports.cpp:1538
 #, fuzzy
 #| msgid "units"
 msgid "Units"
 msgstr "jedinice"
 
-#: src/reports.cpp:1514
+#: src/reports.cpp:1547
 msgid ""
 "The expenses incurred at the end of every turn to maintain your army. The "
 "first number is the amount of gold that will be deducted. It is equal to the "
@@ -9033,46 +9126,46 @@ msgid ""
 "amount of gold that would be deducted if you lost all villages."
 msgstr ""
 
-#: src/reports.cpp:1514
+#: src/reports.cpp:1547
 msgid "Upkeep"
 msgstr "izdaci"
 
-#: src/reports.cpp:1544
+#: src/reports.cpp:1577
 #, fuzzy
 #| msgid "Income"
 msgid "Net Income"
 msgstr "prihod"
 
-#: src/reports.cpp:1544
+#: src/reports.cpp:1577
 msgid ""
 "The net amount of gold you gain or lose each turn, taking into account "
 "income from controlled villages and payment of upkeep."
 msgstr ""
 
-#: src/reports.cpp:1745
+#: src/reports.cpp:1778
 msgid "Observers:"
 msgstr "posmatrači:"
 
-#: src/reports.cpp:1762
+#: src/reports.cpp:1795
 msgid "Clock"
 msgstr ""
 
-#: src/reports.cpp:1773
+#: src/reports.cpp:1806
 msgid "Battery"
 msgstr ""
 
-#: src/reports.cpp:1818
+#: src/reports.cpp:1850
 msgid "Countdown until your turn automatically ends."
 msgstr ""
 
-#: src/reports.cpp:1818
+#: src/reports.cpp:1850
 msgid "Turn Countdown"
 msgstr ""
 
 # >> Datetime format, see 'man strftime' for possible placeholders.
 #. TRANSLATORS: Day of week + month + day of month + year + 12-hour time, eg 'Tue Nov 02 2021, 1:59 PM'.
 #. Format for your locale.
-#: src/save_index.cpp:255
+#: src/save_index.cpp:251
 #, fuzzy
 #| msgid "%a %b %d %I:%M %p %Y"
 msgid "%a %b %d %Y, %I:%M %p"
@@ -9080,29 +9173,23 @@ msgstr "%a %b %d %H.%M %Y"
 
 #. TRANSLATORS: Day of week + month + day of month + year + 24-hour time, eg 'Tue Nov 02 2021, 13:59'.
 #. Format for your locale.
-#: src/save_index.cpp:258
+#: src/save_index.cpp:254
 #, fuzzy
 #| msgid "%a %b %d %H:%M %Y"
 msgid "%a %b %d %Y, %H:%M"
 msgstr "%a %b %d %H.%M %Y"
 
 #. TRANSLATORS: This string is used as part of a filename, as in, "HttT-The Elves Besieged replay.gz"
-#: src/save_index.cpp:273 src/savegame.cpp:578
+#: src/save_index.cpp:269 src/savegame.cpp:557
 msgid "replay"
 msgstr "snimak"
 
-#: src/save_index.cpp:356 src/savegame.cpp:66 src/savegame.cpp:614
-#: src/savegame.cpp:616
+#: src/save_index.cpp:347 src/savegame.cpp:66 src/savegame.cpp:593
+#: src/savegame.cpp:595
 msgid "Auto-Save"
 msgstr "Autopozicija"
 
-#: src/savegame.cpp:200 src/savegame.cpp:202
-msgid "Warning: The file you have tried to load is corrupt. Loading anyway.\n"
-msgstr ""
-"Upozorenje: Datoteka koju ste pokušali da učitate iskvarena je. Svejedno "
-"učitavam.\n"
-
-#: src/savegame.cpp:246
+#: src/savegame.cpp:228
 #, fuzzy
 #| msgid "This save is from a version too old to be loaded."
 msgid ""
@@ -9110,7 +9197,7 @@ msgid ""
 "be loaded."
 msgstr "Ova pozicija je sačuvana prestarom verzijom igre da bi se učitala."
 
-#: src/savegame.cpp:255
+#: src/savegame.cpp:237
 msgid ""
 "This save is from a different version of the game ($version_number|), and "
 "might not work with this version.\n"
@@ -9128,74 +9215,78 @@ msgid ""
 "Do you wish to continue?"
 msgstr ""
 
-#: src/savegame.cpp:269 src/savegame.cpp:315
+#: src/savegame.cpp:251 src/savegame.cpp:293
 msgid "Load Game"
 msgstr "Učitavanje pozicije"
 
-#: src/savegame.cpp:315
+#: src/savegame.cpp:293
 msgid "Replays are not supported in multiplayer mode."
 msgstr ""
 
-#: src/savegame.cpp:322
+#: src/savegame.cpp:302
 #, fuzzy
 #| msgid "This is not a multiplayer save"
 msgid "This is not a multiplayer save."
 msgstr "Ovo nije višeigračka pozicija"
 
-#: src/savegame.cpp:356
+#: src/savegame.cpp:335
 msgid "The game could not be saved: "
 msgstr "Ne mogu da sačuvam poziciju: "
 
-#: src/savegame.cpp:425
+#: src/savegame.cpp:404
+msgid "Name: "
+msgstr "Ime: "
+
+#: src/savegame.cpp:404
 msgid "Save already exists. Do you want to overwrite it?"
 msgstr "Pozicija već postoji. Želite li da je prebrišete?"
 
-#: src/savegame.cpp:426
+#: src/savegame.cpp:405
 msgid "Overwrite?"
 msgstr "Prebrisati?"
 
-#: src/savegame.cpp:433
+#: src/savegame.cpp:412
 #, fuzzy
 #| msgid "Save names should not end on '.gz'. Please choose a different name."
 msgid ""
 "Save names should not end with ‘.gz’ or ‘.bz2’. Please remove the extension."
 msgstr "Imena pozicija ne treba završavati sa ‘.gz’. Zadajte drugačije ime."
 
-#: src/savegame.cpp:438
+#: src/savegame.cpp:417
 msgid ""
 "Save names may not end with a dot, or contain two dots or any of the "
 "following characters:\n"
 "    \" * / : < > ? \\ | ~"
 msgstr ""
 
-#: src/savegame.cpp:486
+#: src/savegame.cpp:465
 msgid "Saved"
 msgstr "Sačuvano"
 
-#: src/savegame.cpp:486
+#: src/savegame.cpp:465
 #, fuzzy
 #| msgid "The game has been saved"
 msgid "The game has been saved."
 msgstr "Pozicija je sačuvana"
 
-#: src/savegame.cpp:518 src/savegame.cpp:535
+#: src/savegame.cpp:497 src/savegame.cpp:514
 msgid "Could not write to file"
 msgstr "Ne mogu da pišem u datoteku"
 
-#: src/savegame.cpp:570
+#: src/savegame.cpp:549
 msgid "Save Replay"
 msgstr "Sačuvaj snimak"
 
-#: src/savegame.cpp:596
+#: src/savegame.cpp:575
 msgid "Could not auto save the game. Please save the game manually."
 msgstr ""
 "Ne mogu da sačuvam poziciju automatski. Pokušajte da je sačuvate ručno."
 
-#: src/savegame.cpp:646
+#: src/savegame.cpp:625
 msgid "Save Game"
 msgstr "Sačuvaj poziciju"
 
-#: src/savegame.cpp:660
+#: src/savegame.cpp:639
 msgid "Game state is corrupted"
 msgstr ""
 
@@ -9385,7 +9476,7 @@ msgstr "(ispravljačka naredba)"
 msgid "A unit was created using debug mode during $player’s turn"
 msgstr ""
 
-#: src/synced_user_choice.cpp:343
+#: src/synced_user_choice.cpp:344
 msgid "waiting for $desc from side $sides"
 msgid_plural "waiting for $desc from sides $sides"
 msgstr[0] ""
@@ -9402,7 +9493,7 @@ msgstr ""
 
 #. TRANSLATORS: $color_id is the internal identifier of a side color, for example, 'lightred'.
 #. Translate the quotation marks only; leave "color_id" untranslated, as it's a variable name.
-#: src/team.cpp:995
+#: src/team.cpp:991
 msgid "“$color_id”"
 msgstr ""
 
@@ -9426,48 +9517,46 @@ msgstr "border_size treba da je između 0,0 i 0,5."
 msgid "Hotkey(s): "
 msgstr ""
 
-#: src/time_of_day.cpp:44
+#: src/time_of_day.cpp:45
 #, fuzzy
 #| msgid "Time of day"
 msgid "Stub Time of Day"
 msgstr "doba dana"
 
-#: src/time_of_day.cpp:45
+#: src/time_of_day.cpp:46
 msgid "This Time of Day is only a Stub!"
 msgstr ""
 
-#: src/units/abilities.cpp:954
-msgid "name"
-msgstr ""
-
-#: src/units/abilities.cpp:955
-#, fuzzy
-#| msgid "Description"
-msgid "description"
-msgstr "Opis"
-
-#: src/units/abilities.cpp:1063
+#: src/units/abilities.cpp:1054
 #, fuzzy
 #| msgid "slowed: "
 msgid "Owned: "
 msgstr "usporena: "
 
 #. TRANSLATORS: Past-participle of "teach", used for an ability similar to leadership
-#: src/units/abilities.cpp:1067
+#: src/units/abilities.cpp:1058
 msgid "Taught: "
 msgstr ""
 
 #. TRANSLATORS: Past-participle of "teach", used for an ability similar to leadership
-#: src/units/abilities.cpp:1071
+#: src/units/abilities.cpp:1062
 msgid "Taught: (by an enemy): "
 msgstr ""
 
-#: src/units/abilities.cpp:1084
+#: src/units/abilities.cpp:1075
 msgid "Used by opponent: "
 msgstr ""
 
+#: src/units/attack_type.cpp:110
+msgid "Accuracy:"
+msgstr "preciznost: "
+
+#: src/units/attack_type.cpp:113
+msgid "Parry:"
+msgstr "pariranje: "
+
 #. TRANSLATORS: Current value for WML code set_min_range, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:547
+#: src/units/attack_type.cpp:501
 #, fuzzy
 #| msgid "damage"
 #| msgid_plural "damage"
@@ -9475,14 +9564,14 @@ msgid "$number min range"
 msgstr "štete"
 
 #. TRANSLATORS: Current value for WML code increase_min_range, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:554
+#: src/units/attack_type.cpp:508
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> min range"
 msgstr "po potezu"
 
 #. TRANSLATORS: Current value for WML code set_max_range, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:561
+#: src/units/attack_type.cpp:515
 #, fuzzy
 #| msgid "damage"
 #| msgid_plural "damage"
@@ -9490,14 +9579,14 @@ msgid "$number max range"
 msgstr "štete"
 
 #. TRANSLATORS: Current value for WML code increase_max_range, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:568
+#: src/units/attack_type.cpp:522
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> max range"
 msgstr "po potezu"
 
 #. TRANSLATORS: Current value for WML code increase_damage, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:575
+#: src/units/attack_type.cpp:529
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> damage"
@@ -9507,7 +9596,7 @@ msgstr[1] "po potezu"
 msgstr[2] "po potezu"
 msgstr[3] "po potezu"
 
-#: src/units/attack_type.cpp:584
+#: src/units/attack_type.cpp:538
 #, fuzzy
 #| msgid "damage"
 #| msgid_plural "damage"
@@ -9519,7 +9608,7 @@ msgstr[2] "štete"
 msgstr[3] "štete"
 
 #. TRANSLATORS: Current value for WML code increase_attacks, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:593
+#: src/units/attack_type.cpp:547
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> strike"
@@ -9530,7 +9619,7 @@ msgstr[2] "po potezu"
 msgstr[3] "po potezu"
 
 #. TRANSLATORS: Current value for WML code set_attacks, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:602
+#: src/units/attack_type.cpp:556
 #, fuzzy
 #| msgid "strike"
 #| msgid_plural "strikes"
@@ -9542,35 +9631,35 @@ msgstr[2] "udara"
 msgstr[3] "udar"
 
 #. TRANSLATORS: Current value for WML code set_accuracy, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:611
+#: src/units/attack_type.cpp:565
 #, fuzzy
 #| msgid "% parry"
 msgid "$number| accuracy"
 msgstr "% pariranja"
 
 #. TRANSLATORS: Current value for WML code increase_accuracy, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:618
+#: src/units/attack_type.cpp:572
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent|%</span> accuracy"
 msgstr "po potezu"
 
 #. TRANSLATORS: Current value for WML code set_parry, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:625
+#: src/units/attack_type.cpp:579
 #, fuzzy
 #| msgid "% parry"
 msgid "$number parry"
 msgstr "% pariranja"
 
 #. TRANSLATORS: Current value for WML code increase_parry, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:632
+#: src/units/attack_type.cpp:586
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> parry"
 msgstr "po potezu"
 
 #. TRANSLATORS: Current value for WML code set_movement_used, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:639
+#: src/units/attack_type.cpp:593
 msgid "$number movement point"
 msgid_plural "$number movement points"
 msgstr[0] ""
@@ -9579,7 +9668,7 @@ msgstr[2] ""
 msgstr[3] ""
 
 #. TRANSLATORS: Current value for WML code increase_movement_used, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:648
+#: src/units/attack_type.cpp:602
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> movement point"
@@ -9590,7 +9679,7 @@ msgstr[2] "po potezu"
 msgstr[3] "po potezu"
 
 #. TRANSLATORS: Current value for WML code set_attacks_used, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:657
+#: src/units/attack_type.cpp:611
 #, fuzzy
 #| msgid "damage"
 #| msgid_plural "damage"
@@ -9602,7 +9691,7 @@ msgstr[2] "štete"
 msgstr[3] "štete"
 
 #. TRANSLATORS: Current value for WML code increase_attacks_used, documented in https://wiki.wesnoth.org/EffectWML
-#: src/units/attack_type.cpp:666
+#: src/units/attack_type.cpp:620
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> attack used"
@@ -9626,16 +9715,8 @@ msgstr "napredovanja"
 msgid "No advancement"
 msgstr "bez napredovanja"
 
-#: src/units/helper.cpp:178
-msgid "Internal error. Please report this as a bug! Details:\n"
-msgstr ""
-
-#: src/units/helper.cpp:184
-msgid "You cannot recruit a $unit_type_name at this time."
-msgstr ""
-
 #. TRANSLATORS: "plan" refers to Planning Mode
-#: src/units/helper.cpp:200
+#: src/units/helper.cpp:179
 #, fuzzy
 #| msgid "You do not have enough gold to recruit that unit"
 msgid ""
@@ -9643,53 +9724,59 @@ msgid ""
 "unit."
 msgstr "Nemate dovoljno zlata da unajmite tu jedinicu"
 
-#: src/units/helper.cpp:202
+#: src/units/helper.cpp:180
 #, fuzzy
 #| msgid "You do not have enough gold to recruit that unit"
 msgid "You do not have enough gold to recruit this unit."
 msgstr "Nemate dovoljno zlata da unajmite tu jedinicu"
 
-#: src/units/types.cpp:847 src/units/types.cpp:855
+#: src/units/helper.cpp:195
+#, fuzzy
+#| msgid "You have no units available to recruit."
+msgid "The $unit_type is not available to recruit."
+msgstr "Nema jedinica spremnih za unajmljivanje."
+
+#: src/units/types.cpp:802 src/units/types.cpp:810
 msgid "female^lawful"
 msgstr "zakonita"
 
-#: src/units/types.cpp:849
+#: src/units/types.cpp:804
 msgid "female^neutral"
 msgstr "neutralna"
 
-#: src/units/types.cpp:851
+#: src/units/types.cpp:806
 msgid "female^chaotic"
 msgstr "haotična"
 
-#: src/units/types.cpp:853
+#: src/units/types.cpp:808
 msgid "female^liminal"
 msgstr "dvojstvena"
 
-#: src/units/types.cpp:861 src/units/types.cpp:869
+#: src/units/types.cpp:816 src/units/types.cpp:824
 #, fuzzy
 #| msgid "female^lawful"
 msgid "lawful"
 msgstr "zakonita"
 
-#: src/units/types.cpp:863
+#: src/units/types.cpp:818
 msgid "neutral"
 msgstr "neutralan"
 
-#: src/units/types.cpp:865
+#: src/units/types.cpp:820
 msgid "chaotic"
 msgstr "haotičan"
 
-#: src/units/types.cpp:867
+#: src/units/types.cpp:822
 msgid "liminal"
 msgstr "dvojstven"
 
-#: src/units/unit.cpp:360
+#: src/units/unit.cpp:362
 #, fuzzy
 #| msgid "No usable weapon"
 msgid "This unit cannot be dismissed."
 msgstr "bez pogodnog oružja"
 
-#: src/units/unit.cpp:727
+#: src/units/unit.cpp:750
 #, fuzzy
 #| msgid ""
 #| "This unit is invisible. It cannot be seen or attacked by enemy units."
@@ -9697,17 +9784,17 @@ msgid "This unit is a leader and cannot be dismissed."
 msgstr ""
 "Ova jedinica je nevidljiva. Neprijatelji je ne mogu vidjeti niti napasti."
 
-#: src/units/unit.cpp:1991
+#: src/units/unit.cpp:2010
 msgid "$attack_list|: $effect_description"
 msgstr "$attack_list|: $effect_description"
 
-#: src/units/unit.cpp:1997
+#: src/units/unit.cpp:2016
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> HP"
 msgstr "po potezu"
 
-#: src/units/unit.cpp:2007
+#: src/units/unit.cpp:2026
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> move"
@@ -9717,25 +9804,25 @@ msgstr[1] "po potezu"
 msgstr[2] "po potezu"
 msgstr[3] "po potezu"
 
-#: src/units/unit.cpp:2013
+#: src/units/unit.cpp:2032
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> vision"
 msgstr "po potezu"
 
-#: src/units/unit.cpp:2017
+#: src/units/unit.cpp:2036
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> jamming"
 msgstr "po potezu"
 
-#: src/units/unit.cpp:2022
+#: src/units/unit.cpp:2041
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> XP to advance"
 msgstr "po potezu"
 
-#: src/units/unit.cpp:2026
+#: src/units/unit.cpp:2045
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> attack per turn"
@@ -9746,13 +9833,13 @@ msgstr[1] "po potezu"
 msgstr[2] "po potezu"
 msgstr[3] "po potezu"
 
-#: src/units/unit.cpp:2033
+#: src/units/unit.cpp:2052
 #, fuzzy
 #| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> cost to recall"
 msgstr "po potezu"
 
-#: src/units/unit.cpp:2512
+#: src/units/unit.cpp:2537
 msgid "$effect_description per level"
 msgstr "$effect_description po nivou"
 
@@ -9776,14 +9863,14 @@ msgstr ""
 msgid "$year AF"
 msgstr ""
 
-#: src/wesnoth.cpp:779
+#: src/wesnoth.cpp:786
 msgid ""
 "Unable to create log files in directory $logdir. This is often caused by "
 "incorrect folder permissions, anti-virus software restricting folder access, "
 "or using OneDrive to manage your My Documents folder."
 msgstr ""
 
-#: src/wesnoth.cpp:780
+#: src/wesnoth.cpp:787
 #, fuzzy
 #| msgid "Loading data files"
 msgid "Logging Failure"
@@ -9814,6 +9901,20 @@ msgstr "Sakrij planove igrača $player"
 #: src/whiteboard/manager.cpp:1140
 msgid "Whiteboard Options"
 msgstr "Opcije blokčeta"
+
+#, fuzzy
+#~| msgid "Do you want to continue?"
+#~ msgid "Do you want to load it anyway?"
+#~ msgstr "Želite li da nastavite?"
+
+#~ msgid ""
+#~ "Warning: The file you have tried to load is corrupt. Loading anyway.\n"
+#~ msgstr ""
+#~ "Upozorenje: Datoteka koju ste pokušali da učitate iskvarena je. Svejedno "
+#~ "učitavam.\n"
+
+#~ msgid "Time of day: "
+#~ msgstr "doba dana: "
 
 #~ msgid "Era:"
 #~ msgstr "epoha:"
@@ -10017,11 +10118,6 @@ msgstr "Opcije blokčeta"
 #~| msgid "poisoned"
 #~ msgid "poison"
 #~ msgstr "otrovan"
-
-#, fuzzy
-#~| msgid "Multiplayer"
-#~ msgid "Multiply"
-#~ msgstr "Višeigranje"
 
 #, fuzzy
 #~| msgid "Cannot find era $era"
@@ -10387,11 +10483,6 @@ msgstr "Opcije blokčeta"
 #~| msgid "Version: "
 #~ msgid "Vision:"
 #~ msgstr "Verzija: "
-
-#, fuzzy
-#~| msgid "Alignment: "
-#~ msgid "Alignment:"
-#~ msgstr "poredak: "
 
 #, fuzzy
 #~| msgid "Orange"

@@ -29,7 +29,6 @@
 
 class team;
 class unit_animation_component;
-class unit_formula_manager;
 class vconfig;
 struct color_t;
 
@@ -1054,9 +1053,8 @@ public:
 	 * @param loc The unit's location (to resolve [resistance] abilities)
 	 * @param weapon The weapon to check for any abilities or weapon specials
 	 * @param opp_weapon The opponent's weapon to check for any abilities or weapon specials
-	 * @param for_tooltip if true, the function `effective_damage_type` shouldn't be called if `opp_weapon` exists.
 	 */
-	int resistance_against(const std::string& damage_name, bool attacker, const map_location& loc, const_attack_ptr weapon = nullptr, const const_attack_ptr& opp_weapon = nullptr, bool for_tooltip = false) const;
+	int resistance_against(const std::string& damage_name, bool attacker, const map_location& loc, const_attack_ptr weapon = nullptr, const const_attack_ptr& opp_weapon = nullptr) const;
 
 	/**
 	 * The unit's resistance against a given attack
@@ -1064,11 +1062,10 @@ public:
 	 * @param attacker True if this unit is on the offensive (to resolve [resistance] abilities)
 	 * @param loc The unit's location (to resolve [resistance] abilities)
 	 * @param weapon The weapon to check for any abilities or weapon specials
-	 * @param for_tooltip if true, the function `effective_damage_type` shouldn't be called if `opp_weapon` exists.
 	 */
-	int resistance_against(const attack_type& atk, bool attacker, const map_location& loc, const_attack_ptr weapon = nullptr, bool for_tooltip = false) const
+	int resistance_against(const attack_type& atk, bool attacker, const map_location& loc, const_attack_ptr weapon = nullptr) const
 	{
-		return resistance_against(atk.type(), attacker, loc , weapon, atk.shared_from_this(), for_tooltip);
+		return resistance_against(atk.type(), attacker, loc , weapon, atk.shared_from_this());
 	}
 
 	/** Gets resistances without any abilities applied. */
@@ -1313,23 +1310,35 @@ public:
 		return is_healthy_;
 	}
 
-	/** Gets if this unit own ability of @a tag_name type with [affect_adjacent] subtags. */
-	utils::optional<std::size_t> affect_distant(const std::string& tag_name) const
+	/**
+	 * If this unit has abilities of @a tag_name type with [affect_adjacent] subtags, returns the radius of the one with the furthest reach.
+	 *
+	 * If the unit has no such abilities, returns zero.
+	 */
+	std::size_t max_ability_radius_type(const std::string& tag_name) const
 	{
-		auto iter = affect_distant_.find(tag_name);
-		return iter != affect_distant_.end() ? iter->second : utils::nullopt;
+		auto iter = max_ability_radius_type_.find(tag_name);
+		return iter != max_ability_radius_type_.end() ? iter->second : 0;
 	}
 
-	/** Gets if this unit own ability with [affect_adjacent] subtags. */
-	utils::optional<std::size_t> has_ability_distant() const
+	/**
+	 * If this unit has abilities with [affect_adjacent] subtags, returns the radius of the one with the furthest reach.
+	 *
+	 * If the unit has no such abilities, returns zero.
+	 */
+	std::size_t max_ability_radius() const
 	{
-		return has_ability_distant_;
+		return max_ability_radius_;
 	}
 
-	/** Gets if this unit own ability with [affect_adjacent] subtags in same time what halo_image or overlay_image attributes. */
-	utils::optional<std::size_t> has_ability_distant_image() const
+	/**
+	 * If this unit has abilities with [affect_adjacent] subtags and halo_image or overlay_image attributes, returns the radius of the one with the furthest reach.
+	 *
+	 * If the unit has no such abilities, returns zero.
+	 */
+	std::size_t max_ability_radius_image() const
 	{
-		return has_ability_distant_image_;
+		return max_ability_radius_image_;
 	}
 
 	/**
@@ -1840,8 +1849,6 @@ public:
 
 	const config &abilities() const { return abilities_; }
 
-	const std::set<std::string>& checking_tags() const { return checking_tags_; };
-
 	/**
 	 * Gets the names and descriptions of this unit's abilities. Location-independent variant
 	 * with all abilities shown as active.
@@ -1944,7 +1951,6 @@ private:
 
 	recursion_guard update_variables_recursion(const config& ability) const;
 
-	const std::set<std::string> checking_tags_{"disable", "attacks", "damage", "chance_to_hit", "berserk", "swarm", "drains", "heal_on_hit", "plague", "slow", "petrifies", "firststrike", "poison", "damage_type"};
 	/**
 	 * Check if an ability is active. Includes checks to prevent excessive recursion.
 	 * @param ability The type (tag name) of the ability
@@ -1987,12 +1993,6 @@ private:
 	bool ability_affects_weapon(const config& cfg, const const_attack_ptr& weapon, bool is_opp) const;
 
 public:
-	/** Get the unit formula manager. */
-	unit_formula_manager& formula_manager() const
-	{
-		return *formula_man_;
-	}
-
 	/** Generates a random race-appropriate name if one has not already been provided. */
 	void generate_name();
 
@@ -2067,8 +2067,6 @@ private:
 	int side_;
 
 	unit_race::GENDER gender_;
-
-	std::unique_ptr<unit_formula_manager> formula_man_;
 
 	int movement_;
 	int max_movement_;
@@ -2190,16 +2188,16 @@ private:
 	 * Used for easing checking if unit own a ability of specified type with [affect_adjacent] sub tag.
 	 *
 	 */
-	std::map<std::string, utils::optional<std::size_t>> affect_distant_;
+	std::map<std::string, std::size_t> max_ability_radius_type_;
 	/**
 	 * Used for easing checking if unit own a ability with [affect_adjacent] sub tag.
 	 *
 	 */
-	utils::optional<std::size_t> has_ability_distant_;
+	std::size_t max_ability_radius_;
 	/**
 	 * used if ability own halo_image or overlay_image attributes in same time what [affect_adjacent].
 	 */
-	utils::optional<std::size_t> has_ability_distant_image_;
+	std::size_t max_ability_radius_image_;
 	void set_has_ability_distant();
 };
 

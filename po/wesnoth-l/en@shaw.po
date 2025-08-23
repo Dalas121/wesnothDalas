@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: en@shaw\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2024-09-18 02:19 UTC\n"
+"POT-Creation-Date: 2025-08-19 15:14 UTC\n"
 "PO-Revision-Date: 2009-10-13 11:20-0400\n"
 "Last-Translator: Arc Riley <arcriley@ubuntu.com>\n"
 "Language-Team: Shavian English <ubuntu-l10n-en-shaw@lists.launchpad.net>\n"
@@ -113,7 +113,7 @@ msgstr ""
 
 #. [achievement]: id=liberty_or_death
 #: data/campaigns/Liberty/achievements.cfg:8
-msgid "Complete Civil Disobedience with at least 3 peasants remaining."
+msgid "Complete <i>Civil Disobedience</i> with at least 3 peasants remaining."
 msgstr ""
 
 #. [achievement]: id=liberty_nameless
@@ -123,7 +123,7 @@ msgstr ""
 
 #. [achievement]: id=liberty_nameless
 #: data/campaigns/Liberty/achievements.cfg:15
-msgid "Find out the name of the general in Unlawful Orders."
+msgid "Find out the name of the general in <i>Unlawful Orders</i>."
 msgstr ""
 
 #. [achievement]: id=liberty_iron
@@ -133,7 +133,7 @@ msgstr ""
 
 #. [achievement]: id=liberty_iron
 #: data/campaigns/Liberty/achievements.cfg:22
-msgid "Defeat an Iron Mauler with Harper in Hide and Seek."
+msgid "Defeat an Iron Mauler with Harper in <i>Hide and Seek</i>."
 msgstr ""
 
 #. [achievement]: id=liberty_hunter
@@ -146,7 +146,7 @@ msgstr "𐑐𐑧𐑟𐑩𐑯𐑑 𐑣𐑳𐑯𐑑𐑼"
 
 #. [achievement]: id=liberty_hunter
 #: data/campaigns/Liberty/achievements.cfg:30
-msgid "Complete The Hunters with no losses"
+msgid "Complete <i>The Hunters</i> with no losses."
 msgstr ""
 
 #. [achievement]: id=liberty_army
@@ -156,7 +156,7 @@ msgstr ""
 
 #. [achievement]: id=liberty_army
 #: data/campaigns/Liberty/achievements.cfg:37
-msgid "On Challenging difficulty, defeat Dommel in Glory."
+msgid "On Challenging difficulty, defeat Dommel in <i>Glory</i>."
 msgstr ""
 
 #. [scenario]: id=01_The_Raid
@@ -2904,97 +2904,6 @@ msgid ""
 "the aristocrats of other regions."
 msgstr ""
 
-#. [unit_type]: id=Rogue Mage, race=human
-#: data/campaigns/Liberty/units/Rogue_Mage.cfg:5
-msgid "Rogue Mage"
-msgstr "𐑮𐑴𐑜 𐑥𐑱𐑡"
-
-#. [unit_type]: id=Rogue Mage, race=human
-#: data/campaigns/Liberty/units/Rogue_Mage.cfg:17
-#, fuzzy
-#| msgid ""
-#| "Some mages are thrown out of the mage’s guild for attempting to practice "
-#| "forbidden arts. Now completely outside the law, these rogue mages do "
-#| "whatever necessary to support their study of black magic. Although not as "
-#| "skilled as mages with more formal training, their magic can be quite "
-#| "lethal, while their banditry has resulted in moderate skill with the "
-#| "short sword."
-msgid ""
-"Some mages are thrown out of the mages’ guild for attempting to practice "
-"forbidden arts. Now completely outside the law, these rogue mages do "
-"whatever is necessary to support their study of black magic. Although not as "
-"skilled as mages with more formal training, their magic can be quite lethal, "
-"while their banditry has resulted in moderate skill with the short sword."
-msgstr ""
-"𐑕𐑳𐑥 𐑥𐑱𐑡𐑦𐑟 𐑸 𐑔𐑮𐑴𐑯 𐑬𐑑 𐑝 𐑞 𐑥𐑱𐑡𐑟 𐑜𐑦𐑤𐑛 𐑓𐑹 𐑩𐑑𐑧𐑥𐑐𐑑𐑦𐑙 𐑑 𐑐𐑮𐑨𐑒𐑑𐑦𐑕 𐑓𐑹𐑚𐑦𐑛𐑧𐑯 𐑸𐑑𐑕. 𐑯𐑬 "
-"𐑒𐑩𐑥𐑐𐑤𐑰𐑑𐑤𐑦 𐑬𐑑𐑕𐑲𐑛 𐑞 𐑤𐑷, 𐑞𐑰𐑟 𐑮𐑴𐑜 𐑥𐑱𐑡𐑦𐑟 𐑛𐑵 𐑢𐑪𐑑𐑧𐑝𐑼 𐑯𐑧𐑕𐑩𐑕𐑼𐑦 𐑑 𐑕𐑩𐑐𐑹𐑑 𐑞𐑺 𐑕𐑑𐑳𐑛𐑦 𐑝 "
-"𐑚𐑤𐑨𐑒 𐑥𐑨𐑡𐑦𐑒. 𐑷𐑤𐑞𐑴 𐑯𐑪𐑑 𐑨𐑟 𐑕𐑒𐑦𐑤𐑛 𐑨𐑟 𐑥𐑱𐑡𐑦𐑟 𐑢𐑦𐑞 𐑥𐑹 𐑓𐑹𐑥𐑩𐑤 𐑑𐑮𐑱𐑯𐑦𐑙, 𐑞𐑺 𐑥𐑨𐑡𐑦𐑒 𐑒𐑨𐑯 𐑚𐑰 "
-"𐑒𐑢𐑲𐑑 𐑤𐑰𐑔𐑩𐑤, 𐑢𐑲𐑤 𐑞𐑺 𐑚𐑨𐑯𐑛𐑩𐑑𐑮𐑰 𐑣𐑨𐑟 𐑮𐑦𐑟𐑳𐑤𐑑𐑩𐑛 𐑦𐑯 𐑥𐑴𐑛𐑮𐑱𐑑 𐑕𐑒𐑦𐑤 𐑢𐑦𐑞 𐑞 𐑖𐑹𐑑 𐑕𐑹𐑛."
-
-#. [attack]: type=cold
-#: data/campaigns/Liberty/units/Rogue_Mage.cfg:33
-msgid "ice blast"
-msgstr "𐑲𐑕 𐑚𐑤𐑶𐑕𐑑"
-
-#. [unit_type]: id=Shadow Lord, race=human
-#: data/campaigns/Liberty/units/Shadow_Lord.cfg:5
-msgid "Shadow Lord"
-msgstr "𐑖𐑨𐑛𐑴 𐑤𐑹𐑛"
-
-#. [unit_type]: id=Shadow Lord, race=human
-#: data/campaigns/Liberty/units/Shadow_Lord.cfg:21
-msgid ""
-"Few humans fathom the secrets of light and dark magic and retain their "
-"sanity. Those that can master that balance become Shadow Lords, fully "
-"existing neither in the world of light nor the world of darkness. No longer "
-"needing physical weapons, they are fearsome to both their enemies and those "
-"they lord over."
-msgstr ""
-"𐑓𐑿 𐑣𐑿𐑥𐑩𐑯𐑟 𐑓𐑨𐑞𐑩𐑥 𐑞 𐑕𐑰𐑒𐑮𐑩𐑑𐑕 𐑝 𐑤𐑲𐑑 𐑯 𐑛𐑸𐑒 𐑥𐑨𐑡𐑦𐑒 𐑯 𐑮𐑦𐑑𐑱𐑯 𐑞𐑺 𐑕𐑨𐑯𐑩𐑑𐑰. 𐑞𐑴𐑟 𐑞𐑨𐑑 𐑒𐑨𐑯 "
-"𐑥𐑭𐑕𐑑𐑼 𐑞𐑨𐑑 𐑚𐑨𐑤𐑩𐑯𐑕 𐑚𐑦𐑒𐑳𐑥 𐑖𐑨𐑛𐑴 𐑤𐑹𐑛𐑟, 𐑓𐑫𐑤𐑦 𐑧𐑒𐑟𐑦𐑕𐑑𐑦𐑙 𐑯𐑲𐑞𐑼 𐑦𐑯 𐑞 𐑢𐑻𐑤𐑛 𐑝 𐑤𐑲𐑑 𐑯𐑹 𐑞 "
-"𐑢𐑻𐑤𐑛 𐑝 𐑛𐑸𐑒𐑯𐑩𐑕. 𐑯𐑴 𐑤𐑪𐑙𐑜𐑼 𐑯𐑰𐑛𐑦𐑙 𐑓𐑦𐑟𐑦𐑒𐑩𐑤 𐑢𐑧𐑐𐑩𐑯𐑟, 𐑞𐑱 𐑸 𐑓𐑽𐑕𐑩𐑥 𐑑 𐑚𐑴𐑔 𐑞𐑺 𐑧𐑯𐑦𐑥𐑦𐑟 𐑯 "
-"𐑞𐑴𐑟 𐑞𐑱 𐑤𐑹𐑛 𐑴𐑝𐑼."
-
-#. [attack]: type=blade
-#: data/campaigns/Liberty/units/Shadow_Lord.cfg:33
-msgid "astral blade"
-msgstr "𐑨𐑕𐑑𐑮𐑩𐑤 𐑚𐑤𐑱𐑛"
-
-#. [attack]: type=cold
-#: data/campaigns/Liberty/units/Shadow_Lord.cfg:44
-#: data/campaigns/Liberty/units/Shadow_Mage.cfg:45
-msgid "shadow bolt"
-msgstr "𐑖𐑨𐑛𐑴 𐑚𐑴𐑤𐑑"
-
-#. [attack]: type=impact
-#: data/campaigns/Liberty/units/Shadow_Lord.cfg:56
-msgid "shadow blast"
-msgstr "𐑖𐑨𐑛𐑴 𐑚𐑤𐑶𐑕𐑑"
-
-#. [unit_type]: id=Shadow Mage, race=human
-#: data/campaigns/Liberty/units/Shadow_Mage.cfg:5
-msgid "Shadow Mage"
-msgstr "𐑖𐑨𐑛𐑴 𐑥𐑱𐑡"
-
-#. [unit_type]: id=Shadow Mage, race=human
-#: data/campaigns/Liberty/units/Shadow_Mage.cfg:20
-#, fuzzy
-msgid ""
-"Years of violence and brutality to support the study of forbidden magical "
-"arts have turned the shadow mages into feared fighters. Now completely "
-"enthralled with power, they have been known to command small followings of "
-"henchmen. They are outmatched in direct magical combat with their magic-"
-"using peers, instead channeling their energies into devastating melee "
-"attacks. Despite their offensive power, the corruption in their souls has "
-"begun to adversely affect their health."
-msgstr ""
-"𐑘𐑽𐑟 𐑝 𐑝𐑲𐑩𐑤𐑩𐑯𐑕 𐑯 𐑚𐑮𐑵𐑑𐑨𐑤𐑩𐑑𐑰 𐑑 𐑕𐑩𐑐𐑹𐑑 𐑞 𐑕𐑑𐑳𐑛𐑦 𐑝 𐑓𐑹𐑚𐑦𐑛𐑧𐑯 𐑥𐑨𐑡𐑦𐑒𐑩𐑤 𐑸𐑑𐑕 𐑣𐑨𐑝 𐑑𐑻𐑯𐑛 𐑞 "
-"𐑖𐑨𐑛𐑴 𐑥𐑱𐑡𐑦𐑟 𐑦𐑯𐑑𐑫 𐑓𐑽𐑛 𐑓𐑲𐑑𐑻𐑟. 𐑯𐑬 𐑒𐑩𐑥𐑐𐑤𐑰𐑑𐑤𐑦 𐑧𐑯𐑔𐑮𐑪𐑤𐑛 𐑢𐑦𐑞 𐑐𐑬𐑼, 𐑞𐑱 𐑣𐑨𐑝 𐑚𐑰𐑯 𐑯𐑴𐑯 𐑑 "
-"𐑒𐑩𐑥𐑭𐑯𐑛 𐑕𐑥𐑷𐑤 𐑓𐑭𐑤𐑴𐑦𐑙𐑟 𐑝 𐑣𐑧𐑯𐑗𐑥𐑩𐑯. 𐑞𐑱 𐑸 outmatched 𐑦𐑯 𐑛𐑲𐑮𐑧𐑒𐑑 𐑥𐑨𐑡𐑦𐑒𐑩𐑤 𐑒𐑪𐑥𐑚𐑨𐑑 𐑢𐑦𐑞 "
-"𐑞𐑺 𐑥𐑨𐑡𐑦𐑒-𐑿𐑟𐑦𐑙 𐑐𐑽𐑟, 𐑦𐑯𐑕𐑑𐑧𐑛 𐑗𐑨𐑯𐑩𐑤𐑦𐑙 𐑞𐑺 𐑧𐑯𐑻𐑡𐑰𐑟 𐑦𐑯𐑑𐑫 devastating 𐑥𐑱𐑤𐑱 𐑩𐑑𐑨𐑒𐑕. "
-"𐑛𐑦𐑕𐑐𐑲𐑑 𐑞𐑺 𐑩𐑓𐑧𐑯𐑕𐑦𐑝 𐑐𐑬𐑼, 𐑞 𐑒𐑻𐑩𐑐𐑖𐑩𐑯 𐑦𐑯 𐑞𐑺 𐑕𐑴𐑤𐑟 𐑣𐑨𐑟 𐑚𐑩𐑜𐑳𐑯 𐑑 𐑨𐑛𐑝𐑻𐑕𐑤𐑰 𐑩𐑓𐑧𐑒𐑑 𐑞𐑺 "
-"𐑣𐑧𐑤𐑔."
-
 #. [unit_type]: id=Thug_Peasant
 #: data/campaigns/Liberty/units/Villagers.cfg:20
 msgid "Villager"
@@ -3172,6 +3081,77 @@ msgstr ""
 #| msgid "How can this be? We have lost."
 msgid "How can this be?"
 msgstr "𐑣𐑬 𐑒𐑨𐑯 𐑞𐑦𐑕 𐑚𐑰? 𐑢𐑰 𐑣𐑨𐑝 𐑤𐑪𐑕𐑑."
+
+#~ msgid "Rogue Mage"
+#~ msgstr "𐑮𐑴𐑜 𐑥𐑱𐑡"
+
+#, fuzzy
+#~| msgid ""
+#~| "Some mages are thrown out of the mage’s guild for attempting to practice "
+#~| "forbidden arts. Now completely outside the law, these rogue mages do "
+#~| "whatever necessary to support their study of black magic. Although not "
+#~| "as skilled as mages with more formal training, their magic can be quite "
+#~| "lethal, while their banditry has resulted in moderate skill with the "
+#~| "short sword."
+#~ msgid ""
+#~ "Some mages are thrown out of the mages’ guild for attempting to practice "
+#~ "forbidden arts. Now completely outside the law, these rogue mages do "
+#~ "whatever is necessary to support their study of black magic. Although not "
+#~ "as skilled as mages with more formal training, their magic can be quite "
+#~ "lethal, while their banditry has resulted in moderate skill with the "
+#~ "short sword."
+#~ msgstr ""
+#~ "𐑕𐑳𐑥 𐑥𐑱𐑡𐑦𐑟 𐑸 𐑔𐑮𐑴𐑯 𐑬𐑑 𐑝 𐑞 𐑥𐑱𐑡𐑟 𐑜𐑦𐑤𐑛 𐑓𐑹 𐑩𐑑𐑧𐑥𐑐𐑑𐑦𐑙 𐑑 𐑐𐑮𐑨𐑒𐑑𐑦𐑕 𐑓𐑹𐑚𐑦𐑛𐑧𐑯 𐑸𐑑𐑕. 𐑯𐑬 "
+#~ "𐑒𐑩𐑥𐑐𐑤𐑰𐑑𐑤𐑦 𐑬𐑑𐑕𐑲𐑛 𐑞 𐑤𐑷, 𐑞𐑰𐑟 𐑮𐑴𐑜 𐑥𐑱𐑡𐑦𐑟 𐑛𐑵 𐑢𐑪𐑑𐑧𐑝𐑼 𐑯𐑧𐑕𐑩𐑕𐑼𐑦 𐑑 𐑕𐑩𐑐𐑹𐑑 𐑞𐑺 𐑕𐑑𐑳𐑛𐑦 𐑝 "
+#~ "𐑚𐑤𐑨𐑒 𐑥𐑨𐑡𐑦𐑒. 𐑷𐑤𐑞𐑴 𐑯𐑪𐑑 𐑨𐑟 𐑕𐑒𐑦𐑤𐑛 𐑨𐑟 𐑥𐑱𐑡𐑦𐑟 𐑢𐑦𐑞 𐑥𐑹 𐑓𐑹𐑥𐑩𐑤 𐑑𐑮𐑱𐑯𐑦𐑙, 𐑞𐑺 𐑥𐑨𐑡𐑦𐑒 𐑒𐑨𐑯 "
+#~ "𐑚𐑰 𐑒𐑢𐑲𐑑 𐑤𐑰𐑔𐑩𐑤, 𐑢𐑲𐑤 𐑞𐑺 𐑚𐑨𐑯𐑛𐑩𐑑𐑮𐑰 𐑣𐑨𐑟 𐑮𐑦𐑟𐑳𐑤𐑑𐑩𐑛 𐑦𐑯 𐑥𐑴𐑛𐑮𐑱𐑑 𐑕𐑒𐑦𐑤 𐑢𐑦𐑞 𐑞 𐑖𐑹𐑑 𐑕𐑹𐑛."
+
+#~ msgid "ice blast"
+#~ msgstr "𐑲𐑕 𐑚𐑤𐑶𐑕𐑑"
+
+#~ msgid "Shadow Lord"
+#~ msgstr "𐑖𐑨𐑛𐑴 𐑤𐑹𐑛"
+
+#~ msgid ""
+#~ "Few humans fathom the secrets of light and dark magic and retain their "
+#~ "sanity. Those that can master that balance become Shadow Lords, fully "
+#~ "existing neither in the world of light nor the world of darkness. No "
+#~ "longer needing physical weapons, they are fearsome to both their enemies "
+#~ "and those they lord over."
+#~ msgstr ""
+#~ "𐑓𐑿 𐑣𐑿𐑥𐑩𐑯𐑟 𐑓𐑨𐑞𐑩𐑥 𐑞 𐑕𐑰𐑒𐑮𐑩𐑑𐑕 𐑝 𐑤𐑲𐑑 𐑯 𐑛𐑸𐑒 𐑥𐑨𐑡𐑦𐑒 𐑯 𐑮𐑦𐑑𐑱𐑯 𐑞𐑺 𐑕𐑨𐑯𐑩𐑑𐑰. 𐑞𐑴𐑟 𐑞𐑨𐑑 "
+#~ "𐑒𐑨𐑯 𐑥𐑭𐑕𐑑𐑼 𐑞𐑨𐑑 𐑚𐑨𐑤𐑩𐑯𐑕 𐑚𐑦𐑒𐑳𐑥 𐑖𐑨𐑛𐑴 𐑤𐑹𐑛𐑟, 𐑓𐑫𐑤𐑦 𐑧𐑒𐑟𐑦𐑕𐑑𐑦𐑙 𐑯𐑲𐑞𐑼 𐑦𐑯 𐑞 𐑢𐑻𐑤𐑛 𐑝 𐑤𐑲𐑑 "
+#~ "𐑯𐑹 𐑞 𐑢𐑻𐑤𐑛 𐑝 𐑛𐑸𐑒𐑯𐑩𐑕. 𐑯𐑴 𐑤𐑪𐑙𐑜𐑼 𐑯𐑰𐑛𐑦𐑙 𐑓𐑦𐑟𐑦𐑒𐑩𐑤 𐑢𐑧𐑐𐑩𐑯𐑟, 𐑞𐑱 𐑸 𐑓𐑽𐑕𐑩𐑥 𐑑 𐑚𐑴𐑔 𐑞𐑺 "
+#~ "𐑧𐑯𐑦𐑥𐑦𐑟 𐑯 𐑞𐑴𐑟 𐑞𐑱 𐑤𐑹𐑛 𐑴𐑝𐑼."
+
+#~ msgid "astral blade"
+#~ msgstr "𐑨𐑕𐑑𐑮𐑩𐑤 𐑚𐑤𐑱𐑛"
+
+#~ msgid "shadow bolt"
+#~ msgstr "𐑖𐑨𐑛𐑴 𐑚𐑴𐑤𐑑"
+
+#~ msgid "shadow blast"
+#~ msgstr "𐑖𐑨𐑛𐑴 𐑚𐑤𐑶𐑕𐑑"
+
+#~ msgid "Shadow Mage"
+#~ msgstr "𐑖𐑨𐑛𐑴 𐑥𐑱𐑡"
+
+#, fuzzy
+#~ msgid ""
+#~ "Years of violence and brutality to support the study of forbidden magical "
+#~ "arts have turned the shadow mages into feared fighters. Now completely "
+#~ "enthralled with power, they have been known to command small followings "
+#~ "of henchmen. They are outmatched in direct magical combat with their "
+#~ "magic-using peers, instead channeling their energies into devastating "
+#~ "melee attacks. Despite their offensive power, the corruption in their "
+#~ "souls has begun to adversely affect their health."
+#~ msgstr ""
+#~ "𐑘𐑽𐑟 𐑝 𐑝𐑲𐑩𐑤𐑩𐑯𐑕 𐑯 𐑚𐑮𐑵𐑑𐑨𐑤𐑩𐑑𐑰 𐑑 𐑕𐑩𐑐𐑹𐑑 𐑞 𐑕𐑑𐑳𐑛𐑦 𐑝 𐑓𐑹𐑚𐑦𐑛𐑧𐑯 𐑥𐑨𐑡𐑦𐑒𐑩𐑤 𐑸𐑑𐑕 𐑣𐑨𐑝 𐑑𐑻𐑯𐑛 "
+#~ "𐑞 𐑖𐑨𐑛𐑴 𐑥𐑱𐑡𐑦𐑟 𐑦𐑯𐑑𐑫 𐑓𐑽𐑛 𐑓𐑲𐑑𐑻𐑟. 𐑯𐑬 𐑒𐑩𐑥𐑐𐑤𐑰𐑑𐑤𐑦 𐑧𐑯𐑔𐑮𐑪𐑤𐑛 𐑢𐑦𐑞 𐑐𐑬𐑼, 𐑞𐑱 𐑣𐑨𐑝 𐑚𐑰𐑯 𐑯𐑴𐑯 "
+#~ "𐑑 𐑒𐑩𐑥𐑭𐑯𐑛 𐑕𐑥𐑷𐑤 𐑓𐑭𐑤𐑴𐑦𐑙𐑟 𐑝 𐑣𐑧𐑯𐑗𐑥𐑩𐑯. 𐑞𐑱 𐑸 outmatched 𐑦𐑯 𐑛𐑲𐑮𐑧𐑒𐑑 𐑥𐑨𐑡𐑦𐑒𐑩𐑤 𐑒𐑪𐑥𐑚𐑨𐑑 "
+#~ "𐑢𐑦𐑞 𐑞𐑺 𐑥𐑨𐑡𐑦𐑒-𐑿𐑟𐑦𐑙 𐑐𐑽𐑟, 𐑦𐑯𐑕𐑑𐑧𐑛 𐑗𐑨𐑯𐑩𐑤𐑦𐑙 𐑞𐑺 𐑧𐑯𐑻𐑡𐑰𐑟 𐑦𐑯𐑑𐑫 devastating 𐑥𐑱𐑤𐑱 "
+#~ "𐑩𐑑𐑨𐑒𐑕. 𐑛𐑦𐑕𐑐𐑲𐑑 𐑞𐑺 𐑩𐑓𐑧𐑯𐑕𐑦𐑝 𐑐𐑬𐑼, 𐑞 𐑒𐑻𐑩𐑐𐑖𐑩𐑯 𐑦𐑯 𐑞𐑺 𐑕𐑴𐑤𐑟 𐑣𐑨𐑟 𐑚𐑩𐑜𐑳𐑯 𐑑 𐑨𐑛𐑝𐑻𐑕𐑤𐑰 "
+#~ "𐑩𐑓𐑧𐑒𐑑 𐑞𐑺 𐑣𐑧𐑤𐑔."
 
 #, fuzzy
 #~ msgid "Rothel"

@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2025-04-28 03:22 UTC\n"
-"PO-Revision-Date: 2025-05-08 21:47+0200\n"
+"POT-Creation-Date: 2025-07-21 03:54 UTC\n"
+"PO-Revision-Date: 2025-07-28 23:35+0200\n"
 "Last-Translator: Michal Žejdl <lachim@emer.cz>\n"
 "Language-Team: Czech https://wiki.wesnoth.org/CzechTranslation\n"
 "Language: cs\n"
@@ -259,7 +259,7 @@ msgstr ""
 #: data/multiplayer/factions/knalgans-aoh.cfg:4
 #: data/multiplayer/factions/knalgans-default.cfg:4
 msgid "Knalgan Alliance"
-msgstr "Knalganská aliance"
+msgstr "Knalžská aliance"
 
 #. [multiplayer_side]: id=Knalgan Alliance, type=random, description=<img src='portraits/dwarves/ulfserker.webp~BG()' align='middle' float='yes'/><clear/>
 #: data/multiplayer/factions/knalgans-aoh.cfg:11
@@ -276,7 +276,7 @@ msgid ""
 "fighting in."
 msgstr ""
 "\n"
-"<b>Knalgská aliance</b> je spojenectví <ref dst='..race_dwarf'>trpaslíků</"
+"<b>Knalžská aliance</b> je spojenectví <ref dst='..race_dwarf'>trpaslíků</"
 "ref> a <ref dst='..race_human'>lidských</ref> psanců. Trpaslíci jsou "
 "starobylá rasa, která většinu času tráví pod zemí. Jejich bojovníci jsou "
 "sice nízcí, zato houževnatí. Psanci jsou tvořeni skupinami lidí, které "
@@ -2753,6 +2753,34 @@ msgstr ""
 "Sílící zvuky bitvy se opět rozléhají po tomto časem opotřebeném bojišti, kde "
 "duchové tisíců hrdinných válečníků neviditelně proplouvají horami, stromy a "
 "řekami."
+
+#. [multiplayer]: id=multiplayer_Double_Siege
+#: data/multiplayer/scenarios/6p_Double_Siege.cfg:7
+msgid "6p — Double Siege"
+msgstr "6hr – Dvojité obléhání"
+
+#. [multiplayer]: id=multiplayer_Double_Siege
+#: data/multiplayer/scenarios/6p_Double_Siege.cfg:8
+msgid ""
+"Two armies attacked a single city, both emerged victorious. Now, only one "
+"can claim the victory."
+msgstr ""
+"Dvě vojska zaútočila na jedno město a obě zvítězila. Nyní si vítězství může "
+"připsat jen jedno z nich."
+
+#. [side]
+#: data/multiplayer/scenarios/6p_Double_Siege.cfg:25
+#: data/multiplayer/scenarios/6p_Double_Siege.cfg:61
+#: data/multiplayer/scenarios/6p_Double_Siege.cfg:73
+msgid "teamname^Top"
+msgstr "Horní"
+
+#. [side]
+#: data/multiplayer/scenarios/6p_Double_Siege.cfg:37
+#: data/multiplayer/scenarios/6p_Double_Siege.cfg:49
+#: data/multiplayer/scenarios/6p_Double_Siege.cfg:85
+msgid "teamname^Bottom"
+msgstr "Dolní"
 
 #. [multiplayer]: id=multiplayer_Hexcake
 #: data/multiplayer/scenarios/6p_Hexcake.cfg:5

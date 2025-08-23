@@ -234,6 +234,7 @@ create_engine::create_engine(saved_game& state)
 	, level_name_filter_()
 	, player_count_filter_(1)
 	, type_map_()
+	, preset_ids_()
 	, user_map_names_()
 	, user_scenario_names_()
 	, eras_()
@@ -251,6 +252,7 @@ create_engine::create_engine(saved_game& state)
 	type_map_.emplace(level_type::type::campaign, type_list());
 	type_map_.emplace(level_type::type::sp_campaign, type_list());
 	type_map_.emplace(level_type::type::random_map, type_list());
+	type_map_.emplace(level_type::type::preset, type_list());
 
 	DBG_MP << "restoring game config";
 
@@ -404,6 +406,12 @@ void create_engine::prepare_for_campaign(const std::string& difficulty)
 	state_.classification().campaign = current_level_data["id"].str();
 	state_.classification().campaign_name = current_level_data["name"].str();
 	state_.classification().abbrev = current_level_data["abbrev"].str();
+	if (current_level_data["type"] == "hybrid" && state_.classification().is_multiplayer()) {
+		// for hybrid campaigns in MP mode let's make a clarification in the abbrev
+		// so saves for sp and mp runs don't get confused
+		state_.classification().abbrev = state_.classification().abbrev + "-" + _("multiplayer^MP");
+	}
+
 
 	state_.classification().end_text = current_level_data["end_text"].str();
 	state_.classification().end_text_duration = chrono::parse_duration<std::chrono::milliseconds>(current_level_data["end_text_duration"]);
@@ -734,6 +742,16 @@ void create_engine::init_all_levels()
 			type_map_[level_type::type::random_map].games.emplace_back(new random_map(data));
 		} else {
 			type_map_[level_type::type::scenario].games.emplace_back(new scenario(data));
+		}
+	}
+
+	// Presets.
+	for(const config& preset : prefs::get().get_game_presets()) {
+		optional_const_config data = game_config_.find_child("multiplayer", "id", preset["scenario"].str());
+
+		if(data) {
+			type_map_[level_type::type::preset].games.emplace_back(new scenario(*data));
+			preset_ids_.emplace_back(preset["id"].to_int());
 		}
 	}
 

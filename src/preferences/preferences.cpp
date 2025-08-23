@@ -265,23 +265,23 @@ void prefs::load_preferences()
 
 		// check for any unknown preferences
 		for(const auto& [key, _] : synced_prefs.attribute_range()) {
-			if(std::find(synced_attributes_.begin(), synced_attributes_.end(), key) == synced_attributes_.end()) {
+			if(!utils::contains(synced_attributes_, key)) {
 				unknown_synced_attributes_.insert(key);
 			}
 		}
 		for(const auto& [key, _] : unsynced_prefs.attribute_range()) {
-			if(std::find(unsynced_attributes_.begin(), unsynced_attributes_.end(), key) == unsynced_attributes_.end()) {
+			if(!utils::contains(unsynced_attributes_, key)) {
 				unknown_unsynced_attributes_.insert(key);
 			}
 		}
 
 		for(const auto [key, _] : synced_prefs.all_children_view()) {
-			if(std::find(synced_children_.begin(), synced_children_.end(), key) == synced_children_.end()) {
+			if(!utils::contains(synced_children_, key)) {
 				unknown_synced_children_.insert(key);
 			}
 		}
 		for(const auto [key, _] : unsynced_prefs.all_children_view()) {
-			if(std::find(unsynced_children_.begin(), unsynced_children_.end(), key) == unsynced_children_.end()) {
+			if(!utils::contains(unsynced_children_, key)) {
 				unknown_unsynced_children_.insert(key);
 			}
 		}
@@ -986,8 +986,7 @@ bool prefs::achievement(const std::string& content_for, const std::string& id)
 	{
 		if(ach["content_for"].str() == content_for)
 		{
-			std::vector<std::string> ids = utils::split(ach["ids"]);
-			return std::find(ids.begin(), ids.end(), id) != ids.end();
+			return utils::contains(utils::split(ach["ids"]), id);
 		}
 	}
 	return false;
@@ -1006,7 +1005,7 @@ void prefs::set_achievement(const std::string& content_for, const std::string& i
 			{
 				ach["ids"] = id;
 			}
-			else if(std::find(ids.begin(), ids.end(), id) == ids.end())
+			else if(!utils::contains(ids, id))
 			{
 				ach["ids"] = ach["ids"].str() + "," + id;
 			}
@@ -1100,8 +1099,7 @@ bool prefs::sub_achievement(const std::string& content_for, const std::string& i
 			{
 				if(in_progress["id"] == id)
 				{
-					std::vector<std::string> sub_ids = utils::split(in_progress["sub_ids"]);
-					return std::find(sub_ids.begin(), sub_ids.end(), sub_id) != sub_ids.end();
+					return utils::contains(utils::split(in_progress["sub_ids"]), sub_id);
 				}
 			}
 		}
@@ -1127,9 +1125,9 @@ void prefs::set_sub_achievement(const std::string& content_for, const std::strin
 			{
 				if(in_progress["id"].str() == id)
 				{
-					std::vector<std::string> sub_ids = utils::split(ach["ids"]);
+					std::vector<std::string> sub_ids = utils::split(in_progress["sub_ids"]);
 
-					if(std::find(sub_ids.begin(), sub_ids.end(), sub_id) == sub_ids.end())
+					if(!utils::contains(sub_ids, sub_id))
 					{
 						in_progress["sub_ids"] = in_progress["sub_ids"].str() + "," + sub_id;
 					}
@@ -1548,6 +1546,33 @@ const std::vector<game_config::server_info>& prefs::builtin_servers_list()
 {
 	static std::vector<game_config::server_info> pref_servers = game_config::server_list;
 	return pref_servers;
+}
+
+void prefs::add_game_preset(config&& preset_data)
+{
+	config preset{ prefs_list::game_preset, std::move(preset_data) };
+
+	int min = 0;
+	for(const auto& c : preferences_.child_range(prefs_list::game_preset)) {
+		min = std::min(min, c["id"].to_int());
+	}
+	preset.mandatory_child(prefs_list::game_preset)["id"] = min-1;
+	preferences_.append(preset);
+}
+
+void prefs::remove_game_preset(int id)
+{
+	preferences_.remove_children(prefs_list::game_preset, [&id](const config& preset) {return preset["id"] == id;});
+}
+
+config::child_itors prefs::get_game_presets()
+{
+	return preferences_.child_range(prefs_list::game_preset);
+}
+
+optional_const_config prefs::get_game_preset(int id)
+{
+	return preferences_.find_child(prefs_list::game_preset, "id", std::to_string(id));
 }
 
 std::vector<game_config::server_info> prefs::user_servers_list()
@@ -2015,7 +2040,7 @@ preferences::secure_buffer prefs::aes_encrypt(const preferences::secure_buffer& 
 
 	return result;
 #else
-	size_t outWritten = 0;
+	std::size_t outWritten = 0;
 	preferences::secure_buffer result(plaintext.size(), '\0');
 
 	CCCryptorStatus ccStatus = CCCrypt(kCCDecrypt,
@@ -2103,7 +2128,7 @@ preferences::secure_buffer prefs::aes_decrypt(const preferences::secure_buffer& 
 
 	return result;
 #else
-	size_t outWritten = 0;
+	std::size_t outWritten = 0;
 	preferences::secure_buffer result(encrypted.size(), '\0');
 
 	CCCryptorStatus ccStatus = CCCrypt(kCCDecrypt,

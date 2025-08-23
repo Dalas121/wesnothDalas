@@ -1,4 +1,4 @@
-## Version 1.19.12+dev
+## Version 1.19.15+dev
 ### Add-ons client
 ### Add-ons server
 ### Campaigns
@@ -8,11 +8,106 @@
 ### Packaging
 ### Terrain
 ### Translations
-   * Updated translations: Bengali, British English, Italian
 ### Units
 ### User interface
 ### WML Engine
 ### Miscellaneous and Bug Fixes
+
+## Version 1.19.15
+### Lua API
+   * Toggle panel now have the event handler `on_double_click`. If set, it will be fired when the user left double clicks on that widget. For other widgets, they can be wrapped inside a toggle panel for this to work.
+### Translations
+   * Updated translations: Ancient Greek, Bengali, British English, Chinese (Simplified), Czech, Galician, Hungarian
+### Units
+   * Arcane resistance of all Drake race units changed from -10% to -20%
+   * Dune Soldier:
+     * Blade resistace decreased form 20% to 10%.
+   * Dune Rover:
+     * Blade resistace increased form 0% to 10%.
+     * Hp decreased from 33 to 32.
+   * Dune Explorer:
+     * Blade resistace increased form 0% to 10%.
+     * Gold cost increased from 29 to 31.
+   * Dune Wayfarer:
+     * Blade resistace increased form 0% to 10%.
+     * Gold cost increased from 55 to 58.
+   * Dune Burner - line:
+     *  +1 mp, +10% pierce resistance, +20% impact resistance, cold resistance set to 0%.
+   * Dune Burner:
+     * Ranged damage decreased from 7 to 6.
+     * Xp increased from 36 to 40.
+   * Dune Scorcher:
+     * Xp increased from 60 to 64.
+     * Gold cost increased from 23 to 30.
+     * Hp increased from 47 to 51.
+   * Dune Firetrooper:
+     * Gold cost increased from 41 to 44.
+   * Elvish Sylph:
+     * The Elvish Sylph, Shyde, and Enchantress received massive buffs in 1.18. Those have been partially walked back in #8749, but these units still remain outliers in power at their respective levels - especially now that most undead have -40% arcane resist.
+     * A dexterous Sylph, for example, is better than a Great Mage in almost every possible aspect - damage, movement, hitpoints, melee, support (slows), and defense.
+     * This change brings most of their stats back down to their 1.16 levels (or slightly stronger), but deliberately leaves the Sylph and Enchantress's slowing attacks unnerfed; I think those attacks are somewhat weak in comparison to their much more deadly arcane attacks.
+     * cost 135 -> 110, hitpoints 68 -> 60, faerie fire 13-5 -> 10-5 (ranged arcane).
+   * Elvish Enchantress:
+     * Same reasoning as the Sylph changes, but much smaller in magnitude.
+     * cost 62 -> 57, faerie fire 11-4 -> 10-4 (ranged arcane).
+   * Elvish Shyde:
+     * Same reasoning as the Sylph changes. As a flying, slowing, magical healer with 6mp, the Shyde was powerful even before the numerous buffs she received in 1.18. This is a reversion to her 1.16 values.
+     * cost 58 -> 52, hitpoints 51 -> 46, entangle 7-3 -> 6-3 (ranged impact), thorns 10-3 -> 8-3 (ranged pierce), faerie touch 7-2 -> 6-2 (melee impact).
+   * Added resting, defense, and standing animations for the Fire Dragon.
+### WML Engine
+   * Add 'radius' attribute to [illuminates] abilities
+   * Added [defense] special to modify the base cth while being overridable by chance_to_hit using value (allows to combine an addition with marsksman without increasing value when base value remains below 60).
+
+## Version 1.19.14
+### Campaigns
+   * Eastern Invasion
+     * Terraent arcane resistance from 30% to 40%, melee arcane 9-5 to 8-5, cost: 82 -> 80
+### Editor
+   * Fixed side default income getting incremented to 2 each time a scenario is saved
+### Multiplayer
+   * Add presets to allow saving and easily reusing game settings.
+### Translations
+   * Updated translations: Ancient Greek, Arabic, Bengali, British English, Chinese (Simplified), Czech, Finnish, Hungarian
+   * Added new Japanese font that has support for bolding text and fix font order so italics works.
+### Units
+   * Arcane Resistance of all Skeletal Type Undead changed from -20 % to -40%.
+      * The list for core skeletal Undead units includes: Skeleton, Revenant, Deathblade, Draug, Death Squire, Death Knight, Skeleton Archer, Bone Shooter, Banebow, Lich, Ancient Lich, Skeleton Rider, Bone Knight
+      * Campaign units include: Pyre Wight and Barrow Wight from *Eastern Invasion*.
+   * Dwarvish Thunderer: cost decreased from 17 gold to 16 gold.
+   * Ghoul, Necrophage, Ghast: pierce resistance changed from 30% to 10%, impact resistance changed from 0% to 20%, arcane resistance changed from 10% to 30%.
+   * Paladin: arcane resistance from 30% to 40%, melee arcane 9-5 to 8-5, cost: 82 -> 80
+   * Dunefolk Horse Archer, Marauder, Raider, Rider, and Windbolt sprites were cleaned up and various animations added.
+   * Cleanup and add defend animations for the Dunefolk Firetrooper and Scorcher.
+### User interface
+   * On touch devices, double tap no longer shows context menu. It can still be accessed via long press. Single tap selects the unit. Another single tap on a hex shows hover info, which was previously not available. Single tap select followed by double tap on a hex moves the unit. Dragging now indicates the path and defense.
+   * Fixed various graphical bugs with ship units.
+   * Fixed units' weapons tooltip to correctly account for effects from the [damage_type] ability
+   * Various UI refinements, primarily to the new Celes theme
+### WML Engine
+   * The legacy FormulaAI API has been removed.
+   * Added new WFL functions: `nearest_loc`, `run_file`, `debug_label`, `is_shrouded`, `is_fogged`
+### Miscellaneous and Bug Fixes
+   * Fixed a WML error being printed in Secrets of the Ancients.
+   * Fixed non-permanent multiplayer server bans not working.
+
+## Version 1.19.13
+### Translations
+   * Updated translations: Bengali, British English, Czech, Italian
+### Units
+   * Added Dune Rover attack, defend, and standing animations
+### User interface
+   * Fixed sidebar unit tooltip no longer taking damage resistances into account
+   * Fixed the progress bar for sub achievements not updating correctly
+### WML Engine
+   * Added [era] auto_sort key to control automatic alphabetical sorting.
+   * add 'name_affected' and 'description_affected' that are displayed in unit sidebar for abilities used like specials.
+   * modify [affect_adjacent] tag to allow abilities to affect all units in a given radius who is to 1 by default
+   * modify [filter_adjacent] tag to allow to filter all units in a given radius who is to 1 by default
+   * Abilities with id=poison that aren't in a [poison] tag will no longer inflict poison
+### Miscellaneous and Bug Fixes
+   * Fixed opening the map editor or starting a campaign crashing on some systems
+   * Hovering over the grey bat in SotA no longer causes a crash
+   * Li'sar is no longer a disco queen
 
 ## Version 1.19.12
 ### Add-ons client

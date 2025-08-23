@@ -1,27 +1,34 @@
+# #-#-#-#-#  wesnoth-utbs  #-#-#-#-#
+# Bengali translation of Wesnoth.
+# Copyright (C) 2025 Wesnoth development team
+# Subhraman Sarkar <suvrax@gmail.com>, 2025.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2025-03-17 04:21 UTC\n"
-"PO-Revision-Date: 2024-02-19 12:43 UTC\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2025-08-19 15:14 UTC\n"
+"PO-Revision-Date: 2025-07-24 23:09+0530\n"
+"Last-Translator: Subhraman Sarkar <suvrax@gmail.com>\n"
+"Language-Team: Bengali < >\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #. [campaign]: id=Under_the_Burning_Suns
 #. [editor_group]: id=utbs
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:11
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:244
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:241
 msgid "Under the Burning Suns"
-msgstr ""
+msgstr "জ্বলন্ত সূর্যের নীচে"
 
 #. [campaign]: id=Under_the_Burning_Suns
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:14
 msgid "UtBS"
-msgstr ""
+msgstr "UtBS"
 
 #. [campaign]: id=Under_the_Burning_Suns
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:20
@@ -31,6 +38,10 @@ msgid ""
 "journey to find a new home.\n"
 "\n"
 msgstr ""
+"সুদূর ভবিষ্যতে পতিত সাম্রাজ্যের ধ্বংসাবশেষের মধ্যে বেঁচে থাকার জন্য এলভদের একটি ছোট "
+"দল লড়াই করছে । আপনার জনগণকে মরুভূমির বাইরে একটি নতুন বসতি সন্ধানের জন্য একটি "
+"রোমাঞ্চকর যাত্রায় নেতৃত্ব দিন ।\n"
+"\n"
 
 #. [campaign]: id=Under_the_Burning_Suns
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:22
@@ -44,47 +55,47 @@ msgstr ""
 #. [campaign]: id=Under_the_Burning_Suns
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:24
 msgid "(Expert level, 10 scenarios.)"
-msgstr ""
+msgstr "(দক্ষ পর্যায়, 10টি ঘটনাক্রম ।)"
 
 #. [campaign]: id=Under_the_Burning_Suns
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:28
 msgid "Challenging"
-msgstr ""
+msgstr "ঝুঁকিপূর্ণ"
 
 #. [campaign]: id=Under_the_Burning_Suns
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:28
 msgid "Fighter"
-msgstr ""
+msgstr "লড়াকু"
 
 #. [campaign]: id=Under_the_Burning_Suns
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:29
 msgid "Difficult"
-msgstr ""
+msgstr "কঠিন"
 
 #. [campaign]: id=Under_the_Burning_Suns
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:29
 msgid "Warrior"
-msgstr ""
+msgstr "যোদ্ধা"
 
 #. [campaign]: id=Under_the_Burning_Suns
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:30
 msgid "Champion"
-msgstr ""
+msgstr "বিশিষ্ট যোদ্ধা"
 
 #. [campaign]: id=Under_the_Burning_Suns
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:30
 msgid "Nightmare"
-msgstr ""
+msgstr "দুঃস্বপ্ন"
 
 #. [about]
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:34
 msgid "Campaign Design"
-msgstr ""
+msgstr "অভিযান পরিকল্পনা"
 
 #. [about]
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:43
 msgid "Campaign Maintenance"
-msgstr ""
+msgstr "অভিযানের রক্ষণাবেক্ষণ"
 
 #. [about]
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:64
@@ -94,12 +105,12 @@ msgstr ""
 #. [about]
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:130
 msgid "Miscellaneous"
-msgstr ""
+msgstr "বিবিধ"
 
 #. [entry]
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:148
 msgid "And special thanks to everyone else who I forgot to mention."
-msgstr ""
+msgstr "এবং উল্লেখ করতে ভুলে গিয়েছে এমন সবাইকে বিশেষ ধন্যবাদ ।"
 
 #. [lua]: wesnoth.interface.game_display.unit_status
 #: data/campaigns/Under_the_Burning_Suns/lua/theme.lua:15
@@ -121,7 +132,7 @@ msgstr ""
 #. [scenario]: id=01_The_Morning_After
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:5
 msgid "The Morning After"
-msgstr ""
+msgstr "পরবর্তী ভোরবেলা"
 
 #. [side]
 #. [side]: id=Kaleh, type=Quenoth Youth
@@ -141,7 +152,7 @@ msgstr ""
 #: data/campaigns/Under_the_Burning_Suns/scenarios/12_The_Final_Confrontation.cfg:44
 #: data/campaigns/Under_the_Burning_Suns/scenarios/13_Epilogue.cfg:31
 msgid "team_name^Quenoth Elves"
-msgstr ""
+msgstr "কুয়েনথ এল্ফেরা"
 
 #. [side]
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:77
@@ -150,7 +161,7 @@ msgstr ""
 #: data/campaigns/Under_the_Burning_Suns/scenarios/06a_In_the_Tunnels_of_Trolls.cfg:108
 #: data/campaigns/Under_the_Burning_Suns/scenarios/06a_In_the_Tunnels_of_Trolls.cfg:139
 msgid "Monsters"
-msgstr ""
+msgstr "দানবেরা"
 
 #. [side]
 #. [side]: id=Panok, type=Direwolf Rider, type=Goblin Knight
@@ -162,17 +173,17 @@ msgstr ""
 #: data/campaigns/Under_the_Burning_Suns/scenarios/04_Descending_into_Darkness.cfg:140
 #: data/campaigns/Under_the_Burning_Suns/scenarios/04_Descending_into_Darkness.cfg:166
 msgid "Evil"
-msgstr ""
+msgstr "খারাপ"
 
 #. [objective]: condition=win
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:119
 msgid "Rescue surviving elves"
-msgstr ""
+msgstr "বেঁচে থাকা এল্ফদের উদ্ধার করুন"
 
 #. [objective]: condition=win
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:123
 msgid "Defeat Xanthos"
-msgstr ""
+msgstr "জ্যানথোস্-কে পরাজিত করুন"
 
 #. [objective]: condition=lose
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:133
@@ -187,7 +198,7 @@ msgstr ""
 #: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:414
 #: data/campaigns/Under_the_Burning_Suns/scenarios/12_The_Final_Confrontation.cfg:277
 msgid "Death of Kaleh"
-msgstr ""
+msgstr "কালেহ্-এর মৃত্যু"
 
 #. [objective]: condition=lose
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:137
@@ -201,14 +212,14 @@ msgstr ""
 #: data/campaigns/Under_the_Burning_Suns/scenarios/09_Blood_is_Thicker_Than_Water.cfg:361
 #: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:418
 msgid "Death of Nym"
-msgstr ""
+msgstr "নিম-এর মৃত্যু"
 
 #. [objective]: condition=lose
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:141
 #: data/campaigns/Under_the_Burning_Suns/scenarios/02_Across_the_Harsh_Sands.cfg:221
 #: data/campaigns/Under_the_Burning_Suns/scenarios/03_Stirring_in_the_Night.cfg:255
 msgid "Death of Garak"
-msgstr ""
+msgstr "গ্যারাক-এর মৃত্যু"
 
 #. [objective]: condition=lose
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:154
@@ -222,57 +233,57 @@ msgstr ""
 #: data/campaigns/Under_the_Burning_Suns/scenarios/09_Blood_is_Thicker_Than_Water.cfg:365
 #: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:422
 msgid "Death of Zhul"
-msgstr ""
+msgstr "জুল-এর মৃত্যু"
 
 #. [value]: type=Quenoth Fighter, gender=male
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:181
 msgid "Lreu"
-msgstr ""
+msgstr "ল্রিউ"
 
 #. [value]: type=Quenoth Fighter, gender=male
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:188
 msgid "Piyru"
-msgstr ""
+msgstr "পিইরু"
 
 #. [value]: type=Quenoth Fighter, gender=male
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:193
 msgid "Feru"
-msgstr ""
+msgstr "ফেরু"
 
 #. [value]: type=Quenoth Scout, gender=male
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:200
 msgid "Danu"
-msgstr ""
+msgstr "ডানু "
 
 #. [value]: type=Quenoth Scout, gender=male
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:205
 msgid "Hamuil"
-msgstr ""
+msgstr "হামুইল"
 
 #. [value]: type=Quenoth Scout, gender=male
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:210
 msgid "Anioh"
-msgstr ""
+msgstr "আনিওহ্"
 
 #. [value]: type=Tauroch Rider, gender=male
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:215
 msgid "Vemuil"
-msgstr ""
+msgstr "ভেমুইল"
 
 #. [value]: type=Tauroch Rider, gender=male
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:220
 msgid "Taliu"
-msgstr ""
+msgstr "টালিউ"
 
 #. [message]: speaker=Nym
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:250
 msgid "Hey Kaleh, are you in there?"
-msgstr ""
+msgstr "কালেহ্, তুমি কী ওখানে?"
 
 #. [message]: speaker=Kaleh
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:255
 msgid "Nym, is that you?"
-msgstr ""
+msgstr "নিম, ওটা কী তুমি?"
 
 #. [message]: speaker=Nym
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:260
@@ -280,11 +291,13 @@ msgid ""
 "Yes, come on out already. The storm has passed. With the morning light Naia "
 "has ended the terrible night."
 msgstr ""
+"হ্যাঁ, বেরিয়ে এসো । ঝড়টা পেরিয়ে গিয়েছে । ভোরের আলোর সঙ্গে নায়া ভয়ানক রাতটাকে "
+"শেষ করে দিয়েছে ।"
 
 #. [message]: speaker=Kaleh
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:265
 msgid "Has the sky really stopped falling?"
-msgstr ""
+msgstr "আকাশটা কী সত্যিই পড়া শেষ করেছে?"
 
 #. [message]: speaker=Nym
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:270
@@ -292,6 +305,8 @@ msgid ""
 "I already told you, the sky is clear and empty. Now come quickly, silly, "
 "others may need our help."
 msgstr ""
+"আমি এক্ষুণি বললাম না, আকাশটা পরিষ্কার আর ফাঁকা । এবারে তাড়াতাড়ি এসো, বোকা, "
+"অন্যদের আমাদের সাহায্যের প্রয়োজন ।"
 
 #. [message]: speaker=Kaleh
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:275
@@ -300,6 +315,8 @@ msgid ""
 "ruined! I can hardly recognize our village. I didn’t think it could be this "
 "bad."
 msgstr ""
+"কী হয়েছে! হে এলোহ্! বড় গর্তগুলো সর্বত্র । সবকিছু শেষ, ধ্বংস হয়ে গিয়েছে! আমি আমাদের "
+"গ্রামটাকে আর চিনতে পারছি না । আমি ভাবতে পারিনি পরিস্থিতি এতটা খারাপ ।"
 
 #. [message]: speaker=Nym
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:280
@@ -311,6 +328,12 @@ msgid ""
 "as you think. Let’s explore the village and see who else has survived the "
 "night."
 msgstr ""
+"এসো, কালেহ্, আমাদের গিয়ে দেখতে হবে কেউ আহত কী না বা কারোর আমাদের সাহায্য চাই "
+"কী না । আমার মনে হল আমি দক্ষিণ দিক থেকে কারোর ডাকার শব্দ শুনতে পেলাম । এটা ভয়ের "
+"সময় নয়, আমাদের শক্ত হতে হবে । যতই হোক, তুমি আমাদের দলনেতা টানুইলের ভ্রাতুষ্পুত্র, আর "
+"তোমাকেই নেতৃত্বের ডাকের উত্তর দিতে হবে । হয়তো দিনের আলোয় পরিস্থিতি অতটাও খারাপ "
+"হবে না যতটা তুমি ভাবছ । চলো গ্রামটা ঘুরে দেখি আর দেখি কেউ রাত্রের হাত থেকে বাঁচতে "
+"পেরেছে কী না ।"
 
 #. [message]: speaker=Kaleh
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:285
@@ -348,24 +371,24 @@ msgstr ""
 #. [event]
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:362
 msgid "Vecnu"
-msgstr ""
+msgstr "ভেকনু"
 
 #. [event]
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:363
 msgid "Eranor"
-msgstr ""
+msgstr "এরানোর"
 
 #. [event]
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:364
 msgid "Seil"
-msgstr ""
+msgstr "সেইল"
 
 #. [message]: speaker=Vecnu
 #. [message]: speaker=Garak
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:398
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:598
 msgid "Kaleh, Nym, help us!"
-msgstr ""
+msgstr "কালেহ্, নিম, আমাদের বাঁচাও!"
 
 #. [message]: speaker=Nym
 #. [message]: speaker=Kaleh
@@ -374,7 +397,7 @@ msgstr ""
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:834
 #: data/campaigns/Under_the_Burning_Suns/scenarios/08_Out_of_the_Frying_Pan.cfg:4574
 msgid "What in Uria’s name is that?"
-msgstr ""
+msgstr "উরিয়ার শপথ, ওটা আবার কী?"
 
 #. [message]: speaker=Vecnu
 #. [message]: speaker=Garak
@@ -405,18 +428,18 @@ msgstr ""
 #. [event]
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:459
 msgid "Eloshi"
-msgstr ""
+msgstr "এলোশি"
 
 #. [event]
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:460
 msgid "Illuvin"
-msgstr ""
+msgstr "ইলুভিন"
 
 #. [event]
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:466
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:468
 msgid "Raynor"
-msgstr ""
+msgstr "রাইনোর"
 
 #. [message]: speaker=Kaleh
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:491
@@ -426,12 +449,12 @@ msgstr ""
 #. [event]: role=Rocky Horror, role=Rocky Horror, role=Rocky Horror, role=Rocky Horror, role=Rocky Horror, role=Rocky Horror, role=Rocky Horror
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:575
 msgid "Jorazan"
-msgstr ""
+msgstr "জোরাজান"
 
 #. [event]: role=Rocky Horror, role=Rocky Horror, role=Rocky Horror, role=Rocky Horror, role=Rocky Horror, role=Rocky Horror, role=Rocky Horror
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:576
 msgid "Zyar"
-msgstr ""
+msgstr "জায়ার"
 
 #. [message]: speaker=unit
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:584
@@ -448,7 +471,7 @@ msgstr ""
 #. [message]: speaker=second_unit
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:648
 msgid "Ha! They’re destroyed at last."
-msgstr ""
+msgstr "হা! শেষপর্যন্ত ওগুলো ধ্বংস হয়েছে ।"
 
 #. [message]: speaker=Garak
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:653
@@ -13150,19 +13173,19 @@ msgstr ""
 
 #. [dummy]: id=nova
 #. weapon special
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:450
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:452
 msgid "nova"
 msgstr ""
 
 #. [dummy]: id=nova
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:451
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:453
 msgid ""
 "This weapon, when used offensively, deals damage to all units adjacent to "
 "the caster when it hits."
 msgstr ""
 
 #. [dummy]: id=nova
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:453
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:455
 msgid ""
 "This attack is the third verse of the Song of Sun Ascension. After using it, "
 "the first verse is available in the next turn. Furthermore, invoking this "
@@ -13170,65 +13193,65 @@ msgid ""
 msgstr ""
 
 #. [dummy]: id=nova
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:454
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:456
 msgid "This unit has wide-area attacks centered on the caster."
 msgstr ""
 
 #. [dummy]: id=ray
 #. weapon special
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:494
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:496
 msgid "ray"
 msgstr ""
 
 #. [dummy]: id=ray
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:495
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:497
 msgid ""
 "This weapon, when used offensively, also deals damage to a unit behind the "
 "target."
 msgstr ""
 
 #. [dummy]: id=ray
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:497
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:499
 msgid ""
 "This is the second verse of the Song of Sun Ascension. It is available only "
 "when the first verse was sung in the previous turn. If this was the last "
 "verse, then the first verse will be available in the next turn."
 msgstr ""
 
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:656
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:658
 msgid ""
 "At the start of the turn this unit increases movement points of surrounding "
 "units by +1"
 msgstr ""
 
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:659
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:661
 msgid ""
 "At the start of the turn this unit increases movement points of surrounding "
 "units by +2"
 msgstr ""
 
 #. [dummy]: description={STR_TAILWIND_RESTRICT_{X}}
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:663
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:665
 msgid "tailwind +"
 msgstr ""
 
 #. [special_note]
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:783
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:785
 msgid "SPECIAL_NOTE^This unit is able to move through solid stone walls."
 msgstr ""
 
 #. [dummy]: id=teaching
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:792
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:794
 msgid "teaching"
 msgstr ""
 
 #. [dummy]: id=teaching
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:793
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:795
 msgid "female^teaching"
 msgstr ""
 
 #. [dummy]: id=teaching
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:794
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:796
 msgid ""
 "At the start of every turn, this unit redistributes its experience points to "
 "all the units of the same side adjacent to it. If no suitable unit is "
@@ -13236,36 +13259,36 @@ msgid ""
 msgstr ""
 
 #. [attacks]: id=shock
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:804
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:806
 msgid "shock"
 msgstr ""
 
 #. [attacks]: id=shock
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:805
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:807
 msgid ""
 "When this attack is used on offense, the opponent will retaliate with one "
 "less strike than normally, to a minimum of one strike."
 msgstr ""
 
 #. [attacks]: id=shock
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:806
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:808
 msgid ""
 "This unit’s melee attack can overwhelm the defenses of enemies, preventing "
 "them from retaliating as effectively."
 msgstr ""
 
 #. [chance_to_hit]: id=formation
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:837
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:839
 msgid "formation"
 msgstr ""
 
 #. [chance_to_hit]: id=formation
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:838
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:840
 msgid "female^formation"
 msgstr ""
 
 #. [chance_to_hit]: id=formation
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:839
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:841
 msgid ""
 "This unit gains a +10% bonus to defense when another unit with the same "
 "ability is adjacent to it. However, this cannot raise the unit’s defense "
@@ -13273,39 +13296,39 @@ msgid ""
 msgstr ""
 
 #. [chance_to_hit]: id=formation
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:840
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:842
 msgid "Groups of units of this type are able to shield each other in combat."
 msgstr ""
 
 #. [dummy]: id=disengage
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:863
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:865
 msgid "disengage"
 msgstr ""
 
 #. [dummy]: id=disengage
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:864
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:866
 msgid "female^disengage"
 msgstr ""
 
 #. [dummy]: id=disengage
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:865
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:867
 msgid ""
 "If this unit doesn’t move before attacking, it will retain its movement "
 "points after the attack."
 msgstr ""
 
 #. [dummy]: id=disengage
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:866
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:868
 msgid "This unit can move either before or after attacking."
 msgstr ""
 
 #. [dummy]: id=daze
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:874
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:876
 msgid "daze"
 msgstr ""
 
 #. [dummy]: id=daze
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:875
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:877
 msgid ""
 "When hit with this attack, an enemy suffers a 10% penalty both to their "
 "defense and chance to hit for one turn. Other specials that affect chance to "
@@ -13316,105 +13339,125 @@ msgid ""
 msgstr ""
 
 #. [dummy]: id=daze
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:879
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:881
 msgid ""
 "This unit can daze its enemies, reducing their accuracy and defense until "
 "they end a turn."
 msgstr ""
 
 #. [skirmisher]: id=distract
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:887
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:889
 msgid "distract"
 msgstr ""
 
 #. [skirmisher]: id=distract
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:888
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:890
 msgid "female^distract"
 msgstr ""
 
 #. [skirmisher]: id=distract
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:889
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:891
 msgid ""
 "This unit negates enemy Zones of Control around itself for allied units (but "
 "not for itself)."
 msgstr ""
 
 #. [skirmisher]: id=distract
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:890
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:892
 msgid ""
 "This unit is capable of distracting opponents, allowing allied units to "
 "trespass their Zones of Control and move unhindered around them."
 msgstr ""
 
 #. [dummy]: id=support
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:901
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:903
 msgid "support"
 msgstr ""
 
 #. [dummy]: id=support
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:902
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:904
 msgid "female^support"
 msgstr ""
 
 #. [dummy]: id=support
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:903
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:905
 msgid "The upkeep costs of adjacent friendly units are lowered by 1."
 msgstr ""
 
 #. [unstore_unit]
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:953
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:952
 msgid "dazed"
 msgstr ""
 
 #. [unstore_unit]
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:954
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:953
 msgid "female^dazed"
 msgstr ""
 
+#. [defense]: id=enemy_dazed
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:973
+msgid "parry:"
+msgstr ""
+
+#. [defense]: id=enemy_dazed
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:974
+msgid "Because this unit is dazed, its defense is decreased by 10%"
+msgstr ""
+
+#. [chance_to_hit]: id=self_dazed
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:982
+msgid "accuracy:"
+msgstr ""
+
+#. [chance_to_hit]: id=self_dazed
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:983
+msgid "Because this unit is dazed, its accuracy is decreased by 10%"
+msgstr ""
+
 #. [dummy]: id=opportunist
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1423
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1366
 msgid "opportunist"
 msgstr ""
 
 #. [dummy]: id=opportunist
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1424
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1367
 msgid ""
 "This ability makes Kaleh attack enemies with single strike of bolas when "
 "they leave his zone of control."
 msgstr ""
 
 #. [dummy]: id=taunt
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1498
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1441
 msgid "taunt"
 msgstr ""
 
 #. [dummy]: id=taunt
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1499
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1442
 msgid "Taunts the enemy making them try to attack Kaleh for one turn."
 msgstr ""
 
 #. [dummy]: id=taunted
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1535
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1479
 msgid "taunted"
 msgstr ""
 
 #. [dummy]: id=taunted
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1536
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1480
 msgid "This unit is taunted by Kaleh, it will try to attack him for one turn."
 msgstr ""
 
 #. [leadership]: id=inspire
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1545
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1489
 msgid "inspire"
 msgstr ""
 
 #. [leadership]: id=inspire
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1546
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1490
 msgid "female^inspire"
 msgstr ""
 
 #. [leadership]: id=inspire
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1547
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1491
 msgid ""
 "This unit can inspire own units that are next to it, making them fight "
 "better. Adjacent own units of lower or equal level will deal 25% more damage "
@@ -13422,71 +13465,71 @@ msgid ""
 msgstr ""
 
 #. [leadership]: id=inspire
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1548
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1492
 msgid ""
 "The presence of this unit inspires own units next to it to deal more damage "
 "in combat, though this only applies to units of lower or equal level."
 msgstr ""
 
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1559
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1503
 msgid "cooldown 1"
 msgstr ""
 
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1562
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1506
 msgid "cooldown 2"
 msgstr ""
 
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1565
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1509
 msgid "After using this attack, you can’t use it during your next turn."
 msgstr ""
 
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1568
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1512
 msgid "After using this attack, you can’t use it during your next two turns."
 msgstr ""
 
 #. [dummy]: id=pierce
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1629
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1573
 msgid "pierce"
 msgstr ""
 
 #. [dummy]: id=pierce
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1630
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1574
 msgid ""
 "This weapon, when used offensively, can also deal damage to a unit behind "
 "the target."
 msgstr ""
 
 #. [dummy]: id=puncture
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1700
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1644
 msgid "puncture"
 msgstr ""
 
 #. [dummy]: id=puncture
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1701
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1645
 msgid ""
 "This weapon, when used offensively, can also deal damage to two units behind "
 "the target."
 msgstr ""
 
 #. [dummy]: id=rain_of_arrows
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1784
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1728
 msgid "rain of arrows"
 msgstr ""
 
 #. [dummy]: id=rain_of_arrows
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1785
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1729
 msgid ""
 "This weapon, when used offensively, can also deal damage to a unit behind "
 "the target and all units adjacent to the unit behind the target."
 msgstr ""
 
 #. [dummy]: id=sword_dance
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1906
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1850
 msgid "sword dance"
 msgstr ""
 
 #. [dummy]: id=sword_dance
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1907
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1851
 msgid ""
 "Every time Nym hits an enemy she gains +10% accuracy and 10% parry until the "
 "end of the combat."
