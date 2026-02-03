@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: en@shaw\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2025-07-21 03:54 UTC\n"
+"POT-Creation-Date: 2026-01-20 17:31 UTC\n"
 "PO-Revision-Date: 2009-10-13 13:00-0400\n"
 "Last-Translator: Arc Riley <arcriley@ubuntu.com>\n"
 "Language-Team: Shavian English <ubuntu-l10n-en-shaw@lists.launchpad.net>\n"
@@ -2923,7 +2923,7 @@ msgid "<i>Phew!</i>"
 msgstr ""
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:609
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:612
 msgid ""
 "Blast it! The saurians have had too many casualties in order for them to be "
 "of any real help to us. We won’t be able to recruit them in the future."
@@ -2932,7 +2932,7 @@ msgstr ""
 "𐑣𐑧𐑤𐑐 𐑑 𐑳𐑕. 𐑢𐑰 𐑢𐑴𐑯𐑑 𐑚𐑰 𐑱𐑚𐑩𐑤 𐑑 𐑮𐑩𐑒𐑮𐑵𐑑 𐑞𐑧𐑥 𐑦𐑯 𐑞 𐑓𐑿𐑗𐑼."
 
 #. [message]: speaker=Thelarion
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:655
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:658
 #, fuzzy
 #| msgid ""
 #| "This has taken too much time, we should send all of our troops and send "
@@ -2945,15 +2945,15 @@ msgstr ""
 "𐑣𐑧𐑤."
 
 #. [message]: speaker=Darstang
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:659
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:662
 msgid "It won’t be said that Elves were braver than us, everyone attack!"
 msgstr "𐑦𐑑 𐑢𐑴𐑯𐑑 𐑚𐑰 𐑕𐑧𐑛 𐑞𐑨𐑑 𐑧𐑤𐑝𐑟 𐑢𐑻 𐑚𐑮𐑱𐑝𐑼 𐑞𐑨𐑯 𐑳𐑕, 𐑧𐑝𐑮𐑰𐑢𐑳𐑯 𐑩𐑑𐑨𐑒!"
 
 #. [unit]: type=General, id=Earl Lanbec'h
 #. [side]: type=General, id=Earl Lanbec'h
 #. [side]: type=Grand Marshal, id=Earl Lanbec'h
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:678
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:708
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:681
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:711
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:144
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:86
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:80
@@ -2962,17 +2962,17 @@ msgid "Earl Lanbec’h"
 msgstr "𐑻𐑤 ·𐑤𐑨𐑯𐑚𐑧𐑒'𐑣"
 
 #. [message]: speaker=Earl Lanbec'h
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:694
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:697
 msgid "At them! Rip them to the last!"
 msgstr "𐑨𐑑 𐑞𐑧𐑥! 𐑮𐑦𐑐 𐑞𐑧𐑥 𐑑 𐑞 𐑤𐑭𐑕𐑑!"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:698
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:701
 msgid "It is too late, we are defeated."
 msgstr "𐑦𐑑 𐑦𐑟 𐑑𐑵 𐑤𐑱𐑑, 𐑢𐑰 𐑸 𐑛𐑦𐑓𐑰𐑑𐑩𐑛."
 
 #. [message]: speaker=Earl Lanbec'h
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:718
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:721
 msgid ""
 "So, the elves and dwarves failed to take the fortress and the beasts were "
 "able to muster a defense. No matter. Once the vanguard of my army arrives, I "
@@ -2980,12 +2980,12 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:758
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:761
 msgid "The green earth will curse you for this..."
 msgstr "𐑞 𐑜𐑮𐑰𐑯 𐑻𐑔 𐑢𐑦𐑤 𐑒𐑻𐑕 𐑿 𐑓𐑹 𐑞𐑦𐑕..."
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:770
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:773
 msgid "Curse you, foul orc!"
 msgstr "𐑒𐑻𐑕 𐑿, 𐑓𐑬𐑤 𐑹𐑒!"
 
@@ -5116,6 +5116,158 @@ msgstr ""
 "𐑢𐑰𐑒 (𐑓𐑹 𐑹𐑒𐑕), 𐑹𐑒𐑦𐑖 𐑖𐑱𐑥𐑩𐑯𐑟 𐑸 𐑜𐑫𐑛 𐑕𐑐𐑧𐑤 𐑒𐑨𐑕𐑑𐑻𐑟 𐑯 𐑒𐑨𐑯 𐑒𐑻𐑕 𐑞𐑺 𐑧𐑯𐑦𐑥𐑦𐑟, 𐑛𐑮𐑱𐑯𐑦𐑙 𐑞𐑺 "
 "𐑤𐑲𐑓. 𐑴𐑤𐑛 𐑹𐑒𐑦𐑖 𐑖𐑱𐑥𐑩𐑯𐑟 𐑸 𐑖𐑱𐑥𐑩𐑯𐑟 𐑞𐑨𐑑 𐑣𐑨𐑝 𐑥𐑭𐑕𐑑𐑼𐑛 𐑥𐑨𐑡𐑦𐑒, 𐑷𐑤𐑞𐑴 𐑞𐑺 𐑓𐑦𐑟𐑦𐑒𐑩𐑤 𐑕𐑑𐑮𐑧𐑙𐑔 "
 "𐑣𐑨𐑟 𐑛𐑦𐑒𐑤𐑲𐑯𐑛 𐑢𐑦𐑞 𐑱𐑡."
+
+#. [advancement]: id=wol_amla_hitpoints
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:25
+msgid "Endurance: +8 HP (Hitpoints)"
+msgstr ""
+
+#. [modify_unit_type]: type=Orcish Warlord
+#. [modify_unit_type]: type=Orcish Sovereign
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:71
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:207
+msgid "Melee: greatsword +1 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Orcish Warlord
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:76
+msgid "Ranged: bow +1 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Orcish Slurbow, type=blade, type=pierce, type=fire
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:91
+msgid "Melee: short sword +1 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Orcish Slurbow, type=blade, type=pierce, type=fire
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:97
+msgid "Ranged: crossbow (pierce) +1 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Orcish Slurbow, type=blade, type=pierce, type=fire
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:103
+msgid "Ranged: crossbow (fire) +2 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Direwolf Rider
+#. [modify_unit_type]: type=Goblin Pillager
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:117
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:136
+msgid "Melee: fangs +1 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Direwolf Rider
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:122
+msgid "Melee: claws +1 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Goblin Pillager
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:141
+msgid "Melee: torch +1 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Goblin Pillager
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:146
+msgid "Ranged: net +1 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Troll Warrior
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:160
+msgid "Melee: hammer +2 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Troll Rocklobber
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:174
+msgid "Melee: fist +2 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Troll Rocklobber
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:179
+msgid "Melee: sling +4 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Great Troll
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:193
+msgid "Melee: hammer +1 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Orcish Sovereign
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:212
+msgid "Ranged: crossbow +1 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Orcish Nightblade, type=blade, type=impact
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:227
+msgid "Melee: blade +2 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Orcish Nightblade, type=blade, type=impact
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:233
+msgid "Melee: kick +2 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Orcish Nightblade, type=blade, type=impact
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:238
+msgid "Ranged: throwing knives +1 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Saurian Flanker
+#. [modify_unit_type]: type=Saurian Javelineer
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:252
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:271
+msgid "Melee: +1 spear damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Saurian Flanker
+#. [modify_unit_type]: type=Saurian Javelineer
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:257
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:276
+msgid "Ranged: +1 spear damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Saurian Prophet
+#. [modify_unit_type]: type=Saurian Seer
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:290
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:309
+msgid "Melee: staff +1 damage"
+msgstr ""
+
+#. [modify_unit_type]: type=Saurian Prophet
+#. [modify_unit_type]: type=Saurian Seer
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:295
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:314
+msgid "Ranged: curse +1 damage"
+msgstr ""
+
+#. [message]: speaker=narrator
+#. newlines at the end are deliberate, and function as spacers before the [option]s
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:350
+msgid ""
+"Congratulations, your $unit.language_name has leveled up... but they’re "
+"already at their max level!\n"
+"\n"
+"When this happens, <span color='#0D87B6'><b>some campaigns</b></span> — like "
+"this one — allow you to select a minor bonus to hitpoints or damage. These "
+"bonuses are called “AMLAs”: “After Maximum Level Advancements”. If your max-"
+"level units have normal, <span color='#0D87B6'><b>blue experience bars</b></"
+"span>, that means these AMLAs are available.\n"
+"\n"
+"<span color='#9608CF'><b><i>Other campaigns</i></b></span> don’t have these "
+"AMLA options, and instead always give max-level units +3 max hp when they "
+"level up. If your max-level units have <span color='#9608CF'><b>purple "
+"experience bars</b></span>, they’ll only get +3 max hp when they level up.\n"
+"\n"
+msgstr ""
+
+#. [option]
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:358
+msgid "Ok, continue with the game"
+msgstr ""
+
+#. [option]
+#: data/campaigns/Son_Of_The_Black_Eye/utils/1-amla.cfg:361
+msgid "Don’t show this message again"
+msgstr ""
 
 #. [message]: speaker=unit
 #: data/campaigns/Son_Of_The_Black_Eye/utils/deaths.cfg:17

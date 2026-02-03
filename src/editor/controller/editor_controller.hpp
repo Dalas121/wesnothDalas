@@ -21,12 +21,12 @@
 #include "editor/toolkit/editor_toolkit.hpp"
 
 #include "controller_base.hpp"
+#include "generators/map_generator.hpp"
 #include "help/help.hpp"
 #include "hotkey/command_executor.hpp"
 #include "mouse_handler_base.hpp"
-#include "tooltips.hpp"
-
 #include "sound_music_track.hpp"
+#include "tooltips.hpp"
 
 namespace font {
 struct floating_label_context;
@@ -146,9 +146,14 @@ public:
 		return context_manager_->get_map_context();
 	}
 
-	/** Initialize an addon if the addon id is empty
-	 * @return    If the initialization succeeded.
-	 * */
+	/** Show dialog to select active addon or create a new one. */
+	void select_addon();
+
+	/**
+	 *  Show dialog to select active addon or create a new one if one is
+	 *  not yet initialized. Does nothing otherwise.
+	 *  @return    If the initialization succeeded.
+	 */
 	bool initialize_addon();
 
 protected:
@@ -240,13 +245,16 @@ private:
 	tooltips::manager tooltip_manager_;
 	std::unique_ptr<font::floating_label_context> floating_label_manager_;
 
-	std::unique_ptr<help::help_manager> help_manager_;
+	std::shared_ptr<help::help_manager> help_manager_;
 
 	/** Quit main loop flag */
 	bool do_quit_;
 	EXIT_STATUS quit_mode_;
 
 	std::vector<std::shared_ptr<sound::music_track>> music_tracks_;
+
+	/** Available random map generators */
+	std::vector<std::unique_ptr<map_generator>> map_generators_;
 };
 
 } //end namespace editor

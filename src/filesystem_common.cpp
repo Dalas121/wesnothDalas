@@ -236,21 +236,10 @@ std::string get_core_images_dir()
 
 std::string get_intl_dir()
 {
-#ifdef _WIN32
+#if HAS_RELATIVE_LOCALEDIR
 	return game_config::path + "/" LOCALEDIR;
 #else
-
-#ifdef USE_INTERNAL_DATA
-	return get_cwd() + "/" LOCALEDIR;
-#endif
-
-#if HAS_RELATIVE_LOCALEDIR
-	std::string res = game_config::path + "/" LOCALEDIR;
-#else
-	std::string res = LOCALEDIR;
-#endif
-
-	return res;
+	return LOCALEDIR;
 #endif
 }
 
@@ -285,23 +274,18 @@ bool file_tree_checksum::operator==(const file_tree_checksum &rhs) const
 		modified == rhs.modified;
 }
 
-std::string read_map(const std::string& name)
-{
-	std::string res;
-	auto map_location = get_wml_location(name);
+std::string get_map_file(const std::string& name) {
+	utils::optional<std::string> map_location { filesystem::get_wml_location(name) };
 	if(!map_location) {
 		// Consult [binary_path] for maps as well.
-		map_location = get_binary_file_location("maps", name);
+		map_location = filesystem::get_binary_file_location("maps", name);
 	}
-	if(map_location) {
-		res = read_file(map_location.value());
-	}
+	return map_location ? map_location.value() : filesystem::get_legacy_editor_dir() + "/maps/" + name;
+}
 
-	if(res.empty()) {
-		res = read_file(get_legacy_editor_dir() + "/maps/" + name);
-	}
-
-	return res;
+std::string read_map(const std::string& name)
+{
+	return read_file(get_map_file(name));
 }
 
 std::string read_scenario(const std::string& name)

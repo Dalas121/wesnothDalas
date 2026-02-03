@@ -99,6 +99,9 @@ std::set<std::string> split_set(std::string_view val, const char c = ',', const 
 
 std::vector<std::string_view> split_view(std::string_view val, const char c = ',', const int flags = REMOVE_EMPTY | STRIP_SPACES);
 
+/** You cannot take a non-owning view to a temporary string! */
+std::vector<std::string_view> split_view(std::string&&) = delete;
+
 /**
  * This function is identical to split(), except it does not split when it otherwise would if the
  * previous character was identical to the parameter 'quote' (i.e. it does not split quoted commas).
@@ -326,6 +329,28 @@ inline std::string wml_escape_string(std::string_view str)
 	for(char c : str) {
 		res.append(c == '"' ? 2 : 1, c);
 	}
+
+	return res;
+}
+
+/** Format @a str as a strongly quoted WML value. Occurances of `<<` are double quoted separately */
+inline std::string wml_escape_strong(const std::string& str)
+{
+	std::string res;
+	std::size_t i = str.find(">>");
+	if(i == std::string::npos) {
+		return str;
+	}
+
+	res.append(str, 0, i);
+	res.append(">>\">>\"<<");
+	std::size_t j;
+	while((j = str.find(">>", i + 2)) != std::string::npos) {
+		res.append(str, i + 2, j - (i + 2));
+		res.append(">>\">>\"<<");
+		i = j;
+	}
+	res.append(str, i + 2);
 
 	return res;
 }

@@ -98,34 +98,66 @@ bool show_difficulty_dialog(load_game_metadata& load_data)
 	return true;
 }
 
-void copy_era(config& cfg)
+/** Confirms attempts to load saves from previous game versions. */
+bool check_version_compatibility(const version_info& save_version)
 {
-	auto replay_start = cfg.optional_child("replay_start");
-	if(!replay_start) {
-		return;
+	if(save_version == game_config::wesnoth_version) {
+		return true;
 	}
 
-	auto era = replay_start->optional_child("era");
-	if(!era) {
-		return;
+	const version_info& wesnoth_version = game_config::wesnoth_version;
+
+	// Even minor version numbers indicate stable releases which are
+	// compatible with each other.
+	if(wesnoth_version.minor_version() % 2 == 0 && wesnoth_version.major_version() == save_version.major_version()
+		&& wesnoth_version.minor_version() == save_version.minor_version()) {
+		return true;
 	}
 
-	auto snapshot = cfg.optional_child("snapshot");
-	if(!snapshot) {
-		return;
+	// Do not load if too old. If either the savegame or the current
+	// game has the version 'test', load. This 'test' version is never
+	// supposed to occur, except when Soliton is testing MP servers.
+	if(save_version < game_config::min_savegame_version && save_version != game_config::test_version
+		&& wesnoth_version != game_config::test_version) {
+		const std::string message
+			= _("This save is from an old, unsupported version ($version_number|) and cannot be loaded.");
+		utils::string_map symbols;
+		symbols["version_number"] = save_version.str();
+		gui2::show_error_message(utils::interpolate_variables_into_string(message, &symbols));
+		return false;
 	}
 
-	snapshot->add_child("era", *era);
+	if(prefs::get().confirm_load_save_from_different_version()) {
+		const std::string message
+			= _("This save is from a different version of the game ($version_number|), and might not work with this "
+				"version.\n"
+				"\n"
+				"<b>Warning:</b> saves in the middle of campaigns are especially likely to fail, and you should either "
+				"use the old version or restart the campaign. Even when a saved game seems to load successfully, "
+				"subtler aspects like gameplay balance and story progression could be impacted. The difficulty, the "
+				"challenge, the <i>fun</i> may be missing.\n"
+				"\n"
+				"For example, the campaign may have been rebalanced with fewer enemies in the early scenarios, but "
+				"expecting your recall list to have correspondingly less experience in the late scenarios.\n"
+				"\n"
+				"Do you wish to continue?");
+		utils::string_map symbols;
+		symbols["version_number"] = save_version.str();
+		const int res = gui2::show_message(_("Load Game"), utils::interpolate_variables_into_string(message, &symbols),
+			gui2::dialogs::message::yes_no_buttons, true);
+		return res == gui2::retval::OK;
+	}
+
+	return true;
 }
 
-} // namespace
-
 /** Confirms attempts to load saves from previous game versions. */
-bool check_version_compatibility(const version_info& version);
 bool check_version_compatibility(const config& cfg)
 {
 	return check_version_compatibility(cfg["version"].str());
 }
+
+} // namespace
 
 void load_game_metadata::read_file()
 {
@@ -180,58 +212,6 @@ utils::optional<load_game_metadata> load_interactive()
 	return load_data;
 }
 
-bool check_version_compatibility(const version_info& save_version)
-{
-	if(save_version == game_config::wesnoth_version) {
-		return true;
-	}
-
-	const version_info& wesnoth_version = game_config::wesnoth_version;
-
-	// Even minor version numbers indicate stable releases which are
-	// compatible with each other.
-	if(wesnoth_version.minor_version() % 2 == 0 && wesnoth_version.major_version() == save_version.major_version()
-		&& wesnoth_version.minor_version() == save_version.minor_version()) {
-		return true;
-	}
-
-	// Do not load if too old. If either the savegame or the current
-	// game has the version 'test', load. This 'test' version is never
-	// supposed to occur, except when Soliton is testing MP servers.
-	if(save_version < game_config::min_savegame_version && save_version != game_config::test_version
-		&& wesnoth_version != game_config::test_version) {
-		const std::string message
-			= _("This save is from an old, unsupported version ($version_number|) and cannot be loaded.");
-		utils::string_map symbols;
-		symbols["version_number"] = save_version.str();
-		gui2::show_error_message(utils::interpolate_variables_into_string(message, &symbols));
-		return false;
-	}
-
-	if(prefs::get().confirm_load_save_from_different_version()) {
-		const std::string message
-			= _("This save is from a different version of the game ($version_number|), and might not work with this "
-				"version.\n"
-				"\n"
-				"<b>Warning:</b> saves in the middle of campaigns are especially likely to fail, and you should either "
-				"use the old version or restart the campaign. Even when a saved game seems to load successfully, "
-				"subtler aspects like gameplay balance and story progression could be impacted. The difficulty, the "
-				"challenge, the <i>fun</i> may be missing.\n"
-				"\n"
-				"For example, the campaign may have been rebalanced with fewer enemies in the early scenarios, but "
-				"expecting your recall list to have correspondingly less experience in the late scenarios.\n"
-				"\n"
-				"Do you wish to continue?");
-		utils::string_map symbols;
-		symbols["version_number"] = save_version.str();
-		const int res = gui2::show_message(_("Load Game"), utils::interpolate_variables_into_string(message, &symbols),
-			gui2::dialogs::message::yes_no_buttons, true);
-		return res == gui2::retval::OK;
-	}
-
-	return true;
-}
-
 // TODO: reduce code duplication with load_interactive
 utils::optional<load_game_metadata> load_interactive_for_multiplayer()
 {
@@ -271,7 +251,6 @@ utils::optional<load_game_metadata> load_interactive_for_multiplayer()
 		return utils::nullopt;
 	}
 
-	copy_era(load_data.load_config);
 	return load_data;
 }
 

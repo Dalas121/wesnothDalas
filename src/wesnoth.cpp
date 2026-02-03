@@ -184,8 +184,8 @@ static void handle_preprocess_string(const commandline_options& cmdline_opts)
 	const utils::ms_optimer timer(
 		[](const auto& timer) { PLAIN_LOG << "preprocessing finished. Took " << timer << " ticks."; });
 
-	const auto output_stream = preprocess_string(*cmdline_opts.preprocess_source_string, "wesnoth", defines_map);
-	std::cout << output_stream.get() << std::endl;
+	const auto input_stream = preprocess_string(*cmdline_opts.preprocess_source_string, "wesnoth", defines_map);
+	std::cout << io::read(*input_stream) << std::endl;
 }
 
 static void handle_preprocess_command(const commandline_options& cmdline_opts)
@@ -442,10 +442,15 @@ static int process_command_args(commandline_options& cmdline_opts)
 			PLAIN_LOG << "Overriding data directory with '" << game_config::path << "'";
 		}
 	} else {
-		// if a pre-defined path does not exist this will empty it
-#ifdef __ANDROID__
-		game_config::path = SDL_AndroidGetExternalStoragePath() + std::string("/gamedata");
+#if defined(__ANDROID__) && !defined(WESNOTH_PATH)
+		if(const char* ext_path = SDL_AndroidGetExternalStoragePath()) {
+			game_config::path = ext_path + std::string("/gamedata");
+			PLAIN_LOG << "Determined game data directory: " << game_config::path;
+		} else {
+			PLAIN_LOG << "Cannot find game data directory, specify one with --data-dir. SDL_AndroidGetExternalStoragePath() failed: " << SDL_GetError();
+		}
 #endif
+		// if a pre-defined path does not exist this will empty it
 		game_config::path = filesystem::normalize_path(game_config::path, true, true);
 		if(game_config::path.empty()) {
 			if(std::string exe_dir = filesystem::get_exe_dir(); !exe_dir.empty()) {
@@ -807,7 +812,7 @@ static int do_gameloop(commandline_options& cmdline_opts)
 		gui2::show_message(_("Logging Failure"), msg, message::ok_button);
 	}
 
-	game_config_manager config_manager(cmdline_opts);
+	game_config_manager& config_manager = game->config_manager();
 
 	if(game_config::check_migration) {
 		game_config::check_migration = false;
@@ -1001,6 +1006,7 @@ int main(int argc, char** argv)
 #ifdef __ANDROID__
 	setenv("PANGOCAIRO_BACKEND", "fontconfig", 0);
 	setenv("SDL_HINT_AUDIODRIVER", "android", 0);
+	setenv("SDL_HINT_ANDROID_TRAP_BACK_BUTTON", "1", 0);
 #endif
 
 	try {

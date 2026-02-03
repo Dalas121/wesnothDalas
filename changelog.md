@@ -1,17 +1,237 @@
-## Version 1.19.15+dev
+## Version 1.19.20+dev
 ### Add-ons client
 ### Add-ons server
 ### Campaigns
+   * Dusk of Dawn
+     * S02 "A Dream": remove "fearless" trait, but spawn more higher-level woses instead.
+   * The Hammer of Thursagan
+     * Shortened turn limits on several long scenarios.
+     * Decreased player gold from 100 to 80 on most scenarios.
+     * S08 "The Siege of Kal Kartha": increased enemy gold.
+     * S10 "The Underlevels": reduced number of villages, and increased Karrag's income.
+   * Heir to the Throne
+     * Fixed a serious issue where the "Replacement Weapons" tweak would trigger on all sides' recruits, not just Konrad's.
+     * Moremirmu: significantly increased hitpoints, but decreased speed and damage.
+     * S02 "Flight of the Elves": fixed Konrad winning after killing only 2 enemy leaders, instead of all of them.
+     * S07 "Muff Malal's Peninsula": Moremirmu is now in a safer position, and much less likely to get bad RNG and die early.
+     * S22 "Glamdrol": allying with the Stoneskins now costs less gold, but Konrad will lose if he doesn't pillage enough gold to meet his pledge.
+     * S30 "The Sceptre of Fire": made Li'sar more difficult to assassinate with Fire Wraiths. This strategy should still be possible, but it should now require more significant investment.
+     * S30 "The Sceptre of Fire": Delfador can now continue recruiting even while searching for the Sceptre.
+     * S47, S48, and S50: A few enemy units will now defect when the Sceptre is first used against human opponents.
+   * Winds of Fate
+     * Lower recall costs further.
+     * Adjust and replace some characters that tie-in with the other campaigns.
+     * S01 "The Hunt": fewer forest lions.
+     * S06 "Landfall": tweak enemy starting gold
+     * S08 "Overlook": more consistent enemy spawn recognition
+     * S11 "Crosswind": fix issues with non-clasher units attempting to read their secrets
 ### Editor
 ### Multiplayer
 ### Lua API
 ### Packaging
 ### Terrain
 ### Translations
+   * Updated translations: Bengali, British English, Chinese (Simplified), French, Greek, Hungarian, Italian, Spanish
 ### Units
+   * All ships with ram attacks:
+     * Removed the "naval" weapon special, allowing them to ram targets on coastal land.
 ### User interface
 ### WML Engine
 ### Miscellaneous and Bug Fixes
+
+## Version 1.19.20
+### Campaigns
+   * Dusk of Dawn
+     * Remove custom "Troll Earth-Shaker" Rocklobber advancement to avoid confusing beginners.
+   * Eastern Invasion
+     * Add weather effects to several scenarios.
+   * The Deceivers Gambit
+     * S13 "Revelry, Revisited": fixed way too many enemies spawning after many turns had elapsed.
+     * S13 "Revelry, Revisited": added more dialogue between the orcs and humans.
+   * The Hammer of Thursagan
+     * The first scenario is now slightly easier.
+### Terrain
+   * Added graphics for rails going over water and chasm.
+### Translations
+   * Updated translations: Bengali, British English, Czech, French, German, Greek, Hungarian, Italian, Spanish
+
+## Version 1.19.19
+### Campaigns
+   * Heir to the Throne
+     * The finale's farm burning difficulty option now explains which option is the standard and which option is especially challenging.
+     * The finale's farm burning difficulty option will now trigger automatically if you miss it.
+     * Once unlocked, Carcyn now also includes a port on the north shore.
+     * Fix Li'sar not using her elite recruits in Crossroads and Siege of Elensefar.
+### Lua API
+   * Add new wml.valid_var function to validate a WML variable path
+   * Bugfix: Indexing a vconfig now returns a table with tag/contents keys
+### Translations
+   * Updated translations: Bengali, British English, Catalan, Czech, French, Finnish, Galician, Hungarian, Italian, Spanish
+### WML Engine
+   * Add a 'priority' attribute to abilities and weapon specials with values (`[chance_to_hit]`, `[damage]`, etc).
+     * Values set by lower priority specials are considered as the base value for higher priority specials' calculations.
+   * Using `[chance_to_hit]` with a negative priority is now preferred over giving weapons `parry` and `accuracy` attributes, as the sidebar UI shows it.
+   * You can now test if a WML variable is empty with `[variable]blank=yes`
+   * It is now possible to place `[set_variables]` (note the plural) in `[modify_side]` and `[modify_unit]`
+### Miscellaneous and Bug Fixes
+   * Fixed giving quick trait to leaders with 4 moves in multiplayer.
+   * Removed the `SPECIAL_NOTES_ARCANE` macro, the note is automatically added to any unit with an arcane attack.
+   * Fixed a crash when a unit has no random traits available.
+
+## Version 1.19.18
+### Campaigns
+   * Dusk of Dawn
+     * Added to mainline.
+     * This is a new troll campaign.
+     * 4 scenarios, novice level.
+   * Heir to the Throne
+     * Add new "Heir to the Throne" revision to mainline.
+     * Rename existing HttT campaign to "Heir to the Throne, Classic"
+     * Merge "Battle Training" into HttTC.
+   * The Deceiver's Gambit
+     * Revised Delfador and Garard's dialogue (again)
+     * "Stirrings of War" and "The Ambassador" are now regular battle scenarios.
+     * "Fort Garard" now grants all Loyalist recruits; Delfador no longer has to wait until "Ring of Swords"
+     * "The Sylvan Seer" part 1 puzzle now varies with campaign difficulty.
+     * "Ring of Swords" now has a slightly larger map.
+     * "Galcadar" no longer restores your recall list from TDG part I.
+     * "The Traitor" no longer has special village razing mechanics.
+     * Deoran is now a battle unit, not a support unit with complicated abilities.
+     * Most AI allies now go last in the turn order, so they're more predictable.
+     * Various other adjustments and bugfixes.
+   * The South Guard
+     * Restored S01's intro storytext.
+     * Moved some S03/S04 scenario hints to S01/S02.
+     * Added some additional hints to S03/S04.
+     * Replaced most maps' ford terrain with bridge.
+     * Added a more stylish UI for S02x's companion selection choice.
+     * Allied sides are now at the end of the turn order.
+     * Fixed several RNG-related tips not triggering.
+     * Various minor bugfixes and tweaks.
+### Translations
+   * Updated translations: Bengali, British English, Czech, Finnish, Galician, Hungarian, Italian, Polish, Spanish
+### Units
+   * Dwarvish Miner:
+     * hitpoints 25hp->22hp
+     * experience 20xp->24xp
+     * cost 11g->10g
+   * Merman Hoplite:
+     * hitpoints 52hp->58hp
+     * cost 45g->44g
+   * Merman Triton
+     * cost 46g->41g
+   * Merman Netcaster:
+     * ranged damage 9-2 -> 8-2
+     * cost 26g->25g
+   * Merman Entangler:
+     * cost 42g->37g
+   * Merman Spearman:
+     * hitpoints 43hp->47hp
+     * cost 22g->25g
+   * Merman Javelineer:
+     * hitpoints 58hp->60hp
+     * melee damage 8-2 -> 9-2
+     * cost 55g->48g
+   * Mermaid Enchantress:
+     * experience 46xp->75xp
+   * Mermaid Siren:
+     * ranged damage 15-3 -> 14-3
+     * cost 42g->58g
+   * Mermaid Priestess:
+     * experience 61xp->73xp
+   * Mermaid Diviner:
+     * cost 49g->57g
+   * Skeleton Rider:
+     * axe damage 6-3 -> 10-2
+     * hitpoints 36hp->38hp
+     * experience 33xp->46xp
+     * cost 14g->17g
+     * resistances now identical to Chocobone
+     * improved movement costs and defense
+   * Bone Knight
+     * trample damage 7-2(charge) -> 10-2(charge)
+     * hitpoints 50hp->58hp
+     * movement 8mp->7mp
+     * cost 26g->32g
+     * resistances now identical to Chocobone
+     * improved movement costs and defense
+   * A registry for abilities has been added as `[units][abilities]`. Any ability defined there can be added to a `[unit_type]` by just specifying their `unique_id` in the new key `[unit_type]abilities_list`, like this: `abilities_list=heals_8,cures`. The unique id for an ability is the value of its new `unique_id` key which falls back to `id` if unspecified. The `abilities` key is also supported under `[effect]apply_to=new_ability`.
+   * A similar registry for weapon specials has also been added as `[units][weapon_specials]`. The corresponding key is `specials_list` and is supported inside `[unit_type][attack]` as well as in EffectWML `apply_to=new_attack` and `apply_to=attack`'s `[set_specials]`. `unique_id` is also supported inside weapon special definitions.
+### User interface
+   * New key `title_position` added to `[part]` that allows changing the position of the title text.
+   * Enemies that can't be attacked are not highlighted when showing a unit's potential movement.
+### WML Engine
+   * Remove [filter_adjacent_student] and [filter_adjacent_student_location] from abilities used like weapons because shorthand from existing filters[filter_student][filter_adjacent] and [filter_student][filter_location][filter_adjacent_location].
+   * Deprecate [filter_adjacent] and [filter_adjacent_location] from abilities and weapons specials because shorthand from existing filters[filter][filter_adjacent] and [filter][filter_location][filter_adjacent_location] for abilities or [filter_self][filter_adjacent] and [filter_self][filter_location][filter_adjacent_location] for weapon specials.
+   * Fixed [resistance_defaults] leaking on random maps, causing OOS errors in unrelated content.
+   * Fixed a crash when the sides defined for a scenario are not all consecutive.
+### Miscellaneous and Bug Fixes
+   * Build System:
+     * Changed CMake to not directly pull in boost-system (fixing build issues on archlinux using boost-libs >1.89.0-2)
+
+## Version 1.19.17
+### Editor
+   * Move items/unit/labels when map is resized
+### Translations
+   * Updated translations: Bengali, British English, Czech, Polish, Spanish
+### Units
+   * Sergeant:
+     * Crossbow damage changed from 4-3 to 6-2
+   * Lieutenant:
+     * Crossbow damage changed from 5-3 to 7-2
+   * General:
+     * Crossbow damage changed from 7-3 to 10-2
+   * Grand Marshal:
+     * Crossbow damage changed from 8-3 to 12-2
+### WML Engine
+   * ~PAD() added as an IPF (image path function). It allows the sides of an image to be padded with transparent pixels. Can be used to artificially offset images.
+   * WML formulas can be used in abilities/specials 'max_value' and 'min_value'.
+   * Add [clear_chat], [store_zoom], and optional scrolling support to [scroll_to] and [scroll_to_unit]
+
+## Version 1.19.16
+### Campaigns
+   * Liberty
+     * Changed some of Maddock's dialogue to stay consistent with The Deceiver's Gambit.
+     * Difficulty scaling now follows the same pattern as the other beginner campaigns: 1x enemies, 2x enemies, 3x enemies.
+     * Use the new Elensefar map from the revised Heir to the Throne.
+     * Various minor bugfixes and tweaks.
+   * Son of the Black Eye
+     * Units now have access to customized AMLA.
+     * Units granted AMLA: Orcish Sovereign, Great Troll, Orcish Warlord, Orcish Slurbow, Direwolf Rider, Goblin Pillager, Troll Warrior, Troll Rocklobber, Orcish Nightblade, Saurian Flanker, Saurian Javelineer, Saurian Seer, Saurian Prophet
+     * Please note that the AMLAs are only active inside the campaign.
+   * The Deceiver's Gambit
+     * S11x, S13, S14: Eldred's dialogue is now "small" instead of "x-small"
+     * S13: tweaked the opening cutscene to give Garard and Eldred more privacy.
+     * S13: changed some of Eldred and the orcs' dialogue.
+     * S14: revert ruffians to orcs.
+     * Credits: "Story continued in" changed from "Asheviere's Dogs" to "Liberty"
+   * Winds of Fate
+     * Full redesign of recall costs (most importantly this brings down the recall cost for level 3 veterans to two-thirds of what it was)
+     * Add random walk to spawned wildlife AI
+     * replace leopard with forest lion
+     * replace dolphin with core monsters
+     * S2: slightly more gold for a bigger battle
+     * S3: simplify win and lose conditions
+     * S4: give naga side same gold as either mermish side and give player side some more gold on easier difficulties
+     * S6: more gold on all sides for a much bigger battle
+     * S7: move sapphire of ice beside diary
+     * S8: quicker elf spawning on easy to better depict the story events
+     * S9: Full rebalance
+     * S10: smaller dwarf castle for fewer gryphons
+     * S10 + S11: cut all level 2 recruits
+### Multiplayer
+   * 5p - The Wilderlands:
+     * Fixed lag during AI turn (issue #10419)
+### Translations
+   * Updated translations: Bengali, British English, Chinese (Simplified), Czech, Spanish
+### User interface
+   * On Android, back button now works similarly to Escape on desktop.
+   * Updated the load-game dialog support for other versions' files, ready for 1.20
+### WML Engine
+   * Changing the weapon special [defense] into an ability which modifies the value of [defense] in certain exceptional situations.
+### Miscellaneous and Bug Fixes
+   * On Android, in-game command prompt now correctly shows on-screen keyboard.
+   * Fixed delays and visual glitches when animated terrain scrolls onto screen (issue #9220)
 
 ## Version 1.19.15
 ### Lua API
