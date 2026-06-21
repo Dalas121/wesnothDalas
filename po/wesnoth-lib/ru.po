@@ -12,12 +12,13 @@
 # O_o <mm-94@mail.ru>, 2010.
 # Fedor Khodkov, 2014
 # Artem Khrapov (kabachuha) <artemkhrapov2001@yandex.ru>, 2020-2024
+# Alexandr Obolonkin (Alexinor) <obolonkin@proton.me>, 2026
 msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-lib\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2026-05-18 21:15-0500\n"
-"PO-Revision-Date: 2024-04-13 16:21+0300\n"
+"PO-Revision-Date: 2026-06-16 13:03+0500\n"
 "Last-Translator: Artem Khrapov <artemkhrapov2001@yandex.ru>\n"
 "Language-Team: https://wiki.wesnoth.org/RussianTranslation\n"
 "Language: ru\n"
@@ -26,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. [ai]: id=ai_default_rca
@@ -271,7 +272,7 @@ msgstr "Чистые серые камни"
 #. [terrain_type]: id=road_desert
 #: data/core/terrain.cfg:274
 msgid "Gravel"
-msgstr ""
+msgstr "Гравий"
 
 #. [terrain_type]: id=stone_path
 #: data/core/terrain.cfg:284
@@ -2390,33 +2391,27 @@ msgstr "Следующий совет"
 
 #. [button]: id=toggle_tip_panel
 #: data/gui/themes/celes/dialogs/title_screen.cfg:215
-#, fuzzy
-#| msgid "Next Tip of the Day"
 msgid "Tip of the Day"
-msgstr "Следующий совет"
+msgstr "Показать совет дня"
 
 #. [button]: id=toggle_tip_panel
 #. [toggle_button]: id=show_tips
 #: data/gui/themes/celes/dialogs/title_screen.cfg:216
 #: data/gui/themes/default/dialogs/preferences/03_display.cfg:223
-#, fuzzy
-#| msgid "Show next tip of the day"
 msgid "Show tip of the day"
-msgstr "Следующий совет"
+msgstr "Совет дня"
 
 #. [button]: id=about
 #: data/gui/themes/celes/dialogs/title_screen.cfg:229
 #: data/gui/themes/default/dialogs/title_screen.cfg:472
 msgid "About"
-msgstr ""
+msgstr "Об игре"
 
 #. [button]: id=about
 #: data/gui/themes/celes/dialogs/title_screen.cfg:230
 #: data/gui/themes/default/dialogs/title_screen.cfg:473
-#, fuzzy
-#| msgid "The Battle for Wesnoth"
 msgid "General information about Battle for Wesnoth"
-msgstr "Битва за Веснот"
+msgstr "Общая информация о Битве за Веснот"
 
 #. [button]: id=language
 #. [label]
@@ -2531,15 +2526,13 @@ msgstr "Запустить редактор карт"
 #: data/gui/themes/default/dialogs/game_version.cfg:911
 #: data/gui/themes/default/dialogs/title_screen.cfg:262
 msgid "Community"
-msgstr ""
+msgstr "Сообщество"
 
 #. [grid]
 #: data/gui/themes/celes/dialogs/title_screen.cfg:295
 #: data/gui/themes/default/dialogs/title_screen.cfg:262
-#, fuzzy
-#| msgid "The Battle for Wesnoth"
 msgid "Places to talk about Wesnoth"
-msgstr "Битва за Веснот"
+msgstr "Где можно поговорить о Весноте"
 
 #. [grid]
 #: data/gui/themes/celes/dialogs/title_screen.cfg:296
@@ -2570,10 +2563,8 @@ msgstr "Помощь"
 
 #. [grid]
 #: data/gui/themes/celes/dialogs/title_screen.cfg:297
-#, fuzzy
-#| msgid "Change the in-game theme"
 msgid "Visit the in-game help"
-msgstr "Изменить тему (оформление) для игры"
+msgstr "Получить помощь по игре"
 
 #. [grid]
 #. [button]: id=cancel
@@ -2607,7 +2598,7 @@ msgstr "Копировать"
 #. The heavy checkmark character is available in the DejaVu Sans font, but not in the default Lato font
 #: data/gui/themes/celes/widgets/button_success.cfg:269
 msgid "page^<b><span font_family='DejaVu Sans'>✔</span> Copied</b>"
-msgstr ""
+msgstr "<b><span font_family='DejaVu Sans'>✔</span> Скопировано</b>"
 
 #. [button]: id=click_dismiss
 #. [button]: id=ok
@@ -3013,36 +3004,32 @@ msgstr "Выйти"
 #. [button]: id=downloads_by_version
 #: data/gui/themes/default/dialogs/addon_server_info.cfg:59
 msgid "Add-on download count by version"
-msgstr ""
+msgstr "Кол-во загрузок аддонов по версии"
 
 #. [button]: id=addon_count_by_forum_auth
 #: data/gui/themes/default/dialogs/addon_server_info.cfg:77
 msgid "Count of add-ons using forum_auth"
-msgstr ""
+msgstr "Кол-во аддонов по forum_auth"
 
 #. [button]: id=admin_delete_addon
 #: data/gui/themes/default/dialogs/addon_server_info.cfg:95
-#, fuzzy
-#| msgid "Select the add-on version"
 msgid "Delete selected add-on (admin)"
-msgstr "Выберите версию аддона"
+msgstr "Удалить выбранный аддон (админ)"
 
 #. [button]: id=admin_hide_addon
 #: data/gui/themes/default/dialogs/addon_server_info.cfg:113
-#, fuzzy
-#| msgid "Select the add-on version"
 msgid "Hide selected add-on (admin)"
-msgstr "Выберите версию аддона"
+msgstr "Скрыть выбранный аддон (админ)"
 
 #. [button]: id=admin_unhide_addon
 #: data/gui/themes/default/dialogs/addon_server_info.cfg:131
 msgid "Unhide add-on by ID (admin)"
-msgstr ""
+msgstr "Раскрыть аддон по ID (админ)"
 
 #. [button]: id=admin_list_hidden
 #: data/gui/themes/default/dialogs/addon_server_info.cfg:149
 msgid "List hidden add-ons (admin)"
-msgstr ""
+msgstr "Список скрытых аддонов (админ)"
 
 #. [scroll_label]
 #: data/gui/themes/default/dialogs/addon_uninstall_list.cfg:68
@@ -3116,7 +3103,7 @@ msgstr "Обороняющийся"
 #. This one is the page title, shown in bold.
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:207
 msgid "campaign_landing^Welcome to Wesnoth v1.20"
-msgstr ""
+msgstr "Добро пожаловать в Веснот v1.20"
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:209
@@ -3128,6 +3115,12 @@ msgid ""
 "style='italic'>Heir to the Throne</span>. The intended way to learn both the "
 "story and the game mechanics is to play the campaigns in that order."
 msgstr ""
+"<b>Если вы новичёк в Весноте</b>, основная сюжетная арка начинается с "
+"кампании <span color='#e1e119' style='italic'>Южная Стража</span> и "
+"продолжается в кампаниях в том порядке, в каком они указаны слева, "
+"завершаясь пол века спустя в кампании <span color='#e1e119' "
+"style='italic'>Наследник Престола</span>. Рекомендуемый способ изучения "
+"сюжета и игровых механик — проходить кампании именно в таком порядке."
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:211
@@ -3135,6 +3128,7 @@ msgid ""
 "campaign_landing^<b>If you’re a returning player</b>, you’ll notice a number "
 "of changes since v1.18:"
 msgstr ""
+"<b>Если вы уже играли в Веснот</b>, вы заметите несколько изменений с v1.18:"
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:213
@@ -3144,6 +3138,11 @@ msgid ""
 "Konrad unique recruits, companions, or items. The original campaign is still "
 "available as <i>Heir to the Throne, Classic</i>."
 msgstr ""
+"<span color='#e1e119' style='italic'>Наследник Престола</span> теперь "
+"включает в себя открытый мир с 33 разветвляющимися миссиями, каждая из "
+"которых снабдит Конрада уникальными бойцами, героями или предметами. "
+"Оригинальная кампания по-прежнему доступна под названием <i>Наследник "
+"Престола (Классическая)</i>."
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:215
@@ -3154,6 +3153,10 @@ msgid ""
 "orcs of the north. Choose between 23 magic spells as you bear witness to the "
 "rise of a tyrant."
 msgstr ""
+"<span color='#e1e119' style='italic'>Гамбит Лжеца</span> заменил <i>Мемуары "
+"Делфадора</i>. Проследуйте с молодым магом от берегов Алдуина до чертогов "
+"короля, сразясь со свирепыми орками севера. Выберете из 23 магических "
+"заклинаний и станьте свидетелем восхождения тирана."
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:217
@@ -3162,6 +3165,9 @@ msgid ""
 "our first troll campaign. Lead the Golden Flame Tribe out from the bowels of "
 "Irdya and up to the surface world — but beware what awaits you there."
 msgstr ""
+"<span color='#e1e119' style='italic'>Закат Рассвета</span> — наша первая "
+"кампания, где вы сыграете за троллей. Проведите племя Золотого Пламени из "
+"недр Ирдии на поверхность — но остерегайтесь того, что вас там ждет."
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:219
@@ -3171,6 +3177,10 @@ msgid ""
 "the Bay of Pearls. When corsairs strike, the villagers must join forces with "
 "the local merfolk and take the fight to the pirates."
 msgstr ""
+"<span color='#e1e119' style='italic'>Жемчужин и Пиратов</span> — новая, "
+"ориентированная на новичков кампания, действие которой разворачивается в "
+"сонном рыбацком городке на Жемчужном Заливе. С нападением корсаров, жители "
+"деревни вынуждены объединить силы с местными водяными и дать отпор пиратам."
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:221
@@ -3181,6 +3191,11 @@ msgid ""
 "original tutorial is still available as part of <i>Heir to the Throne, "
 "Classic</i>."
 msgstr ""
+"<span color='#e1e119' style='italic'>Южная Стража</span> была значительно "
+"переработана, и теперь заменяет обучение в виде <i>Боевой Подготовки</i>. "
+"Для ностальгирующих по наставничеству Делфадора игроков, оригинальный "
+"обучающий курс по-прежнему доступен в рамках <i>Наследник Престола "
+"(Классическая)</i>."
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:223
@@ -3190,6 +3205,10 @@ msgid ""
 "AI, a new Thunderer advancement, a redesign of <i>High Pass</i>, and the re-"
 "addition of the formerly removed <i>Mages and Drakes</i>."
 msgstr ""
+"<span color='#e1e119' style='italic'>Молот Турсагана</span> получил новые "
+"улучшения в виде корректировок сюжета, улучшеного ИИ у врагов, нового "
+"достижения «Громовик», редизайна <i>Высокого Перевала</i>, а также "
+"возвращения прежде убранных <i>Магов и Дрейков</i>."
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:225
@@ -3200,6 +3219,11 @@ msgid ""
 "and dialogue sequences were changed for better continuity with other "
 "campaigns."
 msgstr ""
+"<span color='#e1e119' style='italic'>Ветры Рока</span> получили обновление "
+"баланса со сниженной стоимостью призыва, переработанным спавном диких "
+"животных и ИИ, а также значительно расширенной масштабной битвлй в середине "
+"кампании. Некоторые персонажи и диалоговые сцены были изменены для лучшей "
+"преемственности с другими кампаниями."
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:227
@@ -3207,6 +3231,8 @@ msgid ""
 "campaign_landing^For a full list of changes, consult our official changelog "
 "at https://www.wesnoth.org/start/1.20/"
 msgstr ""
+"Полный список изменений можно найти на нашем сайте https://www.wesnoth.org/"
+"start/1.20/ (англ.)"
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:248
@@ -3217,6 +3243,11 @@ msgid ""
 "multiplayer maps, additional media and various other content! Be sure to "
 "give it a try!"
 msgstr ""
+"В добавок к основным кампаниям, Веснот также предлагает постоянно "
+"пополняющийся список аддонов, созданных другими игроками, который доступен "
+"через сервер аддонов. В него входят, помимо прочего, новые одиночные и "
+"многопользовательские кампании, карты для многопользовательской игры и "
+"огромное множество другого контента! Обязательно попробуйте!"
 
 #. [label]
 #. "more than 15" gives a little leeway to add or remove one without changing the translatable text.
@@ -3267,68 +3298,58 @@ msgstr ""
 #. [multimenu_button]: id=filter_completion
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:328
 msgid "Filter by campaign completion status"
-msgstr ""
+msgstr "Сортировать по статусу завершения"
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:331
-#, fuzzy
-#| msgid "Completed"
 msgid "Not Completed"
-msgstr "Завершено"
+msgstr "Не завершено"
 
 #. [option]
 #. campaigns which the player hasn't beaten, rather than campaigns which the author hasn't finished writing
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:333
 msgid "Show campaigns not completed by player"
-msgstr ""
+msgstr "Показать не завершённые кампании"
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:337
-#, fuzzy
-#| msgid "Completed"
 msgid "Completed: Bronze"
-msgstr "Завершено"
+msgstr "Завершённые: Бронза"
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:338
 msgid "Show campaigns completed at easiest difficulty"
-msgstr ""
+msgstr "Показать кампании, завершённые на самых лёгких сложностях"
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:342
-#, fuzzy
-#| msgid "Completed"
 msgid "Completed: Silver"
-msgstr "Завершено"
+msgstr "Завершённые: Серебро"
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:343
 msgid "Show campaigns completed at intermediate difficulties"
-msgstr ""
+msgstr "Показать кампании, завершённые на средних сложностях"
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:347
-#, fuzzy
-#| msgid "Completed"
 msgid "Completed: Gold"
-msgstr "Завершено"
+msgstr "Завершённые: Золото"
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:348
 msgid "Show campaigns completed at hardest difficulty"
-msgstr ""
+msgstr "Показать кампании, завершённые на самой трудной сложности"
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:352
-#, fuzzy
-#| msgid "Completed"
 msgid "Completed: All"
-msgstr "Завершено"
+msgstr "Завершённые: Все"
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:353
 msgid "Show completed campaigns"
-msgstr ""
+msgstr "Показать завершённые кампании"
 
 #. [label]
 #. [label]: id=mods_header
@@ -3355,6 +3376,11 @@ msgid ""
 "Example: if you strike twice with 50% accuracy, you’re most likely to hit "
 "once and miss once, but might also hit twice or miss twice."
 msgstr ""
+"Чистая, непредвзятая случайность; как игра в Веснот и задумывалась.\n"
+"\n"
+"Пример: если вы наносите два удара с точностью 50%, то, скорее всего, вы "
+"попадете один раз и промахнетесь один раз, но также можете попасть два раза "
+"или промахнуться два раза."
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:450
@@ -3370,13 +3396,17 @@ msgid ""
 "Example: you strike twice and get lucky, hitting both strikes. You then load "
 "an earlier save and make the same attack again. Both strikes will still hit."
 msgstr ""
+"Идентичен ГСЧ по умолчанию, за исключением того, что загрузка сохраненной "
+"игры не изменит исход атаки.\n"
+"\n"
+"Пример: вы наносите два удара и вам везет, оба удара попадают в цель. Затем "
+"вы загружаете более раннее сохранение и снова совершаете ту же атаку. Оба "
+"удара по-прежнему будут попадать в цель."
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:456
-#, fuzzy
-#| msgid "Predictable RNG"
 msgid "Reduced RNG"
-msgstr "Предсказуемый ГСЧ"
+msgstr "Сниженный ГСЧ"
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:457
@@ -3387,6 +3417,11 @@ msgid ""
 "Example: if you strike three times with 50% accuracy, you will always hit at "
 "least once and miss at least once."
 msgstr ""
+"Попадания и промахи гораздо более стабильны. Это, как правило, упрощает "
+"планирование небольших сражений.\n"
+"\n"
+"Пример: если вы нанесете три удара с точностью 50%, вы всегда попадете хотя "
+"бы один раз и промахнетесь хотя бы один раз."
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:474
@@ -3533,17 +3568,13 @@ msgstr "Открыть в файловом менеджере"
 #. [button]: id=preview_
 #: data/gui/themes/default/dialogs/custom_tod.cfg:98
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:102
-#, fuzzy
-#| msgid "Previous page"
 msgid "Preview image"
-msgstr "Прошлая страница"
+msgstr "Предпросмотр изображения"
 
 #. [button]: id=preview_
 #: data/gui/themes/default/dialogs/custom_tod.cfg:118
-#, fuzzy
-#| msgid "Sound"
 msgid "Play sound"
-msgstr "Звук"
+msgstr "Воспроизвести звук"
 
 #. [label]
 #: data/gui/themes/default/dialogs/custom_tod.cfg:196
@@ -3635,7 +3666,7 @@ msgstr "Удалить время суток"
 #. [button]: id=preview_color
 #: data/gui/themes/default/dialogs/custom_tod.cfg:508
 msgid "Preview color changes on map"
-msgstr ""
+msgstr "Предпросмотр цветовых изменений на карте"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
@@ -3706,8 +3737,6 @@ msgstr "Только для команд"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_choose_addon.cfg:47
-#, fuzzy
-#| msgid "Add-on selection"
 msgid "Add-on Selection"
 msgstr "Выбор аддона"
 
@@ -3872,23 +3901,17 @@ msgstr ""
 
 #. [grid]
 #: data/gui/themes/default/dialogs/editor_edit_pbl.cfg:214
-#, fuzzy
-#| msgid ""
-#| "Comma delimited list of forum usernames of other people who are allowed "
-#| "to upload updates for this add-on."
 msgid ""
 "Comma delimited list of forum usernames of other people who are allowed to "
 "upload updates for this add-on or delete this add-on."
 msgstr ""
 "Разделённый запятыми список форумных ников остальных людей, которые могут "
-"выкладывать обновления этого аддона."
+"выкладывать обновления этого аддона или удалить этот аддон."
 
 #. [grid]
 #: data/gui/themes/default/dialogs/editor_edit_pbl.cfg:214
-#, fuzzy
-#| msgid "Secondary Authors:"
 msgid "Primary Authors:"
-msgstr "Соавторы:"
+msgstr "Авторы:"
 
 #. [grid]
 #: data/gui/themes/default/dialogs/editor_edit_pbl.cfg:215
@@ -4151,24 +4174,22 @@ msgstr "Нет"
 #. [button]: id=load_unit_type
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:180
 msgid "Load Unit Type"
-msgstr ""
+msgstr "Загрузить тип бойца"
 
 #. [grid]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:214
-#, fuzzy
-#| msgid "Image:"
 msgid "Unit Image:"
-msgstr "Рисунок:"
+msgstr "Изображение юнита:"
 
 #. [grid]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:216
 msgid "Portrait:"
-msgstr ""
+msgstr "Портрет:"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:227
 msgid "Level:"
-msgstr ""
+msgstr "Уровень:"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:252
@@ -4179,62 +4200,48 @@ msgstr "Пол:"
 
 #. [row]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:260
-#, fuzzy
-#| msgid "gender^Random"
 msgid "gender^Male"
-msgstr "Случайный"
+msgstr "Мужской"
 
 #. [row]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:261
-#, fuzzy
-#| msgid "Female"
 msgid "gender^Female"
-msgstr "Женщина"
+msgstr "Женский"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:276
-#, fuzzy
-#| msgid "Advance Unit"
 msgid "Advances to:"
-msgstr "Продвинуть бойца"
+msgstr "Продвигается в:"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:302
-#, fuzzy
-#| msgid "Race"
 msgid "Race:"
-msgstr "Раса"
+msgstr "Раса:"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:355
 msgid "Alignment:"
-msgstr ""
+msgstr "Мировоззрение:"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:381
-#, fuzzy
-#| msgid "HP: "
 msgid "HP:"
-msgstr "ЗД: "
+msgstr "ЗД:"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:411
-#, fuzzy
-#| msgid "XP: "
 msgid "XP:"
-msgstr "ОП: "
+msgstr "ОП:"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:441
 msgid "Cost:"
-msgstr ""
+msgstr "Стоимость:"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:471
-#, fuzzy
-#| msgid "Movement Costs:"
 msgid "Movement:"
-msgstr "Затраты на перемещение:"
+msgstr "Перемещение:"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=title
@@ -4247,72 +4254,58 @@ msgstr "Атаки"
 
 #. [button]: id=atk_new
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:595
-#, fuzzy
-#| msgid "Attack"
 msgid "New Attack"
-msgstr "Атаковать"
+msgstr "Новая атака"
 
 #. [button]: id=atk_delete
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:608
-#, fuzzy
-#| msgid "Select/Move/Attack"
 msgid "Delete Attack"
-msgstr "Выбрать/Идти/Атаковать"
+msgstr "Удалить атаку"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:678
 msgid "Range:"
-msgstr ""
+msgstr "Дальность:"
 
 #. [option]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:693
 msgid "range^Melee"
-msgstr ""
+msgstr "Ближний"
 
 #. [option]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:698
 msgid "range^Ranged"
-msgstr ""
+msgstr "Дальний"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:739
-#, fuzzy
-#| msgid "Damage"
 msgid "Damage:"
-msgstr "Урон"
+msgstr "Урон:"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:766
-#, fuzzy
-#| msgid "Hits"
 msgid "Hits:"
-msgstr "Попадания"
+msgstr "Попадания:"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:794
 msgid "Specials:"
-msgstr ""
+msgstr "Особенности:"
 
 #. [grid]: id=grid_adv
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:836
-#, fuzzy
-#| msgid "Profile"
 msgid "Small Profile"
-msgstr "Профиль"
+msgstr "Маленький профиль"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:847
-#, fuzzy
-#| msgid "Abilities"
 msgid "Abilities:"
-msgstr "Способности"
+msgstr "Способности:"
 
 #. [label]: id=movetype_label
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:873
-#, fuzzy
-#| msgid "Content Type:"
 msgid "Movetype:"
-msgstr "Тип содержания:"
+msgstr "Тип перемещения:"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=movement_costs_label
@@ -4323,39 +4316,29 @@ msgstr "Затраты на перемещение:"
 
 #. [label]: id=defense_label
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:969
-#, fuzzy
-#| msgid "Defender"
 msgid "Defense:"
-msgstr "Обороняющийся"
+msgstr "Оборона:"
 
 #. [label]: id=resistance_label
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1022
-#, fuzzy
-#| msgid "Resistances: "
 msgid "Resistances:"
-msgstr "Сопротивления: "
+msgstr "Сопротивления:"
 
 #. [label]: id=usage_label
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1075
-#, fuzzy
-#| msgid "Image:"
 msgid "AI Usage:"
-msgstr "Рисунок:"
+msgstr "Использование ИИ:"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1178
-#, fuzzy
-#| msgid "Quit Editor"
 msgid "Unit Type Editor"
-msgstr "Выйти из редактора"
+msgstr "Редактор типа юнитов"
 
 #. [tab]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1200
 #: data/gui/themes/default/dialogs/preferences/01_general.cfg:226
-#, fuzzy
-#| msgid "Game Stats"
 msgid "Main Stats"
-msgstr "Статистика игры"
+msgstr "Основная статистика"
 
 #. [tab]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1207
@@ -4366,7 +4349,7 @@ msgstr "Продвинутые"
 #. [tab]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1221
 msgid "WML View"
-msgstr ""
+msgstr "Просмотр WML"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
@@ -4497,12 +4480,12 @@ msgstr "Удаление закладки текущей папки"
 #. [button]: id=open_ext
 #: data/gui/themes/default/dialogs/file_dialog.cfg:319
 msgid "Open External"
-msgstr ""
+msgstr "Открыть внешний"
 
 #. [button]: id=open_ext
 #: data/gui/themes/default/dialogs/file_dialog.cfg:320
 msgid "Open selected using platform’s default applications"
-msgstr ""
+msgstr "Открыть выбранный через приложение по умолчанию"
 
 #. [button]: id=new_dir
 #. [label]: id=title
@@ -4825,33 +4808,34 @@ msgstr "Прокрутить к"
 #. [label]
 #: data/gui/themes/default/dialogs/game_version.cfg:130
 msgid "<span font_family='DejaVu Sans'>✦</span> <b>Version:</b>"
-msgstr ""
+msgstr "<span font_family='DejaVu Sans'>✦</span> <b>Версия:</b>"
 
 #. [label]
 #: data/gui/themes/default/dialogs/game_version.cfg:158
 msgid "<span font_family='DejaVu Sans'>✦</span> <b>Running on:</b>"
-msgstr ""
+msgstr "<span font_family='DejaVu Sans'>✦</span> <b>Работает на:</b>"
 
 #. [label]
 #: data/gui/themes/default/dialogs/game_version.cfg:187
 msgid "<span font_family='DejaVu Sans'>✦</span> <b>Architecture:</b>"
-msgstr ""
+msgstr "<span font_family='DejaVu Sans'>✦</span> <b>Архитектура:</b>"
 
 #. [label]
 #: data/gui/themes/default/dialogs/game_version.cfg:215
 msgid "<span font_family='DejaVu Sans'>✦</span> <b>Homepage:</b>"
-msgstr ""
+msgstr "<span font_family='DejaVu Sans'>✦</span> <b>Домашняя страница:</b>"
 
 #. [label]
 #: data/gui/themes/default/dialogs/game_version.cfg:247
 msgid "<span font_family='DejaVu Sans'>✦</span> <b>Wiki:</b>"
-msgstr ""
+msgstr "<span font_family='DejaVu Sans'>✦</span> <b>Вики:</b>"
 
 #. [label]
 #: data/gui/themes/default/dialogs/game_version.cfg:287
 msgid ""
 "<i><span font_family='DejaVu Sans'>➤</span> Copy a full report here:</i>"
 msgstr ""
+"<span font_family='DejaVu Sans'>➤</span> <b>Копировать полный отчёт сюда:</b>"
 
 #. [label]
 #: data/gui/themes/default/dialogs/game_version.cfg:307
@@ -4859,22 +4843,26 @@ msgid ""
 "<i><span font_family='DejaVu Sans'>➤</span> Report an issue or request a "
 "feature:</i>"
 msgstr ""
+"<span font_family='DejaVu Sans'>➤</span> <b>Сообщить об ошибке или запросить "
+"новую функцию:</b>"
 
 #. [button]: id=issue
 #: data/gui/themes/default/dialogs/game_version.cfg:320
 msgid "Report Issue"
-msgstr ""
+msgstr "Сообщить об ошибке"
 
 #. [label]
 #: data/gui/themes/default/dialogs/game_version.cfg:329
 msgid "<i><span font_family='DejaVu Sans'>➤</span> View Game Manual:</i>"
 msgstr ""
+"<span font_family='DejaVu Sans'>➤</span> <b>Просмотреть игровое руководство:"
+"</b>"
 
 #. [button]: id=view_manual
 #. button to open the game manual in the platform's browser.
 #: data/gui/themes/default/dialogs/game_version.cfg:342
 msgid "View Manual"
-msgstr ""
+msgstr "Просмотреть руководство"
 
 #. [label]
 #: data/gui/themes/default/dialogs/game_version.cfg:350
@@ -4882,14 +4870,14 @@ msgid ""
 "<i><span font_family='DejaVu Sans'>➤</span> Re-open the version migrator "
 "dialog:</i>"
 msgstr ""
+"<span font_family='DejaVu Sans'>➤</span> <b>Заного открыть диалоговое окно "
+"миграции версий:</b>"
 
 #. [button]: id=run_migrator
 #. button to open the version migration dialog manually to re-migrate add-ons and the preferences file
 #: data/gui/themes/default/dialogs/game_version.cfg:363
-#, fuzzy
-#| msgid "Crater"
 msgid "Migrate"
-msgstr "Кратер"
+msgstr "Мигрировать"
 
 #. [grid]
 #: data/gui/themes/default/dialogs/game_version.cfg:400
@@ -4964,45 +4952,44 @@ msgstr "Следующие функции были выбраны при соз�
 #. [button]: id=forums
 #. this is on a button that opens the Wesnoth forums webpage
 #: data/gui/themes/default/dialogs/game_version.cfg:661
-#, fuzzy
-#| msgid "Forum URL"
 msgid "Forums"
-msgstr "Ссылка на форум"
+msgstr "Форумы"
 
 #. [button]: id=discord
 #. this is on a button that opens the Wesnoth Discord server webpage
 #: data/gui/themes/default/dialogs/game_version.cfg:680
 msgid "Discord"
-msgstr ""
+msgstr "Discord"
 
 #. [button]: id=irc
 #. this is on a button that opens the Wesnoth IRC webpage. IRC is an acronym for Internet Relay Chat
 #: data/gui/themes/default/dialogs/game_version.cfg:699
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 #. [button]: id=steam
 #. this is on a button that opens the Wesnoth Steam forums webpage
 #: data/gui/themes/default/dialogs/game_version.cfg:718
 msgid "Steam"
-msgstr ""
+msgstr "Steam"
 
 #. [button]: id=reddit
 #. this is on a button that opens the Wesnoth Reddit webpage
 #: data/gui/themes/default/dialogs/game_version.cfg:737
 msgid "Reddit"
-msgstr ""
+msgstr "Reddit"
 
 #. [button]: id=donate
 #. this is on a button that opens the Wesnoth SPI webpage for sending donations
 #: data/gui/themes/default/dialogs/game_version.cfg:756
 msgid "Donate"
-msgstr ""
+msgstr "Пожертвовать"
 
 #. [label]: id=description
 #: data/gui/themes/default/dialogs/game_version.cfg:852
 msgid "An open source, turn-based strategy game with a high fantasy theme."
 msgstr ""
+"Пошаговая стратегия в жанре эпического фэнтези с открытым исходным кодом."
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [tab]
@@ -5038,7 +5025,7 @@ msgstr "Титры"
 #. [button]: id=license
 #: data/gui/themes/default/dialogs/game_version.cfg:980
 msgid "License"
-msgstr ""
+msgstr "Лицензия"
 
 #. [label]
 #: data/gui/themes/default/dialogs/gamestate_inspector.cfg:16
@@ -5142,6 +5129,9 @@ msgid ""
 "including translation. Translations may drift behind or even become "
 "abandoned."
 msgstr ""
+"<i>Битва за Веснот</i> в своей разработке и переводе полагается на "
+"добровольцев. Переводы могут отставать от графика или вовсе оказаться "
+"заброшены."
 
 #. [label]
 #. Beneath the label widget displaying this text there is a widget displaying
@@ -5152,6 +5142,10 @@ msgid ""
 "interface and in-game help only. More complete stats, including details for "
 "each campaign, are available at the following page:"
 msgstr ""
+"<b>Примечание:</b> Указанные проценты перевода относятся только к основному "
+"игровому интерфейсу и внутриигровой справке. Более полная статистика, "
+"включая подробную информацию по каждой кампании, доступна на следующей "
+"странице:"
 
 #. [label]
 #. Beneath the label widget displaying this text there is a widget displaying
@@ -5161,11 +5155,13 @@ msgid ""
 "If you are interested in translating the game yourself, please follow the "
 "link below for more information:"
 msgstr ""
+"Если вас интересует участие в составлении перевода игры, пожалуйста, "
+"перейдите по ссылке ниже для получения дополнительной информации:"
 
 #. [toggle_button]: id=show_all
 #: data/gui/themes/default/dialogs/language_selection.cfg:276
 msgid "Show in-progress or abandoned translations"
-msgstr ""
+msgstr "Показать незавершенные или заброшенные переводы"
 
 #. [label]: id=status
 #: data/gui/themes/default/dialogs/loadscreen.cfg:183
@@ -5190,7 +5186,7 @@ msgstr "Подбор игроков"
 #: data/gui/themes/default/dialogs/lobby_main.cfg:102
 #: src/gui/dialogs/multiplayer/mp_create_game.cpp:129
 msgid "Presets"
-msgstr ""
+msgstr "Шаблоны"
 
 #. [label]: id=map
 #: data/gui/themes/default/dialogs/lobby_main.cfg:153
@@ -5204,10 +5200,8 @@ msgstr "Присоединяться только с паролем"
 
 #. [button]: id=delete_preset
 #: data/gui/themes/default/dialogs/lobby_main.cfg:305
-#, fuzzy
-#| msgid "Delete Unit"
 msgid "Delete this preset"
-msgstr "Удалить бойца"
+msgstr "Удалить шаблон"
 
 #. [toggle_button]: id=filter_vacant_slots
 #: data/gui/themes/default/dialogs/lobby_main.cfg:477
@@ -5329,13 +5323,13 @@ msgstr "Не показывать карту пока не передан кот
 
 #. [button]: id=join_queue
 #: data/gui/themes/default/dialogs/lobby_main.cfg:728
+#, fuzzy
 msgid "Join Queue"
-msgstr ""
+msgstr "Присоединиться"
 
 #. [button]: id=leave_queue
 #: data/gui/themes/default/dialogs/lobby_main.cfg:738
 #, fuzzy
-#| msgid "Leave"
 msgid "Leave Queue"
 msgstr "Выйти"
 
@@ -5921,10 +5915,8 @@ msgstr "Размер карты:"
 #: data/gui/themes/default/dialogs/mp_create_game/default_resolution.cfg:460
 #: data/gui/themes/default/dialogs/mp_create_game/small_resolution.cfg:378
 #: data/gui/themes/default/dialogs/mp_create_game/tiny_resolution.cfg:335
-#, fuzzy
-#| msgid "Saved Games"
 msgid "Save Preset"
-msgstr "Сохраненные игры"
+msgstr "Сохранить шаблон"
 
 #. [row]
 #: data/gui/themes/default/dialogs/mp_faction_select.cfg:210
@@ -5979,10 +5971,8 @@ msgstr "Выберите фракцию и лидера для этой стор
 #. [label]
 #: data/gui/themes/default/dialogs/mp_join_game.cfg:155
 #: data/gui/themes/default/dialogs/mp_staging.cfg:157
-#, fuzzy
-#| msgid "Faction"
 msgid "Faction:"
-msgstr "Фракция"
+msgstr "Фракция:"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=status_label
@@ -6249,8 +6239,9 @@ msgstr "Не позволять автоматическим передвиже�
 
 #. [toggle_button]: id=show_turn_dialog
 #: data/gui/themes/default/dialogs/preferences/01_general.cfg:114
+#, fuzzy
 msgid "Turn prompt"
-msgstr ""
+msgstr "Диалог хода"
 
 #. [toggle_button]: id=show_turn_dialog
 #: data/gui/themes/default/dialogs/preferences/01_general.cfg:115
@@ -6473,10 +6464,8 @@ msgstr ""
 
 #. [label]
 #: data/gui/themes/default/dialogs/preferences/03_display.cfg:152
-#, fuzzy
-#| msgid "Interface theme:"
 msgid "In-game theme:"
-msgstr "Тема интерфейса:"
+msgstr "Внутриигровая тема:"
 
 #. [menu_button]: id=choose_theme
 #: data/gui/themes/default/dialogs/preferences/03_display.cfg:165
@@ -6489,23 +6478,17 @@ msgstr ""
 
 #. [label]
 #: data/gui/themes/default/dialogs/preferences/03_display.cfg:176
-#, fuzzy
-#| msgid "Interface theme:"
 msgid "UI theme:"
 msgstr "Тема интерфейса:"
 
 #. [menu_button]: id=choose_gui2_theme
 #: data/gui/themes/default/dialogs/preferences/03_display.cfg:192
-#, fuzzy
-#| msgid ""
-#| "Change the in-game interface theme. Additional themes may be provided by "
-#| "community-made add-ons"
 msgid ""
 "Change the UI (GUI2) theme. Additional themes may be provided by community-"
 "made add-ons"
 msgstr ""
-"Меняет тему игрового интерфейса. Дополнительные темы могут поставляться "
-"сделанными сообществом аддонами"
+"Меняет тему игрового интерфейса (GUI2). Дополнительные темы могут "
+"поставляться сделанными сообществом аддонами"
 
 #. [button]: id=apply
 #: data/gui/themes/default/dialogs/preferences/03_display.cfg:201
@@ -6514,10 +6497,8 @@ msgstr "Применить"
 
 #. [toggle_button]: id=show_tips
 #: data/gui/themes/default/dialogs/preferences/03_display.cfg:224
-#, fuzzy
-#| msgid "Show next tip of the day"
 msgid "Show gameplay tips on the main menu"
-msgstr "Следующий совет"
+msgstr "Показывать советы в главном меню"
 
 #. [toggle_button]: id=show_floating_labels
 #: data/gui/themes/default/dialogs/preferences/03_display.cfg:236
@@ -6809,23 +6790,27 @@ msgstr "Параметры случайной карты: "
 
 #. [label]
 #: data/gui/themes/default/dialogs/reachmap_options.cfg:112
+#, fuzzy
 msgid "Highlight Color"
-msgstr ""
+msgstr "Цвет"
 
 #. [label]
 #: data/gui/themes/default/dialogs/reachmap_options.cfg:130
+#, fuzzy
 msgid "Enemy Highlight Color"
-msgstr ""
+msgstr "Вражеский цвет"
 
 #. [grid]
 #: data/gui/themes/default/dialogs/reachmap_options.cfg:142
+#, fuzzy
 msgid "Border Opacity:"
-msgstr ""
+msgstr "Прозрачность границ сетки"
 
 #. [grid]
 #: data/gui/themes/default/dialogs/reachmap_options.cfg:144
+#, fuzzy
 msgid "Tint Opacity:"
-msgstr ""
+msgstr "Прозрачность оттенка"
 
 #. [button]: id=open
 #: data/gui/themes/default/dialogs/screenshot_notification.cfg:49
@@ -7107,7 +7092,7 @@ msgstr "Атаковать врага"
 #: data/gui/themes/default/dialogs/units_dialog.cfg:24
 #: data/gui/themes/default/dialogs/units_dialog.cfg:573
 msgid "★"
-msgstr ""
+msgstr "★"
 
 #. [toggle_button]: id=unit_details
 #. [toggle_button]: id=sort_4
@@ -7167,7 +7152,7 @@ msgstr "Переименовать"
 #. [button]: id=mark_favorite
 #: data/gui/themes/default/dialogs/units_dialog.cfg:574
 msgid "Mark/unmark the selected unit as favorite"
-msgstr ""
+msgstr "Отметить выделенного бойца как избранного"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
@@ -7209,7 +7194,7 @@ msgstr "Загрузки"
 #. The heavy checkmark character is available in the DejaVu Sans font, but not in the default Lato font
 #: data/gui/themes/default/widgets/button_success.cfg:250
 msgid "page^<span font_family='DejaVu Sans'>✔</span> Copied"
-msgstr ""
+msgstr "<span font_family='DejaVu Sans'>✔</span> Скопировано"
 
 #. [image]: id=pending_messages
 #: data/gui/themes/default/widgets/chatbox.cfg:40
@@ -7220,7 +7205,7 @@ msgstr "Сообщения ожидаются"
 #: data/internal/Urban_Jungle/terrain.cfg:8
 #: data/internal/Urban_Jungle/terrain.cfg:9
 msgid "Urban"
-msgstr ""
+msgstr "Город"
 
 #. [terrain_type]: id=urbanjungle
 #: data/internal/Urban_Jungle/terrain.cfg:10
@@ -7229,6 +7214,9 @@ msgid ""
 "villages, providing no income or healing. They are difficult to navigate "
 "quickly, but offer significant protection."
 msgstr ""
+"Плотная застройка хуже подходит для размещения гарнизона, чем обыкновенные "
+"деревни, поскольку не приносит дохода и не обеспечивает бойцов лечением. По "
+"ней трудно быстро передвигаться, но она обеспечивают значительную защиту."
 
 #. [terrain_type]: id=urbanjungleA
 #. [terrain_type]: id=urbanjungle{ID}
@@ -7238,8 +7226,9 @@ msgstr ""
 #: data/internal/Urban_Jungle/terrain.cfg:32
 #: data/internal/Urban_Jungle/terrain.cfg:33
 #: data/internal/Urban_Jungle/terrain.cfg:34
+#, fuzzy
 msgid "Urban Jungle"
-msgstr ""
+msgstr "Городские джунгли"
 
 #: src/build_info.cpp:297
 msgid "feature^Lua console completion"
@@ -7358,10 +7347,8 @@ msgid "No draw section defined for state."
 msgstr "Не определена область отрисовки."
 
 #: src/gui/core/widget_definition.cpp:67 src/gui/core/window_builder.cpp:113
-#, fuzzy
-#| msgid "No resolution defined."
 msgid "No resolution defined for "
-msgstr "Разрешение не определено."
+msgstr "Разрешение не определено"
 
 #: src/gui/core/window_builder.cpp:147 src/gui/widgets/addon_list.cpp:432
 #: src/gui/widgets/multi_page.cpp:181 src/gui/widgets/panel.cpp:131
@@ -7385,12 +7372,13 @@ msgid ""
 "Grid ‘$grid’ row $row has a differing number of columns ($found found, "
 "$expected expected)"
 msgstr ""
-"Количество столбцов строки $row не соответствует остальной таблице "
-"'$grid' (найдено $found, ожидалось $expected)"
+"Количество столбцов строки $row не соответствует остальной таблице '$grid' "
+"(найдено $found, ожидалось $expected)"
 
 #: src/gui/dialogs/achievements_dialog.cpp:97
+#, fuzzy
 msgid "$title ($count/$total)"
-msgstr ""
+msgstr "$title ($count/$total)"
 
 #: src/gui/dialogs/achievements_dialog.cpp:138
 #, fuzzy
@@ -7416,10 +7404,8 @@ msgstr "Ответ"
 #: src/gui/dialogs/addon/addon_server_info.cpp:115
 #: src/gui/dialogs/addon/addon_server_info.cpp:143
 #: src/gui/dialogs/addon/addon_server_info.cpp:167
-#, fuzzy
-#| msgid "Password Required"
 msgid "Password not provided"
-msgstr "Необходим пароль"
+msgstr "Пароль не предоставлен"
 
 #: src/gui/dialogs/addon/manager.cpp:145
 msgid "addons_view^All Add-ons"
@@ -7482,10 +7468,8 @@ msgid "addons_of_type^Cores"
 msgstr "Ядро"
 
 #: src/gui/dialogs/addon/manager.cpp:163
-#, fuzzy
-#| msgid "addons_of_type^Cores"
 msgid "addons_of_type^Themes"
-msgstr "Ядро"
+msgstr "Темы"
 
 #: src/gui/dialogs/addon/manager.cpp:164
 msgid "addons_of_type^Resources"
@@ -7764,16 +7748,12 @@ msgid "Attacker vulnerability vs"
 msgstr "Уязвимость атакующего против"
 
 #: src/gui/dialogs/campaign_selection.cpp:82
-#, fuzzy
-#| msgid "Add-ons"
 msgid "game^Get Add-ons"
-msgstr "Аддоны"
+msgstr "Получить аддоны"
 
 #: src/gui/dialogs/campaign_selection.cpp:409
-#, fuzzy
-#| msgid "Campaigns"
 msgid "More campaigns..."
-msgstr "Кампании"
+msgstr "Больше кампаний..."
 
 #: src/gui/dialogs/campaign_selection.cpp:424
 msgid "Missing Campaigns"
@@ -7818,10 +7798,8 @@ msgstr ""
 
 #: src/gui/dialogs/editor/custom_tod.cpp:171
 #: src/gui/dialogs/editor/edit_unit.cpp:295
-#, fuzzy
-#| msgid "Choose Player"
 msgid "Choose File"
-msgstr "Выберите игрока"
+msgstr "Выберите файл"
 
 #: src/gui/dialogs/editor/custom_tod.cpp:182
 #: src/gui/dialogs/editor/edit_unit.cpp:306
@@ -7829,6 +7807,8 @@ msgid ""
 "This file is outside Wesnoth’s data dirs. Do you wish to copy it into your "
 "add-on?"
 msgstr ""
+"Этот файл находится вне каталогов данных Веснота. Хотите скопировать его в "
+"свой аддон?"
 
 #: src/gui/dialogs/editor/edit_pbl.cpp:178
 msgid "Core"
@@ -7905,7 +7885,7 @@ msgstr "Рельеф"
 
 #: src/gui/dialogs/editor/edit_pbl.cpp:402
 msgid "The icon’s file size is too large"
-msgstr ""
+msgstr "Размер файла значка слишком велик"
 
 #: src/gui/dialogs/editor/edit_pbl.cpp:404
 msgid "No validation errors"
@@ -7921,37 +7901,31 @@ msgstr "Выберите иконку"
 
 #: src/gui/dialogs/editor/edit_unit.cpp:180
 msgid "scout"
-msgstr ""
+msgstr "разведчик"
 
 #: src/gui/dialogs/editor/edit_unit.cpp:181
-#, fuzzy
-#| msgid "Right"
 msgid "fighter"
-msgstr "Вправо"
+msgstr "боец"
 
 #: src/gui/dialogs/editor/edit_unit.cpp:182
-#, fuzzy
-#| msgid "Search"
 msgid "archer"
-msgstr "Поиск"
+msgstr "лучник"
 
 #: src/gui/dialogs/editor/edit_unit.cpp:183
 msgid "mixed fighter"
-msgstr ""
+msgstr "смешанный боец"
 
 #: src/gui/dialogs/editor/edit_unit.cpp:184
 msgid "healer"
-msgstr ""
+msgstr "лекарь"
 
 #: src/gui/dialogs/editor/edit_unit.cpp:927
-#, fuzzy
-#| msgid "Save already exists. Do you want to overwrite it?"
 msgid "Unsaved changes will be lost. Do you want to leave?"
-msgstr "Сохранение уже существует, переписать его?"
+msgstr "Несохранённые изменения будут утеряны. Хотите выйти?"
 
 #: src/gui/dialogs/editor/edit_unit.cpp:946
 msgid "Unit type saved."
-msgstr ""
+msgstr "Тип бойца сохранён."
 
 #: src/gui/dialogs/editor/generator_settings.cpp:38
 #, fuzzy
@@ -7976,29 +7950,26 @@ msgid "Find File"
 msgstr "Найти файл"
 
 #: src/gui/dialogs/file_dialog.cpp:191
-#, fuzzy
-#| msgid "Winter Elven Castle"
 msgid "enter filename"
-msgstr "Заснеженный замок эльфов"
+msgstr "введите название файла"
 
 #: src/gui/dialogs/file_dialog.cpp:201
+#, fuzzy
 msgid "invalid extension (use $extensions)"
-msgstr ""
+msgstr "недопустимое расширение (используйте $extensions)"
 
 #: src/gui/dialogs/file_dialog.cpp:208
 msgid "filename contains whitespace"
-msgstr ""
+msgstr "название файла содержит пробел"
 
 #: src/gui/dialogs/file_dialog.cpp:237
 msgid "Open"
 msgstr "Открыть"
 
 #: src/gui/dialogs/file_dialog.cpp:313
-#, fuzzy
-#| msgid "Opening links is not supported, contact your packager"
 msgid "Opening files is not supported, contact your packager"
 msgstr ""
-"Открытие ссылки не поддерживается, обратитесь к вашему менеджеру сборки"
+"Открытие файлов не поддерживается, обратитесь к вашему менеджеру сборки"
 
 #: src/gui/dialogs/file_dialog.cpp:370
 msgid "The file already exists. Do you wish to overwrite it?"
@@ -8273,28 +8244,26 @@ msgid "Downloading lobby data"
 msgstr "Загрузка данных лобби"
 
 #: src/gui/dialogs/lua_interpreter.cpp:628
-#, fuzzy
-#| msgid "The lua console can only be used in debug mode! (Run ':debug' first)"
 msgid "The lua console can only be used in debug mode! (Run ‘:debug’ first)"
 msgstr ""
-"Консоль lua можно использовать только в режиме отладки! (Сначала выполните ':"
-"debug')"
+"Консоль lua можно использовать только в режиме отладки! (Сначала выполните "
+"':debug')"
 
 #: src/gui/dialogs/lua_interpreter.cpp:629
 msgid "lua console"
 msgstr "Консоль Lua"
 
 #: src/gui/dialogs/migrate_version_selection.cpp:47
-#, fuzzy
-#| msgid "Map Information"
 msgid "No Other Version Found"
-msgstr "Информация о карте"
+msgstr "Другие версии не найдены"
 
 #: src/gui/dialogs/migrate_version_selection.cpp:47
 msgid ""
 "This would import settings from a previous version of Wesnoth, but no other "
 "version was found on this device"
 msgstr ""
+"Это бы импортировало настройки из предыдущей версии Веснота, но на этом "
+"устройстве никакая другая версия не была обнаружена."
 
 #: src/gui/dialogs/multiplayer/faction_select.cpp:200
 #: src/gui/dialogs/multiplayer/mp_staging.cpp:498
@@ -8311,17 +8280,14 @@ msgstr "Несовместимый пользовательский контен
 
 #: src/gui/dialogs/multiplayer/lobby.cpp:175
 #, fuzzy
-#| msgid ""
-#| "This game cannot be joined because the host has out-of-date add-ons that "
-#| "are incompatible with your version. You might wish to suggest that the "
-#| "host's add-ons be updated."
 msgid ""
 "This game cannot be joined because the host has out-of-date add-ons that are "
 "incompatible with your version. You might wish to suggest that the host’s "
 "add-ons be updated."
 msgstr ""
-"К этой игре невозможно присоедиться потому что хост имеет устаревшие аддоны, "
-"которые несовместимы с вашей версией. Можно предложить хосту обновить аддоны."
+"К этой игре невозможно присоединиться, так как хост имеет устаревшие аддоны, "
+"которые несовместимы с вашей версией. Можете предложить хосту обновить "
+"аддоны."
 
 #: src/gui/dialogs/multiplayer/lobby.cpp:190
 msgid "Missing User-made Content"
@@ -8531,9 +8497,8 @@ msgstr "Настройка горячих клавиш"
 
 #: src/gui/dialogs/multiplayer/mp_staging.cpp:308
 #, fuzzy
-#| msgid "(Invalid)"
 msgid "Invalid Color"
-msgstr "(Ошибочный)"
+msgstr "(Ошибочный цвет)"
 
 #: src/gui/dialogs/multiplayer/mp_staging.cpp:515
 msgid "Waiting for players to choose factions..."
@@ -8681,10 +8646,8 @@ msgid "Rename Unit"
 msgstr "Переименовать бойца"
 
 #: src/gui/dialogs/units_dialog.cpp:278
-#, fuzzy
-#| msgid "This unit is loyal and requires no upkeep."
 msgid "This unit requires no upkeep."
-msgstr "Это подразделение лояльно и не требует содержания."
+msgstr "Это подразделение не требует содержания."
 
 #: src/gui/dialogs/units_dialog.cpp:279 src/gui/dialogs/units_dialog.cpp:284
 #: src/gui/dialogs/units_dialog.cpp:289
@@ -9069,9 +9032,8 @@ msgstr "Выбрать/Идти/Атаковать"
 
 #: src/hotkey/hotkey_command.cpp:84
 #, fuzzy
-#| msgid "Touch"
 msgid "Touch Hex"
-msgstr "Касание"
+msgstr "Прикоснуться к полю"
 
 #: src/hotkey/hotkey_command.cpp:85
 msgid "Animate Map"
@@ -9134,10 +9096,8 @@ msgid "Terrain Description"
 msgstr "Описание местности"
 
 #: src/hotkey/hotkey_command.cpp:102
-#, fuzzy
-#| msgid "Unit Description"
 msgid "Unit Type Description"
-msgstr "Описание бойца"
+msgstr "Описание типа бойца"
 
 #: src/hotkey/hotkey_command.cpp:104
 msgid "Delete Unit"
@@ -9152,10 +9112,8 @@ msgid "Save Map"
 msgstr "Сохранить карту"
 
 #: src/hotkey/hotkey_command.cpp:110
-#, fuzzy
-#| msgid "Loading..."
 msgid "Load Turn..."
-msgstr "Загрузка..."
+msgstr "Загрузить ход..."
 
 #: src/hotkey/hotkey_command.cpp:112
 msgid "Repeat Recruit"
@@ -9206,10 +9164,8 @@ msgid "Kill Unit (Debug!)"
 msgstr "Убить бойца (Отладка!)"
 
 #: src/hotkey/hotkey_command.cpp:126
-#, fuzzy
-#| msgid "Create Unit (Debug!)"
 msgid "Teleport Unit (Debug!)"
-msgstr "Создать бойца (Отладка!)"
+msgstr "Телепортировать бойца (Отладка!)"
 
 #: src/hotkey/hotkey_command.cpp:128
 msgid "Objectives"
@@ -9348,9 +9304,8 @@ msgstr "Назначить местное время"
 
 #: src/hotkey/hotkey_command.cpp:178
 #, fuzzy
-#| msgid "Next Unit"
 msgid "New Unit Type"
-msgstr "Следующий боец"
+msgstr "Новый тип бойца"
 
 #: src/hotkey/hotkey_command.cpp:180
 msgid "Time Schedule Editor"
@@ -9365,20 +9320,16 @@ msgid "New Scenario"
 msgstr "Новый сценарий"
 
 #: src/hotkey/hotkey_command.cpp:184
-#, fuzzy
-#| msgid "Edit Scenario"
 msgid "Load Map/Scenario"
-msgstr "Править сценарий"
+msgstr "Загрузить карту/сценарий"
 
 #: src/hotkey/hotkey_command.cpp:186
 msgid "Save Map As"
 msgstr "Сохранить карту как"
 
 #: src/hotkey/hotkey_command.cpp:187
-#, fuzzy
-#| msgid "Choose Test Scenario"
 msgid "Convert To Scenario"
-msgstr "Выберите пробный сценарий"
+msgstr "Преобразовать в сценарий"
 
 #: src/hotkey/hotkey_command.cpp:188
 msgid "Save Scenario As"
@@ -9497,10 +9448,8 @@ msgid "Item Tool"
 msgstr "Инструмент «предмет»"
 
 #: src/hotkey/hotkey_command.cpp:210
-#, fuzzy
-#| msgid "Left mouse button sets a new item."
 msgid "Left mouse button sets a new item. Right click removes item."
-msgstr "Левая кнопка мыши кладёт новый предмет."
+msgstr "Левая кнопка мыши кладёт новый предмет. Правая — удаляет предмет."
 
 #: src/hotkey/hotkey_command.cpp:211
 msgid ""
@@ -9540,9 +9489,8 @@ msgstr "Верный"
 
 #: src/hotkey/hotkey_command.cpp:220
 #, fuzzy
-#| msgid "Map Information"
 msgid "Show Tool Information"
-msgstr "Информация о карте"
+msgstr "Показать информацию об инструменте"
 
 #: src/hotkey/hotkey_command.cpp:222
 msgid "Toggle Minimap Unit Coding"
@@ -9730,16 +9678,12 @@ msgid "Change Add-on ID"
 msgstr "Изменить ID аддона"
 
 #: src/hotkey/hotkey_command.cpp:279
-#, fuzzy
-#| msgid "Select the add-on version"
 msgid "Select active Add-on"
-msgstr "Выберите версию аддона"
+msgstr "Выбрать активный аддон"
 
 #: src/hotkey/hotkey_command.cpp:280
-#, fuzzy
-#| msgid "Open saves folder"
 msgid "Open Add-on folder"
-msgstr "Открыть каталог с сохранениями"
+msgstr "Открыть папку с аддонами"
 
 #: src/hotkey/hotkey_command.cpp:283
 msgid "Edit Side"
@@ -9802,10 +9746,8 @@ msgid "Change Language"
 msgstr "Сменить язык"
 
 #: src/hotkey/hotkey_command.cpp:301
-#, fuzzy
-#| msgid "Starting game"
 msgid "Start Game (MP)"
-msgstr "Запуск игры"
+msgstr "Запуск игры (МП)"
 
 #: src/hotkey/hotkey_command.cpp:302
 msgid "Refresh WML"

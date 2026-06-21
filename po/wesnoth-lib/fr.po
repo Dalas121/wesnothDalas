@@ -266,7 +266,7 @@ msgstr "Pavés gris entretenus"
 #. [terrain_type]: id=road_desert
 #: data/core/terrain.cfg:274
 msgid "Gravel"
-msgstr ""
+msgstr "Gravier"
 
 #. [terrain_type]: id=stone_path
 #: data/core/terrain.cfg:284
@@ -3018,12 +3018,12 @@ msgstr "Quitter"
 #. [button]: id=downloads_by_version
 #: data/gui/themes/default/dialogs/addon_server_info.cfg:59
 msgid "Add-on download count by version"
-msgstr ""
+msgstr "Nombre d'extensions téléchargées par version"
 
 #. [button]: id=addon_count_by_forum_auth
 #: data/gui/themes/default/dialogs/addon_server_info.cfg:77
 msgid "Count of add-ons using forum_auth"
-msgstr ""
+msgstr "Nombre d'extensions utilisant forum_auth"
 
 #. [button]: id=admin_delete_addon
 #: data/gui/themes/default/dialogs/addon_server_info.cfg:95
@@ -3038,12 +3038,12 @@ msgstr "Cacher l'extension sélectionnée (admin)"
 #. [button]: id=admin_unhide_addon
 #: data/gui/themes/default/dialogs/addon_server_info.cfg:131
 msgid "Unhide add-on by ID (admin)"
-msgstr ""
+msgstr "Afficher une extension par identifiant (admin)"
 
 #. [button]: id=admin_list_hidden
 #: data/gui/themes/default/dialogs/addon_server_info.cfg:149
 msgid "List hidden add-ons (admin)"
-msgstr ""
+msgstr "Faire une liste des extensions cachées (admin)"
 
 #. [scroll_label]
 #: data/gui/themes/default/dialogs/addon_uninstall_list.cfg:68
@@ -3168,6 +3168,11 @@ msgid ""
 "orcs of the north. Choose between 23 magic spells as you bear witness to the "
 "rise of a tyrant."
 msgstr ""
+"<span color='#e1e119' style='italic'>Royale Perfidie</span> remplace <i>Les "
+"Mémoires de Delfador</i>. Suivez le destin d’un jeune mage, des côtes "
+"d’Alduin jusqu’à la cour du roi, dans une guerre impitoyable contre les orcs "
+"du Nord. Maîtrisez 23 sorts magiques et assistez à l'émergence d’une "
+"tyrannie."
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:217
@@ -3176,6 +3181,10 @@ msgid ""
 "our first troll campaign. Lead the Golden Flame Tribe out from the bowels of "
 "Irdya and up to the surface world — but beware what awaits you there."
 msgstr ""
+"<span color='#e1e119' style='italic'>Crépuscule de l’aube</span> est la "
+"première campagne autour des trolls. Guidez la tribu de la Flamme Dorée "
+"depuis les profondeurs d’Irdya jusqu’à la surface — mais prenez garde à ce "
+"qui vous y attend."
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:219
@@ -3185,6 +3194,10 @@ msgid ""
 "the Bay of Pearls. When corsairs strike, the villagers must join forces with "
 "the local merfolk and take the fight to the pirates."
 msgstr ""
+"<span color='#e1e119' style='italic'>De Perles et de pirates</span> est une "
+"nouvelle campagne pour débutant située dans un paisible village de pêcheurs "
+"de la Baie des Perles. Lorsque des corsaires attaquent, les habitants n’ont "
+"d’autre choix que de s’allier aux peuples marins pour affronter les pirates."
 
 #. [label]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:221
@@ -3246,6 +3259,11 @@ msgid ""
 "multiplayer maps, additional media and various other content! Be sure to "
 "give it a try!"
 msgstr ""
+"En plus des campagnes principales, Wesnoth propose également une liste sans "
+"cesse grandissante d'extensions créées par d’autres joueurs, disponibles via "
+"le serveur d'extensions. Cela inclut notamment des campagnes solo et "
+"multijoueur, des cartes multijoueur, des médias supplémentaires et divers "
+"autres contenus ! N’hésitez pas à les essayer !"
 
 #. [label]
 #. "more than 15" gives a little leeway to add or remove one without changing the translatable text.
@@ -3393,6 +3411,13 @@ msgid ""
 "Example: you strike twice and get lucky, hitting both strikes. You then load "
 "an earlier save and make the same attack again. Both strikes will still hit."
 msgstr ""
+"Identique au générateur de nombres aléatoires par défaut, sauf que le "
+"chargement d’une partie sauvegardée ne modifie pas le résultat d’une "
+"attaque.\n"
+"\n"
+"Exemple : vous attaquez deux fois et avez de la chance, en touchant les deux "
+"coups. Vous rechargez ensuite une sauvegarde préalable et effectuez la même "
+"attaque. Les deux coups toucheront toujours."
 
 #. [option]
 #: data/gui/themes/default/dialogs/campaign_dialog.cfg:456
@@ -4183,7 +4208,7 @@ msgstr "Image de l’unité :"
 #. [grid]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:216
 msgid "Portrait:"
-msgstr ""
+msgstr "Portrait :"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:227
@@ -4274,7 +4299,7 @@ msgstr "Corps à corps"
 #. [option]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:698
 msgid "range^Ranged"
-msgstr ""
+msgstr "À distance"
 
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:739
@@ -4286,10 +4311,11 @@ msgstr "Dégâts :"
 msgid "Hits:"
 msgstr "Coups : "
 
+# De #wesnoth
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:794
 msgid "Specials:"
-msgstr ""
+msgstr "Spécial :"
 
 #. [grid]: id=grid_adv
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:836
@@ -4479,7 +4505,7 @@ msgstr "Supprimer le signet actuel"
 #. [button]: id=open_ext
 #: data/gui/themes/default/dialogs/file_dialog.cfg:319
 msgid "Open External"
-msgstr ""
+msgstr "Ouvrir par une application externe"
 
 #. [button]: id=open_ext
 #: data/gui/themes/default/dialogs/file_dialog.cfg:320
@@ -5110,7 +5136,7 @@ msgstr "Afficher les rubriques"
 #. [text_box]: id=filter_box
 #: data/gui/themes/default/dialogs/help_browser.cfg:163
 msgid "Search help topic names"
-msgstr ""
+msgstr "Recherche des rubriques d'aide"
 
 #. [label]
 #: data/gui/themes/default/dialogs/hotkey_bind.cfg:35
@@ -6814,7 +6840,7 @@ msgstr "Opacité de la bordure :"
 #. [grid]
 #: data/gui/themes/default/dialogs/reachmap_options.cfg:144
 msgid "Tint Opacity:"
-msgstr ""
+msgstr "Opacité :"
 
 #. [button]: id=open
 #: data/gui/themes/default/dialogs/screenshot_notification.cfg:49
@@ -7100,7 +7126,7 @@ msgstr "Attaquer l'ennemi"
 #: data/gui/themes/default/dialogs/units_dialog.cfg:24
 #: data/gui/themes/default/dialogs/units_dialog.cfg:573
 msgid "★"
-msgstr ""
+msgstr "★"
 
 #. [toggle_button]: id=unit_details
 #. [toggle_button]: id=sort_4
@@ -7204,7 +7230,7 @@ msgstr "Téléchargements"
 #. The heavy checkmark character is available in the DejaVu Sans font, but not in the default Lato font
 #: data/gui/themes/default/widgets/button_success.cfg:250
 msgid "page^<span font_family='DejaVu Sans'>✔</span> Copied"
-msgstr ""
+msgstr "<span font_family='DejaVu Sans'>✔</span> Copiée"
 
 #. [image]: id=pending_messages
 #: data/gui/themes/default/widgets/chatbox.cfg:40
@@ -7215,7 +7241,7 @@ msgstr "Messages en attente"
 #: data/internal/Urban_Jungle/terrain.cfg:8
 #: data/internal/Urban_Jungle/terrain.cfg:9
 msgid "Urban"
-msgstr ""
+msgstr "Urbain"
 
 #. [terrain_type]: id=urbanjungle
 #: data/internal/Urban_Jungle/terrain.cfg:10
@@ -7237,7 +7263,7 @@ msgstr ""
 #: data/internal/Urban_Jungle/terrain.cfg:33
 #: data/internal/Urban_Jungle/terrain.cfg:34
 msgid "Urban Jungle"
-msgstr ""
+msgstr "Jungle urbaine"
 
 #: src/build_info.cpp:297
 msgid "feature^Lua console completion"
@@ -7924,7 +7950,7 @@ msgstr "archer"
 
 #: src/gui/dialogs/editor/edit_unit.cpp:183
 msgid "mixed fighter"
-msgstr ""
+msgstr "combattant mixte"
 
 #: src/gui/dialogs/editor/edit_unit.cpp:184
 msgid "healer"
@@ -8545,8 +8571,8 @@ msgid ""
 "“<b>$hotkey_sequence|</b>” is in use by “<b>$old_hotkey_action|</b>”.\n"
 "Do you wish to reassign it to “<b>$new_hotkey_action|</b>”?"
 msgstr ""
-"« <b>$hotkey_sequence|</b> » est utilisé par « <b>$old_hotkey_action|</b> "
-"».\n"
+"« <b>$hotkey_sequence|</b> » est utilisé par « <b>$old_hotkey_action|</"
+"b> ».\n"
 "Voulez-vous le réattribuer à « <b>$new_hotkey_action|</b> » ?"
 
 #: src/gui/dialogs/preferences_dialog.cpp:965
@@ -10058,8 +10084,8 @@ msgstr ""
 #~ "The key '$deprecated_key' has been renamed to '$key'. Support for "
 #~ "'$deprecated_key' will be removed in version $removal_version."
 #~ msgstr ""
-#~ "La clef « $deprecated_key » a été remplacée par « $key ». « "
-#~ "$deprecated_key » ne sera plus maintenue à partir de la version "
+#~ "La clef « $deprecated_key » a été remplacée par « $key ». "
+#~ "« $deprecated_key » ne sera plus maintenue à partir de la version "
 #~ "$removal_version."
 
 #~ msgid "Show disengaged orb"
@@ -10516,8 +10542,8 @@ msgstr ""
 
 #~ msgid "Linked '$id' group needs a 'fixed_width' or 'fixed_height' key."
 #~ msgstr ""
-#~ "Le groupe lié « $id » a besoin d'une clé « fixed_width » ou « "
-#~ "fixed_height »."
+#~ "Le groupe lié « $id » a besoin d'une clé « fixed_width » ou "
+#~ "« fixed_height »."
 
 #~ msgid "Items"
 #~ msgstr "Objets"

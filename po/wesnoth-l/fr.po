@@ -547,7 +547,6 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/Liberty/scenarios/01_The_Raid.cfg:435
-#, fuzzy
 msgid "Your footpad has gained +1 ranged damage!"
 msgstr "Votre petite frappe a gagné +1 dégât à distance !"
 
@@ -905,7 +904,6 @@ msgstr "Ouais, hors-la-loi."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:528
-#, fuzzy
 msgid "Your units — formerly <i>neutral</i> — are now <i>chaotic</i>!"
 msgstr ""
 "Vos unités — auparavant <i>neutres</i> — sont désormais <i>chaotiques</i> !"
@@ -1213,7 +1211,6 @@ msgstr "C'est de la bonne eau bien fraîche. Hmmm !"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:445
-#, fuzzy
 msgid "Your unit has gained +1 maximum hitpoints!"
 msgstr "Votre unité a gagné +1 point de vie maximum !"
 
@@ -1337,20 +1334,21 @@ msgstr "Vaincre le chef ennemi"
 msgid "Death of Maddock"
 msgstr "Mort de Maddock"
 
+# Les vaisseaux étaient traditionnellement de genre féminin
 #. [event]
 #. "Daneth" is the name of Lord Maddock's late son. This ship also appears in HttT's S10, with the same name.
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:256
-#, fuzzy
 msgid "The Daneth"
-msgstr "Les Daneth"
+msgstr "La Daneth"
 
+# Pas de référence à une Mary dans tout le corpus de texte de wesnoth
+# Traduction non littérale : Minnow -> Minion -> Mignon
 #. [event]
 #. [unit]: type=Skiff, id=Skiff
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:257
 #: data/campaigns/Liberty/scenarios/05_Hide_and_Seek.cfg:330
-#, fuzzy
 msgid "Mary’s Minnow"
-msgstr "Le vairon de Mary"
+msgstr "La Mignonne"
 
 #. [message]: speaker=Baldras
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:316
@@ -1390,7 +1388,6 @@ msgstr ""
 
 #. [message]: speaker=Lord Maddock
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:333
-#, fuzzy
 msgid ""
 "Officially, one of his captains committed the crime. Unofficially, it is "
 "rumored that Queen Asheviere and her son Eldred were involved. Either way, "
@@ -1400,7 +1397,7 @@ msgstr ""
 "Selon la version officielle, le crime aurait été perpétré par l’un de ses "
 "capitaines. Officieusement, cependant, la rumeur court que la reine "
 "Asheviere et son fils Eldred étaient impliqués. Quoi qu’il en soit, le "
-"prince Eldred tomba au combat peu de temps après, et Asheviere revendiqua "
+"prince Eldred tomba au combat peu de temps après et Asheviere revendiqua "
 "alors le trône."
 
 #. [message]: speaker=Lord Maddock
@@ -1442,7 +1439,6 @@ msgstr ""
 
 #. [message]: speaker=Lord Maddock
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:353
-#, fuzzy
 msgid ""
 "They will not come. I do not intend to pick a side in Wesnoth’s conflict, "
 "and the Queen knows better than to try to force my hand. It is true that she "
@@ -1452,7 +1448,7 @@ msgstr ""
 "Ils ne viendront pas. Je n’ai pas l’intention de prendre parti dans le "
 "conflit de Wesnoth, et la reine sait qu’elle ferait mieux de ne pas tenter "
 "de me forcer la main. Certes, elle entretient une importante garnison au "
-"sud, dans la grande forteresse de Halstead, mais même si elle mobilisait "
+"Sud, dans la grande forteresse de Halstead, mais même si elle mobilisait "
 "toutes ses troupes, je doute qu’elles puissent prendre Elensefar."
 
 #. [message]: speaker=Harper
@@ -1467,7 +1463,6 @@ msgstr ""
 
 #. [message]: speaker=Lord Maddock
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:361
-#, fuzzy
 msgid ""
 "Yes, I am aware of Queen Asheviere’s propensity for hiring orcs to "
 "supplement her forces. I have begun expanding my army as well, although I "
@@ -1484,7 +1479,6 @@ msgstr ""
 
 #. [message]: speaker=Lord Maddock
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:365
-#, fuzzy
 msgid ""
 "The treaty between Elensefar and Wesnoth is ancient, and I do not think Her "
 "Majesty means to break it. But I cannot afford to make enemies of Weldyn, as "
@@ -1492,8 +1486,8 @@ msgid ""
 "wizard and his rebels have suffered several defeats. I have some concessions "
 "that I shall have to make..."
 msgstr ""
-"Le traité entre Elensefar et Wesnoth est ancien, et je ne pense pas que Sa "
-"Majesté ait l’intention de le rompre. Mais je ne peux me permettre de me "
+"Le traité entre Elensefar et Wesnoth est ancien, et je ne pense pas que sa "
+"majesté ait l’intention de le rompre. Mais je ne peux me permettre de me "
 "mettre Weldyn à dos, comme vous le comprendrez sans doute. Asheviere semble "
 "en passe de remporter sa guerre civile. Le mage et ses rebelles ont déjà "
 "subi plusieurs défaites. Il y aura des concessions à faire, je n’y "
@@ -1507,7 +1501,6 @@ msgstr ""
 
 #. [message]: speaker=Lord Maddock
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:373
-#, fuzzy
 msgid ""
 "Do not put words in my mouth. I am more than willing to act should the need "
 "arise. I am already in covert communication with— ...listen, there is a "
@@ -1678,7 +1671,6 @@ msgstr ""
 
 #. [message]: speaker=Kestrel
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:902
-#, fuzzy
 msgid ""
 "The Queen sent us away... sent us west. Now, our mortal bodies pass... into "
 "another plane of hellish existence..."
@@ -3288,7 +3280,6 @@ msgstr "Seigneur d'Elensefar"
 
 #. [unit_type]: id=Lord of Elensefar, race=human
 #: data/campaigns/Liberty/units/Maddock.cfg:7
-#, fuzzy
 msgid ""
 "The grand city-state of Elensefar is the wealthiest human settlement on the "
 "Great Continent, commanding a reputation and power that belies its "
