@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 0.8.5-CVS\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-01-20 11:31-0600\n"
+"POT-Creation-Date: 2026-05-18 21:15-0500\n"
 "PO-Revision-Date: 2013-08-30 17:11+0300\n"
 "Last-Translator: Antonis Geralis <capoiosct@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
@@ -2455,7 +2455,7 @@ msgstr "Εκκίνηση μίας νέας εκστρατείας για ένα�
 #: data/gui/themes/default/dialogs/mp_method_selection.cfg:55
 #: data/gui/themes/default/dialogs/preferences/05_multiplayer.cfg:390
 #: data/gui/themes/default/dialogs/title_screen.cfg:257
-#: src/gui/dialogs/game_load.cpp:363
+#: src/gui/dialogs/game_load.cpp:369
 msgid "Multiplayer"
 msgstr "Δικτυακό Παιχνίδι"
 
@@ -2473,7 +2473,7 @@ msgstr ""
 #. [button]: id=load_movetype
 #. [button]: id=ok
 #: data/gui/themes/celes/dialogs/title_screen.cfg:288
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:892
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:900
 #: data/gui/themes/default/dialogs/game_load.cfg:638
 #: data/gui/themes/default/dialogs/title_screen.cfg:258
 msgid "Load"
@@ -2528,7 +2528,7 @@ msgstr "Εκκίνηση του επεξεργαστή χαρτών"
 #. [grid]
 #. [tab]
 #: data/gui/themes/celes/dialogs/title_screen.cfg:295
-#: data/gui/themes/default/dialogs/game_version.cfg:903
+#: data/gui/themes/default/dialogs/game_version.cfg:911
 #: data/gui/themes/default/dialogs/title_screen.cfg:262
 msgid "Community"
 msgstr "Κοινότητα"
@@ -2611,15 +2611,15 @@ msgstr "<b><span font_family='DejaVu Sans'>✔</span> Αντιγράφηκε</b>
 #. [button]: id=close_window
 #: data/gui/themes/celes/widgets/window_default.cfg:57
 #: data/gui/themes/default/dialogs/achievements_dialog.cfg:307
-#: data/gui/themes/default/dialogs/attack_predictions.cfg:302
+#: data/gui/themes/default/dialogs/attack_predictions.cfg:306
 #: data/gui/themes/default/dialogs/chat_log.cfg:201
 #: data/gui/themes/default/dialogs/end_credits.cfg:145
 #: data/gui/themes/default/dialogs/game_cache_options.cfg:247
 #: data/gui/themes/default/dialogs/game_stats.cfg:843
-#: data/gui/themes/default/dialogs/game_version.cfg:991
+#: data/gui/themes/default/dialogs/game_version.cfg:999
 #: data/gui/themes/default/dialogs/gamestate_inspector.cfg:398
 #: data/gui/themes/default/dialogs/generator_settings.cfg:190
-#: data/gui/themes/default/dialogs/help_browser.cfg:296
+#: data/gui/themes/default/dialogs/help_browser.cfg:295
 #: data/gui/themes/default/dialogs/lobby_player_info.cfg:292
 #: data/gui/themes/default/dialogs/lua_interpreter.cfg:130
 #: data/gui/themes/default/dialogs/message.cfg:135
@@ -2667,7 +2667,7 @@ msgstr "Αποθήκευση κωδικού τοπικά (κρυπτογραφη
 #. [button]: id=ok
 #: data/gui/themes/default/dialogs/addon_auth.cfg:159
 #: data/gui/themes/default/dialogs/addon_server_info.cfg:168
-#: data/gui/themes/default/dialogs/custom_tod.cfg:511
+#: data/gui/themes/default/dialogs/custom_tod.cfg:521
 #: data/gui/themes/default/dialogs/depcheck_select_new.cfg:151
 #: data/gui/themes/default/dialogs/edit_label.cfg:139
 #: data/gui/themes/default/dialogs/edit_text.cfg:116
@@ -2676,7 +2676,7 @@ msgstr "Αποθήκευση κωδικού τοπικά (κρυπτογραφη
 #: data/gui/themes/default/dialogs/editor_edit_pbl_translation.cfg:125
 #: data/gui/themes/default/dialogs/editor_edit_scenario.cfg:287
 #: data/gui/themes/default/dialogs/editor_edit_side.cfg:469
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1243
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1251
 #: data/gui/themes/default/dialogs/file_dialog.cfg:504
 #: data/gui/themes/default/dialogs/folder_create.cfg:119
 #: data/gui/themes/default/dialogs/label_settings.cfg:137
@@ -2711,10 +2711,10 @@ msgstr "Εντάξει"
 #: data/gui/themes/default/dialogs/addon_connect.cfg:206
 #: data/gui/themes/default/dialogs/addon_license_prompt.cfg:113
 #: data/gui/themes/default/dialogs/addon_uninstall_list.cfg:170
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:569
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:626
 #: data/gui/themes/default/dialogs/campaign_difficulty.cfg:234
 #: data/gui/themes/default/dialogs/core_dialog.cfg:241
-#: data/gui/themes/default/dialogs/custom_tod.cfg:524
+#: data/gui/themes/default/dialogs/custom_tod.cfg:534
 #: data/gui/themes/default/dialogs/depcheck_select_new.cfg:165
 #: data/gui/themes/default/dialogs/edit_label.cfg:153
 #: data/gui/themes/default/dialogs/edit_text.cfg:130
@@ -2724,7 +2724,7 @@ msgstr "Εντάξει"
 #: data/gui/themes/default/dialogs/editor_edit_pbl_translation.cfg:137
 #: data/gui/themes/default/dialogs/editor_edit_scenario.cfg:301
 #: data/gui/themes/default/dialogs/editor_edit_side.cfg:481
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1256
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1264
 #: data/gui/themes/default/dialogs/editor_generate_map.cfg:214
 #: data/gui/themes/default/dialogs/editor_new_map.cfg:126
 #: data/gui/themes/default/dialogs/editor_resize_map.cfg:282
@@ -2757,7 +2757,7 @@ msgstr "Εντάξει"
 #: data/gui/themes/default/dialogs/theme_list.cfg:155
 #: data/gui/themes/default/dialogs/tod_new_schedule.cfg:139
 #: data/gui/themes/default/dialogs/unit_attack.cfg:233
-#: data/gui/themes/default/dialogs/units_dialog.cfg:623
+#: data/gui/themes/default/dialogs/units_dialog.cfg:622
 #: src/gui/dialogs/units_dialog.cpp:79 src/hotkey/hotkey_command.cpp:79
 msgid "Cancel"
 msgstr "Ακύρωση"
@@ -2823,7 +2823,7 @@ msgstr "Η επικοινωνία μεταξύ παιχνιδιού και δι�
 #: data/gui/themes/default/dialogs/addon_manager.cfg:162
 #: data/gui/themes/default/dialogs/addon_manager.cfg:817
 #: data/gui/themes/default/dialogs/editor_edit_pbl.cfg:210
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:706
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:714
 msgid "Type:"
 msgstr "Τύπος:"
 
@@ -2857,7 +2857,7 @@ msgstr "Ενημερώθηκε:"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [scroll_label]: id=description
 #: data/gui/themes/default/dialogs/addon_manager.cfg:415
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:713
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:718
 msgid "No description available."
 msgstr "Δεν υπάρχει διαθέσιμη περιγραφή"
 
@@ -2902,7 +2902,7 @@ msgstr "Ενημέρωση επέκτασης"
 #. [button]: id=single_uninstall
 #: data/gui/themes/default/dialogs/addon_manager.cfg:622
 #: data/gui/themes/default/widgets/addon_list.cfg:435
-#: src/gui/dialogs/addon/manager.cpp:1056
+#: src/gui/dialogs/addon/manager.cpp:1066
 msgid "Uninstall add-on"
 msgstr "Απεγκατάσταση επέκτασης"
 
@@ -2930,7 +2930,7 @@ msgstr "Εξαρτήσεις:"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=dependencies
 #: data/gui/themes/default/dialogs/addon_manager.cfg:713
-#: src/gui/dialogs/addon/manager.cpp:1131
+#: src/gui/dialogs/addon/manager.cpp:1141
 msgid "addon_dependencies^None"
 msgstr "Καμία"
 
@@ -2944,7 +2944,7 @@ msgstr "Μεταφράσεις:"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=translations
 #: data/gui/themes/default/dialogs/addon_manager.cfg:748
-#: src/gui/dialogs/addon/manager.cpp:1145
+#: src/gui/dialogs/addon/manager.cpp:1155
 msgid "translations^None"
 msgstr "Καμία"
 
@@ -2979,8 +2979,8 @@ msgstr "Διαχείριση Επεκτάσεων"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=details_toggle
 #: data/gui/themes/default/dialogs/addon_manager.cfg:1099
-#: src/gui/dialogs/addon/manager.cpp:569 src/gui/dialogs/addon/manager.cpp:836
-#: src/gui/dialogs/addon/manager.cpp:937
+#: src/gui/dialogs/addon/manager.cpp:575 src/gui/dialogs/addon/manager.cpp:842
+#: src/gui/dialogs/addon/manager.cpp:947
 msgid "Add-on Details"
 msgstr "Λεπτομέρειες Επέκτασης"
 
@@ -3049,62 +3049,159 @@ msgid "Remove"
 msgstr "Αφαίρεση"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/attack_predictions.cfg:82
+#: data/gui/themes/default/dialogs/attack_predictions.cfg:86
 msgid "Base damage"
 msgstr "Βασική ζημιά"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/attack_predictions.cfg:84
+#: data/gui/themes/default/dialogs/attack_predictions.cfg:88
 msgid "Time of day modifier"
 msgstr "Τροποποιητής ώρας ημέρας"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/attack_predictions.cfg:85
+#: data/gui/themes/default/dialogs/attack_predictions.cfg:89
 msgid "Leadership bonus"
 msgstr "Μπόνους ηγεσίας"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/attack_predictions.cfg:86
+#: data/gui/themes/default/dialogs/attack_predictions.cfg:90
 msgid "Slowed penalty"
 msgstr "Ποινή επιβράδυνσης"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/attack_predictions.cfg:90
+#: data/gui/themes/default/dialogs/attack_predictions.cfg:94
 msgid "Total damage"
 msgstr "Συνολική Ζημιά"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/attack_predictions.cfg:94
+#: data/gui/themes/default/dialogs/attack_predictions.cfg:98
 msgid "Chance to hit"
 msgstr "Πιθανότητα ευστοχίας"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/attack_predictions.cfg:95
+#: data/gui/themes/default/dialogs/attack_predictions.cfg:99
 msgid "Chance of being unscathed"
 msgstr "Πιθανότητα μη τραυματισμού"
 
 #. [label]
-#: data/gui/themes/default/dialogs/attack_predictions.cfg:184
+#: data/gui/themes/default/dialogs/attack_predictions.cfg:188
 msgid "Expected Battle Result (HP)"
 msgstr "Αναμενόμενο Αποτέλεσμα Μάχης (ΠΖ)"
 
 #. [label]: id=title
-#: data/gui/themes/default/dialogs/attack_predictions.cfg:247
+#: data/gui/themes/default/dialogs/attack_predictions.cfg:251
 msgid "Damage Calculations"
 msgstr "Υπολογισμοί Ζημιάς"
 
 #. [column]
-#: data/gui/themes/default/dialogs/attack_predictions.cfg:270
+#: data/gui/themes/default/dialogs/attack_predictions.cfg:274
 msgid "Attacker"
 msgstr "Επιτιθέμενος"
 
 #. [column]
-#: data/gui/themes/default/dialogs/attack_predictions.cfg:280
+#: data/gui/themes/default/dialogs/attack_predictions.cfg:284
 msgid "Defender"
 msgstr "Αμυνόμενος"
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:191
+#. The campaign_landing^ strings are shown in the right-hand panel when the campaign menu is opened.
+#. This one is the page title, shown in bold.
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:207
+msgid "campaign_landing^Welcome to Wesnoth v1.20"
+msgstr ""
+
+#. [label]
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:209
+msgid ""
+"campaign_landing^<b>If you’re new to Wesnoth</b>, the opening story arc "
+"starts with <span color='#e1e119' style='italic'>The South Guard</span> and "
+"follows the campaigns in the order that they’re listed on the left, "
+"concluding half a century later with <span color='#e1e119' "
+"style='italic'>Heir to the Throne</span>. The intended way to learn both the "
+"story and the game mechanics is to play the campaigns in that order."
+msgstr ""
+
+#. [label]
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:211
+msgid ""
+"campaign_landing^<b>If you’re a returning player</b>, you’ll notice a number "
+"of changes since v1.18:"
+msgstr ""
+
+#. [label]
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:213
+msgid ""
+"campaign_landing^<span color='#e1e119' style='italic'>Heir to the Throne</"
+"span> now features an open world with 33 branching scenarios, each awarding "
+"Konrad unique recruits, companions, or items. The original campaign is still "
+"available as <i>Heir to the Throne, Classic</i>."
+msgstr ""
+
+#. [label]
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:215
+msgid ""
+"campaign_landing^<span color='#e1e119' style='italic'>The Deceiver’s Gambit</"
+"span> replaces <i>Delfador’s Memoirs</i>. Follow a young mage from the "
+"shores of Alduin to the halls of the King as they war against the fierce "
+"orcs of the north. Choose between 23 magic spells as you bear witness to the "
+"rise of a tyrant."
+msgstr ""
+
+#. [label]
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:217
+msgid ""
+"campaign_landing^<span color='#e1e119' style='italic'>Dusk of Dawn</span> is "
+"our first troll campaign. Lead the Golden Flame Tribe out from the bowels of "
+"Irdya and up to the surface world — but beware what awaits you there."
+msgstr ""
+
+#. [label]
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:219
+msgid ""
+"campaign_landing^<span color='#e1e119' style='italic'>Of Pearls and Pirates</"
+"span> is a new beginner-oriented campaign set in a sleepy fishing town on "
+"the Bay of Pearls. When corsairs strike, the villagers must join forces with "
+"the local merfolk and take the fight to the pirates."
+msgstr ""
+
+#. [label]
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:221
+msgid ""
+"campaign_landing^<span color='#e1e119' style='italic'>The South Guard</span> "
+"has been significantly revised, and now replaces the classic <i>Battle "
+"Training</i> tutorial. For players nostalgic for Delfador's tutelage, the "
+"original tutorial is still available as part of <i>Heir to the Throne, "
+"Classic</i>."
+msgstr ""
+
+#. [label]
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:223
+msgid ""
+"campaign_landing^<span color='#e1e119' style='italic'>The Hammer of "
+"Thursagan</span> has been enhanced with story adjustments, improved enemy "
+"AI, a new Thunderer advancement, a redesign of <i>High Pass</i>, and the re-"
+"addition of the formerly removed <i>Mages and Drakes</i>."
+msgstr ""
+
+#. [label]
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:225
+msgid ""
+"campaign_landing^<span color='#e1e119' style='italic'>Winds of Fate</span> "
+"has been rebalanced with much lower recall costs, redesigned wildlife "
+"spawners and AI, and a much larger mid-campaign battle. Several characters "
+"and dialogue sequences were changed for better continuity with other "
+"campaigns."
+msgstr ""
+
+#. [label]
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:227
+msgid ""
+"campaign_landing^For a full list of changes, consult our official changelog "
+"at https://www.wesnoth.org/start/1.20/"
+msgstr ""
+
+#. [label]
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:248
 msgid ""
 "In addition to the mainline campaigns, Wesnoth also has an ever-growing list "
 "of add-on content created by other players available via the Add-ons server, "
@@ -3120,7 +3217,9 @@ msgstr ""
 "οπωσδήποτε!"
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:208
+#. "more than 15" gives a little leeway to add or remove one without changing the translatable text.
+#. It's already ambiguous, 1.18 has 19 campaigns, if you include the tutorial and multiplayer-only World Conquest.
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:265
 msgid ""
 "Wesnoth normally includes more than 15 mainline campaigns, even before "
 "installing any from the add-ons server. If you’ve installed the game via a "
@@ -3137,7 +3236,7 @@ msgstr ""
 #. [label]: id=name
 #. [label]
 #. [toggle_button]: id=unit_name
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:248
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:305
 #: data/gui/themes/default/dialogs/game_load.cfg:170
 #: data/gui/themes/default/dialogs/mp_connect.cfg:159
 #: data/gui/themes/default/dialogs/mp_faction_select.cfg:33
@@ -3148,95 +3247,95 @@ msgid "Name"
 msgstr "Όνομα"
 
 #. [toggle_button]: id=sort_name
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:249
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:306
 msgid "Sort by full campaign name in alphabetical order"
 msgstr "Ταξινόμηση με πλήρες όνομα εκστρατείας σε αλφαβητική σειρά"
 
 #. [toggle_button]: id=sort_time
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:260
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:317
 msgid "Timeline"
 msgstr "Χρονολόγιο"
 
 #. [toggle_button]: id=sort_time
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:261
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:318
 msgid "Sort in approximate chronological order of story events"
 msgstr "Ταξινόμηση σε κατά προσέγγιση χρονολογική σειρά συμβάντων ιστορίας"
 
 #. [multimenu_button]: id=filter_completion
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:271
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:328
 msgid "Filter by campaign completion status"
 msgstr "Φιλτράρισμα με κατάσταση ολοκλήρωσης εκστρατείας"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:274
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:331
 msgid "Not Completed"
 msgstr "Δεν Ολοκληρώθηκε"
 
 #. [option]
 #. campaigns which the player hasn't beaten, rather than campaigns which the author hasn't finished writing
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:276
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:333
 msgid "Show campaigns not completed by player"
 msgstr "Εμφάνιση εκστρατειών που δεν ολοκληρώθηκαν από τον παίκτη"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:280
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:337
 msgid "Completed: Bronze"
 msgstr "Ολοκληρώθηκε: Χάλκινο"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:281
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:338
 msgid "Show campaigns completed at easiest difficulty"
 msgstr "Εμφάνιση εκστρατειών που ολοκληρώθηκαν στην ευκολότερη δυσκολία"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:285
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:342
 msgid "Completed: Silver"
 msgstr "Ολοκληρώθηκε: Ασημένιο"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:286
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:343
 msgid "Show campaigns completed at intermediate difficulties"
 msgstr "Εμφάνιση εκστρατειών που ολοκληρώθηκαν σε ενδιάμεσες δυσκολίες"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:290
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:347
 msgid "Completed: Gold"
 msgstr "Ολοκληρώθηκε: Χρυσό"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:291
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:348
 msgid "Show campaigns completed at hardest difficulty"
 msgstr "Εμφάνιση εκστρατειών που ολοκληρώθηκαν στη δυσκολότερη δυσκολία"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:295
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:352
 msgid "Completed: All"
 msgstr "Ολοκληρώθηκε: Όλα"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:296
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:353
 msgid "Show completed campaigns"
 msgstr "Εμφάνιση ολοκληρωμένων εκστρατειών"
 
 #. [label]
 #. [label]: id=mods_header
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:347
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:404
 #: data/gui/themes/default/dialogs/mp_create_game.cfg:209
 msgid "Modifications:"
 msgstr "Τροποποιήσεις:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:372
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:429
 msgid "Combat:"
 msgstr "Μάχη:"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:387
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:444
 msgid "Default RNG"
 msgstr "Προεπιλεγμένη Γεννήτρια Τυχαίων Αριθμών"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:388
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:445
 msgid ""
 "Pure, unbiased randomness; the way Wesnoth is intended to be played.\n"
 "\n"
@@ -3251,12 +3350,12 @@ msgstr ""
 "δύο φορές ή να αστοχήσετε δύο φορές."
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:393
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:450
 msgid "Predictable RNG"
 msgstr "Προβλέψιμη Γεννήτρια Τυχαίων Αριθμών"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:394
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:451
 msgid ""
 "Identical to Default RNG, except loading a saved game will not change the "
 "outcome of an attack.\n"
@@ -3272,12 +3371,12 @@ msgstr ""
 "ίδια επίθεση ξανά. Και τα δύο χτυπήματα θα χτυπήσουν ακόμα."
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:399
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:456
 msgid "Reduced RNG"
 msgstr "Μειωμένη Γεννήτρια Τυχαίων Αριθμών"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:400
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:457
 msgid ""
 "Hits and misses are much more consistent. This tends to make small-scale "
 "engagements easier to plan.\n"
@@ -3292,36 +3391,36 @@ msgstr ""
 "τουλάχιστον μία φορά και θα αστοχήσετε τουλάχιστον μία φορά."
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:417
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:474
 msgid "Difficulty:"
 msgstr "Δυσκολία:"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:431
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:488
 msgid "Easy"
 msgstr "Εύκολο"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:434
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:491
 msgid "Normal"
 msgstr "Κανονικός"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:437
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:494
 msgid "Hard"
 msgstr "Δύσκολο"
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:494
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:551
 msgid "Play a Campaign"
 msgstr "Παίξτε μια εκστρατεία"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=proceed
 #. [button]: id=ok
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:558
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:615
 #: data/gui/themes/default/dialogs/campaign_difficulty.cfg:221
-#: src/gui/dialogs/campaign_selection.cpp:77
+#: src/gui/dialogs/campaign_selection.cpp:82
 msgid "game^Play"
 msgstr "Παίξε"
 
@@ -3392,70 +3491,70 @@ msgstr "Φόρτωση Πυρήνα"
 #: data/gui/themes/default/dialogs/core_dialog.cfg:228
 #: data/gui/themes/default/dialogs/language_selection.cfg:293
 #: src/gui/dialogs/editor/custom_tod.cpp:172
-#: src/gui/dialogs/editor/edit_unit.cpp:303
+#: src/gui/dialogs/editor/edit_unit.cpp:296
 #: src/preferences/preferences.cpp:1342
 msgid "Select"
 msgstr "Επιλογή"
 
 #. [button]: id=copy_
 #. [button]: id=copy
-#: data/gui/themes/default/dialogs/custom_tod.cfg:53
+#: data/gui/themes/default/dialogs/custom_tod.cfg:57
 #: data/gui/themes/default/dialogs/game_cache_options.cfg:110
-#: data/gui/themes/default/dialogs/game_version.cfg:48
+#: data/gui/themes/default/dialogs/game_version.cfg:54
 #: data/gui/themes/default/dialogs/screenshot_notification.cfg:33
 msgid "filesystem^Copy"
 msgstr "Αντιγραφή"
 
 #. [button]: id=copy_
 #. [button]: id=copy
-#: data/gui/themes/default/dialogs/custom_tod.cfg:54
+#: data/gui/themes/default/dialogs/custom_tod.cfg:58
 #: data/gui/themes/default/dialogs/game_cache_options.cfg:111
-#: data/gui/themes/default/dialogs/game_version.cfg:49
+#: data/gui/themes/default/dialogs/game_version.cfg:55
 #: data/gui/themes/default/dialogs/screenshot_notification.cfg:34
 msgid "Copy this path to clipboard"
 msgstr "Αντιγραφή αυτής της διαδρομής στο πρόχειρο"
 
 #. [button]: id=browse_
 #. [button]: id=browse
-#: data/gui/themes/default/dialogs/custom_tod.cfg:69
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:112
+#: data/gui/themes/default/dialogs/custom_tod.cfg:75
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:118
 #: data/gui/themes/default/dialogs/game_cache_options.cfg:126
-#: data/gui/themes/default/dialogs/game_version.cfg:64
+#: data/gui/themes/default/dialogs/game_version.cfg:72
 msgid "filesystem^Browse"
 msgstr "Αναζήτηση"
 
 #. [button]: id=browse_
 #. [button]: id=browse
-#: data/gui/themes/default/dialogs/custom_tod.cfg:70
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:113
+#: data/gui/themes/default/dialogs/custom_tod.cfg:76
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:119
 #: data/gui/themes/default/dialogs/game_cache_options.cfg:127
-#: data/gui/themes/default/dialogs/game_version.cfg:65
+#: data/gui/themes/default/dialogs/game_version.cfg:73
 msgid "Browse this location using a file manager"
 msgstr "Περιήγηση αυτής της τοποθεσίας με διαχειριστή αρχείων"
 
 #. [button]: id=preview_
-#: data/gui/themes/default/dialogs/custom_tod.cfg:90
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:98
+#: data/gui/themes/default/dialogs/custom_tod.cfg:98
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:102
 msgid "Preview image"
 msgstr "Προεπισκόπηση εικόνας"
 
 #. [button]: id=preview_
-#: data/gui/themes/default/dialogs/custom_tod.cfg:108
+#: data/gui/themes/default/dialogs/custom_tod.cfg:118
 msgid "Play sound"
 msgstr "Αναπαραγωγή ήχου"
 
 #. [label]
-#: data/gui/themes/default/dialogs/custom_tod.cfg:186
+#: data/gui/themes/default/dialogs/custom_tod.cfg:196
 msgid "Edit Time Schedule"
 msgstr "Επεξεργασία Προγράμματος Ώρας"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #. [label]: id=id_label
-#: data/gui/themes/default/dialogs/custom_tod.cfg:216
+#: data/gui/themes/default/dialogs/custom_tod.cfg:226
 #: data/gui/themes/default/dialogs/editor_edit_scenario.cfg:106
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:191
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:645
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:197
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:651
 #: data/gui/themes/default/dialogs/folder_create.cfg:72
 #: data/gui/themes/default/dialogs/game_save.cfg:72
 #: data/gui/themes/default/dialogs/game_save_message.cfg:92
@@ -3463,86 +3562,86 @@ msgstr "Επεξεργασία Προγράμματος Ώρας"
 #: data/gui/themes/default/dialogs/screenshot_notification.cfg:120
 #: data/gui/themes/default/dialogs/tod_new_schedule.cfg:86
 #: src/gui/dialogs/multiplayer/mp_connect.cpp:183
-#: src/gui/dialogs/units_dialog.cpp:239
+#: src/gui/dialogs/units_dialog.cpp:245
 msgid "Name:"
 msgstr "Όνομα:"
 
 #. [label]
 #. [grid]
-#: data/gui/themes/default/dialogs/custom_tod.cfg:244
+#: data/gui/themes/default/dialogs/custom_tod.cfg:254
 #: data/gui/themes/default/dialogs/editor_edit_pbl.cfg:151
 #: data/gui/themes/default/dialogs/editor_edit_pbl_translation.cfg:99
 #: data/gui/themes/default/dialogs/editor_edit_scenario.cfg:140
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:322
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:328
 msgid "Description:"
 msgstr "Περιγραφή:"
 
 #. [label]
 #. [label]: id=id_label
-#: data/gui/themes/default/dialogs/custom_tod.cfg:271
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:144
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:619
+#: data/gui/themes/default/dialogs/custom_tod.cfg:281
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:150
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:625
 #: data/gui/themes/default/dialogs/tod_new_schedule.cfg:46
 msgid "ID:"
 msgstr "Ταυτότητα:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/custom_tod.cfg:352
+#: data/gui/themes/default/dialogs/custom_tod.cfg:362
 msgid "Image:"
 msgstr "Εικόνα:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/custom_tod.cfg:353
+#: data/gui/themes/default/dialogs/custom_tod.cfg:363
 msgid "Mask:"
 msgstr "Μάσκα:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/custom_tod.cfg:354
+#: data/gui/themes/default/dialogs/custom_tod.cfg:364
 msgid "Sound:"
 msgstr "Ήχος:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/custom_tod.cfg:383
+#: data/gui/themes/default/dialogs/custom_tod.cfg:393
 msgid "Lawful Bonus:"
 msgstr "Μπόνους Νομοταγούς:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/custom_tod.cfg:406
+#: data/gui/themes/default/dialogs/custom_tod.cfg:416
 msgid "Red:"
 msgstr "Κόκκινο:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/custom_tod.cfg:407
+#: data/gui/themes/default/dialogs/custom_tod.cfg:417
 msgid "Green:"
 msgstr "Πράσινο:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/custom_tod.cfg:408
+#: data/gui/themes/default/dialogs/custom_tod.cfg:418
 msgid "Blue:"
 msgstr "Μπλε:"
 
 #. [button]: id=new
-#: data/gui/themes/default/dialogs/custom_tod.cfg:472
+#: data/gui/themes/default/dialogs/custom_tod.cfg:482
 msgid "New ToD"
 msgstr "Νέα ΏΗ"
 
 #. [button]: id=delete
-#: data/gui/themes/default/dialogs/custom_tod.cfg:485
+#: data/gui/themes/default/dialogs/custom_tod.cfg:495
 msgid "Delete ToD"
 msgstr "Διαγραφή ΏΗ"
 
 #. [button]: id=preview_color
-#: data/gui/themes/default/dialogs/custom_tod.cfg:498
+#: data/gui/themes/default/dialogs/custom_tod.cfg:508
 msgid "Preview color changes on map"
 msgstr "Προεπισκόπηση αλλαγών χρώματος στον χάρτη"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/themes/default/dialogs/depcheck_confirm_change.cfg:40
-#: src/gui/dialogs/addon/manager.cpp:1029
+#: src/gui/dialogs/addon/manager.cpp:1039
 #: src/gui/dialogs/editor/custom_tod.cpp:187
-#: src/gui/dialogs/editor/edit_unit.cpp:318
-#: src/gui/dialogs/editor/edit_unit.cpp:970 src/gui/dialogs/file_dialog.cpp:371
+#: src/gui/dialogs/editor/edit_unit.cpp:311
+#: src/gui/dialogs/editor/edit_unit.cpp:928 src/gui/dialogs/file_dialog.cpp:371
 #: src/gui/dialogs/file_dialog.cpp:799
 msgid "Confirm"
 msgstr "Επιβεβαίωση"
@@ -3685,7 +3784,7 @@ msgstr ""
 #. [label]: id=icon_label
 #. [grid]: id=grid_atk
 #: data/gui/themes/default/dialogs/editor_edit_pbl.cfg:162
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:661
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:667
 msgid "Icon:"
 msgstr "Εικονίδιο:"
 
@@ -4047,182 +4146,182 @@ msgid "vision^None"
 msgstr "Κανένα"
 
 #. [button]: id=load_unit_type
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:174
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:180
 msgid "Load Unit Type"
 msgstr "Φόρτωση Τύπου Μονάδας"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:208
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:214
 msgid "Unit Image:"
 msgstr "Εικόνα Μονάδας:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:210
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:216
 msgid "Portrait:"
 msgstr "Πορτρέτο:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:221
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:227
 msgid "Level:"
 msgstr "Επίπεδο:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:246
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:252
 #: data/gui/themes/default/dialogs/mp_join_game.cfg:197
 #: data/gui/themes/default/dialogs/mp_staging.cfg:200
 msgid "Gender:"
 msgstr "Φύλο:"
 
 #. [row]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:254
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:260
 msgid "gender^Male"
 msgstr "Αρσενικό"
 
 #. [row]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:255
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:261
 msgid "gender^Female"
 msgstr "Θηλυκό"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:270
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:276
 msgid "Advances to:"
 msgstr "Εξελίσσεται σε:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:296
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:302
 msgid "Race:"
 msgstr "Φυλή:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:349
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:355
 msgid "Alignment:"
 msgstr "Ηθική Στάση:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:375
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:381
 msgid "HP:"
 msgstr "ΠΖ:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:405
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:411
 msgid "XP:"
 msgstr "ΕΜ:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:435
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:441
 msgid "Cost:"
 msgstr "Κόστος:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:465
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:471
 msgid "Movement:"
 msgstr "Κίνηση:"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=title
 #. [tab]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:524
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1206
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:530
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1214
 #: src/gui/widgets/unit_preview_pane.cpp:216
 msgid "Attacks"
 msgstr "Επιθέσεις"
 
 #. [button]: id=atk_new
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:589
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:595
 msgid "New Attack"
 msgstr "Νέα Επίθεση"
 
 #. [button]: id=atk_delete
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:602
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:608
 msgid "Delete Attack"
 msgstr "Διαγραφή Επίθεσης"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:672
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:678
 msgid "Range:"
 msgstr "Εμβέλεια:"
 
 #. [option]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:686
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:693
 msgid "range^Melee"
 msgstr "Σώμα με σώμα"
 
 #. [option]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:690
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:698
 msgid "range^Ranged"
 msgstr "Εξ αποστάσεως"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:731
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:739
 msgid "Damage:"
 msgstr "Ζημιά:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:758
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:766
 msgid "Hits:"
 msgstr "Χτυπήματα:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:786
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:794
 msgid "Specials:"
 msgstr "Ειδικά:"
 
 #. [grid]: id=grid_adv
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:828
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:836
 msgid "Small Profile"
 msgstr "Μικρό Προφίλ"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:839
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:847
 msgid "Abilities:"
 msgstr "Ικανότητες:"
 
 #. [label]: id=movetype_label
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:865
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:873
 msgid "Movetype:"
 msgstr "Τύπος Κίνησης:"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=movement_costs_label
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:908
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:916
 #: src/gui/widgets/unit_preview_pane.cpp:150
 msgid "Movement Costs:"
 msgstr "Κόστος Κίνησης:"
 
 #. [label]: id=defense_label
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:961
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:969
 msgid "Defense:"
 msgstr "Άμυνα:"
 
 #. [label]: id=resistance_label
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1014
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1022
 msgid "Resistances:"
 msgstr "Αντιστάσεις:"
 
 #. [label]: id=usage_label
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1067
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1075
 msgid "AI Usage:"
 msgstr "Χρήση ΤΝ:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1170
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1178
 msgid "Unit Type Editor"
 msgstr "Επεξεργαστής Τύπου Μονάδας"
 
 #. [tab]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1192
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1200
 #: data/gui/themes/default/dialogs/preferences/01_general.cfg:226
 msgid "Main Stats"
 msgstr "Κύρια Χαρακτηριστικά"
 
 #. [tab]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1199
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1207
 #: data/gui/themes/default/dialogs/preferences/06_advanced.cfg:148
 msgid "Advanced"
 msgstr "Προχωρημένα"
 
 #. [tab]
-#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1213
+#: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1221
 msgid "WML View"
 msgstr "Προβολή WML"
 
@@ -4281,7 +4380,7 @@ msgstr "Ύψος:"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=ok
 #: data/gui/themes/default/dialogs/editor_new_map.cfg:116
-#: src/gui/dialogs/units_dialog.cpp:467
+#: src/gui/dialogs/units_dialog.cpp:473
 msgid "Create"
 msgstr "Δημιουργία"
 
@@ -4679,37 +4778,37 @@ msgstr "Ρυθμίσεις Σεναρίου"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=ok
 #: data/gui/themes/default/dialogs/game_stats.cfg:832
-#: src/gui/dialogs/units_dialog.cpp:556
+#: src/gui/dialogs/units_dialog.cpp:562
 msgid "Scroll To"
 msgstr "Κύλιση Σε"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:122
+#: data/gui/themes/default/dialogs/game_version.cfg:130
 msgid "<span font_family='DejaVu Sans'>✦</span> <b>Version:</b>"
 msgstr "<span font_family='DejaVu Sans'>✦</span> <b>Έκδοση:</b>"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:150
+#: data/gui/themes/default/dialogs/game_version.cfg:158
 msgid "<span font_family='DejaVu Sans'>✦</span> <b>Running on:</b>"
 msgstr "<span font_family='DejaVu Sans'>✦</span> <b>Εκτελείται σε:</b>"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:179
+#: data/gui/themes/default/dialogs/game_version.cfg:187
 msgid "<span font_family='DejaVu Sans'>✦</span> <b>Architecture:</b>"
 msgstr "<span font_family='DejaVu Sans'>✦</span> <b>Αρχιτεκτονική:</b>"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:207
+#: data/gui/themes/default/dialogs/game_version.cfg:215
 msgid "<span font_family='DejaVu Sans'>✦</span> <b>Homepage:</b>"
 msgstr "<span font_family='DejaVu Sans'>✦</span> <b>Αρχική σελίδα:</b>"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:239
+#: data/gui/themes/default/dialogs/game_version.cfg:247
 msgid "<span font_family='DejaVu Sans'>✦</span> <b>Wiki:</b>"
 msgstr "<span font_family='DejaVu Sans'>✦</span> <b>Wiki:</b>"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:279
+#: data/gui/themes/default/dialogs/game_version.cfg:287
 msgid ""
 "<i><span font_family='DejaVu Sans'>➤</span> Copy a full report here:</i>"
 msgstr ""
@@ -4717,7 +4816,7 @@ msgstr ""
 "i>"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:299
+#: data/gui/themes/default/dialogs/game_version.cfg:307
 msgid ""
 "<i><span font_family='DejaVu Sans'>➤</span> Report an issue or request a "
 "feature:</i>"
@@ -4726,12 +4825,12 @@ msgstr ""
 "χαρακτηριστικού:</i>"
 
 #. [button]: id=issue
-#: data/gui/themes/default/dialogs/game_version.cfg:312
+#: data/gui/themes/default/dialogs/game_version.cfg:320
 msgid "Report Issue"
 msgstr "Αναφορά Προβλήματος"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:321
+#: data/gui/themes/default/dialogs/game_version.cfg:329
 msgid "<i><span font_family='DejaVu Sans'>➤</span> View Game Manual:</i>"
 msgstr ""
 "<i><span font_family='DejaVu Sans'>➤</span> Προβολή Εγχειριδίου Παιχνιδιού:</"
@@ -4739,12 +4838,12 @@ msgstr ""
 
 #. [button]: id=view_manual
 #. button to open the game manual in the platform's browser.
-#: data/gui/themes/default/dialogs/game_version.cfg:334
+#: data/gui/themes/default/dialogs/game_version.cfg:342
 msgid "View Manual"
 msgstr "Προβολή Εγχειριδίου"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:342
+#: data/gui/themes/default/dialogs/game_version.cfg:350
 msgid ""
 "<i><span font_family='DejaVu Sans'>➤</span> Re-open the version migrator "
 "dialog:</i>"
@@ -4754,52 +4853,52 @@ msgstr ""
 
 #. [button]: id=run_migrator
 #. button to open the version migration dialog manually to re-migrate add-ons and the preferences file
-#: data/gui/themes/default/dialogs/game_version.cfg:355
+#: data/gui/themes/default/dialogs/game_version.cfg:363
 msgid "Migrate"
 msgstr "Μεταφορά"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:392
+#: data/gui/themes/default/dialogs/game_version.cfg:400
 msgid "Game data:"
 msgstr "Δεδομένα παιχνιδιού:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:394
+#: data/gui/themes/default/dialogs/game_version.cfg:402
 msgid "User data:"
 msgstr "Δεδομένα χρήστη:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:396
+#: data/gui/themes/default/dialogs/game_version.cfg:404
 msgid "Saved games:"
 msgstr "Αποθηκευμένα παιχνίδια:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:398
+#: data/gui/themes/default/dialogs/game_version.cfg:406
 msgid "Add-ons:"
 msgstr "Πρόσθετα:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:400
+#: data/gui/themes/default/dialogs/game_version.cfg:408
 msgid "Cache:"
 msgstr "Κρυφή μνήμη:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:402
+#: data/gui/themes/default/dialogs/game_version.cfg:410
 msgid "Logs:"
 msgstr "Καταγραφές:"
 
 #. [grid]
-#: data/gui/themes/default/dialogs/game_version.cfg:404
+#: data/gui/themes/default/dialogs/game_version.cfg:412
 msgid "Screenshots:"
 msgstr "Στιγμιότυπα οθόνης:"
 
 #. [button]: id=open_stderr
-#: data/gui/themes/default/dialogs/game_version.cfg:438
+#: data/gui/themes/default/dialogs/game_version.cfg:446
 msgid "Log File"
 msgstr "Αρχείο Καταγραφής"
 
 #. [button]: id=open_stderr
-#: data/gui/themes/default/dialogs/game_version.cfg:439
+#: data/gui/themes/default/dialogs/game_version.cfg:447
 msgid ""
 "Opens the log file pertaining to the current session, which may contain "
 "useful debug information"
@@ -4808,22 +4907,22 @@ msgstr ""
 "μπορεί να περιέχει χρήσιμες πληροφορίες αποσφαλμάτωσης"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:469
+#: data/gui/themes/default/dialogs/game_version.cfg:477
 msgid "library^Name"
 msgstr "Όνομα"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:480
+#: data/gui/themes/default/dialogs/game_version.cfg:488
 msgid "library^Build version"
 msgstr "Έκδοση κατασκευής"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:492
+#: data/gui/themes/default/dialogs/game_version.cfg:500
 msgid "library^Runtime version"
 msgstr "Έκδοση εκτέλεσης"
 
 #. [label]
-#: data/gui/themes/default/dialogs/game_version.cfg:573
+#: data/gui/themes/default/dialogs/game_version.cfg:581
 msgid ""
 "The following features were selected when building this version of Wesnoth:"
 msgstr ""
@@ -4832,42 +4931,42 @@ msgstr ""
 
 #. [button]: id=forums
 #. this is on a button that opens the Wesnoth forums webpage
-#: data/gui/themes/default/dialogs/game_version.cfg:653
+#: data/gui/themes/default/dialogs/game_version.cfg:661
 msgid "Forums"
 msgstr "Φόρουμ"
 
 #. [button]: id=discord
 #. this is on a button that opens the Wesnoth Discord server webpage
-#: data/gui/themes/default/dialogs/game_version.cfg:672
+#: data/gui/themes/default/dialogs/game_version.cfg:680
 msgid "Discord"
 msgstr "Discord"
 
 #. [button]: id=irc
 #. this is on a button that opens the Wesnoth IRC webpage. IRC is an acronym for Internet Relay Chat
-#: data/gui/themes/default/dialogs/game_version.cfg:691
+#: data/gui/themes/default/dialogs/game_version.cfg:699
 msgid "IRC"
 msgstr "IRC"
 
 #. [button]: id=steam
 #. this is on a button that opens the Wesnoth Steam forums webpage
-#: data/gui/themes/default/dialogs/game_version.cfg:710
+#: data/gui/themes/default/dialogs/game_version.cfg:718
 msgid "Steam"
 msgstr "Steam"
 
 #. [button]: id=reddit
 #. this is on a button that opens the Wesnoth Reddit webpage
-#: data/gui/themes/default/dialogs/game_version.cfg:729
+#: data/gui/themes/default/dialogs/game_version.cfg:737
 msgid "Reddit"
 msgstr "Reddit"
 
 #. [button]: id=donate
 #. this is on a button that opens the Wesnoth SPI webpage for sending donations
-#: data/gui/themes/default/dialogs/game_version.cfg:748
+#: data/gui/themes/default/dialogs/game_version.cfg:756
 msgid "Donate"
 msgstr "Δωρεά"
 
 #. [label]: id=description
-#: data/gui/themes/default/dialogs/game_version.cfg:844
+#: data/gui/themes/default/dialogs/game_version.cfg:852
 msgid "An open source, turn-based strategy game with a high fantasy theme."
 msgstr ""
 "Ένα παιχνίδι στρατηγικής με γύρους ανοιχτού κώδικα με θέμα υψηλή φαντασία."
@@ -4875,7 +4974,7 @@ msgstr ""
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [tab]
 #. [widget]: id=tab_label
-#: data/gui/themes/default/dialogs/game_version.cfg:879
+#: data/gui/themes/default/dialogs/game_version.cfg:887
 #: data/gui/themes/default/dialogs/mp_create_game.cfg:564
 #: data/gui/themes/default/dialogs/preferences/05_multiplayer.cfg:405
 #: data/gui/themes/default/dialogs/server_info.cfg:181
@@ -4884,27 +4983,27 @@ msgid "General"
 msgstr "Γενικά"
 
 #. [tab]
-#: data/gui/themes/default/dialogs/game_version.cfg:885
+#: data/gui/themes/default/dialogs/game_version.cfg:893
 msgid "Paths"
 msgstr "Διαδρομές"
 
 #. [tab]
-#: data/gui/themes/default/dialogs/game_version.cfg:891
+#: data/gui/themes/default/dialogs/game_version.cfg:899
 msgid "Libraries"
 msgstr "Βιβλιοθήκες"
 
 #. [tab]
-#: data/gui/themes/default/dialogs/game_version.cfg:897
+#: data/gui/themes/default/dialogs/game_version.cfg:905
 msgid "Features"
 msgstr "Δυνατότητες"
 
 #. [button]: id=credits
-#: data/gui/themes/default/dialogs/game_version.cfg:957
+#: data/gui/themes/default/dialogs/game_version.cfg:965
 msgid "Credits"
 msgstr "Ευχαριστίες"
 
 #. [button]: id=license
-#: data/gui/themes/default/dialogs/game_version.cfg:972
+#: data/gui/themes/default/dialogs/game_version.cfg:980
 msgid "License"
 msgstr " Αδεια"
 
@@ -5805,14 +5904,14 @@ msgstr "Τυχαίο"
 #. [row]
 #. [toggle_button]: id=male_toggle
 #: data/gui/themes/default/dialogs/mp_faction_select.cfg:212
-#: data/gui/themes/default/dialogs/units_dialog.cfg:498
+#: data/gui/themes/default/dialogs/units_dialog.cfg:497
 msgid "Male"
 msgstr "Αρσενικό"
 
 #. [row]
 #. [toggle_button]: id=female_toggle
 #: data/gui/themes/default/dialogs/mp_faction_select.cfg:214
-#: data/gui/themes/default/dialogs/units_dialog.cfg:509
+#: data/gui/themes/default/dialogs/units_dialog.cfg:508
 msgid "Female"
 msgstr "Θηλυκό"
 
@@ -6972,7 +7071,7 @@ msgstr "Επίθεση σε Εχθρό"
 #. Filled five pointed star, used as favorite unit marker
 #. Filled five pointed star, used as favorite unit marker
 #: data/gui/themes/default/dialogs/units_dialog.cfg:24
-#: data/gui/themes/default/dialogs/units_dialog.cfg:574
+#: data/gui/themes/default/dialogs/units_dialog.cfg:573
 msgid "★"
 msgstr "★"
 
@@ -7017,22 +7116,22 @@ msgid "Traits"
 msgstr "Χαρακτηριστικά "
 
 #. [text_box]: id=filter_box
-#: data/gui/themes/default/dialogs/units_dialog.cfg:405
+#: data/gui/themes/default/dialogs/units_dialog.cfg:404
 msgid "Search for unit name, unit type name, unit level, or trait"
 msgstr "Αναζήτηση ονόματος μονάδας, τύπου μονάδας, επιπέδου ή χαρακτηριστικού"
 
 #. [button]: id=dismiss
-#: data/gui/themes/default/dialogs/units_dialog.cfg:550
+#: data/gui/themes/default/dialogs/units_dialog.cfg:549
 msgid "Dismiss"
 msgstr "Απόλυση"
 
 #. [button]: id=rename
-#: data/gui/themes/default/dialogs/units_dialog.cfg:561
+#: data/gui/themes/default/dialogs/units_dialog.cfg:560
 msgid "Rename"
 msgstr "Μετονομασία"
 
 #. [button]: id=mark_favorite
-#: data/gui/themes/default/dialogs/units_dialog.cfg:575
+#: data/gui/themes/default/dialogs/units_dialog.cfg:574
 msgid "Mark/unmark the selected unit as favorite"
 msgstr "Σήμανση/αποσήμανση της επιλεγμένης μονάδας ως αγαπημένη"
 
@@ -7108,23 +7207,23 @@ msgstr ""
 msgid "Urban Jungle"
 msgstr ""
 
-#: src/build_info.cpp:285
+#: src/build_info.cpp:297
 msgid "feature^Lua console completion"
 msgstr "Συμπλήρωση κονσόλας Lua"
 
-#: src/build_info.cpp:292
+#: src/build_info.cpp:304
 msgid "feature^D-Bus notifications back end"
 msgstr "Σύστημα ειδοποιήσεων D-Bus"
 
-#: src/build_info.cpp:301
+#: src/build_info.cpp:313
 msgid "feature^Win32 notifications back end"
 msgstr "Σύστημα ειδοποιήσεων Win32"
 
-#: src/build_info.cpp:307
+#: src/build_info.cpp:319
 msgid "feature^Cocoa notifications back end"
 msgstr "Σύστημα ειδοποιήσεων Cocoa"
 
-#: src/build_info.cpp:346 src/desktop/version.cpp:129
+#: src/build_info.cpp:358 src/desktop/version.cpp:129
 msgid "cpu_architecture^<unknown>"
 msgstr "<άγνωστη>"
 
@@ -7214,7 +7313,7 @@ msgstr "$prefix, $next"
 msgid "disjunct end^$prefix, or $last"
 msgstr "$prefix, ή $last"
 
-#: src/gui/core/canvas.cpp:259
+#: src/gui/core/canvas.cpp:289
 msgid "Image doesn’t fit on canvas."
 msgstr "Η εικόνα δεν χωράει στον καμβά."
 
@@ -7256,13 +7355,14 @@ msgstr "Ολοκληρώθηκε $count/$total"
 #: src/gui/dialogs/addon/addon_server_info.cpp:95
 #: src/gui/dialogs/addon/addon_server_info.cpp:120
 #: src/gui/dialogs/addon/addon_server_info.cpp:148
-#: src/gui/dialogs/addon/manager.cpp:995 src/gui/dialogs/addon/manager.cpp:1037
+#: src/gui/dialogs/addon/manager.cpp:1005
+#: src/gui/dialogs/addon/manager.cpp:1047
 msgid "The server responded with an error:"
 msgstr "Ο διακομιστής απάντησε με σφάλμα:"
 
 #: src/gui/dialogs/addon/addon_server_info.cpp:97
-#: src/gui/dialogs/addon/manager.cpp:1013
-#: src/gui/dialogs/addon/manager.cpp:1040
+#: src/gui/dialogs/addon/manager.cpp:1023
+#: src/gui/dialogs/addon/manager.cpp:1050
 #: src/gui/dialogs/multiplayer/mp_join_game.cpp:514
 msgid "Response"
 msgstr "Απάντηση"
@@ -7515,24 +7615,24 @@ msgstr "φθίνουσα"
 msgid "newest to oldest"
 msgstr "από νεότερο σε παλαιότερο"
 
-#: src/gui/dialogs/addon/manager.cpp:566
+#: src/gui/dialogs/addon/manager.cpp:572
 msgid "addons^Back to List"
 msgstr "Πίσω στη Λίστα"
 
-#: src/gui/dialogs/addon/manager.cpp:578
+#: src/gui/dialogs/addon/manager.cpp:584
 msgid "An error occurred while downloading the add-ons list from the server."
 msgstr ""
 "Παρουσιάστηκε σφάλμα κατά τη λήψη της λίστας επεκτάσεων από τον διακομιστή."
 
-#: src/gui/dialogs/addon/manager.cpp:616
+#: src/gui/dialogs/addon/manager.cpp:622
 msgid "No Add-ons Available"
 msgstr "Δεν Υπάρχουν Διαθέσιμα Πρόσθετα"
 
-#: src/gui/dialogs/addon/manager.cpp:616
+#: src/gui/dialogs/addon/manager.cpp:622
 msgid "There are no add-ons available for download from this server."
 msgstr "Δεν υπάρχουν διαθέσιμα πρόσθετα για λήψη από αυτόν τον διακομιστή."
 
-#: src/gui/dialogs/addon/manager.cpp:880
+#: src/gui/dialogs/addon/manager.cpp:890
 msgid ""
 "The following add-on appears to have publishing or version control "
 "information stored locally, and will not be removed:"
@@ -7540,15 +7640,15 @@ msgstr ""
 "Το ακόλουθο πρόσθετο φαίνεται να έχει πληροφορίες δημοσίευσης ή ελέγχου "
 "εκδόσεων αποθηκευμένες τοπικά, και δεν θα αφαιρεθεί:"
 
-#: src/gui/dialogs/addon/manager.cpp:888
+#: src/gui/dialogs/addon/manager.cpp:898
 msgid "The following add-on could not be deleted properly:"
 msgstr "Η ακόλουθη επέκταση δεν μπόρεσε να διαγραφεί σωστά:"
 
-#: src/gui/dialogs/addon/manager.cpp:968
+#: src/gui/dialogs/addon/manager.cpp:978
 msgid "Warning"
 msgstr "Προειδοποίηση"
 
-#: src/gui/dialogs/addon/manager.cpp:969
+#: src/gui/dialogs/addon/manager.cpp:979
 msgid ""
 "The remote version of this add-on is greater or equal to the version being "
 "uploaded. Do you really wish to continue?"
@@ -7556,23 +7656,23 @@ msgstr ""
 "Η απομακρυσμένη έκδοση αυτού του πρόσθετου είναι μεγαλύτερη ή ίση με την "
 "έκδοση που μεταφορτώνεται. Θέλετε πραγματικά να συνεχίσετε;"
 
-#: src/gui/dialogs/addon/manager.cpp:987
+#: src/gui/dialogs/addon/manager.cpp:997
 msgid "The passphrase attribute cannot be present when forum_auth is used."
 msgstr ""
 "Το χαρακτηριστικό passphrase δεν μπορεί να υπάρχει όταν χρησιμοποιείται το "
 "forum_auth."
 
-#: src/gui/dialogs/addon/manager.cpp:992
+#: src/gui/dialogs/addon/manager.cpp:1002
 msgid "Invalid icon path. Make sure the path points to a valid image."
 msgstr ""
 "Μη έγκυρη διαδρομή εικονιδίου. Βεβαιωθείτε ότι η διαδρομή δείχνει σε έγκυρη "
 "εικόνα."
 
-#: src/gui/dialogs/addon/manager.cpp:998
+#: src/gui/dialogs/addon/manager.cpp:1008
 msgid "The add-on was rejected by the server:"
 msgstr "Το πρόσθετο απορρίφθηκε από τον διακομιστή:"
 
-#: src/gui/dialogs/addon/manager.cpp:1025
+#: src/gui/dialogs/addon/manager.cpp:1035
 msgid ""
 "Deleting '$addon|' will permanently erase its download and upload counts on "
 "the add-ons server. Do you really wish to continue?"
@@ -7580,23 +7680,23 @@ msgstr ""
 "Η διαγραφή του '$addon|' θα διαγράψει οριστικά τους μετρητές λήψεων και "
 "μεταφορτώσεών του στον διακομιστή πρόσθετων. Θέλετε πραγματικά να συνεχίσετε;"
 
-#: src/gui/dialogs/addon/manager.cpp:1057
+#: src/gui/dialogs/addon/manager.cpp:1067
 msgid "Do you want to uninstall '$addon|'?"
 msgstr "Θέλετε να απεγκαταστήσετε το '$addon|';"
 
 #. TRANSLATORS: Month + day of month + year + 12-hour time, eg 'November 02 2021, 1:59 PM'. Format for your locale.
 #. Format reference: https://www.boost.org/doc/libs/1_85_0/doc/html/date_time/date_time_io.html#date_time.format_flags
-#: src/gui/dialogs/addon/manager.cpp:1090
+#: src/gui/dialogs/addon/manager.cpp:1100
 msgid "%B %d %Y, %I:%M %p"
 msgstr "%d %B %Y, %I:%M %p"
 
 #. TRANSLATORS: Month + day of month + year + 24-hour time, eg 'November 02 2021, 13:59'. Format for your locale.
 #. Format reference: https://www.boost.org/doc/libs/1_85_0/doc/html/date_time/date_time_io.html#date_time.format_flags
-#: src/gui/dialogs/addon/manager.cpp:1093
+#: src/gui/dialogs/addon/manager.cpp:1103
 msgid "%B %d %Y, %H:%M"
 msgstr "%d %B %Y, %H:%M"
 
-#: src/gui/dialogs/addon/manager.cpp:1148
+#: src/gui/dialogs/addon/manager.cpp:1158
 msgid "url^None"
 msgstr "Κανένα"
 
@@ -7620,19 +7720,19 @@ msgstr "Αντοχή επιτιθέμενου εναντίον"
 msgid "Attacker vulnerability vs"
 msgstr "Ευπάθεια επιτιθέμενου εναντίον"
 
-#: src/gui/dialogs/campaign_selection.cpp:77
+#: src/gui/dialogs/campaign_selection.cpp:82
 msgid "game^Get Add-ons"
 msgstr "Λήψη Πρόσθετων"
 
-#: src/gui/dialogs/campaign_selection.cpp:388
+#: src/gui/dialogs/campaign_selection.cpp:409
 msgid "More campaigns..."
 msgstr "Περισσότερες εκστρατείες..."
 
-#: src/gui/dialogs/campaign_selection.cpp:402
+#: src/gui/dialogs/campaign_selection.cpp:424
 msgid "Missing Campaigns"
 msgstr "Εκστρατείες που Λείπουν"
 
-#: src/gui/dialogs/campaign_selection.cpp:436
+#: src/gui/dialogs/campaign_selection.cpp:458
 #: src/gui/dialogs/multiplayer/lobby.cpp:435
 msgid "active_modifications^None"
 msgstr "Κανένα"
@@ -7670,12 +7770,12 @@ msgstr ""
 "Παρακαλώ επιλέξτε μια συμβατή."
 
 #: src/gui/dialogs/editor/custom_tod.cpp:171
-#: src/gui/dialogs/editor/edit_unit.cpp:302
+#: src/gui/dialogs/editor/edit_unit.cpp:295
 msgid "Choose File"
 msgstr "Επιλογή Αρχείου"
 
 #: src/gui/dialogs/editor/custom_tod.cpp:182
-#: src/gui/dialogs/editor/edit_unit.cpp:313
+#: src/gui/dialogs/editor/edit_unit.cpp:306
 msgid ""
 "This file is outside Wesnoth’s data dirs. Do you wish to copy it into your "
 "add-on?"
@@ -7772,31 +7872,31 @@ msgstr "Επιτυχία"
 msgid "Choose an icon"
 msgstr "Επιλέξτε ένα εικονίδιο"
 
-#: src/gui/dialogs/editor/edit_unit.cpp:187
+#: src/gui/dialogs/editor/edit_unit.cpp:180
 msgid "scout"
 msgstr "ανιχνευτής"
 
-#: src/gui/dialogs/editor/edit_unit.cpp:188
+#: src/gui/dialogs/editor/edit_unit.cpp:181
 msgid "fighter"
 msgstr "μαχητής"
 
-#: src/gui/dialogs/editor/edit_unit.cpp:189
+#: src/gui/dialogs/editor/edit_unit.cpp:182
 msgid "archer"
 msgstr "Τοξότης"
 
-#: src/gui/dialogs/editor/edit_unit.cpp:190
+#: src/gui/dialogs/editor/edit_unit.cpp:183
 msgid "mixed fighter"
 msgstr "μικτός μαχητής"
 
-#: src/gui/dialogs/editor/edit_unit.cpp:191
+#: src/gui/dialogs/editor/edit_unit.cpp:184
 msgid "healer"
 msgstr "Θεραπευτής"
 
-#: src/gui/dialogs/editor/edit_unit.cpp:969
+#: src/gui/dialogs/editor/edit_unit.cpp:927
 msgid "Unsaved changes will be lost. Do you want to leave?"
 msgstr "Οι μη αποθηκευμένες αλλαγές θα χαθούν. Θέλετε να φύγετε;"
 
-#: src/gui/dialogs/editor/edit_unit.cpp:988
+#: src/gui/dialogs/editor/edit_unit.cpp:946
 msgid "Unit type saved."
 msgstr "Ο τύπος μονάδας αποθηκεύτηκε."
 
@@ -7929,60 +8029,60 @@ msgstr "Δεν Υπάρχουν Αποθηκευμένα Παιχνίδια"
 msgid "There are no saved games to load."
 msgstr "Δεν υπάρχουν αποθηκευμένα παιχνίδια για φόρτωση."
 
-#: src/gui/dialogs/game_load.cpp:144
+#: src/gui/dialogs/game_load.cpp:150
 msgid "game_version^Current Version"
 msgstr "Τρέχουσα Έκδοση"
 
-#: src/gui/dialogs/game_load.cpp:148
+#: src/gui/dialogs/game_load.cpp:154
 msgid "game_version^Wesnoth $version"
 msgstr "Wesnoth $version"
 
 #. TRANSLATORS: "reserve" refers to units on the recall list
-#: src/gui/dialogs/game_load.cpp:234
+#: src/gui/dialogs/game_load.cpp:240
 msgid "$active active, $reserve reserve"
 msgstr "$active ενεργοί, $reserve εφεδρεία"
 
-#: src/gui/dialogs/game_load.cpp:289
+#: src/gui/dialogs/game_load.cpp:295
 msgid "The selected file is corrupt: "
 msgstr "Το επιλεγμένο αρχείο είναι κατεστραμμένο: "
 
-#: src/gui/dialogs/game_load.cpp:329
+#: src/gui/dialogs/game_load.cpp:335
 msgid "(Invalid)"
 msgstr "(Άκυρο)"
 
-#: src/gui/dialogs/game_load.cpp:354
+#: src/gui/dialogs/game_load.cpp:360
 msgid "Campaign: $campaign_name"
 msgstr "Εκστρατεία: $campaign_name"
 
-#: src/gui/dialogs/game_load.cpp:366
+#: src/gui/dialogs/game_load.cpp:372
 msgid "Tutorial"
 msgstr "Εκμάθηση"
 
-#: src/gui/dialogs/game_load.cpp:369
+#: src/gui/dialogs/game_load.cpp:375
 msgid "Test scenario"
 msgstr "Δοκιμαστική αποστολή"
 
-#: src/gui/dialogs/game_load.cpp:379
+#: src/gui/dialogs/game_load.cpp:385
 msgid "Replay"
 msgstr "Επανάληψη"
 
-#: src/gui/dialogs/game_load.cpp:381
+#: src/gui/dialogs/game_load.cpp:387
 msgid "Turn"
 msgstr "Γύρος"
 
-#: src/gui/dialogs/game_load.cpp:383
+#: src/gui/dialogs/game_load.cpp:389
 msgid "Scenario start"
 msgstr "Αρχή αποστολής"
 
-#: src/gui/dialogs/game_load.cpp:395
+#: src/gui/dialogs/game_load.cpp:401
 msgid "Difficulty: "
 msgstr "Δυσκολία: "
 
-#: src/gui/dialogs/game_load.cpp:418
+#: src/gui/dialogs/game_load.cpp:424
 msgid "Version: "
 msgstr "Έκδοση: "
 
-#: src/gui/dialogs/game_load.cpp:423
+#: src/gui/dialogs/game_load.cpp:429
 msgid "Modifications: "
 msgstr "Τροποποιήσεις: "
 
@@ -8288,41 +8388,41 @@ msgstr "Προσαρμοσμένα Σενάρια"
 msgid "Random Maps"
 msgstr "Τυχαίοι Χάρτες"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:285
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:286
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:282
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:283
 msgid "No games found."
 msgstr "Δεν βρέθηκαν παιχνίδια."
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:347
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:344
 msgid "No eras found."
 msgstr "Δεν βρέθηκαν εποχές."
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:348
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:345
 msgid "No eras found"
 msgstr "Δεν βρέθηκαν εποχές"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:617
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:622
 msgid "No eras available for this game."
 msgstr "Δεν υπάρχουν διαθέσιμες εποχές για αυτό το παιχνίδι."
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:869
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:874
 msgid "number of players^$min to $max"
 msgstr "$min έως $max"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1022
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1027
 msgid "The selected game has no sides!"
 msgstr "Το επιλεγμένο παιχνίδι δεν έχει πλευρές!"
 
 #. TRANSLATORS: This sentence will be followed by some details of the error, most likely the "Map could not be loaded" message from create_engine.cpp
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1029
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1034
 msgid "The selected game cannot be created."
 msgstr "Το επιλεγμένο παιχνίδι δεν μπορεί να δημιουργηθεί."
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1102
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1107
 msgid "Choose Starting Scenario"
 msgstr "Επιλέξτε Αρχικό Σενάριο"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1102
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1107
 msgid "Select at which point to begin this campaign."
 msgstr "Επιλέξτε από ποιο σημείο να αρχίσει αυτή η εκστρατεία."
 
@@ -8511,65 +8611,65 @@ msgstr "Έκδοση $version"
 msgid "Choose Test Scenario"
 msgstr "Επιλογή Σεναρίου Δοκιμής"
 
-#: src/gui/dialogs/units_dialog.cpp:239 src/hotkey/hotkey_command.cpp:103
+#: src/gui/dialogs/units_dialog.cpp:245 src/hotkey/hotkey_command.cpp:103
 msgid "Rename Unit"
 msgstr "Μετονομασία Μονάδας"
 
-#: src/gui/dialogs/units_dialog.cpp:272
+#: src/gui/dialogs/units_dialog.cpp:278
 msgid "This unit requires no upkeep."
 msgstr "Αυτή η μονάδα δεν απαιτεί συντήρηση."
 
-#: src/gui/dialogs/units_dialog.cpp:273 src/gui/dialogs/units_dialog.cpp:278
-#: src/gui/dialogs/units_dialog.cpp:283
+#: src/gui/dialogs/units_dialog.cpp:279 src/gui/dialogs/units_dialog.cpp:284
+#: src/gui/dialogs/units_dialog.cpp:289
 msgid "Do you really want to dismiss him?"
 msgstr "Θέλετε πραγματικά να τον απολύσετε;"
 
-#: src/gui/dialogs/units_dialog.cpp:274 src/gui/dialogs/units_dialog.cpp:279
-#: src/gui/dialogs/units_dialog.cpp:284
+#: src/gui/dialogs/units_dialog.cpp:280 src/gui/dialogs/units_dialog.cpp:285
+#: src/gui/dialogs/units_dialog.cpp:290
 msgid "Do you really want to dismiss her?"
 msgstr "Θέλετε πραγματικά να την απολύσετε;"
 
-#: src/gui/dialogs/units_dialog.cpp:277
+#: src/gui/dialogs/units_dialog.cpp:283
 msgid "This unit is an experienced one, having advanced levels."
 msgstr "Αυτή η μονάδα είναι έμπειρη, έχοντας προχωρήσει επίπεδα."
 
-#: src/gui/dialogs/units_dialog.cpp:282
+#: src/gui/dialogs/units_dialog.cpp:288
 msgid "This unit is close to advancing a level."
 msgstr "Αυτή η μονάδα πλησιάζει να προχωρήσει ένα επίπεδο."
 
-#: src/gui/dialogs/units_dialog.cpp:288
+#: src/gui/dialogs/units_dialog.cpp:294
 msgid "Dismiss Unit"
 msgstr "Απόλυση Μονάδας"
 
-#: src/gui/dialogs/units_dialog.cpp:430
+#: src/gui/dialogs/units_dialog.cpp:436
 msgid "unit_variation^Default Variation"
 msgstr "Προεπιλεγμένη Παραλλαγή"
 
-#: src/gui/dialogs/units_dialog.cpp:466
+#: src/gui/dialogs/units_dialog.cpp:472
 msgid "Create Unit"
 msgstr "Δημιουργία Μονάδας"
 
-#: src/gui/dialogs/units_dialog.cpp:537
+#: src/gui/dialogs/units_dialog.cpp:543
 msgid "Recruit Unit"
 msgstr "Στρατολόγηση Μονάδας"
 
-#: src/gui/dialogs/units_dialog.cpp:538 src/hotkey/hotkey_command.cpp:111
+#: src/gui/dialogs/units_dialog.cpp:544 src/hotkey/hotkey_command.cpp:111
 msgid "Recruit"
 msgstr "Στρατολόγηση"
 
-#: src/gui/dialogs/units_dialog.cpp:555 src/hotkey/hotkey_command.cpp:129
+#: src/gui/dialogs/units_dialog.cpp:561 src/hotkey/hotkey_command.cpp:129
 msgid "Unit List"
 msgstr "Λίστα Μονάδων"
 
-#: src/gui/dialogs/units_dialog.cpp:699
+#: src/gui/dialogs/units_dialog.cpp:705
 msgid "Recall Unit"
 msgstr "Ανάκληση Μονάδας"
 
-#: src/gui/dialogs/units_dialog.cpp:700 src/hotkey/hotkey_command.cpp:113
+#: src/gui/dialogs/units_dialog.cpp:706 src/hotkey/hotkey_command.cpp:113
 msgid "Recall"
 msgstr "Ανάκληση"
 
-#: src/gui/dialogs/units_dialog.cpp:828
+#: src/gui/dialogs/units_dialog.cpp:834
 msgid ""
 "This unit cannot be recalled because you will not have enough gold at this "
 "point in your plan."
@@ -8577,7 +8677,7 @@ msgstr ""
 "Αυτή η μονάδα δεν μπορεί να ανακληθεί επειδή δεν θα έχετε αρκετό χρυσό σε "
 "αυτό το σημείο του σχεδίου σας."
 
-#: src/gui/dialogs/units_dialog.cpp:830
+#: src/gui/dialogs/units_dialog.cpp:836
 msgid "This unit cannot be recalled because you do not have enough gold."
 msgstr "Αυτή η μονάδα δεν μπορεί να ανακληθεί επειδή δεν έχετε αρκετό χρυσό."
 
@@ -8626,7 +8726,7 @@ msgstr ""
 "Ξεκίνησε ιδιωτικό μήνυμα με τον/την <i>$name</i>. Αν δεν θέλετε να λαμβάνετε "
 "μηνύματα από αυτόν τον παίκτη, πληκτρολογήστε <i>/ignore $name</i>"
 
-#: src/gui/widgets/helper.cpp:148
+#: src/gui/widgets/helper.cpp:147
 msgid "Mandatory widget ‘$id’ hasn't been defined."
 msgstr "Το υποχρεωτικό widget '$id' δεν έχει οριστεί."
 
@@ -8710,11 +8810,11 @@ msgstr "Βρέθηκε widget με helptip αλλά χωρίς tooltip."
 msgid "No grid defined for tab container control"
 msgstr "Δεν έχει οριστεί πλέγμα για στοιχείο ελέγχου περιέκτη καρτελών"
 
-#: src/gui/widgets/tree_view.cpp:287
+#: src/gui/widgets/tree_view.cpp:289
 msgid "No nodes defined for a tree view."
 msgstr "Δεν έχουν οριστεί κόμβοι για προβολή δέντρου."
 
-#: src/gui/widgets/tree_view.cpp:317
+#: src/gui/widgets/tree_view.cpp:319
 msgid "[node]id ‘root’ is reserved for the implementation."
 msgstr "Το [node]id 'root' είναι δεσμευμένο για την υλοποίηση."
 

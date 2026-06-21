@@ -1,43 +1,192 @@
-## Version 1.19.20+dev
+## Version 1.19.24+dev
 ### Add-ons client
 ### Add-ons server
 ### Campaigns
-   * Dusk of Dawn
-     * S02 "A Dream": remove "fearless" trait, but spawn more higher-level woses instead.
-   * The Hammer of Thursagan
-     * Shortened turn limits on several long scenarios.
-     * Decreased player gold from 100 to 80 on most scenarios.
-     * S08 "The Siege of Kal Kartha": increased enemy gold.
-     * S10 "The Underlevels": reduced number of villages, and increased Karrag's income.
    * Heir to the Throne
-     * Fixed a serious issue where the "Replacement Weapons" tweak would trigger on all sides' recruits, not just Konrad's.
-     * Moremirmu: significantly increased hitpoints, but decreased speed and damage.
-     * S02 "Flight of the Elves": fixed Konrad winning after killing only 2 enemy leaders, instead of all of them.
-     * S07 "Muff Malal's Peninsula": Moremirmu is now in a safer position, and much less likely to get bad RNG and die early.
-     * S22 "Glamdrol": allying with the Stoneskins now costs less gold, but Konrad will lose if he doesn't pillage enough gold to meet his pledge.
-     * S30 "The Sceptre of Fire": made Li'sar more difficult to assassinate with Fire Wraiths. This strategy should still be possible, but it should now require more significant investment.
-     * S30 "The Sceptre of Fire": Delfador can now continue recruiting even while searching for the Sceptre.
-     * S47, S48, and S50: A few enemy units will now defect when the Sceptre is first used against human opponents.
-   * Winds of Fate
-     * Lower recall costs further.
-     * Adjust and replace some characters that tie-in with the other campaigns.
-     * S01 "The Hunt": fewer forest lions.
-     * S06 "Landfall": tweak enemy starting gold
-     * S08 "Overlook": more consistent enemy spawn recognition
-     * S11 "Crosswind": fix issues with non-clasher units attempting to read their secrets
+     * S03 "Blackwater Port": added a secondary, coastal entry point for this scenario, so Konrad can make better use of Merfolk if he has them.
 ### Editor
 ### Multiplayer
 ### Lua API
 ### Packaging
 ### Terrain
 ### Translations
-   * Updated translations: Bengali, British English, Chinese (Simplified), French, Greek, Hungarian, Italian, Spanish
 ### Units
-   * All ships with ram attacks:
-     * Removed the "naval" weapon special, allowing them to ram targets on coastal land.
 ### User interface
 ### WML Engine
 ### Miscellaneous and Bug Fixes
+### Android
+
+## Version 1.19.24
+### Campaigns
+   * The South Guard
+     * S04 "Choice in the Fog": both choices should now be more similar in difficulty
+     * S06a "Vengeance": increased the survival turns, but decreased initial enemy gold/units.
+   * Heir to the Throne
+     * S07 "Muff Malal's Peninsula": fixed incorrect portrait for Muff Malal in the time over event.
+     * S28 "The Lost General": fixed "Cavefish" achievement triggering if you didn't recruit/recall any units at all.
+     * S50 "The Battle For Wesnoth": Asheviere should now more intelligently resist assassination strategies.
+     * S50 "The Battle For Wesnoth": fix "Canon" achievement being awarded even if you hadn't played "The Dwarven Doors".
+     * Fix replays with Li'sar's Heavy Infantrymen causing desyncs.
+   * The Deceivers Gambit
+     * S04 "The Sylvan Seer": use new Silverback image from Renlie_Cocoa.
+### Multiplayer
+   * Added new "Undead Siege" song by Tomek Szczęsny.
+### Translations
+   * Updated translations: Bengali, British English, Czech, French, German, Italian, Polish, Portuguese (Brazil), Spanish
+### Miscellaneous and Bug Fixes
+   * Resolved not all translations being available for selection on Windows builds. (GitHub #11112)
+   * Fixed movement and attacks remaining not being reset after undoing a recall.
+   * Fixed intermittent crashes due to using an invalid cache reference.
+### Android
+   * Fixed automatic language selection not working.
+
+## Version 1.19.23
+### Campaigns
+   * Heir to the Throne
+     * Granite Golem: added "regenerates +4" ability, cost reduced from 35 -> 30, damage reduced from 35 -> 32
+     * Fix Elrian's Tath event triggering even if you hadn't yet completed Isle of Alduin.
+     * Fix Elrian's Tath event not trigering after completing The Sceptre of Fire.
+     * S06 "Isle of Alduin": fix Konrad and Elrian discussing Seimus too early.
+     * S22 "Glamdrol": end when turns run out, not when side 1's last turn ends.
+     * S30 "The Sceptre of Fire": made Giant Spider AI more predictable.
+     * S43 "Cliffs of Thoria": fix the Horn of Glamdrol healing Warven before he's been spotted.
+     * S50 "The Battle For Wesnoth": rebalanced to encourage dominating the map rather than rushing Asheviere.
+### Translations
+   * Updated translations: Bengali, British English, Chinese (Simplified), Czech, Finnish, French, German, Italian, Portuguese (Brazil), Spanish
+### WML Engine
+   * WFL: fixed serialization of empty map literals
+   * WFL: fixed double multiplication when converting a config attribute to a decimal value
+   * Removed deprecated macros
+     * `EARLY_FINISH_BONUS_NOTE`
+     * `NO_EARLY_FINISH_BONUS_NOTE`
+     * `NO_GOLD_CARRYOVER_NOTE`
+     * `NEW_GOLD_CARRYOVER_NOTE_100`
+     * `NEW_GOLD_CARRYOVER_NOTE_40`
+     * `NEW_GOLD_CARRYOVER_NOTE_20`
+     * `MISSILE_FRAME_FIREBALL`
+     * `MESSAGE`
+     * `STORY_PART_SPEECH`
+     * `LOYAL_UNDEAD_UNIT`
+     * `ON_SIGHTING`
+     * `MAKE_AI_SIDE_PERSISTENT`
+     * `DRAKE_FLYING_ANIM`
+     * `NO_INTERRUPT_NO_UNDO`
+     * `ENABLE_NIGHTBLADE`
+### Miscellaneous and Bug Fixes
+   * Fixed crashes when starting some campaigns when playing on Steam+Linux
+
+## Version 1.19.22
+### Campaigns
+   * Heir to the Throne
+     * S22 "Glamdrol": fixed a lua error that would occur if Konrad completed the scenario without pledging any gold to the Stoneskins.
+   * Liberty
+     * S04 "Unlawful Orders": Kestrel's keep no longer gets blocked by his Lieutenant on turn 4.
+     * S04 "Unlawful Orders": fix enemy soldiers having names.
+   * The Deceivers Gambit
+     * S04 "The Sylvan Seer": Silverback image is now smaller at lower difficulties.
+     * S04 "The Sylvan Seer": fix Delfador being counterspelled even when outside the counterspell AOE.
+     * S04 "The Sylvan Seer": mirror Kalenz now transforms into a Lich when you move adjacent, not after your first attack (fixes an issue with inconsistent strikes/attack type).
+     * S04 "The Sylvan Seer": fix Delfador's familiar retaining 100% hit / 0% defense even after this scenario had ended.
+     * S04 "The Sylvan Seer": fix final kill not awarding XP.
+     * S04 "The Sylvan Seer": fix mirror magical attacks not displaying 100% hit chance.
+     * S05 "The Deceiver": fix your first recall being non-undoable.
+     * S05 "The Deceiver": Garard now waits one more turn before attacking the orcs.
+     * S10 "Houses of the Dead": Malal's zombie spawns now scale over time.
+     * S14 "Long Live the Queen": Wesnoth now autosaves at the start of the boss fight.
+     * S14 "Long Live the Queen": boss fight terrain now uses cobble instead of tile hexes, to be easier to distinguish through the red tint.
+     * S14 "Long Live the Queen": fix Delfador's first move being non-undoable.
+     * S14 "Long Live the Queen": fix Delfador's magical attacks sometimes being usable with 0% accuracy even when counterspelled.
+     * Spells: fix Blizzard freezing chasm hexes.
+     * Spells: fix Time Dilation affecting units on your recall list.
+### Translations
+   * Updated translations: Bengali, British English, Czech, French, Hungarian, Italian, Portuguese (Brazil), Spanish
+### Miscellaneous and Bug Fixes
+   * Fixed the minimap not displaying on absurdly large maps.
+   * Fixed AI behavior when fighting a unit with 0 max XP.
+   * Fixed the :fps command causing Wesnoth to crash.
+   * Fixed multiple bugs in [set_variables] caused by replacing its C++ implementation with a lua implementation.
+
+## Version 1.19.21
+### Campaigns
+   * A Tale of Two Brothers
+     * Add achievements and relevant code.
+   * Dead Water
+     * S05 "Tirigaz": the orcs now use real ship units, instead of static images. Orcish gold reduced to compensate.
+   * Dusk of Dawn
+     * S02 "A Dream": remove "fearless" trait, but spawn more higher-level woses instead.
+   * Eastern Invasion
+     * S02 "Escape Tunnel": Now uses the core Dwarvish Miner unit, instead of a modified 8 gold version.
+     * S04b "Ill Humours": AI Dunefolk are no longer immune to the swamp's poison (although their AI shouldn't let them move into poison range regardless).
+     * S04b "Ill Humours": Gweddry now gains control of the Dunefolk villages when they switch sides.
+     * S05 "Northern Outpost": Randomness no longer influences the minimum/maximum number of bandits who spawn.
+     * S06b "Soradoc": Removed a mechanic that wasn't explained in the objectives - Yannic will no longer be rescued automatically after you've defeated three enemy leaders.
+     * S07a "Capturing the Ogres": Gweddry can no longer gain gold, in addition to his preexisting 0 upkeep.
+     * S07a "Capturing the Ogres": Ogres will now become more aggressive after 10 turns, preventing an infinite turn gold/XP exploit.
+     * S07b "Ogre Crossing": Suriving AI ogres now flee if Grug is killed.
+     * S07b "Ogre Crossing": Objectives now explain that the ogres will join you once you reach the north shore.
+     * S09 "Castle in the Ice": slightly reduce number of wolves and drakes.
+     * S10 "Dark Sanctuary": Orc spawn now scale even further after many turns have elapsed (especially on Skirmish/Easy difficulty), making infinite survival impossible.
+     * S11 "Captured": Reinforcement orcs now use income, not a one-time gold boost.
+     * S11 "Captured": The Skirmisher ability no longer lets you to bypass the orcish guards.
+     * S11 "Captured": Dacyn can no longer be healed without alerting the orcs.
+     * S13 "Spoils of War": Changed dialogue to clarify what's going on before the scenario start.
+     * S13 "Spoils of War": Owaec can no longer recall units (he's separated from the army), even if you manage to claim a keep.
+   * The Hammer of Thursagan
+     * Shortened turn limits on several long scenarios.
+     * Decreased player gold from 100 to 80 on most scenarios.
+     * S08 "The Siege of Kal Kartha": increased enemy gold.
+     * S10 "The Underlevels": Karrag can now be optionally fought before you kill all other leaders, and the scenario has been rebalanced accordingly.
+   * Heir to the Throne
+     * Fixed a serious issue where the "Replacement Weapons" tweak would trigger on all sides' recruits, not just Konrad's.
+     * If Konrad reaches Elensefar while Delfador is still with him, the player is no longer forced to give up Delfador in return for his raven.
+     * If Konrad completes his first battle without gaining any recruits, Delfador now gifts Konrad his raven.
+     * Moremirmu: significantly increased hitpoints, but decreased speed and damage.
+     * Jeniver: increased gold generation from 4 to 5, increased blowgun damage from 4 to 5.
+     * Clarify and expand a number of dialogue hints relating to special events and interactions.
+     * S01 "The Elves Besieged": added a turn limit and rebalanced enemies.
+     * S02 "Flight of the Elves": made enemy gold more predictable. Fixed Konrad winning after killing only 2 enemy leaders, instead of all of them.
+     * S03 "Blackwater Port": Haldiel and Simyr are now loyal companions, but killing all enemy leaders is much harder.
+     * S06 "The Isle of Alduin": Elrian is now a loyal companion, but the scenario requires you to choose between gaining Elrian or learning to recruit Mages.
+     * S07 "Muff Malal's Peninsula": Moremirmu is now in a safer position, and much less likely to get bad RNG and die early.
+     * S15a "Valley of Death I": added a new item reward, to 1) make this scenario a more viable pick and 2) allow for item-heavy playthroughs.
+     * S22 "Glamdrol": allying with the Stoneskins now costs less gold, but Konrad will lose if he doesn't pillage enough gold to meet his pledge.
+     * S30 "The Sceptre of Fire": made Li'sar more difficult to assassinate with Fire Wraiths. This strategy should still be possible, but it should now require more significant investment.
+     * S30 "The Sceptre of Fire": Delfador can now continue recruiting even while searching for the Sceptre.
+     * S47, S48, and S50: a few enemy units will now defect when the Sceptre is first used against human opponents.
+     * S50 "The Battle for Wesnoth": added an epilogue for Blackwing the raven.
+   * Heir to the Throne, Classic
+     * Fix unachievable tutorial achievement.
+   * Of Pearls and Pirates
+     * Added to mainline.
+     * This is a new peasants + merfolk campaign, and an extension to the tutorial.
+     * 5 scenarios, novice level.
+   * Son of the Black-Eye
+     * Jetto now starts as Orcish Slayer.
+   * Winds of Fate
+     * Lower recall costs further.
+     * Adjust and replace some characters that tie-in with the other campaigns.
+     * S01 "The Hunt": fewer forest lions.
+     * S06 "Landfall": tweak enemy starting gold
+     * S08 "Overlook": more consistent enemy spawn recognition
+     * S09 "Ancestor": add wind ambience by Alexandr Zhelanov
+     * S11 "Crosswind": fix issues with non-clasher units attempting to read their secrets
+### Translations
+   * Updated translations: Bengali, British English, Chinese (Simplified), Czech, French, Greek, Hungarian, Italian, Spanish
+### Units
+   * Ships:
+     * Adjusted gold costs for most ships.
+     * Removed the "naval" weapon special, allowing ships to ram targets on coastal land.
+   * Wose Shaman
+     * Hitpoints: 56hp -> 60hp
+     * Cost: 27g -> 31g
+     * Swamp defense: 30% -> 40%
+     * Melee damage: 12-2 impact -> 14-2 impact
+     * Ranged damage: 11-2 impact slows -> 6-3 impact slows
+   * Added the Redtail Cat.
+### User interface
+   * The campaign menu now has a landing page instead of defaulting to the first campaign (PR #10825)
+   * Abbreviated “vision” and “jamming” in the sidebar, so that the number fits on-screen
+   * Fixed the in-game help not showing a list of units with a particular weapon special.
 
 ## Version 1.19.20
 ### Campaigns

@@ -5,13 +5,14 @@
 # Michal Žejdl <lachim@emer.cz>, 2019 - 2026
 # Petr Šlejhar (Septim) <septim@centrum.cz>, 2020 - 2025
 # Tereza Žejdlová, 2020.
+# Senterai, 2026
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-01-20 17:31 UTC\n"
-"PO-Revision-Date: 2026-01-07 23:22+0100\n"
+"POT-Creation-Date: 2026-05-19 02:15 UTC\n"
+"PO-Revision-Date: 2026-04-10 20:54+0200\n"
 "Last-Translator: Michal Žejdl <lachim@emer.cz>\n"
 "Language-Team: Czech https://wiki.wesnoth.org/CzechTranslation\n"
 "Language: cs\n"
@@ -23,7 +24,7 @@ msgstr ""
 #. [campaign]: id=Under_the_Burning_Suns
 #. [editor_group]: id=utbs
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:11
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:245
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:246
 msgid "Under the Burning Suns"
 msgstr "Pod žhnoucími slunci"
 
@@ -33,7 +34,7 @@ msgid "UtBS"
 msgstr "PŽS"
 
 #. [campaign]: id=Under_the_Burning_Suns
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:20
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:21
 msgid ""
 "In the distant future a small band of elves struggles to survive amidst the "
 "ruins of fallen empires. Lead your people out of the desert on an epic "
@@ -46,7 +47,7 @@ msgstr ""
 "\n"
 
 #. [campaign]: id=Under_the_Burning_Suns
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:22
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:23
 msgid ""
 "Note: This campaign changes some standard mechanics, such as the day/night "
 "cycle, recall costs and general approach to the difficulty levels. The "
@@ -59,68 +60,68 @@ msgstr ""
 "a další, jež se mohou po útoku přesunout."
 
 #. [campaign]: id=Under_the_Burning_Suns
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:24
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:25
 msgid "(Expert level, 10 scenarios.)"
 msgstr "(Úroveň expert, 10 scénářů.)"
 
 #. [campaign]: id=Under_the_Burning_Suns
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:28
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:29
 msgid "Challenging"
 msgstr "Náročná"
 
 #. [campaign]: id=Under_the_Burning_Suns
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:28
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:29
 msgid "Fighter"
 msgstr "Bojovník"
 
 #. [campaign]: id=Under_the_Burning_Suns
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:29
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:30
 msgid "Difficult"
 msgstr "Obtížná"
 
 #. [campaign]: id=Under_the_Burning_Suns
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:29
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:30
 msgid "Warrior"
 msgstr "Válečník"
 
 #. [campaign]: id=Under_the_Burning_Suns
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:30
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:31
 msgid "Apocalyptic"
-msgstr ""
+msgstr "Apokalyptické"
 
 #. [campaign]: id=Under_the_Burning_Suns
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:30
 #: data/campaigns/Under_the_Burning_Suns/_main.cfg:31
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:32
 msgid "Champion"
 msgstr "Šampión"
 
 #. [campaign]: id=Under_the_Burning_Suns
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:31
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:32
 msgid "Nightmare"
 msgstr "Zlý sen"
 
 #. [about]
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:35
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:36
 msgid "Campaign Design"
 msgstr "Návrh tažení"
 
 #. [about]
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:44
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:45
 msgid "Campaign Maintenance"
 msgstr "Údržba tažení"
 
 #. [about]
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:68
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:69
 msgid "Artwork and Graphics Design"
-msgstr "Kresby a grafika"
+msgstr "Návrh a tvorba grafiky"
 
 #. [about]
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:134
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:135
 msgid "Miscellaneous"
 msgstr "Různé"
 
 #. [entry]
-#: data/campaigns/Under_the_Burning_Suns/_main.cfg:152
+#: data/campaigns/Under_the_Burning_Suns/_main.cfg:153
 msgid "And special thanks to everyone else who I forgot to mention."
 msgstr "Zvláštní poděkování patří všem, již zde byli opomenuti."
 
@@ -657,7 +658,7 @@ msgstr "Možná se skrývají ve stájích. Pojďme to zjistit."
 #. [message]: speaker=unit
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:884
 msgid "Wandering Dustboks... A pity they only come to us now."
-msgstr ""
+msgstr "Toulavé antilopy... Škoda že k nám přišly až teď."
 
 #. [event]
 #: data/campaigns/Under_the_Burning_Suns/scenarios/01_The_Morning_After.cfg:922
@@ -1384,7 +1385,7 @@ msgstr ""
 #: data/campaigns/Under_the_Burning_Suns/scenarios/02_Across_the_Harsh_Sands.cfg:595
 msgid ""
 "It’s a pack of Wandering Scarabs! They must’ve been burrowed under the sand."
-msgstr ""
+msgstr "To je houf potulných skarabů! Museli se zahrabat do písku."
 
 #. [scenario]: id=02_Across_the_Harsh_Sands, role=Hunting Ogre
 #: data/campaigns/Under_the_Burning_Suns/scenarios/02_Across_the_Harsh_Sands.cfg:627
@@ -1763,6 +1764,8 @@ msgid ""
 "Phew, thank goodness that this oasis is here! I was beginning to worry that "
 "it might have been a mirage, but it appears to be real!"
 msgstr ""
+"Uf, díky bohyni, že tady je ta oáza! Vrtalo mi hlavou, jestli to není fata "
+"morgána, ale vypadá skutečně!"
 
 #. [message]: speaker=Nym
 #: data/campaigns/Under_the_Burning_Suns/scenarios/02_Across_the_Harsh_Sands.cfg:1503
@@ -1771,16 +1774,18 @@ msgid ""
 "who’s to say we might not have encountered a mirage under some other "
 "conditions?"
 msgstr ""
+"Vskutku, tvá opatrnost byla opodstatněná. Oáza je tentokrát možná skutečná, "
+"ale může se stát, že narazíme na fatu morgánu za jiných okolností."
 
 #. [message]: speaker=Zhul
 #: data/campaigns/Under_the_Burning_Suns/scenarios/02_Across_the_Harsh_Sands.cfg:1508
 msgid "It has been known to happen before."
-msgstr ""
+msgstr "Je známo, že se to již stalo."
 
 #. [message]: speaker=Kaleh
 #: data/campaigns/Under_the_Burning_Suns/scenarios/02_Across_the_Harsh_Sands.cfg:1512
 msgid "I don’t even want to think about something like that. Onwards!"
-msgstr ""
+msgstr "Ani na to nechci myslet. Kupředu!"
 
 #. [message]: speaker=$explorer.id
 #: data/campaigns/Under_the_Burning_Suns/scenarios/02_Across_the_Harsh_Sands.cfg:1517
@@ -12924,10 +12929,6 @@ msgstr ""
 
 #. [message]: speaker=unit
 #: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:644
-#, fuzzy
-#| msgid ""
-#| "The trees themselves seem against my presence here. They give me an "
-#| "omnious feeling as if something bad is going to happen if I stay here."
 msgid ""
 "The trees themselves seem against my presence here. They give me an ominous "
 "feeling as if something bad is going to happen if I stay here."
@@ -13125,16 +13126,12 @@ msgstr ""
 
 #. [message]: speaker=Graghht
 #: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1013
-#, fuzzy
-#| msgid ""
-#| "Since you enterd our fort, use it for your troops. Get them here quickly "
-#| "and help us."
 msgid ""
 "Since you entered our fort, use it for your troops. Get them here quickly "
 "and help us."
 msgstr ""
-"Vstoupili jste do naší pevnosti, a proto ji použijte pro své vojáky. Rychle "
-"je sem přiveďte a pomozte nám."
+"Vstoupili jste do naší pevnosti, a proto ji použijte pro své vojáky. Rychle "
+"je sem přiveďte a pomozte nám."
 
 #. [message]: speaker=Kaleh
 #: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1017
@@ -13205,10 +13202,6 @@ msgstr "Graghht"
 
 #. [message]: speaker=Graghht
 #: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1231
-#, fuzzy
-#| msgid ""
-#| "We won’t be controlled any more! We will reclaim this island as "
-#| "rightfully ours! Destroy the false god! Rebuild legacy of our ancestors!"
 msgid ""
 "We won’t be controlled any more! We will reclaim this island as rightfully "
 "ours! Destroy the false god! Rebuild the legacy of our ancestors!"
@@ -13229,7 +13222,7 @@ msgstr "Co tady dělají?"
 #. [message]: speaker=Graghht
 #: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1261
 msgid "Graaaaaaaaaaaaaaaaaaaaaghht!"
-msgstr ""
+msgstr "Graaaaaaaaaaaaaaaaaaaaach!"
 
 #. [message]: speaker=unit
 #: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1291
@@ -13570,16 +13563,21 @@ msgstr ""
 
 #. [message]: speaker=Graghht
 #: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1827
-msgid "We are going in to help too!"
-msgstr ""
+msgid "I am going in to help too!"
+msgstr "Také pomůžu!"
 
 #. [message]: speaker=Zoldak
-#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1848
-msgid "Go after them to help too. I will stay here."
-msgstr ""
+#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1843
+msgid "Go after them. We will stay here and protect the entrance."
+msgstr "Jděte za nimi. My tu zůstaneme a ochráníme vstup."
+
+#. [message]: speaker=Zoldak
+#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1861
+msgid "We will stay here and protect the entrance."
+msgstr "My tu zůstaneme a ochráníme vstup."
 
 #. [message]: speaker=Grog
-#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1872
+#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1875
 msgid ""
 "Grog not going to just sit here while Kaleh does all the fighting. Kaleh "
 "will need strong fighter like Grog. Other elves may be scared, but Grog fear "
@@ -13592,7 +13590,7 @@ msgstr ""
 "dojde."
 
 #. [message]: speaker=Nog
-#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1878
+#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1881
 msgid ""
 "Nog not going to just sit here while Kaleh does all the fighting. Kaleh will "
 "need strong fighter like Nog. Other elves may be scared, but Nog fear no "
@@ -13604,8 +13602,8 @@ msgstr ""
 
 #. [message]: speaker=Rogrimir
 #. [message]: speaker=Jarl
-#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1884
-#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1890
+#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1887
+#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1893
 msgid ""
 "I’ve followed that boy this far, I’m not going to just let him march in "
 "there without me. Besides, whoever heard of a dwarf being afraid of going "
@@ -13616,23 +13614,23 @@ msgstr ""
 "do podzemí? Jen doufám, že na mě zbude nějaký ten boj."
 
 #. [message]: speaker=Kaleh
-#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1909
+#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1912
 msgid "What’s that strange screeching sound coming from the jungle?"
 msgstr "Co se to line za zvláštní skřeky z té džungle?"
 
 #. [event]
-#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1931
-#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1938
+#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1934
+#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1941
 msgid "Nocturnal Pest"
 msgstr "Noční škůdce"
 
 #. [message]: speaker=Nym
-#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1951
+#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1954
 msgid "That’s odd. Why did those bats suddenly fly off?"
 msgstr "To je zvláštní. Proč ti netopýři najednou odletěli?"
 
 #. [message]: speaker=Zhul
-#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1956
+#: data/campaigns/Under_the_Burning_Suns/scenarios/11_Battle_for_Zocthanol_Isle.cfg:1959
 msgid "They must be nocturnal."
 msgstr "Asi jsou to jen noční tvorové."
 
@@ -15609,12 +15607,12 @@ msgstr "písek"
 #. [advancement]: id=natures_aid
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shyde.cfg:127
 msgid "Connection with Nature"
-msgstr ""
+msgstr "Spojení s Přírodou"
 
 #. [advancement]: id=extra_natures_aid
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shyde.cfg:175
 msgid "Nature Aid"
-msgstr ""
+msgstr "Síla přírody"
 
 #. [unit_type]: id=Quenoth Sun Singer, race=quenoth, gender=female
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Sun_Singer.cfg:5
@@ -15957,7 +15955,7 @@ msgstr "Silné střely"
 #. [advancement]: id=Bowman
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:187
 msgid "Bowman"
-msgstr ""
+msgstr "Lučištník"
 
 #. [advancement]: id=piercing_shot
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:207
@@ -16011,7 +16009,7 @@ msgstr "Prospěchář"
 #. [advancement]: id=leading
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:386
 msgid "Leading"
-msgstr ""
+msgstr "Vedení"
 
 #. [advancement]: id=accurate_strikes
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:423
@@ -16483,7 +16481,7 @@ msgstr "vítr v zádech +"
 #. [chance_to_hit]: id=parry_offense_only_{VALUE}
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:693
 msgid "parry offense only: + $sub%"
-msgstr ""
+msgstr "pouze při odražení útoku: + $sub %"
 
 #. [chance_to_hit]: id=parry_offense_only_{VALUE}
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:694
@@ -16491,34 +16489,35 @@ msgid ""
 "This unit sees its defense reinforced by $sub% when this weapon is used "
 "offensively"
 msgstr ""
+"Při útočném použití této zbraně se obrana této jednotky posílí o $sub %"
 
 #. [chance_to_hit]: id=parry{VALUE}
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:705
 msgid "parry: + ($sub)"
-msgstr ""
+msgstr "krytí + ($sub)"
 
 #. [chance_to_hit]: id=parry{VALUE}
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:706
 msgid "This unit sees its defense reinforced by $sub% when this weapon is used"
-msgstr ""
+msgstr "Při použití této zbraně se obrana jednotky zvýší o $sub%"
 
 #. [special_note]
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:828
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:829
 msgid "SPECIAL_NOTE^This unit is able to move through solid stone walls."
 msgstr "Tato jednotka dokáže procházet pevnými zdmi."
 
 #. [dummy]: id=teaching
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:837
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:838
 msgid "teaching"
 msgstr "vyučující"
 
 #. [dummy]: id=teaching
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:838
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:839
 msgid "female^teaching"
 msgstr "vyučující"
 
 #. [dummy]: id=teaching
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:839
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:840
 msgid ""
 "At the start of every turn, this unit redistributes its experience points to "
 "all the units of the same side adjacent to it. If no suitable unit is "
@@ -16529,12 +16528,12 @@ msgstr ""
 "nesousedí, její zkušenost se pouze sníží na nulu."
 
 #. [attacks]: id=shock
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:849
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:850
 msgid "shock"
 msgstr "šok"
 
 #. [attacks]: id=shock
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:850
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:851
 msgid ""
 "When this attack is used on offense, the opponent will retaliate with one "
 "less strike than normally, to a minimum of one strike."
@@ -16543,7 +16542,7 @@ msgstr ""
 "protiúderech o jeden úder méně než normálně, minimálně však jeden úder."
 
 #. [attacks]: id=shock
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:851
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:852
 msgid ""
 "This unit’s melee attack can overwhelm the defenses of enemies, preventing "
 "them from retaliating as effectively."
@@ -16552,17 +16551,17 @@ msgstr ""
 "jim v účinném protiúderu."
 
 #. [chance_to_hit]: id=formation
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:882
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:883
 msgid "formation"
 msgstr "formace"
 
 #. [chance_to_hit]: id=formation
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:883
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:884
 msgid "female^formation"
 msgstr "formace"
 
 #. [chance_to_hit]: id=formation
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:884
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:885
 msgid ""
 "This unit gains a +10% bonus to defense when another unit with the same "
 "ability is adjacent to it. However, this cannot raise the unit’s defense "
@@ -16573,22 +16572,22 @@ msgstr ""
 "obranný bonus jednotky nad 70 %."
 
 #. [chance_to_hit]: id=formation
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:885
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:886
 msgid "Groups of units of this type are able to shield each other in combat."
 msgstr "Skupiny jednotek tohoto typu se dokáží v boji navzájem chránit."
 
 #. [dummy]: id=disengage
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:908
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:909
 msgid "disengage"
 msgstr "uvolnění"
 
 #. [dummy]: id=disengage
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:909
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:910
 msgid "female^disengage"
 msgstr "uvolněná"
 
 #. [dummy]: id=disengage
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:910
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:911
 msgid ""
 "If this unit doesn’t move before attacking, it will retain its movement "
 "points after the attack."
@@ -16597,17 +16596,17 @@ msgstr ""
 "útoku."
 
 #. [dummy]: id=disengage
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:911
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:912
 msgid "This unit can move either before or after attacking."
 msgstr "Tato jednotka se může pohybovat před nebo po útoku."
 
 #. [dummy]: id=daze
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:919
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:920
 msgid "daze"
 msgstr "omámení"
 
 #. [dummy]: id=daze
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:920
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:921
 msgid ""
 "When hit with this attack, an enemy suffers a 10% penalty both to their "
 "defense and chance to hit for one turn. Other specials that affect chance to "
@@ -16626,7 +16625,7 @@ msgstr ""
 "větší než 60 %."
 
 #. [dummy]: id=daze
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:924
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:925
 msgid ""
 "This unit can daze its enemies, reducing their accuracy and defense until "
 "they end a turn."
@@ -16635,17 +16634,17 @@ msgstr ""
 "jejich přesnost a obranu."
 
 #. [skirmisher]: id=distract
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:932
-msgid "distract"
-msgstr "rozptýlení"
-
-#. [skirmisher]: id=distract
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:933
-msgid "female^distract"
-msgstr "rozptýlení"
+msgid "distract"
+msgstr "rozptylování"
 
 #. [skirmisher]: id=distract
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:934
+msgid "female^distract"
+msgstr "rozptylování"
+
+#. [skirmisher]: id=distract
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:935
 msgid ""
 "This unit negates enemy Zones of Control around itself for allied units (but "
 "not for itself)."
@@ -16654,7 +16653,7 @@ msgstr ""
 "své spojence (ne však pro sebe)."
 
 #. [skirmisher]: id=distract
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:935
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:936
 msgid ""
 "This unit is capable of distracting opponents, allowing allied units to "
 "trespass their Zones of Control and move unhindered around them."
@@ -16664,53 +16663,53 @@ msgstr ""
 "pohybovat."
 
 #. [dummy]: id=support
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:946
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:947
 msgid "support"
 msgstr "podporující"
 
 #. [dummy]: id=support
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:947
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:948
 msgid "female^support"
 msgstr "podporující"
 
 #. [dummy]: id=support
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:948
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:949
 msgid "The upkeep costs of adjacent friendly units are lowered by 1."
 msgstr ""
 "Náklady na zaopatření jsou u sousedících spřátelených jednotek sníženy o 1."
 
 #. [unstore_unit]
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:995
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:996
 msgid "dazed"
 msgstr "omámený"
 
 #. [unstore_unit]
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:996
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:997
 msgid "female^dazed"
 msgstr "omámená"
 
 #. [chance_to_hit]: id=self_dazed
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1023
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1024
 msgid "accuracy:"
 msgstr "přesnost:"
 
 #. [chance_to_hit]: id=self_dazed
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1024
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1025
 msgid "Because this unit is dazed, its accuracy is decreased by 10%"
 msgstr "Protože je tato jednotka omámená, její přesnost se snižuje o 10 %."
 
 #. [leadership]: id=inspire
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1401
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1402
 msgid "inspire"
 msgstr "povzbuzuje"
 
 #. [leadership]: id=inspire
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1402
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1403
 msgid "female^inspire"
 msgstr "povzbuzuje"
 
 #. [leadership]: id=inspire
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1403
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1404
 msgid ""
 "This unit can inspire own units that are next to it, making them fight "
 "better. Adjacent own units of lower or equal level will deal 25% more damage "
@@ -16722,7 +16721,7 @@ msgstr ""
 "než jednotka povzbuzující."
 
 #. [leadership]: id=inspire
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1404
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1405
 msgid ""
 "The presence of this unit inspires own units next to it to deal more damage "
 "in combat, though this only applies to units of lower or equal level."
@@ -16731,29 +16730,29 @@ msgstr ""
 "způsobují svými útoky větší poškození. To však platí pouze pro jednotky na "
 "stejné nebo nižší úrovni."
 
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1415
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1416
 msgid "cooldown 1"
 msgstr "zklidnění 1"
 
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1418
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1419
 msgid "cooldown 2"
 msgstr "zklidnění 2"
 
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1421
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1422
 msgid "After using this attack, you can’t use it during your next turn."
 msgstr "Po užití tohoto útoku jej nemůžeš použít v dalším kole."
 
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1424
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1425
 msgid "After using this attack, you can’t use it during your next two turns."
 msgstr "Po užití tohoto útoku jej nemůžeš použít během následujících dvou kol."
 
 #. [dummy]: id=pierce
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1485
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1486
 msgid "pierce"
 msgstr "průpich"
 
 #. [dummy]: id=pierce
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1486
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1487
 msgid ""
 "This weapon, when used offensively, can also deal damage to a unit behind "
 "the target."
@@ -16762,12 +16761,12 @@ msgstr ""
 "cílem."
 
 #. [dummy]: id=puncture
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1556
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1557
 msgid "puncture"
 msgstr "průraz"
 
 #. [dummy]: id=puncture
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1557
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1558
 msgid ""
 "This weapon, when used offensively, can also deal damage to two units behind "
 "the target."
@@ -16776,12 +16775,12 @@ msgstr ""
 "za cílem."
 
 #. [dummy]: id=rain_of_arrows
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1640
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1641
 msgid "rain of arrows"
 msgstr "déšť šípů"
 
 #. [dummy]: id=rain_of_arrows
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1641
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1642
 msgid ""
 "This weapon, when used offensively, can also deal damage to a unit behind "
 "the target and all units adjacent to the unit behind the target."
@@ -16790,116 +16789,133 @@ msgstr ""
 "cílem a všem jednotkám s jednotkou za cílem sousedícím."
 
 #. [dummy]: id=sword_dance
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1762
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1763
 msgid "sword dance"
 msgstr "mečový tanec"
 
 #. [dummy]: id=sword_dance
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1763
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1764
 msgid ""
 "On offense, each successful hit increases the chance to hit the opponent and "
 "decreases the chance of being hit by them by 10% each, until the end of the "
 "fight."
 msgstr ""
-
-#. [heals]: id=natures_aid
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1841
-msgid "nature’s aid +2"
-msgstr ""
+"Při útoku zvyšuje každý úspěšný zásah šanci zasáhnout protivníka a snižuje "
+"šanci být jím zasažen o 10 % do konce souboje."
 
 #. [heals]: id=natures_aid
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1842
-msgid "female^nature’s aid +2"
-msgstr ""
+msgid "nature’s aid +2"
+msgstr "síla přírody +2"
 
 #. [heals]: id=natures_aid
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1843
+msgid "female^nature’s aid +2"
+msgstr "síla přírody +2"
+
+#. [heals]: id=natures_aid
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1844
 msgid ""
 "All units on this unit’s side, regardless of distance, will heal themselves "
 "for 2 HP when starting their turn in forest or fungus."
 msgstr ""
-
-#. [heals]: id=natures_aid
-#. [heals]: id=extra_natures_aid
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1844
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1871
-msgid ""
-"This ability will not cure an affected unit of poison, however, only delay "
-"its effect."
-msgstr ""
+"Všechny jednotky nacházející se vedle této jednotky, bez ohledu na "
+"vzdálenost, si při zahájení svého kola v lese nebo v houbovém porostu vyléčí "
+"2 body zdraví."
 
 #. [heals]: id=natures_aid
 #. [heals]: id=extra_natures_aid
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1845
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1872
-msgid "This unit is capable of basic healing and slowing dehydration."
+msgid ""
+"This ability will not cure an affected unit of poison, however, only delay "
+"its effect."
 msgstr ""
+"Tato schopnost nicméně otrávenou jednotku neuzdraví, pouze pozdrží účinky "
+"jedu."
 
+#. [heals]: id=natures_aid
 #. [heals]: id=extra_natures_aid
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1868
-msgid "nature’s aid +4"
-msgstr ""
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1846
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1873
+msgid "This unit is capable of basic healing and slowing dehydration."
+msgstr "Tato jednotka je schopná základního léčení a zpomalení dehydratace."
 
 #. [heals]: id=extra_natures_aid
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1869
-msgid "female^nature’s aid +4"
-msgstr ""
+msgid "nature’s aid +4"
+msgstr "síla přírody +4"
 
 #. [heals]: id=extra_natures_aid
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1870
+msgid "female^nature’s aid +4"
+msgstr "síla přírody +4"
+
+#. [heals]: id=extra_natures_aid
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1871
 msgid ""
 "All units on this unit’s side, regardless of distance, will heal themselves "
 "for 4 HP when starting their turn in forest or fungus."
 msgstr ""
-
-#. [dummy]: id=corrupting_influence
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1892
-msgid "corrupting influence"
-msgstr ""
+"Všechny jednotky na straně této jednotky, bez ohledu na vzdálenost, si na "
+"začátku svého kola v lese nebo v houbovém háji obnoví 2 body zdraví."
 
 #. [dummy]: id=corrupting_influence
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1893
-msgid "female^corrupting influence"
-msgstr ""
+msgid "corrupting influence"
+msgstr "zhoubný vliv"
 
 #. [dummy]: id=corrupting_influence
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1894
-msgid ""
-"Controls nature to deal 1 point of damage to enemy units standing in forest "
-"or fungus at the beginning of their turn."
-msgstr ""
+msgid "female^corrupting influence"
+msgstr "zhoubný vliv"
 
 #. [dummy]: id=corrupting_influence
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1895
 msgid ""
-"Cannot kill a unit, does not grant XP but stacks with other abilities with "
-"the same name."
+"Controls nature to deal 1 point of damage to enemy units standing in forest "
+"or fungus at the beginning of their turn."
 msgstr ""
+"Ovládá přírodu tak, že nepřátelským jednotkám stojícím v lese či houbovém "
+"háji způsobí 1 bod poškození na začátku jejich kola."
 
 #. [dummy]: id=corrupting_influence
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1896
-msgid "This unit is capable of control over nature."
+msgid ""
+"Cannot kill a unit, does not grant XP but stacks with other abilities with "
+"the same name."
 msgstr ""
+"Nemůže zabít jednotku, neposkytuje XP, ale účinek sčítá s ostatními "
+"schopnostmi stejného jména."
+
+#. [dummy]: id=corrupting_influence
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1897
+msgid "This unit is capable of control over nature."
+msgstr "Tato jednotka je schopná ovládat přírodu."
 
 #. [extra_attack]: id=intercept
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1938
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1939
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1940
 msgid "intercept"
 msgstr "zastavení"
 
 #. [extra_attack]: id=intercept
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1940
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1941
 msgid ""
 "When an enemy unit enters an adjacent space, the wielder immediately "
 "executes an uncountered intercepting strike with this weapon."
 msgstr ""
+"Jakmile nepřátelská jednotka vstoupí na sousední pole, držitel této zbraně "
+"okamžitě provede úder, který nelze zablokovat."
 
 #. [extra_attack]: id=intercept
-#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1941
+#: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:1942
 msgid ""
 "Delivers a full-power, uncountered attack when enemies move to an adjacent "
 "space. Activates once per turn."
 msgstr ""
+"Pokud se nepřítel přesune na sousední pole, provede tato jednotka mocný "
+"útok, kterému se nelze vyhnout. Aktivuje se jednou za kolo."
 
 #: data/campaigns/Under_the_Burning_Suns/utils/character-definitions.cfg:5
 msgid "Kaleh"
@@ -17976,42 +17992,6 @@ msgstr "Hrad duchů"
 #: data/campaigns/Under_the_Burning_Suns/utils/terrain.cfg:64
 msgid "Phantom Keep"
 msgstr "Tvrz duchů"
-
-#~ msgid "uses 1 attack"
-#~ msgstr "užívá 1 útok"
-
-#~ msgid "uses 2 attacks"
-#~ msgstr "užívá 2 útoky"
-
-#~ msgid "uses 3 attacks"
-#~ msgstr "užívá 3 útoky"
-
-#~ msgid "uses 4 attacks"
-#~ msgstr "užívá 4 útoky"
-
-#~ msgid "uses 5 attacks"
-#~ msgstr "užívá 5 útoků"
-
-#~ msgid "uses 6 attacks"
-#~ msgstr "užívá 6 útoků"
-
-#~ msgid "This attack uses 1 attack"
-#~ msgstr "Tento útok užívá 1 útok"
-
-#~ msgid "This attack uses 2 attacks"
-#~ msgstr "Tento útok užívá 2 útoky"
-
-#~ msgid "This attack uses 3 attacks"
-#~ msgstr "Tento útok užívá 3 útoky"
-
-#~ msgid "This attack uses 4 attacks"
-#~ msgstr "Tento útok užívá 4 útoky"
-
-#~ msgid "This attack uses 5 attacks"
-#~ msgstr "Tento útok užívá 5 útoků"
-
-#~ msgid "This attack uses 6 attacks"
-#~ msgstr "Tento útok užívá 6 útoků"
 
 #~ msgid ""
 #~ "Every time Nym hits an enemy she gains +10% accuracy and 10% parry until "

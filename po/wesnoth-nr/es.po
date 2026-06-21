@@ -7,13 +7,13 @@
 # Iris Morelle <shadowm@wesnoth.org>, 2008, 2009.
 # Pepe <donpepe1963@gmail.com>, 2014.
 # Toranks <toranksmervat@gmail.com>, 2023.
-# Sebastián Lecchini <sebas38760@gmail.com>, 2025.
+# Sebastián Lecchini <sebas38760@gmail.com>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-nr\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2025-12-22 03:09 UTC\n"
-"PO-Revision-Date: 2025-12-23 12:23-0300\n"
+"POT-Creation-Date: 2026-02-26 01:04 UTC\n"
+"PO-Revision-Date: 2026-03-03 16:14-0300\n"
 "Last-Translator: Sebastián Lecchini <sebas38760@gmail.com>\n"
 "Language-Team: Spanish <kde-i18n-doc@kde.org>\n"
 "Language: es\n"
@@ -81,7 +81,8 @@ msgstr ""
 "las tierras del norte la gloria que otrora conocieran.\n"
 "\n"
 
-# La campaña dice 13 escenarios porque no cuenta el eílogo, que en si es un escenario más, así que lo correcto sería 14 escenarios.
+# La campaña dice 13 escenarios porque no cuenta el eílogo, que en si es un
+# escenario más, así que lo correcto sería 14 escenarios.
 #. [campaign]: id=Northern_Rebirth
 #: data/campaigns/Northern_Rebirth/_main.cfg:23
 msgid "(Expert level, 13 scenarios.)"
@@ -219,7 +220,9 @@ msgstr ""
 "enanos de Knalga siguieron luchando, pero sabían que no podrían posponer "
 "para siempre su completo sometimiento."
 
-# Si bien la traducción de fateful es fatídico, no le encuentro sentido a que el día en que comenzó la liberación del pueblo, se lo considere un día fatítico.
+# Si bien la traducción de fateful es fatídico, no le encuentro sentido a que
+# el día en que comenzó la liberación del pueblo, se lo considere un día
+# fatítico.
 #. [part]
 #: data/campaigns/Northern_Rebirth/scenarios/01_Breaking_the_Chains.cfg:49
 msgid ""
@@ -312,7 +315,9 @@ msgstr ""
 "comenzaron a entrenar y planificar en secreto. Y los amos orcos, a quienes "
 "su arrogancia había vuelto más estúpidos, no se percataban."
 
-# En el párrafo "his mother even taught him letters" se tradujo originalmente como "su madre inclusive le enseñó la escritura" lo que da a entender que le mostro algo que estaba escrito.
+# En el párrafo "his mother even taught him letters" se tradujo originalmente
+# como "su madre inclusive le enseñó la escritura" lo que da a entender que le
+# mostro algo que estaba escrito.
 #. [part]
 #: data/campaigns/Northern_Rebirth/scenarios/01_Breaking_the_Chains.cfg:83
 msgid ""
@@ -1012,7 +1017,8 @@ msgstr "¡Ahhh! ¡Fuego!"
 msgid "<i>Yeah! Die, scum, die!</i>"
 msgstr "<i>¡Sí! ¡Morid, escoria, morid!</i>"
 
-# Un dejo literario del traductor anterior, pero me pareció que quedaba bastante bien :)
+# Un dejo literario del traductor anterior, pero me pareció que quedaba
+# bastante bien :)
 #. [message]: speaker=unit
 #: data/campaigns/Northern_Rebirth/scenarios/02_01_Infested_Caves.cfg:467
 msgid "This tunnel keeps on going..."
@@ -2067,7 +2073,9 @@ msgstr ""
 msgid "You fool! You will pay for your folly with your life."
 msgstr "¡Necio! Pagaréis por vuestro error con vuestra vida."
 
-# Pepe: en españa diríamos sí claro tío o sí claro colega con entonación despectiva. Dependiendo de la entonación podría significar una cosa o lo contrario.
+# Pepe: en españa diríamos sí claro tío o sí claro colega con entonación
+# despectiva. Dependiendo de la entonación podría significar una cosa o lo
+# contrario.
 #. [message]: speaker=Tallin
 #: data/campaigns/Northern_Rebirth/scenarios/04_Clearing_the_Mines.cfg:371
 msgid "Yeah, right, buddy."
@@ -3676,8 +3684,8 @@ msgstr ""
 
 #. [message]: speaker=Malifor
 #: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2861
-msgid "HAHAHAHA, DEATH HAS NO EFFECT ON ME YOU FOOLS!"
-msgstr "¡JAJAJAJA, LA MUERTE NO ME AFECTA, TONTOS!"
+msgid "HAHAHAHA, THAT WEAPON CANNOT HARM ME!"
+msgstr "¡JAJAJAJA, ESA ARMA NO PUEDE HACERME DAÑO!"
 
 #. [message]: speaker=unit
 #: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2866
@@ -3696,36 +3704,71 @@ msgstr "Vaya, ¿cómo vamos a matarle? ¡Esta arma es ineficaz!"
 
 #. [message]: speaker=Malifor
 #: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2891
+msgid "YOUR WEAPONS CANNOT HARM ME, FOOLS!"
+msgstr "¡VUESTRAS ARMAS NO PUEDEN HACERME DAÑO, IDIOTAS!"
+
+#. [message]: speaker=Tallin
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2896
+msgid "We’ll have to try something else. Perhaps magic will help."
+msgstr "Tendremos que probar otra cosa. Tal vez la magia nos sirva."
+
+#. [message]: speaker=Malifor
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2906
 msgid "YOU PUNY MORTALS SHALL SOON BE SERVING ME!"
 msgstr "¡INSIGNIFICANTES MORTALES, PRONTO SERÁN MIS SIRVIENTES!"
 
 #. [message]: speaker=Camerin
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2896
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2911
 msgid "Blast it! Even fire has no effect on him!"
 msgstr "¡Maldición! ¡Ni siquiera el fuego le afecta!"
 
 #. [message]: speaker=Tallin
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2901
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2916
 msgid "Let’s try using something different on him."
 msgstr "Intentemos usar algo diferente con él."
 
 #. [message]: speaker=Malifor
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2916
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2926
+msgid "HAHAHAHA, FOOL! THE COLD IS MY DOMAIN!"
+msgstr "¡JAJAJAJA, NECIO! ¡EL FRÍO ES MI DOMINIO!"
+
+#. [message]: speaker=Tallin
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2931
+msgid "I suppose we should’ve known better than to try freezing a Lich."
+msgstr ""
+"Supongo que debimos imaginar que intentar congelar a un Liche no iba a "
+"funcionar."
+
+#. [message]: speaker=Malifor
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2941
+msgid "FOOLS! I FREED MYSELF OF WEAKNESS LONG AGO!"
+msgstr "¡NECIOS! ¡ME LIBRÉ DE LA DEBILIDAD HACE MUCHO TIEMPO!"
+
+#. [message]: speaker=Tallin
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2946
+msgid ""
+"Even arcane weapons have no effect on him! We need an expert in white magic."
+msgstr ""
+"¡Ni siquiera las armas arcanas le afectan! Necesitamos a un experto en magia "
+"blanca."
+
+#. [message]: speaker=Malifor
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2961
 msgid "AAAAAAHHHHHH!"
 msgstr "¡AAAAAAHHHHHH!"
 
 #. [message]: speaker=Father Morvin
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2921
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2966
 msgid "I see now. It is impossible to destroy him by ordinary means."
 msgstr "Ya veo. Es imposible destruirlo con métodos ordinarios."
 
 #. [message]: speaker=Tallin
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2926
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2971
 msgid "Then how are we going to destroy him? Surely there must be a way."
 msgstr "¿Entonces cómo lo haremos? Seguro debe de haber algún modo."
 
 #. [message]: speaker=Father Morvin
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2931
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2976
 msgid ""
 "Yes, I think there is, but only myself or Thera have the means to do it. "
 "Come on Thera, let’s destroy that old skeleton."
@@ -3734,33 +3777,33 @@ msgstr ""
 "conmigo Thera, destruyamos a ese viejo esqueleto."
 
 #. [message]: speaker=Sister Thera
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2936
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2981
 msgid "Yeah, I can’t wait to get my hands on that bastard!"
 msgstr "¡Sí, no puedo esperar a atrapar a ese malnacido!"
 
 #. [message]: speaker=Father Morvin
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2941
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2986
 msgid "That was very unladylike of you."
 msgstr "Eso no fue muy educado de vuestra parte."
 
 #. [message]: speaker=Sister Thera
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2946
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2991
 #: data/campaigns/Northern_Rebirth/utils/herodeaths.cfg:451
 msgid "(<i>Giggle</i>) Sorry."
 msgstr "(<i>Risita</i>) Lo siento."
 
 #. [message]: speaker=Malifor
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2963
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:3008
 msgid "AHHHH! YOU BLASTED MAGE!"
 msgstr "¡AHHHH! ¡MAGO DESGRACIADO!"
 
 #. [message]: speaker=Tallin
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2968
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:3013
 msgid "Good. We finally got him. He is dissolving."
 msgstr "Bien. Al final lo conseguimos. Y ahora simplemente se disuelve."
 
 #. [message]: speaker=Malifor
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2973
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:3018
 msgid ""
 "Curses on you you blasted mages, curses on you you blasted dwarves, curses "
 "on you you blasted humans, and CURSES ON YOU YOU BLASTED TALLIN! MAY YOUR "
@@ -3774,12 +3817,12 @@ msgstr ""
 "RELÁMPAGO GOLPEE VUESTRA CABEZA! ¡QUE...!"
 
 #. [message]: speaker=Tallin
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2978
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:3023
 msgid "May you shut your ugly mouth and hurry up and die."
 msgstr "Que cerréis vuestra asquerosa boca, y os apresuréis a morir."
 
 #. [message]: speaker=Malifor
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2983
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:3028
 msgid ""
 "MAY THE EARTH OPEN UP AND SWALLOW YOU! MAY ALL YOUR TEETH FALL OUT! MAY YOU "
 "BECOME A WEAK SKINNY OLD MAN! MAY—"
@@ -3788,22 +3831,22 @@ msgstr ""
 "PEDAZOS! ¡QUE OS CONVIRTÁIS EN UN DÉBIL Y ARRUGADO ANCIANO! ¡QUE...!"
 
 #. [message]: speaker=second_unit
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:2998
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:3043
 msgid "Finally! He has been reduced to dust."
 msgstr "¡Al fin! Ha sido reducido a polvo."
 
 #. [message]: speaker=Tallin
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:3003
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:3048
 msgid "At last! Victory is ours! Good work, men!"
 msgstr "¡Finalmente, la victoria es nuestra! ¡Buen trabajo, hombres!"
 
 #. [message]: speaker=Father Morvin
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:3008
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:3053
 msgid "So, where to now, Tallin?"
 msgstr "Así que, ¿Y ahora, Tallin?"
 
 #. [message]: speaker=Tallin
-#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:3013
+#: data/campaigns/Northern_Rebirth/scenarios/05a_01_The_Pursuit.cfg:3058
 msgid ""
 "Now, let’s get back to the dwarves and see what progress they have made in "
 "forging us weapons."
@@ -6508,7 +6551,8 @@ msgid "You’re right, Hamel, sorry. Were you able to pursue the trolls?"
 msgstr ""
 "Estáis en lo correcto, Hamel, lo siento. ¿Pudisteis perseguir a los troles?"
 
-# La frase terminaría con no tuvimos los suficientes hombres (enanos) pero la traducción que estaba no queda mal.
+# La frase terminaría con no tuvimos los suficientes hombres (enanos) pero la
+# traducción que estaba no queda mal.
 #. [story]
 #: data/campaigns/Northern_Rebirth/scenarios/10a_Stolen_Gold.cfg:106
 msgid ""
@@ -6891,7 +6935,8 @@ msgstr "¿Umm, deberíamos dejar que los troles escapen, o acabarlos ahora?"
 msgid "Hey! Stand your ground, you cowards!"
 msgstr "¡Eh! ¡Quedaros en vuestras posiciones, cobardes!"
 
-# Le saco el voseo a los trolls ya que son criaturas mas torpes y no hablan tan educadamente.
+# Le saco el voseo a los trolls ya que son criaturas mas torpes y no hablan
+# tan educadamente.
 #. [message]: speaker=Bor
 #: data/campaigns/Northern_Rebirth/scenarios/10a_Stolen_Gold.cfg:833
 msgid "You are a fool, human! We shall crush and destroy you!"
@@ -6912,7 +6957,8 @@ msgstr ""
 "¡Oh, no! ¡Los elfos le acaban de entregar a los humanos un montón de oro! "
 "¡Esto no tiene caso! ¡Huyamos! ¡Huyamos!"
 
-# Le saco el voseo a los trolls ya que son criaturas mas torpes y no hablan tan educadamente.
+# Le saco el voseo a los trolls ya que son criaturas mas torpes y no hablan
+# tan educadamente.
 #. [message]: speaker=Bor
 #: data/campaigns/Northern_Rebirth/scenarios/10a_Stolen_Gold.cfg:880
 msgid "You are a fool, human! We will crush and destroy you!"
@@ -7023,7 +7069,8 @@ msgstr ""
 "que a través de los siglos se han ganado el respeto y la admiración de los "
 "Elfos del Norte es muy pequeño, pero debéis saber que sois uno de ellos."
 
-# Hay un cambio en el sentido de la frase, en realidad sería que vivirá de a cuerdo a la confianza que los elfos depositaron en él.
+# Hay un cambio en el sentido de la frase, en realidad sería que vivirá de a
+# cuerdo a la confianza que los elfos depositaron en él.
 # El párrafo siguiente cambia también de acuerdo a esto.
 #. [message]: speaker=Tallin
 #: data/campaigns/Northern_Rebirth/scenarios/10a_Stolen_Gold.cfg:1042
@@ -7922,7 +7969,9 @@ msgstr ""
 "gran batallón de veteranos enanos, avanzando a marchas forzadas hacia la "
 "fortaleza de los orcos."
 
-# Habría que revisar en esta línes y las que están 5 o 6 más abajo, el tema de las direcciones, hacia donde se separan, pues hay grupos que van al mismo lado, en vez de rodear al enemigo.
+# Habría que revisar en esta línes y las que están 5 o 6 más abajo, el tema de
+# las direcciones, hacia donde se separan, pues hay grupos que van al mismo
+# lado, en vez de rodear al enemigo.
 # Salvo que sean de 2 tramas distintas, pero aún así, me parece confuso.
 #. [part]
 #: data/campaigns/Northern_Rebirth/scenarios/13a_Showdown.cfg:34
@@ -9373,6 +9422,9 @@ msgstr "¡Eryssa, no! ¡Por favor, no os muráis!"
 msgid "How could this happen? We can’t possibly go on without her..."
 msgstr "¿Cómo ha podido pasar esto? No podremos seguir sin ella..."
 
+#~ msgid "HAHAHAHA, DEATH HAS NO EFFECT ON ME YOU FOOLS!"
+#~ msgstr "¡JAJAJAJA, LA MUERTE NO ME AFECTA, TONTOS!"
+
 #~ msgid ""
 #~ "The old door crumbles away, revealing an old tunnel on the other side."
 #~ msgstr ""
@@ -9679,7 +9731,8 @@ msgstr "¿Cómo ha podido pasar esto? No podremos seguir sin ella..."
 #~ msgid "What the...? <i>No!</i>"
 #~ msgstr "¿Qué dem...? <i>¡No!</i>"
 
-# Tiene alguna traducción esto ? parece el grito de los cowboys cuando arrean ganado.
+# Tiene alguna traducción esto ? parece el grito de los cowboys cuando arrean
+# ganado.
 #~ msgid "HEEEEE-YAAAAA!!"
 #~ msgstr "¡¡JIIIII-YAAAAA!!"
 

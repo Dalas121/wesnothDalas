@@ -1,25 +1,26 @@
-# David Novotný [Draqen] <Dragen@seznam.cz>, 2007.
+# David Novotný (Draqen) <Dragen@seznam.cz>, 2007.
 # Vladimír Slávik <slavik.vladimir@seznam.cz>, 2007 - 2011.
 # Anežka Bubeníčková <masozravapalma@gmail.com>, 2007, 2008.
 # Karel Doleček <KDolecek@seznam.cz>, 2008.
-# Petr Šlejhar (Septim) <septim@centrum.cz>, 2008, 2011, 2020 - 2022.
+# Petr Šlejhar (Septim) <septim@centrum.cz>, 2008, 2011, 2020 - 2022, 2026
 # Honza <Honza-mistic@seznam.cz>, 2014.
 # Martin Hrubý <hrubymar10@gmail.com>, 2017 - 2020.
-# Michal Žejdl <lachim@emer.cz>, 2019 - 2025
+# Michal Žejdl <lachim@emer.cz>, 2019 - 2026
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-01-20 17:31 UTC\n"
-"PO-Revision-Date: 2025-12-25 10:03+0100\n"
-"Last-Translator: Michal Žejdl <lachim@emer.cz>\n"
+"POT-Creation-Date: 2026-05-19 02:15 UTC\n"
+"PO-Revision-Date: 2026-03-22 14:19+0100\n"
+"Last-Translator: Septim <septim@centrum.cz>\n"
 "Language-Team: Czech https://wiki.wesnoth.org/CzechTranslation\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Poedit 3.9\n"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:11
@@ -32,32 +33,32 @@ msgid "SoF"
 msgstr "OŽ"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:20
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:21
 msgid "Fighter"
 msgstr "Bojovník"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:20
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:21
 msgid "Normal"
 msgstr "Normální"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:21
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:22
 msgid "Challenging"
 msgstr "Náročná"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:21
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:22
 msgid "Steelclad"
 msgstr "Trpasličí těžkooděnec"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:22
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:23
 msgid "Difficult"
 msgstr "Obtížná"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:22
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:23
 msgid "Lord"
 msgstr "Lord"
 
@@ -75,7 +76,7 @@ msgstr "Lord"
 # já vyprávím příběh, je jeden beztak.
 # (vyprávím příběh, vše souvisí nějak.)
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:25
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:26
 msgid ""
 "<i>The mark of Wesnoth’s banner bold\n"
 "Comes not from its own land;\n"
@@ -97,32 +98,32 @@ msgstr ""
 "\n"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:34
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:35
 msgid "(Hard level, 10 scenarios.)"
 msgstr "(Úroveň ostřílený hráč, 10 scénářů.)"
 
 #. [about]
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:39
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:40
 msgid "Campaign Design"
 msgstr "Návrh tažení"
 
 #. [about]
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:45
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:46
 msgid "Campaign Maintenance"
 msgstr "Údržba tažení"
 
 #. [about]
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:57
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:58
 msgid "WML Assistance"
 msgstr "Pomoc se skriptováním"
 
 #. [about]
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:72
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:73
 msgid "Artwork and Graphics Design"
-msgstr "Kresby a grafika"
+msgstr "Návrh a tvorba grafiky"
 
 #. [editor_group]: id=sof
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:139
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:140
 msgid "Sceptre of Fire"
 msgstr "Ohnivé žezlo"
 
@@ -1198,7 +1199,7 @@ msgstr ""
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/2p5_Reaching_the_Runecrafter.cfg:308
 msgid "Get back!"
-msgstr ""
+msgstr "Zpátky!"
 
 #. [message]: speaker=Pidmer
 #: data/campaigns/Sceptre_of_Fire/scenarios/2p5_Reaching_the_Runecrafter.cfg:317
@@ -1677,19 +1678,22 @@ msgstr ""
 #. [message]: speaker=Alanin
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:263
 msgid ""
-"Elves may not challenge us, but I've heard of many other dangers lurking in "
+"Elves may not challenge us, but I’ve heard of many other dangers lurking in "
 "the far Northlands. Wolves and trolls, but even the snow and ice itself "
-"comes alive!  We should be careful!"
+"comes alive! We should be careful!"
 msgstr ""
+"Elfové nám sice nehrozí, ale slyšel jsem o mnoha jiných nebezpečích, která "
+"číhají v dalekých severních krajích. Vlci a trollové, ale i samotný sníh "
+"a led ožívají! Měli bychom být opatrní!"
 
 #. [message]: speaker=Baglur
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:267
-#, fuzzy
-#| msgid "Right. We’ll probably have to fight our way through to his house."
 msgid ""
 "Right, we’ll probably have to fight our way through to his house. But we "
 "need to find it first."
-msgstr "Správně. Pravděpodobně se k němu budeme muset probojovat."
+msgstr ""
+"Správně. Pravděpodobně se k tomu domu budeme muset probojovat. Ale nejdřív "
+"ho musíme najít."
 
 #. [unit]: type=Gryphon, id=Krawg
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:287
@@ -1786,65 +1790,70 @@ msgstr "Thursagan"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:362
-msgid "Ah!  Go away!"
-msgstr ""
+msgid "Ah! Go away!"
+msgstr "Ach! Jděte pryč!"
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:372
 msgid ""
-"Was that Thursagan?  Finding him wasn't as difficult as I thought it would "
-"be."
-msgstr ""
+"Was that Thursagan? Finding him wasn’t as difficult as I thought it would be."
+msgstr "Nebyl to Thursagan? Najít ho nebylo tak těžké, jak jsem si myslel."
 
 #. [message]: speaker=Baglur
 #. A bit of the accent, to make him more distinct from Rugnur
 #. "Aye, but it doesn't mean much unless he stops running away from us."
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:378
 msgid "Och, but it donna mean much unless he stops running away from us."
-msgstr ""
+msgstr "Och, ale to nic neznamená, dokud před námi nepřestane utíkat."
 
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:395
 msgid ""
-"This is just an empty shack, where could that old Runecrafter be hiding...  "
+"This is just an empty shack, where could that old Runecrafter be hiding... "
 "Wait, this scrap of wood is actually a trap door!"
 msgstr ""
+"Tohle je jen prázdná chatrč, kde by se ten starý runový mistr mohl "
+"skrývat... Počkat, tenhle kus dřeva jsou ve skutečnosti padací dveře!"
 
 #. [message]: speaker=Baglur
 #. "Come on out, Thursagan!  We need your help with some serious business!"
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:400
-msgid "C'mon out, Thursagan!  We need'ya help with some serious business!"
-msgstr ""
+msgid "C’mon out, Thursagan! We need’ya help with some serious business!"
+msgstr "Pojď ven, Thursagane! Potřebujeme pomoct s jistou důležitou věcí!"
 
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:404
 msgid ""
-"It's no good, he's not hiding under it, there's just this collapsed tunnel."
-msgstr ""
+"It’s no good, he’s not hiding under it, there’s just this collapsed tunnel."
+msgstr "To je k ničemu, pod nimi se neschovává, je tam jen ten zřícený tunel."
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:408
-msgid "We have to find him!  Fan out!"
-msgstr ""
+msgid "We have to find him! Fan out!"
+msgstr "Musíme ho najít! Rozptylte se!"
 
 #. [message]: speaker=Alanin
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:412
-msgid "I don't like this, we should stick together."
-msgstr ""
+msgid "I don’t like this, we should stick together."
+msgstr "To se mi nelíbí, měli bychom se držet pohromadě."
 
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:445
 msgid ""
-"An empty shack...  I thought I'd found the Runecrafter, but there's no sign "
+"An empty shack... I thought I’d found the Runecrafter, but there’s no sign "
 "of anyone having been here recently."
 msgstr ""
+"Prázdná chatrč... Přišlo mi, že jsem našel runového mistra, ale nic nesvědčí "
+"o tom, že by tu v poslední době někdo byl."
 
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:476
 msgid ""
-"Another empty shack...  But there is this suspicious slab of wood.  Let's "
-"see what's underneath, shall we?"
+"Another empty shack... But there is this suspicious slab of wood. Let’s see "
+"what’s underneath, shall we?"
 msgstr ""
+"Další prázdná chatrč... Ale je tu tenhle podezřelý kus dřeva. Podíváme se, "
+"co je pod ním, co vy na to?"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:486
@@ -1888,29 +1897,29 @@ msgstr ""
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:510
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:566
 msgid "He just ducked back down underground..."
-msgstr ""
+msgstr "Prostě se zase schoval pod zem..."
 
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:515
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:571
-msgid "... and collapsed the tunnel.  He got away!"
-msgstr ""
+msgid "... and collapsed the tunnel. He got away!"
+msgstr "... a zavalil tunel. Utekl!"
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:519
-msgid "He can't get far, can he?"
-msgstr ""
+msgid "He can’t get far, can he?"
+msgstr "Nemohl se dostat daleko, že ne?"
 
 #. [message]: speaker=Baglur
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:523
 msgid "Aye, the search continues."
-msgstr ""
+msgstr "Jo, pátrání pokračuje."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:532
 msgid ""
-"You are playing a dangerous game!  I gave you my answer, now leave me be!"
-msgstr ""
+"You are playing a dangerous game! I gave you my answer, now leave me be!"
+msgstr "Hraješ nebezpečnou hru! Odpověděl jsem ti, tak mě teď nech na pokoji!"
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:536
@@ -1962,9 +1971,11 @@ msgstr ""
 #. [message]: speaker=narrator
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:580
 msgid ""
-"You people just don't seem to understand!  I'm out here because I want no "
+"You people just don’t seem to understand! I’m out here because I want no "
 "part of the nonsense of kings and those who crave power!"
 msgstr ""
+"Vy to prostě nechápete! Jsem tady, protože nechci být součástí těch nesmyslů "
+"kolem králů a jiných bažitelů po moci!"
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:584
@@ -1978,9 +1989,11 @@ msgstr ""
 #. [message]: speaker=Alanin
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:588
 msgid ""
-"The Ruby causes madness, it is said.  A magical cage that could protect the "
+"The Ruby causes madness, it is said. A magical cage that could protect the "
 "King would help us all."
 msgstr ""
+"Říká se, že rubín přivádí k šílenství. Magická klec, která by ochránila "
+"krále, by pomohla nám všem."
 
 #. [message]: speaker=Baglur
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:592
@@ -2014,12 +2027,12 @@ msgstr ""
 #. [message]: type=Snow Golem
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:682
 msgid "Ghaaah!"
-msgstr ""
+msgstr "Gáááh!"
 
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:686
 msgid "Yikes!"
-msgstr ""
+msgstr "Jejda!"
 
 #. [message]: speaker=Thursagan
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:719
@@ -2308,10 +2321,8 @@ msgstr "Trollí usedlíci"
 
 #. [side]: type=Gray Bogeyman
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:260
-#, fuzzy
-#| msgid "Intruding Trolls"
 msgid "Intruders"
-msgstr "Trollí vetřelci"
+msgstr "Vetřelci"
 
 #. [side]: type=Direwolf Rider, type=Goblin Pillager
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:290
@@ -2343,9 +2354,11 @@ msgstr "Zlato"
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:701
 msgid ""
 "Well, these are the eastern mines, rich in quality minerals, but also home "
-"to trolls and other denizens of the darkness.  Mining can take a while, this "
-"won't be easy."
+"to trolls and other denizens of the darkness. Mining can take a while, this "
+"won’t be easy."
 msgstr ""
+"Tak tohle jsou východní doly, bohaté na prvotřídní nerosty, ale také domov "
+"trollů a dalších obyvatel temnoty. Těžba může chvíli trvat, nebude to snadné."
 
 #. [message]: speaker=Thursagan
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:705
@@ -2360,52 +2373,49 @@ msgstr ""
 
 #. [message]: speaker=Baglur
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:709
-#, fuzzy
-#| msgid "Also, the only coal that wi’ melt this gold is here."
 msgid ""
 "Aye, these mines yield the needed gold, but also the only coal that wi’ melt "
 "that gold."
 msgstr ""
-"A také jediné uhlí, co vydá žár k roztavení toho zlata, je zase jenom tady."
+"Ba, tyhle doly potřebné zlato poskytují, ale také jediné uhlí, které vydá "
+"žár k roztavení toho zlata."
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:713
-#, fuzzy
-#| msgid ""
-#| "So we’re down here to, what, mine this gold and coal? That should be easy "
-#| "enough."
 msgid ""
-"So we’re down here to get both the gold and coal.  Simple enough, even if we "
+"So we’re down here to get both the gold and coal. Simple enough, even if we "
 "have to fight for it."
 msgstr ""
-"Tak jsme tu, co začít těžit zlato a uhlí? Nemělo by to být nic těžkého."
+"Takže jsme tady, abychom získali zlato i uhlí. Dost jednoduché, i kdybychom "
+"o to měli bojovat."
 
 #. [message]: speaker=Thursagan
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:717
-#, fuzzy
-#| msgid ""
-#| "Yes, although we will have to hire the miners — they don’t work for free. "
-#| "But beware, there are trolls and such down here..."
 msgid ""
 "Yes, although we will have to hire the miners — they don’t work for free. "
 "And you need to protect them while they do their work."
 msgstr ""
-"Ano, ačkoli horníky budeme muset najmout – zadarmo pracovat nebudou. Ale "
-"dávejte pozor, tam dole je mnoho trollů a podobné chamradi..."
+"Ano, ačkoli horníky budeme muset najmout – zadarmo pracovat nebudou. A až "
+"budou pracovat, vy je musíte chránit."
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:721
 msgid ""
-"Hrmm, that's a good point... Well, these are old mines, not frontier "
-"caverns, we should be able to use the rails and carts, if we're smart about "
+"Hrmm, that’s a good point... Well, these are old mines, not frontier "
+"caverns, we should be able to use the rails and carts, if we’re smart about "
 "it."
 msgstr ""
+"Hm, to je dobrá připomínka... Nu, jsou to staré doly, ne hraniční jeskyně, "
+"takže bychom měli být schopni využít koleje i vozíky, pokud na to půjdeme s "
+"fištrónem."
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:745
 msgid ""
-"We're not facing a united enemy, maybe we can use that to our advantage."
+"We’re not facing a united enemy, maybe we can use that to our advantage."
 msgstr ""
+"Možná můžem obrátit ve svůj prospěch, že nestojíme proti jednotnému "
+"nepříteli."
 
 #. [message]: speaker=Thursagan
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:766
@@ -3851,10 +3861,10 @@ msgstr "A který z velkých draků jsi ty?"
 #: data/campaigns/Sceptre_of_Fire/scenarios/8_The_Dragon.cfg:400
 msgid ""
 "I am Khrakrahs, greatest dragon of all time! Haldric killed Shek’kahan my "
-"rival, but he was weaker than me, and you will not find me so easy to "
+"brother, but he was weaker than me, and you will not find me so easy to "
 "defeat. Now get out of my volcano!"
 msgstr ""
-"Já jsem Krakraš, největší drak všech dob! Jsem rival Šekekahana, kterého "
+"Já jsem Krakraš, největší drak všech dob! Jsem bratr Šekekahana, kterého "
 "zabil Haldrik. Ale Šekekahan byl slabší než já. Zjistíte, že mne není tak "
 "lehké porazit. Teď vypadněte z mé sopky!"
 
@@ -3903,19 +3913,21 @@ msgstr ""
 #. [message]: speaker=Krawg
 #: data/campaigns/Sceptre_of_Fire/scenarios/8_The_Dragon.cfg:480
 msgid "Aww... Melted, stuck!"
-msgstr ""
+msgstr "Kvíí... Tavenýý, lepenýý!"
 
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/8_The_Dragon.cfg:486
-msgid "I can't pick this up, the gold is stuck!"
-msgstr ""
+msgid "I can’t pick this up, the gold is stuck!"
+msgstr "Nemůžu to vzít, to zlato tam drží!"
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/8_The_Dragon.cfg:492
 msgid ""
-"Hrm, I see what you mean.  The dragon's hoard melted into the rock, we can't "
-"just grab those gold coins.  Too bad."
+"Hrm, I see what you mean. The dragon’s hoard melted into the rock, we can’t "
+"just grab those gold coins. Too bad."
 msgstr ""
+"Hmm, chápu, co myslíš. Dračí poklad se roztavil do skály, takže ty zlaté "
+"mince si nemůžeme jen tak vzít. Škoda."
 
 #. [message]: speaker=Thursagan
 #: data/campaigns/Sceptre_of_Fire/scenarios/8_The_Dragon.cfg:513
@@ -4516,23 +4528,17 @@ msgstr ""
 
 #. [message]: speaker=Gathor
 #: data/campaigns/Sceptre_of_Fire/scenarios/9_Caverns_of_Flame.cfg:1428
-#, fuzzy
-#| msgid ""
-#| "Ah ha! I knew it, there are intruders! And yet our damned bridge is "
-#| "broken, it was built by idiots. Come, come, bring planks, we’ve got to "
-#| "get across!"
 msgid ""
 "Ah ha! I knew it, there are intruders! And yet our damned bridge is broken, "
 "it was built by idiots."
 msgstr ""
-"Aha! Věděl jsem to, vetřelci jsou tu! A zrovna je ten náš zatracený most "
-"rozbitý, holt ho stavěli idioti. Pojďte, pojďte, přineste prkna, musíme se "
-"přes něj dostat!"
+"Aha! Věděl jsem to, vetřelci jsou tu! A zrovna je ten náš zatracený most "
+"rozbitý, holt ho stavěli idioti."
 
 #. [message]: speaker=Gathor
 #: data/campaigns/Sceptre_of_Fire/scenarios/9_Caverns_of_Flame.cfg:1433
 msgid "Come, come, bring planks, we’ve got to get across!"
-msgstr ""
+msgstr "Pojďte, pojďte, přineste prkna, musíme se přes něj dostat!"
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/9_Caverns_of_Flame.cfg:1441
@@ -4881,7 +4887,7 @@ msgstr ""
 #. [unit_type]: id=Gray Bogeyman, race=monster
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Bogeyman.cfg:4
 msgid "Gray Bogeyman"
-msgstr ""
+msgstr "Šedý bubák"
 
 #. [unit_type]: id=Gray Bogeyman, race=monster
 #. [unit_type]: id=Cave Goblin, race=monster
@@ -4890,35 +4896,38 @@ msgstr ""
 msgid ""
 "For reasons long forgotten, some cursed lineage of elves or orcs retreated "
 "into the dark caverns of the deep mines, losing their civilization and "
-"dignity in the process, to subsist as little more than beasts.  They have "
+"dignity in the process, to subsist as little more than beasts. They have "
 "lost the ability to craft tools or weapons, but their adaptation to the "
 "gloomy caves gives them large, clawed hands with which to dig or hunt."
 msgstr ""
+"Z dávno zapomenutých důvodů se nějaký prokletý rod elfů či skřetů uchýlil do "
+"temných jeskyní hlubokých dolů, přičemž přišel o svou civilizaci i "
+"důstojnost. Jeho členové žijí nyní téměř jako zvířata. Ztratili schopnost "
+"vyrábět nástroje či zbraně, ale díky přizpůsobení se ponurým jeskyním mají "
+"velké drápovité ruce, jimiž hrabou nebo loví."
 
 #. [attack]: type=pierce
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Bogeyman.cfg:43
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Goblin.cfg:38
 msgid "bite"
-msgstr ""
+msgstr "kousnutí"
 
 #. [attack]: type=blade
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Bogeyman.cfg:55
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Goblin.cfg:50
 #: data/campaigns/Sceptre_of_Fire/units/Snow_Golem.cfg:53
 msgid "claws"
-msgstr ""
+msgstr "drápy"
 
 #. [unit_type]: id=Cave Goblin, race=monster
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Goblin.cfg:4
-#, fuzzy
-#| msgid "Goblins"
 msgid "Cave Goblin"
-msgstr "Goblini"
+msgstr "Jeskynní goblin"
 
 #. [unit_type]: id=Cave Wyrm, race=monster
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Wyrm.cfg:5
 msgid "Cave Wyrm"
-msgstr "Wyrm jeskynní"
+msgstr "Jeskynní wyrm"
 
 #. [unit_type]: id=Cave Wyrm, race=monster
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Wyrm.cfg:20
@@ -4928,8 +4937,8 @@ msgid ""
 "wizard or dragon. Mature Wyrms have excellent control of their fire breath "
 "attack, as if they are themselves miniature dragons."
 msgstr ""
-"Wyrmové jeskynní jsou podivná zvířata. Jsou to v podstatě statní hadi s "
-"křídly, ale bez nohou. Jsou poměrně vzácní a jejich výskyt se připisuje "
+"Jeskynní wyrmové jsou podivná zvířata. Jsou to v podstatě statní hadi "
+"s křídly, ale bez nohou. Jsou poměrně vzácní a jejich výskyt se připisuje "
 "nějakému výstřednímu čaroději či drakovi. Dospělí wyrmové výborně ovládají "
 "svůj útok ohnivým dechem, jako by sami byli miniaturními draky."
 
@@ -4952,7 +4961,7 @@ msgstr "dech"
 #. [unit_type]: id=Cave Wyrmlet, race=monster
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Wyrmlet.cfg:4
 msgid "Cave Wyrmlet"
-msgstr "Wyrmě jeskynní"
+msgstr "Jeskynní wyrmě"
 
 #. [unit_type]: id=Cave Wyrmlet, race=monster
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Wyrmlet.cfg:18
@@ -4961,15 +4970,15 @@ msgid ""
 "are relatively rare, and their presence is attributed to some eccentric "
 "wizard or dragon. The young are small, but hungry and aggressive."
 msgstr ""
-"Wyrmové jeskynní jsou podivná zvířata. Jsou to v podstatě statní hadi s "
-"křídly, ale bez nohou. Jsou poměrně vzácní a jejich výskyt se připisuje "
+"Jeskynní wyrmové jsou podivná zvířata. Jsou to v podstatě statní hadi "
+"s křídly, ale bez nohou. Jsou poměrně vzácní a jejich výskyt se připisuje "
 "nějakému výstřednímu čaroději či drakovi. Wyrmí mláďata jsou malá, ale "
-"hladová a agresivní."
+"hladová a agresivní."
 
 #. [unit_type]: id=SOF Fire Dragon
 #: data/campaigns/Sceptre_of_Fire/units/Fire_Dragon.cfg:8
 msgid "Legendary Fire Dragon"
-msgstr ""
+msgstr "Legendární ohnivý drak"
 
 #. [unit_type]: id=Haldric II, race=human
 #: data/campaigns/Sceptre_of_Fire/units/Haldric_II.cfg:4
@@ -5026,7 +5035,7 @@ msgstr ""
 #. [unit_type]: id=Snow Golem, race=monster
 #: data/campaigns/Sceptre_of_Fire/units/Snow_Golem.cfg:8
 msgid "Snow Golem"
-msgstr ""
+msgstr "Sněžný golem"
 
 #. [unit_type]: id=Snow Golem, race=monster
 #: data/campaigns/Sceptre_of_Fire/units/Snow_Golem.cfg:38
@@ -5035,26 +5044,41 @@ msgid ""
 "any apparent role in nature, being neither predator nor prey. Many say they "
 "are forgotten constructs of forgotten battles, due to their relation to the "
 "weaker Snow Imps. Others say the far north is a hostile land, and these "
-"monsters are simply a manifestation of that danger.\n"
-"\n"
-"As they are constructs of snow and ice, they can repair and regenerate when "
-"in a favorable envirnoment.  However, the icy regrowth seems prone to "
-"errors, so while they were likely formed in the image of ideal warriors, "
-"they have become mishapen and their movement thus compromised.  This "
-"malformation is most obvious in their hand and arms, which take the most "
-"damage."
+"monsters are simply a manifestation of that danger."
 msgstr ""
+"Sněžní golemové jsou bytosti trochu podobné humanoidům, které bloudí "
+"zamrzlým severem, aniž v přírodě plní nějakou zjevnou roli. Nejsou ani "
+"dravci, ani kořistí. Mnozí tvrdí, že jde o zapomenuté výtvory z dávných "
+"bitev, a to kvůli jejich příbuznosti se slabšími sněžnými šotky. Jiní zase "
+"říkají, že daleký sever je nepřátelská krajina a tato monstra jsou prostě "
+"ztělesněním tohoto nebezpečí."
+
+# Dovolil jsem si v poslední větě použít množné číslo, protože obecně je pro popis jednotek vhodnější a pravděpodobně stejně v budoucnu bude originál takto upraven.
+#. [unit_type]: id=Snow Golem, race=monster
+#: data/campaigns/Sceptre_of_Fire/units/Snow_Golem.cfg:40
+msgid ""
+"As they are constructs of snow and ice, they can repair and regenerate when "
+"in a favorable environment. However, the icy regrowth seems prone to errors, "
+"so while they were likely formed in the image of ideal warriors, they have "
+"become misshapen and their movement thus compromised. This malformation is "
+"most obvious in their hand and arms, which take the most damage."
+msgstr ""
+"Jelikož jsou tvořeni sněhem a ledem, dokážou se v příznivém prostředí "
+"opravovat a regenerovat. Ledové dorůstání však bývá náchylné k chybám, a tak "
+"i když byli zřejmě stvořeni jako ideální válečníci, jsou nyní zdeformovaní, "
+"což omezuje jejich pohyblivost. Tyto deformace jsou nejviditelnější na "
+"jejich rukou a pažích, které jsou nejvíce vystaveny poškození."
 
 #. [attack]: type=cold
 #: data/campaigns/Sceptre_of_Fire/units/Snow_Golem.cfg:62
 #: data/campaigns/Sceptre_of_Fire/units/Snow_Imp.cfg:98
 msgid "snowball"
-msgstr ""
+msgstr "sněhová koule"
 
 #. [unit_type]: id=Snow Imp, race=monster
 #: data/campaigns/Sceptre_of_Fire/units/Snow_Imp.cfg:5
 msgid "Snow Imp"
-msgstr ""
+msgstr "Sněžný šotek"
 
 #. [unit_type]: id=Snow Imp, race=monster
 #: data/campaigns/Sceptre_of_Fire/units/Snow_Imp.cfg:35
@@ -5065,6 +5089,11 @@ msgid ""
 "citizen’s improvised blunt weaponry makes them a hazard to inexperienced "
 "wanderers of the frozen northern lands."
 msgstr ""
+"Sněžní šotci, prosté bytosti stvořené z ledu a sněhu, se dokáží ubránit tím, "
+"že s překvapivou silou plivou hroudy zmrzlého bláta. Přestože jsou pomalí, "
+"křehcí a zranitelní vůči ohni, představují kvůli své odolnosti vůči "
+"improvizovaným tupým zbraním běžných obyvatel nebezpečí pro nezkušené "
+"poutníky v zamrzlých severních končinách."
 
 #. [set_menu_item]: id=sof_minecart_boarding_{VAR}
 #: data/campaigns/Sceptre_of_Fire/utils/cart-utils.cfg:221
@@ -5219,7 +5248,7 @@ msgstr "Zvyšuje poškození u zbraní na blízko o 2"
 #. [terrain_type]: id=sof_barren_shack
 #: data/campaigns/Sceptre_of_Fire/utils/terrain.cfg:4
 msgid "Barren Shack"
-msgstr ""
+msgstr "Opuštěná chatrč"
 
 #. [terrain_type]: id=sof_ancient_stone_floor
 #: data/campaigns/Sceptre_of_Fire/utils/terrain.cfg:19
@@ -5265,12 +5294,12 @@ msgstr ""
 #. [regenerate]: id=sof_snow_regenerates
 #: data/campaigns/Sceptre_of_Fire/utils/utils.cfg:119
 msgid "cryoregenerates"
-msgstr ""
+msgstr "obnovuje se mrazem"
 
 #. [regenerate]: id=sof_snow_regenerates
 #: data/campaigns/Sceptre_of_Fire/utils/utils.cfg:120
 msgid "female^cryoregenerates"
-msgstr ""
+msgstr "obnovuje se mrazem"
 
 #. [regenerate]: id=sof_snow_regenerates
 #: data/campaigns/Sceptre_of_Fire/utils/utils.cfg:121
@@ -5278,39 +5307,5 @@ msgid ""
 "The unit will heal itself 8 HP per turn if on a frozen base terrain. If it "
 "is poisoned, it will remove the poison instead of healing."
 msgstr ""
-
-#~ msgid ""
-#~ "Except for trolls and ogres, right? I’ve heard they live in the far "
-#~ "Northlands. They’re probably lurking around here somewhere."
-#~ msgstr ""
-#~ "Kromě trollů a obrů, že? Slyšel jsem, že ti žijí takhle na severu. "
-#~ "Pravděpodobně se tu někde potloukají."
-
-#~ msgid ""
-#~ "Screech!\n"
-#~ "<i>(Nods at the middle distance.)</i>"
-#~ msgstr ""
-#~ "Kník!\n"
-#~ "<i>(Pokývá hlavou k něčemu nedaleko.)</i>"
-
-#~ msgid "I see a house in the distance!"
-#~ msgstr "Vidím v dálce dům!"
-
-#~ msgid "Go away, you birds! Or I shall burn you out of the air!"
-#~ msgstr "Běžte pryč, ptáci! Nebo vás spálím ve vzduchu!"
-
-#~ msgid ""
-#~ "He doesn’t want to talk to gryphons, apparently. I think we’ll have to "
-#~ "get someone there he will talk to..."
-#~ msgstr ""
-#~ "Zřejmě nechce mluvit s gryfy. Myslím, že tam budeme muset dostat někoho "
-#~ "jiného, aby s ním promluvil."
-
-#~ msgid ""
-#~ "Well, these are the eastern mines. Trolls and ogres live here, be "
-#~ "prepared to fight them; also, be prepared to spend quite some time here — "
-#~ "mining can take a while."
-#~ msgstr ""
-#~ "Tak tohle jsou východní doly. Žijí tu trollové a obři, takže buďte "
-#~ "připraveni s nimi bojovat. Taky se připravte, že tu nějaký čas pobudeme – "
-#~ "těžba může chvíli trvat."
+"Pokud se jednotka nachází na zamrzlém terénu, vyléčí se o 8 životů za kolo. "
+"V případě, že je otrávena, je místo vyléčení uzdravena z otravy."

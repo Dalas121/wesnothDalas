@@ -13,16 +13,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wesnoth_Units-1.16.6\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-01-20 17:31 UTC\n"
+"POT-Creation-Date: 2026-05-19 02:15 UTC\n"
 "PO-Revision-Date: 2024-02-13 18:32+0100\n"
 "Last-Translator: alberic89 <alberic89@gmx.com>\n"
-"Language-Team: French <wesnothfr@lists.tuxfamily.org> \n"
+"Language-Team: French <wesnothfr@lists.tuxfamily.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Poedit 3.9\n"
 
 #. [attack]: type=impact
 #: data/campaigns/Dead_Water/units/Soldier_King.cfg:30
@@ -50,6 +50,7 @@ msgstr "masse"
 #: data/campaigns/Descent_Into_Darkness/units/Malin_Keshar.cfg:465
 #: data/campaigns/Descent_Into_Darkness/units/Malin_Keshar.cfg:493
 #: data/campaigns/Descent_Into_Darkness/units/Malin_Keshar.cfg:535
+#: data/campaigns/Of_Pearls_and_Pirates/units/Thea1.cfg:21
 #: data/core/units/dunefolk/Falconer.cfg:138
 #: data/core/units/dunefolk/Sky_Hunter.cfg:136
 #: data/core/units/humans/Loyalist_Bowman.cfg:23
@@ -78,7 +79,7 @@ msgstr "onde glaciale"
 #: data/campaigns/Eastern_Invasion/units/Human_Dacyn_Twilight_Mage.cfg:85
 #: data/campaigns/Eastern_Invasion/units/Undead_Ravanal_Dread_Lich.cfg:109
 #: data/campaigns/Secrets_of_the_Ancients/units/Necro_Ancient_Lich.cfg:56
-#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Rune_Lord.cfg:101
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Rune_Lord.cfg:111
 #: data/campaigns/Under_the_Burning_Suns/units/undead/Spider_Lich.cfg:47
 #: data/core/units/undead/Necro_Ancient_Lich.cfg:47
 #: data/core/units/undead/Necro_Dark_Adept.cfg:39
@@ -293,6 +294,8 @@ msgstr "fléau d'armes"
 #: data/campaigns/Heir_To_The_Throne_Classic/units/Tutorial_Fighteress.cfg:25
 #: data/campaigns/Heir_To_The_Throne_Classic/units/Tutorial_Warrior.cfg:25
 #: data/campaigns/Heir_To_The_Throne_Classic/units/Tutorial_Warrioress.cfg:26
+#: data/campaigns/Of_Pearls_and_Pirates/units/Thea2.cfg:24
+#: data/campaigns/Of_Pearls_and_Pirates/units/Thea3.cfg:24
 #: data/campaigns/Sceptre_of_Fire/units/Haldric_II.cfg:26
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:34
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Fighter.cfg:23
@@ -466,7 +469,7 @@ msgstr "piétinement"
 #. [attack]: type=cold
 #: data/campaigns/Eastern_Invasion/units/Undead_Ravanal_Dread_Lich.cfg:96
 #: data/campaigns/Secrets_of_the_Ancients/units/Necro_Ancient_Lich.cfg:44
-#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Rune_Lord.cfg:89
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Rune_Lord.cfg:99
 #: data/core/units/undead/Necro_Ancient_Lich.cfg:37
 #: data/core/units/undead/Necro_Lich.cfg:40
 msgid "chill tempest"
@@ -479,6 +482,7 @@ msgstr "tempête glaciale"
 #: data/campaigns/Heir_To_The_Throne/units/Human_Konrad_L4.cfg:62
 #: data/campaigns/Heir_To_The_Throne_Classic/units/Commander.cfg:33
 #: data/campaigns/Heir_To_The_Throne_Classic/units/Lord.cfg:34
+#: data/campaigns/Of_Pearls_and_Pirates/units/Thea1.cfg:30
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:43
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Lord.cfg:44
 #: data/campaigns/Under_the_Burning_Suns/units/humans/Human_Commander.cfg:45
@@ -556,6 +560,202 @@ msgstr "griffes"
 #: data/core/units/saurians/Soothsayer.cfg:31
 msgid "curse"
 msgstr "malédiction"
+
+#. [unit_type]: id=Pirate Flagship, race=ship
+#: data/campaigns/Of_Pearls_and_Pirates/units/Pirate_Flagship.cfg:9
+#, fuzzy
+msgid "Pirate Flagship"
+msgstr "Le vaisseau amiral pirate"
+
+#. [unit_type]: id=Pirate Flagship, race=ship
+#. [unit_type]: id=Pirate Carrack, race=ship
+#: data/campaigns/Of_Pearls_and_Pirates/units/Pirate_Flagship.cfg:24
+#: data/core/units/boats/Carrack_Pirate.cfg:22
+#, fuzzy
+msgid ""
+"Pirate galleons are to transport ships what wolves are to sheep. The pirates "
+"who crew them are more than happy to help relieve other ships of their "
+"weighty cargo, or to fight as privateers in return for coin."
+msgstr ""
+"Les brigantins pirates sont aux navires de transport ce que les loups sont "
+"aux brebis. Les pirates à leur bord sont particulièrement heureux de "
+"soulager les autres navires de leur fret encombrant."
+
+#. [attack]: type=impact
+#. [attack]: type=fire
+#: data/campaigns/Of_Pearls_and_Pirates/units/Pirate_Flagship.cfg:28
+#: data/campaigns/Of_Pearls_and_Pirates/units/Pirate_Skiff.cfg:30
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Dustbok.cfg:24
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Tauroch_Flagbearer.cfg:39
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Tauroch_Vanguard.cfg:38
+#: data/core/units/boats/Carrack_Merchant.cfg:27
+#: data/core/units/boats/Carrack_Pirate.cfg:26
+#: data/core/units/boats/Derelict_Ship.cfg:23
+#: data/core/units/boats/Elf_Cutter.cfg:24
+#: data/core/units/boats/Elf_Sloop.cfg:25 data/core/units/boats/Fireship.cfg:77
+#: data/core/units/boats/Ghost_Ship.cfg:39
+#: data/core/units/boats/Orc_Rigship.cfg:23
+#: data/core/units/boats/Orc_Warship.cfg:24
+#: data/core/units/boats/Raider_Coastal.cfg:31
+#: data/core/units/boats/Raider_Iron.cfg:32 data/core/units/boats/Skiff.cfg:26
+#: data/core/units/drakes/Enforcer.cfg:44
+#: data/core/units/drakes/Thrasher.cfg:41
+#, fuzzy
+msgid "ram"
+msgstr "éperon"
+
+#. [attack]: type=pierce
+#: data/campaigns/Of_Pearls_and_Pirates/units/Pirate_Flagship.cfg:38
+#: data/core/units/boats/Carrack_Pirate.cfg:36
+#, fuzzy
+#| msgid "ballista"
+msgid "ballistae"
+msgstr "baliste"
+
+#. [attack]: type=pierce
+#: data/campaigns/Of_Pearls_and_Pirates/units/Pirate_Flagship.cfg:47
+#: data/core/units/boats/Carrack_Pirate.cfg:45
+#, fuzzy
+#| msgid "Trapper"
+msgid "grapple"
+msgstr "Trappeur"
+
+#. [unit_type]: id=Pirate Skiff, race=ship
+#: data/campaigns/Of_Pearls_and_Pirates/units/Pirate_Skiff.cfg:9
+msgid "Pirate Skiff"
+msgstr "Chaloupe pirate"
+
+#. [unit_type]: id=Pirate Skiff, race=ship
+#. [unit_type]: id=Skiff, race=ship
+#: data/campaigns/Of_Pearls_and_Pirates/units/Pirate_Skiff.cfg:26
+#: data/core/units/boats/Skiff.cfg:22
+#, fuzzy
+#| msgid ""
+#| "Propelled by oars or small sails, boats are used to travel short "
+#| "distances and in shallows where large ships cannot navigate."
+msgid ""
+"Propelled by oars or small sails, Skiffs are used to travel short distances "
+"and in shallows where large ships cannot navigate."
+msgstr ""
+"Souvent propulsés grâce à des rames ou des petites voiles, les bateaux sont "
+"utilisés pour naviguer sur de courtes distances et dans les eaux peu "
+"profondes que des navires plus grands ne peuvent traverser."
+
+#. [attack]: type=pierce
+#: data/campaigns/Of_Pearls_and_Pirates/units/Pirate_Skiff.cfg:41
+#: data/core/units/boats/Carrack_Merchant.cfg:37
+#: data/core/units/boats/Orc_Barge.cfg:36
+#: data/core/units/boats/Orc_Battle-Barge.cfg:36
+#: data/core/units/boats/Raider_Coastal.cfg:41
+#: data/core/units/boats/Raider_Iron.cfg:42 data/core/units/boats/Skiff.cfg:37
+#, fuzzy
+#| msgid "Poacher"
+msgid "archers"
+msgstr "Braconnier"
+
+#. [unit_type]: id=Bowman Thea, race=human, gender=female
+#. [unit_type]: id=Bowman, race=human, gender=male
+#: data/campaigns/Of_Pearls_and_Pirates/units/Thea1.cfg:4
+#: data/core/units/humans/Loyalist_Bowman.cfg:4
+msgid "Bowman"
+msgstr "Archer"
+
+#. [unit_type]: id=Bowman Thea, race=human, gender=female
+#. [unit_type]: id=Bowman, race=human, gender=male
+#: data/campaigns/Of_Pearls_and_Pirates/units/Thea1.cfg:17
+#: data/core/units/humans/Loyalist_Bowman.cfg:18
+#, fuzzy
+#| msgid ""
+#| "The use of archery in shooting something other than game was seen from "
+#| "its inception, and archers have been indispensable in warfare since time "
+#| "immemorial. Usually of humble origins, hailing from the peasantry or "
+#| "woodsmen, military bowmen are trained to competence with both a bow and a "
+#| "short sword, and are very common on the battlefield."
+msgid ""
+"The use of archery in shooting something other than game was seen from its "
+"inception, and archers have been indispensable in warfare since time "
+"immemorial. Usually of humble origins, hailing from the peasantry or "
+"woodsmen, military Bowmen are trained to competence with both a bow and a "
+"short sword, and are very common on the battlefield."
+msgstr ""
+"L'arc a servi à autre chose que la chasse dès son invention, et les archers "
+"ont été indispensables pour guerroyer depuis des temps immémoriaux. "
+"Généralement d'une origine modeste, issus de familles de paysans ou de "
+"forestiers, les archers sont habiles à l'arc et à l'épée courte et sont "
+"fréquemment employés sur les champs de bataille."
+
+#. [unit_type]: id=Longbowman Thea, race=human, gender=female
+#. [unit_type]: id=Longbowman, race=human, gender=male
+#: data/campaigns/Of_Pearls_and_Pirates/units/Thea2.cfg:4
+#: data/core/units/humans/Loyalist_Longbowman.cfg:4
+msgid "Longbowman"
+msgstr "Grand archer"
+
+#. [unit_type]: id=Longbowman Thea, race=human, gender=female
+#. [unit_type]: id=Longbowman, race=human, gender=male
+#: data/campaigns/Of_Pearls_and_Pirates/units/Thea2.cfg:18
+#: data/core/units/humans/Loyalist_Longbowman.cfg:19
+msgid ""
+"Longbows are fearsome weapons, but too difficult for beginning archers to "
+"wield. It takes great strength to draw one, and the added range and power it "
+"confers remain useless unless one has good aim with the weapon. Longbowmen "
+"carry their weapons as a badge of pride, and most bowmen look forward to the "
+"day they can begin using one."
+msgstr ""
+"Les grands arcs sont des armes très dangereuses mais trop techniques pour "
+"des archers débutants. Il faut une grande force pour en bander un, et "
+"l'augmentation de portée et de puissance ne sert à rien si la précision fait "
+"défaut. Les grands archers portent fièrement leur armement et la plupart des "
+"archers attendent avec impatience le jour où ils pourront utiliser cet "
+"instrument."
+
+#. [attack]: type=pierce
+#: data/campaigns/Of_Pearls_and_Pirates/units/Thea2.cfg:33
+#: data/campaigns/Of_Pearls_and_Pirates/units/Thea3.cfg:33
+#: data/core/units/elves/Marksman.cfg:38
+#: data/core/units/elves/Sharpshooter.cfg:33
+#: data/core/units/humans/Loyalist_Longbowman.cfg:34
+#: data/core/units/humans/Loyalist_Master_Bowman.cfg:34
+msgid "longbow"
+msgstr "arc long"
+
+#. [unit_type]: id=Master Bowman Thea, race=human, gender=female
+#. [unit_type]: id=Master Bowman, race=human, gender=male
+#: data/campaigns/Of_Pearls_and_Pirates/units/Thea3.cfg:4
+#: data/core/units/humans/Loyalist_Master_Bowman.cfg:4
+msgid "Master Bowman"
+msgstr "Maître archer"
+
+#. [unit_type]: id=Master Bowman Thea, race=human, gender=female
+#. [unit_type]: id=Master Bowman, race=human, gender=male
+#: data/campaigns/Of_Pearls_and_Pirates/units/Thea3.cfg:18
+#: data/core/units/humans/Loyalist_Master_Bowman.cfg:19
+#, fuzzy
+#| msgid ""
+#| "Master bowmen have reached the zenith of their art, inasmuch as any human "
+#| "is capable. Armed with both a sword, and a great yew bow, these warriors "
+#| "crown battalions of archers with their presence, bringing down many a foe "
+#| "with their well-aimed shots. Their skill with the sword is also not to be "
+#| "discounted; they are easily as good with it as any novice swordsman. Of "
+#| "the many races in the world, only the elves surpass humanity in archery, "
+#| "and their human counterparts have speculated, perhaps in envy, that this "
+#| "is only by dint of age."
+msgid ""
+"Master Bowmen have reached the zenith of their art, inasmuch as any human is "
+"capable. Armed with both a sword, and a great yew bow, these warriors crown "
+"battalions of archers with their presence, bringing down many a foe with "
+"their well-aimed shots. Their skill with the sword is also not to be "
+"discounted; they are easily as good with it as any novice swordsman. Of the "
+"many races in the world, only the elves surpass humanity in archery, and "
+"their human counterparts have speculated, perhaps in envy, that this is only "
+"by dint of age."
+msgstr ""
+"Les maîtres archers ont atteint le sommet de leur art. Armés d'une épée et "
+"d'un grand arc en if, ces guerriers honorent les bataillons d'archers de "
+"leur présence, abattant de nombreux ennemis avec leurs tirs précis. Leur "
+"habileté à l'épée ne doit pas être oubliée ; ils sont au moins aussi doués "
+"qu'un spadassin. Seuls les elfes surpassent ces hommes qui affirment, peut-"
+"être par jalousie, que ce n'est que grâce à leur âge."
 
 #. [attack]: type=blade
 #: data/campaigns/Secrets_of_the_Ancients/units/Bone_Captain.cfg:32
@@ -655,6 +855,7 @@ msgstr "bâton de peste"
 #: data/core/units/dunefolk/Wyvern_Rider.cfg:23
 #: data/core/units/monsters/Boar.cfg:50
 #: data/core/units/monsters/Boar_Piglet.cfg:50
+#: data/core/units/monsters/Cat_Redtail.cfg:92
 #: data/core/units/monsters/Crocodile.cfg:144
 #: data/core/units/monsters/Dragonfly.cfg:31
 #: data/core/units/monsters/Dragonfly_Grand.cfg:32
@@ -862,7 +1063,7 @@ msgstr "hache"
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Fighter.cfg:40
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Lord.cfg:37
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Steelclad.cfg:37
-#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Rune_Lord.cfg:32
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Rune_Lord.cfg:42
 #: data/core/units/dwarves/Arcanister.cfg:29
 #: data/core/units/dwarves/Fighter.cfg:65 data/core/units/dwarves/Lord.cfg:57
 #: data/core/units/dwarves/Runemaster.cfg:29
@@ -1081,7 +1282,7 @@ msgstr ""
 
 #. [unit_type]: id=Dwarvish Rune Lord, race=dwarf
 #. [unit_type]: id=Dwarvish Runemaster, race=dwarf
-#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Rune_Lord.cfg:7
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Rune_Lord.cfg:16
 #: data/core/units/dwarves/Runemaster.cfg:5
 msgid "Dwarvish Runemaster"
 msgstr "Maître des runes nain"
@@ -1089,8 +1290,8 @@ msgstr "Maître des runes nain"
 #. [unit_type]: id=Dwarvish Rune Lord, race=dwarf
 #. [unit_type]: id=Undead Dwarvish Rune Lord
 #. [unit_type]: id=Dwarvish Runemaster, race=dwarf
-#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Rune_Lord.cfg:27
-#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Rune_Lord.cfg:79
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Rune_Lord.cfg:37
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Rune_Lord.cfg:89
 #: data/core/units/dwarves/Runemaster.cfg:24
 msgid ""
 "Except for those with almost supernatural skill, the highest rank a "
@@ -1190,26 +1391,6 @@ msgid "thorns"
 msgstr "épines"
 
 #. [attack]: type=impact
-#. [attack]: type=fire
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Dustbok.cfg:24
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Tauroch_Flagbearer.cfg:39
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Tauroch_Vanguard.cfg:38
-#: data/core/units/boats/Carrack_Merchant.cfg:27
-#: data/core/units/boats/Carrack_Pirate.cfg:26
-#: data/core/units/boats/Derelict_Ship.cfg:23
-#: data/core/units/boats/Elf_Cutter.cfg:24
-#: data/core/units/boats/Elf_Sloop.cfg:25 data/core/units/boats/Fireship.cfg:77
-#: data/core/units/boats/Ghost_Ship.cfg:39
-#: data/core/units/boats/Orc_Rigship.cfg:23
-#: data/core/units/boats/Orc_Warship.cfg:24
-#: data/core/units/boats/Raider_Coastal.cfg:31
-#: data/core/units/boats/Raider_Iron.cfg:32 data/core/units/boats/Skiff.cfg:26
-#: data/core/units/drakes/Enforcer.cfg:44
-#: data/core/units/drakes/Thrasher.cfg:41
-msgid "ram"
-msgstr "coup de boule"
-
-#. [attack]: type=impact
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Pathfinder.cfg:42
 #: data/core/units/dunefolk/Harrier.cfg:39
 #: data/core/units/dunefolk/Strider.cfg:38
@@ -1290,102 +1471,81 @@ msgstr ""
 
 #. [unit_type]: id=Canoe, race=ship
 #: data/core/units/boats/Canoe.cfg:5
+#, fuzzy
 msgid "Canoe"
-msgstr ""
+msgstr "Canoë"
 
 #. [unit_type]: id=Canoe, race=ship
 #: data/core/units/boats/Canoe.cfg:34
+#, fuzzy
 msgid ""
 "A Canoe is a small, open-top water vessel commonly used for transportation "
 "or hunting. Their light-weight construction allows them to be carried around "
 "barriers or between unconnected bodies of water. Almost every intelligent "
 "race has some form of Canoe."
 msgstr ""
+"Un canoë est une petite embarcation ouverte, couramment utilisée pour le "
+"transport ou la chasse. Sa construction légère permet de le porter au-delà "
+"des rapides, des berges escarpées ou d’un cours d’eau à l’autre. Presque "
+"toutes les races intelligentes possèdent une forme quelconque de canoë."
 
 #. [unit_type]: id=Merchant Carrack, race=ship
 #: data/core/units/boats/Carrack_Merchant.cfg:4
+#, fuzzy
 msgid "Merchant Carrack"
-msgstr ""
+msgstr "Caraque marchande"
 
 #. [unit_type]: id=Merchant Carrack, race=ship
 #: data/core/units/boats/Carrack_Merchant.cfg:22
+#, fuzzy
 msgid ""
 "Merchant Carracks are swift ships with large cargo holds. Though they are "
 "not designed for war, their large and stable deck makes for a good archery "
 "platform, and their spacious holds can carry both medical supplies and "
 "repair equipment."
 msgstr ""
-
-#. [attack]: type=pierce
-#: data/core/units/boats/Carrack_Merchant.cfg:40
-#: data/core/units/boats/Orc_Barge.cfg:36
-#: data/core/units/boats/Orc_Battle-Barge.cfg:34
-#: data/core/units/boats/Raider_Coastal.cfg:44
-#: data/core/units/boats/Raider_Iron.cfg:45 data/core/units/boats/Skiff.cfg:40
-#, fuzzy
-#| msgid "Poacher"
-msgid "archers"
-msgstr "Braconnier"
+"Les caraques marchandes sont des navires rapides dotés de vastes cales. Bien "
+"qu’elles ne soient pas conçues pour la guerre, leur large pont stable offre "
+"une excellente plateforme pour les archers, et leurs cales spacieuses "
+"peuvent transporter à la fois des provisions médicales et du matériel de "
+"réparation."
 
 #. [unit_type]: id=Pirate Carrack, race=ship
 #: data/core/units/boats/Carrack_Pirate.cfg:4
+#, fuzzy
 msgid "Pirate Carrack"
-msgstr ""
-
-#. [unit_type]: id=Pirate Carrack, race=ship
-#: data/core/units/boats/Carrack_Pirate.cfg:22
-#, fuzzy
-#| msgid ""
-#| "Pirate galleons are to transport ships what wolves are to sheep. The "
-#| "pirates who crew them are more than happy to help relieve other ships of "
-#| "their weighty cargo."
-msgid ""
-"Pirate galleons are to transport ships what wolves are to sheep. The pirates "
-"who crew them are more than happy to help relieve other ships of their "
-"weighty cargo, or to fight as privateers in return for coin."
-msgstr ""
-"Les galions pirates sont aux navires de transport ce que les loups sont aux "
-"brebis. Les pirates à leur bord sont particulièrement heureux de soulager "
-"les autres navires de leur fret encombrant."
-
-#. [attack]: type=pierce
-#: data/core/units/boats/Carrack_Pirate.cfg:39
-#, fuzzy
-#| msgid "ballista"
-msgid "ballistae"
-msgstr "baliste"
-
-#. [attack]: type=pierce
-#: data/core/units/boats/Carrack_Pirate.cfg:48
-#, fuzzy
-#| msgid "Trapper"
-msgid "grapple"
-msgstr "Trappeur"
+msgstr "Brigantin pirate"
 
 #. [unit_type]: id=Derelict, race=ship
 #: data/core/units/boats/Derelict_Ship.cfg:4
+#, fuzzy
 msgid "Derelict"
-msgstr ""
+msgstr "Navire à la dérive"
 
 #. [unit_type]: id=Derelict, race=ship
 #. [unit_type]: id=Ghost Ship, race=ship
 #: data/core/units/boats/Derelict_Ship.cfg:19
 #: data/core/units/boats/Ghost_Ship.cfg:35
+#, fuzzy
 msgid ""
 "Derelicts are abandoned wrecks that continue to drift across the seas. Most "
 "are merely ruined ships that will soon sink, but there are tales of others "
 "that haunt certain waterways for generations."
 msgstr ""
+"Les navires à la dérive sont des vaisseaux abandonnés qui continuent de "
+"dériver sur les mers. La plupart ne sont que des navires en ruine qui "
+"finiront bientôt par couler, mais certaines histoires parlent de navires qui "
+"hantent certaines eaux depuis des générations."
 
 #. [unit_type]: id=Elvish Cutter, race=ship
 #: data/core/units/boats/Elf_Cutter.cfg:5
 #, fuzzy
-#| msgid "Elvish Outrider"
 msgid "Elvish Cutter"
-msgstr "Escorteur elfe"
+msgstr "Cotre elfe"
 
 #. [unit_type]: id=Elvish Cutter, race=ship
 #: data/core/units/boats/Elf_Cutter.cfg:19
+#, fuzzy
 msgid ""
 "Elves are not a seafaring race by nature, preferring instead the quiet "
 "solitude of forests. Nevertheless, there is some demand for river trade and "
@@ -1393,46 +1553,61 @@ msgid ""
 "Artfully grafted together from still-living trees, these sleek ships can "
 "recover from minor injuries without their crews’ intervention."
 msgstr ""
+"Les elfes ne sont pas, par nature, une race maritime, préférant plutôt la "
+"tranquille solitude des forêts. Néanmoins, il existe une certaine demande "
+"pour le commerce et le transport fluvial, notamment entre les enclaves de "
+"Wesmere et de Lintanir. Habilement sculptés à partir d’arbres encore "
+"vivants, ces navires élancés peuvent se réparer de blessures mineures sans "
+"l’intervention de leurs équipages."
 
 #. [attack]: type=pierce
-#: data/core/units/boats/Elf_Cutter.cfg:37
-#: data/core/units/boats/Elf_Cutter.cfg:46
-#: data/core/units/boats/Elf_Sloop.cfg:38
-#: data/core/units/boats/Elf_Sloop.cfg:47
+#: data/core/units/boats/Elf_Cutter.cfg:34
+#: data/core/units/boats/Elf_Cutter.cfg:43
+#: data/core/units/boats/Elf_Sloop.cfg:35
+#: data/core/units/boats/Elf_Sloop.cfg:44
 msgid "marksmen"
 msgstr ""
 
 #. [unit_type]: id=Elvish Sloop, race=ship
 #: data/core/units/boats/Elf_Sloop.cfg:5
 #, fuzzy
-#| msgid "Elvish Scout"
 msgid "Elvish Sloop"
-msgstr "Éclaireur elfe"
+msgstr "Corvette elfe"
 
 #. [unit_type]: id=Elvish Sloop, race=ship
 #: data/core/units/boats/Elf_Sloop.cfg:20
+#, fuzzy
 msgid ""
 "Sleek in the water and festooned with greenery, these mightiest of elvish "
 "ships weather wave and storm with impunity. Such behemoths are only seen in "
 "times of crisis, for their living timber can survive only a handful of years "
 "after being launched."
 msgstr ""
+"Élancés sur l’eau et parés de feuillages, ces puissants vaisseaux elfiques "
+"bravent vagues et tempêtes sans subir de dommage. Ces colosses ne sont "
+"visibles qu’en temps de crise, car leur bois vivant ne peut survivre que "
+"quelques années après leur mise à l’eau."
 
 #. [unit_type]: id=Fireship, race=ship
 #: data/core/units/boats/Fireship.cfg:4
 #, fuzzy
-#| msgid "Fire Wraith"
 msgid "Fireship"
-msgstr "Gardien du feu"
+msgstr "Brûlots"
 
 #. [unit_type]: id=Fireship, race=ship
 #: data/core/units/boats/Fireship.cfg:21
+#, fuzzy
 msgid ""
 "Fireships are generally derelict or doomed ships set ablaze to create chaos "
 "in one last act of belligerence. Their main hazard is fiery collision, but "
 "they also shed burning embers. Sometimes they have a skeleton crew to guide "
 "them, but often they just drift along on unseen winds and currents."
 msgstr ""
+"Les brûlots sont généralement des navires abandonnés ou condamnés, mis à feu "
+"pour semer le chaos dans un ultime acte de belligérance. Leur principal "
+"danger réside dans les collisions explosives, mais ils projettent également "
+"des braises incandescentes. Parfois, un équipage réduit les guide, mais le "
+"plus souvent, ils dérivent au gré des vents et des courants."
 
 #. [dummy]: id=deteriorate
 #: data/core/units/boats/Fireship.cfg:26
@@ -1449,12 +1624,11 @@ msgstr ""
 #. [unit_type]: id=Ghost Ship, race=ship
 #: data/core/units/boats/Ghost_Ship.cfg:16
 #, fuzzy
-#| msgid "Ghost"
 msgid "Ghost Ship"
-msgstr "Fantôme"
+msgstr "Vaisseau Fantôme"
 
 #. [attack]: type=fire
-#: data/core/units/boats/Ghost_Ship.cfg:52
+#: data/core/units/boats/Ghost_Ship.cfg:49
 #: data/core/units/humans/Mage_Elder.cfg:35
 #: data/core/units/monsters/Raven_Harbinger.cfg:100
 #: data/core/units/monsters/Raven_Omen.cfg:90
@@ -1462,7 +1636,7 @@ msgid "lightning"
 msgstr "foudre"
 
 #. [attack]: type=cold
-#: data/core/units/boats/Ghost_Ship.cfg:62
+#: data/core/units/boats/Ghost_Ship.cfg:59
 msgid "lost souls"
 msgstr ""
 
@@ -1492,6 +1666,7 @@ msgstr "Galion"
 
 #. [unit_type]: id=Galleon, race=mechanical
 #: data/core/units/boats/Legacy_Galleon.cfg:21
+#, fuzzy
 msgid ""
 "Galleons are large and sturdy wooden ships used primarily for swift "
 "transport of goods across rivers and oceans in large quantities. The "
@@ -1499,6 +1674,12 @@ msgid ""
 "Isle, before even the times of Haldric. Centuries later, their skillfully-"
 "crafted designs continue to be used by many Wesnothian sailors."
 msgstr ""
+"Les galions sont de grands navires en bois, robustes, utilisés "
+"principalement pour le transport rapide de marchandises sur les rivières et "
+"les océans en grande quantité. Les premiers galions furent construits il y a "
+"longtemps par les marins antiques de l’Île Verte, bien avant l’époque de "
+"Haldric. Des siècles plus tard, leurs constructions habilement conçues "
+"continuent d’être utilisées par de nombreux marins wesnothiens."
 
 #. [unit_type]: id=Pirate Galleon, race=mechanical
 #: data/core/units/boats/Legacy_Pirate_Galleon.cfg:7
@@ -1508,18 +1689,14 @@ msgstr "Galion pirate"
 #. [unit_type]: id=Pirate Galleon, race=mechanical
 #: data/core/units/boats/Legacy_Pirate_Galleon.cfg:23
 #, fuzzy
-#| msgid ""
-#| "Pirate galleons are to transport ships what wolves are to sheep. The "
-#| "pirates who crew them are more than happy to help relieve other ships of "
-#| "their weighty cargo."
 msgid ""
 "Pirate Galleons are to transport ships what wolves are to sheep. The pirates "
 "who crew them are more than happy to help relieve other ships of their "
 "weighty cargo."
 msgstr ""
-"Les galions pirates sont aux navires de transport ce que les loups sont aux "
-"brebis. Les pirates à leur bord sont particulièrement heureux de soulager "
-"les autres navires de leur fret encombrant."
+"Les brigatins pirates sont aux navires de transport ce que les loups sont "
+"aux brebis. Les pirates à leur bord sont particulièrement heureux de "
+"soulager les autres navires de leur fret encombrant."
 
 #. [attack]: type=pierce
 #: data/core/units/boats/Legacy_Pirate_Galleon.cfg:26
@@ -1545,12 +1722,12 @@ msgstr ""
 #. [unit_type]: id=Orcish Barge, race=ship
 #: data/core/units/boats/Orc_Barge.cfg:5
 #, fuzzy
-#| msgid "Orcish Archer"
 msgid "Orcish Barge"
-msgstr "Archer orc"
+msgstr "Gabarre orc"
 
 #. [unit_type]: id=Orcish Barge, race=ship
 #: data/core/units/boats/Orc_Barge.cfg:28
+#, fuzzy
 msgid ""
 "Orcish Barges are crude constructions, devoid of any of the craftsmanship "
 "seen in almost any other ship. But what they lack in speed and grace, they "
@@ -1568,16 +1745,34 @@ msgid ""
 "These barges are very ineffective in the high seas; little better than a "
 "floating wreck."
 msgstr ""
+"Les gabarres orques sont de grossières constructions, dépourvues de tout "
+"l’art et de la finesse que l’on observe sur presque tous les autres "
+"vaisseaux. Mais si elles font défaut en vitesse et en élégance, elles "
+"compensent par leur robustesse à toute épreuve et leur utilité pour voguer "
+"sur les rivières et à travers les marais. Leur principal moyen de propulsion "
+"consiste en une grande voile symétrique, fixée en trois points pour capter "
+"le vent arrière. Quand les courants et les vents les mènent à contre-"
+"courant, l’équipage doit recourir aux perches et aux ancres pour guider la "
+"gabarre dans la direction voulue.\n"
+"\n"
+"Ces gabarres servent au transport de vivres ou de troupes, et, pourvues de "
+"remèdes, elles peuvent offrir un refuge sûr — à la manière d’un petit hameau "
+"flottant — où les combattants blessés se reposent. Elles sont dépourvues "
+"d’armes propres et ne peuvent pas aborder ou foncer sur l’ennemi, mais "
+"l’équipage est armé de suffisamment d’arcs orques rudimentaires pour "
+"dissuader tout curieux.\n"
+"\n"
+"Sur haute mer, ces gabarres sont fort peu efficaces, n’étant guère "
+"meilleures qu’une épave flottante."
 
 #. [unit_type]: id=Orcish Battle Barge, race=ship
 #: data/core/units/boats/Orc_Battle-Barge.cfg:5
 #, fuzzy
-#| msgid "Orcish Ruler"
 msgid "Orcish Battle Barge"
-msgstr "Seigneur orc"
+msgstr "Gabarre de bataille orque"
 
 #. [unit_type]: id=Orcish Battle Barge, race=ship
-#: data/core/units/boats/Orc_Battle-Barge.cfg:28
+#: data/core/units/boats/Orc_Battle-Barge.cfg:30
 msgid ""
 "Despite their simplistic design, barges provide a surprising amount of "
 "utility: bulk transport of goods or men, navigability in shallow water or "
@@ -1588,18 +1783,25 @@ msgid ""
 "These barges are very ineffective in the high seas; little better than a "
 "floating wreck."
 msgstr ""
+"Malgré leur conception rudimentaire, les gabarres n’en demeurent pas moins "
+"fort pratiques : transport en vrac de marchandises ou d’hommes, maniabilité "
+"dans les eaux peu profondes ou les marais, et abri sûr où les combattants "
+"blessés peuvent se reposer. Elles fournissent également une large plateforme "
+"stable sur laquelle il est possible d’installer des engins de siège, fait "
+"dont les orques ont bien conscience.\n"
+"\n"
+"Sur haute mer, ces gabarres restent fort peu efficaces, n’étant guère "
+"meilleures qu’une épave flottante."
 
 #. [attack]: type=impact
-#: data/core/units/boats/Orc_Battle-Barge.cfg:43
+#: data/core/units/boats/Orc_Battle-Barge.cfg:45
 msgid "catapult"
 msgstr ""
 
 #. [unit_type]: id=Orcish Rigship, race=ship
 #: data/core/units/boats/Orc_Rigship.cfg:5
-#, fuzzy
-#| msgid "Orcish Nightblade"
 msgid "Orcish Rigship"
-msgstr "Lames de la nuit"
+msgstr "Monorème orque"
 
 #. [unit_type]: id=Orcish Rigship, race=ship
 #: data/core/units/boats/Orc_Rigship.cfg:19
@@ -1611,13 +1813,19 @@ msgid ""
 "The so-called “Rigship” is but one of many designs bearing testament to "
 "their skill."
 msgstr ""
+"La plupart des orques n’ont guère besoin de navires à voile, préférant mener "
+"leurs combats sur les crêtes et collines arides des Montagnes du Cœur. Mais "
+"le long de la côte nord‑ouest du Grand Continent, dans les cités de Bitok et "
+"Tirigaz, les constructeurs de navires orques s’emploient avec acharnement à "
+"perfectionner leur art. La « monorème » n’est que l’un des nombreux modèles "
+"témoignant de leur savoir-faire."
 
 #. [attack]: type=pierce
 #. [attack]: type=fire
-#: data/core/units/boats/Orc_Rigship.cfg:36
-#: data/core/units/boats/Orc_Rigship.cfg:45
-#: data/core/units/boats/Orc_Warship.cfg:37
-#: data/core/units/boats/Orc_Warship.cfg:46
+#: data/core/units/boats/Orc_Rigship.cfg:33
+#: data/core/units/boats/Orc_Rigship.cfg:42
+#: data/core/units/boats/Orc_Warship.cfg:34
+#: data/core/units/boats/Orc_Warship.cfg:43
 #, fuzzy
 #| msgid "crossbow"
 msgid "crossbows"
@@ -1626,26 +1834,33 @@ msgstr "arbalète"
 #. [unit_type]: id=Orcish Warship, race=ship
 #: data/core/units/boats/Orc_Warship.cfg:5
 #, fuzzy
-#| msgid "Orcish Warrior"
 msgid "Orcish Warship"
-msgstr "Guerrier orc"
+msgstr "Galère orque"
 
 #. [unit_type]: id=Orcish Warship, race=ship
 #: data/core/units/boats/Orc_Warship.cfg:20
+#, fuzzy
 msgid ""
 "When orcs first stepped off their ships onto the western shores of the Great "
 "Continent, they found an unspoiled paradise across which to spread. The "
 "shipwrights of the Tirigaz coast have not forgotten that lesson, and devote "
 "significant effort to the construction of newer and ever-better vessels."
 msgstr ""
+"Lorsque les orques mirent pour la première fois pied sur les rivages "
+"occidentaux du Grand Continent, ils découvrirent un paradis encore intact, "
+"prêt à être conquis et étendu. Les constructeurs de navires de la côte de "
+"Tirigaz n’ont pas oublié cette leçon, et consacrent un soin scrupuleux à "
+"l’édification de vaisseaux toujours plus nombreux et plus perfectionnés."
 
 #. [unit_type]: id=Raft, race=ship
 #: data/core/units/boats/Raft.cfg:5
+#, fuzzy
 msgid "Raft"
-msgstr ""
+msgstr "Radeau"
 
 #. [unit_type]: id=Raft, race=ship
 #: data/core/units/boats/Raft.cfg:21
+#, fuzzy
 msgid ""
 "Rafts can be an efficient means of downriver transport, but they can also be "
 "an improvised vessel of desperation, patched together from the wreck of a "
@@ -1654,6 +1869,13 @@ msgid ""
 "These Rafts are very ineffective in the high seas; little better than a "
 "floating wreck."
 msgstr ""
+"Les radeaux peuvent constituer un moyen de transport efficace sur les "
+"rivières, mais ils servent aussi parfois d’embarcation improvisée en "
+"situation de détresse, assemblée à partir des débris d’un navire plus "
+"grand.\n"
+"\n"
+"Ces radeaux sont très peu adaptés aux hautes mers ; ils ne valent guère "
+"mieux qu’une épave flottante."
 
 #. [unit_type]: id=Coastal Raider, race=ship
 #: data/core/units/boats/Raider_Coastal.cfg:4
@@ -1693,32 +1915,22 @@ msgid ""
 "the oars. This has the disadvantage of requiring a larger crew, and it does "
 "limit the speed and efficiency of transport. But these seeming weaknesses "
 "also make the vessel less vulnerable to the whims of weather and the "
-"predations of pirates.\n"
-"\n"
+"predations of pirates."
+msgstr ""
+
+#. [unit_type]: id=Iron Raider, race=ship
+#: data/core/units/boats/Raider_Iron.cfg:28
+msgid ""
 "Iron Raiders are veteran Coastal Raiders that have been hardened to become "
 "tougher targets and harder hitters. They are often used as front-line "
 "escorts of slower cargo ships in rivers and coasts, where their heavy iron "
-"ram proves the most effective."
+"bow allows them to ram foes without fear of self-inflicted damage."
 msgstr ""
 
 #. [unit_type]: id=Skiff, race=ship
 #: data/core/units/boats/Skiff.cfg:5
 msgid "Skiff"
-msgstr ""
-
-#. [unit_type]: id=Skiff, race=ship
-#: data/core/units/boats/Skiff.cfg:22
-#, fuzzy
-#| msgid ""
-#| "Propelled by oars or small sails, boats are used to travel short "
-#| "distances and in shallows where large ships cannot navigate."
-msgid ""
-"Propelled by oars or small sails, Skiffs are used to travel short distances "
-"and in shallows where large ships cannot navigate."
-msgstr ""
-"Souvent propulsés grâce à des rames ou des petites voiles, les bateaux sont "
-"utilisés pour naviguer sur de courtes distances et dans les eaux peu "
-"profondes que des navires plus grands ne peuvent traverser."
+msgstr "Chaloupe"
 
 #. [unit_type]: id=Drake Arbiter, race=drake, gender=male,female
 #: data/core/units/drakes/Arbiter.cfg:4
@@ -3423,6 +3635,7 @@ msgstr "Pionnier"
 
 #. [unit_type]: id=Dune Wayfarer, race=dunefolk
 #: data/core/units/dunefolk/Wayfarer.cfg:21
+#, fuzzy
 msgid ""
 "From the journal of Balah, the Dune Watcher:\n"
 "\n"
@@ -3454,8 +3667,7 @@ msgid ""
 "the other Wayfarers again. My tale might not be that impressive to them, but "
 "at least it is an improvement over my previous encounter with the wyvern...”"
 msgstr ""
-"<italic>text='Extraits du journal de Balah, l\\'Observateur des "
-"ammorites :'</italic> \n"
+"Extraits du journal de Balah, l'Observateur des ammorites :\n"
 "\n"
 "\"... Aujourd'hui était le sixième jour. Six jours de poursuite dans le "
 "désert, sans sommeil, sans repos... mais je n'ai besoin d'aucun des deux. Le "
@@ -3989,8 +4201,8 @@ msgstr ""
 "leur propre satisfaction. Naturellement, la plupart de ces guerriers vivent "
 "de courtes vies consacrées à perfectionner leur maîtrise de l’épée dans le "
 "but de conquérir les champs de bataille : seuls les plus talentueux sont "
-"capables de survivre à ces combats incessants et de gagner le titre de "
-"« Champion ». Ayant passé toute leur vie à accomplir des prouesses avec leur "
+"capables de survivre à ces combats incessants et de gagner le titre de « "
+"Champion ». Ayant passé toute leur vie à accomplir des prouesses avec leur "
 "épée, ces elfes sont exceptionnellement dangereux et ne doivent jamais être "
 "sous-estimés."
 
@@ -4081,14 +4293,14 @@ msgstr ""
 
 #. [attack]: type=impact
 #. in game mechanics an upgrade of the Shaman’s slowing “entangle”, but in lore has the different magic style of the Enchantress’s unit description
-#: data/core/units/elves/Enchantress.cfg:37 data/core/units/elves/Sylph.cfg:39
+#: data/core/units/elves/Enchantress.cfg:36 data/core/units/elves/Sylph.cfg:38
 msgid "ethereal web"
 msgstr ""
 
 #. [attack]: type=arcane
-#: data/core/units/elves/Enchantress.cfg:47
+#: data/core/units/elves/Enchantress.cfg:46
 #: data/core/units/elves/High_Lord.cfg:56 data/core/units/elves/Lord.cfg:35
-#: data/core/units/elves/Sorceress.cfg:45 data/core/units/elves/Sylph.cfg:49
+#: data/core/units/elves/Sorceress.cfg:44 data/core/units/elves/Sylph.cfg:48
 msgid "faerie fire"
 msgstr "feu féerique"
 
@@ -4320,14 +4532,6 @@ msgstr ""
 "mince affaire, et la maîtrise de cette technique prodigieuse a pour prix une "
 "certaine faiblesse dans les combats rapprochés."
 
-#. [attack]: type=pierce
-#: data/core/units/elves/Marksman.cfg:38
-#: data/core/units/elves/Sharpshooter.cfg:33
-#: data/core/units/humans/Loyalist_Longbowman.cfg:34
-#: data/core/units/humans/Loyalist_Master_Bowman.cfg:34
-msgid "longbow"
-msgstr "arc long"
-
 #. [female]: gender=female
 #: data/core/units/elves/Marksman.cfg:87
 msgid "female^Elvish Marksman"
@@ -4391,6 +4595,7 @@ msgstr "Escorteur elfe"
 # J'ai essayé de rendre ça dans la morale de l'histoire
 #. [unit_type]: id=Elvish Outrider, race=elf
 #: data/core/units/elves/Outrider.cfg:19
+#, fuzzy
 msgid ""
 "There once was an elf by the name of Beirand, who set out on a journey to a "
 "distant land.\n"
@@ -4422,36 +4627,36 @@ msgid ""
 "The truth of this tale, one can only surmise, but doubtless, Outriders the "
 "fastest do comprise."
 msgstr ""
-"<italic>text='Il était une fois un elfe du nom de Beirand, qui entreprit un "
-"voyage vers une terre lointaine.\n"
-"Il chevaucha pendant treize jours, sans prendre de repos, jusqu\\'à ce "
-"qu\\'il entre dans la demeure d\\'une nymphe, au bord d\\'un lac.\n"
+"Il était une fois un elfe du nom de Beirand, qui entreprit un voyage vers "
+"une terre lointaine.\n"
+"Il chevaucha pendant treize jours, sans prendre de repos, jusqu'à ce qu'il "
+"entre dans la demeure d'une nymphe, au bord d'un lac.\n"
 "« Regarde là-bas, Narya ! cria-t-il avec joie. Vois-tu ce fameux pommier au "
 "loin ? »\n"
 "Sa monture répondit par un hennissement, sauta de joie, puis partit au "
 "galop.\n"
-"Il ne fallut pas attendre un instant pour qu\\'une rafale souffle tout "
-"autour et qu\\'une voix aérienne se fasse entendre :\n"
+"Il ne fallut pas attendre un instant pour qu'une rafale souffle tout autour "
+"et qu'une voix aérienne se fasse entendre :\n"
 "« Attends, elfe, ce bosquet est à moi. Je ne te donnerai aucun fruit, ni à "
 "toi ni à ton cheval. »\n"
-"Ce à quoi il répondit : « S\\'il te plaît, accorde-nous un répit. Nous avons "
+"Ce à quoi il répondit : « S'il te plaît, accorde-nous un répit. Nous avons "
 "longtemps voyagé, vois-tu comme nous sommes las ? »\n"
 "« De la fatigue, je perçois, elle est la vôtre, mais pour gagner ma grâce, "
 "disputons une course. »\n"
-"Le cavalier y consentit, et vers l\\'arbre, ils partirent.\n"
+"Le cavalier y consentit, et vers l'arbre, ils partirent.\n"
 "Un hurlement, une ruée, un souffle, le vent laissa le cavalier derrière de "
 "lui.\n"
 "Mais, dans un éclair, un galop élégant, cheval et cavalier passèrent devant "
 "le vent.\n"
-"Pendant un long moment, ils firent des va-et-vient, jusqu\\'à ce qu\\'enfin, "
-"l\\'esprit elfe arrive face à eux.\n"
-"« Bien joué, dit l\\'esprit en soufflant. Je t\\'accorde ma grâce ainsi "
-"qu\\'à tous tes proches ».\n"
+"Pendant un long moment, ils firent des va-et-vient, jusqu'à ce qu'enfin, "
+"l'esprit elfe arrive face à eux.\n"
+"« Bien joué, dit l'esprit en soufflant. Je t'accorde ma grâce ainsi qu'à "
+"tous tes proches ».\n"
 "Beirand et Narya prirent donc congé, conservant à jamais la faveur de la "
 "nymphe.\n"
 "\n"
-"'</italic>Il est facile de douter de la véracité de ce conte, mais aucun "
-"doute, les escorteurs sont les plus rapides à la monte."
+"'Il est facile de douter de la véracité de ce conte, mais aucun doute, les "
+"escorteurs sont les plus rapides à la monte."
 
 #. [unit_type]: id=Elvish Ranger, race=elf, gender=male,female
 #: data/core/units/elves/Ranger.cfg:3
@@ -4635,9 +4840,9 @@ msgstr ""
 "commander à la terre elle-même d'entraver ou de pacifier leurs ennemis."
 
 #. [attack]: type=impact
-#: data/core/units/elves/Shaman.cfg:40 data/core/units/elves/Sorceress.cfg:36
+#: data/core/units/elves/Shaman.cfg:40 data/core/units/elves/Sorceress.cfg:35
 #: data/core/units/monsters/Caribe_Hunter.cfg:122
-#: data/core/units/wose/Wose_Shaman.cfg:40
+#: data/core/units/wose/Wose_Shaman.cfg:43
 msgid "entangle"
 msgstr "enchevêtrement"
 
@@ -5158,33 +5363,6 @@ msgstr ""
 "isolés, mais ils doivent faire attention aux porte-lances et aux archers, "
 "pour qui ils représentent des cibles faciles à cause de leur grande taille."
 
-#. [unit_type]: id=Bowman, race=human, gender=male
-#: data/core/units/humans/Loyalist_Bowman.cfg:4
-msgid "Bowman"
-msgstr "Archer"
-
-#. [unit_type]: id=Bowman, race=human, gender=male
-#: data/core/units/humans/Loyalist_Bowman.cfg:18
-#, fuzzy
-#| msgid ""
-#| "The use of archery in shooting something other than game was seen from "
-#| "its inception, and archers have been indispensable in warfare since time "
-#| "immemorial. Usually of humble origins, hailing from the peasantry or "
-#| "woodsmen, military bowmen are trained to competence with both a bow and a "
-#| "short sword, and are very common on the battlefield."
-msgid ""
-"The use of archery in shooting something other than game was seen from its "
-"inception, and archers have been indispensable in warfare since time "
-"immemorial. Usually of humble origins, hailing from the peasantry or "
-"woodsmen, military Bowmen are trained to competence with both a bow and a "
-"short sword, and are very common on the battlefield."
-msgstr ""
-"L'arc a servi à autre chose que la chasse dès son invention, et les archers "
-"ont été indispensables pour guerroyer depuis des temps immémoriaux. "
-"Généralement d'une origine modeste, issus de familles de paysans ou de "
-"forestiers, les archers sont habiles à l'arc et à l'épée courte et sont "
-"fréquemment employés sur les champs de bataille."
-
 #. [unit_type]: id=Cavalryman, race=human
 #: data/core/units/humans/Loyalist_Cavalryman.cfg:19
 #, fuzzy
@@ -5527,61 +5705,6 @@ msgstr ""
 "armes, ils sont aussi légèrement moins résistants que les chefs de guerre "
 "des autres peuples. Ce qui est plus que compensé par leur connaissance "
 "supérieure de la stratégie militaire."
-
-#. [unit_type]: id=Longbowman, race=human, gender=male
-#: data/core/units/humans/Loyalist_Longbowman.cfg:4
-msgid "Longbowman"
-msgstr "Grand archer"
-
-#. [unit_type]: id=Longbowman, race=human, gender=male
-#: data/core/units/humans/Loyalist_Longbowman.cfg:19
-msgid ""
-"Longbows are fearsome weapons, but too difficult for beginning archers to "
-"wield. It takes great strength to draw one, and the added range and power it "
-"confers remain useless unless one has good aim with the weapon. Longbowmen "
-"carry their weapons as a badge of pride, and most bowmen look forward to the "
-"day they can begin using one."
-msgstr ""
-"Les grands arcs sont des armes très dangereuses mais trop techniques pour "
-"des archers débutants. Il faut une grande force pour en bander un, et "
-"l'augmentation de portée et de puissance ne sert à rien si la précision fait "
-"défaut. Les grands archers portent fièrement leur armement et la plupart des "
-"archers attendent avec impatience le jour où ils pourront utiliser cet "
-"instrument."
-
-#. [unit_type]: id=Master Bowman, race=human, gender=male
-#: data/core/units/humans/Loyalist_Master_Bowman.cfg:4
-msgid "Master Bowman"
-msgstr "Maître archer"
-
-#. [unit_type]: id=Master Bowman, race=human, gender=male
-#: data/core/units/humans/Loyalist_Master_Bowman.cfg:19
-#, fuzzy
-#| msgid ""
-#| "Master bowmen have reached the zenith of their art, inasmuch as any human "
-#| "is capable. Armed with both a sword, and a great yew bow, these warriors "
-#| "crown battalions of archers with their presence, bringing down many a foe "
-#| "with their well-aimed shots. Their skill with the sword is also not to be "
-#| "discounted; they are easily as good with it as any novice swordsman. Of "
-#| "the many races in the world, only the elves surpass humanity in archery, "
-#| "and their human counterparts have speculated, perhaps in envy, that this "
-#| "is only by dint of age."
-msgid ""
-"Master Bowmen have reached the zenith of their art, inasmuch as any human is "
-"capable. Armed with both a sword, and a great yew bow, these warriors crown "
-"battalions of archers with their presence, bringing down many a foe with "
-"their well-aimed shots. Their skill with the sword is also not to be "
-"discounted; they are easily as good with it as any novice swordsman. Of the "
-"many races in the world, only the elves surpass humanity in archery, and "
-"their human counterparts have speculated, perhaps in envy, that this is only "
-"by dint of age."
-msgstr ""
-"Les maîtres archers ont atteint le sommet de leur art. Armés d'une épée et "
-"d'un grand arc en if, ces guerriers honorent les bataillons d'archers de "
-"leur présence, abattant de nombreux ennemis avec leurs tirs précis. Leur "
-"habileté à l'épée ne doit pas être oubliée ; ils sont au moins aussi doués "
-"qu'un spadassin. Seuls les elfes surpassent ces hommes qui affirment, peut-"
-"être par jalousie, que ce n'est que grâce à leur âge."
 
 #. [unit_type]: id=Master at Arms, race=human
 #: data/core/units/humans/Loyalist_Master_at_Arms.cfg:4
@@ -6127,13 +6250,27 @@ msgstr "Mage blanc"
 
 #. [unit_type]: id=White Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage_White.cfg:19
+#, fuzzy
+#| msgid ""
+#| "Some magi, as they learn about the world around them, and learn the truth "
+#| "of the suffering and squalor in which humanity too often lives, find that "
+#| "they cannot bring themselves to be cloistered into a life of study. These "
+#| "men and women give up the life of a mage, and join monastic orders, "
+#| "dedicating the skills they have been given to the good of all. After "
+#| "their ordination, they often travel the world, ministering to sickness "
+#| "and injury.\n"
+#| "\n"
+#| "Though not trained for combat, they are a potent ally against magical or "
+#| "unnatural things."
 msgid ""
-"Some magi, as they learn about the world around them, and learn the truth of "
-"the suffering and squalor in which humanity too often lives, find that they "
-"cannot bring themselves to be cloistered into a life of study. These men and "
-"women give up the life of a mage, and join monastic orders, dedicating the "
-"skills they have been given to the good of all. After their ordination, they "
-"often travel the world, ministering to sickness and injury.\n"
+"Some magi, as they learn about the world and the truth of the suffering and "
+"squalor in which humanity too often lives, find that they cannot bring "
+"themselves to be cloistered into a life of theoretical study. Instead, these "
+"men and women dedicate their skills to the good of all, studying healing and "
+"purification to refine their magic into a tool of lifegiving. They are often "
+"seen traveling the world, ministering to the sick and injured. Repeated use "
+"of the same spells slowly causes their magic to turn white, earning them the "
+"title by which they are known.\n"
 "\n"
 "Though not trained for combat, they are a potent ally against magical or "
 "unnatural things."
@@ -6169,10 +6306,22 @@ msgstr "Mage de lumière"
 
 #. [unit_type]: id=Mage of Light, race=human, gender=male,female
 #: data/core/units/humans/Mage_of_Light.cfg:20
+#, fuzzy
+#| msgid ""
+#| "After years of experience, the most devout of white magi develop vast "
+#| "spiritual powers. By strict devotion to the path of the light, they can "
+#| "call upon its aid to chase away the shadows of the night.\n"
+#| "\n"
+#| "Following a strict code of piety and honor, these men and women work "
+#| "tirelessly to bring life and order to the troubled world in which they "
+#| "live."
 msgid ""
 "After years of experience, the most devout of white magi develop vast "
-"spiritual powers. By strict devotion to the path of the light, they can call "
-"upon its aid to chase away the shadows of the night.\n"
+"magical powers related to healing and purification. By strict devotion to "
+"this path, they can also call upon its aid to chase away the shadows of the "
+"night. Their great dedication to the path of good or ‘white’ magic is often "
+"visible as an illuminating halo around their bodies; a symbol of hope to "
+"which people often flock when all else fails to banish the terrors of life.\n"
 "\n"
 "Following a strict code of piety and honor, these men and women work "
 "tirelessly to bring life and order to the troubled world in which they live."
@@ -6449,14 +6598,14 @@ msgid ""
 "their feet, and good with knives. They happily employ less-than-honorable "
 "tactics in combat, seeing little merit in a ‘fair fight’."
 msgstr ""
-"Aussi longtemps que l'on se souvienne, les membres des différentes "
-"« guildes » des attrapeurs de rats qui sévissent dans toutes les grandes "
-"cités ont la curieuse pratique de décolorer leurs cheveux avec du citron "
-"jusqu'à ce qu'ils prennent une pâle couleur bleue. Ceci est audacieux, étant "
-"donné que leur profession les mène souvent dans des entreprises peu légales. "
-"Les voleurs ont de nombreux talents, lestes par nécessité et habiles au "
-"couteau. Ils utilisent avec bonheur des tactiques peu honorables en combat, "
-"ne voyant que peu d'intérêt aux combats « équitables »."
+"Aussi longtemps que l'on se souvienne, les membres des différentes « guildes "
+"» des attrapeurs de rats qui sévissent dans toutes les grandes cités ont la "
+"curieuse pratique de décolorer leurs cheveux avec du citron jusqu'à ce "
+"qu'ils prennent une pâle couleur bleue. Ceci est audacieux, étant donné que "
+"leur profession les mène souvent dans des entreprises peu légales. Les "
+"voleurs ont de nombreux talents, lestes par nécessité et habiles au couteau. "
+"Ils utilisent avec bonheur des tactiques peu honorables en combat, ne voyant "
+"que peu d'intérêt aux combats « équitables »."
 
 #. [female]: gender=female
 #: data/core/units/humans/Outlaw_Thief.cfg:145
@@ -6733,8 +6882,10 @@ msgstr ""
 "avec leurs propres poings et queue qu'avec d'autres armes."
 
 #. [attack]: type=impact
+#. [attack]: type=fire
 #: data/core/units/merfolk/Brawler.cfg:30
 #: data/core/units/monsters/Cat_Jump.cfg:88
+#: data/core/units/monsters/Cat_Redtail.cfg:101
 #: data/core/units/monsters/Fire_Dragon.cfg:62
 #: data/core/units/monsters/Icemonax_Greater.cfg:72
 msgid "tail"
@@ -7466,8 +7617,9 @@ msgstr ""
 
 #. [unit_type]: id=Forest Lion, race=cats
 #: data/core/units/monsters/Cat_Forest.cfg:4
+#, fuzzy
 msgid "Forest Lion"
-msgstr ""
+msgstr "Lion sylvestre"
 
 #. [unit_type]: id=Forest Lion, race=cats
 #: data/core/units/monsters/Cat_Forest.cfg:32
@@ -7477,11 +7629,17 @@ msgid ""
 "their odd, triply branched tail, which they seem to use for camouflage and "
 "disruptive patterning."
 msgstr ""
+"Les lions sylvestres sont des félins au pelage brun clair, d’une taille "
+"comparable à celle d’un loup. Ils chassent dans les bois et les collines à "
+"l’aube et au crépuscule. Leur trait le plus distinctif est leur étrange "
+"queue divisée en trois branches, qu’ils semblent employer pour se camoufler "
+"et troubler la vue de leurs proies."
 
 #. [unit_type]: id=Jumpcat, race=cats
 #: data/core/units/monsters/Cat_Jump.cfg:4
+#, fuzzy
 msgid "Jumpcat"
-msgstr ""
+msgstr "Chats harêts"
 
 #. [unit_type]: id=Jumpcat, race=cats
 #: data/core/units/monsters/Cat_Jump.cfg:30
@@ -7494,6 +7652,41 @@ msgid ""
 "mostly driven by instinct, but they are sometimes used as assassins by more "
 "sophisticated handlers."
 msgstr ""
+"Les chats harêts sont de petits prédateurs opportunistes, aux sens acérés et "
+"aux réflexes fulgurants. Leur faible corpulence les rend vulnérables : ils "
+"peuvent être éliminés s’ils sont touchés, ou se disperser facilement s’ils "
+"ne le sont pas. Leur trait le plus remarquable est l’amas rigide de "
+"brindilles, d’argile et de pierres qu’ils portent sur leur queue, servant "
+"d’arme redoutable. Leurs actions sont principalement guidées par l’instinct, "
+"mais ils sont parfois utilisés comme assassins par des maîtres plus habiles."
+
+#. [unit_type]: id=Redtail Cat, race=cats
+#: data/core/units/monsters/Cat_Redtail.cfg:4
+#, fuzzy
+msgid "Redtail Cat"
+msgstr "Panthère à queue rousse"
+
+#. [unit_type]: id=Redtail Cat, race=cats
+#: data/core/units/monsters/Cat_Redtail.cfg:33
+#, fuzzy
+msgid ""
+"Redtail cats are powerful predators who generally lurk in the foothills and "
+"forests, but roam far in their hunts, so they have been encountered in many "
+"unexpected places. Their most distinguishing feature is the almost flame-"
+"like, coloration of their tail, which distracts from the dark body and its "
+"dangerous teeth and claws. Likely due to their coloration and nimble "
+"maneuvering, common folklore says these cats are actually malevolent fire "
+"spirits, and heralds of bad luck."
+msgstr ""
+"Les panthères à queue rousse sont de puissants prédateurs qui se tiennent "
+"généralement dans les contreforts et les forêts, mais parcourent de grandes "
+"distances lors de leurs chasses, si bien qu’on les a rencontrés dans de "
+"nombreux endroits inattendus. Leur caractéristique la plus distinctive est "
+"la couleur de leur queue, presque semblable à une flamme, qui détourne "
+"l’attention de leur corps sombre et de leurs dents et griffes dangereuses. "
+"Probablement en raison de leur coloration et de leur agilité, le folklore "
+"populaire dit que ces félins sont en réalité des esprits malveillants de feu "
+"et des annonciateurs de mauvais présages."
 
 # Bien que nommés « Swamp Lizard », ce ne sont pas des lézards et ils peuvent marcher sur deux pattes.
 # On laisse « Lézards » en attendant le jour où le concept est clair.
@@ -7745,11 +7938,9 @@ msgid ""
 "they like to frolic in pools of lava and take great delight in burning "
 "anything they can reach."
 msgstr ""
-"Les esprits du feu sont faits de flammes et de fumée. Personne ne sait "
-"exactement d'où ils viennent, mais ils peuvent être invoqués et commandés "
-"par des mages puissants. Quand ils sont libres, ils aiment batifoler dans "
-"des mares de lave et prennent un grand plaisir à brûler tout ce qui se "
-"trouve à leur portée."
+"Les gardiens du feu sont faits de flammes et de fumée. Quand ils sont "
+"libres, ils aiment batifoler dans des mares de lave et prennent un malin "
+"plaisir à brûler tout ce qui se trouve à leur portée."
 
 #. [attack]: type=fire
 #: data/core/units/monsters/Fire_Wisp.cfg:44
@@ -9552,10 +9743,9 @@ msgid ""
 "Orcish swordplay focuses almost strictly on offense, making use of their "
 "natural stamina to outlast their opponents through sheer resilience. A more "
 "seasoned Orcish Warrior is thus commonly seen wielding two blades, choosing "
-"to forego a shield and instead trade hits with enemies in melee range. "
-"Though a rather brutish tactic, it is still quite effective for these "
-"fighters, who lack the training and finesse to act on more complex "
-"strategies."
+"to forgo a shield and instead trade hits with enemies in melee range. Though "
+"a rather brutish tactic, it is still quite effective for these fighters, who "
+"lack the training and finesse to act on more complex strategies."
 msgstr ""
 "L'arsenal des guerriers orcs se concentre presque uniquement sur l’attaque, "
 "utilisant leur endurance naturelle pour survivre à leurs adversaires grâce à "
@@ -10785,7 +10975,7 @@ msgstr ""
 #. [attack]: type=impact
 #: data/core/units/wose/Ancient.cfg:31 data/core/units/wose/Elder.cfg:46
 #: data/core/units/wose/Wose.cfg:26 data/core/units/wose/Wose_Sapling.cfg:26
-#: data/core/units/wose/Wose_Shaman.cfg:31
+#: data/core/units/wose/Wose_Shaman.cfg:34
 msgid "crush"
 msgstr "écrasement"
 
@@ -10875,7 +11065,8 @@ msgid "Wose Shaman"
 msgstr "Chaman wose"
 
 #. [unit_type]: id=Wose Shaman, race=wose
-#: data/core/units/wose/Wose_Shaman.cfg:18
+#: data/core/units/wose/Wose_Shaman.cfg:21
+#, fuzzy
 msgid ""
 "In flooded and humid woodlands, accessible only to their reclusive "
 "inhabitants, travelers tell of the mysterious Wose Shamans, who are said to "
@@ -10885,6 +11076,13 @@ msgid ""
 "believed to be different from the magic of elves or merfolk. The details of "
 "this craft can only be speculated on by other races."
 msgstr ""
+"Dans les forêts inondées et marécageuses, accessibles seulement à leurs "
+"habitants discrets, des voyageurs évoquent de mystérieux chamans Wose, qui "
+"passeraient des siècles à apprendre à contrôler les plantes. Cet art étrange "
+"n’est connu qu’à travers de rares récits d’affrontements où ils auraient "
+"entravé leurs ennemis grâce à leurs pouvoirs, et l’on estime généralement "
+"qu’il diffère de la magie des elfes comme de celle des peuples marins. Les "
+"autres races ne peuvent qu’en deviner les secrets."
 
 #~ msgid ""
 #~ "This unit can burrow under loose dirt, sand, or leaves, concealing itself "

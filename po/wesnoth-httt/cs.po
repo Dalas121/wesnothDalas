@@ -3,15 +3,15 @@
 # Vladimír Slávik <slavik.vladimir@seznam.cz>, 2007 - 2011.
 # Honza <Honza-mistic@seznam.cz>, 2014.
 # Martin Hrubý <hrubymar10@gmail.com>, 2017 - 2020.
-# Michal Žejdl <lachim@emer.cz>, 2019 - 2025
+# Michal Žejdl <lachim@emer.cz>, 2019 - 2026
 # Petr Šlejhar (Septim) <septim@centrum.cz>, 2020 - 2023
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-01-20 17:31 UTC\n"
-"PO-Revision-Date: 2025-12-25 09:47+0100\n"
+"POT-Creation-Date: 2026-05-19 02:15 UTC\n"
+"PO-Revision-Date: 2026-03-30 22:58+0200\n"
 "Last-Translator: Michal Žejdl <lachim@emer.cz>\n"
 "Language-Team: Czech https://wiki.wesnoth.org/CzechTranslation\n"
 "Language: cs\n"
@@ -33,13 +33,13 @@ msgid "HttTC"
 msgstr "DTK"
 
 #. [campaign]: id=Heir_To_The_Throne_Classic
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:22
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:23
 msgid ""
 "Fight to regain the throne of Wesnoth, of which you are the legitimate heir."
 msgstr "Bojuj, abys získal zpět trůn Wesnothu, jehož jsi právoplatným dědicem."
 
 #. [campaign]: id=Heir_To_The_Throne_Classic
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:24
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:25
 msgid ""
 "This is the original version of this classic campaign, preserved for "
 "historical reasons. Also optionally includes the old <i>Battle Training</i> "
@@ -50,72 +50,72 @@ msgstr ""
 "výcvik</i>."
 
 #. [campaign]: id=Heir_To_The_Throne_Classic
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:26
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:27
 msgid "(Novice level, 23 scenarios.)"
 msgstr "(Úroveň nováček, 23 scénářů.)"
 
 #. [campaign]: id=Heir_To_The_Throne_Classic
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:28
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:29
 msgid "Easy"
 msgstr "Lehká"
 
 #. [campaign]: id=Heir_To_The_Throne_Classic
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:28
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:29
 #: data/campaigns/Heir_To_The_Throne_Classic/units/Fighter.cfg:4
 msgid "Fighter"
 msgstr "Bojovník"
 
 #. [campaign]: id=Heir_To_The_Throne_Classic
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:29
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:30
 #: data/campaigns/Heir_To_The_Throne_Classic/units/Commander.cfg:4
 msgid "Commander"
 msgstr "Velitel"
 
 #. [campaign]: id=Heir_To_The_Throne_Classic
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:29
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:30
 msgid "Normal"
 msgstr "Normální"
 
 #. [campaign]: id=Heir_To_The_Throne_Classic
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:30
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:31
 msgid "Challenging"
 msgstr "Náročná"
 
 #. [campaign]: id=Heir_To_The_Throne_Classic
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:30
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:31
 #: data/campaigns/Heir_To_The_Throne_Classic/units/Lord.cfg:4
 msgid "Lord"
 msgstr "Lord"
 
 #. [about]
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:37
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:38
 msgid "Campaign Design"
 msgstr "Návrh tažení"
 
 #. [about]
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:43
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:44
 msgid "Campaign Maintenance"
 msgstr "Údržba tažení"
 
 #. [about]
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:56
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:57
 msgid "Artwork and Graphics Design"
-msgstr "Kresby a grafika"
+msgstr "Návrh a tvorba grafiky"
 
 #. [about]
-#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:80
+#: data/campaigns/Heir_To_The_Throne_Classic/_main.cfg:81
 msgid "Miscellaneous"
 msgstr "Různé"
 
 #. [achievement]: id=completed
 #: data/campaigns/Heir_To_The_Throne_Classic/achievements.cfg:7
 msgid "Trained for Battle"
-msgstr ""
+msgstr "Vycvičen pro bitvu"
 
 #. [achievement]: id=completed
 #: data/campaigns/Heir_To_The_Throne_Classic/achievements.cfg:8
 msgid "Complete the old <i>Battle Training</i> tutorial."
-msgstr ""
+msgstr "Dokonči starý tutoriál <i>Bojový výcvik</i>."
 
 #. [scenario]: id=01_The_Elves_Besieged
 #: data/campaigns/Heir_To_The_Throne_Classic/scenarios/01_The_Elves_Besieged.cfg:4
@@ -7357,7 +7357,7 @@ msgid ""
 "The book is filled with meaningless tales of sticks and leaves, and childish "
 "stories about trees and forest creatures."
 msgstr ""
-"Kniha je plná nesmyslných příběhů o klaccích a listí, dětskými báchorkami o "
+"Kniha je plná nesmyslných příběhů o klaccích a listí, dětských báchorek o "
 "stromech a lesních stvořeních."
 
 #. [message]: speaker=$unit.id|

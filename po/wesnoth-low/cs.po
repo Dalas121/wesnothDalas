@@ -2,14 +2,14 @@
 # Petr Šlejhar (Septim) <septim@centrum.cz>, 2008 - 2012, 2020 - 2022
 # Honza <Honza-mistic@seznam.cz>, 2014.
 # Martin Hrubý <hrubymar10@gmail.com>, 2017 - 2020.
-# Michal Žejdl <lachim@emer.cz>, 2019 - 2024
+# Michal Žejdl <lachim@emer.cz>, 2019 - 2024, 2026
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2024-09-18 02:19 UTC\n"
-"PO-Revision-Date: 2024-12-28 23:51+0100\n"
+"POT-Creation-Date: 2026-05-19 02:15 UTC\n"
+"PO-Revision-Date: 2026-03-31 21:09+0200\n"
 "Last-Translator: Michal Žejdl <lachim@emer.cz>\n"
 "Language-Team: Czech https://wiki.wesnoth.org/CzechTranslation\n"
 "Language: cs\n"
@@ -19,18 +19,18 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #. [campaign]: id=LOW, type=hybrid
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:44
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:45
 msgid "LoW"
 msgstr "WL"
 
 #. [campaign]: id=LOW, type=hybrid
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:45
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:46
 msgid "Legend of Wesmere"
 msgstr "Wesmerská legenda"
 
 #. [campaign]: id=LOW, type=hybrid
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:47
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:51
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:48
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:52
 msgid ""
 "The tale of Kalenz, the High Lord who rallied his people after the second "
 "orcish invasion of the Great Continent and became the most renowned hero in "
@@ -43,88 +43,88 @@ msgstr ""
 "\n"
 
 #. [campaign]: id=LOW, type=hybrid
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:49
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:50
 msgid "(Hard level, 17 scenarios.)"
 msgstr "(Úroveň ostřílený hráč, 17 scénářů.)"
 
 #. [campaign]: id=LOW, type=hybrid
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:53
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:54
 msgid "(Hard level, 18 scenarios.)"
 msgstr "(Úroveň ostřílený hráč, 18 scénářů.)"
 
 #. [campaign]: id=LOW, type=hybrid
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:57
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:58
 msgid "Normal"
 msgstr "Normální"
 
 #. [campaign]: id=LOW, type=hybrid
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:57
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:58
 msgid "Soldier"
 msgstr "Voják"
 
 #. [campaign]: id=LOW, type=hybrid
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:58
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:59
 msgid "Challenging"
 msgstr "Náročná"
 
 #. [campaign]: id=LOW, type=hybrid
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:58
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:59
 msgid "Lord"
 msgstr "Lord"
 
 #. [campaign]: id=LOW, type=hybrid
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:59
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:60
 msgid "Difficult"
 msgstr "Obtížná"
 
 #. [campaign]: id=LOW, type=hybrid
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:59
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:60
 msgid "High Lord"
 msgstr "Nejvyšší lord"
 
 #. [about]
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:62
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:63
 msgid "Creator and Lead Designer"
 msgstr "Autor a hlavní návrh"
 
 #. [entry]
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:64
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:77
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:65
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:78
 msgid "Spiros, George and Alexander Alexiou (Santi/fnaek)"
 msgstr "Spiros, George a Alexander Alexiou (Santi/fnaek)"
 
 #. [about]
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:71
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:72
 msgid "Campaign Maintenance"
 msgstr "Údržba tažení"
 
 #. [about]
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:81
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:82
 msgid "Prose-doctoring and adaptation for mainline"
 msgstr "Úpravy příběhu a adaptace pro oficializaci"
 
 #. [about]
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:91
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:92
 msgid "WML Assistance"
 msgstr "Pomoc s programováním WML"
 
 #. [about]
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:106
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:107
 msgid "Artificial Intelligence"
 msgstr "Umělá inteligence"
 
 #. [about]
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:113
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:114
 msgid "Graphics"
 msgstr "Grafika"
 
 #. [about]
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:129
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:130
 msgid "Additional thanks to"
 msgstr "Další poděkování patří"
 
 #. [entry]
-#: data/campaigns/Legend_of_Wesmere/_main.cfg:187
+#: data/campaigns/Legend_of_Wesmere/_main.cfg:188
 msgid ""
 "And the rest of the Wesnoth community for feedback,\n"
 "criticism, help with WML code and graphics."
@@ -1229,8 +1229,8 @@ msgid ""
 "More elves are coming! Too late, we’ve taken all your gold and we’ll get "
 "more gold from the orcs for helping them out!"
 msgstr ""
-"Sss, dalšší elfové přišššli! Pozzdě panáččci, vzzali ssme vašše zzlato a "
-"dalšší dosstaneme od sskřetů za našši výpomocc!"
+"Sss, dalšší elfové přišššli! Pozzdě panáčci, vzzali ssme vašše zzlato a "
+"dalšší dosstaneme od sskřetů za našši výpomoc!"
 
 #. [message]: id=Kalenz
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/04_The_Elvish_Treasury.cfg:283
@@ -1327,7 +1327,7 @@ msgstr ""
 #. [message]: speaker=unit
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/04_The_Elvish_Treasury.cfg:409
 msgid "I am ashamed to die at the hands of tree-shaggers!"
-msgstr "Propadám ssse hambou, žže mě zzabili rucce těch lessních šššuků!"
+msgstr "Propadám ssse hanbou, žže mě zzabili ruce těch lessních šššuků!"
 
 #. [message]: speaker=second_unit
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/04_The_Elvish_Treasury.cfg:413
@@ -1458,8 +1458,8 @@ msgid ""
 "not escape."
 msgstr ""
 "Vzzali vššechno naššše zzlato! Sspěchejte a vyšššlete bojůvky ke vššem "
-"cesstám do Wessmérie. Kdo zzabije jejich vůdcce, dossstane 500 zzlatých. "
-"Nesssmí utécct."
+"cesstám do Wessmérie. Kdo zzabije jejich vůdce, dossstane 500 zzlatých. "
+"Nesssmí utéct."
 
 #. [message]: id=Kalenz
 #. "fare" is an archaic English verb meaning to travel or move.
@@ -4448,7 +4448,7 @@ msgstr ""
 #. [message]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter5/19_Costly_Revenge.cfg:333
 msgid "They even shatter our eggs!"
-msgstr "Rozzzbíjí i našše vejcce!"
+msgstr "Rozzzbíjí i našše vejce!"
 
 #. [message]: role=Anduilas
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter5/19_Costly_Revenge.cfg:364

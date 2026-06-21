@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-01-20 17:31 UTC\n"
-"PO-Revision-Date: 2022-10-09 10:02-0300\n"
+"POT-Creation-Date: 2026-05-19 02:15 UTC\n"
+"PO-Revision-Date: 2026-03-24 15:04-0300\n"
 "Last-Translator: Andrei Machado <andreisp.machado@yahoo.com>\n"
 "Language-Team: Portuguese Brazilian\n"
 "Language: pt_BR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.6\n"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:11
@@ -24,37 +24,37 @@ msgid "SoF"
 msgstr "CdF"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:20
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:21
 msgid "Fighter"
 msgstr "Guerreiro"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:20
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:21
 msgid "Normal"
 msgstr "Normal"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:21
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:22
 msgid "Challenging"
 msgstr "Desafiador"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:21
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:22
 msgid "Steelclad"
 msgstr "Encouraçado"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:22
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:23
 msgid "Difficult"
 msgstr "Difícil"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:22
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:23
 msgid "Lord"
 msgstr "Lorde"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:25
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:26
 msgid ""
 "<i>The mark of Wesnoth’s banner bold\n"
 "Comes not from its own land;\n"
@@ -77,32 +77,32 @@ msgstr ""
 "\n"
 
 #. [campaign]: id=Sceptre_of_Fire
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:34
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:35
 msgid "(Hard level, 10 scenarios.)"
 msgstr "(Nível Difícil, 10 cenários.)"
 
 #. [about]
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:39
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:40
 msgid "Campaign Design"
 msgstr "Design da Campanha"
 
 #. [about]
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:45
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:46
 msgid "Campaign Maintenance"
 msgstr "Manutenção da Campanha"
 
 #. [about]
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:57
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:58
 msgid "WML Assistance"
 msgstr "Assistência WML"
 
 #. [about]
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:72
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:73
 msgid "Artwork and Graphics Design"
 msgstr "Artwork e Design Gráfico"
 
 #. [editor_group]: id=sof
-#: data/campaigns/Sceptre_of_Fire/_main.cfg:139
+#: data/campaigns/Sceptre_of_Fire/_main.cfg:140
 msgid "Sceptre of Fire"
 msgstr "O Cetro de Fogo"
 
@@ -212,30 +212,30 @@ msgstr ""
 
 #. [objective]: condition=win
 #: data/campaigns/Sceptre_of_Fire/scenarios/1_A_Bargain_is_Struck.cfg:222
-#, fuzzy
-#| msgid "Transport 5 caravans full of silver back to the dwarvish castle"
 msgid ""
 "Transport 5 caravans full of silver to the dwarvish stronghold in the "
 "northeast corner"
-msgstr "Transporte 5 caravanas cheias de prata de volta ao castelo dos anões"
+msgstr ""
+"Transporte 5 caravanas cheias de prata de volta para a fortaleza dos anões "
+"no canto nordeste"
 
 #. [objective]: condition=win
 #: data/campaigns/Sceptre_of_Fire/scenarios/1_A_Bargain_is_Struck.cfg:224
-#, fuzzy
-#| msgid "Transport 4 caravans full of silver back to the dwarvish castle"
 msgid ""
 "Transport 4 caravans full of silver to the dwarvish stronghold in the "
 "northeast corner"
-msgstr "Transporte 4 caravanas cheias de prata de volta ao castelo dos anões"
+msgstr ""
+"Transporte 4 caravanas cheias de prata de volta para a fortaleza dos anões "
+"no canto nordeste"
 
 #. [objective]: condition=win
 #: data/campaigns/Sceptre_of_Fire/scenarios/1_A_Bargain_is_Struck.cfg:232
-#, fuzzy
-#| msgid "Bring Alanin, who has the Ruby of Fire, to the dwarvish castle"
 msgid ""
 "Bring Alanin, who has the Ruby of Fire, to the dwarvish stronghold in the "
 "northeast corner"
-msgstr "Traga Alanin, que possui o Rubi de Fogo, para o castelo dos anões"
+msgstr ""
+"Traga Alanin, que possui o Rubi de Fogo, para a fortaleza dos anões no canto "
+"nordeste"
 
 #. [objective]: condition=lose
 #: data/campaigns/Sceptre_of_Fire/scenarios/1_A_Bargain_is_Struck.cfg:240
@@ -1689,9 +1689,9 @@ msgstr ""
 #. [message]: speaker=Alanin
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:263
 msgid ""
-"Elves may not challenge us, but I've heard of many other dangers lurking in "
+"Elves may not challenge us, but I’ve heard of many other dangers lurking in "
 "the far Northlands. Wolves and trolls, but even the snow and ice itself "
-"comes alive!  We should be careful!"
+"comes alive! We should be careful!"
 msgstr ""
 
 #. [message]: speaker=Baglur
@@ -1801,14 +1801,13 @@ msgstr "Thursagan"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:362
-msgid "Ah!  Go away!"
+msgid "Ah! Go away!"
 msgstr ""
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:372
 msgid ""
-"Was that Thursagan?  Finding him wasn't as difficult as I thought it would "
-"be."
+"Was that Thursagan? Finding him wasn’t as difficult as I thought it would be."
 msgstr ""
 
 #. [message]: speaker=Baglur
@@ -1821,44 +1820,44 @@ msgstr ""
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:395
 msgid ""
-"This is just an empty shack, where could that old Runecrafter be hiding...  "
+"This is just an empty shack, where could that old Runecrafter be hiding... "
 "Wait, this scrap of wood is actually a trap door!"
 msgstr ""
 
 #. [message]: speaker=Baglur
 #. "Come on out, Thursagan!  We need your help with some serious business!"
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:400
-msgid "C'mon out, Thursagan!  We need'ya help with some serious business!"
+msgid "C’mon out, Thursagan! We need’ya help with some serious business!"
 msgstr ""
 
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:404
 msgid ""
-"It's no good, he's not hiding under it, there's just this collapsed tunnel."
+"It’s no good, he’s not hiding under it, there’s just this collapsed tunnel."
 msgstr ""
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:408
-msgid "We have to find him!  Fan out!"
+msgid "We have to find him! Fan out!"
 msgstr ""
 
 #. [message]: speaker=Alanin
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:412
-msgid "I don't like this, we should stick together."
+msgid "I don’t like this, we should stick together."
 msgstr ""
 
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:445
 msgid ""
-"An empty shack...  I thought I'd found the Runecrafter, but there's no sign "
+"An empty shack... I thought I’d found the Runecrafter, but there’s no sign "
 "of anyone having been here recently."
 msgstr ""
 
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:476
 msgid ""
-"Another empty shack...  But there is this suspicious slab of wood.  Let's "
-"see what's underneath, shall we?"
+"Another empty shack... But there is this suspicious slab of wood. Let’s see "
+"what’s underneath, shall we?"
 msgstr ""
 
 #. [message]: speaker=narrator
@@ -1909,12 +1908,12 @@ msgstr ""
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:515
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:571
-msgid "... and collapsed the tunnel.  He got away!"
+msgid "... and collapsed the tunnel. He got away!"
 msgstr ""
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:519
-msgid "He can't get far, can he?"
+msgid "He can’t get far, can he?"
 msgstr ""
 
 #. [message]: speaker=Baglur
@@ -1925,7 +1924,7 @@ msgstr ""
 #. [message]: speaker=narrator
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:532
 msgid ""
-"You are playing a dangerous game!  I gave you my answer, now leave me be!"
+"You are playing a dangerous game! I gave you my answer, now leave me be!"
 msgstr ""
 
 #. [message]: speaker=Rugnur
@@ -1977,7 +1976,7 @@ msgstr ""
 #. [message]: speaker=narrator
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:580
 msgid ""
-"You people just don't seem to understand!  I'm out here because I want no "
+"You people just don’t seem to understand! I’m out here because I want no "
 "part of the nonsense of kings and those who crave power!"
 msgstr ""
 
@@ -1993,7 +1992,7 @@ msgstr ""
 #. [message]: speaker=Alanin
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:588
 msgid ""
-"The Ruby causes madness, it is said.  A magical cage that could protect the "
+"The Ruby causes madness, it is said. A magical cage that could protect the "
 "King would help us all."
 msgstr ""
 
@@ -2365,8 +2364,8 @@ msgstr "Ouro"
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:701
 msgid ""
 "Well, these are the eastern mines, rich in quality minerals, but also home "
-"to trolls and other denizens of the darkness.  Mining can take a while, this "
-"won't be easy."
+"to trolls and other denizens of the darkness. Mining can take a while, this "
+"won’t be easy."
 msgstr ""
 
 #. [message]: speaker=Thursagan
@@ -2396,7 +2395,7 @@ msgstr "Além disso, o único carvão que pode derreter esse ouro fica aqui."
 #| "So we’re down here to, what, mine this gold and coal? That should be easy "
 #| "enough."
 msgid ""
-"So we’re down here to get both the gold and coal.  Simple enough, even if we "
+"So we’re down here to get both the gold and coal. Simple enough, even if we "
 "have to fight for it."
 msgstr ""
 "Então nós estamos aqui para que, minerar esse ouro e carvão? Isso parece um "
@@ -2418,15 +2417,15 @@ msgstr ""
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:721
 msgid ""
-"Hrmm, that's a good point... Well, these are old mines, not frontier "
-"caverns, we should be able to use the rails and carts, if we're smart about "
+"Hrmm, that’s a good point... Well, these are old mines, not frontier "
+"caverns, we should be able to use the rails and carts, if we’re smart about "
 "it."
 msgstr ""
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/4_Gathering_Materials.cfg:745
 msgid ""
-"We're not facing a united enemy, maybe we can use that to our advantage."
+"We’re not facing a united enemy, maybe we can use that to our advantage."
 msgstr ""
 
 #. [message]: speaker=Thursagan
@@ -3099,12 +3098,6 @@ msgstr ""
 
 #. [message]: speaker=Durstorn
 #: data/campaigns/Sceptre_of_Fire/scenarios/5_Hills_of_the_Shorbear_Clan.cfg:565
-#, fuzzy
-#| msgid ""
-#| "I'm aware! Close the gates and keep them out! It should be easy to come "
-#| "up with a plan to outwit them later. Meanwhile, since the Shorbear's rune "
-#| "workshops are in here, you and your runecrafters might as well make the "
-#| "sceptre now."
 msgid ""
 "I’m aware! Close the gates and keep them out! It should be easy to come up "
 "with a plan to outwit them later. Meanwhile, since the Shorbear’s rune "
@@ -3757,17 +3750,12 @@ msgstr ""
 
 #. [message]: speaker=Hadlin  # wmllint: ignore
 #: data/campaigns/Sceptre_of_Fire/scenarios/7_Outriding_the_Outriders.cfg:603
-#, fuzzy
-#| msgid ""
-#| "I see. Well, come on in. I doubt they would be able to capture this fort, "
-#| "even if they did want to start a war, which I doubt."
 msgid ""
 "I see. Well, come on in. They could never capture this fort, even if they "
 "did want to start a war, which I doubt."
 msgstr ""
-"Entendo. Bem, venha já pra denro. Eu duvido que eles sejam capazes de "
-"capturar esse forte, mesmo que eles quisessem começar uma guerra, o que eu "
-"duvido."
+"Entendo. Bem, venha já pra dentro. Eles jamais serão capazes de capturar "
+"este forte, mesmo que eles quisessem começar uma guerra, o que eu duvido."
 
 #. [scenario]: id=8_The_Dragon
 #: data/campaigns/Sceptre_of_Fire/scenarios/8_The_Dragon.cfg:3
@@ -3906,15 +3894,15 @@ msgstr "E qual dos grandes dragões é você?"
 #, fuzzy
 #| msgid ""
 #| "I am Khrakrahs, greatest dragon of all time! Haldric killed Shek’kahan my "
-#| "brother, but he was weaker than me, and you will not find me so easy to "
+#| "rival, but he was weaker than me, and you will not find me so easy to "
 #| "defeat. Now get out of my volcano!"
 msgid ""
 "I am Khrakrahs, greatest dragon of all time! Haldric killed Shek’kahan my "
-"rival, but he was weaker than me, and you will not find me so easy to "
+"brother, but he was weaker than me, and you will not find me so easy to "
 "defeat. Now get out of my volcano!"
 msgstr ""
 "Eu sou Khrakrahs, o maior dragão de todos os tempos! Haldric matou "
-"Shek'kahan, meu irmão, mas ele era mais fraco que eu, e vocês não vão me "
+"Shek'kahan, meu rival, mas ele era mais fraco que eu, e vocês não vão me "
 "derrotar tão facilmente. Agora, saiam já do meu vulcão!"
 
 #. [message]: speaker=Rugnur
@@ -3968,14 +3956,14 @@ msgstr ""
 
 #. [message]: speaker=$unit.id
 #: data/campaigns/Sceptre_of_Fire/scenarios/8_The_Dragon.cfg:486
-msgid "I can't pick this up, the gold is stuck!"
+msgid "I can’t pick this up, the gold is stuck!"
 msgstr ""
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/8_The_Dragon.cfg:492
 msgid ""
-"Hrm, I see what you mean.  The dragon's hoard melted into the rock, we can't "
-"just grab those gold coins.  Too bad."
+"Hrm, I see what you mean. The dragon’s hoard melted into the rock, we can’t "
+"just grab those gold coins. Too bad."
 msgstr ""
 
 #. [message]: speaker=Thursagan
@@ -4970,7 +4958,7 @@ msgstr ""
 msgid ""
 "For reasons long forgotten, some cursed lineage of elves or orcs retreated "
 "into the dark caverns of the deep mines, losing their civilization and "
-"dignity in the process, to subsist as little more than beasts.  They have "
+"dignity in the process, to subsist as little more than beasts. They have "
 "lost the ability to craft tools or weapons, but their adaptation to the "
 "gloomy caves gives them large, clawed hands with which to dig or hunt."
 msgstr ""
@@ -5115,14 +5103,17 @@ msgid ""
 "any apparent role in nature, being neither predator nor prey. Many say they "
 "are forgotten constructs of forgotten battles, due to their relation to the "
 "weaker Snow Imps. Others say the far north is a hostile land, and these "
-"monsters are simply a manifestation of that danger.\n"
-"\n"
+"monsters are simply a manifestation of that danger."
+msgstr ""
+
+#. [unit_type]: id=Snow Golem, race=monster
+#: data/campaigns/Sceptre_of_Fire/units/Snow_Golem.cfg:40
+msgid ""
 "As they are constructs of snow and ice, they can repair and regenerate when "
-"in a favorable envirnoment.  However, the icy regrowth seems prone to "
-"errors, so while they were likely formed in the image of ideal warriors, "
-"they have become mishapen and their movement thus compromised.  This "
-"malformation is most obvious in their hand and arms, which take the most "
-"damage."
+"in a favorable environment. However, the icy regrowth seems prone to errors, "
+"so while they were likely formed in the image of ideal warriors, they have "
+"become misshapen and their movement thus compromised. This malformation is "
+"most obvious in their hand and arms, which take the most damage."
 msgstr ""
 
 #. [attack]: type=cold
@@ -5158,7 +5149,7 @@ msgstr "Sair da Vagoneta"
 
 #: data/campaigns/Sceptre_of_Fire/utils/rune-equip.cfg:6
 msgid "$cost|g"
-msgstr ""
+msgstr "$cost|g"
 
 #. [message]: speaker=unit
 #: data/campaigns/Sceptre_of_Fire/utils/rune-equip.cfg:17
@@ -5339,11 +5330,6 @@ msgstr "Kraa..."
 
 #. [note]
 #: data/campaigns/Sceptre_of_Fire/utils/utils.cfg:109
-#, fuzzy
-#| msgid ""
-#| "Thursagan's Rune Mastery: while Thursagan is on a keep, selecting an "
-#| "adjacent dwarf opens a dialog for obtaining temporary upgrades which last "
-#| "until the end of the scenario."
 msgid ""
 "Thursagan’s Rune Mastery: while Thursagan is on a keep, selecting an "
 "adjacent dwarf opens a dialog for obtaining temporary upgrades which last "

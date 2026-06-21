@@ -551,7 +551,13 @@ void addon_manager::pre_show()
 
 	set_enter_disabled(true);
 
+#ifdef __IPHONEOS__
+	// On iOS, opening the add-ons manager should not immediately summon the
+	// software keyboard just because the optional filter field exists.
+	keyboard_capture(&list);
+#else
 	keyboard_capture(&filter);
+#endif
 	list.add_list_to_keyboard_chain();
 
 	list.set_callback_order_change(std::bind(&addon_manager::on_order_changed, this, std::placeholders::_1, std::placeholders::_2));
@@ -837,14 +843,18 @@ void addon_manager::execute_action_on_selected_addon()
 	}
 
 	addon_list& addons = find_widget<addon_list>("addons");
-	const addon_info* addon = addons.get_selected_addon();
-
-	if(addon == nullptr) {
+	// The pointer returned by get_selected_addon comes from the vector<addon_info*> owned by the addon_list.
+	// This is a pointer into the addons_list map owned by the addon_manager.  Any modification to the map
+	// kicked off by this method call will cause that pointer to dangle.  Copying the addon_info here prevents
+	// that.
+	const addon_info* p_addon = addons.get_selected_addon();
+	if(p_addon == nullptr) {
 		return;
 	}
+	addon_info selected_addon = *p_addon;
 
 	try {
-		(this->*fptr)(*addon);
+		(this->*fptr)(selected_addon);
 	} catch(const addons_client::user_exit&) {
 		// User canceled the op.
 	}

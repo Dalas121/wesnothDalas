@@ -46,6 +46,7 @@
 #include "units/map.hpp"
 #include "utils/config_filters.hpp"
 #include "units/unit.hpp"
+#include "utils/general.hpp"
 
 #include <utility>
 
@@ -183,7 +184,7 @@ void unit_ability_t::do_compat_fixes(config& cfg, const std::string& tag, bool i
 	std::string filter_teacher = inside_attack ? "filter_self" : "filter";
 	if (cfg.has_child("filter_adjacent")) {
 		if (inside_attack) {
-			deprecated_message("[filter_adjacent]in weapon specials in [specials] tags", DEP_LEVEL::INDEFINITE, "", "Use [filter_self][filter_adjacent] instead.");
+			deprecated_message("[filter_adjacent] in weapon specials in [specials] tags", DEP_LEVEL::INDEFINITE, "", "Use [filter_self][filter_adjacent] instead.");
 		}
 		else {
 			deprecated_message("[filter_adjacent] in abilities", DEP_LEVEL::INDEFINITE, "", "Use [filter][filter_adjacent] instead or other unit filter.");
@@ -191,7 +192,7 @@ void unit_ability_t::do_compat_fixes(config& cfg, const std::string& tag, bool i
 	}
 	if (cfg.has_child("filter_adjacent_location")) {
 		if (inside_attack) {
-			deprecated_message("[filter_adjacent_location]in weapon specials in [specials] tags", DEP_LEVEL::INDEFINITE, "", "Use [filter_self][filter_location][filter_adjacent_location] instead.");
+			deprecated_message("[filter_adjacent_location] in weapon specials in [specials] tags", DEP_LEVEL::INDEFINITE, "", "Use [filter_self][filter_location][filter_adjacent_location] instead.");
 		}
 		else {
 			deprecated_message("[filter_adjacent_location] in abilities", DEP_LEVEL::INDEFINITE, "", "Use [filter][filter_location][filter_adjacent_location] instead.");
@@ -233,16 +234,12 @@ void unit_ability_t::do_compat_fixes(config& cfg, const std::string& tag, bool i
 
 std::string unit_ability_t::get_help_topic_id(const config& cfg)
 {
-	// NOTE: neither ability names nor ability ids are necessarily unique. Creating
-	// topics for either each unique name or each unique id means certain abilities
-	// will be excluded from help. So... the ability topic ref id is a combination
-	// of id and (untranslated) name. It's rather ugly, but it works.
-	return cfg["id"].str() + cfg["name"].t_str().base_str();
+	return cfg["unique_id"].str(cfg["id"].str());
 }
 
 std::string unit_ability_t::get_help_topic_id() const
 {
-	return id() + cfg()["name"].t_str().base_str();
+	return get_help_topic_id(cfg());
 }
 
 
@@ -877,10 +874,10 @@ void attack_type::add_formula_context(wfl::map_formula_callable& callable) const
 void specials_context_t::add_formula_context(wfl::map_formula_callable& callable) const
 {
 	if(const unit_const_ptr & att = attacker.un) {
-		callable.add("attacker", wfl::variant(std::make_shared<wfl::unit_callable>(*att)));
+		callable.add("attacker", wfl::make_callable<wfl::unit_callable>(*att));
 	}
 	if(const unit_const_ptr & def = defender.un) {
-		callable.add("defender", wfl::variant(std::make_shared<wfl::unit_callable>(*def)));
+		callable.add("defender", wfl::make_callable<wfl::unit_callable>(*def));
 	}
 }
 
@@ -934,10 +931,10 @@ T get_single_ability_value(const config::attribute_value& v, T def, const active
 					ctx->add_formula_context(callable);
 				}
 				if (auto uptr = units.find_unit_ptr(ability_info.student_loc)) {
-					callable.add("student", wfl::variant(std::make_shared<wfl::unit_callable>(*uptr)));
+					callable.add("student", wfl::make_callable<wfl::unit_callable>(*uptr));
 				}
 				if (auto uptr = units.find_unit_ptr(receiver_loc)) {
-					callable.add("other", wfl::variant(std::make_shared<wfl::unit_callable>(*uptr)));
+					callable.add("other", wfl::make_callable<wfl::unit_callable>(*uptr));
 				}
 				return formula_handler(wfl::formula(s, new wfl::gamestate_function_symbol_table, true), callable);
 			} catch(const wfl::formula_error& e) {
@@ -1496,7 +1493,7 @@ bool attack_type::overwrite_special_checking(active_ability_list& overwriters, c
 			if(!overwrite_filter){
 				overwrite_filter = (*overwrite_specials).optional_child("experimental_filter_specials");
 				if(overwrite_filter){
-					deprecated_message("experimental_filter_specials", DEP_LEVEL::INDEFINITE, "", "Use filter_specials instead.");
+					deprecated_message("experimental_filter_specials", DEP_LEVEL::FOR_REMOVAL, {1, 21, 0}, "Use filter_specials instead.");
 				}
 			}
 			if(overwrite_filter && is_overwritable && one_side_overwritable){
