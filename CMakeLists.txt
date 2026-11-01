@@ -1,6 +1,9 @@
 # set minimum version
 cmake_minimum_required(VERSION 3.21)
 
+# Generate build/compile_commands.json so LSP server can find all files
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 project(wesnoth)
 
 include(CheckCXXCompilerFlag)
@@ -270,7 +273,7 @@ if(NOT MSVC)
 
 ### Enable clang-tidy linting
 	if (CLANG_TIDY)
-		set(CMAKE_CXX_CLANG_TIDY "clang-tidy -Wno-unknown-warning-option")
+		set(CMAKE_CXX_CLANG_TIDY clang-tidy --extra-arg=-Wno-unknown-warning-option)
 	endif()
 
 ### Set the final compiler flags.

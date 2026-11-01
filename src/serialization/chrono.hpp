@@ -15,6 +15,7 @@
 #pragma once
 
 #include "config_attribute_value.hpp"
+#include "utils/general.hpp"
 
 #include <algorithm>
 #include <chrono>
@@ -62,7 +63,8 @@ inline auto serialize_timestamp(const std::chrono::system_clock::time_point& tim
 inline auto get_local_timestamp(const std::chrono::system_clock::time_point& time)
 {
 	auto as_time_t = std::chrono::system_clock::to_time_t(time);
-	return mktime(std::localtime(&as_time_t));
+	std::tm local_tm{};
+	return mktime(utils::localtime_r(&as_time_t, &local_tm));
 }
 
 // CAUTION: This does NOT return a language-localized string.  To achieve that,
@@ -71,7 +73,8 @@ inline auto format_local_timestamp(const std::chrono::system_clock::time_point& 
 {
 	std::ostringstream ss;
 	auto as_time_t = std::chrono::system_clock::to_time_t(time);
-	ss << std::put_time(std::localtime(&as_time_t), format.data());
+	std::tm local_tm{};
+	ss << std::put_time(utils::localtime_r(&as_time_t, &local_tm), format.data());
 	return ss.str();
 }
 
@@ -90,7 +93,7 @@ constexpr double normalize_progress(
 }
 
 template<typename... Ts, typename Rep, typename Period>
-constexpr auto deconstruct_duration(const std::tuple<Ts...>&, const std::chrono::duration<Rep, Period>& span)
+constexpr auto deconstruct_duration(const std::chrono::duration<Rep, Period>& span)
 {
 	auto time_remaining = std::chrono::duration_cast<std::common_type_t<Ts...>>(span);
 	return std::tuple{[&time_remaining]() {
@@ -99,17 +102,5 @@ constexpr auto deconstruct_duration(const std::tuple<Ts...>&, const std::chrono:
 		return duration;
 	}()...};
 }
-
-/** Helper types to be used with @ref deconstruct_duration */
-namespace format
-{
-constexpr auto days_hours_mins_secs = std::tuple<
-	chrono::days,
-	std::chrono::hours,
-	std::chrono::minutes,
-	std::chrono::seconds
->{};
-
-} // namespace format
 
 } // namespace chrono

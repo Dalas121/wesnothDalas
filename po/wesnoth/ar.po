@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 1.4.2+dev\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-05-18 21:15-0500\n"
+"POT-Creation-Date: 2026-10-20 21:43-0500\n"
 "PO-Revision-Date: 2025-03-21 10:15+0100\n"
 "Last-Translator: Mejri Ziad <nouveau.dep@gmail.com>\n"
 "Language-Team: none\n"
@@ -175,38 +175,29 @@ msgstr "إستخدام فأرة ملونة عند التوجيه"
 
 #. [advanced_preference]: type=custom
 #: data/advanced_preferences.cfg:136
-msgid "Customize orb colors"
-msgstr "الألوان المعتادة للكرات الخاصة للوحدات"
-
-#. [advanced_preference]: type=custom
-#: data/advanced_preferences.cfg:142
-msgid "Customize Reach Map (Unit Movement UI)"
-msgstr "تخصيص خريطة الوصول (واجهة مستخدم حركة الوحدة)"
-
-#. [advanced_preference]: type=custom
-#: data/advanced_preferences.cfg:148
 msgid "Logging"
 msgstr "التسجيل"
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:154
+#: data/advanced_preferences.cfg:142
 msgid "Allow damage calculation with Monte Carlo simulation"
 msgstr "السماح بحساب الإصابات عبر محاكاة مونت كارلو"
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:155
+#: data/advanced_preferences.cfg:143
 msgid ""
 "Allow the damage calculation window to simulate fights instead of using "
 "exact probability calculations"
 msgstr "السماح لنافذة حساب الإصابات بمحاكاة المعارك عوض حساب العدد المحتمل"
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:162
+#: data/advanced_preferences.cfg:150 src/units/abilities.cpp:200
 msgid "Show deprecation messages in-game"
 msgstr "إظهار رسائل الكودات التي ستمحى في النسخ القادمة للعبة"
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:163
+#: data/advanced_preferences.cfg:151
 msgid ""
 "Show warnings about deprecated API in the in-game chat area. These messages "
 "will still be shown in the log, even if this is disabled. In addition, the "
@@ -217,12 +208,12 @@ msgstr ""
 "ذلك، يتحكم مجال سجل الإهمال في عدد الرسائل المطبوعة."
 
 #. [advanced_preference]: type=int
-#: data/advanced_preferences.cfg:170
+#: data/advanced_preferences.cfg:158
 msgid "Font size scale (experimental)"
 msgstr "مقياس حجم الخط (تجريبي)"
 
 #. [advanced_preference]: type=int
-#: data/advanced_preferences.cfg:171
+#: data/advanced_preferences.cfg:159
 msgid ""
 "Scales all text up or down from the standard size for your resolution. "
 "Warning: Scaling text up may cause issues in the in-game sidebar."
@@ -231,12 +222,12 @@ msgstr ""
 "قد يؤدي تغيير حجم النص إلى حدوث مشكلات في الشريط الجانبي داخل اللعبة."
 
 #. [advanced_preference]: type=int
-#: data/advanced_preferences.cfg:181
+#: data/advanced_preferences.cfg:169
 msgid "Server disconnect timeout"
 msgstr "مهلة قطع اتصال الخادم"
 
 #. [advanced_preference]: type=int
-#: data/advanced_preferences.cfg:182
+#: data/advanced_preferences.cfg:170
 msgid ""
 "The amount of time in seconds before a disconnect is detected. If currently "
 "logged into the multiplayer server, you must log out and then log back in "
@@ -246,22 +237,22 @@ msgstr ""
 "اللاعبين المتعددين، عليك أن تقطع الاتصال ثم تعيده لتحيين هذا التغيير."
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:192
+#: data/advanced_preferences.cfg:180
 msgid "Show missed attack indicator"
 msgstr ""
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:193
+#: data/advanced_preferences.cfg:181
 msgid "Display a visual indicator above a defender when an attack misses."
 msgstr ""
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:200
+#: data/advanced_preferences.cfg:188
 msgid "SIMD acceleration"
 msgstr ""
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:201
+#: data/advanced_preferences.cfg:189
 msgid ""
 "Use hardware acceleration (SSE2/NEON) for faster image processing on the "
 "CPU. Try disabling this if you experience graphical glitches or crashes."
@@ -271,12 +262,12 @@ msgstr ""
 #. [unstore_unit]
 #. [lua]: set_status
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:369
-#: data/lua/wml/harm_unit.lua:124 src/actions/attack.cpp:949
+#: data/lua/wml/harm_unit.lua:124 src/actions/attack.cpp:973
 msgid "poisoned"
 msgstr "تم تسميمه"
 
 #. [effect]: type=fire
-#: data/campaigns/The_Rise_Of_Wesnoth/scenarios/12_A_Final_Spring.cfg:492
+#: data/campaigns/The_Rise_Of_Wesnoth/scenarios/12_A_Final_Spring.cfg:491
 #: data/core/macros/items.cfg:559
 msgid "storm trident"
 msgstr "رمح العاصفة الثلاثي"
@@ -302,43 +293,43 @@ msgid "Close"
 msgstr "غلق"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:76
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:75
 #: data/english.cfg:31
 msgid "blade"
 msgstr "قاطع"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:79
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:78
 #: data/english.cfg:34
 msgid "fire"
 msgstr "ناري"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:82
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:81
 #: data/english.cfg:35
 msgid "cold"
 msgstr "بارد"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:85
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:84
 #: data/english.cfg:32
 msgid "pierce"
 msgstr "مخترق"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:88
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:87
 #: data/english.cfg:33
 msgid "impact"
 msgstr "صادم"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:91
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:90
 #: data/english.cfg:27
 msgid "melee"
 msgstr "إلتحام"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:94
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:93
 #: data/english.cfg:28
 msgid "ranged"
 msgstr "عن بعد"
@@ -534,158 +525,158 @@ msgid "Hebrew Translation"
 msgstr "الترجمة العبرية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1015
+#: data/core/about_i18n.cfg:1018
 msgid "Hungarian Translation"
 msgstr "الترجمة الهنغارية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1076
+#: data/core/about_i18n.cfg:1079
 msgid "Icelandic Translation"
 msgstr "الترجمة الايسلندية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1086
+#: data/core/about_i18n.cfg:1089
 msgid "Indonesian Translation"
 msgstr "الترجمة الاندونيسية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1114
+#: data/core/about_i18n.cfg:1117
 msgid "Irish Translation"
 msgstr "الترجمة الايرلندية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1121
+#: data/core/about_i18n.cfg:1124
 msgid "Italian Translation"
 msgstr "الترجمة الايطالية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1168
+#: data/core/about_i18n.cfg:1171
 msgid "Japanese Translation"
 msgstr "الترجمة اليابانية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1261
+#: data/core/about_i18n.cfg:1264
 msgid "Korean Translation"
 msgstr "الترجمة الكورية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1269
+#: data/core/about_i18n.cfg:1272
 msgid "Latin Translation"
 msgstr "الترجمة اللاتينية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1295
+#: data/core/about_i18n.cfg:1298
 msgid "Latvian Translation"
 msgstr "الترجمة اللاتفية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1310
+#: data/core/about_i18n.cfg:1313
 msgid "Lithuanian Translation"
 msgstr "الترجمة الليتوانية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1335
+#: data/core/about_i18n.cfg:1338
 msgid "Macedonian Translation"
 msgstr "الترجمة المقدونية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1342
+#: data/core/about_i18n.cfg:1345
 msgid "Marathi Translation"
 msgstr "الترجمة إلى الماراثي"
 
 #. [about]
-#: data/core/about_i18n.cfg:1351
+#: data/core/about_i18n.cfg:1354
 msgid "Norwegian Translation"
 msgstr "الترجمة النرويجية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1380
+#: data/core/about_i18n.cfg:1383
 msgid "Old English Translation"
 msgstr "الترجمة البريطانية القديمة"
 
 #. [about]
-#: data/core/about_i18n.cfg:1398
+#: data/core/about_i18n.cfg:1401
 msgid "Polish Translation"
 msgstr "الترجمة البولونية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1473
+#: data/core/about_i18n.cfg:1476
 msgid "Portuguese Translation"
 msgstr "الترجمة البرتغالية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1487
+#: data/core/about_i18n.cfg:1490
 msgid "Portuguese (Brazil) Translation"
 msgstr "الترجمة البرتغالية البرازيلية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1548
+#: data/core/about_i18n.cfg:1551
 msgid "Romanian Translation"
 msgstr "الترجمة الرومانية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1556
+#: data/core/about_i18n.cfg:1564
 msgid "Russian Translation"
 msgstr "الترجمة الروسية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1663
+#: data/core/about_i18n.cfg:1671
 msgid "Scottish Gaelic Translation"
 msgstr "الترجمة الاسكتلاندية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1672
+#: data/core/about_i18n.cfg:1680
 msgid "Serbian Translation"
 msgstr "الترجمة الصربية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1691
+#: data/core/about_i18n.cfg:1704
 msgid "Slovak Translation"
 msgstr "الترجمة السلوفاكية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1726
+#: data/core/about_i18n.cfg:1739
 msgid "Slovenian Translation"
 msgstr "الترجمة السلوفينية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1742
+#: data/core/about_i18n.cfg:1755
 msgid "Spanish Translation"
 msgstr "الترجمة الاسبانية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1836
+#: data/core/about_i18n.cfg:1849
 msgid "Swedish Translation"
 msgstr "الترجمة السويدية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1881
+#: data/core/about_i18n.cfg:1894
 msgid "Turkish Translation"
 msgstr "الترجمة التركية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1906
+#: data/core/about_i18n.cfg:1919
 msgid "Ukrainian Translation"
 msgstr "الترجمة الاوكرانية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1940
+#: data/core/about_i18n.cfg:1953
 msgid "Valencian (southern Catalan) Translation"
 msgstr "الترجمة الفالنسية الكاتالونية الجنوبية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1953
+#: data/core/about_i18n.cfg:1966
 msgid "Vietnamese Translation"
 msgstr "الترجمة الفيتنامية"
 
 #. [about]
-#: data/core/about_i18n.cfg:1972
+#: data/core/about_i18n.cfg:1985
 msgid "Welsh Translation"
 msgstr "الترجمة الويلزية"
 
 #. [about]
 #. Real Acadèmia de Cultura Valenciana
-#: data/core/about_i18n.cfg:1981
+#: data/core/about_i18n.cfg:1994
 msgid "RACV’s Translation"
 msgstr "الترجمة إلى راكف"
 
@@ -1694,17 +1685,56 @@ msgstr ""
 "currently_doing_special_description"
 
 #. [else]
-#: data/core/macros/deprecated-utils.cfg:35
+#: data/core/macros/deprecated-utils.cfg:34
 msgid "This unit has been renamed to: "
 msgstr "تمت إعادة تسمية هذه الوحدة إلى: "
 
+#. [lua]: generate_objectives
+#: data/core/macros/deprecated-utils.cfg:51 data/lua/wml/objectives.lua:106
+msgid "Early finish bonus."
+msgstr "مكافأة إنهاء مبكر."
+
+#. [lua]: generate_objectives
+#: data/core/macros/deprecated-utils.cfg:55 data/lua/wml/objectives.lua:109
+msgid "No early finish bonus."
+msgstr "لا توجد مكافأة إنهاء مبكر."
+
+#. [lua]: generate_objectives
+#: data/core/macros/deprecated-utils.cfg:59 data/lua/wml/objectives.lua:117
+msgid "No gold carried over to the next scenario."
+msgstr "لن يتم نقل الذهب إلى السيناريو التالي."
+
+#: data/core/macros/deprecated-utils.cfg:63
+msgid ""
+"\n"
+"100% of finishing gold carried over to the next scenario."
+msgstr ""
+"\n"
+"تم نقل 100% من الذهب إلى السيناريو التالي."
+
+#: data/core/macros/deprecated-utils.cfg:68
+msgid ""
+"\n"
+"40% of finishing gold carried over to the next scenario."
+msgstr ""
+"\n"
+"تم نقل 40% من الذهب إلى السيناريو التالي."
+
+#: data/core/macros/deprecated-utils.cfg:73
+msgid ""
+"\n"
+"20% of finishing gold carried over to the next scenario."
+msgstr ""
+"\n"
+"تم نقل 20% من الذهب إلى السيناريو التالي."
+
 #. [chance_to_hit]: id=deflect
-#: data/core/macros/deprecated-utils.cfg:124
+#: data/core/macros/deprecated-utils.cfg:284
 msgid "deflect"
 msgstr "انحراف"
 
 #. [chance_to_hit]: id=deflect
-#: data/core/macros/deprecated-utils.cfg:125
+#: data/core/macros/deprecated-utils.cfg:285
 msgid ""
 "When used defensively, this attack reduces the opponent’s chance to hit by "
 "10%."
@@ -1712,19 +1742,19 @@ msgstr ""
 "عند استخدامه بشكل دفاعي، يقلل هذا الهجوم من فرصة إصابة الخصم بنسبة 10%."
 
 #. [chance_to_hit]: id=deflect
-#: data/core/macros/deprecated-utils.cfg:126
+#: data/core/macros/deprecated-utils.cfg:286
 msgid ""
 "This unit’s defensive techniques reduce the chance of a successful enemy "
 "attack."
 msgstr "تقلل التقنيات الدفاعية لهذه الوحدة من فرصة نجاح هجوم العدو."
 
 #. [damage]: id=absorb
-#: data/core/macros/deprecated-utils.cfg:139
+#: data/core/macros/deprecated-utils.cfg:299
 msgid "absorb"
 msgstr "امتصاص"
 
 #. [damage]: id=absorb
-#: data/core/macros/deprecated-utils.cfg:140
+#: data/core/macros/deprecated-utils.cfg:300
 msgid ""
 "This attack puts the unit in good defensive position, and it absorbs some of "
 "the damage dealt by an enemy strike."
@@ -1733,7 +1763,7 @@ msgstr ""
 "العدو."
 
 #. [damage]: id=absorb
-#: data/core/macros/deprecated-utils.cfg:141
+#: data/core/macros/deprecated-utils.cfg:301
 msgid ""
 "This unit can block enemy strikes, so that it takes reduced damage when hit."
 msgstr "يمكن لهذه الوحدة صد ضربات العدو، بحيث تتلقى ضررًا أقل عند الإصابة."
@@ -3607,7 +3637,7 @@ msgstr "المنشدون المسافرون"
 
 #. [music]
 #. [time]: id=underground_noweather
-#: data/core/macros/sound-utils.cfg:336 data/internal/Weather/_main.cfg:230
+#: data/core/macros/sound-utils.cfg:336 data/internal/Weather/_main.cfg:300
 msgid "Underground"
 msgstr "تحت الأرض"
 
@@ -3627,215 +3657,215 @@ msgid "Weight of Revenge"
 msgstr "ثقل الانتقام"
 
 #. [message]: speaker=narrator
-#: data/core/macros/utils.cfg:664
+#: data/core/macros/utils.cfg:662
 msgid "You retrieve $amount_gold pieces of gold."
 msgstr "تسترد قطع الذهب $amount_gold."
 
 #. [color_range]: id=red
 #. [color_range]: id=1
-#: data/core/team-colors.cfg:14 data/core/team-colors.cfg:265
+#: data/core/team-colors.cfg:14 data/core/team-colors.cfg:271
 msgid "Red"
 msgstr "أحمر"
 
-#. [color_range]: id=lightred
-#: data/core/team-colors.cfg:21
-msgid "Light Red"
-msgstr "أحمر لامع"
-
-#. [color_range]: id=darkred
-#: data/core/team-colors.cfg:27
-msgid "Dark Red"
-msgstr "أحمر داكن"
-
 #. [color_range]: id=blue
 #. [color_range]: id=2
-#: data/core/team-colors.cfg:33 data/core/team-colors.cfg:271
+#: data/core/team-colors.cfg:21 data/core/team-colors.cfg:277
 msgid "Blue"
 msgstr "أزرق"
 
-#. [color_range]: id=lightblue
-#: data/core/team-colors.cfg:40
-msgid "Light blue"
-msgstr "أزرق خفيف"
-
 #. [color_range]: id=green
 #. [color_range]: id=3
-#: data/core/team-colors.cfg:46 data/core/team-colors.cfg:277
+#: data/core/team-colors.cfg:28 data/core/team-colors.cfg:283
 msgid "Green"
 msgstr "أخضر"
 
-#. [color_range]: id=brightgreen
-#: data/core/team-colors.cfg:53
-msgid "Bright green"
-msgstr "أخضر لامع"
-
 #. [color_range]: id=purple
 #. [color_range]: id=4
-#: data/core/team-colors.cfg:59 data/core/team-colors.cfg:283
+#: data/core/team-colors.cfg:35 data/core/team-colors.cfg:289
 msgid "Purple"
 msgstr "بنفسجي"
 
 #. [color_range]: id=black
 #. [color_range]: id=5
-#: data/core/team-colors.cfg:66 data/core/team-colors.cfg:295
+#: data/core/team-colors.cfg:42 data/core/team-colors.cfg:301
 msgid "Black"
 msgstr "أسود"
 
 #. [color_range]: id=brown
 #. [color_range]: id=6
-#: data/core/team-colors.cfg:73 data/core/team-colors.cfg:307
+#: data/core/team-colors.cfg:49 data/core/team-colors.cfg:313
 msgid "Brown"
 msgstr "بني"
 
 #. [color_range]: id=orange
 #. [color_range]: id=7
-#: data/core/team-colors.cfg:80 data/core/team-colors.cfg:289
+#: data/core/team-colors.cfg:56 data/core/team-colors.cfg:295
 msgid "Orange"
 msgstr "برتقالي"
 
-#. [color_range]: id=brightorange
-#: data/core/team-colors.cfg:87
-msgid "Bright orange"
-msgstr "برتقالي لامع"
-
 #. [color_range]: id=white
 #. [color_range]: id=8
-#: data/core/team-colors.cfg:93 data/core/team-colors.cfg:301
+#: data/core/team-colors.cfg:63 data/core/team-colors.cfg:307
 msgid "White"
 msgstr "أبيض"
 
 #. [color_range]: id=teal
 #. [color_range]: id=9
-#: data/core/team-colors.cfg:100 data/core/team-colors.cfg:313
+#: data/core/team-colors.cfg:70 data/core/team-colors.cfg:319
 msgid "Teal"
 msgstr "البط البري"
 
 #. [color_range]: id=gold
-#: data/core/team-colors.cfg:107
+#: data/core/team-colors.cfg:77
 msgid "color^Gold"
 msgstr "ذهبي"
 
+#. [color_range]: id=lightblue
+#: data/core/team-colors.cfg:84
+msgid "Light blue"
+msgstr "أزرق خفيف"
+
+#. [color_range]: id=brightgreen
+#: data/core/team-colors.cfg:91
+msgid "Bright green"
+msgstr "أخضر لامع"
+
+#. [color_range]: id=darkred
+#: data/core/team-colors.cfg:98
+msgid "Dark Red"
+msgstr "أحمر داكن"
+
+#. [color_range]: id=brightorange
+#: data/core/team-colors.cfg:105
+msgid "Bright orange"
+msgstr "برتقالي لامع"
+
+#. [color_range]: id=lightred
+#: data/core/team-colors.cfg:112
+msgid "Light Red"
+msgstr "أحمر لامع"
+
 #. [color_range]: id=yellow
-#: data/core/team-colors.cfg:113
+#: data/core/team-colors.cfg:119
 msgid "Yellow"
 msgstr "أصفر"
 
 #. [color_range]: id=pink
-#: data/core/team-colors.cfg:119
+#: data/core/team-colors.cfg:125
 msgid "Pink"
 msgstr "وردي"
 
 #. [color_range]: id=darkblue
-#: data/core/team-colors.cfg:126
+#: data/core/team-colors.cfg:132
 msgid "Dark blue"
 msgstr "أسود داكن"
 
 #. [color_range]: id=reef
-#: data/core/team-colors.cfg:135
+#: data/core/team-colors.cfg:141
 msgid "Reef"
 msgstr "حيد"
 
 #. [color_range]: id=shallow_water
-#: data/core/team-colors.cfg:141
+#: data/core/team-colors.cfg:147
 msgid "Shallow water"
 msgstr "مياه سطحية"
 
 #. [color_range]: id=deep_water
-#: data/core/team-colors.cfg:147
+#: data/core/team-colors.cfg:153
 msgid "Deep water"
 msgstr "مياه عميقة"
 
 #. [color_range]: id=swamp_water
-#: data/core/team-colors.cfg:153
+#: data/core/team-colors.cfg:159
 msgid "Swamp water"
 msgstr "مياه سبخة"
 
 #. [color_range]: id=flat
-#: data/core/team-colors.cfg:159
+#: data/core/team-colors.cfg:165
 msgid "Flat"
 msgstr "مسطح"
 
 #. [color_range]: id=hills
-#: data/core/team-colors.cfg:165
+#: data/core/team-colors.cfg:171
 msgid "Hills"
 msgstr "هضاب"
 
 #. [color_range]: id=mountains
-#: data/core/team-colors.cfg:171
+#: data/core/team-colors.cfg:177
 msgid "Mountains"
 msgstr "جبال"
 
 #. [color_range]: id=forest
-#: data/core/team-colors.cfg:177
+#: data/core/team-colors.cfg:183
 msgid "Forest"
 msgstr "غابة"
 
 #. [color_range]: id=sand
-#: data/core/team-colors.cfg:183
+#: data/core/team-colors.cfg:189
 msgid "Sand"
 msgstr "رمال"
 
 #. [color_range]: id=frozen
-#: data/core/team-colors.cfg:189
+#: data/core/team-colors.cfg:195
 msgid "Frozen"
 msgstr "متجمد"
 
 #. [color_range]: id=cave
-#: data/core/team-colors.cfg:195
+#: data/core/team-colors.cfg:201
 msgid "Cave"
 msgstr "كهف"
 
 #. [color_range]: id=fungus
-#: data/core/team-colors.cfg:201
+#: data/core/team-colors.cfg:207
 msgid "Fungus"
 msgstr "فطر"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=village
-#: data/core/team-colors.cfg:207 src/terrain/terrain.cpp:169
+#: data/core/team-colors.cfg:213 src/terrain/terrain.cpp:169
 msgid "Village"
 msgstr "مدينة"
 
 #. [color_range]: id=castle
-#: data/core/team-colors.cfg:213
+#: data/core/team-colors.cfg:219
 msgid "Castle"
 msgstr "قصر"
 
 #. [color_range]: id=keep
-#: data/core/team-colors.cfg:219
+#: data/core/team-colors.cfg:225
 msgid "Keep"
 msgstr "قلعة"
 
 #. [color_range]: id=rails
-#: data/core/team-colors.cfg:225
+#: data/core/team-colors.cfg:231
 msgid "Rail"
 msgstr "سكة"
 
 #. [color_range]: id=unwalkable
-#: data/core/team-colors.cfg:231
+#: data/core/team-colors.cfg:237
 msgid "Unwalkable"
 msgstr "غير ممهد"
 
 #. [color_range]: id=impassable
-#: data/core/team-colors.cfg:237
+#: data/core/team-colors.cfg:243
 msgid "Impassable"
 msgstr "لا يمكن عبوره"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=fog
-#: data/core/team-colors.cfg:243 src/game_initialization/lobby_data.cpp:376
+#: data/core/team-colors.cfg:249 src/game_initialization/lobby_data.cpp:376
 msgid "Fog"
 msgstr "ضباب"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=shroud
-#: data/core/team-colors.cfg:249 src/game_initialization/lobby_data.cpp:379
+#: data/core/team-colors.cfg:255 src/game_initialization/lobby_data.cpp:379
 #: src/game_initialization/lobby_data.cpp:382
 msgid "Shroud"
 msgstr "ظلام"
 
 #. [color_range]: id=urbanjungle
-#: data/core/team-colors.cfg:256
+#: data/core/team-colors.cfg:262
 msgid "Urban"
 msgstr "حضري"
 
@@ -4237,42 +4267,42 @@ msgid "WesScript"
 msgstr "لا يوجد وصف متوفر."
 
 #. [time]: id=dawn_noweather
-#: data/internal/Weather/_main.cfg:151
+#: data/internal/Weather/_main.cfg:221
 msgid "Dawn"
 msgstr "غسق"
 
 #. [time]: id=morning_noweather
-#: data/internal/Weather/_main.cfg:162
+#: data/internal/Weather/_main.cfg:232
 msgid "Morning"
 msgstr "الصباح"
 
 #. [time]: id=midday_noweather
-#: data/internal/Weather/_main.cfg:170
+#: data/internal/Weather/_main.cfg:240
 msgid "Midday"
 msgstr "منتصف النهار"
 
 #. [time]: id=afternoon_noweather
-#: data/internal/Weather/_main.cfg:178
+#: data/internal/Weather/_main.cfg:248
 msgid "Afternoon"
 msgstr "الظهر"
 
 #. [time]: id=dusk_noweather
-#: data/internal/Weather/_main.cfg:186
+#: data/internal/Weather/_main.cfg:256
 msgid "Dusk"
 msgstr "شفق"
 
 #. [time]: id=first_watch_noweather
-#: data/internal/Weather/_main.cfg:197
+#: data/internal/Weather/_main.cfg:267
 msgid "First Watch"
 msgstr "نصف الليلة الأول"
 
 #. [time]: id=midnight_noweather
-#: data/internal/Weather/_main.cfg:208
+#: data/internal/Weather/_main.cfg:278
 msgid "Midnight"
 msgstr "منتصف الليل"
 
 #. [time]: id=second_watch_noweather
-#: data/internal/Weather/_main.cfg:219
+#: data/internal/Weather/_main.cfg:289
 msgid "Second Watch"
 msgstr "نصف الليلة الثاني"
 
@@ -4490,31 +4520,31 @@ msgstr "مستوى الإهمال غير صالح (يجب أن يكون 1-4)"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:124 src/actions/attack.cpp:949
+#: data/lua/wml/harm_unit.lua:124 src/actions/attack.cpp:973
 msgid "female^poisoned"
 msgstr "تم تسميمها"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:956
+#: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:980
 msgid "female^slowed"
 msgstr "تم إبطائها"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:956
+#: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:980
 msgid "slowed"
 msgstr "تم إبطائه"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:127 src/actions/attack.cpp:962
+#: data/lua/wml/harm_unit.lua:127 src/actions/attack.cpp:986
 msgid "female^petrified"
 msgstr "تم تجميدها"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:127 src/actions/attack.cpp:962
+#: data/lua/wml/harm_unit.lua:127 src/actions/attack.cpp:986
 msgid "petrified"
 msgstr "تم تجميده"
 
@@ -4530,8 +4560,8 @@ msgstr "غير قابل للشفاء"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: wesnoth.wml_actions.message
-#: data/lua/wml/message.lua:433 src/scripting/game_lua_kernel.cpp:3755
-#: src/scripting/game_lua_kernel.cpp:3790
+#: data/lua/wml/message.lua:442 src/scripting/game_lua_kernel.cpp:3771
+#: src/scripting/game_lua_kernel.cpp:3806
 msgid "input"
 msgstr "مدخل"
 
@@ -4556,21 +4586,6 @@ msgstr[2] "بقي دوران اضافيان فقط"
 msgstr[3] "ب($remaining_turns دورا باقيا)"
 msgstr[4] "ب($remaining_turns دورة باقية)"
 msgstr[5] "ب($remaining_turns دورا باقيا)"
-
-#. [lua]: generate_objectives
-#: data/lua/wml/objectives.lua:106
-msgid "Early finish bonus."
-msgstr "مكافأة إنهاء مبكر."
-
-#. [lua]: generate_objectives
-#: data/lua/wml/objectives.lua:109
-msgid "No early finish bonus."
-msgstr "لا توجد مكافأة إنهاء مبكر."
-
-#. [lua]: generate_objectives
-#: data/lua/wml/objectives.lua:117
-msgid "No gold carried over to the next scenario."
-msgstr "لن يتم نقل الذهب إلى السيناريو التالي."
 
 #. [lua]: generate_objectives
 #: data/lua/wml/objectives.lua:119
@@ -5698,11 +5713,11 @@ msgstr ""
 msgid "waiting for^an advancement choice"
 msgstr "اختيار التقدم"
 
-#: src/actions/attack.cpp:478 src/actions/attack.cpp:1274
+#: src/actions/attack.cpp:512 src/actions/attack.cpp:1298
 msgid "An invalid attacker weapon got selected."
 msgstr "تم اختيار سلاح مهاجم غير صالح."
 
-#: src/actions/attack.cpp:969
+#: src/actions/attack.cpp:993
 #, fuzzy
 #| msgid "Attacks: "
 msgid "attack^miss"
@@ -5756,12 +5771,12 @@ msgstr "شفيت"
 msgid "Ambushed!"
 msgstr "كمين!"
 
-#: src/actions/move.cpp:1281
+#: src/actions/move.cpp:1285
 msgid "Failed teleport! Exit not empty"
 msgstr "فشل النقل الآني! لا يوجد مكان خالي"
 
 #. TRANSLATORS: This becomes the "friendphrase" in "Units sighted! ($friendphrase, $enemyphrase)"
-#: src/actions/move.cpp:1297
+#: src/actions/move.cpp:1301
 msgid "Part of 'Units sighted! (...)' sentence^1 friendly"
 msgid_plural "$friends friendly"
 msgstr[0] "حليف"
@@ -5772,7 +5787,7 @@ msgstr[4] "$friends حلفاء"
 msgstr[5] "$friends حلفاء"
 
 #. TRANSLATORS: This becomes the "enemyphrase" in "Units sighted! ($friendphrase, $enemyphrase)"
-#: src/actions/move.cpp:1299
+#: src/actions/move.cpp:1303
 msgid "Part of 'Units sighted! (...)' sentence^1 enemy"
 msgid_plural "$enemies enemy"
 msgstr[0] "عدوّ"
@@ -5784,13 +5799,13 @@ msgstr[5] "$enemies أعداء"
 
 #. TRANSLATORS: Both friends and enemies sighted -- neutral message.
 #. This is shown when a move is interrupted because units were revealed from the fog of war.
-#: src/actions/move.cpp:1302
+#: src/actions/move.cpp:1306
 msgid "Units sighted! ($friendphrase, $enemyphrase)"
 msgstr "شُوهدت وحدات! ($friendphrase, $enemyphrase)"
 
 #. TRANSLATORS: Only enemies sighted -- bad message.
 #. This is shown when a move is interrupted because units were revealed from the fog of war.
-#: src/actions/move.cpp:1307
+#: src/actions/move.cpp:1311
 msgid "Enemy unit sighted!"
 msgid_plural "$enemies enemy units sighted!"
 msgstr[0] "شُوهدت وحدة عدو!"
@@ -5802,7 +5817,7 @@ msgstr[5] "$enemies وحدات عدو شُوهدت!"
 
 #. TRANSLATORS: Only friends sighted -- good message.
 #. This is shown when a move is interrupted because units were revealed from the fog of war.
-#: src/actions/move.cpp:1312
+#: src/actions/move.cpp:1316
 msgid "Friendly unit sighted"
 msgid_plural "$friends friendly units sighted"
 msgstr[0] "وحدة صديقة شُوهدت"
@@ -5812,15 +5827,15 @@ msgstr[3] "$enemies وحدات صديقة شُوهدت"
 msgstr[4] "$enemies وحدات صديقة شُوهدت"
 msgstr[5] "$enemies وحدات صديقة شُوهدت"
 
-#: src/actions/move.cpp:1327
+#: src/actions/move.cpp:1331
 msgid "(press $hotkey to keep moving)"
 msgstr "(اضغط على $hotkey لمتابعة التحرك)"
 
-#: src/actions/undo.cpp:330
+#: src/actions/undo.cpp:331
 msgid "Redo Error"
 msgstr "خطأ في التراجع"
 
-#: src/actions/undo.cpp:331
+#: src/actions/undo.cpp:332
 msgid ""
 "The redo stack is out of sync. This is most commonly caused by a corrupt "
 "save file or by faulty WML code in the scenario or era. Details:"
@@ -5828,7 +5843,7 @@ msgstr ""
 "مكدس الإعادة غير متزامن. يحدث هذا غالبًا بسبب ملف حفظ تالف أو بسبب وجود خطأ "
 "في كود WML في السيناريو أو العصر. تفاصيل:"
 
-#: src/actions/undo.cpp:342
+#: src/actions/undo.cpp:343
 msgid "Unhandled choices while redoing"
 msgstr ""
 
@@ -6044,7 +6059,7 @@ msgid "Do you really wish to continue?"
 msgstr "هل ترغب حقا في الاستمرار؟"
 
 #: src/addon/client.cpp:722 src/addon/manager_ui.cpp:187
-#: src/game_initialization/multiplayer.cpp:373
+#: src/game_initialization/multiplayer.cpp:374
 msgid "Confirm"
 msgstr "تأكيد"
 
@@ -6559,11 +6574,11 @@ msgstr "مجال تصحيح غير معروف: '$domain'."
 msgid "Switched domain: '$domain' to level: '$level'."
 msgstr "المجال المحول: '$domain' إلى المستوى: '$level'."
 
-#: src/chat_events.cpp:144
+#: src/chat_events.cpp:149
 msgid "whisper to $receiver"
 msgstr "همس $receiver"
 
-#: src/chat_events.cpp:151
+#: src/chat_events.cpp:156
 msgid "whisper: $sender"
 msgstr "همس: $sender"
 
@@ -6591,39 +6606,49 @@ msgstr "تم إهمال $elem وإزالته."
 msgid "Chat message"
 msgstr "رسالة دردشة"
 
-#: src/desktop/windows_tray_notification.cpp:126 src/game_config.cpp:588
+#: src/desktop/windows_tray_notification.cpp:137 src/game_config.cpp:599
 msgid "The Battle for Wesnoth"
 msgstr "ملحمة ويسنوث"
 
 #. TRANSLATORS: 12-hour time, eg '1:59 PM'
-#: src/format_time_summary.cpp:42 src/format_time_summary.cpp:95
+#: src/format_time_summary.cpp:44 src/format_time_summary.cpp:100
+#, no-c-format
 msgid "%I:%M %p"
 msgstr "%I:%M %p"
 
 #. TRANSLATORS: 24-hour time, eg '13:59'
-#: src/format_time_summary.cpp:44 src/format_time_summary.cpp:91
+#: src/format_time_summary.cpp:47 src/format_time_summary.cpp:95
+#, no-c-format
 msgid "%H:%M"
 msgstr "%H:%M"
 
 #. TRANSLATORS: Day of week + 12-hour time, eg 'Sunday, 1:59 PM'
-#: src/format_time_summary.cpp:50 src/format_time_summary.cpp:105
+#: src/format_time_summary.cpp:54 src/format_time_summary.cpp:112
+#, no-c-format
 msgid "%A, %I:%M %p"
 msgstr "%A, %I:%M %p"
 
 #. TRANSLATORS: Day of week + 24-hour time, eg 'Sunday, 13:59'
-#: src/format_time_summary.cpp:52 src/format_time_summary.cpp:101
+#: src/format_time_summary.cpp:57 src/format_time_summary.cpp:107
+#, no-c-format
 msgid "%A, %H:%M"
 msgstr "%A, %H:%M"
 
 #. TRANSLATORS: Month + day of month, eg 'Nov 02'. Format for your locale.
-#: src/format_time_summary.cpp:57 src/format_time_summary.cpp:110
+#: src/format_time_summary.cpp:63 src/format_time_summary.cpp:118
+#, no-c-format
 msgid "%b %d"
 msgstr "%b %d"
 
 #. TRANSLATORS: Month + day of month + year, eg 'Nov 02 2021'. Format for your locale.
-#: src/format_time_summary.cpp:62 src/format_time_summary.cpp:115
+#: src/format_time_summary.cpp:69 src/format_time_summary.cpp:124
+#, no-c-format
 msgid "%b %d %Y"
 msgstr "%b %d %Y"
+
+#: src/formula/format_timespan.hpp:57 src/formula/format_timespan.hpp:90
+msgid "timespan^expired"
+msgstr "انتهت المدة"
 
 #. TRANSLATORS: The "timespan^$num xxxxx" strings originating from the same file
 #. as the string with this comment MUST be translated following the usual rules
@@ -6633,7 +6658,7 @@ msgstr "%b %d %Y"
 #. is the time unit (year, month, etc.) For example, for French you would
 #. translate "timespan^$num years" as "$num ans", thus allowing the game UI to
 #. generate output such as "39 ans" after variable interpolation.
-#: src/formula/format_timespan.hpp:38
+#: src/formula/format_timespan.hpp:82
 msgid "timespan^$num year"
 msgid_plural "timespan^$num years"
 msgstr[0] "$num سنة"
@@ -6643,7 +6668,7 @@ msgstr[3] "$num سنوات"
 msgstr[4] "$num سنة"
 msgstr[5] "$num سنة"
 
-#: src/formula/format_timespan.hpp:39
+#: src/formula/format_timespan.hpp:83
 msgid "timespan^$num month"
 msgid_plural "timespan^$num months"
 msgstr[0] "$num شهر"
@@ -6653,7 +6678,7 @@ msgstr[3] "$num أشهر"
 msgstr[4] "$num شهرا"
 msgstr[5] "$num شهر"
 
-#: src/formula/format_timespan.hpp:40
+#: src/formula/format_timespan.hpp:84
 msgid "timespan^$num week"
 msgid_plural "timespan^$num weeks"
 msgstr[0] "$num اسبوع"
@@ -6663,7 +6688,7 @@ msgstr[3] "$num أسابيع"
 msgstr[4] "$num اسبوع"
 msgstr[5] "$num اسبوع"
 
-#: src/formula/format_timespan.hpp:41
+#: src/formula/format_timespan.hpp:85
 msgid "timespan^$num day"
 msgid_plural "timespan^$num days"
 msgstr[0] "$num يوم"
@@ -6673,7 +6698,7 @@ msgstr[3] "$num أيام"
 msgstr[4] "$num يوم"
 msgstr[5] "$num يوم"
 
-#: src/formula/format_timespan.hpp:42
+#: src/formula/format_timespan.hpp:86
 msgid "timespan^$num hour"
 msgid_plural "timespan^$num hours"
 msgstr[0] "$num ساعة"
@@ -6683,7 +6708,7 @@ msgstr[3] "$num ساعات"
 msgstr[4] "$num ساعة"
 msgstr[5] "$num ساعة"
 
-#: src/formula/format_timespan.hpp:43
+#: src/formula/format_timespan.hpp:87
 msgid "timespan^$num minute"
 msgid_plural "timespan^$num minutes"
 msgstr[0] "$num دقيقة"
@@ -6693,7 +6718,7 @@ msgstr[3] "$num دقائق"
 msgstr[4] "$num دقيقة"
 msgstr[5] "$num دقيقة"
 
-#: src/formula/format_timespan.hpp:44
+#: src/formula/format_timespan.hpp:88
 msgid "timespan^$num second"
 msgid_plural "timespan^$num seconds"
 msgstr[0] "$num ثانية"
@@ -6703,11 +6728,7 @@ msgstr[3] "$num ثواني"
 msgstr[4] "$num ثواني"
 msgstr[5] "$num ثانية"
 
-#: src/formula/format_timespan.hpp:89 src/formula/format_timespan.hpp:112
-msgid "timespan^expired"
-msgstr "انتهت المدة"
-
-#: src/game_config.cpp:536
+#: src/game_config.cpp:547
 msgid "Invalid color in range: "
 msgstr "لون غير صالح في النطاق: "
 
@@ -6823,7 +6844,7 @@ msgstr[3] "يرجى الإبلاغ عن هذا إلى المؤلف أو المش
 msgstr[4] "يرجى الإبلاغ عن هذا إلى المؤلف أو المشرف على هذه الإضافات."
 msgstr[5] "يرجى الإبلاغ عن هذا إلى المؤلف أو المشرف على هذه الإضافات."
 
-#: src/game_events/pump.cpp:389 src/game_launcher.cpp:957
+#: src/game_events/pump.cpp:389 src/game_launcher.cpp:948
 msgid "Error: "
 msgstr "خطأ: "
 
@@ -6873,7 +6894,7 @@ msgid "Reserved"
 msgstr "محجوز"
 
 #: src/game_initialization/create_engine.cpp:74
-#: src/game_initialization/create_engine.cpp:684
+#: src/game_initialization/create_engine.cpp:691
 msgid "Map could not be loaded: "
 msgstr "تعذر تحميل الخريطة. "
 
@@ -6893,33 +6914,39 @@ msgstr "خريطة مخصصة."
 msgid "multiplayer^MP"
 msgstr ""
 
-#: src/game_initialization/depcheck.cpp:504
+#: src/game_initialization/create_engine.cpp:661
+#, fuzzy
+#| msgid "Variable not found"
+msgid "Era not found: "
+msgstr "لم يتم العثور على المتغير"
+
+#: src/game_initialization/depcheck.cpp:495
 msgid "Failed to resolve dependencies"
 msgstr "فشل في حل التبعيات"
 
-#: src/game_initialization/depcheck.cpp:504
+#: src/game_initialization/depcheck.cpp:495
 msgid "OK"
 msgstr "حسنا"
 
-#: src/game_initialization/depcheck.cpp:529
+#: src/game_initialization/depcheck.cpp:520
 msgid "Scenario can’t be activated. Some dependencies are missing: "
 msgstr "لا يمكن تنشيط السيناريو. بعض الإضافات المرتبطة مفقودة: "
 
-#: src/game_initialization/depcheck.cpp:583
-#: src/game_initialization/depcheck.cpp:706
+#: src/game_initialization/depcheck.cpp:574
+#: src/game_initialization/depcheck.cpp:697
 msgid "No compatible eras found."
 msgstr "لم يتم العثور على عصور متوافقة."
 
-#: src/game_initialization/depcheck.cpp:598
+#: src/game_initialization/depcheck.cpp:589
 msgid "Era can’t be activated. Some dependencies are missing: "
 msgstr "لا يمكن تفعيل العصر. بعض الإضافات المرتبطة مفقودة: "
 
-#: src/game_initialization/depcheck.cpp:651
-#: src/game_initialization/depcheck.cpp:743
+#: src/game_initialization/depcheck.cpp:642
+#: src/game_initialization/depcheck.cpp:734
 msgid "No compatible scenarios found."
 msgstr "لم يتم العثور على سيناريوهات متوافقة."
 
-#: src/game_initialization/depcheck.cpp:680
+#: src/game_initialization/depcheck.cpp:671
 msgid ""
 "Not all of the chosen modifications are compatible. Some of them will be "
 "disabled."
@@ -7027,11 +7054,11 @@ msgstr "هزيمة زعيم (قادة) العدو"
 msgid "Cannot find era ‘$era’"
 msgstr "لا يمكن العثور على العصر '$era'"
 
-#: src/game_initialization/multiplayer.cpp:254
+#: src/game_initialization/multiplayer.cpp:255
 msgid "Invalid address specified for multiplayer server"
 msgstr "تم تحديد عنوان غير صالح لخادم متعدد اللاعبين"
 
-#: src/game_initialization/multiplayer.cpp:289
+#: src/game_initialization/multiplayer.cpp:290
 msgid ""
 "The server accepts versions ‘$required_version’, but you are using version "
 "‘$your_version’"
@@ -7039,11 +7066,11 @@ msgstr ""
 "الخادم يقبل الإصدارات '$required_version'، لكنك تستخدم الإصدار "
 "'$your_version'"
 
-#: src/game_initialization/multiplayer.cpp:302
+#: src/game_initialization/multiplayer.cpp:303
 msgid "Server-side redirect loop"
 msgstr "حلقة إعادة التوجيه من جانب الخادم"
 
-#: src/game_initialization/multiplayer.cpp:346
+#: src/game_initialization/multiplayer.cpp:347
 msgid ""
 "The nickname ‘$nick’ is inactive. You cannot claim ownership of this "
 "nickname until you activate your account via email or ask an administrator "
@@ -7052,28 +7079,28 @@ msgstr ""
 "اللقب \"$nick\" غير نشط. لا يمكنك المطالبة بملكية هذا اللقب حتى تقوم بتنشيط "
 "حسابك عبر البريد الإلكتروني أو تطلب من مسؤول القيام بذلك نيابةً عنك."
 
-#: src/game_initialization/multiplayer.cpp:355
+#: src/game_initialization/multiplayer.cpp:356
 msgid "Do you want to continue?"
 msgstr "هل تريد المتابعة؟"
 
-#: src/game_initialization/multiplayer.cpp:357
+#: src/game_initialization/multiplayer.cpp:358
 msgid "Warning"
 msgstr "تحذير"
 
-#: src/game_initialization/multiplayer.cpp:419
+#: src/game_initialization/multiplayer.cpp:420
 msgid ""
 "The remote server requested a password while using an insecure connection."
 msgstr "طلب الخادم البعيد كلمة مرور أثناء استخدام اتصال غير آمن."
 
-#: src/game_initialization/multiplayer.cpp:421
+#: src/game_initialization/multiplayer.cpp:422
 msgid "You must login first."
 msgstr "يجب عليك تسجيل الدخول أولا."
 
-#: src/game_initialization/multiplayer.cpp:423
+#: src/game_initialization/multiplayer.cpp:424
 msgid "The nickname ‘$nick’ is already taken."
 msgstr "اللقب '$nick' مأخوذ بالفعل."
 
-#: src/game_initialization/multiplayer.cpp:425
+#: src/game_initialization/multiplayer.cpp:426
 msgid ""
 "The nickname ‘$nick’ contains invalid characters. Only alpha-numeric "
 "characters (one at minimum), underscores and hyphens are allowed."
@@ -7081,47 +7108,47 @@ msgstr ""
 "يحتوي اللقب '$nick' على أحرف غير صالحة. يُسمح فقط بالأحرف الأبجدية الرقمية "
 "(واحد على الأقل)، والشرطات السفلية والواصلات."
 
-#: src/game_initialization/multiplayer.cpp:429
+#: src/game_initialization/multiplayer.cpp:430
 msgid "The nickname ‘$nick’ is too long. Nicks must be 20 characters or less."
 msgstr "اللقب \"$nick\" طويل جدًا. يجب أن تتكون الألقاب من 20 حرفًا أو أقل."
 
-#: src/game_initialization/multiplayer.cpp:431
+#: src/game_initialization/multiplayer.cpp:432
 msgid "The nickname ‘$nick’ is reserved and cannot be used by players."
 msgstr "اللقب '$nick' محجوز ولا يمكن للاعبين استخدامه."
 
-#: src/game_initialization/multiplayer.cpp:433
+#: src/game_initialization/multiplayer.cpp:434
 msgid "The nickname ‘$nick’ is not registered on this server."
 msgstr "اللقب '$nick' غير مسجل على هذا الخادم."
 
-#: src/game_initialization/multiplayer.cpp:434
+#: src/game_initialization/multiplayer.cpp:435
 msgid " This server disallows unregistered nicknames."
 msgstr " لا يسمح هذا الخادم بالألقاب غير المسجلة."
 
-#: src/game_initialization/multiplayer.cpp:437
+#: src/game_initialization/multiplayer.cpp:438
 msgid "Your IP address is banned on this server for $duration|."
 msgstr "تم حظر عنوان IP الخاص بك في منتديات هذا الخادم لمدة $duration|."
 
-#: src/game_initialization/multiplayer.cpp:439
+#: src/game_initialization/multiplayer.cpp:440
 msgid "Your IP address is banned on this server."
 msgstr "تم حظر عنوان IP الخاص بك في هذا الخادم."
 
-#: src/game_initialization/multiplayer.cpp:443
+#: src/game_initialization/multiplayer.cpp:444
 msgid "The nickname ‘$nick’ is banned on this server’s forums for $duration|."
 msgstr "الاسم المستعار '$nick' محظور في منتديات هذا الخادم لمدة $duration|."
 
-#: src/game_initialization/multiplayer.cpp:445
+#: src/game_initialization/multiplayer.cpp:446
 msgid "The nickname ‘$nick’ is banned on this server’s forums."
 msgstr "الاسم المستعار '$nick' محظور في منتديات هذا الخادم."
 
-#: src/game_initialization/multiplayer.cpp:449
+#: src/game_initialization/multiplayer.cpp:450
 msgid "Your IP address is banned on this server’s forums for $duration|."
 msgstr "تم حظر عنوان IP الخاص بك في منتديات هذا الخادم لمدة $duration|."
 
-#: src/game_initialization/multiplayer.cpp:451
+#: src/game_initialization/multiplayer.cpp:452
 msgid "Your IP address is banned on this server’s forums."
 msgstr "تم حظر عنوان IP الخاص بك في منتديات هذا الخادم."
 
-#: src/game_initialization/multiplayer.cpp:455
+#: src/game_initialization/multiplayer.cpp:456
 msgid ""
 "The email address for the nickname ‘$nick’ is banned on this server’s forums "
 "for $duration|."
@@ -7129,18 +7156,18 @@ msgstr ""
 "عنوان البريد الإلكتروني للاسم المستعار '$nick' محظور في منتديات هذا الخادم "
 "لمدة $duration|."
 
-#: src/game_initialization/multiplayer.cpp:457
+#: src/game_initialization/multiplayer.cpp:458
 msgid ""
 "The email address for the nickname ‘$nick’ is banned on this server’s forums."
 msgstr ""
 "عنوان البريد الإلكتروني للاسم المستعار '$nick' محظور في منتديات هذا الخادم."
 
-#: src/game_initialization/multiplayer.cpp:460
-#: src/game_initialization/multiplayer.cpp:462
+#: src/game_initialization/multiplayer.cpp:461
+#: src/game_initialization/multiplayer.cpp:463
 msgid "The nickname ‘$nick’ is registered on this server."
 msgstr "تم تسجيل اللقب '$nick' على هذا الخادم."
 
-#: src/game_initialization/multiplayer.cpp:463
+#: src/game_initialization/multiplayer.cpp:464
 msgid ""
 "WARNING: There is already a client using this nickname, logging in will "
 "cause that client to be kicked!"
@@ -7148,32 +7175,32 @@ msgstr ""
 "تحذير: يوجد بالفعل لاعب يستخدم هذا اللقب، وتسجيل الدخول سيؤدي إلى طرد هذا "
 "اللاعب!"
 
-#: src/game_initialization/multiplayer.cpp:466
+#: src/game_initialization/multiplayer.cpp:467
 msgid "The password you provided was incorrect."
 msgstr "كلمة المرور التي قدمتها غير صحيحة."
 
-#: src/game_initialization/multiplayer.cpp:468
+#: src/game_initialization/multiplayer.cpp:469
 msgid "You have made too many login attempts."
 msgstr "لقد قمت بمحاولات كثيرة لتسجيل الدخول."
 
-#: src/game_initialization/multiplayer.cpp:470
+#: src/game_initialization/multiplayer.cpp:471
 msgid "Password hashing failed."
 msgstr "فشل تجزئة كلمة المرور."
 
-#: src/game_initialization/playcampaign.cpp:150 src/game_launcher.cpp:910
+#: src/game_initialization/playcampaign.cpp:150 src/game_launcher.cpp:901
 msgid "The game could not be loaded: "
 msgstr "تعذر تحميل اللعبة: "
 
-#: src/game_initialization/playcampaign.cpp:156 src/game_launcher.cpp:912
+#: src/game_initialization/playcampaign.cpp:156 src/game_launcher.cpp:903
 msgid "Error while playing the game: "
 msgstr "خطأ أثناء تشغيل اللعبة: "
 
-#: src/game_initialization/playcampaign.cpp:159 src/game_launcher.cpp:949
+#: src/game_initialization/playcampaign.cpp:159 src/game_launcher.cpp:940
 msgid "The game map could not be loaded: "
 msgstr "تعذر تحميل خريطة اللعبة: "
 
-#: src/game_initialization/playcampaign.cpp:162 src/game_launcher.cpp:914
-#: src/game_launcher.cpp:1035
+#: src/game_initialization/playcampaign.cpp:162 src/game_launcher.cpp:905
+#: src/game_launcher.cpp:1026
 msgid "Map generator error: "
 msgstr "خطأ في مولد الخريطة: "
 
@@ -7198,28 +7225,28 @@ msgstr "سيناريو غير معروف: '$scenario|'"
 msgid "No campaigns are available."
 msgstr "لا توجد حملات متاحة."
 
-#: src/game_launcher.cpp:692 src/game_launcher.cpp:711
-#: src/hotkey/hotkey_handler_sp.cpp:324 src/replay.cpp:662 src/savegame.cpp:167
+#: src/game_launcher.cpp:683 src/game_launcher.cpp:702
+#: src/hotkey/hotkey_handler_sp.cpp:324 src/replay.cpp:664 src/savegame.cpp:167
 msgid "The file you have tried to load is corrupt"
 msgstr "الملف الذي حاولت تحميله تالف"
 
-#: src/game_launcher.cpp:694 src/game_launcher.cpp:713
+#: src/game_launcher.cpp:685 src/game_launcher.cpp:704
 msgid "The file you have tried to load is corrupt: '"
 msgstr "الملف الذي حاولت تحميله تالف:'"
 
-#: src/game_launcher.cpp:703
+#: src/game_launcher.cpp:694
 msgid "File I/O Error while reading the game"
 msgstr "خطأ في إدخال/إخراج الملف أثناء قراءة اللعبة"
 
-#: src/game_launcher.cpp:705
+#: src/game_launcher.cpp:696
 msgid "File I/O Error while reading the game: '"
 msgstr "خطأ في إدخال/إخراج الملف أثناء قراءة اللعبة:'"
 
-#: src/game_launcher.cpp:908
+#: src/game_launcher.cpp:899
 msgid "Error while starting server: "
 msgstr "خطأ أثناء بدء تشغيل الخادم: "
 
-#: src/game_launcher.cpp:930
+#: src/game_launcher.cpp:921
 msgid "Connection failed: "
 msgstr "فشل الاتصال: "
 
@@ -7286,15 +7313,15 @@ msgstr "سيناريوهات متعددة اللاعبين في الخط الر�
 msgid "No visible sides found."
 msgstr "لم يتم العثور على جوانب مرئية."
 
-#: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:171
+#: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:175
 msgid "Selected Game"
 msgstr "لعبة مختارة"
 
-#: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:172
+#: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:176
 msgid "Lobby"
 msgstr "الردهة"
 
-#: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:173
+#: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:177
 msgid "Other Games"
 msgstr "ألعاب أخرى"
 
@@ -7584,7 +7611,7 @@ msgstr "الملف الذي حاولت تحميله لا يحتوي على مع�
 msgid "The file you have tried to load is not from the current session."
 msgstr "الملف الذي حاولت تحميله ليس من الجلسة الحالية."
 
-#: src/language.cpp:101
+#: src/language.cpp:115
 msgid "System default language"
 msgstr "لغة النظام القياسية"
 
@@ -8253,7 +8280,7 @@ msgstr "command(امر تصحيح):"
 msgid "prompt^Formula:"
 msgstr "المعادلة:"
 
-#: src/mouse_events.cpp:1307
+#: src/mouse_events.cpp:1342
 msgid ""
 "You cannot move your leader away from the keep with some planned recruits or "
 "recalls left."
@@ -8261,35 +8288,35 @@ msgstr ""
 "لا يمكنك نقل قائدك خارج المعسكر مع بقاء بعض المجندين أو عمليات الاستدعاء "
 "المخطط لها."
 
-#: src/mouse_events.cpp:1410
+#: src/mouse_events.cpp:1448
 msgid "No Attacks"
 msgstr "لا هجمات"
 
-#: src/mouse_events.cpp:1410
+#: src/mouse_events.cpp:1448
 msgid "This unit has no usable weapons."
 msgstr "هذه الوحدة ليس لديها أسلحة قابلة للاستخدام."
 
-#: src/mouse_events.cpp:1486 src/mouse_events.cpp:1502
+#: src/mouse_events.cpp:1524 src/mouse_events.cpp:1540
 msgid "Other aspects: "
 msgstr "خواص أخرى: "
 
-#: src/mouse_events.cpp:1515 src/mouse_events.cpp:1529
+#: src/mouse_events.cpp:1553 src/mouse_events.cpp:1567
 msgid "Weapon: "
 msgstr "السلاح: "
 
-#: src/mouse_events.cpp:1516 src/mouse_events.cpp:1530
+#: src/mouse_events.cpp:1554 src/mouse_events.cpp:1568
 msgid "Type: "
 msgstr "الصنف: "
 
-#: src/mouse_events.cpp:1517 src/mouse_events.cpp:1531
+#: src/mouse_events.cpp:1555 src/mouse_events.cpp:1569
 msgid "Damage: "
 msgstr "الضرر: "
 
-#: src/mouse_events.cpp:1518 src/mouse_events.cpp:1532
+#: src/mouse_events.cpp:1556 src/mouse_events.cpp:1570
 msgid "Attacks: "
 msgstr "عدد الهجمات: "
 
-#: src/mouse_events.cpp:1519 src/mouse_events.cpp:1533
+#: src/mouse_events.cpp:1557 src/mouse_events.cpp:1571
 msgid "Chance to hit: "
 msgstr "فرصة الإصابة: "
 
@@ -8381,28 +8408,28 @@ msgstr "الوقت المتبقي للدور الحالي"
 msgid "current local time"
 msgstr "التوقيت المحلي الحالي"
 
-#: src/play_controller.cpp:604
+#: src/play_controller.cpp:608
 msgid "Trying to create a corrupt file, please report this bug"
 msgstr "محاولة إنشاء ملف تالف، يرجى الإبلاغ عن هذا الخطأ"
 
-#: src/play_controller.cpp:1062
+#: src/play_controller.cpp:1066
 msgid ""
 "The game is out of sync. It might not make much sense to continue. Do you "
 "want to save your game?"
 msgstr ""
 "اللعبة غير متزامنة. قد لا يكون من المنطقي الاستمرار. هل تريد حفظ لعبتك؟"
 
-#: src/play_controller.cpp:1063
+#: src/play_controller.cpp:1067
 msgid "Error details:"
 msgstr "تفاصيل الخطأ:"
 
-#: src/play_controller.cpp:1243
+#: src/play_controller.cpp:1247
 msgid "Warning: broken campaign branches"
 msgstr "تحذير: حملة تحتوي قسما مكسورا"
 
 #. TRANSLATORS: This is an error that will hopefully only be seen by UMC authors and by players who have already
 #. said "okay" to a "loading saves from an old version might not work" dialog.
-#: src/play_controller.cpp:1249
+#: src/play_controller.cpp:1253
 msgid ""
 "The next scenario is missing, you will not be able to finish this campaign."
 msgid_plural ""
@@ -8415,7 +8442,7 @@ msgstr[3] "السيناريوهات التالية مفقودة، لن تتمك�
 msgstr[4] "السيناريوهات التالية مفقودة، لن تتمكن من إنهاء هذه الحملة."
 msgstr[5] "السيناريوهات التالية مفقودة، لن تتمكن من إنهاء هذه الحملة."
 
-#: src/play_controller.cpp:1256
+#: src/play_controller.cpp:1260
 msgid ""
 "Please report the following missing scenario to the campaign’s author:\n"
 "$unknown_list|"
@@ -8441,11 +8468,11 @@ msgstr[5] ""
 "يرجى الإبلاغ عن السيناريوهات المفقودة التالية إلى مؤلف الحملة:\n"
 "$unknown_list|"
 
-#: src/play_controller.cpp:1260
+#: src/play_controller.cpp:1264
 msgid "Once this is fixed, you will need to restart this scenario."
 msgstr "حالما يتم اصلاح الحملة، ستضطر لإعادة آخر سيناريو لعبته فيها."
 
-#: src/play_controller.cpp:1339
+#: src/play_controller.cpp:1343
 msgid "No objectives available"
 msgstr "لا أهداف محددة"
 
@@ -9274,15 +9301,15 @@ msgstr "يوتا"
 msgid "infix_binary^i"
 msgstr "إ"
 
-#: src/synced_commands.cpp:379
+#: src/synced_commands.cpp:390
 msgid "(unknown player)"
 msgstr "(لاعب غير معروف)"
 
-#: src/synced_commands.cpp:384
+#: src/synced_commands.cpp:395
 msgid "The :$command debug command was used during $player’s turn"
 msgstr "تم استخدام الأمر :$command التصحيحي أثناء دور $player"
 
-#: src/synced_commands.cpp:392
+#: src/synced_commands.cpp:403
 msgid ""
 "A player used a debug command during the game. If this is unexpected, it is "
 "possible the player in question is cheating."
@@ -9290,19 +9317,19 @@ msgstr ""
 "استخدم أحد اللاعبين أمر التصحيح أثناء اللعبة. إذا كان هذا غير متوقع، فمن "
 "الممكن أن اللاعب المعني يغش."
 
-#: src/synced_commands.cpp:394
+#: src/synced_commands.cpp:405
 msgid "Details:"
 msgstr "التفاصيل:"
 
-#: src/synced_commands.cpp:397
+#: src/synced_commands.cpp:408
 msgid "Do you wish to save the game before continuing?"
 msgstr "هل ترغب في حفظ اللعبة قبل المتابعة؟"
 
-#: src/synced_commands.cpp:399
+#: src/synced_commands.cpp:410
 msgid "Debug Command Used"
 msgstr "أمر تصحيح مستخدم"
 
-#: src/synced_commands.cpp:505
+#: src/synced_commands.cpp:516
 msgid "A unit was created using debug mode during $player’s turn"
 msgstr "تم إنشاء وحدة باستخدام وضع التصحيح أثناء دور $player"
 
@@ -9325,7 +9352,7 @@ msgstr "الإدخال"
 
 #. TRANSLATORS: $color_id is the internal identifier of a side color, for example, 'lightred'.
 #. Translate the quotation marks only; leave "color_id" untranslated, as it's a variable name.
-#: src/team.cpp:989
+#: src/team.cpp:994
 msgid "“$color_id”"
 msgstr "“$color_id”"
 
@@ -9358,21 +9385,21 @@ msgstr "روتين الوقت من اليوم"
 msgid "This Time of Day is only a Stub!"
 msgstr "هذا الوقت من اليوم هو مجرد روتين!"
 
-#: src/units/abilities.cpp:1141
+#: src/units/abilities.cpp:1227
 msgid "Owned: "
 msgstr "يملكه: "
 
 #. TRANSLATORS: Past-participle of "teach", used for an ability similar to leadership
-#: src/units/abilities.cpp:1143
+#: src/units/abilities.cpp:1229
 msgid "Taught: "
 msgstr "علم: "
 
 #. TRANSLATORS: Past-participle of "teach", used for an ability similar to leadership
-#: src/units/abilities.cpp:1145
+#: src/units/abilities.cpp:1231
 msgid "Taught: (by an enemy): "
 msgstr "علّمت: (من قبل عدو): "
 
-#: src/units/abilities.cpp:1146
+#: src/units/abilities.cpp:1232
 msgid "Used by opponent: "
 msgstr "يستخدمه الخصم: "
 
@@ -9577,19 +9604,19 @@ msgstr "حدي"
 msgid "This unit cannot be dismissed."
 msgstr "لا يمكن استبعاد هذه الوحدة."
 
-#: src/units/unit.cpp:752
+#: src/units/unit.cpp:762
 msgid "This unit is a leader and cannot be dismissed."
 msgstr "هذه الوحدة هي قائد ولا يمكن الاستغناء عنها."
 
-#: src/units/unit.cpp:2008
+#: src/units/unit.cpp:2018
 msgid "$attack_list|: $effect_description"
 msgstr "$attack_list|: $effect_description"
 
-#: src/units/unit.cpp:2014
+#: src/units/unit.cpp:2024
 msgid "<span color=\"$color\">$number_or_percent</span> HP"
 msgstr "<span color=\"$color\">$number_or_percent</span> نقطة حياة"
 
-#: src/units/unit.cpp:2024
+#: src/units/unit.cpp:2034
 msgid "<span color=\"$color\">$number_or_percent</span> move"
 msgid_plural "<span color=\"$color\">$number_or_percent</span> moves"
 msgstr[0] "<span color=\"$color\">$number_or_percent</span> حركة"
@@ -9599,19 +9626,19 @@ msgstr[3] "<span color=\"$color\">$number_or_percent</span> حركات"
 msgstr[4] "<span color=\"$color\">$number_or_percent</span> حركة"
 msgstr[5] "<span color=\"$color\">$number_or_percent</span> حركة"
 
-#: src/units/unit.cpp:2030
+#: src/units/unit.cpp:2040
 msgid "<span color=\"$color\">$number_or_percent</span> vision"
 msgstr "<span color=\"$color\">$number_or_percent</span> الرؤية"
 
-#: src/units/unit.cpp:2034
+#: src/units/unit.cpp:2044
 msgid "<span color=\"$color\">$number_or_percent</span> jamming"
 msgstr "<span color=\"$color\">$number_or_percent</span> تشويش"
 
-#: src/units/unit.cpp:2039
+#: src/units/unit.cpp:2049
 msgid "<span color=\"$color\">$number_or_percent</span> XP to advance"
 msgstr "<span color=\"$color\">$number_or_percent</span> نقطة خبرة  للتقدم"
 
-#: src/units/unit.cpp:2043
+#: src/units/unit.cpp:2053
 msgid "<span color=\"$color\">$number_or_percent</span> attack per turn"
 msgid_plural ""
 "<span color=\"$color\">$number_or_percent</span> attacks per turn"
@@ -9622,11 +9649,11 @@ msgstr[3] "<span color=\"$color\">$number_or_percent</span> هجمات في ال
 msgstr[4] "<span color=\"$color\">$number_or_percent</span> هجوم في الدور"
 msgstr[5] "<span color=\"$color\">$number_or_percent</span> هجوم في الدور"
 
-#: src/units/unit.cpp:2050
+#: src/units/unit.cpp:2060
 msgid "<span color=\"$color\">$number_or_percent</span> cost to recall"
 msgstr "<span color=\"$color\">$number_or_percent</span> تكلفة الاستدعاء"
 
-#: src/units/unit.cpp:2556
+#: src/units/unit.cpp:2566
 msgid "$effect_description per level"
 msgstr "$effect_description لكل مستوى"
 
@@ -9650,7 +9677,7 @@ msgstr "$year قبل الانهيار"
 msgid "$year AF"
 msgstr "$year بعد الانهيار"
 
-#: src/wesnoth.cpp:811
+#: src/wesnoth.cpp:808
 msgid ""
 "Unable to create log files in directory $logdir. This is often caused by "
 "incorrect folder permissions, anti-virus software restricting folder access, "
@@ -9660,7 +9687,7 @@ msgstr ""
 "المجلد غير الصحيحة، أو برنامج مكافحة الفيروسات الذي يقيد الوصول إلى المجلد، "
 "أو استخدام OneDrive لإدارة مجلد المستندات."
 
-#: src/wesnoth.cpp:812
+#: src/wesnoth.cpp:809
 msgid "Logging Failure"
 msgstr "فشل التسجيل"
 
@@ -9688,26 +9715,11 @@ msgstr "إخفاء مخططات اللاعب $player"
 msgid "Whiteboard Options"
 msgstr "خيارات اللوحة"
 
-#~ msgid ""
-#~ "\n"
-#~ "100% of finishing gold carried over to the next scenario."
-#~ msgstr ""
-#~ "\n"
-#~ "تم نقل 100% من الذهب إلى السيناريو التالي."
+#~ msgid "Customize orb colors"
+#~ msgstr "الألوان المعتادة للكرات الخاصة للوحدات"
 
-#~ msgid ""
-#~ "\n"
-#~ "40% of finishing gold carried over to the next scenario."
-#~ msgstr ""
-#~ "\n"
-#~ "تم نقل 40% من الذهب إلى السيناريو التالي."
-
-#~ msgid ""
-#~ "\n"
-#~ "20% of finishing gold carried over to the next scenario."
-#~ msgstr ""
-#~ "\n"
-#~ "تم نقل 20% من الذهب إلى السيناريو التالي."
+#~ msgid "Customize Reach Map (Unit Movement UI)"
+#~ msgstr "تخصيص خريطة الوصول (واجهة مستخدم حركة الوحدة)"
 
 #, fuzzy
 #~| msgid "Bare Branch"

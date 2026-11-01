@@ -84,7 +84,7 @@ namespace wesnothd
 {
 // we take profiling info on every n requests
 int request_sample_frequency = 1;
-version_info secure_version = version_info("1.14.4");
+version_info secure_version = version_info("1.19.27");
 
 static void make_add_diff(
 		const simple_wml::node& src, const char* gamelist, const char* type, simple_wml::document& out, int index = -1)
@@ -190,7 +190,7 @@ static bool make_change_diff(const simple_wml::node& src,
 
 static std::string player_status(const wesnothd::player_record& player)
 {
-	auto [d, h, m, s] = chrono::deconstruct_duration(chrono::format::days_hours_mins_secs, player.time_logged_on());
+	auto [d, h, m, s] = chrono::deconstruct_duration<chrono::days, std::chrono::hours, std::chrono::minutes, std::chrono::seconds>(player.time_logged_on());
 	std::ostringstream out;
 	out << "'" << player.name() << "' @ " << player.client_ip()
 		<< " logged on for "
@@ -472,14 +472,14 @@ void server::load_config(bool reload)
 		queue_info_.clear();
 		for(const config& queue : cfg_.mandatory_child("queues").child_range("queue")) {
 			const config& game = queue.mandatory_child("game");
-			queue_info q = queue_info(queue["id"].to_int(), queue["display_name"].str(), queue["players_required"].to_int(), game);
+			queue_info q = queue_info(queue["id"].to_int(), queue["display_name"].str(), queue["players_required"].to_int(), queue["addons"].str(), game);
 			queue_info_.emplace(q.id, q);
 		}
 	} else if(reload && cfg_.has_child("queues")) {
 		std::map<int, queue_info> new_queue_info;
 		for(const config& queue : cfg_.mandatory_child("queues").child_range("queue")) {
 			const config& game = queue.mandatory_child("game");
-			queue_info q = queue_info(queue["id"].to_int(), queue["display_name"].str(), queue["players_required"].to_int(), game);
+			queue_info q = queue_info(queue["id"].to_int(), queue["display_name"].str(), queue["players_required"].to_int(), queue["addons"].str(), game);
 			new_queue_info.emplace(q.id, q);
 		}
 
@@ -492,12 +492,14 @@ void server::load_config(bool reload)
 				update.set_attr_dup("action", "add");
 				update.set_attr_dup("display_name", info.display_name.c_str());
 				update.set_attr_int("players_required", info.players_required);
+				update.set_attr_dup("addons", info.required_addons);
 
 				send_to_lobby(queue_update);
 			} else if(
 				queue_info_.count(id) == 1 && (
 					info.display_name != queue_info_.at(id).display_name ||
-					info.players_required != queue_info_.at(id).players_required
+					info.players_required != queue_info_.at(id).players_required ||
+					info.required_addons != queue_info_.at(id).required_addons
 				)
 			) {
 				simple_wml::document queue_update;
@@ -506,6 +508,7 @@ void server::load_config(bool reload)
 				update.set_attr_dup("action", "update");
 				update.set_attr_dup("display_name", info.display_name.c_str());
 				update.set_attr_int("players_required", info.players_required);
+				update.set_attr_dup("addons", info.required_addons);
 
 				send_to_lobby(queue_update);
 			}
@@ -875,6 +878,7 @@ void server::login_client(boost::asio::yield_context yield, SocketPtr socket)
 		queue_node.set_attr_dup("display_name", queue.display_name.c_str());
 		queue_node.set_attr_int("players_required", queue.players_required);
 		queue_node.set_attr_dup("current_players", utils::join(queue.players_in_queue).c_str());
+		queue_node.set_attr_dup("addons", queue.required_addons.c_str());
 	}
 	coro_send_doc(socket, join_lobby_response, yield);
 
@@ -1668,6 +1672,21 @@ void server::handle_join_game(player_iterator player, simple_wml::node& join)
 	}
 }
 
+static void setup_queue_options(const char* type, const config& qoptions, simple_wml::node& game)
+{
+	for(const config& option_type : qoptions.child_range(type)) {
+		simple_wml::node& options = game.add_child("options");
+		simple_wml::node& type_node = options.add_child(type);
+		type_node.set_attr_dup("id", option_type["id"].str().c_str());
+
+		for(const config& qoption : option_type.child_range("option")) {
+			simple_wml::node& option = type_node.add_child("option");
+			option.set_attr_dup("id", qoption["id"].str().c_str());
+			option.set_attr_dup("value", qoption["value"].str().c_str());
+		}
+	}
+}
+
 void server::handle_join_server_queue(player_iterator p, simple_wml::node& data)
 {
 	int queue_id = data.attr("queue_id").to_int();
@@ -1705,14 +1724,28 @@ void server::handle_join_server_queue(player_iterator p, simple_wml::node& data)
 
 		game.set_attr_dup("scenario", scenarios[index].c_str());
 		game.set_attr_dup("era", queue.settings["era"].str().c_str());
-		game.set_attr_int("fog", queue.settings["fog"].to_int());
-		game.set_attr_int("shroud", queue.settings["shroud"].to_int());
+		game.set_attr_dup("fog", queue.settings["fog"].str().c_str());
+		game.set_attr_dup("shroud", queue.settings["shroud"].str().c_str());
 		game.set_attr_int("village_gold", queue.settings["village_gold"].to_int());
 		game.set_attr_int("village_support", queue.settings["village_support"].to_int());
 		game.set_attr_int("experience_modifier", queue.settings["experience_modifier"].to_int());
-		game.set_attr_int("countdown", queue.settings["countdown"].to_int());
-		game.set_attr_int("random_start_time", queue.settings["random_start_time"].to_int());
-		game.set_attr_int("shuffle_sides", queue.settings["shuffle_sides"].to_int());
+		game.set_attr_dup("random_start_time", queue.settings["random_start_time"].str().c_str());
+		game.set_attr_dup("shuffle_sides", queue.settings["shuffle_sides"].str().c_str());
+
+		game.set_attr_dup("countdown", queue.settings["countdown"].str().c_str());
+		game.set_attr_int("countdown_init_time", queue.settings["countdown_init_time"].to_int());
+		game.set_attr_int("countdown_turn_bonus", queue.settings["countdown_turn_bonus"].to_int());
+		game.set_attr_int("countdown_reservoir_time", queue.settings["countdown_reservoir_time"].to_int());
+		game.set_attr_int("countdown_action_bonus", queue.settings["countdown_action_bonus"].to_int());
+
+		game.set_attr_dup("modifications", queue.settings["modifications"].str().c_str());
+
+		for(const config& qoptions : queue.settings.child_range("options")) {
+			setup_queue_options("multiplayer", qoptions, game);
+			setup_queue_options("era", qoptions, game);
+			setup_queue_options("modification", qoptions, game);
+			setup_queue_options("campaign", qoptions, game);
+		}
 
 		// tell the final player to create and host the game
 		send_to_player(p, create_game_doc);
@@ -1744,7 +1777,7 @@ void server::handle_leave_server_queue(player_iterator p, simple_wml::node& data
 	// if they're in the queue, remove them
 	if(utils::contains(queue.players_in_queue, p->info().name())) {
 		queue.players_in_queue.erase(std::remove(queue.players_in_queue.begin(), queue.players_in_queue.end(), p->info().name()), queue.players_in_queue.end());
-		p->info().clear_queues();
+		p->info().remove_from_queue(queue_id);
 
 		send_queue_update(queue);
 	} else {
@@ -2108,11 +2141,7 @@ void server::handle_player_in_game(player_iterator p, simple_wml::document& data
 		}
 
 		g.level().root().apply_diff(*scenario_diff);
-		const simple_wml::node* cfg_change = scenario_diff->child("change_child");
-
-		if(cfg_change) {
-			g.update_side_data();
-		}
+		g.update_side_data();
 
 		g.describe_slots();
 		update_game_in_lobby(g);
@@ -3165,7 +3194,9 @@ void server::searchlog_handler(const std::string& /*issuer_name*/,
 
 	// If this looks like an IP look up which nicks have been connected from it
 	// Otherwise look for the last IP the nick used to connect
-	const bool match_ip = (std::count(parameters.begin(), parameters.end(), '.') >= 1);
+	const bool match_ipv4 = (std::count(parameters.begin(), parameters.end(), '.') >= 1);
+	const bool match_ipv6 = (std::count(parameters.begin(), parameters.end(), ':') >= 1);
+	const bool match_ip = match_ipv4 || match_ipv6;
 
 	if(!user_handler_) {
 		bool found_something = false;
@@ -3193,11 +3224,11 @@ void server::searchlog_handler(const std::string& /*issuer_name*/,
 			*out << "\nNo match found.";
 		}
 	} else {
-		if(!match_ip) {
-			utils::to_sql_wildcards(parameters);
-			user_handler_->get_ips_for_user(parameters, out);
-		} else {
+		utils::to_sql_wildcards(parameters);
+		if(match_ip) {
 			user_handler_->get_users_for_ip(parameters, out);
+		} else {
+			user_handler_->get_ips_for_user(parameters, out);
 		}
 	}
 }

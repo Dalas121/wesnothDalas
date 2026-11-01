@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 1.2\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-05-18 21:15-0500\n"
+"POT-Creation-Date: 2026-08-02 22:45-0500\n"
 "PO-Revision-Date: 2023-11-01 14:44+0100\n"
 "Last-Translator: Michal Fusatý <michal.fusaty@gmail.com>\n"
 "Language-Team: Slovenčina\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #. [time]: id=underground
 #. [editor_times]: id=underground
-#: data/campaigns/Heir_To_The_Throne_Classic/utils/httt_utils.cfg:500
+#: data/campaigns/Heir_To_The_Throne_Classic/utils/httt_utils.cfg:499
 #: data/core/editor/time-of-day.cfg:41 data/core/macros/schedules.cfg:113
 msgid "Underground"
 msgstr "Podzemie"
@@ -46,7 +46,7 @@ msgstr "nebojácny"
 #. [plague]: id=plague, type=Walking Corpse
 #: data/campaigns/Secrets_of_the_Ancients/gui/zombie_recruit_dialog.cfg:244
 #: data/campaigns/Secrets_of_the_Ancients/utils/zombie-utils.cfg:6
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:48
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:47
 #: data/core/macros/weapon_specials.cfg:71
 msgid "plague"
 msgstr "choroba"
@@ -96,14 +96,14 @@ msgstr "Inteligentné jednotky potrebujú o 20% menej skúseností na povýšeni
 
 #. [resistance]: id=garak_steadfast
 #. [resistance]: id=steadfast
-#: data/campaigns/Under_the_Burning_Suns/scenarios/03_Stirring_in_the_Night.cfg:708
+#: data/campaigns/Under_the_Burning_Suns/scenarios/03_Stirring_in_the_Night.cfg:707
 #: data/core/macros/abilities.cfg:139
 msgid "steadfast"
 msgstr "neoblomný"
 
 #. [resistance]: id=garak_steadfast
 #. [resistance]: id=steadfast
-#: data/campaigns/Under_the_Burning_Suns/scenarios/03_Stirring_in_the_Night.cfg:709
+#: data/campaigns/Under_the_Burning_Suns/scenarios/03_Stirring_in_the_Night.cfg:708
 #: data/core/macros/abilities.cfg:140
 msgid "female^steadfast"
 msgstr "neoblomná"
@@ -289,7 +289,7 @@ msgstr "teleport"
 #. [artifact]
 #. [regenerate]: id=regenerates
 #: data/campaigns/World_Conquest/resources/data/artifacts.cfg:760
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:54
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:53
 #: data/core/macros/abilities.cfg:102
 msgid "regenerates"
 msgstr "regeneruje"
@@ -323,91 +323,91 @@ msgid "leadership"
 msgstr "velenie"
 
 #. [hides]: id=ambush
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:12
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:11
 #: data/core/macros/abilities.cfg:295
 msgid "ambush"
 msgstr "prepad"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:15
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:14
 msgid "Castle"
 msgstr "Hrad"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:18
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:17
 msgid "Cave"
 msgstr "Jaskyňa"
 
 #. [hides]: id=concealment
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:21
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:20
 #: data/core/macros/abilities.cfg:358
 msgid "concealment"
 msgstr "utajenie"
 
 #. [drains]: id=drains
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:24
-#: data/core/macros/weapon_specials.cfg:183
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:23
+#: data/core/macros/weapon_specials.cfg:184
 msgid "drains"
 msgstr "vysaje"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:27
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:26
 msgid "firststrike"
 msgstr "prvý úder"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:30
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:29
 msgid "Forest"
 msgstr "Les"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:33
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:32
 msgid "Frozen"
 msgstr "Zamrznuté"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:36
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:35
 msgid "Hills"
 msgstr "Kopce"
 
 #. [chance_to_hit]: id=marksman
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:39
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:38
 #: data/core/macros/weapon_specials.cfg:105
 msgid "marksman"
 msgstr "presný"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:42
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:41
 msgid "Mushroom Grove"
 msgstr "Hubový porast"
 
 #. [hides]: id=nightstalk
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:45
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:44
 #: data/core/macros/abilities.cfg:338
 msgid "nightstalk"
 msgstr "nočné zakrádanie"
 
 #. [poison]: id=poison
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:51
-#: data/core/macros/weapon_specials.cfg:205
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:50
+#: data/core/macros/weapon_specials.cfg:206
 msgid "poison"
 msgstr "jed"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:57
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:56
 msgid "Sand"
 msgstr "Piesok"
 
 #. [skirmisher]: id=skirmisher
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:60
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:59
 #: data/core/macros/abilities.cfg:229
 msgid "skirmisher"
 msgstr "priebojný"
 
 #. [slow]: id=slow
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:63
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:62
 #: data/core/macros/weapon_specials.cfg:83
 msgid "slows"
 msgstr "spomaľuje"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:66
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:65
 msgid "Swamp"
 msgstr "Močiar"
 
 #. [heals]: id=curing
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:69
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:68
 #: data/core/macros/abilities.cfg:66
 msgid "cures"
 msgstr "lieči"
@@ -691,12 +691,12 @@ msgstr "Nástroj pre východiskové lokality"
 #| "Defines the side leader starting position.\n"
 #| "\n"
 #| "This tool sets the side leaders’ default starting locations, and named "
-#| "special locations. Both types of location are enabled in both <ref>dst='.."
-#| "editor_mode_terrain' text='Terrain Editor'</ref> and <ref>dst='.."
-#| "editor_mode_scenario' text='Scenario Editor'</ref> modes. The location "
-#| "names are shown as a list in the editor palette, clicking on the map will "
-#| "place that name on a hex, each location can only be placed on a single "
-#| "hex, and the editor will only allow one location per hex.\n"
+#| "special locations. Both types of location are enabled in both "
+#| "<ref>dst='..editor_mode_terrain' text='Terrain Editor'</ref> and "
+#| "<ref>dst='..editor_mode_scenario' text='Scenario Editor'</ref> modes. The "
+#| "location names are shown as a list in the editor palette, clicking on the "
+#| "map will place that name on a hex, each location can only be placed on a "
+#| "single hex, and the editor will only allow one location per hex.\n"
 #| "\n"
 #| "To add named special locations, click “Add” at the bottom of the editor "
 #| "palette, and enter the name. These names must start with a letter and may "
@@ -720,12 +720,12 @@ msgstr "Nástroj pre východiskové lokality"
 msgid ""
 "Defines the side leader starting position.\n"
 "This tool sets the side leaders’ default starting locations, and named "
-"special locations. Both types of location are enabled in both <ref dst='.."
-"editor_mode_terrain'>Terrain Editor</ref> and <ref dst='.."
-"editor_mode_scenario'>Scenario Editor</ref> modes. The location names are "
-"shown as a list in the editor palette, clicking on the map will place that "
-"name on a hex, each location can only be placed on a single hex, and the "
-"editor will only allow one location per hex.\n"
+"special locations. Both types of location are enabled in both <ref "
+"dst='..editor_mode_terrain'>Terrain Editor</ref> and <ref "
+"dst='..editor_mode_scenario'>Scenario Editor</ref> modes. The location names "
+"are shown as a list in the editor palette, clicking on the map will place "
+"that name on a hex, each location can only be placed on a single hex, and "
+"the editor will only allow one location per hex.\n"
 "\n"
 "To add named special locations, click “Add” at the bottom of the editor "
 "palette, and enter the name. These names must start with a letter and may "
@@ -750,9 +750,9 @@ msgstr ""
 "\n"
 "Tento nástroj nastavuje predvolené štartovacie pozície vedúcich strán a "
 "pomenované špeciálne pozície. Oba typy umiestnenia sú povolené v režimoch "
-"<ref>dst='..editor_mode_terrain' text='Editor terénu'</ref> aj <ref>dst='.."
-"editor_mode_scenario' text='Editor scenára'</ref>. Názvy lokalít sa "
-"zobrazujú ako zoznam v palete editora, kliknutím na mapu sa daný názov "
+"<ref>dst='..editor_mode_terrain' text='Editor terénu'</ref> aj "
+"<ref>dst='..editor_mode_scenario' text='Editor scenára'</ref>. Názvy lokalít "
+"sa zobrazujú ako zoznam v palete editora, kliknutím na mapu sa daný názov "
 "umiestni na hex, každá lokalita môže byť umiestnená len na jeden hex a "
 "editor povolí len jednu lokalitu na jeden hex.\n"
 "\n"
@@ -801,10 +801,10 @@ msgstr ""
 #| msgid ""
 #| "editor^<bold>text='Movement Overlays'</bold>\n"
 #| "\n"
-#| "<img>src='terrain/grass/green.png~BLIT(terrain/impassable-editor."
-#| "png~O(0.5))' align=here box=yes</img> <img>src='terrain/grass/green."
-#| "png~BLIT(terrain/unwalkable-editor.png~O(0.5))' align=here box=yes</img> "
-#| "Impassable and Unwalkable\n"
+#| "<img>src='terrain/grass/green.png~BLIT(terrain/impassable-"
+#| "editor.png~O(0.5))' align=here box=yes</img> <img>src='terrain/grass/"
+#| "green.png~BLIT(terrain/unwalkable-editor.png~O(0.5))' align=here box=yes</"
+#| "img> Impassable and Unwalkable\n"
 #| "\n"
 #| "While easily noticeable in the editor, these are invisible in the game, "
 #| "so the mixed terrains created by them look like the base terrain. They "
@@ -812,9 +812,9 @@ msgstr ""
 #| "“unwalkable” respectively."
 msgid ""
 "editor^<header>Movement Overlays</header>\n"
-"<img src='terrain/grass/green.png~BLIT(terrain/impassable-editor."
-"png~O(0.5))'/><img src='terrain/grass/green.png~BLIT(terrain/unwalkable-"
-"editor.png~O(0.5))'/>\n"
+"<img src='terrain/grass/green.png~BLIT(terrain/impassable-"
+"editor.png~O(0.5))'/><img src='terrain/grass/green.png~BLIT(terrain/"
+"unwalkable-editor.png~O(0.5))'/>\n"
 "<b>Impassable and Unwalkable</b>\n"
 "\n"
 "While easily noticeable in the editor, these are invisible in the game, so "
@@ -824,10 +824,10 @@ msgid ""
 msgstr ""
 "editor^<bold>text='Prekrytia pohybu'</bold>\n"
 "\n"
-"<img>src='terrain/grass/green.png~BLIT(terrain/impassable-editor."
-"png~O(0.5))' align=here box=yes</img> <img>src='terrain/grass/green."
-"png~BLIT(terrain/unwalkable-editor.png~O(0.5))' align=here box=yes</img> "
-"Nepriechodné a neprístupné\n"
+"<img>src='terrain/grass/green.png~BLIT(terrain/impassable-"
+"editor.png~O(0.5))' align=here box=yes</img> <img>src='terrain/grass/"
+"green.png~BLIT(terrain/unwalkable-editor.png~O(0.5))' align=here box=yes</"
+"img> Nepriechodné a neprístupné\n"
 "\n"
 "Hoci sú v editore ľahko viditeľné, v hre sú neviditeľné, takže zmiešané "
 "terény, ktoré sú nimi vytvorené, vyzerajú ako základný terén. Vytvárajú "
@@ -858,9 +858,9 @@ msgstr ""
 #| "units being recruited onto them."
 msgid ""
 "editor^<header>Castle Overlays</header>\n"
-"<img src='terrain/grass/green.png~BLIT(terrain/castle/castle-overlay-editor."
-"png~O(0.5))'/><img src='terrain/grass/green.png~BLIT(terrain/castle/keep-"
-"overlay-editor.png~O(0.5))'/>\n"
+"<img src='terrain/grass/green.png~BLIT(terrain/castle/castle-overlay-"
+"editor.png~O(0.5))'/><img src='terrain/grass/green.png~BLIT(terrain/castle/"
+"keep-overlay-editor.png~O(0.5))'/>\n"
 "Adding either of these overlays to a passable hex allows units to be "
 "recruited onto a hex. The keep also allows a leader to recruit from there.\n"
 "\n"
@@ -872,10 +872,10 @@ msgid ""
 msgstr ""
 "editor^<bold>text='Prekrytia hradu'</bold>\n"
 "\n"
-"<img>src='terrain/grass/green.png~BLIT(terrain/castle/castle-overlay-editor."
-"png~O(0.5))' align=here box=yes</img> <img>src='terrain/grass/green."
-"png~BLIT(terrain/castle/keep-overlay-editor.png~O(0.5))' align=here box=yes</"
-"img>\n"
+"<img>src='terrain/grass/green.png~BLIT(terrain/castle/castle-overlay-"
+"editor.png~O(0.5))' align=here box=yes</img> <img>src='terrain/grass/"
+"green.png~BLIT(terrain/castle/keep-overlay-editor.png~O(0.5))' align=here "
+"box=yes</img>\n"
 "\n"
 "Pridanie niektorého z týchto prekrytí na priechodný hex umožňuje naverbovať "
 "jednotky na šesťuholník. Pevnosť tiež umožňuje veliteľovi verbovať z nej.\n"
@@ -1151,8 +1151,8 @@ msgstr "Znehodnotený terén"
 #: data/core/editor/help.cfg:203
 #, fuzzy
 #| msgid ""
-#| "editor^<img>src='terrain/grass/green.png~BLIT(terrain/deprecated-editor."
-#| "png)' align=left box=yes</img>The magenta ‘D’ (for “Deprecated”).\n"
+#| "editor^<img>src='terrain/grass/green.png~BLIT(terrain/deprecated-"
+#| "editor.png)' align=left box=yes</img>The magenta ‘D’ (for “Deprecated”).\n"
 #| "\n"
 #| "This is shown in the editor over deprecated terrain codes. Examples are:\n"
 #| "• the <ref>dst='terrain_fungus_grove_old' text='“^Uf” mushroom terrain'</"
@@ -1164,8 +1164,8 @@ msgstr "Znehodnotený terén"
 #| "shown in the editor, describing the deprecation and the recommended "
 #| "replacements."
 msgid ""
-"editor^<img src='terrain/grass/green.png~BLIT(terrain/deprecated-editor."
-"png)'/>\n"
+"editor^<img src='terrain/grass/green.png~BLIT(terrain/deprecated-"
+"editor.png)'/>\n"
 "The magenta ‘D’ (for “Deprecated”).\n"
 "\n"
 "This is shown in the editor over deprecated terrain codes. Examples are:\n"
@@ -1176,8 +1176,8 @@ msgid ""
 "The help pages for these terrains may have additional text that’s only shown "
 "in the editor, describing the deprecation and the recommended replacements."
 msgstr ""
-"editor^<img>src='terrain/grass/green.png~BLIT(terrain/deprecated-editor."
-"png)' align=left box=yes</img>Purpurové 'D' (ako \"Deprecated\").\n"
+"editor^<img>src='terrain/grass/green.png~BLIT(terrain/deprecated-"
+"editor.png)' align=left box=yes</img>Purpurové 'D' (ako \"Deprecated\").\n"
 "\n"
 "Zobrazuje sa v editore nad znehodnotenými terénnymi kódmi. Príklady sú:\n"
 "• <ref>dst='terrain_fungus_grove_old' text='“^Uf” terén húb'</ref>,\n"
@@ -1807,10 +1807,10 @@ msgid ""
 "The map editor saves one file when in terrain mode (a .map) or two files "
 "when in scenario mode (both a .map and a .cfg).\n"
 "\n"
-"Loading a .cfg file has different results depending on the contents of the ."
-"cfg file. For .cfg files that were created by the scenario editor, it will "
-"open the .cfg in the scenario editor. However, for .cfg files that cannot be "
-"opened by the scenario editor, the editor will attempt to find the "
+"Loading a .cfg file has different results depending on the contents of "
+"the .cfg file. For .cfg files that were created by the scenario editor, it "
+"will open the .cfg in the scenario editor. However, for .cfg files that "
+"cannot be opened by the scenario editor, the editor will attempt to find the "
 "scenario’s map data and open the corresponding .map file in terrain-only "
 "mode, as if the .map file was chosen in the file selector. It is recommended "
 "in those cases to simply load the .map file directly instead."
@@ -2111,8 +2111,8 @@ msgid ""
 "\n"
 "• <span face='monospace'>map_file=maps/01_First_Map.map</span> <i>— "
 "supported since Wesnoth 1.14</i>\n"
-"• <span face='monospace'>map_data=&quot;&#0x7B;maps/01_First_Map.map&#0x7D;"
-"&quot;</span> <i>— a WML preprocessor include</i>\n"
+"• <span face='monospace'>map_data=&quot;&#0x7B;maps/"
+"01_First_Map.map&#0x7D;&quot;</span> <i>— a WML preprocessor include</i>\n"
 "\n"
 "The <i>map_file</i> method is preferred over using a preprocessor include."
 msgstr ""
@@ -2200,12 +2200,12 @@ msgstr ""
 #| "<header>text='Files created by the Scenario Editor'</header>\n"
 #| "\n"
 #| "In scenario mode, the editor saves the scenario data as a .cfg file and "
-#| "the map data as a separate .map file. The scenario then references the ."
-#| "map file via map_file. When loading a .cfg file, the scenario editor "
+#| "the map data as a separate .map file. The scenario then references "
+#| "the .map file via map_file. When loading a .cfg file, the scenario editor "
 #| "understands files created by the scenario editor itself, but is likely to "
 #| "have difficulty with files that have been edited by hand; problems can be "
-#| "avoided by <ref>dst='editor_separate_events_file' text='using a separate ."
-#| "cfg file'</ref> for the hand-edited parts."
+#| "avoided by <ref>dst='editor_separate_events_file' text='using a "
+#| "separate .cfg file'</ref> for the hand-edited parts."
 msgid ""
 "<header>Files created by the Scenario Editor</header>\n"
 "\n"
@@ -2224,8 +2224,8 @@ msgstr ""
 "súboru map_file. Pri načítaní súboru .cfg editor scenárov rozumie súborom "
 "vytvoreným samotným editorom scenárov, ale pravdepodobne bude mať problémy "
 "so súbormi, ktoré boli upravené ručne; problémom sa dá predísť "
-"<ref>dst='editor_separate_events_file' text='použitím samostatného súboru ."
-"cfg'</ref> pre ručne upravené časti."
+"<ref>dst='editor_separate_events_file' text='použitím samostatného "
+"súboru .cfg'</ref> pre ručne upravené časti."
 
 #. [editor_times]: id=deep_underground
 #. [time]: id=deep_underground
@@ -2256,12 +2256,12 @@ msgstr ""
 
 #. [section]: id=calendar
 #. [topic]: id=..calendar
-#: data/core/encyclopedia/calendar.cfg:5 data/core/encyclopedia/calendar.cfg:13
+#: data/core/encyclopedia/calendar.cfg:5 data/core/encyclopedia/calendar.cfg:12
 msgid "Calendar"
 msgstr "Kalendár"
 
 #. [topic]: id=..calendar
-#: data/core/encyclopedia/calendar.cfg:14
+#: data/core/encyclopedia/calendar.cfg:13
 #, fuzzy
 #| msgid ""
 #| "Each year in the Wesnoth calendar is composed of 12 months. These are, in "
@@ -2322,18 +2322,18 @@ msgstr ""
 
 #. [section]: id=geography
 #. [topic]: id=..geography
+#: data/core/encyclopedia/geography.cfg:5
 #: data/core/encyclopedia/geography.cfg:12
-#: data/core/encyclopedia/geography.cfg:19
 msgid "Geography"
 msgstr "Zemepis"
 
 #. [topic]: id=arkan_thoria
-#: data/core/encyclopedia/geography.cfg:26
+#: data/core/encyclopedia/geography.cfg:19
 msgid "Arkan-thoria"
 msgstr "Arkan-thoria"
 
 #. [topic]: id=arkan_thoria
-#: data/core/encyclopedia/geography.cfg:27
+#: data/core/encyclopedia/geography.cfg:20
 #, fuzzy
 #| msgid ""
 #| "A river rising in the <ref>dst='heart_mountains' text='Heart Mountains'</"
@@ -2346,12 +2346,12 @@ msgstr ""
 "a tečúca na východ do Listry."
 
 #. [topic]: id=great_river
-#: data/core/encyclopedia/geography.cfg:32
+#: data/core/encyclopedia/geography.cfg:25
 msgid "Great River"
 msgstr "Veľká rieka"
 
 #. [topic]: id=great_river
-#: data/core/encyclopedia/geography.cfg:33
+#: data/core/encyclopedia/geography.cfg:26
 #, fuzzy
 #| msgid ""
 #| "The Great River forms the boundary between the <ref>dst='kingdom_wesnoth' "
@@ -2370,19 +2370,19 @@ msgstr ""
 "text='Elensefare'</ref>."
 
 #. [topic]: id=great_river
-#: data/core/encyclopedia/geography.cfg:35
+#: data/core/encyclopedia/geography.cfg:28
 msgid ""
 "The Ford of Abez is a crossing between Wesnoth and the Northlands, and is "
 "the westernmost point where the Great River can be crossed without ships."
 msgstr ""
 
 #. [topic]: id=great_ocean
-#: data/core/encyclopedia/geography.cfg:40
+#: data/core/encyclopedia/geography.cfg:33
 msgid "Great Ocean"
 msgstr "Veľký oceán"
 
 #. [topic]: id=great_ocean
-#: data/core/encyclopedia/geography.cfg:41
+#: data/core/encyclopedia/geography.cfg:34
 #, fuzzy
 #| msgid ""
 #| "Lies to the west of the <ref>dst='great_continent' text='continent'</ref> "
@@ -2400,7 +2400,7 @@ msgstr ""
 
 #. [topic]: id=great_ocean
 #. Great Ocean
-#: data/core/encyclopedia/geography.cfg:45
+#: data/core/encyclopedia/geography.cfg:38
 msgid ""
 "The Drakes once called this ocean the World Ocean. They believe it to extend "
 "in every direction from Morogor until eventually flowing into the abyss as "
@@ -2408,12 +2408,12 @@ msgid ""
 msgstr ""
 
 #. [topic]: id=morogor
-#: data/core/encyclopedia/geography.cfg:50
+#: data/core/encyclopedia/geography.cfg:43
 msgid "Morogor"
 msgstr "Morogor"
 
 #. [topic]: id=morogor
-#: data/core/encyclopedia/geography.cfg:51
+#: data/core/encyclopedia/geography.cfg:44
 #, fuzzy
 #| msgid ""
 #| "Archipelago, located somewhere in the <ref>dst='great_ocean' text='Great "
@@ -2436,7 +2436,7 @@ msgstr ""
 
 #. [topic]: id=morogor
 #. Geography of Morogor
-#: data/core/encyclopedia/geography.cfg:57
+#: data/core/encyclopedia/geography.cfg:50
 msgid ""
 "<header>Notable land features:</header>\n"
 "    • Mount Morogor: The highest active volcanic mountain in the central "
@@ -2449,12 +2449,12 @@ msgid ""
 msgstr ""
 
 #. [topic]: id=green_isle
-#: data/core/encyclopedia/geography.cfg:65
+#: data/core/encyclopedia/geography.cfg:58
 msgid "Green Isle"
 msgstr "Zelený ostrov"
 
 #. [topic]: id=green_isle
-#: data/core/encyclopedia/geography.cfg:66
+#: data/core/encyclopedia/geography.cfg:59
 #, fuzzy
 #| msgid ""
 #| "A bigger island lying in the <ref>dst='great_ocean' text='Great Ocean'</"
@@ -2467,7 +2467,7 @@ msgstr ""
 
 #. [topic]: id=green_isle
 #. Geography of the Green Isle
-#: data/core/encyclopedia/geography.cfg:70
+#: data/core/encyclopedia/geography.cfg:63
 msgid ""
 "<header>Notable cities:</header>\n"
 "    • Southbay: The capital of the largest Islefolk kingdom.\n"
@@ -2482,7 +2482,7 @@ msgstr ""
 
 #. [topic]: id=green_isle
 #. Geography of the Green Isle
-#: data/core/encyclopedia/geography.cfg:79
+#: data/core/encyclopedia/geography.cfg:72
 msgid ""
 "<header>Notable land features:</header>\n"
 "    • Broken Mountains: A mighty mountain range that cuts through the Green "
@@ -2497,12 +2497,12 @@ msgid ""
 msgstr ""
 
 #. [topic]: id=old_continent
-#: data/core/encyclopedia/geography.cfg:88
+#: data/core/encyclopedia/geography.cfg:81
 msgid "Old Continent"
 msgstr "Starý kontinent"
 
 #. [topic]: id=old_continent
-#: data/core/encyclopedia/geography.cfg:89
+#: data/core/encyclopedia/geography.cfg:82
 #, fuzzy
 #| msgid ""
 #| "Lies to the west of <ref>dst='morogor' text='Morogor'</ref> across the "
@@ -2516,12 +2516,12 @@ msgstr ""
 "<ref>dst='great_ocean' text='Veľký oceán'</ref>."
 
 #. [topic]: id=great_continent
-#: data/core/encyclopedia/geography.cfg:94
+#: data/core/encyclopedia/geography.cfg:87
 msgid "Great Continent"
 msgstr "Veľký kontinent"
 
 #. [topic]: id=great_continent
-#: data/core/encyclopedia/geography.cfg:95
+#: data/core/encyclopedia/geography.cfg:88
 #, fuzzy
 #| msgid ""
 #| "The continent on which the <ref>dst='kingdom_wesnoth' text='Kingdom of "
@@ -2537,12 +2537,12 @@ msgstr ""
 "text='Veľký oceán'</ref>."
 
 #. [topic]: id=irdya
-#: data/core/encyclopedia/geography.cfg:100
+#: data/core/encyclopedia/geography.cfg:93
 msgid "Irdya"
 msgstr "Irdya"
 
 #. [topic]: id=irdya
-#: data/core/encyclopedia/geography.cfg:101
+#: data/core/encyclopedia/geography.cfg:94
 #, fuzzy
 #| msgid ""
 #| "The name of the world in which the kingdom of <ref>dst='kingdom_wesnoth' "
@@ -2561,12 +2561,12 @@ msgstr ""
 "poeticky “šíry zelený svet”."
 
 #. [topic]: id=kingdom_wesnoth
-#: data/core/encyclopedia/geography.cfg:106
+#: data/core/encyclopedia/geography.cfg:99
 msgid "Kingdom of Wesnoth"
 msgstr "Kráľovstvo Wesnoth"
 
 #. [topic]: id=kingdom_wesnoth
-#: data/core/encyclopedia/geography.cfg:107
+#: data/core/encyclopedia/geography.cfg:100
 msgid ""
 "The Kingdom of Wesnoth is located in the north-central portion of the <ref "
 "dst='great_continent'>Great Continent</ref>. Most of the mainline campaigns "
@@ -2585,7 +2585,7 @@ msgstr ""
 
 #. [topic]: id=kingdom_wesnoth
 #. Geography of Wesnoth
-#: data/core/encyclopedia/geography.cfg:113
+#: data/core/encyclopedia/geography.cfg:106
 msgid ""
 "<header>Notable cities:</header>\n"
 "    • Weldyn: The capital of Wesnoth.\n"
@@ -2609,7 +2609,7 @@ msgstr ""
 
 #. [topic]: id=kingdom_wesnoth
 #. Geography of Wesnoth
-#: data/core/encyclopedia/geography.cfg:127
+#: data/core/encyclopedia/geography.cfg:120
 #, fuzzy
 #| msgid ""
 #| "The Kingdom of Wesnoth is located in the north-central portion of the "
@@ -2746,12 +2746,12 @@ msgstr ""
 "Carcynom a Aldrilom a všeobecne sa považuje za strašidelný."
 
 #. [topic]: id=elensefar
-#: data/core/encyclopedia/geography.cfg:144
+#: data/core/encyclopedia/geography.cfg:137
 msgid "Elensefar"
 msgstr "Elensefar"
 
 #. [topic]: id=elensefar
-#: data/core/encyclopedia/geography.cfg:145
+#: data/core/encyclopedia/geography.cfg:138
 #, fuzzy
 #| msgid ""
 #| "Elensefar is at times a province of <ref>dst='kingdom_wesnoth' "
@@ -2796,7 +2796,7 @@ msgstr ""
 
 #. [topic]: id=elensefar
 #. Geography of Elensefar area
-#: data/core/encyclopedia/geography.cfg:149
+#: data/core/encyclopedia/geography.cfg:142
 msgid ""
 "<header>Notable cities:</header>\n"
 "    • Elensefar: The capital, located on an island in the Great River delta, "
@@ -2806,7 +2806,7 @@ msgid ""
 msgstr ""
 
 #. [topic]: id=elensefar
-#: data/core/encyclopedia/geography.cfg:154
+#: data/core/encyclopedia/geography.cfg:147
 msgid ""
 "<header>Notable land features:</header>\n"
 "    • <ref dst='great_river'>Great River</ref>: It is very wide at this "
@@ -2814,12 +2814,12 @@ msgid ""
 msgstr ""
 
 #. [topic]: id=northlands
-#: data/core/encyclopedia/geography.cfg:160
+#: data/core/encyclopedia/geography.cfg:153
 msgid "Northlands"
 msgstr "Severná zem"
 
 #. [topic]: id=northlands
-#: data/core/encyclopedia/geography.cfg:161
+#: data/core/encyclopedia/geography.cfg:154
 msgid ""
 "The Northlands are filled with unstable clans in endless conflict. It is an "
 "unlawful and perilous place plagued by its cold, icy terrain and constant "
@@ -2838,7 +2838,7 @@ msgstr ""
 
 #. [topic]: id=northlands
 #. Geography of the Northlands
-#: data/core/encyclopedia/geography.cfg:167
+#: data/core/encyclopedia/geography.cfg:160
 msgid ""
 "<header>Notable cities:</header>\n"
 "    • Glamdrol: An Orcish tribal capital.\n"
@@ -2855,7 +2855,7 @@ msgstr ""
 
 #. [topic]: id=northlands
 #. Geography of the Northlands
-#: data/core/encyclopedia/geography.cfg:176
+#: data/core/encyclopedia/geography.cfg:169
 #, fuzzy
 #| msgid ""
 #| "There is no government of the Northlands. Various groups of orcs, "
@@ -2958,12 +2958,12 @@ msgstr ""
 "niekde na východe severných krajín."
 
 #. [topic]: id=southwest_elven_lands
-#: data/core/encyclopedia/geography.cfg:189
+#: data/core/encyclopedia/geography.cfg:182
 msgid "Southwest Elven Lands"
 msgstr "Juhozápadné kraje elfov"
 
 #. [topic]: id=southwest_elven_lands
-#: data/core/encyclopedia/geography.cfg:190
+#: data/core/encyclopedia/geography.cfg:183
 #, fuzzy
 #| msgid ""
 #| "The Wood Elves are separate from those of the north, and have only "
@@ -3006,11 +3006,11 @@ msgstr ""
 
 #. [topic]: id=southwest_elven_lands
 #. Geography of the Southwest
-#: data/core/encyclopedia/geography.cfg:194
+#: data/core/encyclopedia/geography.cfg:187
 msgid ""
 "<header>Notable land features:</header>\n"
-"    • Aethenwood: The largest southern forest, home to reclusive <ref dst='.."
-"race_elf'>elves</ref>.\n"
+"    • Aethenwood: The largest southern forest, home to reclusive <ref "
+"dst='..race_elf'>elves</ref>.\n"
 "    • Vale of Blossoming Trees: An elvish vale at the southern edge of the "
 "Aethenwood. It contains the sacred Isle of Elrath.\n"
 "    • Lake Aelin: An elvish lake at the edge of their territory along the "
@@ -3021,14 +3021,14 @@ msgid ""
 msgstr ""
 
 #. [topic]: id=heart_mountains
-#: data/core/encyclopedia/geography.cfg:203
+#: data/core/encyclopedia/geography.cfg:196
 msgid "Heart Mountains"
 msgstr "Hlboké hory"
 
 #. [topic]: id=heart_mountains
 #. The Whitefang Clan’s primary description is in DiD
 #. Wesnoth 1.9.4 added Haggid-Dargor to the encyclopedia, but it has no other mention in mainline
-#: data/core/encyclopedia/geography.cfg:206
+#: data/core/encyclopedia/geography.cfg:199
 msgid ""
 "A virtually impassable barrier between the <ref dst='arkan_thoria'>river</"
 "ref> country and the <ref dst='far_north'>Northern Plains</ref>. The local "
@@ -3038,12 +3038,12 @@ msgid ""
 msgstr ""
 
 #. [topic]: id=far_north
-#: data/core/encyclopedia/geography.cfg:211
+#: data/core/encyclopedia/geography.cfg:204
 msgid "Far North"
 msgstr "Ďaleký sever"
 
 #. [topic]: id=far_north
-#: data/core/encyclopedia/geography.cfg:212
+#: data/core/encyclopedia/geography.cfg:205
 #, fuzzy
 #| msgid ""
 #| "Cold, harsh, and inaccessible, the Far North is the ancestral home of the "
@@ -3121,7 +3121,7 @@ msgstr ""
 
 #. [topic]: id=far_north
 #. Geography of the Far North
-#: data/core/encyclopedia/geography.cfg:216
+#: data/core/encyclopedia/geography.cfg:209
 msgid ""
 "<header>Notable cities:</header>\n"
 "    • Barag Gor: A city home to the Orcish Council.\n"
@@ -3142,7 +3142,7 @@ msgstr ""
 
 #. [topic]: id=far_north
 #. Geography of the Far North
-#: data/core/encyclopedia/geography.cfg:232
+#: data/core/encyclopedia/geography.cfg:225
 msgid ""
 "<header>Notable land features:</header>\n"
 "    • Desert of Death: An unusually dry desert in the Far North filled with "
@@ -3174,14 +3174,14 @@ msgid ""
 msgstr ""
 
 #. [topic]: id=far_south
-#: data/core/encyclopedia/geography.cfg:249
+#: data/core/encyclopedia/geography.cfg:242
 #, fuzzy
 #| msgid "Far North"
 msgid "Far South"
 msgstr "Ďaleký sever"
 
 #. [topic]: id=far_south
-#: data/core/encyclopedia/geography.cfg:250
+#: data/core/encyclopedia/geography.cfg:243
 msgid ""
 "A vast region south of Kerlath home to many mysterious races, including jinn "
 "and wyverns. Very little is known for certain about what lies here."
@@ -3189,7 +3189,7 @@ msgstr ""
 
 #. [topic]: id=far_south
 #. Geography of the Far South
-#: data/core/encyclopedia/geography.cfg:254
+#: data/core/encyclopedia/geography.cfg:247
 msgid ""
 "<header>Notable land features:</header>\n"
 "    • Mountains of Peril: A tall and deadly mountain range in the Far South "
@@ -3613,8 +3613,8 @@ msgstr ""
 "Počas hrania majte na pamäti, že môžete prejsť myšou po mnohých položkách v "
 "hre, ako sú napríklad informácie zobrazené v stavovom paneli, aby ste videli "
 "stručný popis vysvetľujúci každú položku. Je to užitočné najmä vtedy, keď sa "
-"prvýkrát stretnete s novými prvkami, ako napríklad <ref>dst='.."
-"abilities_section' text='schopnosti'</ref>."
+"prvýkrát stretnete s novými prvkami, ako napríklad "
+"<ref>dst='..abilities_section' text='schopnosti'</ref>."
 
 #. [topic]: id=..gameplay
 #: data/core/help.cfg:177
@@ -3690,16 +3690,16 @@ msgstr "Verbovanie a privolávanie"
 #, fuzzy
 #| msgid ""
 #| "Each side begins with one leader in their keep. At the start of any "
-#| "battle, and at times during it, you will need to recruit <ref>dst='.."
-#| "units' text='units'</ref> into your army. To recruit, you must have your "
-#| "leader (for instance, Konrad in the <italic>text='Heir to the Throne'</"
-#| "italic> campaign) on the keep hex of a <ref>dst='..terrain_castle' "
-#| "text='castle'</ref>. Then you may recruit by either choosing "
-#| "<bold>text='Recruit'</bold> from the menu or right-clicking on a hex and "
-#| "selecting <bold>text='Recruit'</bold>. This brings up the recruit menu, "
-#| "which lists units available for recruitment, along with their gold cost. "
-#| "Click on a unit to see its statistics, then press the "
-#| "<bold>text='Recruit'</bold> button to recruit it."
+#| "battle, and at times during it, you will need to recruit "
+#| "<ref>dst='..units' text='units'</ref> into your army. To recruit, you "
+#| "must have your leader (for instance, Konrad in the <italic>text='Heir to "
+#| "the Throne'</italic> campaign) on the keep hex of a "
+#| "<ref>dst='..terrain_castle' text='castle'</ref>. Then you may recruit by "
+#| "either choosing <bold>text='Recruit'</bold> from the menu or right-"
+#| "clicking on a hex and selecting <bold>text='Recruit'</bold>. This brings "
+#| "up the recruit menu, which lists units available for recruitment, along "
+#| "with their gold cost. Click on a unit to see its statistics, then press "
+#| "the <bold>text='Recruit'</bold> button to recruit it."
 msgid ""
 "Each side begins with one leader in their keep. At the start of any battle, "
 "and at times during it, you will need to recruit <ref dst='..units'>units</"
@@ -3712,16 +3712,17 @@ msgid ""
 "statistics, then press the <b>Recruit</b> button to recruit it."
 msgstr ""
 "Každá strana začína s jedným vodcom vo svojej pevnosti. Na začiatku "
-"akejkoľvek bitky a niekedy aj počas nej budete musieť naverbovať <ref>dst='.."
-"units' text='jednotky'</ref> do vašej armády. Ak chcete verbovať, musíte mať "
-"svojho vodcu (napríklad Konrada v kampani <italic>text='Heir to the Throne'</"
-"italic>) na veliteľskom šesťuholníku <ref>dst='..terrain_castle' text= "
-"'hradu'</ref>. Potom môžete naverbovať buď výberom <bold>text='Naverbovať'</"
-"bold> z ponuky, alebo kliknutím pravým tlačidlom myši na šesťuhoľníkové pole "
-"a výberom <bold>text='Naverbovať'</bold>. Tým sa zobrazí ponuka náboru, v "
-"ktorej sú uvedené jednotky dostupné na nábor spolu s ich cenou v zlate. "
-"Kliknutím na jednotku zobrazíte jej štatistiky a potom ju naverbujte "
-"stlačením tlačidla <bold>text='Naverbovať'</bold>."
+"akejkoľvek bitky a niekedy aj počas nej budete musieť naverbovať "
+"<ref>dst='..units' text='jednotky'</ref> do vašej armády. Ak chcete "
+"verbovať, musíte mať svojho vodcu (napríklad Konrada v kampani "
+"<italic>text='Heir to the Throne'</italic>) na veliteľskom šesťuholníku "
+"<ref>dst='..terrain_castle' text= 'hradu'</ref>. Potom môžete naverbovať buď "
+"výberom <bold>text='Naverbovať'</bold> z ponuky, alebo kliknutím pravým "
+"tlačidlom myši na šesťuhoľníkové pole a výberom <bold>text='Naverbovať'</"
+"bold>. Tým sa zobrazí ponuka náboru, v ktorej sú uvedené jednotky dostupné "
+"na nábor spolu s ich cenou v zlate. Kliknutím na jednotku zobrazíte jej "
+"štatistiky a potom ju naverbujte stlačením tlačidla <bold>text='Naverbovať'</"
+"bold>."
 
 #. [topic]: id=recruit_and_recall
 #: data/core/help.cfg:200
@@ -5698,10 +5699,11 @@ msgstr "Zhrnutie"
 #| "luck!"
 msgid ""
 "This concludes the fundamentals of Wesnoth. You might want to read up on "
-"basic strategy, or familiarize yourself with <ref dst='.."
-"traits_section'>traits</ref> and <ref dst='..abilities_section'>abilities</"
-"ref>, but you now know everything you need to know to play the <i>Heir to "
-"the Throne</i> campaign. Have fun, and good luck!"
+"basic strategy, or familiarize yourself with <ref "
+"dst='..traits_section'>traits</ref> and <ref "
+"dst='..abilities_section'>abilities</ref>, but you now know everything you "
+"need to know to play the <i>Heir to the Throne</i> campaign. Have fun, and "
+"good luck!"
 msgstr ""
 "Toto sú základy Wesnothu. Môžeš si prečítať viac v Základnej stratégii alebo "
 "sa zoznámiť s jednotlivými <ref>dst='..traits_section' text='vlastnosťami'</"
@@ -6263,8 +6265,8 @@ msgstr ""
 #| msgid ""
 #| "\n"
 #| "\n"
-#| "You can see what eras you have loaded in the <ref>text='eras' dst='.."
-#| "eras_section'</ref> of the help."
+#| "You can see what eras you have loaded in the <ref>text='eras' "
+#| "dst='..eras_section'</ref> of the help."
 msgid ""
 "You can see what eras you have loaded in the <ref dst='..eras_section'>eras</"
 "ref> of the help."
@@ -6528,17 +6530,17 @@ msgstr "Všeobecné príkazy"
 #, fuzzy
 #| msgid ""
 #| "These commands can either be issued via the command line by prefixing "
-#| "them with ‘:’ (as shown here) or via the chat by prefixing them with "
-#| "‘/’ (press ‘m’ first to open the chat line).\n"
+#| "them with ‘:’ (as shown here) or via the chat by prefixing them with ‘/’ "
+#| "(press ‘m’ first to open the chat line).\n"
 #| "\n"
 msgid ""
 "These commands can either be issued via the command line by prefixing them "
 "with ‘:’ (as shown here) or via the chat by prefixing them with ‘/’ (press "
 "‘m’ first to open the chat line)."
 msgstr ""
-"Tieto príkazy môžu byť vyvolané z príkazového riadka použitím predpony "
-"':' (ako je zobrazené tu) alebo cez rozhovor použitím predpony '/' (stlač "
-"najprv 'm' na zobrazenie riadka rozhovoru).\n"
+"Tieto príkazy môžu byť vyvolané z príkazového riadka použitím predpony ':' "
+"(ako je zobrazené tu) alebo cez rozhovor použitím predpony '/' (stlač najprv "
+"'m' na zobrazenie riadka rozhovoru).\n"
 "\n"
 
 #. [topic]: id=general_commands
@@ -7047,8 +7049,8 @@ msgid ""
 "hitpoints=100"
 msgstr ""
 "\n"
-"Zmení zadanú vlastnosť vybranej jednotky. Príklad (nastaví 100 životov): :"
-"unit hitpoints=100\n"
+"Zmení zadanú vlastnosť vybranej jednotky. Príklad (nastaví 100 "
+"životov): :unit hitpoints=100\n"
 "\n"
 
 #. [topic]: id=debug_commands
@@ -8659,7 +8661,7 @@ msgid ""
 msgstr ""
 
 #. [drains]: id=drains
-#: data/core/macros/weapon_specials.cfg:184
+#: data/core/macros/weapon_specials.cfg:185
 msgid ""
 "This unit drains health from living units, healing itself for half the "
 "amount of damage it deals (rounded down)."
@@ -8668,18 +8670,18 @@ msgstr ""
 "polovicu spôsobeného zranenia (zaokrúhlené nadol)."
 
 #. [firststrike]: id=firststrike
-#: data/core/macros/weapon_specials.cfg:194
+#: data/core/macros/weapon_specials.cfg:195
 msgid "first strike"
 msgstr "prvý úder"
 
 #. [firststrike]: id=firststrike
-#: data/core/macros/weapon_specials.cfg:195
+#: data/core/macros/weapon_specials.cfg:196
 msgid ""
 "This unit always strikes first with this attack, even if they are defending."
 msgstr "Týmto útokom útočí jednotka vždy prvá, aj keď bola napadnutá."
 
 #. [poison]: id=poison
-#: data/core/macros/weapon_specials.cfg:206
+#: data/core/macros/weapon_specials.cfg:207
 msgid ""
 "This attack poisons living targets. Poisoned units lose 8 HP every turn "
 "until they are cured or are reduced to 1 HP. Poison cannot, of itself, kill "
@@ -8690,12 +8692,12 @@ msgstr ""
 "jednotku zabiť."
 
 #. [stun]: id=stun
-#: data/core/macros/weapon_specials.cfg:216
+#: data/core/macros/weapon_specials.cfg:217
 msgid "stun"
 msgstr "omráčenie"
 
 #. [stun]: id=stun
-#: data/core/macros/weapon_specials.cfg:217
+#: data/core/macros/weapon_specials.cfg:218
 msgid ""
 "This attack hits so hard that the opponent is dazed and can no longer "
 "enforce a zone of control. The effect wears off on the opponent’s next turn."
@@ -8704,7 +8706,7 @@ msgstr ""
 "vynútiť zónu kontroly. Účinok vyprchá v nasledujúcom ťahu súpera."
 
 #. [stun]: id=stun
-#: data/core/macros/weapon_specials.cfg:218
+#: data/core/macros/weapon_specials.cfg:219
 msgid ""
 "This unit is able to stun its enemies, disrupting their zones of control."
 msgstr ""
@@ -8712,12 +8714,12 @@ msgstr ""
 "pohybu a spôsobené zranenie na polovicu, až kým neukončia ťah."
 
 #. [damage_type]: id=arcane_damage
-#: data/core/macros/weapon_specials.cfg:227
+#: data/core/macros/weapon_specials.cfg:228
 msgid "arcane"
 msgstr "arkánny"
 
 #. [damage_type]: id=arcane_damage
-#: data/core/macros/weapon_specials.cfg:228
+#: data/core/macros/weapon_specials.cfg:229
 msgid ""
 "This attack combines the arcane type with the type of weapon used so that "
 "resistance to the arcane type does not penalize the user."
@@ -8726,7 +8728,7 @@ msgstr ""
 "voči arkánnemu typu používateľa nepenalizuje."
 
 #. [damage_type]: id=arcane_damage
-#: data/core/macros/weapon_specials.cfg:229
+#: data/core/macros/weapon_specials.cfg:230
 msgid ""
 "This unit can use the arcane type when the opponent is particularly "
 "sensitive to it in relation to the weapon on which it is applied."
@@ -8821,22 +8823,22 @@ msgid ""
 msgstr ""
 
 #. [race]: id=drake
-#: data/core/units.cfg:61
+#: data/core/units.cfg:59
 msgid "race^Drake"
 msgstr "Jašter"
 
 #. [race]: id=drake
-#: data/core/units.cfg:62
+#: data/core/units.cfg:60
 msgid "race+female^Drake"
 msgstr "Jašterka"
 
 #. [race]: id=drake
-#: data/core/units.cfg:63
+#: data/core/units.cfg:61
 msgid "race^Drakes"
 msgstr "Jašteri"
 
 #. [race]: id=drake
-#: data/core/units.cfg:64
+#: data/core/units.cfg:62
 msgid ""
 "Drakes are large, winged and fire-breathing creatures, reminiscent of true "
 "dragons. On average, an adult drake stands around three meters tall and "
@@ -8962,22 +8964,22 @@ msgstr ""
 "osídliť i hory na ďalekom severe Veľkého Kontinentu."
 
 #. [race]: id=dwarf
-#: data/core/units.cfg:97
+#: data/core/units.cfg:82
 msgid "race^Dwarf"
 msgstr "Trpaslík"
 
 #. [race]: id=dwarf
-#: data/core/units.cfg:98
+#: data/core/units.cfg:83
 msgid "race+female^Dwarf"
 msgstr "Trpaslíčka"
 
 #. [race]: id=dwarf
-#: data/core/units.cfg:99
+#: data/core/units.cfg:84
 msgid "race^Dwarves"
 msgstr "Trpaslíci"
 
 #. [race]: id=dwarf
-#: data/core/units.cfg:100
+#: data/core/units.cfg:85
 msgid ""
 "The dwarves are a race famed for their miners, blacksmiths, merchants and "
 "warriors. Considered as the third oldest race on the great continent after "
@@ -9071,22 +9073,22 @@ msgstr ""
 "zosilňujú určité schopnosti predmetov."
 
 #. [race]: id=elf
-#: data/core/units.cfg:117
+#: data/core/units.cfg:98
 msgid "race^Elf"
 msgstr "Elf"
 
 #. [race]: id=elf
-#: data/core/units.cfg:118
+#: data/core/units.cfg:99
 msgid "race+female^Elf"
 msgstr "Elfka"
 
 #. [race]: id=elf
-#: data/core/units.cfg:119
+#: data/core/units.cfg:100
 msgid "race^Elves"
 msgstr "Elfovia"
 
 #. [race]: id=elf
-#: data/core/units.cfg:121
+#: data/core/units.cfg:101
 #, fuzzy
 #| msgid ""
 #| "Compared to humans, elves are somewhat taller, more agile but less "
@@ -9276,22 +9278,22 @@ msgstr ""
 "uľahčil prechod moci."
 
 #. [race]: id=falcon
-#: data/core/units.cfg:147
+#: data/core/units.cfg:127
 msgid "race^Falcon"
 msgstr "Sokol"
 
 #. [race]: id=falcon
-#: data/core/units.cfg:148
+#: data/core/units.cfg:128
 msgid "race+female^Falcon"
 msgstr "Sokol žena"
 
 #. [race]: id=falcon
-#: data/core/units.cfg:149
+#: data/core/units.cfg:129
 msgid "race^Falcons"
 msgstr "Sokoli"
 
 #. [race]: id=falcon
-#: data/core/units.cfg:150
+#: data/core/units.cfg:130
 msgid ""
 "Falcons are birds of prey, noted for their exceptional speed and agility. "
 "Lighter and with less powerful talons than other raptors, falcons instead "
@@ -9312,29 +9314,29 @@ msgstr ""
 "nepriateľom, čo z nich robí užitočný prostriedok na pomoc pri útoku armády."
 
 #. [race]: id=goblin
-#: data/core/units.cfg:158
+#: data/core/units.cfg:137
 msgid "race^Goblin"
 msgstr "Goblin"
 
 #. [race]: id=goblin
-#: data/core/units.cfg:159
+#: data/core/units.cfg:138
 msgid "race+female^Goblin"
 msgstr "Goblinka"
 
 #. [race]: id=goblin
-#: data/core/units.cfg:160
+#: data/core/units.cfg:139
 msgid "race^Goblins"
 msgstr "Goblini"
 
 #. [race]: id=goblin
-#: data/core/units.cfg:163
+#: data/core/units.cfg:142
 msgid ""
 "Goblins are puny and quite frail, rarely growing past the size and stature "
 "of a human child."
 msgstr ""
 
 #. [race]: id=goblin
-#: data/core/units.cfg:165
+#: data/core/units.cfg:144
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -9379,22 +9381,22 @@ msgstr ""
 "predviedli svoju zdatnosť."
 
 #. [race]: id=gryphon
-#: data/core/units.cfg:178
+#: data/core/units.cfg:156
 msgid "race^Gryphon"
 msgstr "Gryf"
 
 #. [race]: id=gryphon
-#: data/core/units.cfg:179
+#: data/core/units.cfg:157
 msgid "race+female^Gryphon"
 msgstr "Gryfka"
 
 #. [race]: id=gryphon
-#: data/core/units.cfg:180
+#: data/core/units.cfg:158
 msgid "race^Gryphons"
 msgstr "Gryfovia"
 
 #. [race]: id=gryphon
-#: data/core/units.cfg:181
+#: data/core/units.cfg:159
 msgid ""
 "Gryphons are broad, powerful beasts with traits shared from both terrestrial "
 "predators and birds of prey. While occasionally tamed and ridden by the "
@@ -9413,22 +9415,22 @@ msgstr ""
 "stáročia zdrojom diskusií, ale zostáva rovnako záhadný ako ich pôvod."
 
 #. [race]: id=horse
-#: data/core/units.cfg:191
+#: data/core/units.cfg:169
 msgid "race^Horse"
 msgstr "Kôň"
 
 #. [race]: id=horse
-#: data/core/units.cfg:192
+#: data/core/units.cfg:170
 msgid "race+female^Horse"
 msgstr "Kobyla"
 
 #. [race]: id=horse
-#: data/core/units.cfg:193
+#: data/core/units.cfg:171
 msgid "race^Horses"
 msgstr "Kone"
 
 #. [race]: id=horse
-#: data/core/units.cfg:194
+#: data/core/units.cfg:172
 msgid ""
 "Domesticated horses come in many shapes and sizes, from mighty war chargers, "
 "to sturdy draught horses or agile stock horses. While they are more fragile "
@@ -9451,22 +9453,22 @@ msgstr ""
 "hoci len málokto môže úprimne tvrdiť, že také veci videl."
 
 #. [race]: id=human
-#: data/core/units.cfg:211
+#: data/core/units.cfg:181
 msgid "race^Human"
 msgstr "Človek muž"
 
 #. [race]: id=human
-#: data/core/units.cfg:212
+#: data/core/units.cfg:182
 msgid "race+female^Human"
 msgstr "Človek žena"
 
 #. [race]: id=human
-#: data/core/units.cfg:213
+#: data/core/units.cfg:183
 msgid "race^Humans"
 msgstr "Ľudia"
 
 #. [race]: id=human
-#: data/core/units.cfg:214
+#: data/core/units.cfg:184
 msgid ""
 "The race of men is an extremely diverse one. Although they originally came "
 "from the Old Continent, men have spread all over the world and split into "
@@ -9545,22 +9547,22 @@ msgstr ""
 "Wesnotu, ale silné a slabé stránky týchto skupín sa navzájom dopĺňajú."
 
 #. [race]: id=dunefolk
-#: data/core/units.cfg:229
+#: data/core/units.cfg:197
 msgid "race^Dunefolk Human"
 msgstr "Púštny človek muž"
 
 #. [race]: id=dunefolk
-#: data/core/units.cfg:230
+#: data/core/units.cfg:198
 msgid "race+female^Dunefolk Human"
 msgstr "Púštny človek žena"
 
 #. [race]: id=dunefolk
-#: data/core/units.cfg:231
+#: data/core/units.cfg:199
 msgid "race+plural^Dunefolk"
 msgstr "Púštny ľudia"
 
 #. [race]: id=dunefolk
-#: data/core/units.cfg:233
+#: data/core/units.cfg:201
 msgid ""
 "An offshoot of a forgotten nomadic civilization, the Dunefolk lay claim to "
 "the river valleys and oases of the Sandy Wastes. How they came to inhabit "
@@ -9669,22 +9671,22 @@ msgstr ""
 "dávnej minulosti Púštnych ľudí v exotických vzdialených kútoch Irdye."
 
 #. [race]: id=lizard
-#: data/core/units.cfg:254
+#: data/core/units.cfg:221
 msgid "race^Saurian"
 msgstr "Saur"
 
 #. [race]: id=lizard
-#: data/core/units.cfg:255
+#: data/core/units.cfg:222
 msgid "race+female^Saurian"
 msgstr "Saurka"
 
 #. [race]: id=lizard
-#: data/core/units.cfg:256
+#: data/core/units.cfg:223
 msgid "race^Saurians"
 msgstr "Sauri"
 
 #. [race]: id=lizard
-#: data/core/units.cfg:257
+#: data/core/units.cfg:224
 #, fuzzy
 #| msgid ""
 #| "Saurians are lizard-like creatures. Smaller and more slender than humans, "
@@ -9882,17 +9884,17 @@ msgstr ""
 "jesť zdochliny a dokonca sa dopúšťajú kanibalizmu, čo sa pravidelne stáva."
 
 #. [race]: id=mechanical
-#: data/core/units.cfg:283
+#: data/core/units.cfg:250
 msgid "race^Mechanical"
 msgstr "Mechanické"
 
 #. [race]: id=mechanical
-#: data/core/units.cfg:284
+#: data/core/units.cfg:251
 msgid "race+plural^Mechanical"
 msgstr "Mechanické"
 
 #. [race]: id=mechanical
-#: data/core/units.cfg:285
+#: data/core/units.cfg:252
 msgid ""
 "Animated neither by natural life nor by necromancy, the term "
 "<italic>text='mechanical'</italic> describes a created artifact of an "
@@ -9905,21 +9907,21 @@ msgstr ""
 "kúzlom."
 
 #. [race]: id=ship
-#: data/core/units.cfg:294
+#: data/core/units.cfg:261
 #, fuzzy
 #| msgid "race^Saurian"
 msgid "race^Ship"
 msgstr "Saur"
 
 #. [race]: id=ship
-#: data/core/units.cfg:295
+#: data/core/units.cfg:262
 #, fuzzy
 #| msgid "race+plural^Khalifate"
 msgid "race+plural^Ships"
 msgstr "Mechanické"
 
 #. [race]: id=ship
-#: data/core/units.cfg:296
+#: data/core/units.cfg:263
 #, fuzzy
 #| msgid ""
 #| "Animated neither by natural life nor by necromancy, the term "
@@ -9937,22 +9939,22 @@ msgstr ""
 "kúzlom."
 
 #. [race]: id=merman
-#: data/core/units.cfg:307
+#: data/core/units.cfg:273
 msgid "race^Merman"
 msgstr "Morský človek"
 
 #. [race]: id=merman
-#: data/core/units.cfg:308
+#: data/core/units.cfg:274
 msgid "race^Mermaid"
 msgstr "Morská žena"
 
 #. [race]: id=merman
-#: data/core/units.cfg:309
+#: data/core/units.cfg:275
 msgid "race^Merfolk"
 msgstr "Morskí ľudia"
 
 #. [race]: id=merman
-#: data/core/units.cfg:311
+#: data/core/units.cfg:276
 msgid ""
 "Something like a fusion between humans and fish, the merfolk are an "
 "enigmatic race with both piscine and humanoid attributes. They have strong "
@@ -9973,22 +9975,22 @@ msgstr ""
 "po drsnom alebo zalesnenom povrchu."
 
 #. [race]: id=monster
-#: data/core/units.cfg:319
+#: data/core/units.cfg:284
 msgid "race^Monster"
 msgstr "Potvora"
 
 #. [race]: id=monster
-#: data/core/units.cfg:320
+#: data/core/units.cfg:285
 msgid "race+female^Monster"
 msgstr "Potvora"
 
 #. [race]: id=monster
-#: data/core/units.cfg:321
+#: data/core/units.cfg:286
 msgid "race^Monsters"
 msgstr "Potvory"
 
 #. [race]: id=monster
-#: data/core/units.cfg:322
+#: data/core/units.cfg:287
 msgid ""
 "The term “monster” incorporates many hideous beasts that haunt the caves, "
 "wilderness, ocean depths, and other climes of the world. They figure largely "
@@ -9999,22 +10001,22 @@ msgstr ""
 "morách bežných obyvateľov."
 
 #. [race]: id=naga
-#: data/core/units.cfg:329
+#: data/core/units.cfg:293
 msgid "race^Naga"
 msgstr "Hadí človek"
 
 #. [race]: id=naga
-#: data/core/units.cfg:330
+#: data/core/units.cfg:294
 msgid "race^Nagini"
 msgstr "Hadí ľudia"
 
 #. [race]: id=naga
-#: data/core/units.cfg:331
+#: data/core/units.cfg:295
 msgid "race^Nagas"
 msgstr "Hadí ľudia"
 
 #. [race]: id=naga
-#: data/core/units.cfg:332
+#: data/core/units.cfg:296
 msgid ""
 "The serpentine nagas are one of the least understood races of the Great "
 "Continent. Part of this is due to their xenophobic nature and part is due to "
@@ -10044,22 +10046,22 @@ msgstr ""
 "bažinách a riekach."
 
 #. [race]: id=ogre
-#: data/core/units.cfg:340
+#: data/core/units.cfg:304
 msgid "race^Ogre"
 msgstr "Ohyzd"
 
 #. [race]: id=ogre
-#: data/core/units.cfg:341
+#: data/core/units.cfg:305
 msgid "race+female^Ogre"
 msgstr "Ohyzdka"
 
 #. [race]: id=ogre
-#: data/core/units.cfg:342
+#: data/core/units.cfg:306
 msgid "race^Ogres"
 msgstr "Ohyzdi"
 
 #. [race]: id=ogre
-#: data/core/units.cfg:343
+#: data/core/units.cfg:307
 msgid ""
 "Ogres are a wild and uncivilized race who dwell mainly in the wilderness of "
 "the Great Continent. Physically, they resemble humans and orcs but are "
@@ -10090,22 +10092,22 @@ msgstr ""
 "prispôsobenia."
 
 #. [race]: id=orc
-#: data/core/units.cfg:351
+#: data/core/units.cfg:314
 msgid "race^Orc"
 msgstr "Ork"
 
 #. [race]: id=orc
-#: data/core/units.cfg:352
+#: data/core/units.cfg:315
 msgid "race+female^Orc"
 msgstr "Orkyňa"
 
 #. [race]: id=orc
-#: data/core/units.cfg:353
+#: data/core/units.cfg:316
 msgid "race^Orcs"
 msgstr "Orkovia"
 
 #. [race]: id=orc
-#: data/core/units.cfg:354
+#: data/core/units.cfg:317
 msgid ""
 "In appearance, orcs resemble humans but with some bestial features. They are "
 "taller, sturdier and stronger than humans. They are warlike, savage, and "
@@ -10116,12 +10118,12 @@ msgid ""
 msgstr ""
 
 #. [race]: id=orc
-#: data/core/units.cfg:356
+#: data/core/units.cfg:319
 msgid "Society"
 msgstr ""
 
 #. [race]: id=orc
-#: data/core/units.cfg:357
+#: data/core/units.cfg:320
 msgid ""
 "Almost every orc is a member of a tribe or a clan. Relations between "
 "neighboring tribes are usually violent, except in cases of a mutual enemy "
@@ -10135,7 +10137,7 @@ msgid ""
 msgstr ""
 
 #. [race]: id=orc
-#: data/core/units.cfg:359
+#: data/core/units.cfg:322
 msgid ""
 "Orc societies are based on little else but strength; might makes right, and "
 "a leader leads and survives only as long as no one manages to wrest the "
@@ -10149,7 +10151,7 @@ msgid ""
 msgstr ""
 
 #. [race]: id=orc
-#: data/core/units.cfg:361
+#: data/core/units.cfg:324
 msgid ""
 "Orcs mostly live in rural areas, often in foothills or mountainous regions, "
 "sometimes in caves. They grow no crops nor keep livestock, but are competent "
@@ -10164,7 +10166,7 @@ msgid ""
 msgstr ""
 
 #. [race]: id=orc
-#: data/core/units.cfg:363
+#: data/core/units.cfg:326
 msgid ""
 "The oldest known orcs have been around 50 to 60 years of age, but very few "
 "individuals ever live to see over two or three decades before meeting their "
@@ -10178,7 +10180,7 @@ msgid ""
 msgstr ""
 
 #. [race]: id=orc
-#: data/core/units.cfg:367
+#: data/core/units.cfg:330
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -10195,22 +10197,22 @@ msgstr ""
 "zručnosti, napríklad lukostreľbu alebo vraždenie."
 
 #. [race]: id=raven
-#: data/core/units.cfg:374
+#: data/core/units.cfg:337
 msgid "race^Raven"
 msgstr "Havran"
 
 #. [race]: id=raven
-#: data/core/units.cfg:375
+#: data/core/units.cfg:338
 msgid "race+female^Raven"
 msgstr "Havranica"
 
 #. [race]: id=raven
-#: data/core/units.cfg:376
+#: data/core/units.cfg:339
 msgid "race^Ravens"
 msgstr "Havrany"
 
 #. [race]: id=raven
-#: data/core/units.cfg:377
+#: data/core/units.cfg:340
 msgid ""
 "Ravens are general scavengers, often associating with hunters or predators "
 "in the hope of sharing in the kill. They do not have the powerful beak or "
@@ -10245,22 +10247,22 @@ msgstr ""
 "zasiatych semien, no iní sú radi, že ich majú pri sebe ako strážcov."
 
 #. [race]: id=troll
-#: data/core/units.cfg:388
+#: data/core/units.cfg:351
 msgid "race^Troll"
 msgstr "Trol"
 
 #. [race]: id=troll
-#: data/core/units.cfg:389
+#: data/core/units.cfg:352
 msgid "race+female^Troll"
 msgstr "Trolka"
 
 #. [race]: id=troll
-#: data/core/units.cfg:390
+#: data/core/units.cfg:353
 msgid "race^Trolls"
 msgstr "Trolovia"
 
 #. [race]: id=troll
-#: data/core/units.cfg:391
+#: data/core/units.cfg:354
 msgid ""
 "Trolls are ancient creatures, one of the oldest known races known to inhabit "
 "the Great Continent. They are large, slow, simple, and live extremely long "
@@ -10330,22 +10332,22 @@ msgstr ""
 "Wesnothu a kdekoľvek putujú hordy orkov."
 
 #. [race]: id=undead
-#: data/core/units.cfg:411
+#: data/core/units.cfg:372
 msgid "race^Undead"
 msgstr "Nemŕtvy"
 
 #. [race]: id=undead
-#: data/core/units.cfg:412
+#: data/core/units.cfg:373
 msgid "race+female^Undead"
 msgstr "Nemŕtva"
 
 #. [race]: id=undead
-#: data/core/units.cfg:413
+#: data/core/units.cfg:374
 msgid "race+plural^Undead"
 msgstr "Nemŕtvi"
 
 #. [race]: id=undead
-#: data/core/units.cfg:414
+#: data/core/units.cfg:375
 msgid ""
 "Undead are not really a single race of creatures, although often treated as "
 "such. Most ordinary creatures can, by a sufficiently skilled necromancer, be "
@@ -10404,22 +10406,22 @@ msgstr ""
 "Haldrikovi I., ale elfovia a trpaslíci o nich počuli už aj predtým."
 
 #. [race]: id=wolf
-#: data/core/units.cfg:427
+#: data/core/units.cfg:388
 msgid "race^Wolf"
 msgstr "Vlk"
 
 #. [race]: id=wolf
-#: data/core/units.cfg:428
+#: data/core/units.cfg:389
 msgid "race+female^Wolf"
 msgstr "Vlčica"
 
 #. [race]: id=wolf
-#: data/core/units.cfg:429
+#: data/core/units.cfg:390
 msgid "race^Wolves"
 msgstr "Vlci"
 
 #. [race]: id=wolf
-#: data/core/units.cfg:430
+#: data/core/units.cfg:391
 msgid ""
 "Wolves are predatory canines encountered frequently in the wilderness. "
 "Quick, tough, and durable, a solitary wolf suffices to maim or kill "
@@ -10437,17 +10439,17 @@ msgstr ""
 "priblížiť, aby ulovili dobytok."
 
 #. [race]: id=wose
-#: data/core/units.cfg:439
+#: data/core/units.cfg:399
 msgid "race^Wose"
 msgstr "Lesný muž"
 
 #. [race]: id=wose
-#: data/core/units.cfg:440
+#: data/core/units.cfg:400
 msgid "race^Woses"
 msgstr "Lesní muži"
 
 #. [race]: id=wose
-#: data/core/units.cfg:441
+#: data/core/units.cfg:401
 msgid ""
 "The mighty wose resides within the deepest forests of the known world. To "
 "the untrained eye, the wose appears to be nothing more than an oddly shaped, "

@@ -336,6 +336,10 @@ static int process_command_args(commandline_options& cmdline_opts)
 		lg::set_log_sanitize(false);
 	}
 
+	if(cmdline_opts.no_simd) {
+		game_config::no_simd = true;
+	}
+
 	if(cmdline_opts.usercache_dir) {
 		filesystem::set_cache_dir(*cmdline_opts.usercache_dir);
 	}
@@ -356,9 +360,9 @@ static int process_command_args(commandline_options& cmdline_opts)
 		|| (!cmdline_opts.no_log_to_file
 			&& !getenv("WESNOTH_NO_LOG_FILE")
 			// command line options that imply not redirecting output to a log file
-			&& !cmdline_opts.data_path
-			&& !cmdline_opts.userdata_path
-			&& !cmdline_opts.usercache_path
+			&& !cmdline_opts.print_data_path
+			&& !cmdline_opts.print_userdata_path
+			&& !cmdline_opts.print_usercache_path
 			&& !cmdline_opts.report
 			&& !cmdline_opts.do_diff
 			&& !cmdline_opts.do_patch
@@ -423,13 +427,13 @@ static int process_command_args(commandline_options& cmdline_opts)
 		PLAIN_LOG << "Started on " << chrono::format_local_timestamp(now, "%a %b %d %T %Y") << '\n';
 	}
 
-	if(cmdline_opts.usercache_path) {
-		std::cout << filesystem::get_cache_dir();
+	if(cmdline_opts.print_usercache_path) {
+		std::cout << filesystem::get_cache_dir() << std::endl;
 		return 0;
 	}
 
-	if(cmdline_opts.userdata_path) {
-		std::cout << filesystem::get_user_data_dir();
+	if(cmdline_opts.print_userdata_path) {
+		std::cout << filesystem::get_user_data_dir() << std::endl;
 		return 0;
 	}
 
@@ -469,8 +473,8 @@ static int process_command_args(commandline_options& cmdline_opts)
 		return 1;
 	}
 
-	if(cmdline_opts.data_path) {
-		std::cout << game_config::path;
+	if(cmdline_opts.print_data_path) {
+		std::cout << game_config::path << std::endl;
 		return 0;
 	}
 
@@ -988,18 +992,26 @@ int main(int argc, char** argv)
 	assert(!args.empty());
 
 #ifdef _WIN32
+	// Different Windows builds of Pango/GLib have been observed to read this
+	// back via different mechanisms: the official mingw-w64 build only sees a
+	// value set via the real Win32 environment block (SetEnvironmentVariableA),
+	// while an MSVC/vcpkg build has only been confirmed to see a value set via
+	// the C run-time's own _putenv(). Since neither alone is known to work across
+	// both, set it both ways.
 	_putenv("PANGOCAIRO_BACKEND=fontconfig");
 	_putenv("FONTCONFIG_PATH=fonts");
+	SetEnvironmentVariableA("PANGOCAIRO_BACKEND", "fontconfig");
+	SetEnvironmentVariableA("FONTCONFIG_PATH", "fonts");
 #endif
 #ifdef __APPLE__
 	// Using setenv with overwrite disabled so we can override this in the
 	// original process environment for research/testing purposes.
-	setenv("PANGOCAIRO_BACKEND", "fontconfig", 0);
+	SDL_setenv_unsafe("PANGOCAIRO_BACKEND", "fontconfig", 0);
 #endif
 #ifdef __ANDROID__
-	setenv("PANGOCAIRO_BACKEND", "fontconfig", 0);
-	setenv("SDL_HINT_AUDIODRIVER", "android", 0);
-	setenv("SDL_HINT_ANDROID_TRAP_BACK_BUTTON", "1", 0);
+	SDL_setenv_unsafe("PANGOCAIRO_BACKEND", "fontconfig", 0);
+	SDL_setenv_unsafe("SDL_HINT_AUDIODRIVER", "android", 0);
+	SDL_setenv_unsafe("SDL_HINT_ANDROID_TRAP_BACK_BUTTON", "1", 0);
 #endif
 
 	try {

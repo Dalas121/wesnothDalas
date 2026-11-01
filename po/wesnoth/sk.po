@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 1.2\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-05-18 21:15-0500\n"
-"PO-Revision-Date: 2023-11-05 00:23+0100\n"
+"POT-Creation-Date: 2026-10-20 21:43-0500\n"
+"PO-Revision-Date: 2026-10-03 22:28+0200\n"
 "Last-Translator: Stanislav Hoferek <shoferek@gmail.com>\n"
 "Language-Team: none\n"
 "Language: sk_SK\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural= (n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.9\n"
 
 #. [multiplayer_side]: id=Custom
 #: data/_main.cfg:22
@@ -173,26 +173,16 @@ msgstr "Zobrazovať farebné kurzory myši"
 
 #. [advanced_preference]: type=custom
 #: data/advanced_preferences.cfg:136
-msgid "Customize orb colors"
-msgstr "Prispôsobiť farby kruhu"
-
-#. [advanced_preference]: type=custom
-#: data/advanced_preferences.cfg:142
-msgid "Customize Reach Map (Unit Movement UI)"
-msgstr ""
-
-#. [advanced_preference]: type=custom
-#: data/advanced_preferences.cfg:148
 msgid "Logging"
 msgstr "Zaznamenávanie"
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:154
+#: data/advanced_preferences.cfg:142
 msgid "Allow damage calculation with Monte Carlo simulation"
 msgstr "Povoliť výpočet zranenia pomocou simulácie Monte Carlo"
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:155
+#: data/advanced_preferences.cfg:143
 msgid ""
 "Allow the damage calculation window to simulate fights instead of using "
 "exact probability calculations"
@@ -200,13 +190,14 @@ msgstr ""
 "Povoliť aby okno výpočtu zranenia simulovalo súboj namiesto použitia "
 "presných výpočtov pravdepodobnosti"
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:162
+#: data/advanced_preferences.cfg:150 src/units/abilities.cpp:200
 msgid "Show deprecation messages in-game"
 msgstr "Zobrazovať v hre hlásenia o zastaralých funkciách"
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:163
+#: data/advanced_preferences.cfg:151
 msgid ""
 "Show warnings about deprecated API in the in-game chat area. These messages "
 "will still be shown in the log, even if this is disabled. In addition, the "
@@ -218,12 +209,12 @@ msgstr ""
 "bude zobrazených."
 
 #. [advanced_preference]: type=int
-#: data/advanced_preferences.cfg:170
+#: data/advanced_preferences.cfg:158
 msgid "Font size scale (experimental)"
 msgstr "Veľkosť písma (experimentálne)"
 
 #. [advanced_preference]: type=int
-#: data/advanced_preferences.cfg:171
+#: data/advanced_preferences.cfg:159
 msgid ""
 "Scales all text up or down from the standard size for your resolution. "
 "Warning: Scaling text up may cause issues in the in-game sidebar."
@@ -233,12 +224,12 @@ msgstr ""
 "bočnom paneli v hre."
 
 #. [advanced_preference]: type=int
-#: data/advanced_preferences.cfg:181
+#: data/advanced_preferences.cfg:169
 msgid "Server disconnect timeout"
 msgstr "Čas na pripojenie vypršal"
 
 #. [advanced_preference]: type=int
-#: data/advanced_preferences.cfg:182
+#: data/advanced_preferences.cfg:170
 msgid ""
 "The amount of time in seconds before a disconnect is detected. If currently "
 "logged into the multiplayer server, you must log out and then log back in "
@@ -249,22 +240,22 @@ msgstr ""
 "prejavilo."
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:192
+#: data/advanced_preferences.cfg:180
 msgid "Show missed attack indicator"
 msgstr ""
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:193
+#: data/advanced_preferences.cfg:181
 msgid "Display a visual indicator above a defender when an attack misses."
 msgstr ""
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:200
+#: data/advanced_preferences.cfg:188
 msgid "SIMD acceleration"
 msgstr ""
 
 #. [advanced_preference]: type=boolean
-#: data/advanced_preferences.cfg:201
+#: data/advanced_preferences.cfg:189
 msgid ""
 "Use hardware acceleration (SSE2/NEON) for faster image processing on the "
 "CPU. Try disabling this if you experience graphical glitches or crashes."
@@ -274,12 +265,12 @@ msgstr ""
 #. [unstore_unit]
 #. [lua]: set_status
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:369
-#: data/lua/wml/harm_unit.lua:124 src/actions/attack.cpp:949
+#: data/lua/wml/harm_unit.lua:124 src/actions/attack.cpp:973
 msgid "poisoned"
 msgstr "otrávený"
 
 #. [effect]: type=fire
-#: data/campaigns/The_Rise_Of_Wesnoth/scenarios/12_A_Final_Spring.cfg:492
+#: data/campaigns/The_Rise_Of_Wesnoth/scenarios/12_A_Final_Spring.cfg:491
 #: data/core/macros/items.cfg:559
 msgid "storm trident"
 msgstr "hromový trojzubec"
@@ -305,43 +296,43 @@ msgid "Close"
 msgstr "Zavri"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:76
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:75
 #: data/english.cfg:31
 msgid "blade"
 msgstr "sečný"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:79
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:78
 #: data/english.cfg:34
 msgid "fire"
 msgstr "oheň"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:82
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:81
 #: data/english.cfg:35
 msgid "cold"
 msgstr "mráz"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:85
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:84
 #: data/english.cfg:32
 msgid "pierce"
 msgstr "bodný"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:88
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:87
 #: data/english.cfg:33
 msgid "impact"
 msgstr "tupý"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:91
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:90
 #: data/english.cfg:27
 msgid "melee"
 msgstr "zblízka"
 
 #. [language]
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:94
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:93
 #: data/english.cfg:28
 msgid "ranged"
 msgstr "na diaľku"
@@ -433,10 +424,8 @@ msgstr "Baskický preklad"
 
 #. [about]
 #: data/core/about_i18n.cfg:65
-#, fuzzy
-#| msgid "Bulgarian Translation"
 msgid "Bengali Translation"
-msgstr "Bulharský preklad"
+msgstr "Bengálsky preklad"
 
 #. [about]
 #: data/core/about_i18n.cfg:78
@@ -539,158 +528,158 @@ msgid "Hebrew Translation"
 msgstr "Hebrejský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1015
+#: data/core/about_i18n.cfg:1018
 msgid "Hungarian Translation"
 msgstr "Maďarský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1076
+#: data/core/about_i18n.cfg:1079
 msgid "Icelandic Translation"
 msgstr "Islandský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1086
+#: data/core/about_i18n.cfg:1089
 msgid "Indonesian Translation"
 msgstr "Indonézsky preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1114
+#: data/core/about_i18n.cfg:1117
 msgid "Irish Translation"
 msgstr "Írsky preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1121
+#: data/core/about_i18n.cfg:1124
 msgid "Italian Translation"
 msgstr "Taliansky preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1168
+#: data/core/about_i18n.cfg:1171
 msgid "Japanese Translation"
 msgstr "Japonský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1261
+#: data/core/about_i18n.cfg:1264
 msgid "Korean Translation"
 msgstr "Kórejský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1269
+#: data/core/about_i18n.cfg:1272
 msgid "Latin Translation"
 msgstr "Latinský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1295
+#: data/core/about_i18n.cfg:1298
 msgid "Latvian Translation"
 msgstr "Lotyšský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1310
+#: data/core/about_i18n.cfg:1313
 msgid "Lithuanian Translation"
 msgstr "Litovský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1335
+#: data/core/about_i18n.cfg:1338
 msgid "Macedonian Translation"
 msgstr "Macedónsky preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1342
+#: data/core/about_i18n.cfg:1345
 msgid "Marathi Translation"
 msgstr "Marathi preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1351
+#: data/core/about_i18n.cfg:1354
 msgid "Norwegian Translation"
 msgstr "Nórsky preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1380
+#: data/core/about_i18n.cfg:1383
 msgid "Old English Translation"
 msgstr "Staroanglický preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1398
+#: data/core/about_i18n.cfg:1401
 msgid "Polish Translation"
 msgstr "Poľský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1473
+#: data/core/about_i18n.cfg:1476
 msgid "Portuguese Translation"
 msgstr "Portugalský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1487
+#: data/core/about_i18n.cfg:1490
 msgid "Portuguese (Brazil) Translation"
 msgstr "Portugalský preklad (Brazília)"
 
 #. [about]
-#: data/core/about_i18n.cfg:1548
+#: data/core/about_i18n.cfg:1551
 msgid "Romanian Translation"
 msgstr "Rumunský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1556
+#: data/core/about_i18n.cfg:1564
 msgid "Russian Translation"
 msgstr "Ruský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1663
+#: data/core/about_i18n.cfg:1671
 msgid "Scottish Gaelic Translation"
 msgstr "Preklad do Škótskej gaelčiny"
 
 #. [about]
-#: data/core/about_i18n.cfg:1672
+#: data/core/about_i18n.cfg:1680
 msgid "Serbian Translation"
 msgstr "Srbský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1691
+#: data/core/about_i18n.cfg:1704
 msgid "Slovak Translation"
 msgstr "Slovenský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1726
+#: data/core/about_i18n.cfg:1739
 msgid "Slovenian Translation"
 msgstr "Slovinský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1742
+#: data/core/about_i18n.cfg:1755
 msgid "Spanish Translation"
 msgstr "Španielsky preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1836
+#: data/core/about_i18n.cfg:1849
 msgid "Swedish Translation"
 msgstr "Švédsky preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1881
+#: data/core/about_i18n.cfg:1894
 msgid "Turkish Translation"
 msgstr "Turecký preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1906
+#: data/core/about_i18n.cfg:1919
 msgid "Ukrainian Translation"
 msgstr "Ukrajinský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1940
+#: data/core/about_i18n.cfg:1953
 msgid "Valencian (southern Catalan) Translation"
 msgstr "Valencijský (Južné Katalánsko) preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1953
+#: data/core/about_i18n.cfg:1966
 msgid "Vietnamese Translation"
 msgstr "Vietnamský preklad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1972
+#: data/core/about_i18n.cfg:1985
 msgid "Welsh Translation"
 msgstr "Waleský preklad"
 
 #. [about]
 #. Real Acadèmia de Cultura Valenciana
-#: data/core/about_i18n.cfg:1981
+#: data/core/about_i18n.cfg:1994
 msgid "RACV’s Translation"
 msgstr "RACV preklad"
 
@@ -1701,50 +1690,83 @@ msgstr ""
 "currently_doing_special_description"
 
 #. [else]
-#: data/core/macros/deprecated-utils.cfg:35
+#: data/core/macros/deprecated-utils.cfg:34
 msgid "This unit has been renamed to: "
 msgstr "Jednotka bola premenovaná na: "
 
+#. [lua]: generate_objectives
+#: data/core/macros/deprecated-utils.cfg:51 data/lua/wml/objectives.lua:106
+msgid "Early finish bonus."
+msgstr "Bonus za rýchly koniec."
+
+#. [lua]: generate_objectives
+#: data/core/macros/deprecated-utils.cfg:55 data/lua/wml/objectives.lua:109
+msgid "No early finish bonus."
+msgstr "Žiadny bonus za rýchly koniec."
+
+#. [lua]: generate_objectives
+#: data/core/macros/deprecated-utils.cfg:59 data/lua/wml/objectives.lua:117
+msgid "No gold carried over to the next scenario."
+msgstr "Žiadne zlato sa neprenáša do ďalšej scény."
+
+#: data/core/macros/deprecated-utils.cfg:63
+msgid ""
+"\n"
+"100% of finishing gold carried over to the next scenario."
+msgstr ""
+"\n"
+"100% konečného zlata sa prenáša do ďalšej scény."
+
+#: data/core/macros/deprecated-utils.cfg:68
+msgid ""
+"\n"
+"40% of finishing gold carried over to the next scenario."
+msgstr ""
+"\n"
+"40% konečného zlata sa prenáša do ďalšej scény."
+
+#: data/core/macros/deprecated-utils.cfg:73
+msgid ""
+"\n"
+"20% of finishing gold carried over to the next scenario."
+msgstr ""
+"\n"
+"20% konečného zlata sa prenáša do ďalšej scény."
+
 #. [chance_to_hit]: id=deflect
-#: data/core/macros/deprecated-utils.cfg:124
+#: data/core/macros/deprecated-utils.cfg:284
 msgid "deflect"
 msgstr ""
 
 #. [chance_to_hit]: id=deflect
-#: data/core/macros/deprecated-utils.cfg:125
-#, fuzzy
-#| msgid ""
-#| "Marksman:\n"
-#| "When used offensively, this attack always has at least a 60% chance to "
-#| "hit."
+#: data/core/macros/deprecated-utils.cfg:285
 msgid ""
 "When used defensively, this attack reduces the opponent’s chance to hit by "
 "10%."
 msgstr ""
-"Presný:\n"
-"Pri útoku má jednotka vždy šancu aspoň 60% na zásah."
+"Keď sa použije pri obrane, útok znižuje šancu nepriateľa trafiť cieľ o 10%"
 
 #. [chance_to_hit]: id=deflect
-#: data/core/macros/deprecated-utils.cfg:126
+#: data/core/macros/deprecated-utils.cfg:286
 msgid ""
 "This unit’s defensive techniques reduce the chance of a successful enemy "
 "attack."
 msgstr ""
 
 #. [damage]: id=absorb
-#: data/core/macros/deprecated-utils.cfg:139
+#: data/core/macros/deprecated-utils.cfg:299
 msgid "absorb"
 msgstr ""
 
 #. [damage]: id=absorb
-#: data/core/macros/deprecated-utils.cfg:140
+#: data/core/macros/deprecated-utils.cfg:300
 msgid ""
 "This attack puts the unit in good defensive position, and it absorbs some of "
 "the damage dealt by an enemy strike."
 msgstr ""
 
 #. [damage]: id=absorb
-#: data/core/macros/deprecated-utils.cfg:141
+#: data/core/macros/deprecated-utils.cfg:301
 msgid ""
 "This unit can block enemy strikes, so that it takes reduced damage when hit."
 msgstr ""
@@ -2745,84 +2767,6 @@ msgstr ""
 "centre_v=na|lla|na|ry|li|ni|ri|rae|bry\n"
 
 #: data/core/macros/names.cfg:144
-#, fuzzy
-#| msgid ""
-#| "Aban,Abbas,Abbud,Abdul-ʿAdl,Abdul-Ahad,Abdul-Alim,Abdul-Aliyy,Abdul-Azim,"
-#| "Abdul-Aziz,Abdul-Badi,Abdul-Baʿith,Abdul-Baqi,Abdul-Bari,Abdul-Barr,Abdul-"
-#| "Basir,Abdul-Basit,Abdul-Fattah,Abdul-Ghaffar,Abdul-Ghafur,Abdul-Ghani,"
-#| "Abdul-Hadi,Abdul-Hafiz,Abdul-Hakam,Abdul-Hakim,Abdul-Halim,Abdul-Hamid,"
-#| "Abdul-Haqq,Abdul-Hasib,Abdul-Hayy,Abdul-Jabbar,Abdul-Jalil,Abdul-Karim,"
-#| "Abdul-Khabir,Abdul-Khaliq,Abdul-Latif,Abdul-Malik,Abdul-Majid,Abdul-Matin,"
-#| "Abdul-Mubdiʾ,Abdul-Mughni,Abdul-Muhaimin,Abdul-Muhsi,Abdul-Muhyi,Abdul-"
-#| "Muʿid,Abdul-Muʿizz,Abdul-Mujib,Abdul-Mumin,Abdul-Muqaddim,Abdul-Muqtadir,"
-#| "Abdul-Musawwir,Abdul-Mutaʿal,Abdul-Nafi,Abdul-Nasser,Abdul-Nasir,Abdul-"
-#| "Nur,Abdul-Qadir,Abdul-Qahhar,Abdul-Qawi,Abdul-Qayyum,Abdul-Quddus,Abdul-"
-#| "Rafi,Abdul-Rahim,Abdul-Rahman,Abdul-Rashid,Abdul-Raʿuf,Abdul-Razzaq,Abdul-"
-#| "Shakur,Abdul-Tawwab,Abdul-Wadud,Abdul-Wahhab,Abdul-Wahid,Abdul-Wajid,"
-#| "Abdul-Wakil,Abdul-Wali,Abdul-Waliy,Abdul-Warith,Abdul-Zahir,Abdullah,"
-#| "ʿAbid,ʿAbidin,Abu Bakr,Aby al-Khayr,Adil,Adham,Adib,ʿAdli,ʿAdnan,ʿAfif,"
-#| "Ahmad,ʿAjib,ʿAkif,Akil,Akram,Alaʾ,Alaʾ al-Din,Alʿ Abbas,Aladdin,al-Bara,"
-#| "al-Hakam,al-Harith,Alhasan,Alhusain,Ali,Alim,Almahdi,al-Safi,Altaf,Altair,"
-#| "al-Tayyib,al-Tijani,al-Tufail,Amid,ʿAmid,Amin,Amir,ʿAmir,Amjad,ʿAmmar,"
-#| "ʿAmro,Anas,Anis,ʿAntarah,Anwar,ʿAqil,Arfan,Arif,ʿArif,Asad,Asʿad,Asadel,"
-#| "Ashraf,Asif,ʿAsim,Aswad,Ataʿ,Ataʿ Allah,Ataʿ al-Rahman,Athil,Athir,ʿAtif,"
-#| "ʿAwad,ʿAwf,Aws,Awwab,Ayham,Ayman,Ayser,Ayyub,Aza,ʿAzab,Azhar,Azim,ʿAziz,"
-#| "ʿAzzam,Badi,Badi al-Zaman,Badr,Badr al-Din,Badri,Bahaʿ,Bahiyy al-Din,"
-#| "Bahij,Bahir,Bakr,Bakri,Baligh,Bandar,Barakah,Barir,Bashshar,Basil,Basim,"
-#| "Bassam,Bayezid,Bayhas,Bilal,Bishr,Boulos,Budail,Burhan,Bushr,Butrus,Dabir,"
-#| "Dani,Darwish,Daʿud,Dhakir,Dhakiy,Dhakwan,Dhul Fiqar,Dirar,Diya,Diya al-"
-#| "Din,Duqaq,Fadi,Fadil,Fadl,Fadl Allah,Fahd,Fahad,Fahmi,Faisal,Faʿiz,Fakhir,"
-#| "Fakhr al-Din,Fakhri,Fakih,Falah,Falih,Faraj,Farhan,Farid,Fariq,Fariq,"
-#| "Faris,Faruq,Fath,Fathi,Fatih,Fatin,Fawwaz,Fawzan,Fawzi,Fayyad,Ferran,Fida,"
-#| "Fikri,Firas,Fuʿad,Fudail,Gamal,Ghayth,Ghali,Ghalib,Ghanim,Ghassan,Ghawth,"
-#| "Ghazwan,Ghiyath,Habbab,Habib,Haddad,Hadi,Hafiz,Hakem,Hakim,Halim,Hamal,"
-#| "Hamas,Hamdan,Hamdi,Hamid,Hamim,Hamzah,Hana,Hanaʾi,Hanbal,Hani,Hanif,"
-#| "Hannad,Haris,Harith,Harun,Hashim,Hassan,Hatim,Haydar,Haytham,Hayyan,Hazim,"
-#| "Hilal,Hilmi,Hisham,Hud,Hudad,Hudhafah,Hudhayfah,Humam,Hussein,Husam,Husam "
-#| "al-Din,Ibrahim,ʿId,Idris,Ihsan,Ihtisham,ʿIkrimah,Ilias,ʿImad,Imad al-Din,"
-#| "Imran,Imtiyaz,Inʿam,Iqbal,ʿIrfan,ʿIsa,ʿIsam,Ishaq,Ismaʿil,Iyad,Iyas,Izz "
-#| "al-Din,Jabbar,Jabr,Jabir,Jad Allah,Jaʿfar,Jal,Jalal,Jalal al-Din,Jalil,"
-#| "Jamal,Jamal al-Din,Jamil,Jarir,Jasim,Jaul,Jaun,Jawad,Jawdah,Jawhar,Jibran,"
-#| "Jibril,Jubair,Jul,Jumah,Junayd,Juwain,Kadar,Kadin,Kadir,Kahil,Kaliq,Kamal,"
-#| "Kamil,Karam,Kardal,Karif,Karim,Kasib,Kasim,Katib,Kazim,Khalaf,Khaldun,"
-#| "Khalid,Khalil,Khalil al-Allah,Khalis,Khatib,Khair al-Din,Khairi,Khoury,"
-#| "Khulus,Khuzaymah,Kutaiba,Labib,Lablab,Latif,Layth,LuʿayLubayd,Luqman,Lut,"
-#| "Lutfi,Maʿd,Madani,Mahbub,Mahdi,Mahfuz,Mahir,Mahjub,Mahmud,Mahrus,Maimun,"
-#| "Majd,Majdy,Majd al-Din,Majid,Makin,Malik,Mamduh,Maʿmun,Maʿin,Mandhur,"
-#| "Mansur,Marghub,Marid,Maʿruf,Marwan,Marzuq,Mashʿal,Mashhur,Masrur,Masʿud,"
-#| "Masun,Maysarah,Mazhar,Mazin,Mehmed,Mihran,Mihyar,Mikaʾil,Miqdad,Misbah,"
-#| "Mishʿal,Miyaz,Muʾadh,Muʾawiyah,Muʾayyad,Mubarak,Mubin,Mudar,Muddaththir,"
-#| "Mufid,Muflih,Muhab,Muhayr,Muhammad,Muhanna,Muhannad,Muhib,Muhibb,Muhsin,"
-#| "Muhtadi,Muhyi al-Din,Muʿin,Muʿizz,Mujab,Mujahid,Mukarram,Mukhlis,Mukhtar,"
-#| "Mulham,Mulhim,Muʿmmar,Muʿmin,Mumtaz,Munahid,Mundhir,Munib,Munif,Munir,"
-#| "Muʿnis,Munjid,Munsif,Muntasir,Murad,Murid,Murshid,Murtada,Musa,Musʿab,"
-#| "Musaʿid,Mushtaq,Muslih,Muslim,Mutafa,Mutaʾ,Muʿtasim,Mutawalli,Muʿtazz,"
-#| "Muthanna,Muti,Muwaffaq,Muyassar,Muzaffar,Mussammil,Nabhan,Nabighah,Nabih,"
-#| "Nabil,Nadhir,Nadim,Nadir,Nafiʾ,Nahid,Naʾil,Naʾim,Naji,Najib,Najid,Najjar,"
-#| "Najm al-Din,Naʿaman,Namir,Nashʿah,Nashʿat,Nashwan,Nasib,Nasih,Nasim,Nasir,"
-#| "Nasir al-Din,Nasr,Nasri,Nasuh,Nawaf,Nawfal,Nayif,Nazih,Nazim,Nazmi,Nibras,"
-#| "Nidal,Nijad,Nimr,Nizar,Nuʿaym,Nuh,Nuhayd,Numair,Nuʿman,Nur al-Din,Nuri,"
-#| "Nusrah,Nusrat,Omar,Orhan,Osman,Qasim,Qays,Qudamah,Qusay,Qatadah,Qutaybah,"
-#| "Qutb,Qutuz,Rabah,Rabi,Radi,Rafi,Rafid,Rafiq,Raghib,Rahman,Raʿid,Raʿif,"
-#| "Rais,Rajaa,Rajab,Raji,Rajih,Rakin,Rami,Ramih,Ramiz,Ramzi,Rani,Rashad,"
-#| "Rashid,Rasil,Rasin,Rasmi,Rasul,Ratib,Raʿuf,Rayhan,Rayyan,Razin,Ridha,"
-#| "Ridwan,Rihab,Riyad,Rizq,Ruhi,Rushd,Rushdi,Ruwayd,Saad,Saʿadah,Sab,Sabih,"
-#| "Sabir,Sabri,Saʿd,Saʿd al-Din,Sadad,Sadid,Sadiq,Saʿdun,Saʿid,Safi,Safiy,"
-#| "Safiy al-Din,Safuh,Safwah,Safwat,Safwan,Sahib,Sahir,Sahl,Saʾib,Saif,Saif "
-#| "al-Din,Sajid,Sajjad,Sakhr,Salah,Salah al-Din,Salamah,Salih,Salim,Salman,"
-#| "Sami,Samih,Samir,Samman,Saqr,Sariyah,Sati,Saud,Sayyid,Shaʿban,Shadi,"
-#| "Shadin,Shafi,Shafiq,Shahid,Shahin,Shahir,Shakib,Shakir,Shams al-Din,"
-#| "Shamal,Shamil,Shamim,Sharaf,Sharif,Shawqi,Shihab,Shihab al-Din,Shihad,"
-#| "Shuʿayb,Shukri,Shumayl,Siddiq,Sinan,Siraj,Siraj al-Din,Sofian,Subhi,"
-#| "Sufyan,Suhayb,Suhayl,Suhaym,Sulaiman,Sumrah,Suraqah,Suʿud,Tahir,Tahsin,"
-#| "Taym Allah,Taj,Taj al-Din,Talal,Talib,Tamim,Tamir,Tamam,Tammam,Taqiy,"
-#| "Tarif,Tariq,Taslim,Tawfiq,Tawhid,Taymullah,Taysir,Tayyib,Thabit,Thamir,"
-#| "Thaqib,Thawab,Thawban,ʿUbaidah,Ubaid,Ubayy,ʿUdayl,ʿUday,ʿUmar,Umarah,"
-#| "Umair,ʾaUrwah,Usaym,Usama,ʿUtbah,Uthal,Uthman,Waddah,Wadi,Wadid,Wafiq,"
-#| "Wahab,Wahhab,Wahid,Waʾil,Wajdi,Wajid,Wajih,Wakil,Walid,Walif,Waliy Allah,"
-#| "Waliy al-Din,Waqar,Waqqas,Ward,Wasif,Wasil,Wasim,Wazir,Yahya,Yaman,Yaʿqub,"
-#| "Yasar,Yasin,Yasir,Yazan,Yazid,Yunus,Yushua,Yusri,Yusuf,Zafar,Zafir,Zahid,"
-#| "Zahir,Zayd,Zaim,Zayn,Zarif,Zakarriya,Zaki,Zakwan,Ziyad,Zubayr,Zuhayr"
 msgid ""
 "Aban,Abbas,Abbud,Abdul-ʿAdl,Abdul-Ahad,Abdul-Alim,Abdul-Aliyy,Abdul-Azim,"
 "Abdul-Aziz,Abdul-Badi,Abdul-Baʿith,Abdul-Baqi,Abdul-Bari,Abdul-Barr,Abdul-"
@@ -2918,74 +2862,61 @@ msgstr ""
 "ʿArif,Asad,Asʿad,Asadel,Ashraf,Asif,ʿAsim,Aswad,Ataʿ,Ataʿ Allah,Ataʿ al-"
 "Rahman,Athil,Athir,ʿAtif,ʿAwad,ʿAwf,Aws,Awwab,Ayham,Ayman,Ayser,Ayyub,Aza,"
 "ʿAzab,Azhar,Azim,ʿAziz,ʿAzzam,Badi,Badi al-Zaman,Badr,Badr al-Din,Badri,"
-"Bahaʿ,Bahiyy al-Din,Bahij,Bahir,Bakr,Bakri,Baligh,Bandar,Barakah,Barir,"
-"Bashshar,Basil,Basim,Bassam,Bayezid,Bayhas,Bilal,Bishr,Boulos,Budail,Burhan,"
-"Bushr,Butrus,Dabir,Dani,Darwish,Daʿud,Dhakir,Dhakiy,Dhakwan,Dhul Fiqar,Dirar,"
-"Diya,Diya al-Din,Duqaq,Fadi,Fadil,Fadl,Fadl Allah,Fahd,Fahad,Fahmi,Faisal,"
-"Faʿiz,Fakhir,Fakhr al-Din,Fakhri,Fakih,Falah,Falih,Faraj,Farhan,Farid,Fariq,"
-"Fariq,Faris,Faruq,Fath,Fathi,Fatih,Fatin,Fawwaz,Fawzan,Fawzi,Fayyad,Ferran,"
-"Fida,Fikri,Firas,Fuʿad,Fudail,Gamal,Ghayth,Ghali,Ghalib,Ghanim,Ghassan,"
-"Ghawth,Ghazwan,Ghiyath,Habbab,Habib,Haddad,Hadi,Hafiz,Hakem,Hakim,Halim,"
-"Hamal,Hamas,Hamdan,Hamdi,Hamid,Hamim,Hamzah,Hana,Hanaʾi,Hanbal,Hani,Hanif,"
-"Hannad,Haris,Harith,Harun,Hashim,Hassan,Hatim,Haydar,Haytham,Hayyan,Hazim,"
-"Hilal,Hilmi,Hisham,Hud,Hudad,Hudhafah,Hudhayfah,Humam,Hussein,Husam,Husam al-"
-"Din,Ibrahim,ʿId,Idris,Ihsan,Ihtisham,ʿIkrimah,Ilias,ʿImad,Imad al-Din,Imran,"
-"Imtiyaz,Inʿam,Iqbal,ʿIrfan,ʿIsa,ʿIsam,Ishaq,Ismaʿil,Iyad,Iyas,Izz al-Din,"
-"Jabbar,Jabr,Jabir,Jad Allah,Jaʿfar,Jal,Jalal,Jalal al-Din,Jalil,Jamal,Jamal "
-"al-Din,Jamil,Jarir,Jasim,Jaul,Jaun,Jawad,Jawdah,Jawhar,Jibran,Jibril,Jubair,"
-"Jul,Jumah,Junayd,Juwain,Kadar,Kadin,Kadir,Kahil,Kaliq,Kamal,Kamil,Karam,"
-"Kardal,Karif,Karim,Kasib,Kasim,Katib,Kazim,Khalaf,Khaldun,Khalid,Khalil,"
-"Khalil al-Allah,Khalis,Khatib,Khair al-Din,Khairi,Khoury,Khulus,Khuzaymah,"
-"Kutaiba,Labib,Lablab,Latif,Layth,LuʿayLubayd,Luqman,Lut,Lutfi,Maʿd,Madani,"
-"Mahbub,Mahdi,Mahfuz,Mahir,Mahjub,Mahmud,Mahrus,Maimun,Majd,Majdy,Majd al-Din,"
-"Majid,Makin,Malik,Mamduh,Maʿmun,Maʿin,Mandhur,Mansur,Marghub,Marid,Maʿruf,"
-"Marwan,Marzuq,Mashʿal,Mashhur,Masrur,Masʿud,Masun,Maysarah,Mazhar,Mazin,"
-"Mehmed,Mihran,Mihyar,Mikaʾil,Miqdad,Misbah,Mishʿal,Miyaz,Muʾadh,Muʾawiyah,"
-"Muʾayyad,Mubarak,Mubin,Mudar,Muddaththir,Mufid,Muflih,Muhab,Muhayr,Muhammad,"
-"Muhanna,Muhannad,Muhib,Muhibb,Muhsin,Muhtadi,Muhyi al-Din,Muʿin,Muʿizz,Mujab,"
-"Mujahid,Mukarram,Mukhlis,Mukhtar,Mulham,Mulhim,Muʿmmar,Muʿmin,Mumtaz,Munahid,"
-"Mundhir,Munib,Munif,Munir,Muʿnis,Munjid,Munsif,Muntasir,Murad,Murid,Murshid,"
-"Murtada,Musa,Musʿab,Musaʿid,Mushtaq,Muslih,Muslim,Mutafa,Mutaʾ,Muʿtasim,"
-"Mutawalli,Muʿtazz,Muthanna,Muti,Muwaffaq,Muyassar,Muzaffar,Mussammil,Nabhan,"
-"Nabighah,Nabih,Nabil,Nadhir,Nadim,Nadir,Nafiʾ,Nahid,Naʾil,Naʾim,Naji,Najib,"
-"Najid,Najjar,Najm al-Din,Naʿaman,Namir,Nashʿah,Nashʿat,Nashwan,Nasib,Nasih,"
-"Nasim,Nasir,Nasir al-Din,Nasr,Nasri,Nasuh,Nawaf,Nawfal,Nayif,Nazih,Nazim,"
-"Nazmi,Nibras,Nidal,Nijad,Nimr,Nizar,Nuʿaym,Nuh,Nuhayd,Numair,Nuʿman,Nur al-"
-"Din,Nuri,Nusrah,Nusrat,Omar,Orhan,Osman,Qasim,Qays,Qudamah,Qusay,Qatadah,"
-"Qutaybah,Qutb,Qutuz,Rabah,Rabi,Radi,Rafi,Rafid,Rafiq,Raghib,Rahman,Raʿid,"
-"Raʿif,Rais,Rajaa,Rajab,Raji,Rajih,Rakin,Rami,Ramih,Ramiz,Ramzi,Rani,Rashad,"
-"Rashid,Rasil,Rasin,Rasmi,Rasul,Ratib,Raʿuf,Rayhan,Rayyan,Razin,Ridha,Ridwan,"
-"Rihab,Riyad,Rizq,Ruhi,Rushd,Rushdi,Ruwayd,Saad,Saʿadah,Sab,Sabih,Sabir,Sabri,"
-"Saʿd,Saʿd al-Din,Sadad,Sadid,Sadiq,Saʿdun,Saʿid,Safi,Safiy,Safiy al-Din,"
-"Safuh,Safwah,Safwat,Safwan,Sahib,Sahir,Sahl,Saʾib,Saif,Saif al-Din,Sajid,"
-"Sajjad,Sakhr,Salah,Salah al-Din,Salamah,Salih,Salim,Salman,Sami,Samih,Samir,"
-"Samman,Saqr,Sariyah,Sati,Saud,Sayyid,Shaʿban,Shadi,Shadin,Shafi,Shafiq,"
-"Shahid,Shahin,Shahir,Shakib,Shakir,Shams al-Din,Shamal,Shamil,Shamim,Sharaf,"
-"Sharif,Shawqi,Shihab,Shihab al-Din,Shihad,Shuʿayb,Shukri,Shumayl,Siddiq,"
-"Sinan,Siraj,Siraj al-Din,Sofian,Subhi,Sufyan,Suhayb,Suhayl,Suhaym,Sulaiman,"
-"Sumrah,Suraqah,Suʿud,Tahir,Tahsin,Taym Allah,Taj,Taj al-Din,Talal,Talib,"
-"Tamim,Tamir,Tamam,Tammam,Taqiy,Tarif,Tariq,Taslim,Tawfiq,Tawhid,Taymullah,"
-"Taysir,Tayyib,Thabit,Thamir,Thaqib,Thawab,Thawban,ʿUbaidah,Ubaid,Ubayy,"
-"ʿUdayl,ʿUday,ʿUmar,Umarah,Umair,ʾaUrwah,Usaym,Usama,ʿUtbah,Uthal,Uthman,"
-"Waddah,Wadi,Wadid,Wafiq,Wahab,Wahhab,Wahid,Waʾil,Wajdi,Wajid,Wajih,Wakil,"
-"Walid,Walif,Waliy Allah,Waliy al-Din,Waqar,Waqqas,Ward,Wasif,Wasil,Wasim,"
-"Wazir,Yahya,Yaman,Yaʿqub,Yasar,Yasin,Yasir,Yazan,Yazid,Yunus,Yushua,Yusri,"
-"Yusuf,Zafar,Zafir,Zahid,Zahir,Zayd,Zaim,Zayn,Zarif,Zakarriya,Zaki,Zakwan,"
-"Ziyad,Zubayr,Zuhayr"
+"Bahaʿ,Bahiyy al-Din,Bahij,Bahir,Bakr,Baligh,Bandar,Barakah,Barir,Bashshar,"
+"Basil,Basim,Bassam,Bayezid,Bayhas,Bilal,Bishr,Boulos,Budail,Burhan,Bushr,"
+"Butrus,Dabir,Dani,Darwish,Daʿud,Dhakir,Dhakiy,Dhakwan,Dhul Fiqar,Dirar,Diya,"
+"Diya al-Din,Duqaq,Fadi,Fadil,Fadl,Fadl Allah,Fahd,Fahad,Fahmi,Faisal,Faʿiz,"
+"Fakhir,Fakhr al-Din,Fakhri,Fakih,Falah,Falih,Faraj,Farhan,Farid,Fariq,Fariq,"
+"Faris,Faruq,Fath,Fathi,Fatih,Fatin,Fawwaz,Fawzan,Fawzi,Fayyad,Ferran,Fida,"
+"Fikri,Firas,Fuʿad,Fudail,Gamal,Ghayth,Ghali,Ghalib,Ghanim,Ghassan,Ghawth,"
+"Ghazwan,Ghiyath,Habbab,Habib,Haddad,Hadi,Hafiz,Hakem,Hakim,Halim,Hamal,Hamas,"
+"Hamdan,Hamdi,Hamid,Hamim,Hamzah,Hana,Hanaʾi,Hanbal,Hani,Hanif,Hannad,Haris,"
+"Harith,Harun,Hashim,Hassan,Hatim,Haydar,Haytham,Hayyan,Hazim,Hilal,Hilmi,"
+"Hisham,Hud,Hudad,Hudhafah,Hudhayfah,Humam,Hussein,Husam,Husam al-Din,Ibrahim,"
+"ʿId,Idris,Ihsan,Ihtisham,ʿIkrimah,Ilias,ʿImad,Imad al-Din,Imran,Imtiyaz,"
+"Inʿam,Iqbal,ʿIrfan,ʿIsa,ʿIsam,Ishaq,Ismaʿil,Iyad,Iyas,Izz al-Din,Jabbar,Jabr,"
+"Jabir,Jad Allah,Jaʿfar,Jal,Jalal,Jalal al-Din,Jalil,Jamal,Jamal al-Din,Jamil,"
+"Jarir,Jasim,Jaul,Jaun,Jawad,Jawdah,Jawhar,Jibran,Jibril,Jubair,Jul,Jumah,"
+"Junayd,Juwain,Kadar,Kadin,Kadir,Kahil,Kaliq,Kamal,Kamil,Karam,Kardal,Karif,"
+"Karim,Kasib,Kasim,Katib,Kazim,Khalaf,Khaldun,Khalid,Khalil,Khalil al-Allah,"
+"Khalis,Khatib,Khair al-Din,Khairi,Khoury,Khulus,Khuzaymah,Kutaiba,Labib,"
+"Lablab,Latif,Layth,LuʿayLubayd,Luqman,Lut,Lutfi,Maʿd,Madani,Mahbub,Mahdi,"
+"Mahfuz,Mahir,Mahjub,Mahmud,Mahrus,Maimun,Majd,Majdy,Majd al-Din,Majid,Makin,"
+"Malik,Mamduh,Maʿmun,Maʿin,Mandhur,Mansur,Marghub,Marid,Maʿruf,Marwan,Marzuq,"
+"Mashʿal,Mashhur,Masrur,Masʿud,Masun,Maysarah,Mazhar,Mazin,Mehmed,Mihran,"
+"Mihyar,Mikaʾil,Miqdad,Misbah,Mishʿal,Miyaz,Muʾadh,Muʾawiyah,Muʾayyad,Mubarak,"
+"Mubin,Mudar,Muddaththir,Mufid,Muflih,Muhab,Muhayr,Muhammad,Muhanna,Muhannad,"
+"Muhib,Muhibb,Muhsin,Muhtadi,Muhyi al-Din,Muʿin,Muʿizz,Mujab,Mujahid,Mukarram,"
+"Mukhlis,Mukhtar,Mulham,Mulhim,Muʿmmar,Muʿmin,Mumtaz,Munahid,Mundhir,Munib,"
+"Munif,Munir,Muʿnis,Munjid,Munsif,Muntasir,Murad,Murid,Murshid,Murtada,Musa,"
+"Musʿab,Musaʿid,Mushtaq,Muslih,Muslim,Mutafa,Mutaʾ,Muʿtasim,Mutawalli,Muʿtazz,"
+"Muthanna,Muti,Muwaffaq,Muyassar,Muzaffar,Mussammil,Nabhan,Nabighah,Nabih,"
+"Nabil,Nadhir,Nadim,Nadir,Nafiʾ,Nahid,Naʾil,Naʾim,Naji,Najib,Najid,Najjar,"
+"Najm al-Din,Naʿaman,Namir,Nashʿah,Nashʿat,Nashwan,Nasib,Nasih,Nasim,Nasir,"
+"Nasir al-Din,Nasr,Nasri,Nasuh,Nawaf,Nawfal,Nayif,Nazih,Nazim,Nazmi,Nibras,"
+"Nidal,Nijad,Nimr,Nizar,Nuʿaym,Nuh,Nuhayd,Numair,Nuʿman,Nur al-Din,Nuri,"
+"Nusrah,Nusrat,Omar,Orhan,Osman,Qasim,Qays,Qudamah,Qusay,Qatadah,Qutaybah,"
+"Qutb,Qutuz,Rabah,Rabi,Radi,Rafi,Rafid,Rafiq,Raghib,Rahman,Raʿid,Raʿif,Rais,"
+"Rajaa,Rajab,Raji,Rajih,Rakin,Rami,Ramih,Ramiz,Ramzi,Rani,Rashad,Rashid,Rasil,"
+"Rasin,Rasmi,Rasul,Ratib,Raʿuf,Rayhan,Rayyan,Razin,Ridha,Ridwan,Rihab,Riyad,"
+"Rizq,Ruhi,Rushd,Rushdi,Ruwayd,Saad,Saʿadah,Sab,Sabih,Sabir,Sabri,Saʿd,Saʿd "
+"al-Din,Sadad,Sadid,Sadiq,Saʿdun,Saʿid,Safi,Safiy,Safiy al-Din,Safuh,Safwah,"
+"Safwat,Safwan,Sahib,Sahir,Sahl,Saʾib,Saif,Saif al-Din,Sajid,Sajjad,Sakhr,"
+"Salah,Salah al-Din,Salamah,Salih,Salim,Salman,Sami,Samih,Samir,Samman,Saqr,"
+"Sariyah,Sati,Saud,Sayyid,Shaʿban,Shadi,Shadin,Shafi,Shafiq,Shahid,Shahin,"
+"Shahir,Shakib,Shakir,Shams al-Din,Shamal,Shamil,Shamim,Sharaf,Sharif,Shawqi,"
+"Shihab,Shihab al-Din,Shihad,Shuʿayb,Shukri,Shumayl,Siddiq,Sinan,Siraj,Siraj "
+"al-Din,Sofian,Subhi,Sufyan,Suhayb,Suhayl,Suhaym,Sulaiman,Sumrah,Suraqah,"
+"Suʿud,Tahir,Tahsin,Taym Allah,Taj,Taj al-Din,Talal,Talib,Tamim,Tamir,Tamam,"
+"Tammam,Taqiy,Tarif,Tariq,Taslim,Tawfiq,Tawhid,Taymullah,Taysir,Tayyib,Thabit,"
+"Thamir,Thaqib,Thawab,Thawban,ʿUbaidah,Ubaid,Ubayy,ʿUdayl,ʿUday,ʿUmar,Umarah,"
+"Umair,ʾaUrwah,Usaym,Usama,ʿUtbah,Uthal,Uthman,Waddah,Wadi,Wadid,Wafiq,Wahab,"
+"Wahhab,Wahid,Waʾil,Wajdi,Wajid,Wajih,Wakil,Walid,Walif,Waliy Allah,Waliy al-"
+"Din,Waqar,Waqqas,Ward,Wasif,Wasil,Wasim,Wazir,Yahya,Yaman,Yaʿqub,Yasar,Yasin,"
+"Yasir,Yazan,Yazid,Yunus,Yushua,Yusri,Yusuf,Zafar,Zafir,Zahid,Zahir,Zayd,Zaim,"
+"Zayn,Zarif,Zakarriya,Zaki,Zakwan,Ziyad,Zubayr,Zuhayr"
 
 #: data/core/macros/names.cfg:145
-#, fuzzy
-#| msgid ""
-#| "Abiha,Afaf,A'isha,Ajda,Aliya,Amira,Ashraqat,Atikah,Azra,Boutheina,Bushra,"
-#| "Chaima,Cynthia,Dalal,Dalia,Eliana,Esma,Farida,Fatima,Feyrouz,Habiba,Hafsa,"
-#| "Hajra,Halima,Hamida,Hanifa,Havva,Hayat,Hessa,Ibtisam,Ibtissam,Inaam,"
-#| "Jamila,Jawahir,Jena,Jumana,Kareena,Karima,Katya,Khadija,Khairunnisa,"
-#| "Khawla,Khawlah,Lama,Lamia,Latifa,Layal,Layan,Leila,Lina,Lulwa,Madiha,Maha,"
-#| "Mahmuna,Mai,Malika,Marwa,Maryam,Maya,Maysoon,Melissa,Nadia,Nafisa,Nahla,"
-#| "Naila,Najat,Nasim,Nasrin,Nejla,Nezha,Niusha,Qistina,Rahima,Rana,Rashida,"
-#| "Reem,Ruqayya,Saadia,Sabiha,Safiya,Sahar,Saida,Sajida,Sakhra,Salma,Samira,"
-#| "Sarah,Shahd,Shatha,Sherine,Shumaila,Sumaya,Taslima,Umm,Yara,Yasmin,Zahra,"
-#| "Zakiya,Zaynab"
 msgid ""
 "Abiha,Afaf,A’isha,Ajda,Aliya,Amira,Ashraqat,Atikah,Azra,Boutheina,Bushra,"
 "Chaima,Dalia,Esma,Farida,Fatima,Feyrouz,Habiba,Hafsa,Hajra,Halima,Hamida,"
@@ -2997,15 +2928,15 @@ msgid ""
 "Sakhra,Salma,Samira,Sarah,Shahd,Shatha,Shumaila,Sumaya,Taslima,Umm,Yara,"
 "Yasmin,Zahra,Zakiya,Zaynab"
 msgstr ""
-"Abiha,Afaf,A'isha,Ajda,Aliya,Amira,Ashraqat,Atikah,Azra,Boutheina,Bushra,"
-"Chaima,Cynthia,Dalal,Dalia,Eliana,Esma,Farida,Fatima,Feyrouz,Habiba,Hafsa,"
-"Hajra,Halima,Hamida,Hanifa,Havva,Hayat,Hessa,Ibtisam,Ibtissam,Inaam,Jamila,"
-"Jawahir,Jena,Jumana,Kareena,Karima,Katya,Khadija,Khairunnisa,Khawla,Khawlah,"
-"Lama,Lamia,Latifa,Layal,Layan,Leila,Lina,Lulwa,Madiha,Maha,Mahmuna,Mai,"
-"Malika,Marwa,Maryam,Maya,Maysoon,Melissa,Nadia,Nafisa,Nahla,Naila,Najat,"
-"Nasim,Nasrin,Nejla,Nezha,Niusha,Qistina,Rahima,Rana,Rashida,Reem,Ruqayya,"
-"Saadia,Sabiha,Safiya,Sahar,Saida,Sajida,Sakhra,Salma,Samira,Sarah,Shahd,"
-"Shatha,Sherine,Shumaila,Sumaya,Taslima,Umm,Yara,Yasmin,Zahra,Zakiya,Zaynab"
+"Abiha,Afaf,A’isha,Ajda,Aliya,Amira,Ashraqat,Atikah,Azra,Boutheina,Bushra,"
+"Chaima,Dalia,Esma,Farida,Fatima,Feyrouz,Habiba,Hafsa,Hajra,Halima,Hamida,"
+"Hanifa,Havva,Hayat,Hessa,Ibtisam,Ibtissam,Inaam,Jamila,Jawahir,Jena,Jumana,"
+"Kareena,Karima,Katya,Khadija,Khairunnisa,Khawla,Khawlah,Lama,Latifa,Layal,"
+"Layan,Leila,Lina,Lulwa,Madiha,Maha,Mahmuna,Mai,Malika,Marwa,Maryam,Maya,"
+"Maysoon,Nadia,Nafisa,Nahla,Naila,Najat,Nasim,Nasrin,Nejla,Nezha,Niusha,"
+"Rahima,Rana,Rashida,Reem,Ruqayya,Saadia,Sabiha,Safiya,Sahar,Saida,Sajida,"
+"Sakhra,Salma,Samira,Sarah,Shahd,Shatha,Shumaila,Sumaya,Taslima,Umm,Yara,"
+"Yasmin,Zahra,Zakiya,Zaynab"
 
 #. Generator for male dunefolk human names; see <https://wiki.wesnoth.org/Context-free_grammar> for syntax
 #: data/core/macros/names.cfg:147
@@ -3096,18 +3027,6 @@ msgstr ""
 "kib\n"
 
 #: data/core/macros/names.cfg:179
-#, fuzzy
-#| msgid ""
-#| "Amprixta,Anexir,Anitraz,Arix,Axiz,Bzz’Kza,Chamil,Cleezi,Clezz,Fazzis,"
-#| "Fizztrax,Flixta,Flizzil,Frikes,Frizzle,Hasz,Heffez,Hertrazzir,Hesz,Hezzir,"
-#| "Hezzis,Hix,Inexis,Irix,Jezzix,Jizz,Kaliez,Kepzs,Kernix,Kersezz,Kertrasz,"
-#| "Kerx,Kerxenix,Kezz,Klexaz,Klezyx,Krarax,Krenarex,Krex,Krinex,Krisess,"
-#| "Laizix,Lazki,Lixeez,Merax,Mexiss,Moxanzz,Naxisz,Nix,Pekzs,Plaxis,Plesix,"
-#| "Presch,Sailik,Salanix,Salik,Sandix,Saprazz,Satras,Skalix,Skandix,Skazix,"
-#| "Skeely,Skeezix,Sklizle,Skrez,Slizilx,Sprizz,Ssexur,Ssizer,Ssorix,Sszasz,"
-#| "Sterizz,Talerez,Tarex,Tarnix,Tezzaz,Tirasch,Tirax,Tirix,Trezz,Venezz,"
-#| "Vriss,Waks,Xaffrasz,Xartrez,Xasz,Xaztex,Xerxix,Xirasz,Xirr,Xirtras,"
-#| "Xirtrez,Xirz,Zandler,Zedrix,Zilrix,Zizzasz,Zslap,Zzalkz,Zzupde"
 msgid ""
 "Amprixta,Anexir,Anitraz,Arix,Axiz,Bzz’Kza,Chamil,Cleezi,Clezz,Fazzis,"
 "Fizztrax,Flixta,Flizzil,Frikes,Frizzle,Hasz,Heffez,Hertrazzir,Hesz,Hezzir,"
@@ -3122,14 +3041,14 @@ msgid ""
 msgstr ""
 "Amprixta,Anexir,Anitraz,Arix,Axiz,Bzz’Kza,Chamil,Cleezi,Clezz,Fazzis,"
 "Fizztrax,Flixta,Flizzil,Frikes,Frizzle,Hasz,Heffez,Hertrazzir,Hesz,Hezzir,"
-"Hezzis,Hix,Inexis,Irix,Jezzix,Jizz,Kaliez,Kepzs,Kernix,Kersezz,Kertrasz,Kerx,"
+"Hezzis,Hix,Inexis,Irix,Jezzix,Kaliez,Kepzs,Kernix,Kersezz,Kertrasz,Kerx,"
 "Kerxenix,Kezz,Klexaz,Klezyx,Krarax,Krenarex,Krex,Krinex,Krisess,Laizix,Lazki,"
 "Lixeez,Merax,Mexiss,Moxanzz,Naxisz,Nix,Pekzs,Plaxis,Plesix,Presch,Sailik,"
 "Salanix,Salik,Sandix,Saprazz,Satras,Skalix,Skandix,Skazix,Skeely,Skeezix,"
-"Sklizle,Skrez,Slizilx,Sprizz,Ssexur,Ssizer,Ssorix,Sszasz,Sterizz,Talerez,"
-"Tarex,Tarnix,Tezzaz,Tirasch,Tirax,Tirix,Trezz,Venezz,Vriss,Waks,Xaffrasz,"
-"Xartrez,Xasz,Xaztex,Xerxix,Xirasz,Xirr,Xirtras,Xirtrez,Xirz,Zandler,Zedrix,"
-"Zilrix,Zizzasz,Zslap,Zzalkz,Zzupde"
+"Sklizle,Skrez,Slizilx,Sprizz,Ssizer,Ssorix,Sszasz,Sterizz,Talerez,Tarex,"
+"Tarnix,Tezzaz,Tirasch,Tirax,Tirix,Trezz,Venezz,Vriss,Waks,Xaffrasz,Xartrez,"
+"Xasz,Xaztex,Xerxix,Xirasz,Xirr,Xirtras,Xirtrez,Xirz,Zandler,Zedrix,Zilrix,"
+"Zizzasz,Zslap,Zzalkz,Zzupde"
 
 #. Generator for saurian names; see <https://wiki.wesnoth.org/Context-free_grammar> for syntax
 #: data/core/macros/names.cfg:181
@@ -3770,7 +3689,7 @@ msgstr "Traveling Minstrels"
 
 #. [music]
 #. [time]: id=underground_noweather
-#: data/core/macros/sound-utils.cfg:336 data/internal/Weather/_main.cfg:230
+#: data/core/macros/sound-utils.cfg:336 data/internal/Weather/_main.cfg:300
 msgid "Underground"
 msgstr "Podzemie"
 
@@ -3790,217 +3709,217 @@ msgid "Weight of Revenge"
 msgstr "Ťažoba pomsty"
 
 #. [message]: speaker=narrator
-#: data/core/macros/utils.cfg:664
+#: data/core/macros/utils.cfg:662
 msgid "You retrieve $amount_gold pieces of gold."
 msgstr "Získal si $amount_gold zlatiek."
 
 #. [color_range]: id=red
 #. [color_range]: id=1
-#: data/core/team-colors.cfg:14 data/core/team-colors.cfg:265
+#: data/core/team-colors.cfg:14 data/core/team-colors.cfg:271
 msgid "Red"
 msgstr "Červená"
 
-#. [color_range]: id=lightred
-#: data/core/team-colors.cfg:21
-msgid "Light Red"
-msgstr "Svetločervená"
-
-#. [color_range]: id=darkred
-#: data/core/team-colors.cfg:27
-msgid "Dark Red"
-msgstr "Tmavočervená"
-
 #. [color_range]: id=blue
 #. [color_range]: id=2
-#: data/core/team-colors.cfg:33 data/core/team-colors.cfg:271
+#: data/core/team-colors.cfg:21 data/core/team-colors.cfg:277
 msgid "Blue"
 msgstr "Modrá"
 
-#. [color_range]: id=lightblue
-#: data/core/team-colors.cfg:40
-msgid "Light blue"
-msgstr "Svetlomodrá"
-
 #. [color_range]: id=green
 #. [color_range]: id=3
-#: data/core/team-colors.cfg:46 data/core/team-colors.cfg:277
+#: data/core/team-colors.cfg:28 data/core/team-colors.cfg:283
 msgid "Green"
 msgstr "Zelená"
 
-#. [color_range]: id=brightgreen
-#: data/core/team-colors.cfg:53
-msgid "Bright green"
-msgstr "Svetlozelená"
-
 #. [color_range]: id=purple
 #. [color_range]: id=4
-#: data/core/team-colors.cfg:59 data/core/team-colors.cfg:283
+#: data/core/team-colors.cfg:35 data/core/team-colors.cfg:289
 msgid "Purple"
 msgstr "Fialová"
 
 #. [color_range]: id=black
 #. [color_range]: id=5
-#: data/core/team-colors.cfg:66 data/core/team-colors.cfg:295
+#: data/core/team-colors.cfg:42 data/core/team-colors.cfg:301
 msgid "Black"
 msgstr "Čierna"
 
 #. [color_range]: id=brown
 #. [color_range]: id=6
-#: data/core/team-colors.cfg:73 data/core/team-colors.cfg:307
+#: data/core/team-colors.cfg:49 data/core/team-colors.cfg:313
 msgid "Brown"
 msgstr "Hnedá"
 
 #. [color_range]: id=orange
 #. [color_range]: id=7
-#: data/core/team-colors.cfg:80 data/core/team-colors.cfg:289
+#: data/core/team-colors.cfg:56 data/core/team-colors.cfg:295
 msgid "Orange"
 msgstr "Oranžová"
 
-#. [color_range]: id=brightorange
-#: data/core/team-colors.cfg:87
-msgid "Bright orange"
-msgstr "Svetlooranžová"
-
 #. [color_range]: id=white
 #. [color_range]: id=8
-#: data/core/team-colors.cfg:93 data/core/team-colors.cfg:301
+#: data/core/team-colors.cfg:63 data/core/team-colors.cfg:307
 msgid "White"
 msgstr "Biela"
 
 #. [color_range]: id=teal
 #. [color_range]: id=9
-#: data/core/team-colors.cfg:100 data/core/team-colors.cfg:313
+#: data/core/team-colors.cfg:70 data/core/team-colors.cfg:319
 msgid "Teal"
 msgstr "Tyrkysová"
 
 #. [color_range]: id=gold
-#: data/core/team-colors.cfg:107
+#: data/core/team-colors.cfg:77
 msgid "color^Gold"
 msgstr "Zlatá"
 
+#. [color_range]: id=lightblue
+#: data/core/team-colors.cfg:84
+msgid "Light blue"
+msgstr "Svetlomodrá"
+
+#. [color_range]: id=brightgreen
+#: data/core/team-colors.cfg:91
+msgid "Bright green"
+msgstr "Svetlozelená"
+
+#. [color_range]: id=darkred
+#: data/core/team-colors.cfg:98
+msgid "Dark Red"
+msgstr "Tmavočervená"
+
+#. [color_range]: id=brightorange
+#: data/core/team-colors.cfg:105
+msgid "Bright orange"
+msgstr "Svetlooranžová"
+
+#. [color_range]: id=lightred
+#: data/core/team-colors.cfg:112
+msgid "Light Red"
+msgstr "Svetločervená"
+
 #. [color_range]: id=yellow
-#: data/core/team-colors.cfg:113
+#: data/core/team-colors.cfg:119
 #, fuzzy
 #| msgid "Yellow Potion"
 msgid "Yellow"
 msgstr "Žltý nápoj"
 
 #. [color_range]: id=pink
-#: data/core/team-colors.cfg:119
+#: data/core/team-colors.cfg:125
 msgid "Pink"
 msgstr ""
 
 #. [color_range]: id=darkblue
-#: data/core/team-colors.cfg:126
+#: data/core/team-colors.cfg:132
 msgid "Dark blue"
 msgstr "Tmavomodrá"
 
 #. [color_range]: id=reef
-#: data/core/team-colors.cfg:135
+#: data/core/team-colors.cfg:141
 msgid "Reef"
 msgstr "Útes"
 
 #. [color_range]: id=shallow_water
-#: data/core/team-colors.cfg:141
+#: data/core/team-colors.cfg:147
 msgid "Shallow water"
 msgstr "Plytká voda"
 
 #. [color_range]: id=deep_water
-#: data/core/team-colors.cfg:147
+#: data/core/team-colors.cfg:153
 msgid "Deep water"
 msgstr "Hlboká voda"
 
 #. [color_range]: id=swamp_water
-#: data/core/team-colors.cfg:153
+#: data/core/team-colors.cfg:159
 msgid "Swamp water"
 msgstr "Močiarna voda"
 
 #. [color_range]: id=flat
-#: data/core/team-colors.cfg:159
+#: data/core/team-colors.cfg:165
 msgid "Flat"
 msgstr "Rovina"
 
 #. [color_range]: id=hills
-#: data/core/team-colors.cfg:165
+#: data/core/team-colors.cfg:171
 msgid "Hills"
 msgstr "Kopce"
 
 #. [color_range]: id=mountains
-#: data/core/team-colors.cfg:171
+#: data/core/team-colors.cfg:177
 msgid "Mountains"
 msgstr "Hory"
 
 #. [color_range]: id=forest
-#: data/core/team-colors.cfg:177
+#: data/core/team-colors.cfg:183
 msgid "Forest"
 msgstr "Les"
 
 #. [color_range]: id=sand
-#: data/core/team-colors.cfg:183
+#: data/core/team-colors.cfg:189
 msgid "Sand"
 msgstr "Piesok"
 
 #. [color_range]: id=frozen
-#: data/core/team-colors.cfg:189
+#: data/core/team-colors.cfg:195
 msgid "Frozen"
 msgstr "Zamrznuté"
 
 #. [color_range]: id=cave
-#: data/core/team-colors.cfg:195
+#: data/core/team-colors.cfg:201
 msgid "Cave"
 msgstr "Jaskyňa"
 
 #. [color_range]: id=fungus
-#: data/core/team-colors.cfg:201
+#: data/core/team-colors.cfg:207
 msgid "Fungus"
 msgstr "Huby"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=village
-#: data/core/team-colors.cfg:207 src/terrain/terrain.cpp:169
+#: data/core/team-colors.cfg:213 src/terrain/terrain.cpp:169
 msgid "Village"
 msgstr "Dedina"
 
 #. [color_range]: id=castle
-#: data/core/team-colors.cfg:213
+#: data/core/team-colors.cfg:219
 msgid "Castle"
 msgstr "Hrad"
 
 #. [color_range]: id=keep
-#: data/core/team-colors.cfg:219
+#: data/core/team-colors.cfg:225
 msgid "Keep"
 msgstr "Pevnosť"
 
 #. [color_range]: id=rails
-#: data/core/team-colors.cfg:225
+#: data/core/team-colors.cfg:231
 msgid "Rail"
 msgstr "Koľaj"
 
 #. [color_range]: id=unwalkable
-#: data/core/team-colors.cfg:231
+#: data/core/team-colors.cfg:237
 msgid "Unwalkable"
 msgstr "Neschodný"
 
 #. [color_range]: id=impassable
-#: data/core/team-colors.cfg:237
+#: data/core/team-colors.cfg:243
 msgid "Impassable"
 msgstr "Neprekonateľné"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=fog
-#: data/core/team-colors.cfg:243 src/game_initialization/lobby_data.cpp:376
+#: data/core/team-colors.cfg:249 src/game_initialization/lobby_data.cpp:376
 msgid "Fog"
 msgstr "Hmla"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=shroud
-#: data/core/team-colors.cfg:249 src/game_initialization/lobby_data.cpp:379
+#: data/core/team-colors.cfg:255 src/game_initialization/lobby_data.cpp:379
 #: src/game_initialization/lobby_data.cpp:382
 msgid "Shroud"
 msgstr "Odkrývanie mapy"
 
 #. [color_range]: id=urbanjungle
-#: data/core/team-colors.cfg:256
+#: data/core/team-colors.cfg:262
 msgid "Urban"
 msgstr ""
 
@@ -4400,44 +4319,44 @@ msgid "WesScript"
 msgstr "Popis"
 
 #. [time]: id=dawn_noweather
-#: data/internal/Weather/_main.cfg:151
+#: data/internal/Weather/_main.cfg:221
 msgid "Dawn"
 msgstr "Svitanie"
 
 #. [time]: id=morning_noweather
-#: data/internal/Weather/_main.cfg:162
+#: data/internal/Weather/_main.cfg:232
 #, fuzzy
 #| msgid "Warning"
 msgid "Morning"
 msgstr "Varovanie"
 
 #. [time]: id=midday_noweather
-#: data/internal/Weather/_main.cfg:170
+#: data/internal/Weather/_main.cfg:240
 msgid "Midday"
 msgstr ""
 
 #. [time]: id=afternoon_noweather
-#: data/internal/Weather/_main.cfg:178
+#: data/internal/Weather/_main.cfg:248
 msgid "Afternoon"
 msgstr "Popoludnie"
 
 #. [time]: id=dusk_noweather
-#: data/internal/Weather/_main.cfg:186
+#: data/internal/Weather/_main.cfg:256
 msgid "Dusk"
 msgstr "Súmrak"
 
 #. [time]: id=first_watch_noweather
-#: data/internal/Weather/_main.cfg:197
+#: data/internal/Weather/_main.cfg:267
 msgid "First Watch"
 msgstr "Prvá hliadka"
 
 #. [time]: id=midnight_noweather
-#: data/internal/Weather/_main.cfg:208
+#: data/internal/Weather/_main.cfg:278
 msgid "Midnight"
 msgstr ""
 
 #. [time]: id=second_watch_noweather
-#: data/internal/Weather/_main.cfg:219
+#: data/internal/Weather/_main.cfg:289
 msgid "Second Watch"
 msgstr "Druhá hliadka"
 
@@ -4505,17 +4424,13 @@ msgstr ""
 
 #. [option]
 #: data/internal/resources/AMLAs/_main.cfg:365
-#, fuzzy
-#| msgid "Quit the game"
 msgid "Ok, continue with the game"
-msgstr "Ukonči hru"
+msgstr "Dobre, pokračuj v hre"
 
 #. [option]
 #: data/internal/resources/AMLAs/_main.cfg:368
-#, fuzzy
-#| msgid "Don’t show again"
 msgid "Don’t show this message again"
-msgstr "Nepýtaj sa znova"
+msgstr "Už mi túto správu neukazuj"
 
 #. [lua]: carryover.get_popup_text_basic
 #: data/lua/carryover_gold.lua:112
@@ -4652,31 +4567,31 @@ msgstr "Neplatná úroveň $úroveň (mala by byť 1-4)"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:124 src/actions/attack.cpp:949
+#: data/lua/wml/harm_unit.lua:124 src/actions/attack.cpp:973
 msgid "female^poisoned"
 msgstr "otrávená"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:956
+#: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:980
 msgid "female^slowed"
 msgstr "spomalená"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:956
+#: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:980
 msgid "slowed"
 msgstr "spomalený"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:127 src/actions/attack.cpp:962
+#: data/lua/wml/harm_unit.lua:127 src/actions/attack.cpp:986
 msgid "female^petrified"
 msgstr "skamenená"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
-#: data/lua/wml/harm_unit.lua:127 src/actions/attack.cpp:962
+#: data/lua/wml/harm_unit.lua:127 src/actions/attack.cpp:986
 msgid "petrified"
 msgstr "skamenený"
 
@@ -4692,8 +4607,8 @@ msgstr "neliečiteľný"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: wesnoth.wml_actions.message
-#: data/lua/wml/message.lua:433 src/scripting/game_lua_kernel.cpp:3755
-#: src/scripting/game_lua_kernel.cpp:3790
+#: data/lua/wml/message.lua:442 src/scripting/game_lua_kernel.cpp:3771
+#: src/scripting/game_lua_kernel.cpp:3806
 msgid "input"
 msgstr "vstup"
 
@@ -4715,21 +4630,6 @@ msgid_plural "($remaining_turns turns left)"
 msgstr[0] "($remaining_turns kôl zostáva)"
 msgstr[1] "(toto kolo zostáva)"
 msgstr[2] "($remaining_turns kolá zostávajú)"
-
-#. [lua]: generate_objectives
-#: data/lua/wml/objectives.lua:106
-msgid "Early finish bonus."
-msgstr "Bonus za rýchly koniec."
-
-#. [lua]: generate_objectives
-#: data/lua/wml/objectives.lua:109
-msgid "No early finish bonus."
-msgstr "Žiadny bonus za rýchly koniec."
-
-#. [lua]: generate_objectives
-#: data/lua/wml/objectives.lua:117
-msgid "No gold carried over to the next scenario."
-msgstr "Žiadne zlato sa neprenáša do ďalšej scény."
 
 #. [lua]: generate_objectives
 #: data/lua/wml/objectives.lua:119
@@ -5020,8 +4920,6 @@ msgstr ""
 
 #. [tip]
 #: data/tips.cfg:17
-#, fuzzy
-#| msgid "<i>― Great Mage Delfador, 516YW</i>"
 msgid "<i>― Great Mage Delfador, 520YW</i>"
 msgstr "<i>― Veľký mág Delfador, 516 R.W.</i>"
 
@@ -5212,13 +5110,6 @@ msgstr ""
 
 #. [tip]
 #: data/tips.cfg:68
-#, fuzzy
-#| msgid ""
-#| "There are six types of attack: <i>pierce</i>, <i>blade</i>, <i>impact</"
-#| "i>, <i>fire</i>, <i>cold</i> and <i>arcane</i>. Different units have "
-#| "weaknesses against different types of attacks. Right-click on a unit and "
-#| "select <b>Unit Description</b> to see which attacks it is resistant to, "
-#| "and which will affect it the most."
 msgid ""
 "There are six types of attack: <i>pierce</i>, <i>blade</i>, <i>impact</i>, "
 "<i>fire</i>, <i>cold</i> and <i>arcane</i>. Different units have weaknesses "
@@ -5230,7 +5121,8 @@ msgstr ""
 "<i>ohnivý</i>, <i>mrazivý</i> a <i>mystický</i>. Rôzne jednotky sú rôzne "
 "citlivé voči jednotlivým druhom útokov. Ťukni pravým tlačidlom myši na "
 "jednotku, vyber si <b>Popis jednotky</b>, aby si videl nakoľko dokáže "
-"jednotka odolávať jednotlivým druhom útoku."
+"jednotka odolávať jednotlivým druhom útoku a tiež ktorý útok je proti nej "
+"najviac efektívny."
 
 #. [tip]
 #: data/tips.cfg:72
@@ -5582,13 +5474,6 @@ msgstr ""
 
 #. [tip]
 #: data/tips.cfg:188
-#, fuzzy
-#| msgid ""
-#| "Instead of leveling up, high-level units gain an <i>After Maximum Level "
-#| "Advancement</i> (AMLA) bonus, which usually increases the unit’s maximum "
-#| "hitpoints by three and fully heals it. This is much less than the normal "
-#| "benefits of advancing a level, so it is generally wiser to advance your "
-#| "lower-level units instead."
 msgid ""
 "Once a unit reaches maximum level, further advancement provides a minor "
 "bonus called an “AMLA” — “After Maximum Level Advancement.” Some campaigns "
@@ -5887,15 +5772,13 @@ msgstr ""
 msgid "waiting for^an advancement choice"
 msgstr "očakávam výber povýšenia"
 
-#: src/actions/attack.cpp:478 src/actions/attack.cpp:1274
+#: src/actions/attack.cpp:512 src/actions/attack.cpp:1298
 msgid "An invalid attacker weapon got selected."
 msgstr "Vybraná neplatná útočná zbraň."
 
-#: src/actions/attack.cpp:969
-#, fuzzy
-#| msgid "Attacks: "
+#: src/actions/attack.cpp:993
 msgid "attack^miss"
-msgstr "Útoky: "
+msgstr "útok^netrafenie"
 
 #: src/actions/create.cpp:340
 msgid "You do not have a leader to recall with."
@@ -5945,12 +5828,12 @@ msgstr "liečená"
 msgid "Ambushed!"
 msgstr "Prepad!"
 
-#: src/actions/move.cpp:1281
+#: src/actions/move.cpp:1285
 msgid "Failed teleport! Exit not empty"
 msgstr "Teleport zlyhal! Východ nie je prázdny"
 
 #. TRANSLATORS: This becomes the "friendphrase" in "Units sighted! ($friendphrase, $enemyphrase)"
-#: src/actions/move.cpp:1297
+#: src/actions/move.cpp:1301
 msgid "Part of 'Units sighted! (...)' sentence^1 friendly"
 msgid_plural "$friends friendly"
 msgstr[0] "$friends priateľov"
@@ -5958,7 +5841,7 @@ msgstr[1] "1 priateľa"
 msgstr[2] "$friends priateľov"
 
 #. TRANSLATORS: This becomes the "enemyphrase" in "Units sighted! ($friendphrase, $enemyphrase)"
-#: src/actions/move.cpp:1299
+#: src/actions/move.cpp:1303
 msgid "Part of 'Units sighted! (...)' sentence^1 enemy"
 msgid_plural "$enemies enemy"
 msgstr[0] "$enemies nepriateľov"
@@ -5967,13 +5850,13 @@ msgstr[2] "$enemies nepriateľov"
 
 #. TRANSLATORS: Both friends and enemies sighted -- neutral message.
 #. This is shown when a move is interrupted because units were revealed from the fog of war.
-#: src/actions/move.cpp:1302
+#: src/actions/move.cpp:1306
 msgid "Units sighted! ($friendphrase, $enemyphrase)"
 msgstr "Vidím jednotky! ($friendphrase, $enemyphrase)"
 
 #. TRANSLATORS: Only enemies sighted -- bad message.
 #. This is shown when a move is interrupted because units were revealed from the fog of war.
-#: src/actions/move.cpp:1307
+#: src/actions/move.cpp:1311
 msgid "Enemy unit sighted!"
 msgid_plural "$enemies enemy units sighted!"
 msgstr[0] "Vidím $enemies nepriateľských jednotiek!"
@@ -5982,22 +5865,22 @@ msgstr[2] "Vidím $enemies nepriateľské jednotky!"
 
 #. TRANSLATORS: Only friends sighted -- good message.
 #. This is shown when a move is interrupted because units were revealed from the fog of war.
-#: src/actions/move.cpp:1312
+#: src/actions/move.cpp:1316
 msgid "Friendly unit sighted"
 msgid_plural "$friends friendly units sighted"
 msgstr[0] "Vidím $friends priateľských jednotiek"
 msgstr[1] "Vidím priateľskú jednotku"
 msgstr[2] "Vidím $friends priateľské jednotky"
 
-#: src/actions/move.cpp:1327
+#: src/actions/move.cpp:1331
 msgid "(press $hotkey to keep moving)"
 msgstr "(stlač $hotkey na dokončenie pohybu)"
 
-#: src/actions/undo.cpp:330
+#: src/actions/undo.cpp:331
 msgid "Redo Error"
 msgstr "Opakovať chybu"
 
-#: src/actions/undo.cpp:331
+#: src/actions/undo.cpp:332
 msgid ""
 "The redo stack is out of sync. This is most commonly caused by a corrupt "
 "save file or by faulty WML code in the scenario or era. Details:"
@@ -6006,7 +5889,7 @@ msgstr ""
 "poškodeným ukladacím súborom alebo chybným kódom WML v scenári alebo ére. "
 "Podrobnosti:"
 
-#: src/actions/undo.cpp:342
+#: src/actions/undo.cpp:343
 msgid "Unhandled choices while redoing"
 msgstr ""
 
@@ -6015,10 +5898,8 @@ msgid "Connecting to $server_address|..."
 msgstr "Pripájam sa k $server_address|..."
 
 #: src/addon/client.cpp:124
-#, fuzzy
-#| msgid "Requesting the addon to be deleted"
 msgid "Requesting add-on counts by type..."
-msgstr "Žiadam o vymazanie doplnku"
+msgstr "Vyžiadanie počtov doplnkov podľa typu..."
 
 #: src/addon/client.cpp:131 src/addon/client.cpp:149 src/addon/client.cpp:167
 #: src/addon/client.cpp:185 src/addon/client.cpp:205 src/addon/client.cpp:226
@@ -6032,34 +5913,24 @@ msgid "Requesting add-on downloads by version..."
 msgstr ""
 
 #: src/addon/client.cpp:164
-#, fuzzy
-#| msgid "Requesting file index..."
 msgid "Requesting forum_auth usage..."
-msgstr "Získavajú sa zoznamy súborov..."
+msgstr "Vyžaduje sa použitie forum_auth..."
 
 #: src/addon/client.cpp:182
-#, fuzzy
-#| msgid "Requesting distribution terms..."
 msgid "Requesting list of admins..."
-msgstr "Získavajú sa podmienky distribúcie..."
+msgstr "Získava sa zoznam administrátorov..."
 
 #: src/addon/client.cpp:202
-#, fuzzy
-#| msgid "Downloading list of add-ons..."
 msgid "Getting list of hidden add-ons..."
-msgstr "Sťahuje sa zoznam doplnkov..."
+msgstr "Sťahuje sa zoznam skrytých doplnkov..."
 
 #: src/addon/client.cpp:223
-#, fuzzy
-#| msgid "Sending add-on"
 msgid "Hiding add-on..."
-msgstr "Posielam doplnok"
+msgstr "Schovávam doplnok..."
 
 #: src/addon/client.cpp:243
-#, fuzzy
-#| msgid "Sending add-on"
 msgid "Unhiding add-on..."
-msgstr "Posielam doplnok"
+msgstr "Znovu zobrazujem doplnok..."
 
 #: src/addon/client.cpp:267
 msgid "Downloading list of add-ons..."
@@ -6233,7 +6104,7 @@ msgid "Do you really wish to continue?"
 msgstr "Naozaj chceš pokračovať?"
 
 #: src/addon/client.cpp:722 src/addon/manager_ui.cpp:187
-#: src/game_initialization/multiplayer.cpp:373
+#: src/game_initialization/multiplayer.cpp:374
 msgid "Confirm"
 msgstr "Potvrdiť"
 
@@ -6298,10 +6169,8 @@ msgid "Remote host disconnected."
 msgstr "Server sa odpojil."
 
 #: src/addon/manager_ui.cpp:63
-#, fuzzy
-#| msgid "Map generator error: "
 msgid "Raw network error:"
-msgstr "Chyba vytvárania mapy: "
+msgstr "Chyba vytvárania mapy:"
 
 #: src/addon/manager_ui.cpp:97 src/addon/manager_ui.cpp:336
 msgid "Network communication error."
@@ -6738,11 +6607,11 @@ msgstr "Neznáma ladiaca doména: '$domain'."
 msgid "Switched domain: '$domain' to level: '$level'."
 msgstr "Doména: '$domain' prepnutá na úroveň: '$level'."
 
-#: src/chat_events.cpp:144
+#: src/chat_events.cpp:149
 msgid "whisper to $receiver"
 msgstr "šepkanie k $receiver"
 
-#: src/chat_events.cpp:151
+#: src/chat_events.cpp:156
 msgid "whisper: $sender"
 msgstr "šepkanie: $sender"
 
@@ -6770,39 +6639,49 @@ msgstr "$elem bol zastaraný a odstránený."
 msgid "Chat message"
 msgstr "Správa rozhovoru"
 
-#: src/desktop/windows_tray_notification.cpp:126 src/game_config.cpp:588
+#: src/desktop/windows_tray_notification.cpp:137 src/game_config.cpp:599
 msgid "The Battle for Wesnoth"
 msgstr "Bitka o Wesnoth"
 
 #. TRANSLATORS: 12-hour time, eg '1:59 PM'
-#: src/format_time_summary.cpp:42 src/format_time_summary.cpp:95
+#: src/format_time_summary.cpp:44 src/format_time_summary.cpp:100
+#, no-c-format
 msgid "%I:%M %p"
 msgstr "%I:%M %p"
 
 #. TRANSLATORS: 24-hour time, eg '13:59'
-#: src/format_time_summary.cpp:44 src/format_time_summary.cpp:91
+#: src/format_time_summary.cpp:47 src/format_time_summary.cpp:95
+#, no-c-format
 msgid "%H:%M"
 msgstr "%H:%M"
 
 #. TRANSLATORS: Day of week + 12-hour time, eg 'Sunday, 1:59 PM'
-#: src/format_time_summary.cpp:50 src/format_time_summary.cpp:105
+#: src/format_time_summary.cpp:54 src/format_time_summary.cpp:112
+#, no-c-format
 msgid "%A, %I:%M %p"
 msgstr "%A, %I:%M %p"
 
 #. TRANSLATORS: Day of week + 24-hour time, eg 'Sunday, 13:59'
-#: src/format_time_summary.cpp:52 src/format_time_summary.cpp:101
+#: src/format_time_summary.cpp:57 src/format_time_summary.cpp:107
+#, no-c-format
 msgid "%A, %H:%M"
 msgstr "%A, %H:%M"
 
 #. TRANSLATORS: Month + day of month, eg 'Nov 02'. Format for your locale.
-#: src/format_time_summary.cpp:57 src/format_time_summary.cpp:110
+#: src/format_time_summary.cpp:63 src/format_time_summary.cpp:118
+#, no-c-format
 msgid "%b %d"
 msgstr "%d. %m"
 
 #. TRANSLATORS: Month + day of month + year, eg 'Nov 02 2021'. Format for your locale.
-#: src/format_time_summary.cpp:62 src/format_time_summary.cpp:115
+#: src/format_time_summary.cpp:69 src/format_time_summary.cpp:124
+#, no-c-format
 msgid "%b %d %Y"
 msgstr "%b %d %Y"
+
+#: src/formula/format_timespan.hpp:57 src/formula/format_timespan.hpp:90
+msgid "timespan^expired"
+msgstr ""
 
 #. TRANSLATORS: The "timespan^$num xxxxx" strings originating from the same file
 #. as the string with this comment MUST be translated following the usual rules
@@ -6812,60 +6691,56 @@ msgstr "%b %d %Y"
 #. is the time unit (year, month, etc.) For example, for French you would
 #. translate "timespan^$num years" as "$num ans", thus allowing the game UI to
 #. generate output such as "39 ans" after variable interpolation.
-#: src/formula/format_timespan.hpp:38
+#: src/formula/format_timespan.hpp:82
 msgid "timespan^$num year"
 msgid_plural "timespan^$num years"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/formula/format_timespan.hpp:39
+#: src/formula/format_timespan.hpp:83
 msgid "timespan^$num month"
 msgid_plural "timespan^$num months"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/formula/format_timespan.hpp:40
+#: src/formula/format_timespan.hpp:84
 msgid "timespan^$num week"
 msgid_plural "timespan^$num weeks"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/formula/format_timespan.hpp:41
+#: src/formula/format_timespan.hpp:85
 msgid "timespan^$num day"
 msgid_plural "timespan^$num days"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/formula/format_timespan.hpp:42
+#: src/formula/format_timespan.hpp:86
 msgid "timespan^$num hour"
 msgid_plural "timespan^$num hours"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/formula/format_timespan.hpp:43
+#: src/formula/format_timespan.hpp:87
 msgid "timespan^$num minute"
 msgid_plural "timespan^$num minutes"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/formula/format_timespan.hpp:44
+#: src/formula/format_timespan.hpp:88
 msgid "timespan^$num second"
 msgid_plural "timespan^$num seconds"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/formula/format_timespan.hpp:89 src/formula/format_timespan.hpp:112
-msgid "timespan^expired"
-msgstr ""
-
-#: src/game_config.cpp:536
+#: src/game_config.cpp:547
 msgid "Invalid color in range: "
 msgstr "Neplatná farba v rozsahu: "
 
@@ -6913,8 +6788,6 @@ msgid "Falling back to the default core."
 msgstr "Návrat k predvolenému jadru."
 
 #: src/game_config_manager.cpp:302
-#, fuzzy
-#| msgid "Can't locate the default core."
 msgid "Can’t locate the default core."
 msgstr "Nie je možné nájsť predvolené jadro."
 
@@ -6976,7 +6849,7 @@ msgstr[0] "Prosím nahláste toto autorom alebo správcom jednotlivých doplnkov
 msgstr[1] "Prosím nahláste toto autorovi alebo správcovi tohto doplnku."
 msgstr[2] "Prosím nahláste toto autorom alebo správcom jednotlivých doplnkov."
 
-#: src/game_events/pump.cpp:389 src/game_launcher.cpp:957
+#: src/game_events/pump.cpp:389 src/game_launcher.cpp:948
 msgid "Error: "
 msgstr "Chyba: "
 
@@ -7026,7 +6899,7 @@ msgid "Reserved"
 msgstr "Rezervované"
 
 #: src/game_initialization/create_engine.cpp:74
-#: src/game_initialization/create_engine.cpp:684
+#: src/game_initialization/create_engine.cpp:691
 msgid "Map could not be loaded: "
 msgstr "Nepodarilo sa načítať mapu: "
 
@@ -7043,42 +6916,40 @@ msgid "Custom map."
 msgstr "Vlastná mapa."
 
 #: src/game_initialization/create_engine.cpp:412
-#, fuzzy
-#| msgid "Multiplayer"
 msgid "multiplayer^MP"
-msgstr "Zápas"
+msgstr "multiplayer^zápas"
 
-#: src/game_initialization/depcheck.cpp:504
+#: src/game_initialization/create_engine.cpp:661
+msgid "Era not found: "
+msgstr "Nenašla sa konkrétna hracia éra: "
+
+#: src/game_initialization/depcheck.cpp:495
 msgid "Failed to resolve dependencies"
 msgstr "Nepodarilo sa vyriešiť závislosti"
 
-#: src/game_initialization/depcheck.cpp:504
+#: src/game_initialization/depcheck.cpp:495
 msgid "OK"
 msgstr "OK"
 
-#: src/game_initialization/depcheck.cpp:529
-#, fuzzy
-#| msgid "Scenario can't be activated. Some dependencies are missing: "
+#: src/game_initialization/depcheck.cpp:520
 msgid "Scenario can’t be activated. Some dependencies are missing: "
 msgstr "Scéna nemôže byť aktivovaná. Niektoré závislosti chýbajú: "
 
-#: src/game_initialization/depcheck.cpp:583
-#: src/game_initialization/depcheck.cpp:706
+#: src/game_initialization/depcheck.cpp:574
+#: src/game_initialization/depcheck.cpp:697
 msgid "No compatible eras found."
 msgstr "Nenašli sa žiadne kompatibilné éry."
 
-#: src/game_initialization/depcheck.cpp:598
-#, fuzzy
-#| msgid "Era can't be activated. Some dependencies are missing: "
+#: src/game_initialization/depcheck.cpp:589
 msgid "Era can’t be activated. Some dependencies are missing: "
 msgstr "Éra nemôže byť aktivovaná. Niektoré závislosti chýbajú: "
 
-#: src/game_initialization/depcheck.cpp:651
-#: src/game_initialization/depcheck.cpp:743
+#: src/game_initialization/depcheck.cpp:642
+#: src/game_initialization/depcheck.cpp:734
 msgid "No compatible scenarios found."
 msgstr "Nenašli sa žiadne kompatibilné scény."
 
-#: src/game_initialization/depcheck.cpp:680
+#: src/game_initialization/depcheck.cpp:671
 msgid ""
 "Not all of the chosen modifications are compatible. Some of them will be "
 "disabled."
@@ -7184,16 +7055,14 @@ msgid "Defeat enemy leader(s)"
 msgstr "Porazíš ostatných veliteľov"
 
 #: src/game_initialization/mp_game_utils.cpp:102
-#, fuzzy
-#| msgid "Cannot find era '$era'"
 msgid "Cannot find era ‘$era’"
 msgstr "Neviem nájsť éru '$era'"
 
-#: src/game_initialization/multiplayer.cpp:254
+#: src/game_initialization/multiplayer.cpp:255
 msgid "Invalid address specified for multiplayer server"
 msgstr "Pre server pre viacerých hráčov bola zadaná neplatná adresa"
 
-#: src/game_initialization/multiplayer.cpp:289
+#: src/game_initialization/multiplayer.cpp:290
 #, fuzzy
 #| msgid ""
 #| "The server accepts versions '$required_version', but you are using "
@@ -7205,11 +7074,11 @@ msgstr ""
 "Server akceptuje verzie '$required_version', avšak používaš verziu "
 "'$your_version'"
 
-#: src/game_initialization/multiplayer.cpp:302
+#: src/game_initialization/multiplayer.cpp:303
 msgid "Server-side redirect loop"
 msgstr "Server presmerováva dokola"
 
-#: src/game_initialization/multiplayer.cpp:346
+#: src/game_initialization/multiplayer.cpp:347
 msgid ""
 "The nickname ‘$nick’ is inactive. You cannot claim ownership of this "
 "nickname until you activate your account via email or ask an administrator "
@@ -7218,29 +7087,29 @@ msgstr ""
 "Prezývka ‘$nick’ je neaktívna. Nemôžeš použiť túto prezývku pokiaľ si "
 "neaktivuješ konto emailom alebo nepožiadaš administrátora."
 
-#: src/game_initialization/multiplayer.cpp:355
+#: src/game_initialization/multiplayer.cpp:356
 msgid "Do you want to continue?"
 msgstr "Chceš pokračovať?"
 
-#: src/game_initialization/multiplayer.cpp:357
+#: src/game_initialization/multiplayer.cpp:358
 msgid "Warning"
 msgstr "Varovanie"
 
-#: src/game_initialization/multiplayer.cpp:419
+#: src/game_initialization/multiplayer.cpp:420
 msgid ""
 "The remote server requested a password while using an insecure connection."
 msgstr ""
 "Vzdialený server si vyžiadal heslo pri používaní nezabezpečeného pripojenia."
 
-#: src/game_initialization/multiplayer.cpp:421
+#: src/game_initialization/multiplayer.cpp:422
 msgid "You must login first."
 msgstr "Musíš sa najprv prihlásiť."
 
-#: src/game_initialization/multiplayer.cpp:423
+#: src/game_initialization/multiplayer.cpp:424
 msgid "The nickname ‘$nick’ is already taken."
 msgstr "Prezývka ‘$nick’ je už používaná."
 
-#: src/game_initialization/multiplayer.cpp:425
+#: src/game_initialization/multiplayer.cpp:426
 msgid ""
 "The nickname ‘$nick’ contains invalid characters. Only alpha-numeric "
 "characters (one at minimum), underscores and hyphens are allowed."
@@ -7248,52 +7117,52 @@ msgstr ""
 "Prezývka ‘$nick’ obsahuje nepovolené znaky. Povolené sú len písmená, čísla "
 "(aspoň jedno písmeno alebo číslo), pomlčky a podtržníky."
 
-#: src/game_initialization/multiplayer.cpp:429
+#: src/game_initialization/multiplayer.cpp:430
 msgid "The nickname ‘$nick’ is too long. Nicks must be 20 characters or less."
 msgstr ""
 "Prezývka ‘$nick’ je príliš dlhá. Prezývky môžu mať maximálne 20 znakov."
 
-#: src/game_initialization/multiplayer.cpp:431
+#: src/game_initialization/multiplayer.cpp:432
 msgid "The nickname ‘$nick’ is reserved and cannot be used by players."
 msgstr "Prezývka ‘$nick’ je rezervovaná a nemôže byť použitá hráčmi."
 
-#: src/game_initialization/multiplayer.cpp:433
+#: src/game_initialization/multiplayer.cpp:434
 msgid "The nickname ‘$nick’ is not registered on this server."
 msgstr "Prezývka ‘$nick’ nie je na tomto serveri registrovaná."
 
-#: src/game_initialization/multiplayer.cpp:434
+#: src/game_initialization/multiplayer.cpp:435
 msgid " This server disallows unregistered nicknames."
 msgstr " Tento server nepovoľuje neregistrované prezývky."
 
-#: src/game_initialization/multiplayer.cpp:437
+#: src/game_initialization/multiplayer.cpp:438
 #, fuzzy
 #| msgid "Your IP address is banned on this server’s forums for $duration|."
 msgid "Your IP address is banned on this server for $duration|."
 msgstr "Vaša IP adresa je zakázaná na fórach tohto servera na $duration|."
 
-#: src/game_initialization/multiplayer.cpp:439
+#: src/game_initialization/multiplayer.cpp:440
 #, fuzzy
 #| msgid "Your IP address is banned on this server’s forums."
 msgid "Your IP address is banned on this server."
 msgstr "Vaša IP adresa je na fórach tohto servera zakázaná."
 
-#: src/game_initialization/multiplayer.cpp:443
+#: src/game_initialization/multiplayer.cpp:444
 msgid "The nickname ‘$nick’ is banned on this server’s forums for $duration|."
 msgstr "Prezývka „$nick“ je na fórach tohto servera zakázaná na $duration|."
 
-#: src/game_initialization/multiplayer.cpp:445
+#: src/game_initialization/multiplayer.cpp:446
 msgid "The nickname ‘$nick’ is banned on this server’s forums."
 msgstr "Prezývka ‘$nick’ zakázaná na fóre na tomto serveri."
 
-#: src/game_initialization/multiplayer.cpp:449
+#: src/game_initialization/multiplayer.cpp:450
 msgid "Your IP address is banned on this server’s forums for $duration|."
 msgstr "Vaša IP adresa je zakázaná na fórach tohto servera na $duration|."
 
-#: src/game_initialization/multiplayer.cpp:451
+#: src/game_initialization/multiplayer.cpp:452
 msgid "Your IP address is banned on this server’s forums."
 msgstr "Vaša IP adresa je na fórach tohto servera zakázaná."
 
-#: src/game_initialization/multiplayer.cpp:455
+#: src/game_initialization/multiplayer.cpp:456
 msgid ""
 "The email address for the nickname ‘$nick’ is banned on this server’s forums "
 "for $duration|."
@@ -7301,18 +7170,18 @@ msgstr ""
 "Emailová adresa pre prezývku ‘$nick’ je zakázaná na fóre na tomto serveri na "
 "dobu $duration|."
 
-#: src/game_initialization/multiplayer.cpp:457
+#: src/game_initialization/multiplayer.cpp:458
 msgid ""
 "The email address for the nickname ‘$nick’ is banned on this server’s forums."
 msgstr ""
 "Emailová adresa pre prezývku ‘$nick’ zakázaná na fóre na tomto serveri."
 
-#: src/game_initialization/multiplayer.cpp:460
-#: src/game_initialization/multiplayer.cpp:462
+#: src/game_initialization/multiplayer.cpp:461
+#: src/game_initialization/multiplayer.cpp:463
 msgid "The nickname ‘$nick’ is registered on this server."
 msgstr "Prezývka ‘$nick’ je na tomto serveri registrovaná."
 
-#: src/game_initialization/multiplayer.cpp:463
+#: src/game_initialization/multiplayer.cpp:464
 msgid ""
 "WARNING: There is already a client using this nickname, logging in will "
 "cause that client to be kicked!"
@@ -7320,32 +7189,32 @@ msgstr ""
 "VAROVANIE: Túto prezývku už používa iný používateľ, prihlásenie spôsobí "
 "vykopnutie tohto používateľa!"
 
-#: src/game_initialization/multiplayer.cpp:466
+#: src/game_initialization/multiplayer.cpp:467
 msgid "The password you provided was incorrect."
 msgstr "Zadané heslo je nesprávne."
 
-#: src/game_initialization/multiplayer.cpp:468
+#: src/game_initialization/multiplayer.cpp:469
 msgid "You have made too many login attempts."
 msgstr "Máš príliš veľa pokusov o prihlásenie."
 
-#: src/game_initialization/multiplayer.cpp:470
+#: src/game_initialization/multiplayer.cpp:471
 msgid "Password hashing failed."
 msgstr "Hašovanie hesla zlyhalo."
 
-#: src/game_initialization/playcampaign.cpp:150 src/game_launcher.cpp:910
+#: src/game_initialization/playcampaign.cpp:150 src/game_launcher.cpp:901
 msgid "The game could not be loaded: "
 msgstr "Nepodarilo sa načítať hru: "
 
-#: src/game_initialization/playcampaign.cpp:156 src/game_launcher.cpp:912
+#: src/game_initialization/playcampaign.cpp:156 src/game_launcher.cpp:903
 msgid "Error while playing the game: "
 msgstr "Chyba pri hraní hry: "
 
-#: src/game_initialization/playcampaign.cpp:159 src/game_launcher.cpp:949
+#: src/game_initialization/playcampaign.cpp:159 src/game_launcher.cpp:940
 msgid "The game map could not be loaded: "
 msgstr "Nepodarilo sa načítať mapu hry: "
 
-#: src/game_initialization/playcampaign.cpp:162 src/game_launcher.cpp:914
-#: src/game_launcher.cpp:1035
+#: src/game_initialization/playcampaign.cpp:162 src/game_launcher.cpp:905
+#: src/game_launcher.cpp:1026
 msgid "Map generator error: "
 msgstr "Chyba vytvárania mapy: "
 
@@ -7372,34 +7241,32 @@ msgstr "Neznáma scéna: '$scenario|'"
 msgid "No campaigns are available."
 msgstr "Žiadne výpravy nie sú dostupné."
 
-#: src/game_launcher.cpp:692 src/game_launcher.cpp:711
-#: src/hotkey/hotkey_handler_sp.cpp:324 src/replay.cpp:662 src/savegame.cpp:167
+#: src/game_launcher.cpp:683 src/game_launcher.cpp:702
+#: src/hotkey/hotkey_handler_sp.cpp:324 src/replay.cpp:664 src/savegame.cpp:167
 msgid "The file you have tried to load is corrupt"
 msgstr "Súbor, ktorý ste chceli načítať, je poškodený"
 
-#: src/game_launcher.cpp:694 src/game_launcher.cpp:713
+#: src/game_launcher.cpp:685 src/game_launcher.cpp:704
 msgid "The file you have tried to load is corrupt: '"
 msgstr "Súbor, ktorý ste chceli načítať, je poškodený: '"
 
-#: src/game_launcher.cpp:703
+#: src/game_launcher.cpp:694
 msgid "File I/O Error while reading the game"
 msgstr "Chyba pri čítaní súboru hry"
 
-#: src/game_launcher.cpp:705
+#: src/game_launcher.cpp:696
 msgid "File I/O Error while reading the game: '"
 msgstr "Chyba pri čítaní súboru hry: '"
 
-#: src/game_launcher.cpp:908
+#: src/game_launcher.cpp:899
 msgid "Error while starting server: "
 msgstr "Chyba spúšťaní servera: "
 
-#: src/game_launcher.cpp:930
+#: src/game_launcher.cpp:921
 msgid "Connection failed: "
 msgstr "Spojenie zlyhalo: "
 
 #: src/generators/default_map_generator_job.cpp:708
-#, fuzzy
-#| msgid "Random maps with an odd width aren't supported."
 msgid "Random maps with an odd width aren’t supported."
 msgstr "Náhodné mapy s nepárnou šírkou nie sú podporované."
 
@@ -7457,15 +7324,15 @@ msgstr "Hlavné mapy pre hru viac hráčov"
 msgid "No visible sides found."
 msgstr "Nenašli sa žiadne viditeľné strany."
 
-#: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:171
+#: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:175
 msgid "Selected Game"
 msgstr "Vybraná hra"
 
-#: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:172
+#: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:176
 msgid "Lobby"
 msgstr "Čakáreň"
 
-#: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:173
+#: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:177
 msgid "Other Games"
 msgstr "Iné hry"
 
@@ -7585,10 +7452,8 @@ msgid "Units with this special attack"
 msgstr "<header>text='Jednotky s týmto špeciálnym útokom'</header>"
 
 #: src/help/help_impl.cpp:482
-#, fuzzy
-#| msgid "<header>text='Units with this ability'</header>"
 msgid "Units with this ability"
-msgstr "<header>text='Jednotky s touto schopnosťou'</header>"
+msgstr "Jednotky s touto schopnosťou"
 
 #: src/help/help_impl.cpp:518
 msgid "Factions"
@@ -7630,16 +7495,12 @@ msgid "This is a global trait."
 msgstr "Toto je posledná scéna."
 
 #: src/help/help_impl.cpp:763
-#, fuzzy
-#| msgid "<header>text='Units with this ability'</header>"
 msgid "Races with this trait"
-msgstr "<header>text='Jednotky s touto schopnosťou'</header>"
+msgstr "Národy s touto schopnosťou"
 
 #: src/help/help_impl.cpp:783
-#, fuzzy
-#| msgid "<header>text='Units with this ability'</header>"
 msgid "Units with this trait"
-msgstr "<header>text='Jednotky s touto schopnosťou'</header>"
+msgstr "Jednotky s touto schopnosťou"
 
 #: src/help/help_impl.cpp:907 src/help/help_impl.cpp:1125
 msgid "race^Miscellaneous"
@@ -7682,10 +7543,8 @@ msgid "Units of this group"
 msgstr "<header>text='Jednotky tejto rasy'</header>"
 
 #: src/help/help_impl.cpp:1185
-#, fuzzy
-#| msgid "<header>text='Units of this race'</header>"
 msgid "Units of this race"
-msgstr "<header>text='Jednotky tejto rasy'</header>"
+msgstr "Jednotky tohto národa"
 
 #: src/hotkey/command_executor.cpp:402
 msgid "Do you really want to surrender the game?"
@@ -7753,7 +7612,7 @@ msgstr "Súbor, ktorý chcete načítať, nemá žiadne informácie o záznamoch
 msgid "The file you have tried to load is not from the current session."
 msgstr "Súbor, ktorý chcete načítať, nie je z tohto sedenia."
 
-#: src/language.cpp:101
+#: src/language.cpp:115
 msgid "System default language"
 msgstr "Štandardný jazyk systému"
 
@@ -8485,7 +8344,7 @@ msgstr "Príkaz:"
 msgid "prompt^Formula:"
 msgstr "Príkaz:"
 
-#: src/mouse_events.cpp:1307
+#: src/mouse_events.cpp:1342
 msgid ""
 "You cannot move your leader away from the keep with some planned recruits or "
 "recalls left."
@@ -8493,35 +8352,35 @@ msgstr ""
 "Nemôžeš pohnúť veliteľom z pevnosti, keď sú ešte naplánované verbovania "
 "alebo privolávania."
 
-#: src/mouse_events.cpp:1410
+#: src/mouse_events.cpp:1448
 msgid "No Attacks"
 msgstr "Žiadne útoky"
 
-#: src/mouse_events.cpp:1410
+#: src/mouse_events.cpp:1448
 msgid "This unit has no usable weapons."
 msgstr "Táto jednotka nemá žiadnu vhodnú zbraň."
 
-#: src/mouse_events.cpp:1486 src/mouse_events.cpp:1502
+#: src/mouse_events.cpp:1524 src/mouse_events.cpp:1540
 msgid "Other aspects: "
 msgstr "Iné aspekty:"
 
-#: src/mouse_events.cpp:1515 src/mouse_events.cpp:1529
+#: src/mouse_events.cpp:1553 src/mouse_events.cpp:1567
 msgid "Weapon: "
 msgstr "Zbraň: "
 
-#: src/mouse_events.cpp:1516 src/mouse_events.cpp:1530
+#: src/mouse_events.cpp:1554 src/mouse_events.cpp:1568
 msgid "Type: "
 msgstr "Typ: "
 
-#: src/mouse_events.cpp:1517 src/mouse_events.cpp:1531
+#: src/mouse_events.cpp:1555 src/mouse_events.cpp:1569
 msgid "Damage: "
 msgstr "Zranenia: "
 
-#: src/mouse_events.cpp:1518 src/mouse_events.cpp:1532
+#: src/mouse_events.cpp:1556 src/mouse_events.cpp:1570
 msgid "Attacks: "
 msgstr "Útoky: "
 
-#: src/mouse_events.cpp:1519 src/mouse_events.cpp:1533
+#: src/mouse_events.cpp:1557 src/mouse_events.cpp:1571
 msgid "Chance to hit: "
 msgstr "Šanca na trafenie: "
 
@@ -8615,28 +8474,28 @@ msgstr "čas zostávajúci na kolo"
 msgid "current local time"
 msgstr "aktuálny lokálny čas"
 
-#: src/play_controller.cpp:604
+#: src/play_controller.cpp:608
 msgid "Trying to create a corrupt file, please report this bug"
 msgstr "Pokus o vytvorenie chybového súboru, nahlás prosím túto chybu"
 
-#: src/play_controller.cpp:1062
+#: src/play_controller.cpp:1066
 msgid ""
 "The game is out of sync. It might not make much sense to continue. Do you "
 "want to save your game?"
 msgstr ""
 "Hra nie je synchronizovaná. Nemá veľmi zmysel pokračovať. Chceš hru uložiť?"
 
-#: src/play_controller.cpp:1063
+#: src/play_controller.cpp:1067
 msgid "Error details:"
 msgstr "Detaily chyby:"
 
-#: src/play_controller.cpp:1243
+#: src/play_controller.cpp:1247
 msgid "Warning: broken campaign branches"
 msgstr "Varovanie: poškodené vetvy kampane"
 
 #. TRANSLATORS: This is an error that will hopefully only be seen by UMC authors and by players who have already
 #. said "okay" to a "loading saves from an old version might not work" dialog.
-#: src/play_controller.cpp:1249
+#: src/play_controller.cpp:1253
 msgid ""
 "The next scenario is missing, you will not be able to finish this campaign."
 msgid_plural ""
@@ -8646,7 +8505,7 @@ msgstr[0] "Ďalšia mapa kampane chýba, nemôžeš plne dokončiť kampaň."
 msgstr[1] "Ďalšia mapa kampane chýba, nemôžeš plne dokončiť kampaň."
 msgstr[2] "Niektoré mapy kampane chýbajú, nemôžeš plne dokončiť kampaň."
 
-#: src/play_controller.cpp:1256
+#: src/play_controller.cpp:1260
 msgid ""
 "Please report the following missing scenario to the campaign’s author:\n"
 "$unknown_list|"
@@ -8663,11 +8522,11 @@ msgstr[2] ""
 "Prosím, nahlás chýbajúce mapy autorovi kampane:\n"
 "$unknown_list|"
 
-#: src/play_controller.cpp:1260
+#: src/play_controller.cpp:1264
 msgid "Once this is fixed, you will need to restart this scenario."
 msgstr "Keď to bude opravené, môžeš reštartovať túto mapu."
 
-#: src/play_controller.cpp:1339
+#: src/play_controller.cpp:1343
 msgid "No objectives available"
 msgstr "Cieľ nie je stanovený"
 
@@ -8790,36 +8649,28 @@ msgid "Do you really want to quit?"
 msgstr "Chceš naozaj skončiť?"
 
 #: src/reports.cpp:196
-#, fuzzy
-#| msgid "Type: "
 msgid "Type:"
-msgstr "Typ: "
+msgstr "Typ:"
 
 #: src/reports.cpp:200
 msgid "Special Notes:"
 msgstr "Poznámky:"
 
 #: src/reports.cpp:224
-#, fuzzy
-#| msgid "Race: "
 msgid "Race:"
-msgstr "Rasa: "
+msgstr "Rasa:"
 
 #: src/reports.cpp:243
 msgid "Side: <b>$side_name</b> ($color_name)"
 msgstr "Strana: <b>$side_name</b> ($color_name)"
 
 #: src/reports.cpp:321
-#, fuzzy
-#| msgid "Trait: "
 msgid "Trait:"
-msgstr "Vlastnosť: "
+msgstr "Vlastnosť:"
 
 #: src/reports.cpp:344
-#, fuzzy
-#| msgid "invisible: "
 msgid "invisible:"
-msgstr "neviditeľný: "
+msgstr "neviditeľný:"
 
 #: src/reports.cpp:345
 msgid "This unit is invisible. It cannot be seen or attacked by enemy units."
@@ -8828,10 +8679,8 @@ msgstr ""
 "napadnúť."
 
 #: src/reports.cpp:348
-#, fuzzy
-#| msgid "slowed: "
 msgid "slowed:"
-msgstr "spomalený: "
+msgstr "spomalený:"
 
 #: src/reports.cpp:349
 msgid ""
@@ -8842,10 +8691,8 @@ msgstr ""
 "zranenie a cena pohybu sa zdvojnásobí."
 
 #: src/reports.cpp:352
-#, fuzzy
-#| msgid "poisoned: "
 msgid "poisoned:"
-msgstr "otrávený: "
+msgstr "otrávený:"
 
 #: src/reports.cpp:353
 msgid ""
@@ -8862,20 +8709,16 @@ msgstr ""
 "Samotný jed jednotku nezabije. Počet životov pôsobením jedu neklesne pod 1."
 
 #: src/reports.cpp:356
-#, fuzzy
-#| msgid "petrified: "
 msgid "petrified:"
-msgstr "skamenený: "
+msgstr "skamenený:"
 
 #: src/reports.cpp:357
 msgid "This unit has been petrified. It may not move or attack."
 msgstr "Táto jednotka skamenela. Nemôže sa hýbať ani bojovať."
 
 #: src/reports.cpp:360
-#, fuzzy
-#| msgid "unhealable: "
 msgid "unhealable:"
-msgstr "neliečiteľný: "
+msgstr "neliečiteľný:"
 
 #: src/reports.cpp:361
 msgid ""
@@ -8886,10 +8729,8 @@ msgstr ""
 "a nemá prospech z odpočinku."
 
 #: src/reports.cpp:364
-#, fuzzy
-#| msgid "invulnerable: "
 msgid "invulnerable:"
-msgstr "nezničiteľný: "
+msgstr "nezničiteľný:"
 
 #: src/reports.cpp:365
 msgid "This unit is invulnerable. It cannot be harmed by any attack."
@@ -8900,36 +8741,28 @@ msgid "Alignment:"
 msgstr "Príslušnosť:"
 
 #: src/reports.cpp:442
-#, fuzzy
-#| msgid "Ability: "
 msgid "Ability:"
-msgstr "Schopnosť: "
+msgstr "Schopnosť:"
 
 #: src/reports.cpp:444 src/reports.cpp:1050 src/reports.cpp:1090
 msgid " (inactive)"
 msgstr " (neaktívna)"
 
 #: src/reports.cpp:508
-#, fuzzy
-#| msgid "Resistances: "
 msgid "Resistances:"
-msgstr "Odolnosti: "
+msgstr "Odolnosti:"
 
 #: src/reports.cpp:510
 msgid "(Att / Def)"
 msgstr "(Úto / Obr)"
 
 #: src/reports.cpp:539
-#, fuzzy
-#| msgid "Experience Modifier: "
 msgid "Experience Modifier:"
-msgstr "Modifikátor skúseností: "
+msgstr "Modifikátor skúseností:"
 
 #: src/reports.cpp:589
-#, fuzzy
-#| msgid "Terrain: "
 msgid "Terrain:"
-msgstr "Terén: "
+msgstr "Terén:"
 
 #: src/reports.cpp:606
 msgid "maximum^max."
@@ -8940,17 +8773,13 @@ msgid "minimum^min."
 msgstr "min."
 
 #: src/reports.cpp:611
-#, fuzzy
-#| msgid "Defense: "
 msgid "Defense:"
-msgstr "Obrana: "
+msgstr "Obrana:"
 
 #. TRANSLATORS: single-letter abbreviation of "vision", fits in a small space on the sidebar
 #: src/reports.cpp:646
-#, fuzzy
-#| msgid "vision:"
 msgid "vision^V:"
-msgstr "viditeľnosť:"
+msgstr "Viditeľnosť:"
 
 #: src/reports.cpp:647
 msgid "vision:"
@@ -8958,10 +8787,8 @@ msgstr "viditeľnosť:"
 
 #. TRANSLATORS: single-letter abbreviation of "jamming", fits in a small space on the sidebar
 #: src/reports.cpp:669
-#, fuzzy
-#| msgid "jamming:"
 msgid "jamming^J:"
-msgstr "Rušenie:"
+msgstr "rušenie:"
 
 #: src/reports.cpp:670
 msgid "jamming:"
@@ -8972,103 +8799,70 @@ msgid "Movement Costs:"
 msgstr "Cena pohybu:"
 
 #: src/reports.cpp:836 src/reports.cpp:1182 src/reports.cpp:1194
-#, fuzzy
-#| msgid "Weapon: "
 msgid "Weapon:"
-msgstr "Zbraň: "
+msgstr "Zbraň:"
 
 #: src/reports.cpp:837 src/reports.cpp:1183
-#, fuzzy
-#| msgid "Damage: "
 msgid "Damage:"
-msgstr "Zranenia: "
+msgstr "Zranenia:"
 
 #: src/reports.cpp:841
-#, fuzzy
-#| msgid "Base damage: "
 msgid "Base damage:"
-msgstr "Základné zranenie: "
+msgstr "Základné zranenie:"
 
 #: src/reports.cpp:843 src/reports.cpp:877 src/reports.cpp:887
-#, fuzzy
-#| msgid "With specials: "
 msgid "With specials:"
-msgstr "Špeciálne zbrane: "
+msgstr "Špeciálne zbrane:"
 
 #: src/reports.cpp:846 src/reports.cpp:1407
 msgid "Time of day:"
 msgstr "Denná doba: "
 
 #: src/reports.cpp:850
-#, fuzzy
-#| msgid "Leadership: "
 msgid "Leadership:"
-msgstr "Velenie: "
+msgstr "Velenie:"
 
 #: src/reports.cpp:854
-#, fuzzy
-#| msgid "Slowed: "
 msgid "Slowed:"
-msgstr "Spomalený: "
+msgstr "Spomalený:"
 
 #: src/reports.cpp:858
-#, fuzzy
-#| msgid "Attacks: "
 msgid "Attacks:"
-msgstr "Útoky: "
+msgstr "Útoky:"
 
 #: src/reports.cpp:862
-#, fuzzy
-#| msgid "Max swarm bonus: "
 msgid "Max swarm bonus:"
-msgstr "Max. bonus húfu: "
+msgstr "Max. bonus húfu:"
 
 #: src/reports.cpp:863 src/reports.cpp:882
-#, fuzzy
-#| msgid "Swarm: "
 msgid "Swarm:"
-msgstr "Húf: "
+msgstr "Húf:"
 
 #: src/reports.cpp:864 src/reports.cpp:875 src/reports.cpp:886
-#, fuzzy
-#| msgid "Base attacks: "
 msgid "Base attacks:"
-msgstr "Základné útoky: "
+msgstr "Základné útoky:"
 
 #: src/reports.cpp:870
-#, fuzzy
-#| msgid "Specials: "
 msgid "Specials:"
-msgstr "Špeciálne: "
+msgstr "Špeciálne:"
 
 #: src/reports.cpp:880
-#, fuzzy
-#| msgid "Subject to swarm: "
 msgid "Subject to swarm:"
-msgstr "Ovplyvnené húfom: "
+msgstr "Ovplyvnené húfom:"
 
 #: src/reports.cpp:920
-#, fuzzy
-#| msgid "Weapon range: "
 msgid "Weapon range:"
-msgstr "Dosah zbrane: "
+msgstr "Dosah zbrane:"
 
 #: src/reports.cpp:921
-#, fuzzy
-#| msgid "Damage type: "
 msgid "Damage type:"
-msgstr "Typ zranenia: "
+msgstr "Typ zranenia:"
 
 #: src/reports.cpp:922
-#, fuzzy
-#| msgid "Damage versus: "
 msgid "Damage versus:"
-msgstr "Zranenie voči: "
+msgstr "Zranenie voči:"
 
 #: src/reports.cpp:1002
-#, fuzzy
-#| msgid "$number attack used"
-#| msgid_plural "$number attacks used"
 msgid "uses $num attack"
 msgid_plural "uses $num attacks"
 msgstr[0] "$number použitých útokov"
@@ -9083,10 +8877,8 @@ msgstr[1] ""
 msgstr[2] ""
 
 #: src/reports.cpp:1048 src/reports.cpp:1088
-#, fuzzy
-#| msgid "Weapon special: "
 msgid "Weapon special:"
-msgstr "Špeciálna zbraň: "
+msgstr "Špeciálna zbraň:"
 
 #: src/reports.cpp:1165
 msgid "weapon^None"
@@ -9117,28 +8909,20 @@ msgid "Time of day schedule:"
 msgstr "Denná doba: "
 
 #: src/reports.cpp:1408 src/reports.cpp:1462
-#, fuzzy
-#| msgid "Lawful units: "
 msgid "Lawful units:"
-msgstr "Jednotky poriadku: "
+msgstr "Jednotky poriadku:"
 
 #: src/reports.cpp:1410 src/reports.cpp:1464
-#, fuzzy
-#| msgid "Neutral units: "
 msgid "Neutral units:"
-msgstr "Neutrálne jednotky: "
+msgstr "Neutrálne jednotky:"
 
 #: src/reports.cpp:1411 src/reports.cpp:1465
-#, fuzzy
-#| msgid "Chaotic units: "
 msgid "Chaotic units:"
-msgstr "Jednotky chaosu: "
+msgstr "Jednotky chaosu:"
 
 #: src/reports.cpp:1413 src/reports.cpp:1467
-#, fuzzy
-#| msgid "Liminal units: "
 msgid "Liminal units:"
-msgstr "Jenotky 'na rozhraní': "
+msgstr "Jenotky 'na rozhraní':"
 
 #: src/reports.cpp:1525
 msgid "Turn Number"
@@ -9316,9 +9100,6 @@ msgid "Overwrite?"
 msgstr "Prepísať?"
 
 #: src/savegame.cpp:345
-#, fuzzy
-#| msgid ""
-#| "Save names should not end on '.gz' or '.bz2'. Please remove the extension."
 msgid ""
 "Save names should not end with ‘.gz’ or ‘.bz2’. Please remove the extension."
 msgstr ""
@@ -9507,15 +9288,15 @@ msgstr "Y"
 msgid "infix_binary^i"
 msgstr "i"
 
-#: src/synced_commands.cpp:379
+#: src/synced_commands.cpp:390
 msgid "(unknown player)"
 msgstr "(neznámy hráč)"
 
-#: src/synced_commands.cpp:384
+#: src/synced_commands.cpp:395
 msgid "The :$command debug command was used during $player’s turn"
 msgstr "Príkaz :$command debug bol použitý počas ťahu hráča $player"
 
-#: src/synced_commands.cpp:392
+#: src/synced_commands.cpp:403
 msgid ""
 "A player used a debug command during the game. If this is unexpected, it is "
 "possible the player in question is cheating."
@@ -9523,19 +9304,19 @@ msgstr ""
 "Hráč počas hry použil príkaz na ladenie. Ak je to neočakávané, je možné, že "
 "daný hráč podvádza."
 
-#: src/synced_commands.cpp:394
+#: src/synced_commands.cpp:405
 msgid "Details:"
 msgstr "Detaily:"
 
-#: src/synced_commands.cpp:397
+#: src/synced_commands.cpp:408
 msgid "Do you wish to save the game before continuing?"
 msgstr "Chceš uložiť hry pred pokračovaním?"
 
-#: src/synced_commands.cpp:399
+#: src/synced_commands.cpp:410
 msgid "Debug Command Used"
 msgstr "Použitý príkaz režimu ladenia"
 
-#: src/synced_commands.cpp:505
+#: src/synced_commands.cpp:516
 msgid "A unit was created using debug mode during $player’s turn"
 msgstr "V režime ladenia bola vytvorená jednotka počas ťahu hráča $player"
 
@@ -9555,7 +9336,7 @@ msgstr "Čakám na vstup"
 
 #. TRANSLATORS: $color_id is the internal identifier of a side color, for example, 'lightred'.
 #. Translate the quotation marks only; leave "color_id" untranslated, as it's a variable name.
-#: src/team.cpp:989
+#: src/team.cpp:994
 msgid "“$color_id”"
 msgstr "“$color_id”"
 
@@ -9587,21 +9368,21 @@ msgstr "Zástupca pre dennú dobu"
 msgid "This Time of Day is only a Stub!"
 msgstr "Táto denná doba je len zástupcom!"
 
-#: src/units/abilities.cpp:1141
+#: src/units/abilities.cpp:1227
 msgid "Owned: "
 msgstr "Vlastnené: "
 
 #. TRANSLATORS: Past-participle of "teach", used for an ability similar to leadership
-#: src/units/abilities.cpp:1143
+#: src/units/abilities.cpp:1229
 msgid "Taught: "
 msgstr "Naučené: "
 
 #. TRANSLATORS: Past-participle of "teach", used for an ability similar to leadership
-#: src/units/abilities.cpp:1145
+#: src/units/abilities.cpp:1231
 msgid "Taught: (by an enemy): "
 msgstr "Naučené: (nepriateľom):"
 
-#: src/units/abilities.cpp:1146
+#: src/units/abilities.cpp:1232
 msgid "Used by opponent: "
 msgstr "Používané súperom:"
 
@@ -9790,46 +9571,42 @@ msgid "liminal"
 msgstr "na rozhraní"
 
 #: src/units/unit.cpp:364
-#, fuzzy
-#| msgid "This unit has no usable weapons."
 msgid "This unit cannot be dismissed."
-msgstr "Táto jednotka nemá žiadnu vhodnú zbraň."
+msgstr "Táto jednotka nemôže byť prepustená"
 
-#: src/units/unit.cpp:752
-#, fuzzy
-#| msgid "This unit is invulnerable. It cannot be harmed by any attack."
+#: src/units/unit.cpp:762
 msgid "This unit is a leader and cannot be dismissed."
-msgstr "Táto jednotka je nezničiteľná. Iné jednotky ju nemôžu napadnúť."
+msgstr "Táto jednotka je líder a nemôže byť prepustená."
 
-#: src/units/unit.cpp:2008
+#: src/units/unit.cpp:2018
 msgid "$attack_list|: $effect_description"
 msgstr "$attack_list|: $effect_description"
 
-#: src/units/unit.cpp:2014
+#: src/units/unit.cpp:2024
 msgid "<span color=\"$color\">$number_or_percent</span> HP"
 msgstr "<span color=\"$color\">$number_or_percent</span> životov"
 
-#: src/units/unit.cpp:2024
+#: src/units/unit.cpp:2034
 msgid "<span color=\"$color\">$number_or_percent</span> move"
 msgid_plural "<span color=\"$color\">$number_or_percent</span> moves"
 msgstr[0] "<span color=\"$color\">$number_or_percent</span> ťahov"
 msgstr[1] "<span color=\"$color\">$number_or_percent</span> ťah"
 msgstr[2] "<span color=\"$color\">$number_or_percent</span> ťahy"
 
-#: src/units/unit.cpp:2030
+#: src/units/unit.cpp:2040
 msgid "<span color=\"$color\">$number_or_percent</span> vision"
 msgstr "<span color=\"$color\">$number_or_percent</span> videnie"
 
-#: src/units/unit.cpp:2034
+#: src/units/unit.cpp:2044
 msgid "<span color=\"$color\">$number_or_percent</span> jamming"
 msgstr "<span color=\"$color\">$number_or_percent</span> blokovanie"
 
-#: src/units/unit.cpp:2039
+#: src/units/unit.cpp:2049
 msgid "<span color=\"$color\">$number_or_percent</span> XP to advance"
 msgstr ""
 "<span color=\"$color\">$number_or_percent</span> skúseností na povýšenie"
 
-#: src/units/unit.cpp:2043
+#: src/units/unit.cpp:2053
 msgid "<span color=\"$color\">$number_or_percent</span> attack per turn"
 msgid_plural ""
 "<span color=\"$color\">$number_or_percent</span> attacks per turn"
@@ -9837,11 +9614,11 @@ msgstr[0] "<span color=\"$color\">$number_or_percent</span> útokov za kolo"
 msgstr[1] "<span color=\"$color\">$number_or_percent</span> útok za kolo"
 msgstr[2] "<span color=\"$color\">$number_or_percent</span> útoky za kolo"
 
-#: src/units/unit.cpp:2050
+#: src/units/unit.cpp:2060
 msgid "<span color=\"$color\">$number_or_percent</span> cost to recall"
 msgstr "<span color=\"$color\">$number_or_percent</span> cena za privolanie"
 
-#: src/units/unit.cpp:2556
+#: src/units/unit.cpp:2566
 msgid "$effect_description per level"
 msgstr "$effect_description za každú úroveň"
 
@@ -9865,7 +9642,7 @@ msgstr "$year Pr.P."
 msgid "$year AF"
 msgstr "$year Po P."
 
-#: src/wesnoth.cpp:811
+#: src/wesnoth.cpp:808
 msgid ""
 "Unable to create log files in directory $logdir. This is often caused by "
 "incorrect folder permissions, anti-virus software restricting folder access, "
@@ -9876,7 +9653,7 @@ msgstr ""
 "obmedzujúcim prístup k priečinkom alebo používaním OneDrive na správu "
 "priečinka Moje dokumenty."
 
-#: src/wesnoth.cpp:812
+#: src/wesnoth.cpp:809
 msgid "Logging Failure"
 msgstr "Chyba pri prihlasovaní"
 
@@ -9904,26 +9681,8 @@ msgstr "Skryť plán pre $player"
 msgid "Whiteboard Options"
 msgstr "Nastavenia tabule"
 
-#~ msgid ""
-#~ "\n"
-#~ "100% of finishing gold carried over to the next scenario."
-#~ msgstr ""
-#~ "\n"
-#~ "100% konečného zlata sa prenáša do ďalšej scény."
-
-#~ msgid ""
-#~ "\n"
-#~ "40% of finishing gold carried over to the next scenario."
-#~ msgstr ""
-#~ "\n"
-#~ "40% konečného zlata sa prenáša do ďalšej scény."
-
-#~ msgid ""
-#~ "\n"
-#~ "20% of finishing gold carried over to the next scenario."
-#~ msgstr ""
-#~ "\n"
-#~ "20% konečného zlata sa prenáša do ďalšej scény."
+#~ msgid "Customize orb colors"
+#~ msgstr "Prispôsobiť farby kruhu"
 
 #, fuzzy
 #~| msgid "Bare Branch"

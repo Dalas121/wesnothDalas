@@ -170,6 +170,9 @@ public:
 	/** remove_overlay will remove all overlays on a tile. */
 	void remove_overlay(const map_location& loc);
 
+	/** remove_overlays will remove all overlays on the map. */
+	void remove_overlays();
+
 	/** remove_single_overlay will remove a single overlay from a tile */
 	void remove_single_overlay(const map_location& loc, const std::string& toDelete);
 
@@ -418,8 +421,6 @@ public:
 	/** Draw all reports in the given region.
 	  * Returns true if something was drawn, false otherwise. */
 	bool draw_reports(const rect& region);
-
-	void draw_minimap_units();
 
 	/** Function to invalidate all tiles. */
 	void invalidate_all();

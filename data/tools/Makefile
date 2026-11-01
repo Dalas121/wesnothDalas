@@ -16,12 +16,6 @@ MAINLINE = $(DATA)/core $(DATA)/multiplayer $(DATA)/themes $(DATA)/campaigns/*
 # Macro reference destination dir.
 DEST = .
 
-sanity-check: unresolved lint
-
-lint:
-	# Check for obsolete WML, broken references, consistency.
-	./wmllint --dryrun $(MAINLINE) $(UMC)
-
 unresolved:
 	@echo "# Report on unresolved macro calls and resource references"
 	@./wmlscope --unresolved $(MAINLINE) $(UMC)
@@ -83,6 +77,7 @@ reindent:
 		--exclude=$(DATA)/test/scenarios/wml_tests/TerrainWML \
 		--exclude=$(DATA)/schema \
 		$(DATA)
+	@find $(DATA)/gui -name \*.cfg -print0 | xargs -0 ./check_mixed_indent --allow-two-spaces
 	@find $(DATA)/schema -name \*.cfg -print0 | xargs -0 ./check_mixed_indent
 
 # Extract a table of keybindings
@@ -93,15 +88,3 @@ bindings:
 rank:
 	@awk -F '=| *#' '$$1 ~ "^[[:blank:]]*rank$$" { n=split(FILENAME, f, "/"); print $$2 "\t" f[n-1] }' $(DATA)/campaigns/*/_main.cfg | sort -n
 
-# For performing test lifts of mainline
-lift:
-	./wmllint --verbose $(MAINLINE) $(UMC)
-trylift:
-	./wmllint --dryrun --verbose $(MAINLINE) $(UMC)
-diffs:
-	./wmllint --diffs $(MAINLINE) $(UMC)
-revert:
-	./wmllint --revert $(MAINLINE) $(UMC)
-clean:
-	./wmllint --clean $(MAINLINE) $(UMC)
-	rm -f macro-reference.html

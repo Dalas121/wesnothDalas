@@ -416,8 +416,8 @@ int game_lua_kernel::intf_create_animator(lua_State* L)
 			{nullptr, nullptr},
 		};
 		luaL_setfuncs(L, metafuncs, 0);
-		lua_pushstring(L, "__metatable");
-		lua_setfield(L, -2, animatorKey);
+		lua_pushstring(L, animatorKey);
+		lua_setfield(L, -2, "__metatable");
 	}
 	lua_setmetatable(L, -2);
 	return 1;
@@ -918,6 +918,8 @@ void game_lua_kernel::luaW_push_schedule(lua_State* L, int area_index)
 			{ nullptr, nullptr }
 		};
 		luaL_setfuncs(L, schedule_meta, 0);
+		lua_pushstring(L, "schedule");
+		lua_setfield(L, -2, "__metatable");
 	}
 	lua_setmetatable(L, -2);
 }
@@ -1396,6 +1398,11 @@ GAME_CONFIG_SETTER("do_healing", bool, game_lua_kernel) {
 	game_config_glk_tag k2{k.ref};
 	k2.pc().gamestate().do_healing_ = value;}
 
+GAME_CONFIG_GETTER("random_mode", std::string, game_lua_kernel) {
+	game_config_glk_tag k2{k.ref};
+	return k2.pc().get_classification().random_mode;
+}
+
 GAME_CONFIG_GETTER("theme", std::string, game_lua_kernel) {
 	game_config_glk_tag k2{k.ref};
 	return k2.gamedata().get_theme();
@@ -1437,9 +1444,10 @@ namespace {
 	}
 }
 
+static const char endLvlKey[] = "end level data";
 static int impl_end_level_data_get(lua_State* L)
 {
-	const end_level_data& data = *static_cast<end_level_data*>(lua_touserdata(L, 1));
+	const end_level_data& data = *static_cast<end_level_data*>(luaL_checkudata(L, 1, endLvlKey));
 	const char* m = luaL_checkstring(L, 2);
 
 	return_bool_attrib("linger_mode", data.transient.linger_mode);
@@ -1471,7 +1479,7 @@ namespace {
 
 int game_lua_kernel::impl_end_level_data_set(lua_State* L)
 {
-	end_level_data& data = *static_cast<end_level_data*>(lua_touserdata(L, 1));
+	end_level_data& data = *static_cast<end_level_data*>(luaL_checkudata(L, 1, endLvlKey));
 	const char* m = luaL_checkstring(L, 2);
 	end_level_committer commit(data, play_controller_);
 
@@ -1487,15 +1495,16 @@ int game_lua_kernel::impl_end_level_data_set(lua_State* L)
 
 static int impl_end_level_data_collect(lua_State* L)
 {
-	end_level_data* data = static_cast<end_level_data*>(lua_touserdata(L, 1));
+	end_level_data* data = static_cast<end_level_data*>(luaL_checkudata(L, 1, endLvlKey));
 	data->~end_level_data();
 	return 0;
 }
 
+static const char mpsettingKey[] = "mp settings";
 static int impl_mp_settings_get(lua_State* L)
 {
-	void* p = lua_touserdata(L, lua_upvalueindex(1));
-	const mp_game_settings& settings = static_cast<play_controller*>(p)->get_mp_settings();
+	play_controller* p = *static_cast<play_controller**>(luaL_checkudata(L, 1, mpsettingKey));
+	const mp_game_settings& settings = p->get_mp_settings();
 	if(lua_type(L, 2) == LUA_TNUMBER) {
 		// Simulates a WML table with one [options] child and a variable number of [addon] children
 		// TODO: Deprecate this -> mp_settings.options and mp_settings.addons
@@ -1614,8 +1623,8 @@ static int impl_mp_settings_get(lua_State* L)
 
 static int impl_mp_settings_len(lua_State* L)
 {
-	void* p = lua_touserdata(L, lua_upvalueindex(1));
-	const mp_game_settings& settings = static_cast<play_controller*>(p)->get_mp_settings();
+	play_controller* p = *static_cast<play_controller**>(luaL_checkudata(L, 1, mpsettingKey));
+	const mp_game_settings& settings = p->get_mp_settings();
 	lua_pushinteger(L, settings.addons.size() + 1);
 	return 1;
 }
@@ -1746,13 +1755,15 @@ SCENARIO_GETTER("end_level_data", lua_index_raw) {
 	}
 	auto data = k.pc().get_end_level_data();
 	new(L) end_level_data(data);
-	if(luaL_newmetatable(L, "end level data")) {
+	if(luaL_newmetatable(L, endLvlKey)) {
 		static luaL_Reg const callbacks[] {
 			{ "__index", 	    &impl_end_level_data_get},
 			{ "__newindex",     k.end_level_set()},
 			{ "__gc",           &impl_end_level_data_collect},
 			{ nullptr, nullptr }
 		};
+		lua_pushstring(L, endLvlKey);
+		lua_setfield(L, -2, "__metatable");
 		luaL_setfuncs(L, callbacks, 0);
 	}
 	lua_setmetatable(L, -2);
@@ -1782,15 +1793,14 @@ SCENARIO_GETTER("mp_settings", lua_index_raw) {
 		lua_pushnil(L);
 		return lua_index_raw(L);
 	}
-	lua_newuserdatauv(L, 0, 0);
+	using type = play_controller*;
+	new(L) type(&k.pc());
 	if(luaL_newmetatable(L, "mp settings")) {
-		lua_pushlightuserdata(L, &k.pc());
-		lua_pushcclosure(L, impl_mp_settings_get, 1);
+		lua_pushcfunction(L, impl_mp_settings_get);
 		lua_setfield(L, -2, "__index");
-		lua_pushlightuserdata(L, &k.pc());
-		lua_pushcclosure(L, impl_mp_settings_len, 1);
+		lua_pushcfunction(L, impl_mp_settings_len);
 		lua_setfield(L, -2, "__len");
-		lua_pushstring(L, "mp settings");
+		lua_pushstring(L, mpsettingKey);
 		lua_setfield(L, -2, "__metatable");
 	}
 	lua_setmetatable(L, -2);
@@ -2560,6 +2570,7 @@ int game_lua_kernel::intf_move_floating_label(lua_State* L)
  * - duration: display duration (integer or the string "unlimited")
  * - fade_time: duration of fade-out
  * - location: screen offset
+ * - border: text padding
  * - valign: vertical alignment and anchoring - "top", "center", or "bottom"
  * - halign: horizontal alignment and anchoring - "left", "center", or "right"
  * Returns: label handle
@@ -2589,6 +2600,7 @@ int game_lua_kernel::intf_set_floating_label(lua_State* L, bool spawn)
 	// everything needed to read in a pair of coordinates.
 	// Depending on the chosen alignment, it may be relative to centre, an edge centre, or a corner.
 	map_location loc{0, 0, wml_loc()};
+	int border = 0;
 	if(lua_istable(L, idx+1)) {
 		if(luaW_tableget(L, idx+1, "size")) {
 			size = luaL_checkinteger(L, -1);
@@ -2673,6 +2685,9 @@ int game_lua_kernel::intf_set_floating_label(lua_State* L, bool spawn)
 		if(luaW_tableget(L, idx+1, "location")) {
 			loc = luaW_checklocation(L, -1);
 		}
+		if(luaW_tableget(L, idx+1, "border")) {
+			border = std::max<int>(0, lua_tointeger(L, -1));
+		}
 		if(luaW_tableget(L, idx+1, "halign")) {
 			static const char* options[] = {"left", "center", "right"};
 			alignment = font::ALIGN(luaL_checkoption(L, -1, nullptr, options));
@@ -2725,7 +2740,8 @@ int game_lua_kernel::intf_set_floating_label(lua_State* L, bool spawn)
 	flabel.set_color(color);
 	flabel.set_bg_color(bgcolor);
 	flabel.set_alignment(alignment);
-	flabel.set_position(x, y);
+	flabel.set_position(x + border, y + border);
+	flabel.set_border_size(border);
 	flabel.set_lifetime(milliseconds{lifetime}, milliseconds{fadeout});
 	flabel.set_clip_rect(rect);
 
@@ -4625,12 +4641,16 @@ static int intf_modify_ai_old(lua_State *L)
 	return 0;
 }
 
-static int cfun_exec_candidate_action(lua_State *L)
+static int impl_exec_candidate_action(lua_State *L)
 {
 	bool exec = luaW_toboolean(L, -1);
 	lua_pop(L, 1);
 
 	lua_getfield(L, -1, "ca_ptr");
+	if(!lua_islightuserdata(L, -1)) {
+		lua_pushstring(L, "Could not execute candidate action - invalid pointer");
+		return lua_error(L);
+	}
 
 	ai::candidate_action *ca = static_cast<ai::candidate_action*>(lua_touserdata(L, -1));
 	lua_pop(L, 2);
@@ -4642,9 +4662,13 @@ static int cfun_exec_candidate_action(lua_State *L)
 	return 1;
 }
 
-static int cfun_exec_stage(lua_State *L)
+static int impl_exec_stage(lua_State *L)
 {
 	lua_getfield(L, -1, "stg_ptr");
+	if(!lua_islightuserdata(L, -1)) {
+		lua_pushstring(L, "Could not execute stage - invalid pointer");
+		return lua_error(L);
+	}
 	ai::stage *stg = static_cast<ai::stage*>(lua_touserdata(L, -1));
 	lua_pop(L, 2);
 	stg->play_stage();
@@ -4673,7 +4697,7 @@ static void push_component(lua_State *L, ai::component* c, const std::string &ct
 		lua_rawset(L, -3);
 
 		lua_pushstring(L, "exec");
-		lua_pushcclosure(L, &cfun_exec_candidate_action, 0);
+		lua_pushcfunction(L, &impl_exec_candidate_action);
 		lua_rawset(L, -3);
 	}
 
@@ -4683,7 +4707,7 @@ static void push_component(lua_State *L, ai::component* c, const std::string &ct
 		lua_rawset(L, -3);
 
 		lua_pushstring(L, "exec");
-		lua_pushcclosure(L, &cfun_exec_stage, 0);
+		lua_pushcfunction(L, &impl_exec_stage);
 		lua_rawset(L, -3);
 	}
 
@@ -5955,6 +5979,10 @@ void game_lua_kernel::push_builtin_effect()
  */
 int game_lua_kernel::cfun_wml_action(lua_State *L)
 {
+	if(!lua_islightuserdata(L, lua_upvalueindex(1))) {
+		lua_pushstring(L, "Could not execute wml action: upvalue was tampered with");
+		return lua_error(L);
+	}
 	game_events::wml_action::handler h = reinterpret_cast<game_events::wml_action::handler>
 		(lua_touserdata(L, lua_upvalueindex(1)));
 
@@ -5987,6 +6015,10 @@ using wml_conditional_handler = bool(*)(const vconfig&);
  */
 static int cfun_wml_condition(lua_State *L)
 {
+	if(!lua_islightuserdata(L, lua_upvalueindex(1))) {
+		lua_pushstring(L, "Could not evaluate wml condition: upvalue was tampered with");
+		return lua_error(L);
+	}
 	wml_conditional_handler h = reinterpret_cast<wml_conditional_handler>
 		(lua_touserdata(L, lua_upvalueindex(1)));
 

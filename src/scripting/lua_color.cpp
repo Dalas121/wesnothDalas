@@ -25,18 +25,9 @@ static lg::log_domain log_scripting_lua("scripting/lua");
 
 static const char colorKey[] = "color range";
 
-static bool luaW_iscolor(lua_State* L, int index)
-{
-	return luaL_testudata(L, index, colorKey) != nullptr;
-}
-
 static color_range& LuaW_checkcolor(lua_State *L, int index)
 {
-	if(!luaW_iscolor(L, index)) {
-		luaW_type_error(L, index, "color");
-		throw "luaW_type_error returned";
-	}
-	return *static_cast<color_range*>(lua_touserdata(L, index));
+	return *static_cast<color_range*>(luaL_checkudata(L, index, colorKey));
 }
 
 
@@ -59,7 +50,7 @@ static int luaW_pushsinglecolor(lua_State *L, const color_t& color)
 
 static int impl_color_collect(lua_State *L)
 {
-	color_range *c = static_cast<color_range *>(lua_touserdata(L, 1));
+	color_range *c = static_cast<color_range *>(luaL_checkudata(L, 1, colorKey));
 	c->color_range::~color_range();
 	return 0;
 }
@@ -117,9 +108,12 @@ static int impl_color_get(lua_State *L)
 	if(strcmp(m, "minimap") == 0) {
 		return luaW_pushsinglecolor(L, c.rep());
 	}
+	if(strcmp(m, "font_color") == 0) {
+		return luaW_pushsinglecolor(L, c.font_color());
+	}
 	// returns a string which can be used in Pango's foreground= attribute
 	if(strcmp(m, "pango_color") == 0) {
-		lua_push(L, c.mid().to_hex_string());
+		lua_push(L, c.font_color().to_hex_string());
 		return 1;
 	}
 	return 0;
@@ -127,7 +121,7 @@ static int impl_color_get(lua_State *L)
 
 static int impl_color_dir(lua_State* L)
 {
-	static const std::vector<std::string> keys{"min", "max", "mid", "minimap", "pango_color"};
+	static const std::vector<std::string> keys{"min", "max", "mid", "minimap", "font_color", "pango_color"};
 	lua_push(L, keys);
 	return 1;
 }

@@ -107,7 +107,10 @@ void controller_base::handle_event(const SDL_Event& event)
 		break;
 
 	case SDL_EVENT_TEXT_EDITING:
-		if(have_keyboard_focus()) {
+		// Ignore empty editing events: on Wayland, restarting text input makes the
+		// compositor send an empty preedit, which would otherwise trigger an endless
+		// stop/start loop until the connection breaks.
+		if(have_keyboard_focus() && event.edit.text && *event.edit.text) {
 			SDL_Event evt = event;
 			evt.type = SDL_EVENT_TEXT_INPUT;
 			hotkey::key_event(evt, get_hotkey_command_executor());
@@ -210,8 +213,7 @@ void controller_base::handle_event(const SDL_Event& event)
 
 	case SDL_EVENT_MOUSE_WHEEL:
 		// Right and down are positive in Wesnoth's map.
-		// Right and up are positive in SDL_MouseWheelEvent on all platforms:
-		//     https://wiki.libsdl.org/SDL2/SDL_MouseWheelEvent
+		// Right and up are positive in SDL_MouseWheelEvent on all platforms
 #if defined(_WIN32) || defined(__APPLE__)
 		mh_base.mouse_wheel(event.wheel.x, -event.wheel.y, is_browsing());
 #else

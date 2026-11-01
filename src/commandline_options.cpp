@@ -75,7 +75,7 @@ commandline_options::commandline_options(const std::vector<std::string>& args)
 	, campaign_skip_story(false)
 	, clock(false)
 	, core_id()
-	, data_path(false)
+	, print_data_path(false)
 	, data_dir()
 	, debug(false)
 	, debug_lua(false)
@@ -114,6 +114,7 @@ commandline_options::commandline_options(const std::vector<std::string>& args)
 	, nogui(false)
 	, nobanner(false)
 	, nomusic(false)
+	, no_simd(false)
 	, nosound(false)
 	, new_widgets(false)
 	, preprocess(false)
@@ -141,9 +142,9 @@ commandline_options::commandline_options(const std::vector<std::string>& args)
 	, headless_unit_test(false)
 	, noreplaycheck(false)
 	, mptest(false)
-	, usercache_path(false)
+	, print_usercache_path(false)
 	, usercache_dir()
-	, userdata_path(false)
+	, print_userdata_path(false)
 	, userdata_dir()
 	, validcache(false)
 	, validate_core(false)
@@ -204,6 +205,7 @@ commandline_options::commandline_options(const std::vector<std::string>& args)
 		("noaddons", "disables the loading of all add-ons.")
 		("nocache", "disables caching of game data.")
 		("nomusic", "runs the game without music.")
+		("no-simd", "disables SIMD hardware acceleration.")
 		("nosound", "runs the game without sounds and music.")
 		("password", po::value<std::string>(), "uses <password> when connecting to a server, ignoring other preferences.")
 		("plugin", po::value<std::string>(), "load a script which defines a wesnoth plugin. Lua file should return a function which will be run as a coroutine and periodically woken up with updates.")
@@ -350,7 +352,7 @@ commandline_options::commandline_options(const std::vector<std::string>& args)
 	if(vm.count("data-dir"))
 		data_dir = vm["data-dir"].as<std::string>();
 	if(vm.count("data-path"))
-		data_path = true;
+		print_data_path = true;
 	if(vm.count("debug"))
 		debug = true;
 	if(vm.count("debug-lua"))
@@ -413,6 +415,8 @@ commandline_options::commandline_options(const std::vector<std::string>& args)
 		nomusic = true;
 	if(vm.count("noreplaycheck"))
 		noreplaycheck = true;
+	if(vm.count("no-simd"))
+		no_simd = true;
 	if(vm.count("nosound"))
 		nosound = true;
 	if(vm.count("nogui"))
@@ -504,11 +508,11 @@ commandline_options::commandline_options(const std::vector<std::string>& args)
 	if(vm.count("usercache-dir"))
 		usercache_dir = vm["usercache-dir"].as<std::string>();
 	if(vm.count("usercache-path"))
-		usercache_path = true;
+		print_usercache_path = true;
 	if(vm.count("userdata-dir"))
 		userdata_dir = vm["userdata-dir"].as<std::string>();
 	if(vm.count("userdata-path"))
-		userdata_path = true;
+		print_userdata_path = true;
 	if(vm.count("validcache"))
 		validcache = true;
 	// If you add a new validate-* option, remember the any_validation_option() function

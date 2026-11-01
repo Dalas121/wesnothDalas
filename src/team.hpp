@@ -147,6 +147,9 @@ public:
 	team();
 	virtual ~team();
 
+	team(team&&) noexcept = default;
+	team& operator=(team&&) noexcept = default;
+
 	/**
 	 * Stores the attributes recognized by [side]. These should be stripped
 	 * from a side's config before using it to create the side's leader.
@@ -395,6 +398,7 @@ public:
 
 	static color_t get_side_color(int side);
 	static color_t get_minimap_color(int side);
+	static color_t get_font_color(int side);
 
 	static std::string get_side_color_id(unsigned side);
 	static t_string get_side_color_name_for_UI(unsigned side);

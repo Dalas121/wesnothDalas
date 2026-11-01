@@ -111,6 +111,7 @@ private:
 					info.display_name = queue["display_name"].str();
 					info.players_required = queue["players_required"].to_int();
 					info.current_players = utils::split_set(queue["current_players"].str());
+					info.required_addons = utils::split_set(queue["addons"].str());
 					queues.emplace_back(info);
 				}
 			}
@@ -582,6 +583,10 @@ bool mp_manager::enter_lobby_mode()
 		} catch(const config::error& error) {
 			if(!error.message.empty()) {
 				gui2::show_error_message(error.message);
+			}
+
+			if(dlg_retval == gui2::dialogs::mp_lobby::CREATE_PRESET) {
+				connection->send_data(config{"leave_server_queue", config{"queue_id", queue_id}});
 			}
 
 			// Update lobby content

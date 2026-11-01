@@ -20,6 +20,7 @@
 
 #include "game_display.hpp"
 
+#include <cstdint>
 #include <utility>
 
 
@@ -28,6 +29,7 @@
 #include "fake_unit_manager.hpp"
 #include "floating_label.hpp"
 #include "game_board.hpp"
+#include "picture.hpp"
 #include "preferences/preferences.hpp"
 #include "log.hpp"
 #include "map/map.hpp"
@@ -39,6 +41,7 @@
 #include "synced_context.hpp"
 #include "units/unit.hpp"
 #include "units/drawer.hpp"
+#include "units/types.hpp"
 #include "utils/general.hpp"
 #include "whiteboard/manager.hpp"
 #include "overlay.hpp"
@@ -69,7 +72,62 @@ game_display::game_display(game_board& board,
 	, chat_man_(new display_chat_manager(*this))
 	, mode_(RUNNING)
 	, needs_rebuild_(false)
+	, flash_fade_route_()
+	, flash_fade_route_start_time_()
+	, flash_fade_route_active_(false)
 {
+}
+
+void game_display::update_flash_fade_route()
+{
+	if(!flash_fade_route_active_) {
+		return;
+	}
+
+	auto now = std::chrono::steady_clock::now();
+	auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - flash_fade_route_start_time_);
+
+	// Clean expired footpath
+	if(elapsed >= FLASH_FADE_ROUTE_TOTAL_DURATION) {
+		for(const auto& step : flash_fade_route_.steps) {
+			invalidate(step);
+		}
+
+		flash_fade_route_active_ = false;
+		flash_fade_route_.steps.clear();
+		flash_fade_route_.marks.clear();
+		return;
+	}
+
+	// Trigger redraw of active path
+	for(const auto& step : flash_fade_route_.steps) {
+		invalidate(step);
+	}
+}
+
+void game_display::flash_fade_route(const pathfind::marked_route& remaining_route)
+{
+	// Clear existing flash fading footprints from the screen
+	if(flash_fade_route_active_) {
+		for(const auto& step : flash_fade_route_.steps) {
+			invalidate(step);
+		}
+	}
+
+	// Reset the fading route data
+	flash_fade_route_.steps = remaining_route.steps;
+	flash_fade_route_.marks = remaining_route.marks;
+
+	// Start the animation cycle
+	if(!flash_fade_route_.steps.empty()) {
+		flash_fade_route_active_ = true;
+		flash_fade_route_start_time_ = std::chrono::steady_clock::now();
+
+		// Trigger a redraw for all hexes in the new route
+		for(const auto& step : flash_fade_route_.steps) {
+			invalidate(step);
+		}
+	}
 }
 
 game_display::~game_display()
@@ -168,6 +226,7 @@ void game_display::update()
 
 	if (std::shared_ptr<wb::manager> w = wb_.lock()) {
 		w->pre_draw();
+		update_flash_fade_route();
 	}
 	process_reachmap_changes();
 	/**
@@ -244,17 +303,32 @@ std::vector<texture> footsteps_images(const map_location& loc, const pathfind::m
 		return res; // not on the route
 	}
 
-	// Check which footsteps images of game_config we will use
+	// Determine which set of footprint images the unit uses
+	std::string footprints;
 	int move_cost = 1;
 	const unit_map::const_iterator u = dc->units().find(route.steps.front());
 	if(u != dc->units().end()) {
 		move_cost = u->movement_cost(dc->map().get_terrain(loc));
+		footprints = u->type().footprints();
+
+		// Fall back to the unit's race, which a [unit] may have overridden
+		if(footprints.empty()) {
+			footprints = u->race()->footprints();
+		}
 	}
-	int image_number = std::min<int>(move_cost, game_config::foot_speed_prefix.size());
-	if (image_number < 1) {
-		return res; // Invalid movement cost or no images
+
+	if(footprints.empty()) {
+		footprints = "default";
 	}
-	const std::string foot_speed_prefix = game_config::foot_speed_prefix[image_number-1];
+	const std::string foot_speed_prefix = "footsteps/" + footprints + "/";
+
+	// Custom colour per movement-cost step: no tint, then brown-orange, then strong red at 3+.
+	std::string color_mod;
+	if(move_cost == 2) {
+		color_mod = "~CS(-10,-70,-200)";
+	} else if(move_cost >= 3) {
+		color_mod = "~CS(0,-255,-255)";
+	}
 
 	texture teleport;
 
@@ -284,9 +358,9 @@ std::vector<texture> footsteps_images(const map_location& loc, const pathfind::m
 			rotate = "~FL(horiz)~FL(vert)";
 		}
 
-		const std::string image = foot_speed_prefix
+		const std::string image = foot_speed_prefix + "footprint"
 			+ sense + "-" + i->write_direction(dir)
-			+ ".png" + rotate;
+			+ ".png" + rotate + color_mod;
 
 		res.push_back(image::get_texture(image, image::HEXED));
 	}
@@ -296,6 +370,51 @@ std::vector<texture> footsteps_images(const map_location& loc, const pathfind::m
 
 	return res;
 }
+
+struct flash_fade_step_renderer
+{
+	std::vector<texture> images;
+	std::chrono::steady_clock::time_point start_time;
+
+	void operator()(const rect& dest) const {
+		auto now = std::chrono::steady_clock::now();
+		auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - start_time);
+
+		if(elapsed < game_display::FLASH_FADE_ROUTE_FLASH_DURATION) {
+			// PHASE 1: White Flash (Additive)
+			float intensity = 1.0f - (static_cast<float>(elapsed.count()) /
+				game_display::FLASH_FADE_ROUTE_FLASH_DURATION.count());
+			uint8_t flash_val = static_cast<uint8_t>(intensity * 255);
+
+			for(texture t : images) {
+				draw::blit(t, dest); // Base
+
+				t.set_blend_mode(SDL_BLENDMODE_ADD);
+				t.set_alpha_mod(flash_val);
+				draw::blit(t, dest); // Additive pass
+				draw::blit(t, dest); // Additive pass
+
+				t.set_blend_mode(SDL_BLENDMODE_BLEND);
+				t.set_alpha_mod(255);
+			}
+		}
+		else if(elapsed < game_display::FLASH_FADE_ROUTE_TOTAL_DURATION) {
+			// PHASE 2: Alpha Fade
+			auto fade_elapsed = elapsed - game_display::FLASH_FADE_ROUTE_FLASH_DURATION;
+			float progress = static_cast<float>(fade_elapsed.count()) /
+				game_display::FLASH_FADE_ROUTE_FADE_DURATION.count();
+
+			uint8_t alpha = static_cast<uint8_t>((1.0f - progress) * 255);
+
+			for(texture t : images) {
+				t.set_alpha_mod(alpha);
+				draw::blit(t, dest);
+				t.set_alpha_mod(255);
+			}
+		}
+	}
+};
+
 } //anonymous namespace
 
 void game_display::draw_hex(const map_location& loc)
@@ -342,14 +461,33 @@ void game_display::draw_hex(const map_location& loc)
 	}
 
 	// Draw reach_map information.
-	if(!is_shrouded && !reach_map_.empty() && reach_map_.find(loc) != reach_map_.end()) {
+	bool reachable = reach_map_.find(loc) != reach_map_.end();
+	// Darken unreachable
+	// We remove the reachability mask of the unit that we want to attack.
+	if(!is_shrouded && !reach_map_.empty() && !reachable && loc != attack_indicator_dst_) {
+		std::string darken_suffix = prefs::get().reach_map_darken_tex() ? "" : "~WIPE_ALPHA()";
+
+		texture darken_tex = image::get_texture(game_config::images::unreachable + darken_suffix, image::scale_quality::linear, image::HEXED);
+		uint8_t darken_opacity = prefs::get().reach_map_darken_opacity() * (255.0/100.0);
+		darken_tex.set_alpha_mod(darken_opacity);
+
+		drawing_buffer_add(drawing_layer::reachmap_darken, loc,
+			[darken_tex](const rect& dest) {
+				draw::blit(darken_tex, dest);
+			});
+	}
+	// Highlight reachable
+	if(!is_shrouded && !reach_map_.empty() && reachable) {
 		// draw the reachmap tint below units and high terrain graphics
 		std::string color = prefs::get().reach_map_color();
-		std::string tint_opacity = std::to_string(prefs::get().reach_map_tint_opacity());
+		texture tint_tex = image::get_texture(game_config::reach_map_prefix + ".png~RC(magenta>"+color+")", image::HEXED);
+		uint8_t tint_opacity = prefs::get().reach_map_tint_opacity() * (255.0/100.0);
+		tint_tex.set_alpha_mod(tint_opacity);
 
-		drawing_buffer_add(drawing_layer::reachmap_highlight, loc, [tex = image::get_texture(game_config::reach_map_prefix + ".png~RC(magenta>"+color+")~O("+tint_opacity+"%)", image::HEXED)](const rect& dest) {
-			draw::blit(tex, dest);
+		drawing_buffer_add(drawing_layer::reachmap_highlight, loc, [tint_tex](const rect& dest) {
+			draw::blit(tint_tex, dest);
 		});
+
 		// We remove the reachmap border mask of the hovered hex to avoid weird interactions with other visual objects.
 		if(loc != mouseoverHex_) {
 			// draw the highlight borders on top of units and terrain
@@ -361,10 +499,13 @@ void game_display::draw_hex(const map_location& loc)
 		}
 	}
 
+	// Check if Whiteboard is active to avoid overlapping path visualizations.
 	if(std::shared_ptr<wb::manager> w = wb_.lock()) {
 		w->draw_hex(loc);
 
 		if(!(w->is_active() && w->has_temp_move())) {
+
+			// Draw standard footsteps for the current turn's route.
 			std::vector<texture> footstepImages = footsteps_images(loc, route_, dc_);
 			if(!footstepImages.empty()) {
 				drawing_buffer_add(drawing_layer::footsteps, loc, [images = std::move(footstepImages)](const rect& dest) {
@@ -372,6 +513,15 @@ void game_display::draw_hex(const map_location& loc)
 						draw::blit(t, dest);
 					}
 				});
+			}
+
+			// Draw the flash fade effect for queued (future turn) moves.
+			if(flash_fade_route_active_ && !flash_fade_route_.steps.empty()) {
+				std::vector<texture> images = footsteps_images(loc, flash_fade_route_, dc_);
+				if(!images.empty()) {
+					drawing_buffer_add(drawing_layer::footsteps, loc,
+						flash_fade_step_renderer{ std::move(images), flash_fade_route_start_time_ });
+				}
 			}
 		}
 	}
@@ -722,12 +872,11 @@ std::vector<texture> game_display::get_reachmap_images(const map_location& loc) 
 
 			std::string color = prefs::get().reach_map_color();
 			std::string enemy_color = prefs::get().reach_map_enemy_color();
-			std::string border_opacity = std::to_string(prefs::get().reach_map_border_opacity());
 
 			if(tiles[i] == ENEMY) {
-				suffix = ".png~RC(magenta>"+enemy_color+")~O("+border_opacity+"%)";
+				suffix = ".png~RC(magenta>"+enemy_color+")";
 			} else {
-				suffix = ".png~RC(magenta>"+color+")~O("+border_opacity+"%)";
+				suffix = ".png~RC(magenta>"+color+")";
 			}
 
 			for(int cap2 = 0; tiles[i] != REACH && cap2 != 6; i = (i + 1) % 6, ++cap2) {
@@ -755,10 +904,12 @@ std::vector<texture> game_display::get_reachmap_images(const map_location& loc) 
 
 	// now get the textures
 	std::vector<texture> res;
+	uint8_t border_opacity = prefs::get().reach_map_border_opacity() * (255.0/100.0);
 
 	for(const std::string& name : names) {
 		DBG_DP << "Pushing: " << name;
 		if(texture tex = image::get_texture(name, image::HEXED)) {
+			tex.set_alpha_mod(border_opacity);
 			res.push_back(std::move(tex));
 		}
 	}

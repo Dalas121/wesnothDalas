@@ -54,7 +54,17 @@ namespace dialogs
 class preferences_dialog : public modal_dialog
 {
 public:
-	preferences_dialog(const pref_constants::PREFERENCE_VIEW initial_view = pref_constants::VIEW_DEFAULT);
+	/**
+	 * @param initial_view               Which page/tab to show initially.
+	 * @param allow_gui2_theme_change    Whether the GUI2 theme selector should be interactive.
+	 *                                   Switching the GUI2 theme only takes effect for windows
+	 *                                   built after the switch, so it's only useful (and only
+	 *                                   enabled) when Preferences is opened from the title screen,
+	 *                                   which rebuilds itself afterwards. Elsewhere the control is
+	 *                                   shown but greyed out.
+	 */
+	preferences_dialog(const pref_constants::PREFERENCE_VIEW initial_view = pref_constants::VIEW_DEFAULT,
+		bool allow_gui2_theme_change = false);
 
 	/** The display function -- see @ref modal_dialog for more information. */
 	DEFINE_SIMPLE_DISPLAY_WRAPPER(preferences_dialog)
@@ -72,8 +82,13 @@ private:
 	void set_gui2_theme_list(menu_button& theme_list);
 	listbox& setup_hotkey_list();
 
-	template<bool(*toggle_getter)(), bool(*toggle_setter)(bool), int(*vol_getter)(), void(*vol_setter)(int)>
-	void initialize_sound_option_group(const std::string& id_suffix);
+	template<typename ToggleGet, typename ToggleSet, typename VolumeGet, typename VolumeSet>
+	void initialize_sound_option_group(
+		const std::string& id_suffix,
+		ToggleGet&& toggle_getter,
+		ToggleSet&& toggle_setter,
+		VolumeGet&& volume_getter,
+		VolumeSet&& volume_setter);
 
 	void apply_pixel_scale();
 
@@ -86,13 +101,15 @@ private:
 	void update_friends_list_controls(listbox& list);
 
 	/** Callback for selection changes */
-	void on_advanced_prefs_list_select(listbox& tree);
+	void on_advanced_prefs_list_select(listbox& tree, const bool initial = false);
 
 	/** Special callback functions */
 	void handle_res_select();
 	void handle_theme_select();
 	void handle_gui2_theme_select();
 	void fullscreen_toggle_callback();
+	void fullscreen_entered_callback();
+	void fullscreen_left_callback();
 	void add_hotkey_callback(listbox& hotkeys);
 	void remove_hotkey_callback(listbox& hotkeys);
 	void default_hotkey_callback();
@@ -107,6 +124,7 @@ private:
 	int last_selected_item_;
 	unsigned current_gui_theme_;
 	bool is_reload_needed_;
+	bool allow_gui2_theme_change_;
 
 	std::vector<double> accl_speeds_;
 

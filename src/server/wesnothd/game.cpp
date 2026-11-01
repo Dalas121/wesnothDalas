@@ -1164,7 +1164,7 @@ void game::handle_add_side_wml()
 
 void game::handle_controller_choice(const simple_wml::node& req)
 {
-	const std::size_t side_index = req["side"].to_int() - 1;
+	const std::size_t side_index = static_cast<std::size_t>(req["side"].to_int()) - 1;
 	auto new_controller = side_controller::get_enum(req["new_controller"].to_string());
 	auto old_controller = side_controller::get_enum(req["old_controller"].to_string());
 
@@ -1180,15 +1180,15 @@ void game::handle_controller_choice(const simple_wml::node& req)
 		return;
 	}
 
-	if(old_controller != this->side_controllers_[side_index]) {
-		send_and_record_server_message(
-			"Found unexpected old_controller= '" + side_controller::get_string(*old_controller) + "' in [request_choice] [change_controller]");
-	}
-
-	if(side_index >= sides_.size()) {
+	if(side_index >= sides_.size() || side_index >= side_controllers_.size()) {
 		send_and_record_server_message(
 			"Could not handle [request_choice] [change_controller] with invalid side '" + req["side"].to_string() + "'");
 		return;
+	}
+
+	if(old_controller != this->side_controllers_[side_index]) {
+		send_and_record_server_message(
+			"Found unexpected old_controller= '" + side_controller::get_string(*old_controller) + "' in [request_choice] [change_controller]");
 	}
 
 	const bool was_null = this->side_controllers_[side_index] == side_controller::type::none;
@@ -1929,10 +1929,14 @@ std::string game::debug_sides_info() const
 	result << "\t\t level, server\n";
 
 	for(const simple_wml::node* s : sides) {
+		const int side_number = (*s)["side"].to_int();
+		const std::size_t side_index = side_number > 0 ? static_cast<std::size_t>(side_number - 1) : side_controllers_.size();
+		const std::string side_controller = side_index < side_controllers_.size() ? side_controller::get_string(side_controllers_[side_index]) : "<invalid side>";
+
 		result
-			<< "side " << (*s)["side"].to_int()
+			<< "side " << side_number
 			<< " :\t" << (*s)["controller"].to_string()
-			<< "\t, " << side_controller::get_string(side_controllers_[(*s)["side"].to_int() - 1])
+			<< "\t, " << side_controller
 			<< "\t( " << (*s)["current_player"].to_string() << " )\n";
 	}
 

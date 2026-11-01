@@ -108,7 +108,7 @@ void mouse_handler::touch_motion(int x, int y, const bool browse, bool update, m
 	// Copy-pasted from everywhere. TODO: generalize the two.
 	float fx;
 	float fy;
-	sdl::get_mouse_state(&fx,&fy);
+	sdl::get_mouse_state(&fx, &fy);
 	x = fx;
 	y = fy;
 
@@ -400,9 +400,10 @@ void mouse_handler::mouse_motion(int x, int y, const bool browse, bool update, m
 	// and isolated mouse motion event when using drag&drop
 	float fx;
 	float fy;
-	sdl::get_mouse_state(&fx, &fy); // <-- modify x and y
-	fx = x;
-	fy = y;
+	sdl::get_mouse_state(&fx, &fy);
+	// modify x and y
+	x = fx;
+	y = fy;
 
 	if(mouse_handler_base::mouse_motion_default(x, y, update)) {
 		return;
@@ -1138,7 +1139,10 @@ void mouse_handler::touch_action(const map_location touched_hex, bool browse)
 	if(touched_hex.valid() && unit.valid() && !unit->get_hidden()) {
 		if(touched_hex == selected_hex_) {
 			deselect_hex();
+			gui().unhighlight_reach();
+			disable_units_highlight();
 		} else {
+			enable_units_highlight();
 			select_or_action(browse);
 		}
 	}
@@ -1252,8 +1256,8 @@ void mouse_handler::deselect_hex()
  */
 bool mouse_handler::move_unit_along_current_route()
 {
-	// Copy the current route to ensure it remains valid throughout the animation.
-	const std::vector<map_location> steps = current_route_.steps;
+	// Capture the full intended route before movement modifies or clears it.
+	const pathfind::marked_route intended_route = current_route_;
 
 	// do not show footsteps during movement
 	gui().set_route(nullptr);
@@ -1264,14 +1268,35 @@ bool mouse_handler::move_unit_along_current_route()
 	gui().select_hex(map_location());
 
 	bool interrupted = false;
-	if(steps.size() > 1) {
-		std::size_t num_moves = move_unit_along_route(steps, interrupted);
+	bool halted_by_discovery = false;
+	std::size_t num_moves = 0;
 
-		interrupted = interrupted || num_moves + 1 < steps.size();
-		next_unit_ = steps[num_moves];
+	if(intended_route.steps.size() > 1) {
+		num_moves = move_unit_along_route(intended_route.steps, interrupted);
+
+		// Sightings, ambushes, blockers and WML aborts store no goto, so the remainder
+		// is not resumed automatically; the player must use Continue Move.
+		halted_by_discovery = interrupted;
+
+		interrupted = interrupted || num_moves + 1 < intended_route.steps.size();
+		next_unit_ = intended_route.steps[num_moves];
 	}
 
-	// invalid after the move
+	// TRIGGER FLASH-FADE:
+	// If the unit ran out of movement, visualize the remainder it will travel later.
+	if(!halted_by_discovery && intended_route.steps.size() > num_moves + 1) {
+		pathfind::marked_route remaining_route;
+		for(auto i = intended_route.steps.begin() + num_moves; i != intended_route.steps.end(); ++i) {
+			remaining_route.steps.push_back(*i);
+			if(auto it = intended_route.marks.find(*i); it != intended_route.marks.end()) {
+				remaining_route.marks[*i] = it->second;
+			}
+		}
+
+		gui().flash_fade_route(remaining_route);
+	}
+
+	// Cleanup state
 	current_paths_ = pathfind::paths();
 	current_route_.steps.clear();
 
@@ -1374,7 +1399,10 @@ int mouse_handler::fill_weapon_choices(
 	for(unsigned int i = 0; i < attacker->attacks().size(); i++) {
 		// skip weapons with attack_weight=0
 		if(attacker->attacks()[i].attack_weight() > 0) {
-			battle_context bc(pc_.get_units(), attacker->get_location(), defender->get_location(), i);
+			// If Reduced RNG is enabled, we use it for the "Attack Enemy" and "Damage Calculations" windows.
+			// (We don't use it when the AI is evaluating attacks, because the Reduced RNG monte carlo simulation is slow)
+			battle_context bc(pc_.get_units(), attacker->get_location(), defender->get_location(), i, -1, 0.0, nullptr,
+					unit_const_ptr(), unit_const_ptr(), biased_rng::enabled());
 
 			// Don't include if the attacker's weapon has at least one active "disable" special.
 			if(bc.get_attacker_stats().disable) {
@@ -1719,6 +1747,7 @@ void mouse_handler::cycle_units(const bool browse, const bool reverse)
 
 	if(unit_in_cycle(it)) {
 		gui().scroll_to_tile(it->get_location(), game_display::WARP);
+		gui().highlight_hex(it->get_location());
 
 		select_hex(it->get_location(), browse);
 		//		mouse_update(browse);

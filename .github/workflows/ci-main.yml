@@ -28,6 +28,13 @@ jobs:
         run: |
           ./utils/CI/check_utf8.sh
           ./utils/CI/utf8_bom_dog.sh
+      - name: Run wmllint
+        if: success() || failure()
+        shell: bash
+        run: |
+          excludes=(data/lan_server.cfg data/test/scenarios/cve_tests/test_cve_2018_1999023_2.cfg data/schema data/languages data/test/test/filesystem/enum)
+          data/tools/wmllint "${excludes[@]/*/--exclude=^&$}" data/ > ./wmllint.log 2>&1
+          if [ "$(wc -l < wmllint.log)" != "0" ]; then cat wmllint.log; exit 1; fi
       - name: Whitespace and WML indentation check
         if: success() || failure()
         run: ./utils/CI/fix_whitespace.sh && git status && git diff --exit-code
@@ -76,7 +83,7 @@ jobs:
     steps:
       - { uses: actions/checkout@v6, with: { submodules: "recursive" } }
 
-# 1) wesnothd and campaignd should be buildable without SDL2 being present
+# 1) wesnothd and campaignd should be buildable without SDL3 being present
 # 2) boost is installed via apt as well as built and installed into /usr/local (for _GLIBCXX_DEBUG support in boost program options)
       - name: Build wesnoth, wesnothd, campaignd and unit tests
         id: build # needed to check step outcome
@@ -97,7 +104,8 @@ jobs:
               # triggers false positive compiler warnings that clang itself won't
               run-clang-tidy -quiet -use-color -j 2 -extra-arg="-w" -warnings-as-errors='*' '^(?!.*src/modules/|.*build/)'
 
-              apt remove -y -qq libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev
+              # re-enable once libsdl3 etc is installed normally
+              #apt remove -y -qq libsdl3-dev libsdl3-image-dev libsdl3-mixer-dev
 
               build wesnothd campaignd
               ;;
@@ -107,7 +115,7 @@ jobs:
                 cmake "$@" -DCMAKE_BUILD_TYPE="$CFG" -DCXX_STD="$CXX_STD" \
                   -DEXTRA_FLAGS_CONFIG="-pipe" -DENABLE_MYSQL=true -DENABLE_STRICT_COMPILATION=true \
                   -DENABLE_NLS=false -DENABLE_LTO="$LTO" -DFORCE_COLOR_OUTPUT=true -DLTO_JOBS=2 \
-                  -DENABLE_SYSTEM_LUA="$SYS_LUA -DCLANG_TIDY=true" -DCMAKE_PREFIX_PATH="/usr/local/lib/cmake/SDL3;/usr/local/lib/cmake/SDL3_image;/usr/local/lib/cmake/SDL3_mixer" -S . -B .
+                  -DENABLE_SYSTEM_LUA="$SYS_LUA" -DCLANG_TIDY=true -DCMAKE_PREFIX_PATH="/usr/local/lib/cmake/SDL3;/usr/local/lib/cmake/SDL3_image;/usr/local/lib/cmake/SDL3_mixer" -S . -B .
               }
               # still need the rest of /usr/local/lib/cmake for SDL3 for now
               rm -R /usr/local/lib/cmake/boost*
@@ -117,7 +125,7 @@ jobs:
               build -DENABLE_GAME=true -DENABLE_SERVER=false -DENABLE_CAMPAIGN_SERVER=false -DENABLE_TESTS=true
               make -C . VERBOSE=1 -j2
 
-              apt remove -y -qq libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev
+              #apt remove -y -qq libsdl3-dev libsdl3-image-dev libsdl3-mixer-dev
 
               build -DENABLE_GAME=false -DENABLE_SERVER=true -DENABLE_CAMPAIGN_SERVER=true -DENABLE_TESTS=false
               make -C . VERBOSE=1 -j2
@@ -269,7 +277,7 @@ jobs:
       fail-fast: false
       matrix:
         cfg: [ Release ]
-    runs-on: macos-14
+    runs-on: macos-15
     env:
       CFG: ${{ matrix.cfg }}
 

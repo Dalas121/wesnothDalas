@@ -66,6 +66,7 @@ enum class lobby_joins { show_none, show_friends, show_all };
 enum PREFERENCE_VIEW { VIEW_DEFAULT, VIEW_FRIENDS };
 };
 
+namespace sound { class volume; }
 namespace preferences
 {
 class acquaintance
@@ -208,6 +209,8 @@ public:
 	void write_preferences();
 	void load_advanced_prefs(const game_config_view& gc);
 	void migrate_preferences(const std::string& prefs_dir);
+	void set_campaign_rng_mode_default_for_migration(); // TODO: remove after 1.20. (Not used after that. Needs no replacement.)
+	void set_initial_gui2_theme();
 	void reload_preferences();
 	std::set<std::string> all_attributes();
 
@@ -269,26 +272,20 @@ public:
 	bool sound();
 	bool set_sound(bool ison);
 
-	unsigned int sample_rate();
-	void save_sample_rate(const unsigned int rate);
+	sound::volume sound_volume();
+	void set_sound_volume(sound::volume vol);
 
-	std::size_t sound_buffer_size();
-	void save_sound_buffer_size(const std::size_t size);
+	sound::volume bell_volume();
+	void set_bell_volume(sound::volume vol);
 
-	int sound_volume();
-	void set_sound_volume(int vol);
-
-	int bell_volume();
-	void set_bell_volume(int vol);
-
-	int ui_volume();
-	void set_ui_volume(int vol);
+	sound::volume ui_volume();
+	void set_ui_volume(sound::volume vol);
 
 	bool music_on();
 	bool set_music(bool ison);
 
-	int music_volume();
-	void set_music_volume(int vol);
+	sound::volume music_volume();
+	void set_music_volume(sound::volume vol);
 
 	bool turn_bell();
 	bool set_turn_bell(bool ison);
@@ -325,6 +322,12 @@ public:
 
 	int reach_map_tint_opacity();
 	void set_reach_map_tint_opacity(const int new_opacity);
+
+	int reach_map_darken_opacity();
+	void set_reach_map_darken_opacity(const int new_opacity);
+
+	bool reach_map_darken_tex();
+	void set_reach_map_darken_tex(const bool value);
 
 	int scroll_speed();
 	void set_scroll_speed(const int scroll);
@@ -541,6 +544,7 @@ public:
 	PREF_GETTER_SETTER(grid, bool, false)
 	PREF_GETTER_SETTER(disable_auto_moves, bool, false)
 	PREF_GETTER_SETTER(damage_prediction_allow_monte_carlo_simulation, bool, true)
+	PREF_GETTER_SETTER(campaign_rng_mode, std::string, std::string("biased"))
 	PREF_GETTER_SETTER(addon_manager_saved_order_name, std::string, std::string(""))
 	PREF_GETTER_SETTER(selected_achievement_group, std::string, std::string(""))
 	/** The most recently selected add-on id from the editor. May be an empty string. */
@@ -617,6 +621,7 @@ public:
 	PREF_GETTER_SETTER(game_created_notif, bool, true)
 	PREF_GETTER_SETTER(editor_help_text_shown, bool, true)
 	PREF_GETTER_SETTER(show_attack_miss_indicator, bool, false)
+	PREF_GETTER_SETTER(simd_enabled, bool, true)
 #undef PREF_GETTER_SETTER
 	void clear_mp_alert_prefs();
 
@@ -733,6 +738,7 @@ private:
 		prefs_list::ally_sighted_interrupts,
 		prefs_list::auto_save_max,
 		prefs_list::blindfold_replay,
+		prefs_list::campaign_rng_mode,
 		prefs_list::campaign_server,
 		prefs_list::chat_lines,
 		prefs_list::chat_timestamp,
@@ -804,7 +810,6 @@ private:
 		prefs_list::skip_ai_moves,
 		prefs_list::skip_mp_replay,
 		prefs_list::sound,
-		prefs_list::sample_rate,
 		prefs_list::stop_music_in_background,
 		prefs_list::turbo,
 		prefs_list::turbo_speed,
@@ -841,6 +846,8 @@ private:
 		prefs_list::addon_icons,
 		prefs_list::reach_map_border_opacity,
 		prefs_list::reach_map_tint_opacity,
+		prefs_list::reach_map_darken_opacity,
+		prefs_list::reach_map_darken_tex,
 		prefs_list::reach_map_color,
 		prefs_list::reach_map_enemy_color,
 	};
@@ -849,6 +856,7 @@ private:
 		prefs_list::achievements,
 		prefs_list::completed_campaigns,
 		prefs_list::history,
+		prefs_list::hotkey,
 		prefs_list::options,
 		prefs_list::server,
 		prefs_list::game_preset,
@@ -862,7 +870,6 @@ private:
 		prefs_list::show_tips,
 		prefs_list::mp_server_program_name,
 		prefs_list::pixel_scale,
-		prefs_list::sound_buffer_size,
 		prefs_list::theme,
 		prefs_list::tile_size,
 		prefs_list::vsync,
@@ -871,6 +878,7 @@ private:
 		prefs_list::font_scale,
 		prefs_list::bell_volume,
 		prefs_list::music_volume,
+		prefs_list::simd_enabled,
 		prefs_list::sound_volume,
 		prefs_list::ui_volume,
 		prefs_list::fullscreen,

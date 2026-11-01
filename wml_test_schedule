@@ -99,6 +99,7 @@
 9 test_move_fail_5
 9 test_move_fail_6
 0 test_move_unit
+0 test_move_unit_does_not_capture
 0 test_move_unit_in_circle
 0 test_move_unit_to_occupied_location
 0 sighted_on_move
@@ -239,6 +240,9 @@
 0 test_attacks_used
 0 no_duplicate_advancements
 0 add_advancement
+0 add_advancement_for_all_variations
+0 add_advancement_for_one_variation
+10 add_advancement_for_other_variation
 0 add_or_replace_amla
 0 add_specific_female_amla_on_female
 0 add_specific_female_amla_on_male
@@ -441,13 +445,18 @@
 0 affect_adjacent_direction_inactive
 0 affect_distant_direction_active
 0 affect_distant_direction_inactive
-0 filter_adjacent_location_count_three_active
-0 filter_adjacent_location_count_zero_active
-0 filter_adjacent_location_count_zero_inactive
-0 filter_adjacent_active
-0 filter_adjacent_inactive
-0 filter_adjacent_direction_active
-0 filter_adjacent_direction_inactive
+9 filter_adjacent_location_count_three_active
+9 filter_adjacent_location_count_zero_active
+9 filter_adjacent_location_count_zero_inactive
+9 filter_adjacent_location_without_count_active
+9 filter_adjacent_location_count_three_without_direction_active
+9 filter_adjacent_active
+9 filter_adjacent_inactive
+9 filter_adjacent_direction_active
+9 filter_adjacent_direction_inactive
+9 filter_adjacent_without_count_active
+9 filter_adjacent_without_direction_active
+9 filter_adjacent_count_inactive
 0 filter_special_id_active
 0 filter_ability_special_id_active
 0 affect_distant_active
@@ -463,13 +472,13 @@
 0 affect_distant_filter_special_match
 0 affect_distant_filter_special_no_match
 0 filter_filter_adjacent_self_inactive
-0 filter_adjacent_self_inactive
-0 filter_distant_active
-0 filter_distant_inactive
+9 filter_adjacent_self_inactive
+9 filter_distant_active
+9 filter_distant_inactive
 0 filter_filter_distant_active
 0 filter_filter_distant_inactive
-0 filter_distant_direction_active
-0 filter_distant_direction_inactive
+9 filter_distant_direction_active
+9 filter_distant_direction_inactive
 0 filter_filter_distant_direction_active
 0 filter_filter_distant_direction_inactive
 0 filter_special_id_not_exists
@@ -619,6 +628,7 @@
 0 heal_affect_enemies
 0 heal_affect_everybody
 0 heal_divide
+0 heal_add_overwrite_abilities
 0 heal_high_fraction
 0 heal_low_fraction
 0 heal_multiply
@@ -659,6 +669,7 @@
 0 regenerate_affect_enemies
 0 regenerate_affect_everybody
 0 regenerate_divide
+0 regenerate_add_overwrite_abilities
 0 regenerate_high_fraction
 0 regenerate_low_fraction
 0 regenerate_multiply
@@ -698,6 +709,7 @@
 0 resistance_affect_enemies
 0 resistance_affect_everybody
 0 resistance_divide
+0 resistance_add_overwrite_abilities
 0 resistance_high_fraction
 0 resistance_low_fraction
 0 resistance_multiply
@@ -749,6 +761,7 @@
 0 leadership_affect_enemies
 0 leadership_affect_everybody
 0 leadership_divide
+0 leadership_add_overwrite_abilities
 0 leadership_high_fraction
 0 leadership_low_fraction
 0 leadership_multiply
@@ -787,6 +800,7 @@
 0 illuminates_affect_everybody
 0 illuminates_affect_self_no
 0 illuminates_divide
+0 illuminates_add_overwrite_abilities
 0 illuminates_high_fraction
 0 illuminates_low_fraction
 0 illuminates_max_value
@@ -847,6 +861,9 @@
 0 attacks_zero
 0 attacks_add
 0 attacks_add_cumulative
+0 attacks_add_overwrite_specials
+0 attacks_add_overwrite_specials_affect_no_match
+0 attacks_add_overwrite_specials_affect_succeed
 0 attacks_add_divide
 0 attacks_add_multiply
 0 attacks_add_sub
@@ -894,6 +911,8 @@
 0 berserk_affect_enemies
 0 berserk_affect_everybody
 0 berserk_divide
+0 berserk_overwrite_specials
+0 berserk_overwrite_specials_no_match
 0 berserk_high_fraction
 0 berserk_low_fraction
 0 berserk_multiply
@@ -922,6 +941,9 @@
 0 chance_to_hit_priority_low
 0 chance_to_hit_negative_value
 0 chance_to_hit_add
+0 chance_to_hit_add_overwrite_specials
+0 chance_to_hit_add_overwrite_specials_affect_no_match
+0 chance_to_hit_add_overwrite_specials_affect_succeed
 0 chance_to_hit_add_cumulative
 0 chance_to_hit_add_divide
 0 chance_to_hit_add_multiply
@@ -961,6 +983,9 @@
 0 damage_zero
 0 damage_add
 0 damage_add_cumulative
+0 damage_add_overwrite_specials
+0 damage_add_overwrite_specials_affect_no_match
+0 damage_add_overwrite_specials_affect_succeed
 0 damage_add_divide
 0 damage_add_multiply
 0 damage_add_sub
@@ -1020,10 +1045,12 @@
 0 damage_type_both_same_replacement_best
 0 damage_type_both_same_alternative_best
 0 damage_type_many
+0 damage_type_many_overwrite_specials
 # defense ability tests
 0 defense_negative_value
 0 defense_add
 0 defense_add_cumulative
+0 defense_add_overwrite_abilities
 0 defense_overwrited_by_chance_to_hit
 0 defense_add_divide
 0 defense_add_multiply
@@ -1065,6 +1092,9 @@
 0 drains_zero
 0 drains_add
 0 drains_add_cumulative
+0 drains_add_overwrite_specials
+0 drains_add_overwrite_specials_affect_no_match
+0 drains_add_overwrite_specials_affect_succeed
 0 drains_add_divide
 0 drains_add_multiply
 0 drains_add_sub
@@ -1116,6 +1146,9 @@
 0 heal_on_hit_zero
 0 heal_on_hit_add
 0 heal_on_hit_add_cumulative
+0 heal_on_hit_add_overwrite_specials
+0 heal_on_hit_add_overwrite_specials_affect_no_match
+0 heal_on_hit_add_overwrite_specials_affect_succeed
 0 heal_on_hit_add_divide
 0 heal_on_hit_add_multiply
 0 heal_on_hit_add_sub
@@ -1159,6 +1192,7 @@
 0 petrifies_affect_everybody
 # plague tests
 0 plague_ability
+0 plague_ability_multiple_overwrite_specials
 0 plague_affect_allies
 0 plague_affect_allies_distant
 0 plague_affect_self_no
@@ -1196,6 +1230,7 @@
 0 swarm_attacks_min_lower
 0 swarm_attacks_min_negative
 0 swarm_attacks_min_wfl
+0 swarm_overwrite_specials
 0 swarm_min_max_zero
 0 swarm_no_min_no_max
 0 swarm_overwrite_specials_both_sides
@@ -1230,3 +1265,6 @@
 0 test_remove_modifications
 0 simulate_combat_clone_adjacent
 0 simulate_combat_occupied
+
+# Behavioral tests
+0 village_capture_ends_movement

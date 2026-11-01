@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-wc\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-05-19 02:15 UTC\n"
+"POT-Creation-Date: 2026-06-23 03:16 UTC\n"
 "PO-Revision-Date: 2026-03-04 20:21-0300\n"
 "Last-Translator: Sebastián Lecchini <sebas38760@gmail.com>\n"
 "Language-Team: es\n"
@@ -2806,7 +2806,7 @@ msgstr "Yerbas medicinales"
 
 #. [artifact]
 #: data/campaigns/World_Conquest/resources/data/artifacts.cfg:420
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:5
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:4
 msgid "heals +8, cures"
 msgstr "sana +8, cura"
 

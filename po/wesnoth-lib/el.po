@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 0.8.5-CVS\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-05-18 21:15-0500\n"
+"POT-Creation-Date: 2026-10-20 21:43-0500\n"
 "PO-Revision-Date: 2013-08-30 17:11+0300\n"
 "Last-Translator: Antonis Geralis <capoiosct@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
@@ -59,7 +59,7 @@ msgstr "Φράχτης"
 #. [terrain_type]: id=deep_water_tropical
 #. [terrain_type]: id=deep_water
 #: data/core/terrain.cfg:23 data/core/terrain.cfg:34 data/core/terrain.cfg:45
-#: data/core/terrain.cfg:3376 data/core/terrain.cfg:3377
+#: data/core/terrain.cfg:3374 data/core/terrain.cfg:3375
 msgid "Deep Water"
 msgstr "Βαθιά Νερά"
 
@@ -83,7 +83,7 @@ msgstr "Τροπικά Βαθιά Νερά"
 #. [terrain_type]: id=tropical_water
 #. [terrain_type]: id=shallow_water
 #: data/core/terrain.cfg:56 data/core/terrain.cfg:67 data/core/terrain.cfg:78
-#: data/core/terrain.cfg:3335 data/core/terrain.cfg:3336
+#: data/core/terrain.cfg:3333 data/core/terrain.cfg:3334
 msgid "Shallow Water"
 msgstr "Αβαθή Νερά"
 
@@ -130,8 +130,8 @@ msgstr ""
 #. [terrain_type]: id=tropical_reef
 #. [terrain_type]: id=reef
 #: data/core/terrain.cfg:101 data/core/terrain.cfg:112
-#: data/core/terrain.cfg:123 data/core/terrain.cfg:3291
-#: data/core/terrain.cfg:3292
+#: data/core/terrain.cfg:123 data/core/terrain.cfg:3289
+#: data/core/terrain.cfg:3290
 msgid "Coastal Reef"
 msgstr "Παράκτιος Ύφαλος"
 
@@ -155,8 +155,8 @@ msgstr "Τροπικός Παράκτιος Ύφαλος"
 #. [terrain_type]: id=quagmire
 #. [terrain_type]: id=swamp_water
 #: data/core/terrain.cfg:134 data/core/terrain.cfg:149
-#: data/core/terrain.cfg:160 data/core/terrain.cfg:3319
-#: data/core/terrain.cfg:3320
+#: data/core/terrain.cfg:160 data/core/terrain.cfg:3317
+#: data/core/terrain.cfg:3318
 msgid "Swamp"
 msgstr "Βάλτος"
 
@@ -310,8 +310,8 @@ msgstr ""
 
 #. [terrain_type]: id=sand_beach
 #. [terrain_type]: id=sand
-#: data/core/terrain.cfg:340 data/core/terrain.cfg:3278
-#: data/core/terrain.cfg:3279
+#: data/core/terrain.cfg:340 data/core/terrain.cfg:3276
+#: data/core/terrain.cfg:3277
 msgid "Sand"
 msgstr "Άμμος"
 
@@ -322,7 +322,7 @@ msgstr "Παραλιακή Άμμος"
 
 #. [terrain_type]: id=sand_beach
 #. [terrain_type]: id=sand
-#: data/core/terrain.cfg:345 data/core/terrain.cfg:3282
+#: data/core/terrain.cfg:345 data/core/terrain.cfg:3280
 msgid ""
 "The instability of <italic>text='sand'</italic> makes it harder for most "
 "units to cross, and leaves them wide open to attack. In contrast, the wide "
@@ -526,8 +526,8 @@ msgstr "Νεκρή Μεγάλη Βελανιδιά"
 #: data/core/terrain.cfg:758 data/core/terrain.cfg:770
 #: data/core/terrain.cfg:782 data/core/terrain.cfg:794
 #: data/core/terrain.cfg:806 data/core/terrain.cfg:818
-#: data/core/terrain.cfg:830 data/core/terrain.cfg:3402
-#: data/core/terrain.cfg:3403
+#: data/core/terrain.cfg:830 data/core/terrain.cfg:3400
+#: data/core/terrain.cfg:3401
 msgid "Forest"
 msgstr "Δάσος"
 
@@ -611,8 +611,8 @@ msgstr "Χιονισμένο Μικτό Δάσος"
 #. [terrain_type]: id=snow_hills
 #. [terrain_type]: id=hills
 #: data/core/terrain.cfg:846 data/core/terrain.cfg:856
-#: data/core/terrain.cfg:876 data/core/terrain.cfg:3306
-#: data/core/terrain.cfg:3307
+#: data/core/terrain.cfg:876 data/core/terrain.cfg:3304
+#: data/core/terrain.cfg:3305
 msgid "Hills"
 msgstr "Λόφοι"
 
@@ -649,7 +649,7 @@ msgstr "Χιονισμένοι Λόφοι"
 #: data/core/terrain.cfg:911 data/core/terrain.cfg:922
 #: data/core/terrain.cfg:1347 data/core/terrain.cfg:1357
 #: data/core/terrain.cfg:1368 data/core/terrain.cfg:1378
-#: data/core/terrain.cfg:3362 data/core/terrain.cfg:3363
+#: data/core/terrain.cfg:3360 data/core/terrain.cfg:3361
 msgid "Mountains"
 msgstr "Βουνά"
 
@@ -678,7 +678,7 @@ msgstr "Ερημικά Βουνά"
 #. [terrain_type]: id=regular_stone_floor_deprecated
 #. [terrain_type]: id=ancient_stone_floor_deprecated
 #: data/core/terrain.cfg:934 data/core/terrain.cfg:944
-#: data/core/terrain.cfg:3473 data/core/terrain.cfg:3484
+#: data/core/terrain.cfg:3471 data/core/terrain.cfg:3482
 msgid "Stone Floor"
 msgstr "Πέτρινο Δάπεδο"
 
@@ -698,8 +698,8 @@ msgstr "Αρχαίο Πέτρινο Δάπεδο"
 #. [terrain_type]: id=rug_floor_deprecated
 #. [terrain_type]: id=rug2_floor_deprecated
 #: data/core/terrain.cfg:954 data/core/terrain.cfg:964
-#: data/core/terrain.cfg:974 data/core/terrain.cfg:3495
-#: data/core/terrain.cfg:3506
+#: data/core/terrain.cfg:974 data/core/terrain.cfg:3493
+#: data/core/terrain.cfg:3504
 msgid "Rug"
 msgstr "Χαλί"
 
@@ -731,7 +731,7 @@ msgstr "Βασικό Ξύλινο Δάπεδο"
 #. [terrain_type]: id=old_wood_floor
 #. [terrain_type]: id=old_wood_floor_deprecated
 #: data/core/terrain.cfg:994 data/core/terrain.cfg:997
-#: data/core/terrain.cfg:3517
+#: data/core/terrain.cfg:3515
 msgid "Old Wooden Floor"
 msgstr "Παλιό Ξύλινο Δάπεδο"
 
@@ -749,7 +749,7 @@ msgstr "Ακτίνα φωτός"
 #. [terrain_type]: id=cave_earthy
 #. [terrain_type]: id=cave
 #: data/core/terrain.cfg:1021 data/core/terrain.cfg:1031
-#: data/core/terrain.cfg:3263 data/core/terrain.cfg:3264
+#: data/core/terrain.cfg:3261 data/core/terrain.cfg:3262
 msgid "Cave"
 msgstr "Σπηλιά"
 
@@ -1171,13 +1171,13 @@ msgid "Impassable Overlay"
 msgstr "Αδιάβατο Επικάλυμμα"
 
 #. [terrain_type]: id=unwalkable_overlay
-#: data/core/terrain.cfg:1756
+#: data/core/terrain.cfg:1754
 msgid "Unwalkable Overlay"
 msgstr "Αδιάβατο Επικάλυμμα"
 
 #. [terrain_type]: id=void
 #. [terrain_type]: id=off_map
-#: data/core/terrain.cfg:1768 data/core/terrain.cfg:3181
+#: data/core/terrain.cfg:1766 data/core/terrain.cfg:3179
 msgid "Void"
 msgstr "Χάσμα"
 
@@ -1213,178 +1213,178 @@ msgstr "Χάσμα"
 #. [terrain_type]: id=mermen-village
 #. [terrain_type]: id=village_overlay
 #. [terrain_type]: id=village
-#: data/core/terrain.cfg:1784 data/core/terrain.cfg:1797
-#: data/core/terrain.cfg:1810 data/core/terrain.cfg:1823
-#: data/core/terrain.cfg:1838 data/core/terrain.cfg:1851
-#: data/core/terrain.cfg:1866 data/core/terrain.cfg:1879
-#: data/core/terrain.cfg:1894 data/core/terrain.cfg:1907
-#: data/core/terrain.cfg:1920 data/core/terrain.cfg:1933
-#: data/core/terrain.cfg:1946 data/core/terrain.cfg:1959
-#: data/core/terrain.cfg:1972 data/core/terrain.cfg:1985
-#: data/core/terrain.cfg:1998 data/core/terrain.cfg:2011
-#: data/core/terrain.cfg:2024 data/core/terrain.cfg:2037
-#: data/core/terrain.cfg:2050 data/core/terrain.cfg:2065
-#: data/core/terrain.cfg:2078 data/core/terrain.cfg:2091
-#: data/core/terrain.cfg:2104 data/core/terrain.cfg:2117
-#: data/core/terrain.cfg:2130 data/core/terrain.cfg:2143
-#: data/core/terrain.cfg:2158 data/core/terrain.cfg:2171
-#: data/core/terrain.cfg:2189 data/core/terrain.cfg:3427
-#: data/core/terrain.cfg:3428
+#: data/core/terrain.cfg:1782 data/core/terrain.cfg:1795
+#: data/core/terrain.cfg:1808 data/core/terrain.cfg:1821
+#: data/core/terrain.cfg:1836 data/core/terrain.cfg:1849
+#: data/core/terrain.cfg:1864 data/core/terrain.cfg:1877
+#: data/core/terrain.cfg:1892 data/core/terrain.cfg:1905
+#: data/core/terrain.cfg:1918 data/core/terrain.cfg:1931
+#: data/core/terrain.cfg:1944 data/core/terrain.cfg:1957
+#: data/core/terrain.cfg:1970 data/core/terrain.cfg:1983
+#: data/core/terrain.cfg:1996 data/core/terrain.cfg:2009
+#: data/core/terrain.cfg:2022 data/core/terrain.cfg:2035
+#: data/core/terrain.cfg:2048 data/core/terrain.cfg:2063
+#: data/core/terrain.cfg:2076 data/core/terrain.cfg:2089
+#: data/core/terrain.cfg:2102 data/core/terrain.cfg:2115
+#: data/core/terrain.cfg:2128 data/core/terrain.cfg:2141
+#: data/core/terrain.cfg:2156 data/core/terrain.cfg:2169
+#: data/core/terrain.cfg:2187 data/core/terrain.cfg:3425
+#: data/core/terrain.cfg:3426
 msgid "Village"
 msgstr "Χωριό"
 
 #. [terrain_type]: id=desert_village
-#: data/core/terrain.cfg:1785
+#: data/core/terrain.cfg:1783
 msgid "Adobe Village"
 msgstr "Χωριό από Πλίνθο"
 
 #. [terrain_type]: id=desert_village_ruin
-#: data/core/terrain.cfg:1798
+#: data/core/terrain.cfg:1796
 msgid "Ruined Adobe Village"
 msgstr "Ερειπωμένο Χωριό από Πλίνθο"
 
 #. [terrain_type]: id=desert_village_tent
-#: data/core/terrain.cfg:1811
+#: data/core/terrain.cfg:1809
 msgid "Desert Tent Village"
 msgstr "Χωριό με Σκηνές Ερήμου"
 
 #. [terrain_type]: id=camp_village
-#: data/core/terrain.cfg:1824
+#: data/core/terrain.cfg:1822
 msgid "Tent Village"
 msgstr "Χωριό από Σκηνές"
 
 #. [terrain_type]: id=orcish_village
-#: data/core/terrain.cfg:1839
+#: data/core/terrain.cfg:1837
 msgid "Orcish Village"
 msgstr "Χωριό των Ορκ"
 
 #. [terrain_type]: id=orcish_snow_village
-#: data/core/terrain.cfg:1852
+#: data/core/terrain.cfg:1850
 msgid "Snowy Orcish Village"
 msgstr "Χιονισμένο Χωριό των Ορκ"
 
 #. [terrain_type]: id=elven_snow_village
-#: data/core/terrain.cfg:1867
+#: data/core/terrain.cfg:1865
 msgid "Snowy Elven Village"
 msgstr "Χιονισμένο Χωριό των Ξωτικών"
 
 #. [terrain_type]: id=elven_village
-#: data/core/terrain.cfg:1880
+#: data/core/terrain.cfg:1878
 msgid "Elven Village"
 msgstr "Χωριό των Ξωτικών"
 
 #. [terrain_type]: id=human_village
-#: data/core/terrain.cfg:1895
+#: data/core/terrain.cfg:1893
 msgid "Cottage"
 msgstr "Εξοχικό"
 
 #. [terrain_type]: id=snow_village
-#: data/core/terrain.cfg:1908
+#: data/core/terrain.cfg:1906
 msgid "Snowy Cottage"
 msgstr "Χιονισμένο Εξοχικό"
 
 #. [terrain_type]: id=human_village_ruin
-#: data/core/terrain.cfg:1921
+#: data/core/terrain.cfg:1919
 msgid "Ruined Cottage"
 msgstr "Ερειπωμένο Εξοχικό"
 
 #. [terrain_type]: id=city_village
-#: data/core/terrain.cfg:1934
+#: data/core/terrain.cfg:1932
 msgid "Human City"
 msgstr "Πόλη των Ανθρώπων"
 
 #. [terrain_type]: id=windmill_village
-#: data/core/terrain.cfg:1947
+#: data/core/terrain.cfg:1945
 msgid "Windmill Village"
 msgstr "Χωριό με Ανεμόμυλους"
 
 #. [terrain_type]: id=city_village_wno
-#: data/core/terrain.cfg:1960
+#: data/core/terrain.cfg:1958
 msgid "Snowy Human City"
 msgstr "Χιονισμένη Πόλη των Ανθρώπων"
 
 #. [terrain_type]: id=city_village_ruin
-#: data/core/terrain.cfg:1973
+#: data/core/terrain.cfg:1971
 msgid "Ruined Human City"
 msgstr "Ερειπωμένη Πόλη των Ανθρώπων"
 
 #. [terrain_type]: id=hill_village
-#: data/core/terrain.cfg:1986
+#: data/core/terrain.cfg:1984
 msgid "Hill Stone Village"
 msgstr "Πέτρινο Χωριό Λόφου"
 
 #. [terrain_type]: id=snow-hill_village
-#: data/core/terrain.cfg:1999
+#: data/core/terrain.cfg:1997
 msgid "Snowy Hill Stone Village"
 msgstr "Χιονισμένο Πέτρινο Χωριό Λόφου"
 
 #. [terrain_type]: id=hill_village_ruin
-#: data/core/terrain.cfg:2012
+#: data/core/terrain.cfg:2010
 msgid "Ruined Hill Stone Village"
 msgstr "Ερειπωμένο Πέτρινο Χωριό Λόφου"
 
 #. [terrain_type]: id=tropical_forest_village
-#: data/core/terrain.cfg:2025
+#: data/core/terrain.cfg:2023
 msgid "Tropical Village"
 msgstr "Τροπικό Χωριό"
 
 #. [terrain_type]: id=drake_village
-#: data/core/terrain.cfg:2038
+#: data/core/terrain.cfg:2036
 msgid "Drake Village"
 msgstr "Χωριό Δρακοειδών"
 
 #. [terrain_type]: id=drake_snow_village
-#: data/core/terrain.cfg:2051
+#: data/core/terrain.cfg:2049
 msgid "Snowy Drake Village"
 msgstr "Χιονισμένο Χωριό Δρακοειδών"
 
 #. [terrain_type]: id=underground_village
-#: data/core/terrain.cfg:2066
+#: data/core/terrain.cfg:2064
 msgid "Cave Village"
 msgstr "Χωριό Σπηλιάς"
 
 #. [terrain_type]: id=dwarven_village
-#: data/core/terrain.cfg:2079
+#: data/core/terrain.cfg:2077
 msgid "Dwarven Village"
 msgstr "Χωριό των Νάνων"
 
 #. [terrain_type]: id=hut_village
-#: data/core/terrain.cfg:2092
+#: data/core/terrain.cfg:2090
 msgid "Hut"
 msgstr "Καλύβα"
 
 #. [terrain_type]: id=hut_snow_village
-#: data/core/terrain.cfg:2105
+#: data/core/terrain.cfg:2103
 msgid "Snowy Hut"
 msgstr "Χιονισμένη Καλύβα"
 
 #. [terrain_type]: id=logcabin_village
-#: data/core/terrain.cfg:2118
+#: data/core/terrain.cfg:2116
 msgid "Log Cabin"
 msgstr "Ξύλινη Καλύβα"
 
 #. [terrain_type]: id=logcabin_snow_village
-#: data/core/terrain.cfg:2131
+#: data/core/terrain.cfg:2129
 msgid "Snowy Log Cabin"
 msgstr "Χιονισμένη Ξύλινη Καλύβα"
 
 #. [terrain_type]: id=igloo
-#: data/core/terrain.cfg:2144
+#: data/core/terrain.cfg:2142
 msgid "Igloo"
 msgstr "Ιγκλού"
 
 #. [terrain_type]: id=swamp_village
-#: data/core/terrain.cfg:2159
+#: data/core/terrain.cfg:2157
 msgid "Swamp Village"
 msgstr "Χωριό Έλους"
 
 #. [terrain_type]: id=mermen-village
-#: data/core/terrain.cfg:2172
+#: data/core/terrain.cfg:2170
 msgid "Merfolk Village"
 msgstr "Χωριό Θαλασσινών"
 
 #. [terrain_type]: id=mermen-village
-#: data/core/terrain.cfg:2173
+#: data/core/terrain.cfg:2171
 msgid ""
 "<italic>text='Submerged villages'</italic> are the homes of merfolk and "
 "nagas. While water-dwelling creatures are at home here, land-dwellers have a "
@@ -1408,7 +1408,7 @@ msgstr ""
 "μονάδες συνήθως έχουν χαμηλή άμυνα."
 
 #. [terrain_type]: id=village_overlay
-#: data/core/terrain.cfg:2190
+#: data/core/terrain.cfg:2188
 msgid "Village Overlay"
 msgstr "Επικάλυμμα Χωριού"
 
@@ -1417,19 +1417,19 @@ msgstr "Επικάλυμμα Χωριού"
 #. [terrain_type]: id=encampment_snow
 #. [terrain_type]: id=troll_encampment
 #. [terrain_type]: id=aquatic_camp
-#: data/core/terrain.cfg:2206 data/core/terrain.cfg:2207
-#: data/core/terrain.cfg:2218 data/core/terrain.cfg:2230
-#: data/core/terrain.cfg:2435 data/core/terrain.cfg:2447
+#: data/core/terrain.cfg:2204 data/core/terrain.cfg:2205
+#: data/core/terrain.cfg:2216 data/core/terrain.cfg:2228
+#: data/core/terrain.cfg:2433 data/core/terrain.cfg:2445
 msgid "Encampment"
 msgstr "Στρατόπεδο"
 
 #. [terrain_type]: id=encampment_ruin
-#: data/core/terrain.cfg:2219
+#: data/core/terrain.cfg:2217
 msgid "Ruined Encampment"
 msgstr "Ερειπωμένο Στρατόπεδο"
 
 #. [terrain_type]: id=encampment_snow
-#: data/core/terrain.cfg:2231
+#: data/core/terrain.cfg:2229
 msgid "Snowy Encampment"
 msgstr "Χιονισμένο Στρατόπεδο"
 
@@ -1448,69 +1448,69 @@ msgstr "Χιονισμένο Στρατόπεδο"
 #. [terrain_type]: id=aquatic_castle
 #. [terrain_type]: id=castle_overlay
 #. [terrain_type]: id=castle
-#: data/core/terrain.cfg:2242 data/core/terrain.cfg:2254
-#: data/core/terrain.cfg:2266 data/core/terrain.cfg:2278
-#: data/core/terrain.cfg:2289 data/core/terrain.cfg:2301
-#: data/core/terrain.cfg:2313 data/core/terrain.cfg:2325
-#: data/core/terrain.cfg:2337 data/core/terrain.cfg:2349
-#: data/core/terrain.cfg:2361 data/core/terrain.cfg:2411
-#: data/core/terrain.cfg:2460 data/core/terrain.cfg:2776
-#: data/core/terrain.cfg:3346 data/core/terrain.cfg:3347
+#: data/core/terrain.cfg:2240 data/core/terrain.cfg:2252
+#: data/core/terrain.cfg:2264 data/core/terrain.cfg:2276
+#: data/core/terrain.cfg:2287 data/core/terrain.cfg:2299
+#: data/core/terrain.cfg:2311 data/core/terrain.cfg:2323
+#: data/core/terrain.cfg:2335 data/core/terrain.cfg:2347
+#: data/core/terrain.cfg:2359 data/core/terrain.cfg:2409
+#: data/core/terrain.cfg:2458 data/core/terrain.cfg:2774
+#: data/core/terrain.cfg:3344 data/core/terrain.cfg:3345
 msgid "Castle"
 msgstr "Κάστρο"
 
 #. [terrain_type]: id=orcish_fort
-#: data/core/terrain.cfg:2243
+#: data/core/terrain.cfg:2241
 msgid "Orcish Castle"
 msgstr "Κάστρο των Ορκ"
 
 #. [terrain_type]: id=snow_orcish_fort
-#: data/core/terrain.cfg:2255
+#: data/core/terrain.cfg:2253
 msgid "Snowy Orcish Castle"
 msgstr "Χιονισμένο Κάστρο των Ορκ"
 
 #. [terrain_type]: id=human_castle
-#: data/core/terrain.cfg:2267
+#: data/core/terrain.cfg:2265
 msgid "Human Castle"
 msgstr "Κάστρο των Ανθρώπων"
 
 #. [terrain_type]: id=snow_castle
-#: data/core/terrain.cfg:2279
+#: data/core/terrain.cfg:2277
 msgid "Snowy Human Castle"
 msgstr "Χιονισμένο Κάστρο των Ανθρώπων"
 
 #. [terrain_type]: id=elven_castle
-#: data/core/terrain.cfg:2290
+#: data/core/terrain.cfg:2288
 msgid "Elven Castle"
 msgstr "Κάστρο των Ξωτικών"
 
 #. [terrain_type]: id=elven_castle_ruin
-#: data/core/terrain.cfg:2302
+#: data/core/terrain.cfg:2300
 msgid "Elven Castle Ruin"
 msgstr "Ερείπια Κάστρου των Ξωτικών"
 
 #. [terrain_type]: id=elven_castle_winter
-#: data/core/terrain.cfg:2314
+#: data/core/terrain.cfg:2312
 msgid "Winter Elven Castle"
 msgstr "Χειμωνιάτικο Κάστρο των Ξωτικών"
 
 #. [terrain_type]: id=dwarven_castle
-#: data/core/terrain.cfg:2326
+#: data/core/terrain.cfg:2324
 msgid "Dwarven Underground Castle"
 msgstr "Υπόγειο Κάστρο των Νάνων"
 
 #. [terrain_type]: id=dwarven_castle2
-#: data/core/terrain.cfg:2338
+#: data/core/terrain.cfg:2336
 msgid "Dwarven Castle"
 msgstr "Κάστρο των Νάνων"
 
 #. [terrain_type]: id=dwarven_castle_ruin
-#: data/core/terrain.cfg:2350
+#: data/core/terrain.cfg:2348
 msgid "Dwarven Castle Ruins"
 msgstr "Ερείπια Κάστρου των Νάνων"
 
 #. [terrain_type]: id=dwarven_castle_winter
-#: data/core/terrain.cfg:2362
+#: data/core/terrain.cfg:2360
 msgid "Winter Dwarven Castle"
 msgstr "Χειμωνιάτικο Κάστρο των Νάνων"
 
@@ -1518,48 +1518,48 @@ msgstr "Χειμωνιάτικο Κάστρο των Νάνων"
 #. [terrain_type]: id=sunkenruin
 #. [terrain_type]: id=swampruin
 #. [terrain_type]: id=sand_castle_ruin
-#: data/core/terrain.cfg:2373 data/core/terrain.cfg:2385
-#: data/core/terrain.cfg:2398 data/core/terrain.cfg:2423
+#: data/core/terrain.cfg:2371 data/core/terrain.cfg:2383
+#: data/core/terrain.cfg:2396 data/core/terrain.cfg:2421
 msgid "Ruined Castle"
 msgstr "Ερειπωμένο Κάστρο"
 
 #. [terrain_type]: id=ruin
-#: data/core/terrain.cfg:2374
+#: data/core/terrain.cfg:2372
 msgid "Ruined Human Castle"
 msgstr "Ερειπωμένο Κάστρο των Ανθρώπων"
 
 #. [terrain_type]: id=sunkenruin
-#: data/core/terrain.cfg:2386
+#: data/core/terrain.cfg:2384
 msgid "Sunken Human Ruin"
 msgstr "Βυθισμένα ερείπια των Ανθρώπων"
 
 #. [terrain_type]: id=swampruin
-#: data/core/terrain.cfg:2399
+#: data/core/terrain.cfg:2397
 msgid "Swamp Human Ruin"
 msgstr "Ανθρώπινο Ερείπιο Βάλτου"
 
 #. [terrain_type]: id=sand_castle
-#: data/core/terrain.cfg:2412
+#: data/core/terrain.cfg:2410
 msgid "Desert Castle"
 msgstr "Κάστρο Ερήμου"
 
 #. [terrain_type]: id=sand_castle_ruin
-#: data/core/terrain.cfg:2424
+#: data/core/terrain.cfg:2422
 msgid "Ruined Desert Castle"
 msgstr "Ερειπωμένο Κάστρο Ερήμου"
 
 #. [terrain_type]: id=troll_encampment
-#: data/core/terrain.cfg:2436
+#: data/core/terrain.cfg:2434
 msgid "Troll Encampment"
 msgstr "Στρατόπεδο Τρολ"
 
 #. [terrain_type]: id=aquatic_camp
-#: data/core/terrain.cfg:2448
+#: data/core/terrain.cfg:2446
 msgid "Aquatic Encampment"
 msgstr "Υδάτινο Στρατόπεδο"
 
 #. [terrain_type]: id=aquatic_castle
-#: data/core/terrain.cfg:2461
+#: data/core/terrain.cfg:2459
 msgid "Aquatic Castle"
 msgstr "Υδάτινο Κάστρο"
 
@@ -1568,24 +1568,24 @@ msgstr "Υδάτινο Κάστρο"
 #. [terrain_type]: id=encampment_snow_keep
 #. [terrain_type]: id=merman_campkeep
 #. [terrain_type]: id=troll_campkeep
-#: data/core/terrain.cfg:2477 data/core/terrain.cfg:2501
-#: data/core/terrain.cfg:2514 data/core/terrain.cfg:2735
-#: data/core/terrain.cfg:2748
+#: data/core/terrain.cfg:2475 data/core/terrain.cfg:2499
+#: data/core/terrain.cfg:2512 data/core/terrain.cfg:2733
+#: data/core/terrain.cfg:2746
 msgid "Encampment Keep"
 msgstr "Οχυρό Στρατοπέδου"
 
 #. [terrain_type]: id=encampment_ruin_keep
-#: data/core/terrain.cfg:2489
+#: data/core/terrain.cfg:2487
 msgid "Ruined Encampment Keep"
 msgstr "Ερειπωμένο Οχυρό Στρατοπέδου"
 
 #. [terrain_type]: id=encampment_keep_tall
-#: data/core/terrain.cfg:2502
+#: data/core/terrain.cfg:2500
 msgid "Tall Encampment Keep"
 msgstr "Ψηλό Οχυρό Στρατοπέδου"
 
 #. [terrain_type]: id=encampment_snow_keep
-#: data/core/terrain.cfg:2515
+#: data/core/terrain.cfg:2513
 msgid "Snowy Encampment Keep"
 msgstr "Χιονισμένο Οχυρό Στρατοπέδου"
 
@@ -1603,68 +1603,68 @@ msgstr "Χιονισμένο Οχυρό Στρατοπέδου"
 #. [terrain_type]: id=desert_keep
 #. [terrain_type]: id=merman_castlekeep
 #. [terrain_type]: id=keep_overlay
-#: data/core/terrain.cfg:2527 data/core/terrain.cfg:2540
-#: data/core/terrain.cfg:2553 data/core/terrain.cfg:2566
-#: data/core/terrain.cfg:2579 data/core/terrain.cfg:2592
-#: data/core/terrain.cfg:2605 data/core/terrain.cfg:2618
-#: data/core/terrain.cfg:2631 data/core/terrain.cfg:2644
-#: data/core/terrain.cfg:2657 data/core/terrain.cfg:2709
-#: data/core/terrain.cfg:2761 data/core/terrain.cfg:2789
+#: data/core/terrain.cfg:2525 data/core/terrain.cfg:2538
+#: data/core/terrain.cfg:2551 data/core/terrain.cfg:2564
+#: data/core/terrain.cfg:2577 data/core/terrain.cfg:2590
+#: data/core/terrain.cfg:2603 data/core/terrain.cfg:2616
+#: data/core/terrain.cfg:2629 data/core/terrain.cfg:2642
+#: data/core/terrain.cfg:2655 data/core/terrain.cfg:2707
+#: data/core/terrain.cfg:2759 data/core/terrain.cfg:2787
 msgid "Keep"
 msgstr "Πύργος"
 
 #. [terrain_type]: id=orcish_keep
-#: data/core/terrain.cfg:2528
+#: data/core/terrain.cfg:2526
 msgid "Orcish Keep"
 msgstr "Οχυρό των Ορκ"
 
 #. [terrain_type]: id=snow_orcish_keep
-#: data/core/terrain.cfg:2541
+#: data/core/terrain.cfg:2539
 msgid "Snowy Orcish Keep"
 msgstr "Χιονισμένο Οχυρό των Ορκ"
 
 #. [terrain_type]: id=human_keep
-#: data/core/terrain.cfg:2554
+#: data/core/terrain.cfg:2552
 msgid "Human Castle Keep"
 msgstr "Ανθρώπινο Οχυρό Κάστρου"
 
 #. [terrain_type]: id=snow_keep
-#: data/core/terrain.cfg:2567
+#: data/core/terrain.cfg:2565
 msgid "Snowy Human Castle Keep"
 msgstr "Χιονισμένο Ανθρώπινο Οχυρό Κάστρου"
 
 #. [terrain_type]: id=elven_keep
-#: data/core/terrain.cfg:2580
+#: data/core/terrain.cfg:2578
 msgid "Elven Castle Keep"
 msgstr "Οχυρό Κάστρου των Ξωτικών"
 
 #. [terrain_type]: id=elven_keep_ruin
-#: data/core/terrain.cfg:2593
+#: data/core/terrain.cfg:2591
 msgid "Elven Keep Ruin"
 msgstr "Ερείπιο Οχυρού των Ξωτικών"
 
 #. [terrain_type]: id=elven_keep_winter
-#: data/core/terrain.cfg:2606
+#: data/core/terrain.cfg:2604
 msgid "Winter Elven Keep"
 msgstr "Χειμωνιάτικο Οχυρό των Ξωτικών"
 
 #. [terrain_type]: id=dwarven_keep
-#: data/core/terrain.cfg:2619
+#: data/core/terrain.cfg:2617
 msgid "Dwarven Underground Keep"
 msgstr "Υπόγειο Οχυρό των Νάνων"
 
 #. [terrain_type]: id=dwarven_keep2
-#: data/core/terrain.cfg:2632
+#: data/core/terrain.cfg:2630
 msgid "Dwarven Castle Keep"
 msgstr "Οχυρό Κάστρου των Νάνων"
 
 #. [terrain_type]: id=dwarven_keep_ruin
-#: data/core/terrain.cfg:2645
+#: data/core/terrain.cfg:2643
 msgid "Dwarven Ruin Keep"
 msgstr "Ερειπωμένο Οχυρό των Νάνων"
 
 #. [terrain_type]: id=dwarven_keep_winter
-#: data/core/terrain.cfg:2658
+#: data/core/terrain.cfg:2656
 msgid "Winter Dwarven Keep"
 msgstr "Χειμωνιάτικο Οχυρό των Νάνων"
 
@@ -1672,58 +1672,58 @@ msgstr "Χειμωνιάτικο Οχυρό των Νάνων"
 #. [terrain_type]: id=sunken_keep
 #. [terrain_type]: id=swamp_keep
 #. [terrain_type]: id=desert_keep_ruined
-#: data/core/terrain.cfg:2670 data/core/terrain.cfg:2683
-#: data/core/terrain.cfg:2696 data/core/terrain.cfg:2722
+#: data/core/terrain.cfg:2668 data/core/terrain.cfg:2681
+#: data/core/terrain.cfg:2694 data/core/terrain.cfg:2720
 msgid "Ruined Keep"
 msgstr "Ερειπωμένο Οχυρό"
 
 #. [terrain_type]: id=ruined_keep
-#: data/core/terrain.cfg:2671
+#: data/core/terrain.cfg:2669
 msgid "Ruined Human Castle Keep"
 msgstr "Ερειπωμένο Ανθρώπινο Οχυρό Κάστρου"
 
 #. [terrain_type]: id=sunken_keep
-#: data/core/terrain.cfg:2684
+#: data/core/terrain.cfg:2682
 msgid "Sunken Human Castle Keep"
 msgstr "Βυθισμένο Ανθρώπινο Οχυρό Κάστρου"
 
 #. [terrain_type]: id=swamp_keep
-#: data/core/terrain.cfg:2697
+#: data/core/terrain.cfg:2695
 msgid "Swamp Human Castle Keep"
 msgstr "Ανθρώπινο Οχυρό Κάστρου Βάλτου"
 
 #. [terrain_type]: id=desert_keep
-#: data/core/terrain.cfg:2710
+#: data/core/terrain.cfg:2708
 msgid "Desert Keep"
 msgstr "Οχυρό Ερήμου"
 
 #. [terrain_type]: id=desert_keep_ruined
-#: data/core/terrain.cfg:2723
+#: data/core/terrain.cfg:2721
 msgid "Ruined Desert Keep"
 msgstr "Ερειπωμένο Οχυρό Ερήμου"
 
 #. [terrain_type]: id=merman_campkeep
-#: data/core/terrain.cfg:2736
+#: data/core/terrain.cfg:2734
 msgid "Aquatic Encampment Keep"
 msgstr "Υδάτινο Οχυρό Στρατοπέδου"
 
 #. [terrain_type]: id=troll_campkeep
-#: data/core/terrain.cfg:2749
+#: data/core/terrain.cfg:2747
 msgid "Troll Encampment Keep"
 msgstr "Οχυρό Στρατοπέδου Τρολ"
 
 #. [terrain_type]: id=merman_castlekeep
-#: data/core/terrain.cfg:2762
+#: data/core/terrain.cfg:2760
 msgid "Aquatic Keep"
 msgstr "Υδάτινο Οχυρό"
 
 #. [terrain_type]: id=castle_overlay
-#: data/core/terrain.cfg:2777
+#: data/core/terrain.cfg:2775
 msgid "Castle Overlay"
 msgstr "Επικάλυψη Κάστρου"
 
 #. [terrain_type]: id=keep_overlay
-#: data/core/terrain.cfg:2790
+#: data/core/terrain.cfg:2788
 msgid "Keep Overlay"
 msgstr "Επικάλυψη Οχυρού"
 
@@ -1751,31 +1751,31 @@ msgstr "Επικάλυψη Οχυρού"
 #. [terrain_type]: id=plankbridgediag1
 #. [terrain_type]: id=plankbridgediag2
 #. [terrain_type]: id=plankbridge
-#: data/core/terrain.cfg:2808 data/core/terrain.cfg:2823
-#: data/core/terrain.cfg:2836 data/core/terrain.cfg:2849
-#: data/core/terrain.cfg:2861 data/core/terrain.cfg:2874
-#: data/core/terrain.cfg:2889 data/core/terrain.cfg:2901
-#: data/core/terrain.cfg:2914 data/core/terrain.cfg:2929
-#: data/core/terrain.cfg:2941 data/core/terrain.cfg:2954
-#: data/core/terrain.cfg:2969 data/core/terrain.cfg:2981
-#: data/core/terrain.cfg:2995 data/core/terrain.cfg:3012
-#: data/core/terrain.cfg:3026 data/core/terrain.cfg:3040
-#: data/core/terrain.cfg:3054 data/core/terrain.cfg:3068
-#: data/core/terrain.cfg:3082 data/core/terrain.cfg:3096
-#: data/core/terrain.cfg:3110 data/core/terrain.cfg:3124
+#: data/core/terrain.cfg:2806 data/core/terrain.cfg:2821
+#: data/core/terrain.cfg:2834 data/core/terrain.cfg:2847
+#: data/core/terrain.cfg:2859 data/core/terrain.cfg:2872
+#: data/core/terrain.cfg:2887 data/core/terrain.cfg:2899
+#: data/core/terrain.cfg:2912 data/core/terrain.cfg:2927
+#: data/core/terrain.cfg:2939 data/core/terrain.cfg:2952
+#: data/core/terrain.cfg:2967 data/core/terrain.cfg:2979
+#: data/core/terrain.cfg:2993 data/core/terrain.cfg:3010
+#: data/core/terrain.cfg:3024 data/core/terrain.cfg:3038
+#: data/core/terrain.cfg:3052 data/core/terrain.cfg:3066
+#: data/core/terrain.cfg:3080 data/core/terrain.cfg:3094
+#: data/core/terrain.cfg:3108 data/core/terrain.cfg:3122
 msgid "Bridge"
 msgstr "Γέφυρα"
 
 #. [terrain_type]: id=bridge
 #. [terrain_type]: id=bridgediag1
 #. [terrain_type]: id=bridgediag2
-#: data/core/terrain.cfg:2809 data/core/terrain.cfg:2824
-#: data/core/terrain.cfg:2837
+#: data/core/terrain.cfg:2807 data/core/terrain.cfg:2822
+#: data/core/terrain.cfg:2835
 msgid "Wooden Bridge"
 msgstr "Ξύλινη Γέφυρα"
 
 #. [terrain_type]: id=bridge
-#: data/core/terrain.cfg:2815
+#: data/core/terrain.cfg:2813
 msgid ""
 "To those capable of building one, the ability to lay a "
 "<italic>text='bridge'</italic> offers a liberation from the fickle nature of "
@@ -1806,98 +1806,98 @@ msgstr ""
 #. [terrain_type]: id=rotbridge
 #. [terrain_type]: id=rotbridgediag1
 #. [terrain_type]: id=rotbridgediag2
-#: data/core/terrain.cfg:2850 data/core/terrain.cfg:2862
-#: data/core/terrain.cfg:2875
+#: data/core/terrain.cfg:2848 data/core/terrain.cfg:2860
+#: data/core/terrain.cfg:2873
 msgid "Rotting Bridge"
 msgstr "Σάπια Γέφυρα"
 
 #. [terrain_type]: id=stone_bridge
 #. [terrain_type]: id=stone_bridgediag1
 #. [terrain_type]: id=stone_bridgediag2
-#: data/core/terrain.cfg:2890 data/core/terrain.cfg:2902
-#: data/core/terrain.cfg:2915
+#: data/core/terrain.cfg:2888 data/core/terrain.cfg:2900
+#: data/core/terrain.cfg:2913
 msgid "Basic Stone Bridge"
 msgstr "Βασική Πέτρινη Γέφυρα"
 
 #. [terrain_type]: id=snow_stone_bridge
 #. [terrain_type]: id=snow_stone_bridgediag1
 #. [terrain_type]: id=snow_stone_bridgediag2
-#: data/core/terrain.cfg:2930 data/core/terrain.cfg:2942
-#: data/core/terrain.cfg:2955
+#: data/core/terrain.cfg:2928 data/core/terrain.cfg:2940
+#: data/core/terrain.cfg:2953
 msgid "Snowy Stone Bridge"
 msgstr "Χιονισμένη Πέτρινη Γέφυρα"
 
 #. [terrain_type]: id=bridgechasm
 #. [terrain_type]: id=bridgechasmdiag1
 #. [terrain_type]: id=bridgechasmdiag2
-#: data/core/terrain.cfg:2970 data/core/terrain.cfg:2982
-#: data/core/terrain.cfg:2996
+#: data/core/terrain.cfg:2968 data/core/terrain.cfg:2980
+#: data/core/terrain.cfg:2994
 msgid "Cave Chasm Bridge"
 msgstr "Γέφυρα Χάσματος Σπηλιάς"
 
 #. [terrain_type]: id=hangingbridgediag1
 #. [terrain_type]: id=hangingbridgediag2
 #. [terrain_type]: id=hangingbridge
-#: data/core/terrain.cfg:3013 data/core/terrain.cfg:3027
-#: data/core/terrain.cfg:3041
+#: data/core/terrain.cfg:3011 data/core/terrain.cfg:3025
+#: data/core/terrain.cfg:3039
 msgid "Hanging Bridge"
 msgstr "Κρεμαστή Γέφυρα"
 
 #. [terrain_type]: id=stonechasmbridgediag1
 #. [terrain_type]: id=stonechasmbridgediag2
 #. [terrain_type]: id=stonechasmbridge
-#: data/core/terrain.cfg:3055 data/core/terrain.cfg:3069
-#: data/core/terrain.cfg:3083
+#: data/core/terrain.cfg:3053 data/core/terrain.cfg:3067
+#: data/core/terrain.cfg:3081
 msgid "Stone Chasm Bridge"
 msgstr "Πέτρινη Γέφυρα Χάσματος"
 
 #. [terrain_type]: id=plankbridgediag1
 #. [terrain_type]: id=plankbridgediag2
 #. [terrain_type]: id=plankbridge
-#: data/core/terrain.cfg:3097 data/core/terrain.cfg:3111
-#: data/core/terrain.cfg:3125
+#: data/core/terrain.cfg:3095 data/core/terrain.cfg:3109
+#: data/core/terrain.cfg:3123
 msgid "Plank Bridge"
 msgstr "Ξύλινη Γέφυρα"
 
 #. [terrain_type]: id=mark_high
-#: data/core/terrain.cfg:3140
+#: data/core/terrain.cfg:3138
 msgid "Marker High"
 msgstr "Δείκτης Υψηλός"
 
 #. [terrain_type]: id=mark_high2
-#: data/core/terrain.cfg:3150
+#: data/core/terrain.cfg:3148
 msgid "Marker High 2"
 msgstr "Δείκτης Υψηλός 2"
 
 #. [terrain_type]: id=mark_low
-#: data/core/terrain.cfg:3160
+#: data/core/terrain.cfg:3158
 msgid "Marker Low"
 msgstr "Δείκτης Χαμηλός"
 
 #. [terrain_type]: id=mark_low2
-#: data/core/terrain.cfg:3170
+#: data/core/terrain.cfg:3168
 msgid "Marker Low 2"
 msgstr "Δείκτης Χαμηλός 2"
 
 #. [terrain_type]: id=off_map
-#: data/core/terrain.cfg:3182
+#: data/core/terrain.cfg:3180
 msgid "Off Map"
 msgstr "Εκτός Χάρτη"
 
 #. [terrain_type]: id=off_map2
-#: data/core/terrain.cfg:3192
+#: data/core/terrain.cfg:3190
 msgid "Fake Map Border"
 msgstr "Ψεύτικο Όριο Χάρτη"
 
 #. [terrain_type]: id=overlay_artplaceholder
-#: data/core/terrain.cfg:3202
+#: data/core/terrain.cfg:3200
 msgid "Art Placeholder"
 msgstr "Θέση Γραφικού"
 
 #. [terrain_type]: id=shroud
 #. [toggle_button]: id=shroud
 #. [toggle_button]: id=sort_7
-#: data/core/terrain.cfg:3214
+#: data/core/terrain.cfg:3212
 #: data/gui/themes/default/dialogs/editor_edit_side.cfg:206
 #: data/gui/themes/default/dialogs/game_stats.cfg:384
 #: data/gui/themes/default/dialogs/mp_create_game.cfg:390
@@ -1905,24 +1905,24 @@ msgid "Shroud"
 msgstr "Καλυμμένος Χάρτης"
 
 #. [terrain_type]: id=fake_shroud_overlay
-#: data/core/terrain.cfg:3225
+#: data/core/terrain.cfg:3223
 msgid "Fake Shroud"
 msgstr "Ψεύτικη Κάλυψη"
 
 #. [terrain_type]: id=fog
 #. [toggle_button]: id=sort_6
-#: data/core/terrain.cfg:3236
+#: data/core/terrain.cfg:3234
 #: data/gui/themes/default/dialogs/game_stats.cfg:370
 msgid "Fog"
 msgstr "Ομίχλη"
 
 #. [terrain_type]: id=fungus
-#: data/core/terrain.cfg:3251 data/core/terrain.cfg:3252
+#: data/core/terrain.cfg:3249 data/core/terrain.cfg:3250
 msgid "Fungus"
 msgstr "Μύκητας"
 
 #. [terrain_type]: id=fungus
-#: data/core/terrain.cfg:3255
+#: data/core/terrain.cfg:3253
 msgid ""
 "<italic>text='Mushroom groves'</italic> are vast underground forests of "
 "giant mushrooms, which thrive in the damp darkness. Most units have trouble "
@@ -1947,7 +1947,7 @@ msgstr ""
 "το ιππικό λαμβάνει μόνο 20%."
 
 #. [terrain_type]: id=cave
-#: data/core/terrain.cfg:3266
+#: data/core/terrain.cfg:3264
 msgid ""
 "<italic>text='Cave'</italic> terrain represents any underground cavern with "
 "enough room for a unit to pass.\n"
@@ -1985,7 +1985,7 @@ msgstr ""
 "έχουν 50%."
 
 #. [terrain_type]: id=reef
-#: data/core/terrain.cfg:3296
+#: data/core/terrain.cfg:3294
 msgid ""
 "<italic>text='Coastal reefs'</italic> are shallows formed by stone, coral "
 "and sand.\n"
@@ -2006,7 +2006,7 @@ msgstr ""
 "ύφαλους."
 
 #. [terrain_type]: id=hills
-#: data/core/terrain.cfg:3310
+#: data/core/terrain.cfg:3308
 msgid ""
 "<italic>text='Hills'</italic> represent any reasonably rough terrain, with "
 "enough dips and rises in the ground to provide some cover. Hills are "
@@ -2030,7 +2030,7 @@ msgstr ""
 "περιορίζεται στο 40%. Οι νάνοι απολαμβάνουν 60% άμυνα σε λόφους."
 
 #. [terrain_type]: id=swamp_water
-#: data/core/terrain.cfg:3324
+#: data/core/terrain.cfg:3322
 msgid ""
 "<italic>text='Swamps'</italic> represent any sort of wetlands.\n"
 "Swamps slow down nearly everyone, and inhibit their ability to defend "
@@ -2054,7 +2054,7 @@ msgstr ""
 "γοργόνες, νάγκα και σαυριανοί όλοι γενικά απολαμβάνουν 60%."
 
 #. [terrain_type]: id=shallow_water
-#: data/core/terrain.cfg:3337
+#: data/core/terrain.cfg:3335
 msgid ""
 "<italic>text='Shallow water'</italic> represents any body of water deep "
 "enough to come up to roughly a man’s waist. This is enough to slow down "
@@ -2079,7 +2079,7 @@ msgstr ""
 "τόσο οι νάγκα όσο και οι γοργόνες απολαμβάνουν 60%."
 
 #. [terrain_type]: id=castle
-#: data/core/terrain.cfg:3352
+#: data/core/terrain.cfg:3350
 msgid ""
 "<italic>text='Castles'</italic> are any sort of permanent fortification.\n"
 "Nearly all units receive a considerable bonus to their defense by being "
@@ -2101,7 +2101,7 @@ msgstr ""
 "Οι περισσότερες μονάδες έχουν περίπου 60% άμυνα σε κάστρο."
 
 #. [terrain_type]: id=mountains
-#: data/core/terrain.cfg:3366
+#: data/core/terrain.cfg:3364
 msgid ""
 "<italic>text='Mountains'</italic> are steep enough that units often have to "
 "climb over obstacles to move.\n"
@@ -2132,7 +2132,7 @@ msgstr ""
 "απολαμβάνουν 70%."
 
 #. [terrain_type]: id=deep_water
-#: data/core/terrain.cfg:3378
+#: data/core/terrain.cfg:3376
 msgid ""
 "<italic>text='Deep water'</italic> represents any body of water deep enough "
 "to cover a man’s head.\n"
@@ -2151,12 +2151,12 @@ msgstr ""
 "πλήρη κίνηση."
 
 #. [terrain_type]: id=flat
-#: data/core/terrain.cfg:3389 data/core/terrain.cfg:3390
+#: data/core/terrain.cfg:3387 data/core/terrain.cfg:3388
 msgid "Flat"
 msgstr "Επίπεδο"
 
 #. [terrain_type]: id=flat
-#: data/core/terrain.cfg:3391
+#: data/core/terrain.cfg:3389
 msgid ""
 "<italic>text='Grassland'</italic> represents open plains, whether "
 "cultivated, cut back for grazing, or wild.\n"
@@ -2177,7 +2177,7 @@ msgstr ""
 "Οι περισσότερες μονάδες έχουν άμυνα 30 έως 40% σε λιβάδια."
 
 #. [terrain_type]: id=forest
-#: data/core/terrain.cfg:3404
+#: data/core/terrain.cfg:3402
 msgid ""
 "<italic>text='Forests'</italic> represent any woodland with significant "
 "undergrowth, enough to hinder passage. Though they slow nearly everyone "
@@ -2212,12 +2212,12 @@ msgstr ""
 "σε δάση."
 
 #. [terrain_type]: id=frozen
-#: data/core/terrain.cfg:3414 data/core/terrain.cfg:3415
+#: data/core/terrain.cfg:3412 data/core/terrain.cfg:3413
 msgid "Frozen"
 msgstr "Παγωμένο"
 
 #. [terrain_type]: id=frozen
-#: data/core/terrain.cfg:3417
+#: data/core/terrain.cfg:3415
 msgid ""
 "<italic>text='Frozen'</italic> terrain represents any flat area that is "
 "covered by snow or ice.\n"
@@ -2236,7 +2236,7 @@ msgstr ""
 "Οι περισσότερες μονάδες έχουν 20 έως 40% άμυνα σε παγωμένο έδαφος."
 
 #. [terrain_type]: id=village
-#: data/core/terrain.cfg:3430
+#: data/core/terrain.cfg:3428
 msgid ""
 "<italic>text='Villages'</italic> represent any group of buildings, human or "
 "otherwise.\n"
@@ -2262,12 +2262,12 @@ msgstr ""
 "λαμβάνει μόνο 40%."
 
 #. [terrain_type]: id=impassable
-#: data/core/terrain.cfg:3440 data/core/terrain.cfg:3441
+#: data/core/terrain.cfg:3438 data/core/terrain.cfg:3439
 msgid "Impassable"
 msgstr "Αδιάβατο"
 
 #. [terrain_type]: id=impassable
-#: data/core/terrain.cfg:3443
+#: data/core/terrain.cfg:3441
 msgid ""
 "Obstacles that not even the most determined traveler may overcome include "
 "solid walls of stone and mountains so tall and steep that they are "
@@ -2282,12 +2282,12 @@ msgstr ""
 "καν το πιο άγριο τρολ μπορεί να σπάσει παχιά τείχη από πέτρα."
 
 #. [terrain_type]: id=unwalkable
-#: data/core/terrain.cfg:3450 data/core/terrain.cfg:3451
+#: data/core/terrain.cfg:3448 data/core/terrain.cfg:3449
 msgid "Unwalkable"
 msgstr "Απάτητο"
 
 #. [terrain_type]: id=unwalkable
-#: data/core/terrain.cfg:3453
+#: data/core/terrain.cfg:3451
 msgid ""
 "<italic>text='Unwalkable terrain'</italic> covers any chasm or gorge which, "
 "as the name implies, cannot be crossed simply by walking. Chasms are noted "
@@ -2301,12 +2301,12 @@ msgstr ""
 "πετάξουν μπορούν να διασχίσουν αυτό το έδαφος."
 
 #. [terrain_type]: id=rails
-#: data/core/terrain.cfg:3460 data/core/terrain.cfg:3461
+#: data/core/terrain.cfg:3458 data/core/terrain.cfg:3459
 msgid "Rails"
 msgstr "Ράγες"
 
 #. [terrain_type]: id=rails
-#: data/core/terrain.cfg:3463
+#: data/core/terrain.cfg:3461
 msgid ""
 "<italic>text='Rails'</italic> are used to transport ore, mostly by dwarves."
 msgstr ""
@@ -2318,9 +2318,9 @@ msgstr ""
 #. [terrain_type]: id=rug_floor_deprecated
 #. [terrain_type]: id=rug2_floor_deprecated
 #. [terrain_type]: id=old_wood_floor_deprecated
-#: data/core/terrain.cfg:3476 data/core/terrain.cfg:3487
-#: data/core/terrain.cfg:3498 data/core/terrain.cfg:3509
-#: data/core/terrain.cfg:3520
+#: data/core/terrain.cfg:3474 data/core/terrain.cfg:3485
+#: data/core/terrain.cfg:3496 data/core/terrain.cfg:3507
+#: data/core/terrain.cfg:3518
 msgid "Deprecated"
 msgstr "Μη Υποστηριζόμενο"
 
@@ -2349,7 +2349,7 @@ msgstr ""
 #: data/gui/themes/default/dialogs/mp_alerts_options.cfg:227
 #: data/gui/themes/default/dialogs/mp_create_game.cfg:459
 #: data/gui/themes/default/dialogs/preferences/02_hotkeys.cfg:298
-#: data/gui/themes/default/dialogs/reachmap_options.cfg:160
+#: data/gui/themes/default/dialogs/reachmap_options.cfg:176
 #: data/gui/themes/default/dialogs/select_orb_colors.cfg:170
 msgid "Defaults"
 msgstr "Προκαθορισμένα"
@@ -2362,7 +2362,7 @@ msgid "Players"
 msgstr "Παίκτες"
 
 #. [settings]
-#: data/gui/themes/celes/_main.cfg:25 data/gui/themes/default/_main.cfg:23
+#: data/gui/themes/celes/_main.cfg:27 data/gui/themes/default/_main.cfg:25
 msgid " (Press ‘$hotkey’ for more information)"
 msgstr " (Πατήστε '$hotkey' για περισσότερες πληροφορίες)"
 
@@ -2402,7 +2402,7 @@ msgstr "Συμβουλή της Ημέρας"
 #. [button]: id=toggle_tip_panel
 #. [toggle_button]: id=show_tips
 #: data/gui/themes/celes/dialogs/title_screen.cfg:216
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:223
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:95
 msgid "Show tip of the day"
 msgstr "Εμφάνιση συμβουλής της ημέρας"
 
@@ -2689,7 +2689,7 @@ msgstr "Αποθήκευση κωδικού τοπικά (κρυπτογραφη
 #: data/gui/themes/default/dialogs/mp_method_selection.cfg:356
 #: data/gui/themes/default/dialogs/mp_report.cfg:235
 #: data/gui/themes/default/dialogs/prompt.cfg:86
-#: data/gui/themes/default/dialogs/reachmap_options.cfg:171
+#: data/gui/themes/default/dialogs/reachmap_options.cfg:187
 #: data/gui/themes/default/dialogs/select_orb_colors.cfg:181
 #: data/gui/themes/default/dialogs/simple_item_selector.cfg:145
 #: data/gui/themes/default/dialogs/sp_options_configure.cfg:105
@@ -2711,7 +2711,7 @@ msgstr "Εντάξει"
 #: data/gui/themes/default/dialogs/addon_connect.cfg:206
 #: data/gui/themes/default/dialogs/addon_license_prompt.cfg:113
 #: data/gui/themes/default/dialogs/addon_uninstall_list.cfg:170
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:626
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:627
 #: data/gui/themes/default/dialogs/campaign_difficulty.cfg:234
 #: data/gui/themes/default/dialogs/core_dialog.cfg:241
 #: data/gui/themes/default/dialogs/custom_tod.cfg:534
@@ -2749,7 +2749,7 @@ msgstr "Εντάξει"
 #: data/gui/themes/default/dialogs/mp_report.cfg:249
 #: data/gui/themes/default/dialogs/mp_staging.cfg:450
 #: data/gui/themes/default/dialogs/network_transmission.cfg:111
-#: data/gui/themes/default/dialogs/reachmap_options.cfg:182
+#: data/gui/themes/default/dialogs/reachmap_options.cfg:198
 #: data/gui/themes/default/dialogs/select_orb_colors.cfg:192
 #: data/gui/themes/default/dialogs/simple_item_selector.cfg:158
 #: data/gui/themes/default/dialogs/sp_options_configure.cfg:117
@@ -2857,7 +2857,7 @@ msgstr "Ενημερώθηκε:"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [scroll_label]: id=description
 #: data/gui/themes/default/dialogs/addon_manager.cfg:415
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:718
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:730
 msgid "No description available."
 msgstr "Δεν υπάρχει διαθέσιμη περιγραφή"
 
@@ -3088,8 +3088,10 @@ msgstr "Πιθανότητα μη τραυματισμού"
 msgid "Expected Battle Result (HP)"
 msgstr "Αναμενόμενο Αποτέλεσμα Μάχης (ΠΖ)"
 
+#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=title
 #: data/gui/themes/default/dialogs/attack_predictions.cfg:251
+#: src/gui/dialogs/attack_predictions.cpp:60
 msgid "Damage Calculations"
 msgstr "Υπολογισμοί Ζημιάς"
 
@@ -3106,12 +3108,12 @@ msgstr "Αμυνόμενος"
 #. [label]
 #. The campaign_landing^ strings are shown in the right-hand panel when the campaign menu is opened.
 #. This one is the page title, shown in bold.
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:207
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:208
 msgid "campaign_landing^Welcome to Wesnoth v1.20"
 msgstr ""
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:209
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:210
 msgid ""
 "campaign_landing^<b>If you’re new to Wesnoth</b>, the opening story arc "
 "starts with <span color='#e1e119' style='italic'>The South Guard</span> and "
@@ -3122,14 +3124,14 @@ msgid ""
 msgstr ""
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:211
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:212
 msgid ""
 "campaign_landing^<b>If you’re a returning player</b>, you’ll notice a number "
 "of changes since v1.18:"
 msgstr ""
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:213
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:214
 msgid ""
 "campaign_landing^<span color='#e1e119' style='italic'>Heir to the Throne</"
 "span> now features an open world with 33 branching scenarios, each awarding "
@@ -3138,7 +3140,7 @@ msgid ""
 msgstr ""
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:215
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:216
 msgid ""
 "campaign_landing^<span color='#e1e119' style='italic'>The Deceiver’s Gambit</"
 "span> replaces <i>Delfador’s Memoirs</i>. Follow a young mage from the "
@@ -3148,7 +3150,7 @@ msgid ""
 msgstr ""
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:217
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:218
 msgid ""
 "campaign_landing^<span color='#e1e119' style='italic'>Dusk of Dawn</span> is "
 "our first troll campaign. Lead the Golden Flame Tribe out from the bowels of "
@@ -3156,7 +3158,7 @@ msgid ""
 msgstr ""
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:219
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:220
 msgid ""
 "campaign_landing^<span color='#e1e119' style='italic'>Of Pearls and Pirates</"
 "span> is a new beginner-oriented campaign set in a sleepy fishing town on "
@@ -3165,7 +3167,7 @@ msgid ""
 msgstr ""
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:221
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:222
 msgid ""
 "campaign_landing^<span color='#e1e119' style='italic'>The South Guard</span> "
 "has been significantly revised, and now replaces the classic <i>Battle "
@@ -3175,7 +3177,7 @@ msgid ""
 msgstr ""
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:223
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:224
 msgid ""
 "campaign_landing^<span color='#e1e119' style='italic'>The Hammer of "
 "Thursagan</span> has been enhanced with story adjustments, improved enemy "
@@ -3184,7 +3186,7 @@ msgid ""
 msgstr ""
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:225
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:226
 msgid ""
 "campaign_landing^<span color='#e1e119' style='italic'>Winds of Fate</span> "
 "has been rebalanced with much lower recall costs, redesigned wildlife "
@@ -3194,14 +3196,14 @@ msgid ""
 msgstr ""
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:227
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:228
 msgid ""
 "campaign_landing^For a full list of changes, consult our official changelog "
 "at https://www.wesnoth.org/start/1.20/"
 msgstr ""
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:248
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:249
 msgid ""
 "In addition to the mainline campaigns, Wesnoth also has an ever-growing list "
 "of add-on content created by other players available via the Add-ons server, "
@@ -3219,7 +3221,7 @@ msgstr ""
 #. [label]
 #. "more than 15" gives a little leeway to add or remove one without changing the translatable text.
 #. It's already ambiguous, 1.18 has 19 campaigns, if you include the tutorial and multiplayer-only World Conquest.
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:265
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:266
 msgid ""
 "Wesnoth normally includes more than 15 mainline campaigns, even before "
 "installing any from the add-ons server. If you’ve installed the game via a "
@@ -3236,7 +3238,7 @@ msgstr ""
 #. [label]: id=name
 #. [label]
 #. [toggle_button]: id=unit_name
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:305
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:306
 #: data/gui/themes/default/dialogs/game_load.cfg:170
 #: data/gui/themes/default/dialogs/mp_connect.cfg:159
 #: data/gui/themes/default/dialogs/mp_faction_select.cfg:33
@@ -3247,95 +3249,105 @@ msgid "Name"
 msgstr "Όνομα"
 
 #. [toggle_button]: id=sort_name
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:306
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:307
 msgid "Sort by full campaign name in alphabetical order"
 msgstr "Ταξινόμηση με πλήρες όνομα εκστρατείας σε αλφαβητική σειρά"
 
 #. [toggle_button]: id=sort_time
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:317
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:318
 msgid "Timeline"
 msgstr "Χρονολόγιο"
 
 #. [toggle_button]: id=sort_time
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:318
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:319
 msgid "Sort in approximate chronological order of story events"
 msgstr "Ταξινόμηση σε κατά προσέγγιση χρονολογική σειρά συμβάντων ιστορίας"
 
 #. [multimenu_button]: id=filter_completion
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:328
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:329
 msgid "Filter by campaign completion status"
 msgstr "Φιλτράρισμα με κατάσταση ολοκλήρωσης εκστρατείας"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:331
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:332
 msgid "Not Completed"
 msgstr "Δεν Ολοκληρώθηκε"
 
 #. [option]
 #. campaigns which the player hasn't beaten, rather than campaigns which the author hasn't finished writing
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:333
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:334
 msgid "Show campaigns not completed by player"
 msgstr "Εμφάνιση εκστρατειών που δεν ολοκληρώθηκαν από τον παίκτη"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:337
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:338
 msgid "Completed: Bronze"
 msgstr "Ολοκληρώθηκε: Χάλκινο"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:338
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:339
 msgid "Show campaigns completed at easiest difficulty"
 msgstr "Εμφάνιση εκστρατειών που ολοκληρώθηκαν στην ευκολότερη δυσκολία"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:342
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:343
 msgid "Completed: Silver"
 msgstr "Ολοκληρώθηκε: Ασημένιο"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:343
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:344
 msgid "Show campaigns completed at intermediate difficulties"
 msgstr "Εμφάνιση εκστρατειών που ολοκληρώθηκαν σε ενδιάμεσες δυσκολίες"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:347
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:348
 msgid "Completed: Gold"
 msgstr "Ολοκληρώθηκε: Χρυσό"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:348
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:349
 msgid "Show campaigns completed at hardest difficulty"
 msgstr "Εμφάνιση εκστρατειών που ολοκληρώθηκαν στη δυσκολότερη δυσκολία"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:352
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:353
 msgid "Completed: All"
 msgstr "Ολοκληρώθηκε: Όλα"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:353
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:354
 msgid "Show completed campaigns"
 msgstr "Εμφάνιση ολοκληρωμένων εκστρατειών"
 
 #. [label]
 #. [label]: id=mods_header
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:404
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:405
 #: data/gui/themes/default/dialogs/mp_create_game.cfg:209
 msgid "Modifications:"
 msgstr "Τροποποιήσεις:"
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:429
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:430
 msgid "Combat:"
 msgstr "Μάχη:"
 
+#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:444
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:445
+#: src/gui/dialogs/attack_predictions.cpp:79
 msgid "Default RNG"
 msgstr "Προεπιλεγμένη Γεννήτρια Τυχαίων Αριθμών"
 
+#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:445
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:446
+#: src/gui/dialogs/attack_predictions.cpp:93
+#, fuzzy, c-format
+#| msgid ""
+#| "Pure, unbiased randomness; the way Wesnoth is intended to be played.\n"
+#| "\n"
+#| "Example: if you strike twice with 50% accuracy, you’re most likely to hit "
+#| "once and miss once, but might also hit twice or miss twice."
 msgid ""
 "Pure, unbiased randomness; the way Wesnoth is intended to be played.\n"
 "\n"
@@ -3349,13 +3361,17 @@ msgstr ""
 "πετύχετε μία φορά και να αστοχήσετε μία φορά, αλλά μπορεί επίσης να πετύχετε "
 "δύο φορές ή να αστοχήσετε δύο φορές."
 
+#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:450
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:451
+#: src/gui/dialogs/attack_predictions.cpp:76
 msgid "Predictable RNG"
 msgstr "Προβλέψιμη Γεννήτρια Τυχαίων Αριθμών"
 
+#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:451
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:452
+#: src/gui/dialogs/attack_predictions.cpp:91
 msgid ""
 "Identical to Default RNG, except loading a saved game will not change the "
 "outcome of an attack.\n"
@@ -3370,13 +3386,24 @@ msgstr ""
 "χτυπήματα. Στη συνέχεια φορτώνετε μια προηγούμενη αποθήκευση και κάνετε την "
 "ίδια επίθεση ξανά. Και τα δύο χτυπήματα θα χτυπήσουν ακόμα."
 
+#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:456
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:457
+#: src/gui/dialogs/attack_predictions.cpp:72
 msgid "Reduced RNG"
 msgstr "Μειωμένη Γεννήτρια Τυχαίων Αριθμών"
 
+#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:457
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:458
+#: src/gui/dialogs/attack_predictions.cpp:89
+#, fuzzy, c-format
+#| msgid ""
+#| "Hits and misses are much more consistent. This tends to make small-scale "
+#| "engagements easier to plan.\n"
+#| "\n"
+#| "Example: if you strike three times with 50% accuracy, you will always hit "
+#| "at least once and miss at least once."
 msgid ""
 "Hits and misses are much more consistent. This tends to make small-scale "
 "engagements easier to plan.\n"
@@ -3391,36 +3418,35 @@ msgstr ""
 "τουλάχιστον μία φορά και θα αστοχήσετε τουλάχιστον μία φορά."
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:474
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:475
 msgid "Difficulty:"
 msgstr "Δυσκολία:"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:488
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:489
 msgid "Easy"
 msgstr "Εύκολο"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:491
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:492
 msgid "Normal"
 msgstr "Κανονικός"
 
 #. [option]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:494
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:495
 msgid "Hard"
 msgstr "Δύσκολο"
 
 #. [label]
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:551
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:552
 msgid "Play a Campaign"
 msgstr "Παίξτε μια εκστρατεία"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
-#. [button]: id=proceed
 #. [button]: id=ok
-#: data/gui/themes/default/dialogs/campaign_dialog.cfg:615
+#: data/gui/themes/default/dialogs/campaign_dialog.cfg:616
 #: data/gui/themes/default/dialogs/campaign_difficulty.cfg:221
-#: src/gui/dialogs/campaign_selection.cpp:82
+#: src/gui/dialogs/campaign_selection.cpp:85
 msgid "game^Play"
 msgstr "Παίξε"
 
@@ -3429,7 +3455,7 @@ msgstr "Παίξε"
 #. [slider]: id=enemey_gold_factor
 #. [slider]: id=enemy_gold_factor
 #: data/gui/themes/default/dialogs/campaign_difficulty.cfg:53
-#: data/multiplayer/scenarios/2p_Dark_Forecast.cfg:249
+#: data/multiplayer/scenarios/2p_Dark_Forecast.cfg:248
 #: data/multiplayer/scenarios/2p_Isle_of_Mists.cfg:295
 #: src/gui/dialogs/editor/edit_pbl.cpp:198
 msgid "Difficulty"
@@ -3492,7 +3518,7 @@ msgstr "Φόρτωση Πυρήνα"
 #: data/gui/themes/default/dialogs/language_selection.cfg:293
 #: src/gui/dialogs/editor/custom_tod.cpp:172
 #: src/gui/dialogs/editor/edit_unit.cpp:296
-#: src/preferences/preferences.cpp:1342
+#: src/preferences/preferences.cpp:1336
 msgid "Select"
 msgstr "Επιλογή"
 
@@ -3562,7 +3588,7 @@ msgstr "Επεξεργασία Προγράμματος Ώρας"
 #: data/gui/themes/default/dialogs/screenshot_notification.cfg:120
 #: data/gui/themes/default/dialogs/tod_new_schedule.cfg:86
 #: src/gui/dialogs/multiplayer/mp_connect.cpp:183
-#: src/gui/dialogs/units_dialog.cpp:245
+#: src/gui/dialogs/units_dialog.cpp:248
 msgid "Name:"
 msgstr "Όνομα:"
 
@@ -4020,7 +4046,7 @@ msgstr "Αναγνωριστικό:"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_scenario.cfg:170
-#: src/gui/dialogs/multiplayer/lobby.cpp:452
+#: src/gui/dialogs/multiplayer/lobby.cpp:454
 msgid "Experience modifier:"
 msgstr "Τροποποιητής Εμπειρίας:"
 
@@ -4088,7 +4114,7 @@ msgstr "Χρυσός:"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/themes/default/dialogs/editor_edit_side.cfg:303
-#: src/gui/dialogs/multiplayer/lobby.cpp:453
+#: src/gui/dialogs/multiplayer/lobby.cpp:455
 msgid "Gold per village:"
 msgstr "Χρυσός ανά χωριό:"
 
@@ -4310,7 +4336,6 @@ msgstr "Επεξεργαστής Τύπου Μονάδας"
 
 #. [tab]
 #: data/gui/themes/default/dialogs/editor_edit_unit.cfg:1200
-#: data/gui/themes/default/dialogs/preferences/01_general.cfg:226
 msgid "Main Stats"
 msgstr "Κύρια Χαρακτηριστικά"
 
@@ -4342,7 +4367,7 @@ msgstr "Επιλέξτε γεννήτρια χάρτη:"
 #. [button]: id=random_map_settings
 #: data/gui/themes/default/dialogs/editor_generate_map.cfg:128
 #: data/gui/themes/default/dialogs/mp_create_game.cfg:908
-#: src/gui/dialogs/multiplayer/lobby.cpp:451
+#: src/gui/dialogs/multiplayer/lobby.cpp:453
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
@@ -4380,7 +4405,7 @@ msgstr "Ύψος:"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=ok
 #: data/gui/themes/default/dialogs/editor_new_map.cfg:116
-#: src/gui/dialogs/units_dialog.cpp:473
+#: src/gui/dialogs/units_dialog.cpp:477
 msgid "Create"
 msgstr "Δημιουργία"
 
@@ -4778,7 +4803,7 @@ msgstr "Ρυθμίσεις Σεναρίου"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=ok
 #: data/gui/themes/default/dialogs/game_stats.cfg:832
-#: src/gui/dialogs/units_dialog.cpp:562
+#: src/gui/dialogs/units_dialog.cpp:566
 msgid "Scroll To"
 msgstr "Κύλιση Σε"
 
@@ -4976,6 +5001,7 @@ msgstr ""
 #. [widget]: id=tab_label
 #: data/gui/themes/default/dialogs/game_version.cfg:887
 #: data/gui/themes/default/dialogs/mp_create_game.cfg:564
+#: data/gui/themes/default/dialogs/preferences/01_general.cfg:226
 #: data/gui/themes/default/dialogs/preferences/05_multiplayer.cfg:405
 #: data/gui/themes/default/dialogs/server_info.cfg:181
 #: src/hotkey/hotkey_command.cpp:51
@@ -5142,7 +5168,7 @@ msgid "Show in-progress or abandoned translations"
 msgstr "Εμφάνιση μεταφράσεων σε εξέλιξη ή εγκαταλελειμμένων"
 
 #. [label]: id=status
-#: data/gui/themes/default/dialogs/loadscreen.cfg:183
+#: data/gui/themes/default/dialogs/loadscreen.cfg:185
 msgid "Loading..."
 msgstr "Φόρτωση..."
 
@@ -5234,14 +5260,14 @@ msgstr "Δημιουργία Παιχνιδιού"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=join_global
 #: data/gui/themes/default/dialogs/lobby_main.cfg:561
-#: src/gui/dialogs/multiplayer/lobby.cpp:992
+#: src/gui/dialogs/multiplayer/lobby.cpp:1018
 msgid "Join"
 msgstr "Συμμετοχή"
 
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=observe_global
 #: data/gui/themes/default/dialogs/lobby_main.cfg:573
-#: src/gui/dialogs/multiplayer/lobby.cpp:962
+#: src/gui/dialogs/multiplayer/lobby.cpp:988
 msgid "Observe"
 msgstr "Θέαση"
 
@@ -5885,7 +5911,7 @@ msgstr ""
 #: data/gui/themes/default/dialogs/mp_create_game/default_resolution.cfg:176
 #: data/gui/themes/default/dialogs/mp_create_game/small_resolution.cfg:181
 #: data/gui/themes/default/dialogs/mp_create_game/tiny_resolution.cfg:164
-#: src/gui/dialogs/multiplayer/lobby.cpp:454
+#: src/gui/dialogs/multiplayer/lobby.cpp:456
 msgid "Map size:"
 msgstr "Μέγεθος χάρτη:"
 
@@ -5957,7 +5983,7 @@ msgstr "Φατρία:"
 #. [label]: id=status_label
 #: data/gui/themes/default/dialogs/mp_join_game.cfg:364
 #: data/gui/themes/default/dialogs/mp_staging.cfg:671
-#: src/gui/dialogs/multiplayer/mp_staging.cpp:514
+#: src/gui/dialogs/multiplayer/mp_staging.cpp:515
 msgid "Waiting for players to join..."
 msgstr "Αναμονή για παίκτες να συμμετάσχουν..."
 
@@ -6008,7 +6034,7 @@ msgstr "Κανένα"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [widget]: id=tab_label
 #: data/gui/themes/default/dialogs/mp_match_history.cfg:401
-#: src/gui/dialogs/multiplayer/lobby.cpp:430
+#: src/gui/dialogs/multiplayer/lobby.cpp:432
 msgid "Modifications"
 msgstr "Τροποποιήσεις"
 
@@ -6339,7 +6365,7 @@ msgstr "Συντόμευση"
 #. [toggle_button]: id=sort_2
 #. Translate G as the initial letter for Game
 #: data/gui/themes/default/dialogs/preferences/02_hotkeys.cfg:130
-#: src/gui/dialogs/preferences_dialog.cpp:885
+#: src/gui/dialogs/preferences_dialog.cpp:896
 msgid "game_hotkeys^G"
 msgstr "Π"
 
@@ -6352,7 +6378,7 @@ msgstr "Διαθέσιμο στο παιχνίδι"
 #. [toggle_button]: id=sort_3
 #. Translate E as the initial letter for Editor
 #: data/gui/themes/default/dialogs/preferences/02_hotkeys.cfg:145
-#: src/gui/dialogs/preferences_dialog.cpp:886
+#: src/gui/dialogs/preferences_dialog.cpp:897
 msgid "editor_hotkeys^E"
 msgstr "Ε"
 
@@ -6365,7 +6391,7 @@ msgstr "Διαθέσιμο στον επεξεργαστή"
 #. [toggle_button]: id=sort_4
 #. Translate M as the initial letter for Main Menu
 #: data/gui/themes/default/dialogs/preferences/02_hotkeys.cfg:160
-#: src/gui/dialogs/preferences_dialog.cpp:887
+#: src/gui/dialogs/preferences_dialog.cpp:898
 msgid "mainmenu_hotkeys^M"
 msgstr "Κ"
 
@@ -6385,57 +6411,32 @@ msgid "Clear Hotkey"
 msgstr "Καθαρισμός Συντόμευσης"
 
 #. [label]
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:15
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:23
 msgid "Window size:"
 msgstr "Μέγεθος παραθύρου:"
 
-#. [label]: id=help_text
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:39
-msgid "Pixel scale multiplier:"
-msgstr "Πολλαπλασιαστής κλίμακας pixel:"
-
 #. [menu_button]: id=resolution_set
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:73
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:40
 msgid "Change the game window size"
 msgstr "Αλλαγή του μεγέθους του παραθύρου του παιχνιδιού"
 
-#. [slider]: id=pixel_scale_slider
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:87
-msgid ""
-"Set the global pixel scale multiplier. A pixel scale multiplier of 2 will "
-"make everything look twice as large."
-msgstr ""
-"Ορισμός του καθολικού πολλαπλασιαστή κλίμακας pixel. Ένας πολλαπλασιαστής "
-"κλίμακας pixel του 2 θα κάνει τα πάντα να φαίνονται διπλάσια."
-
 #. [toggle_button]: id=fullscreen
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:102
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:55
 msgid "Full screen"
 msgstr "Πλήρης οθόνη"
 
 #. [toggle_button]: id=fullscreen
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:103
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:56
 msgid "Toggle between fullscreen and window mode"
 msgstr "Εναλλαγή μεταξύ πλήρους οθόνης και λειτουργίας παραθύρου"
 
-#. [toggle_button]: id=auto_pixel_scale
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:114
-msgid "pixel_scale_multiplier^Automatic scale"
-msgstr "Αυτόματη κλίμακα"
-
-#. [toggle_button]: id=auto_pixel_scale
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:115
-msgid "Choose pixel scale multiplier automatically based on current resolution"
-msgstr ""
-"Επιλογή πολλαπλασιαστή κλίμακας pixel αυτόματα βάσει της τρέχουσας ανάλυσης"
-
 #. [toggle_button]: id=vsync
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:129
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:69
 msgid "VSync"
 msgstr "VSync"
 
 #. [toggle_button]: id=vsync
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:130
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:70
 msgid ""
 "Reduces tearing by synchronizing rendering with the screen refresh rate "
 "(requires restart to take effect)"
@@ -6443,63 +6444,30 @@ msgstr ""
 "Μειώνει το tearing συγχρονίζοντας την απόδοση με το ρυθμό ανανέωσης της "
 "οθόνης (απαιτεί επανεκκίνηση για να τεθεί σε ισχύ)"
 
-#. [label]
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:152
-msgid "In-game theme:"
-msgstr "Θέμα παιχνιδιού:"
-
-#. [menu_button]: id=choose_theme
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:165
-msgid ""
-"Change the in-game interface theme. Additional themes may be provided by "
-"community-made add-ons"
-msgstr ""
-"Αλλαγή του θέματος διεπαφής εντός παιχνιδιού. Επιπλέον θέματα μπορεί να "
-"παρέχονται από πρόσθετα της κοινότητας"
-
-#. [label]
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:176
-msgid "UI theme:"
-msgstr "Θέμα UI:"
-
-#. [menu_button]: id=choose_gui2_theme
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:192
-msgid ""
-"Change the UI (GUI2) theme. Additional themes may be provided by community-"
-"made add-ons"
-msgstr ""
-"Αλλαγή του θέματος UI (GUI2). Επιπλέον θέματα μπορεί να παρέχονται από "
-"πρόσθετα της κοινότητας"
-
-#. [button]: id=apply
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:201
-msgid "Apply"
-msgstr "Εφαρμογή"
-
 #. [toggle_button]: id=show_tips
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:224
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:96
 msgid "Show gameplay tips on the main menu"
 msgstr "Εμφάνιση συμβουλών παιχνιδιού στο κύριο μενού"
 
 #. [toggle_button]: id=show_floating_labels
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:236
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:109
 msgid "Combat damage indicators"
 msgstr "Δείκτες ζημιάς μάχης"
 
 #. [toggle_button]: id=show_floating_labels
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:237
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:110
 msgid "Show amount of damage inflicted or healed as fading labels above units"
 msgstr ""
 "Εμφάνιση ποσού ζημιάς που προκλήθηκε ή θεραπεύτηκε ως ξεθωριασμένες ετικέτες "
 "πάνω από μονάδες"
 
 #. [toggle_button]: id=show_ellipses
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:250
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:123
 msgid "Team color indicators"
 msgstr "Δείκτες χρώματος ομάδας"
 
 #. [toggle_button]: id=show_ellipses
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:251
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:124
 msgid ""
 "Show a colored circle around the base of each unit to show which side it is "
 "on"
@@ -6508,67 +6476,147 @@ msgstr ""
 "οποία ανήκει"
 
 #. [toggle_button]: id=show_grid
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:264
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:137
 msgid "Grid overlay"
 msgstr "Επικάλυψη πλέγματος"
 
 #. [toggle_button]: id=show_grid
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:265
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:138
 msgid "Overlay a grid over the map"
 msgstr "Επικάλυψη πλέγματος πάνω στον χάρτη"
 
 #. [toggle_button]: id=animate_terrains
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:300
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:163
 msgid "Animate map"
 msgstr "Κίνηση χάρτη"
 
 #. [toggle_button]: id=animate_terrains
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:301
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:164
 msgid "Display animated terrain graphics"
 msgstr "Εμφάνιση κινούμενων γραφικών εδάφους"
 
 #. [toggle_button]: id=animate_water
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:314
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:177
 msgid "Animate water"
 msgstr "Κίνηση νερού"
 
 #. [toggle_button]: id=animate_water
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:315
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:178
 msgid "Display animated water graphics (can be slow)"
 msgstr "Εμφάνιση κινούμενων γραφικών νερού (μπορεί να είναι αργό)"
 
+#. [label]: id=help_text
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:225
+msgid "Pixel scale multiplier:"
+msgstr "Πολλαπλασιαστής κλίμακας pixel:"
+
+#. [slider]: id=pixel_scale_slider
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:256
+msgid ""
+"Set the global pixel scale multiplier. A pixel scale multiplier of 2 will "
+"make everything look twice as large."
+msgstr ""
+"Ορισμός του καθολικού πολλαπλασιαστή κλίμακας pixel. Ένας πολλαπλασιαστής "
+"κλίμακας pixel του 2 θα κάνει τα πάντα να φαίνονται διπλάσια."
+
+#. [toggle_button]: id=auto_pixel_scale
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:269
+msgid "pixel_scale_multiplier^Automatic scale"
+msgstr "Αυτόματη κλίμακα"
+
+#. [toggle_button]: id=auto_pixel_scale
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:270
+msgid "Choose pixel scale multiplier automatically based on current resolution"
+msgstr ""
+"Επιλογή πολλαπλασιαστή κλίμακας pixel αυτόματα βάσει της τρέχουσας ανάλυσης"
+
+#. [label]
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:294
+msgid "In-game theme:"
+msgstr "Θέμα παιχνιδιού:"
+
+#. [menu_button]: id=choose_theme
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:308
+msgid ""
+"Change the in-game interface theme. Additional themes may be provided by "
+"community-made add-ons"
+msgstr ""
+"Αλλαγή του θέματος διεπαφής εντός παιχνιδιού. Επιπλέον θέματα μπορεί να "
+"παρέχονται από πρόσθετα της κοινότητας"
+
+#. [label]
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:320
+msgid "UI theme:"
+msgstr "Θέμα UI:"
+
+#. [menu_button]: id=choose_gui2_theme
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:337
+msgid ""
+"Change the UI (GUI2) theme. Additional themes may be provided by community-"
+"made add-ons"
+msgstr ""
+"Αλλαγή του θέματος UI (GUI2). Επιπλέον θέματα μπορεί να παρέχονται από "
+"πρόσθετα της κοινότητας"
+
+#. [button]: id=apply
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:346
+msgid "Apply"
+msgstr "Εφαρμογή"
+
+#. [button]: id=custom_orb_color
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:375
+msgid "Customize orb colors"
+msgstr ""
+
+#. [button]: id=custom_orb_color
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:377
+msgid "Change the appearance of the unit movement status indicators"
+msgstr ""
+
+#. [button]: id=custom_reach_map
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:391
+#, fuzzy
+#| msgid "Custom Maps"
+msgid "Customize reach map"
+msgstr "Προσαρμοσμένοι Χάρτες"
+
+#. [button]: id=custom_reach_map
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:392
+msgid "Change the appearance of the unit movement UI overlay"
+msgstr ""
+
 #. [toggle_button]: id=animate_units_standing
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:330
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:410
 msgid "Unit standing animations"
 msgstr "Κινήσεις στάσης μονάδων"
 
 #. [toggle_button]: id=animate_units_standing
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:331
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:411
 msgid "Continuously animate standing units on the battlefield"
 msgstr "Συνεχής κίνηση μονάδων που στέκονται στο πεδίο μάχης"
 
 #. [toggle_button]: id=animate_units_idle
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:349
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:429
 msgid "Unit idle animations"
 msgstr "Κινήσεις αδράνειας μονάδων"
 
 #. [toggle_button]: id=animate_units_idle
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:350
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:430
 msgid "Play short random animations for idle units"
 msgstr "Αναπαραγωγή σύντομων τυχαίων κινήσεων για αδρανείς μονάδες"
 
 #. [label]
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:373
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:453
 msgid "Frequency:"
 msgstr "Συχνότητα:"
 
 #. [slider]: id=idle_anim_frequency
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:389
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:469
 msgid "Set the frequency of unit idle animations"
 msgstr "Ορισμός της συχνότητας κινήσεων αδράνειας μονάδων"
 
 #. [tab]
-#: data/gui/themes/default/dialogs/preferences/03_display.cfg:454
+#: data/gui/themes/default/dialogs/preferences/03_display.cfg:549
 msgid "Display"
 msgstr "Οθόνη"
 
@@ -6791,6 +6839,18 @@ msgstr "Αδιαφάνεια Περιγράμματος:"
 #: data/gui/themes/default/dialogs/reachmap_options.cfg:144
 msgid "Tint Opacity:"
 msgstr "Αδιαφάνεια Απόχρωσης:"
+
+#. [grid]
+#: data/gui/themes/default/dialogs/reachmap_options.cfg:148
+#, fuzzy
+#| msgid "Border Opacity:"
+msgid "Darken Opacity:"
+msgstr "Αδιαφάνεια Περιγράμματος:"
+
+#. [toggle_button]: id=reachmap_darken_tex
+#: data/gui/themes/default/dialogs/reachmap_options.cfg:157
+msgid "Textured darken"
+msgstr ""
 
 #. [button]: id=open
 #: data/gui/themes/default/dialogs/screenshot_notification.cfg:49
@@ -7138,7 +7198,7 @@ msgstr "Σήμανση/αποσήμανση της επιλεγμένης μον
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/themes/default/dialogs/wml_error.cfg:40
-#: src/gui/dialogs/message.cpp:206 src/gui/dialogs/preferences_dialog.cpp:265
+#: src/gui/dialogs/message.cpp:206 src/gui/dialogs/preferences_dialog.cpp:250
 #: src/gui/dialogs/transient_message.cpp:77
 msgid "Error"
 msgstr "Σφάλμα"
@@ -7146,8 +7206,8 @@ msgstr "Σφάλμα"
 #. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=details_heading
 #: data/gui/themes/default/dialogs/wml_error.cfg:112
-#: src/gui/dialogs/multiplayer/lobby.cpp:178
-#: src/gui/dialogs/multiplayer/lobby.cpp:194 src/gui/dialogs/wml_error.cpp:156
+#: src/gui/dialogs/multiplayer/lobby.cpp:180
+#: src/gui/dialogs/multiplayer/lobby.cpp:196 src/gui/dialogs/wml_error.cpp:156
 msgid "Details:"
 msgstr "Λεπτομέρειες:"
 
@@ -7207,23 +7267,23 @@ msgstr ""
 msgid "Urban Jungle"
 msgstr ""
 
-#: src/build_info.cpp:297
+#: src/build_info.cpp:281
 msgid "feature^Lua console completion"
 msgstr "Συμπλήρωση κονσόλας Lua"
 
-#: src/build_info.cpp:304
+#: src/build_info.cpp:288
 msgid "feature^D-Bus notifications back end"
 msgstr "Σύστημα ειδοποιήσεων D-Bus"
 
-#: src/build_info.cpp:313
+#: src/build_info.cpp:297
 msgid "feature^Win32 notifications back end"
 msgstr "Σύστημα ειδοποιήσεων Win32"
 
-#: src/build_info.cpp:319
+#: src/build_info.cpp:303
 msgid "feature^Cocoa notifications back end"
 msgstr "Σύστημα ειδοποιήσεων Cocoa"
 
-#: src/build_info.cpp:358 src/desktop/version.cpp:129
+#: src/build_info.cpp:342 src/desktop/version.cpp:129
 msgid "cpu_architecture^<unknown>"
 msgstr "<άγνωστη>"
 
@@ -7269,7 +7329,7 @@ msgstr "<άγνωστο>"
 #. other's resources rather than duplicating them. For example,
 #. Swedish (sv) and Danish (da) are such, so Swedish translator could
 #. translate this message as "sv,da", while Danish as "da,sv".
-#: src/filesystem.cpp:1850
+#: src/filesystem.cpp:1845
 msgid "language code for localized resources^en_US"
 msgstr "el_GR"
 
@@ -7700,27 +7760,27 @@ msgstr "%d %B %Y, %H:%M"
 msgid "url^None"
 msgstr "Κανένα"
 
-#: src/gui/dialogs/attack_predictions.cpp:120
+#: src/gui/dialogs/attack_predictions.cpp:157
 msgid "No usable weapon"
 msgstr "Κανένα διαθέσιμο όπλο"
 
-#: src/gui/dialogs/attack_predictions.cpp:196
+#: src/gui/dialogs/attack_predictions.cpp:233
 msgid "Defender resistance vs"
 msgstr "Αντοχή αμυνόμενου εναντίον"
 
-#: src/gui/dialogs/attack_predictions.cpp:198
+#: src/gui/dialogs/attack_predictions.cpp:235
 msgid "Defender vulnerability vs"
 msgstr "Ευπάθεια αμυνόμενου εναντίον"
 
-#: src/gui/dialogs/attack_predictions.cpp:202
+#: src/gui/dialogs/attack_predictions.cpp:239
 msgid "Attacker resistance vs"
 msgstr "Αντοχή επιτιθέμενου εναντίον"
 
-#: src/gui/dialogs/attack_predictions.cpp:204
+#: src/gui/dialogs/attack_predictions.cpp:241
 msgid "Attacker vulnerability vs"
 msgstr "Ευπάθεια επιτιθέμενου εναντίον"
 
-#: src/gui/dialogs/campaign_selection.cpp:82
+#: src/gui/dialogs/campaign_selection.cpp:85
 msgid "game^Get Add-ons"
 msgstr "Λήψη Πρόσθετων"
 
@@ -7733,7 +7793,7 @@ msgid "Missing Campaigns"
 msgstr "Εκστρατείες που Λείπουν"
 
 #: src/gui/dialogs/campaign_selection.cpp:458
-#: src/gui/dialogs/multiplayer/lobby.cpp:435
+#: src/gui/dialogs/multiplayer/lobby.cpp:437
 msgid "active_modifications^None"
 msgstr "Κανένα"
 
@@ -7812,7 +7872,7 @@ msgid "Faction"
 msgstr "Φατρία"
 
 #: src/gui/dialogs/editor/edit_pbl.cpp:185
-#: src/gui/dialogs/multiplayer/lobby.cpp:423
+#: src/gui/dialogs/multiplayer/lobby.cpp:425
 msgid "Era"
 msgstr "Εποχή"
 
@@ -8103,17 +8163,17 @@ msgid "Unknown"
 msgstr "Άγνωστο"
 
 #: src/gui/dialogs/game_stats.cpp:188 src/gui/dialogs/game_stats.cpp:191
-#: src/gui/dialogs/multiplayer/lobby.cpp:449
+#: src/gui/dialogs/multiplayer/lobby.cpp:451
 msgid "no"
 msgstr "όχι"
 
 #: src/gui/dialogs/game_stats.cpp:188 src/gui/dialogs/game_stats.cpp:191
-#: src/gui/dialogs/multiplayer/lobby.cpp:449
+#: src/gui/dialogs/multiplayer/lobby.cpp:451
 msgid "yes"
 msgstr "ναι"
 
 #: src/gui/dialogs/game_version_dialog.cpp:263
-#: src/gui/dialogs/game_version_dialog.cpp:277 src/gui/widgets/label.cpp:124
+#: src/gui/dialogs/game_version_dialog.cpp:269 src/gui/widgets/label.cpp:124
 msgid "Opening links is not supported, contact your packager"
 msgstr ""
 "Το άνοιγμα συνδέσμων δεν υποστηρίζεται, επικοινωνήστε με τον δημιουργό του "
@@ -8225,11 +8285,11 @@ msgstr ""
 msgid "lua console"
 msgstr "κονσόλα lua"
 
-#: src/gui/dialogs/migrate_version_selection.cpp:47
+#: src/gui/dialogs/migrate_version_selection.cpp:52
 msgid "No Other Version Found"
 msgstr "Δεν Βρέθηκε Άλλη Έκδοση"
 
-#: src/gui/dialogs/migrate_version_selection.cpp:47
+#: src/gui/dialogs/migrate_version_selection.cpp:52
 msgid ""
 "This would import settings from a previous version of Wesnoth, but no other "
 "version was found on this device"
@@ -8238,19 +8298,19 @@ msgstr ""
 "βρέθηκε καμία άλλη έκδοση σε αυτήν τη συσκευή"
 
 #: src/gui/dialogs/multiplayer/faction_select.cpp:200
-#: src/gui/dialogs/multiplayer/mp_staging.cpp:498
+#: src/gui/dialogs/multiplayer/mp_staging.cpp:499
 msgid "Random"
 msgstr "Τυχαίο"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:65
+#: src/gui/dialogs/multiplayer/lobby.cpp:66
 msgid "Do you really want to log out?"
 msgstr "Θέλετε πραγματικά να αποσυνδεθείτε;"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:174
+#: src/gui/dialogs/multiplayer/lobby.cpp:176
 msgid "Incompatible User-made Content"
 msgstr "Ασύμβατο Περιεχόμενο από Χρήστες"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:175
+#: src/gui/dialogs/multiplayer/lobby.cpp:177
 msgid ""
 "This game cannot be joined because the host has out-of-date add-ons that are "
 "incompatible with your version. You might wish to suggest that the host’s "
@@ -8260,11 +8320,11 @@ msgstr ""
 "ξεπερασμένες επεκτάσεις που είναι ασύμβατες με την έκδοσή σας. Μπορεί να "
 "θέλετε να προτείνετε να ενημερωθούν οι επεκτάσεις του οικοδεσπότη."
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:190
+#: src/gui/dialogs/multiplayer/lobby.cpp:192
 msgid "Missing User-made Content"
 msgstr "Περιεχόμενο που Λείπει από Χρήστες"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:191
+#: src/gui/dialogs/multiplayer/lobby.cpp:193
 msgid ""
 "This game requires one or more user-made addons to be installed or updated "
 "in order to join.\n"
@@ -8274,39 +8334,39 @@ msgstr ""
 "πρόσθετα από χρήστες για να συμμετάσχετε.\n"
 "Θέλετε να δοκιμάσετε να τα εγκαταστήσετε;"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:368
+#: src/gui/dialogs/multiplayer/lobby.cpp:370
 msgid "Games: showing $num_shown out of $num_total"
 msgstr "Παιχνίδια: εμφάνιση $num_shown από $num_total"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:390
+#: src/gui/dialogs/multiplayer/lobby.cpp:392
 msgid "$game_name (Era: $era_name)"
 msgstr "$game_name (Εποχή: $era_name)"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:420
+#: src/gui/dialogs/multiplayer/lobby.cpp:422
 msgid "era_or_mod^not installed"
 msgstr "μη εγκατεστημένο"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:455
+#: src/gui/dialogs/multiplayer/lobby.cpp:457
 msgid "Reloaded:"
 msgstr "Επαναφορτώθηκε:"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:456
+#: src/gui/dialogs/multiplayer/lobby.cpp:458
 msgid "Shared vision:"
 msgstr "Κοινή όραση:"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:457
+#: src/gui/dialogs/multiplayer/lobby.cpp:459
 msgid "Shuffle sides:"
 msgstr "Ανακάτεμα πλευρών:"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:458
+#: src/gui/dialogs/multiplayer/lobby.cpp:460
 msgid "Time limit:"
 msgstr "Χρονικό όριο:"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:459
+#: src/gui/dialogs/multiplayer/lobby.cpp:461
 msgid "Use map settings:"
 msgstr "Χρήση ρυθμίσεων χάρτη:"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:467
+#: src/gui/dialogs/multiplayer/lobby.cpp:469
 msgid ""
 "One or more add-ons need to be installed\n"
 "in order to join this game."
@@ -8314,26 +8374,26 @@ msgstr ""
 "Ένα ή περισσότερα πρόσθετα πρέπει να εγκατασταθούν\n"
 "για να συμμετάσχετε σε αυτό το παιχνίδι."
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:492
+#: src/gui/dialogs/multiplayer/lobby.cpp:494
 msgid "Observers allowed"
 msgstr "Επιτρέπονται παρατηρητές"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:495
+#: src/gui/dialogs/multiplayer/lobby.cpp:497
 msgid "Observers not allowed"
 msgstr "Δεν επιτρέπονται παρατηρητές"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:641
+#: src/gui/dialogs/multiplayer/lobby.cpp:643
 msgid "lobby"
 msgstr "Αίθουσα"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:962
+#: src/gui/dialogs/multiplayer/lobby.cpp:988
 msgid ""
 "This game doesn’t allow observers. Observe using moderator rights anyway?"
 msgstr ""
 "Αυτό το παιχνίδι δεν επιτρέπει παρατηρητές. Να παρατηρήσετε χρησιμοποιώντας "
 "δικαιώματα συντονιστή;"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:973
+#: src/gui/dialogs/multiplayer/lobby.cpp:999
 msgid ""
 "Something is wrong with the addon version check database supporting the "
 "multiplayer lobby. Please report this at https://bugs.wesnoth.org."
@@ -8342,7 +8402,7 @@ msgstr ""
 "υποστηρίζει την αίθουσα πολλαπλών παικτών. Παρακαλώ αναφέρετε το στο https://"
 "bugs.wesnoth.org."
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:992
+#: src/gui/dialogs/multiplayer/lobby.cpp:1018
 msgid "This game is password protected. Join using moderator rights anyway?"
 msgstr ""
 "Αυτό το παιχνίδι προστατεύεται με κωδικό. Να γίνει συμμετοχή με δικαιώματα "
@@ -8388,41 +8448,53 @@ msgstr "Προσαρμοσμένα Σενάρια"
 msgid "Random Maps"
 msgstr "Τυχαίοι Χάρτες"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:282
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:283
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:167
+#, fuzzy
+#| msgid "Scenario Editor"
+msgid "Scenario not found: "
+msgstr "Επεξεργαστής Σεναρίου"
+
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:237
+#, fuzzy
+#| msgid "Modifications: "
+msgid "Modification(s) not found: "
+msgstr "Τροποποιήσεις: "
+
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:294
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:295
 msgid "No games found."
 msgstr "Δεν βρέθηκαν παιχνίδια."
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:344
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:356
 msgid "No eras found."
 msgstr "Δεν βρέθηκαν εποχές."
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:345
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:357
 msgid "No eras found"
 msgstr "Δεν βρέθηκαν εποχές"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:622
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:634
 msgid "No eras available for this game."
 msgstr "Δεν υπάρχουν διαθέσιμες εποχές για αυτό το παιχνίδι."
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:874
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:886
 msgid "number of players^$min to $max"
 msgstr "$min έως $max"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1027
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1039
 msgid "The selected game has no sides!"
 msgstr "Το επιλεγμένο παιχνίδι δεν έχει πλευρές!"
 
 #. TRANSLATORS: This sentence will be followed by some details of the error, most likely the "Map could not be loaded" message from create_engine.cpp
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1034
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1046
 msgid "The selected game cannot be created."
 msgstr "Το επιλεγμένο παιχνίδι δεν μπορεί να δημιουργηθεί."
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1107
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1119
 msgid "Choose Starting Scenario"
 msgstr "Επιλέξτε Αρχικό Σενάριο"
 
-#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1107
+#: src/gui/dialogs/multiplayer/mp_create_game.cpp:1119
 msgid "Select at which point to begin this campaign."
 msgstr "Επιλέξτε από ποιο σημείο να αρχίσει αυτή η εκστρατεία."
 
@@ -8467,7 +8539,7 @@ msgstr "Πλήκτρα συντόμευσης: $bindings"
 msgid "Invalid Color"
 msgstr "Άκυρο Χρώμα"
 
-#: src/gui/dialogs/multiplayer/mp_staging.cpp:515
+#: src/gui/dialogs/multiplayer/mp_staging.cpp:516
 msgid "Waiting for players to choose factions..."
 msgstr "Αναμονή για παίκτες να επιλέξουν φατρίες..."
 
@@ -8475,33 +8547,33 @@ msgstr "Αναμονή για παίκτες να επιλέξουν φατρί�
 msgid "The End"
 msgstr "Το Τέλος"
 
-#: src/gui/dialogs/preferences_dialog.cpp:192
+#: src/gui/dialogs/preferences_dialog.cpp:177
 msgid "friend"
 msgstr "φίλος"
 
-#: src/gui/dialogs/preferences_dialog.cpp:197
+#: src/gui/dialogs/preferences_dialog.cpp:182
 msgid "ignored"
 msgstr "αγνοήθηκε"
 
-#: src/gui/dialogs/preferences_dialog.cpp:250
-#: src/gui/dialogs/preferences_dialog.cpp:307
+#: src/gui/dialogs/preferences_dialog.cpp:235
+#: src/gui/dialogs/preferences_dialog.cpp:292
 msgid "No username specified"
 msgstr "Δεν καθορίστηκε όνομα χρήστη"
 
-#: src/gui/dialogs/preferences_dialog.cpp:265
+#: src/gui/dialogs/preferences_dialog.cpp:250
 msgid "Invalid username"
 msgstr "Μη έγκυρο όνομα χρήστη"
 
-#: src/gui/dialogs/preferences_dialog.cpp:312
+#: src/gui/dialogs/preferences_dialog.cpp:297
 msgid "Not on friends or ignore lists"
 msgstr "Δεν είναι στις λίστες φίλων ή αγνόησης"
 
-#: src/gui/dialogs/preferences_dialog.cpp:931
-#: src/gui/dialogs/preferences_dialog.cpp:995
+#: src/gui/dialogs/preferences_dialog.cpp:942
+#: src/gui/dialogs/preferences_dialog.cpp:1008
 msgid "No hotkey selected"
 msgstr "Δεν έχει επιλεγεί πλήκτρο συντόμευσης"
 
-#: src/gui/dialogs/preferences_dialog.cpp:959
+#: src/gui/dialogs/preferences_dialog.cpp:970
 msgid ""
 "“<b>$hotkey_sequence|</b>” is in use by “<b>$old_hotkey_action|</b>”.\n"
 "Do you wish to reassign it to “<b>$new_hotkey_action|</b>”?"
@@ -8510,16 +8582,16 @@ msgstr ""
 "\"<b>$old_hotkey_action|</b>\".\n"
 "Θέλετε να το αναθέσετε ξανά στο \"<b>$new_hotkey_action|</b>\";"
 
-#: src/gui/dialogs/preferences_dialog.cpp:965
+#: src/gui/dialogs/preferences_dialog.cpp:976
 msgid "Reassign Hotkey"
 msgstr "Επαναανάθεση Πλήκτρου Συντόμευσης"
 
-#: src/gui/dialogs/preferences_dialog.cpp:982
+#: src/gui/dialogs/preferences_dialog.cpp:993
 msgid "All hotkeys have been reset to their default values."
 msgstr ""
 "Όλα τα πλήκτρα συντόμευσης έχουν επαναφερθεί στις προεπιλεγμένες τιμές τους."
 
-#: src/gui/dialogs/preferences_dialog.cpp:982
+#: src/gui/dialogs/preferences_dialog.cpp:993
 msgid "Hotkeys Reset"
 msgstr "Επαναφορά Πλήκτρων Συντόμευσης"
 
@@ -8611,65 +8683,65 @@ msgstr "Έκδοση $version"
 msgid "Choose Test Scenario"
 msgstr "Επιλογή Σεναρίου Δοκιμής"
 
-#: src/gui/dialogs/units_dialog.cpp:245 src/hotkey/hotkey_command.cpp:103
+#: src/gui/dialogs/units_dialog.cpp:248 src/hotkey/hotkey_command.cpp:103
 msgid "Rename Unit"
 msgstr "Μετονομασία Μονάδας"
 
-#: src/gui/dialogs/units_dialog.cpp:278
+#: src/gui/dialogs/units_dialog.cpp:281
 msgid "This unit requires no upkeep."
 msgstr "Αυτή η μονάδα δεν απαιτεί συντήρηση."
 
-#: src/gui/dialogs/units_dialog.cpp:279 src/gui/dialogs/units_dialog.cpp:284
-#: src/gui/dialogs/units_dialog.cpp:289
+#: src/gui/dialogs/units_dialog.cpp:282 src/gui/dialogs/units_dialog.cpp:287
+#: src/gui/dialogs/units_dialog.cpp:292
 msgid "Do you really want to dismiss him?"
 msgstr "Θέλετε πραγματικά να τον απολύσετε;"
 
-#: src/gui/dialogs/units_dialog.cpp:280 src/gui/dialogs/units_dialog.cpp:285
-#: src/gui/dialogs/units_dialog.cpp:290
+#: src/gui/dialogs/units_dialog.cpp:283 src/gui/dialogs/units_dialog.cpp:288
+#: src/gui/dialogs/units_dialog.cpp:293
 msgid "Do you really want to dismiss her?"
 msgstr "Θέλετε πραγματικά να την απολύσετε;"
 
-#: src/gui/dialogs/units_dialog.cpp:283
+#: src/gui/dialogs/units_dialog.cpp:286
 msgid "This unit is an experienced one, having advanced levels."
 msgstr "Αυτή η μονάδα είναι έμπειρη, έχοντας προχωρήσει επίπεδα."
 
-#: src/gui/dialogs/units_dialog.cpp:288
+#: src/gui/dialogs/units_dialog.cpp:291
 msgid "This unit is close to advancing a level."
 msgstr "Αυτή η μονάδα πλησιάζει να προχωρήσει ένα επίπεδο."
 
-#: src/gui/dialogs/units_dialog.cpp:294
+#: src/gui/dialogs/units_dialog.cpp:297
 msgid "Dismiss Unit"
 msgstr "Απόλυση Μονάδας"
 
-#: src/gui/dialogs/units_dialog.cpp:436
+#: src/gui/dialogs/units_dialog.cpp:440
 msgid "unit_variation^Default Variation"
 msgstr "Προεπιλεγμένη Παραλλαγή"
 
-#: src/gui/dialogs/units_dialog.cpp:472
+#: src/gui/dialogs/units_dialog.cpp:476
 msgid "Create Unit"
 msgstr "Δημιουργία Μονάδας"
 
-#: src/gui/dialogs/units_dialog.cpp:543
+#: src/gui/dialogs/units_dialog.cpp:547
 msgid "Recruit Unit"
 msgstr "Στρατολόγηση Μονάδας"
 
-#: src/gui/dialogs/units_dialog.cpp:544 src/hotkey/hotkey_command.cpp:111
+#: src/gui/dialogs/units_dialog.cpp:548 src/hotkey/hotkey_command.cpp:111
 msgid "Recruit"
 msgstr "Στρατολόγηση"
 
-#: src/gui/dialogs/units_dialog.cpp:561 src/hotkey/hotkey_command.cpp:129
+#: src/gui/dialogs/units_dialog.cpp:565 src/hotkey/hotkey_command.cpp:129
 msgid "Unit List"
 msgstr "Λίστα Μονάδων"
 
-#: src/gui/dialogs/units_dialog.cpp:705
+#: src/gui/dialogs/units_dialog.cpp:709
 msgid "Recall Unit"
 msgstr "Ανάκληση Μονάδας"
 
-#: src/gui/dialogs/units_dialog.cpp:706 src/hotkey/hotkey_command.cpp:113
+#: src/gui/dialogs/units_dialog.cpp:710 src/hotkey/hotkey_command.cpp:113
 msgid "Recall"
 msgstr "Ανάκληση"
 
-#: src/gui/dialogs/units_dialog.cpp:834
+#: src/gui/dialogs/units_dialog.cpp:838
 msgid ""
 "This unit cannot be recalled because you will not have enough gold at this "
 "point in your plan."
@@ -8677,7 +8749,7 @@ msgstr ""
 "Αυτή η μονάδα δεν μπορεί να ανακληθεί επειδή δεν θα έχετε αρκετό χρυσό σε "
 "αυτό το σημείο του σχεδίου σας."
 
-#: src/gui/dialogs/units_dialog.cpp:836
+#: src/gui/dialogs/units_dialog.cpp:840
 msgid "This unit cannot be recalled because you do not have enough gold."
 msgstr "Αυτή η μονάδα δεν μπορεί να ανακληθεί επειδή δεν έχετε αρκετό χρυσό."
 
@@ -9742,13 +9814,13 @@ msgstr "Εμφάνιση Κονσόλας Lua"
 msgid "Unrecognized Command"
 msgstr "Μη Αναγνωρισμένη Εντολή"
 
-#: src/preferences/preferences.cpp:1299
+#: src/preferences/preferences.cpp:1293
 msgid "No known themes. Try changing from within an existing game."
 msgstr ""
 "Δεν υπάρχουν γνωστά θέματα. Δοκιμάστε να αλλάξετε από μέσα από ένα υπάρχον "
 "παιχνίδι."
 
-#: src/preferences/preferences.cpp:1336
+#: src/preferences/preferences.cpp:1330
 msgid ""
 "The <b>$filename</b> server application provides multiplayer server "
 "functionality and is required for hosting local network games. It will "
@@ -9759,15 +9831,15 @@ msgstr ""
 "δικτύου. Συνήθως θα βρίσκεται στον ίδιο φάκελο με το εκτελέσιμο του "
 "παιχνιδιού."
 
-#: src/preferences/preferences.cpp:1340
+#: src/preferences/preferences.cpp:1334
 msgid "Find Server Application"
 msgstr "Εύρεση Εφαρμογής Διακομιστή"
 
-#: src/preferences/preferences.cpp:1822
+#: src/preferences/preferences.cpp:1816
 msgid "[%H:%M]"
 msgstr "[%H:%M]"
 
-#: src/preferences/preferences.cpp:1824
+#: src/preferences/preferences.cpp:1818
 msgid "[%I:%M %p]"
 msgstr "[%I:%M %p]"
 

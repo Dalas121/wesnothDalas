@@ -129,7 +129,7 @@ static lua_unit* internal_get_unit(lua_State *L, int index, bool only_on_map, in
 		error = LU_NOT_UNIT;
 		return nullptr;
 	}
-	lua_unit* lu = static_cast<lua_unit*>(lua_touserdata(L, index));
+	lua_unit* lu = static_cast<lua_unit*>(luaL_checkudata(L, index, getunitKey));
 	if(only_on_map && !lu->on_map()) {
 		error = LU_NOT_ON_MAP;
 	}
@@ -221,7 +221,7 @@ lua_unit* luaW_pushlocalunit(lua_State *L, unit& u)
  */
 static int impl_unit_collect(lua_State *L)
 {
-	lua_unit *u = static_cast<lua_unit *>(lua_touserdata(L, 1));
+	lua_unit *u = static_cast<lua_unit *>(luaL_checkudata(L, 1, getunitKey));
 	u->lua_unit::~lua_unit();
 	return 0;
 }
@@ -624,6 +624,11 @@ UNIT_GETTER("traits", std::vector<std::string>) {
 }
 
 UNIT_GETTER("abilities", std::vector<std::string>) {
+	deprecated_message("unit.abilities", DEP_LEVEL::FOR_REMOVAL, version_info("1.21"), "Use unit.ability_ids instead.");
+	return u.get_ability_id_list();
+}
+
+UNIT_GETTER("ability_ids", std::vector<std::string>) {
 	return u.get_ability_id_list();
 }
 

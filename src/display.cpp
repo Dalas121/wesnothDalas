@@ -133,6 +133,11 @@ void display::remove_overlay(const map_location& loc)
 	get_overlays().erase(loc);
 }
 
+void display::remove_overlays()
+{
+	get_overlays().clear();
+}
+
 void display::remove_single_overlay(const map_location& loc, const std::string& toDelete)
 {
 	utils::erase_if(get_overlays()[loc],
@@ -310,8 +315,9 @@ texture display::get_flag(const map_location& loc)
 	for(const team& t : context().teams()) {
 		if(t.owns_village(loc) && (!fogged(loc) || !viewing_team().is_enemy(t.side()))) {
 			auto& flag = flags_[t.side() - 1];
-			flag.update_last_draw_time();
-
+			if(flag.need_update()) {
+				flag.advance_to_current_frame();
+			}
 			const image::locator& image_flag = animate_map_
 				? flag.get_current_frame()
 				: flag.get_first_frame();
@@ -1170,7 +1176,8 @@ namespace
 constexpr std::array layer_groups {
 	drawing_layer::terrain_bg,
 	drawing_layer::unit_first,
-	drawing_layer::unit_move_default
+	drawing_layer::unit_move_default,
+	drawing_layer::reachmap_darken // Make sure the movement doesn't show above fog and reachmap.
 };
 
 enum {
@@ -1469,7 +1476,7 @@ void display::recalculate_minimap()
 	minimap_renderer_ = image::prep_minimap_for_rendering(
 		context().map(),
 		context().teams().empty() ? nullptr : &viewing_team(),
-		nullptr,
+		&context().units(),
 		(selectedHex_.valid() && !is_blindfolded()) ? &reach_map_ : nullptr
 	);
 
@@ -1501,8 +1508,6 @@ void display::draw_minimap()
 	// Draw the minimap and update its location for mouse and units functions
 	minimap_location_ = std::invoke(minimap_renderer_, area);
 
-	draw_minimap_units();
-
 	// calculate the visible portion of the map:
 	// scaling between minimap and full map images
 	double xscaling = 1.0 * minimap_location_.w / (context().map().w() * hex_width());
@@ -1530,53 +1535,6 @@ void display::draw_minimap()
 	};
 
 	draw::rect(outline_rect, 255, 255, 255);
-}
-
-void display::draw_minimap_units()
-{
-	if (!prefs::get().minimap_draw_units() || is_blindfolded()) return;
-
-	double xscaling = 1.0 * minimap_location_.w / context().map().w();
-	double yscaling = 1.0 * minimap_location_.h / context().map().h();
-
-	for(const auto& u : context().units()) {
-		if (fogged(u.get_location()) ||
-		    (viewing_team().is_enemy(u.side()) &&
-		     u.invisible(u.get_location())) ||
-			 u.get_hidden()) {
-			continue;
-		}
-
-		int side = u.side();
-		color_t col = team::get_minimap_color(side);
-
-		if(!prefs::get().minimap_movement_coding()) {
-			auto status = orb_status::allied;
-			if(viewing_team().is_enemy(side)) {
-				status = orb_status::enemy;
-			} else if(viewing_team().side() == side) {
-				status = context().unit_orb_status(u);
-			} else {
-				// no-op, status is already set to orb_status::allied;
-			}
-			col = game_config::color_info(orb_status_helper::get_orb_color(status)).rep();
-		}
-
-		double u_x = u.get_location().x * xscaling;
-		double u_y = (u.get_location().y + (is_odd(u.get_location().x) ? 1 : -1)/4.0) * yscaling;
-		// use 4/3 to compensate the horizontal hexes imbrication
-		double u_w = 4.0 / 3.0 * xscaling;
-		double u_h = yscaling;
-
-		rect r {
-				  minimap_location_.x + int(std::round(u_x))
-				, minimap_location_.y + int(std::round(u_y))
-				, int(std::round(u_w))
-				, int(std::round(u_h))
-		};
-
-		draw::fill(r, col.r, col.g, col.b, col.a);
-	}
 }
 
 bool display::scroll(const point& amount, bool force)
@@ -3047,8 +3005,7 @@ void display::invalidate_animations_location(const map_location& loc)
 
 void display::invalidate_animations()
 {
-	// There are timing issues with this, but i'm not touching it.
-	new_animation_frame();
+	update_animation_timers(turbo_speed());
 	animate_map_ = prefs::get().animate_map();
 	if(animate_map_) {
 		for(const map_location& loc : get_visible_hexes()) {
@@ -3142,15 +3099,9 @@ void display::process_reachmap_changes()
 {
 	if (!reach_map_changed_) return;
 	if (reach_map_.empty() != reach_map_old_.empty()) {
-		// Invalidate everything except the non-darkened tiles
-		reach_map &full = reach_map_.empty() ? reach_map_old_ : reach_map_;
-
+		// Invalidate everything, since we both brighten and darken
 		for (const auto& hex : get_visible_hexes()) {
-			reach_map::iterator reach = full.find(hex);
-			if (reach != full.end()) {
-				// Location needs to be darkened or brightened
-				invalidate(hex);
-			}
+			invalidate(hex);
 		}
 	} else if (!reach_map_.empty()) {
 		// Invalidate new and old reach

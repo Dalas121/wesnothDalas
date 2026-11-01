@@ -77,6 +77,7 @@ std::vector<server_info> server_list;
 
 bool allow_insecure = false;
 bool addon_server_info = false;
+bool no_simd = false;
 
 //
 // Gamestate flags
@@ -131,6 +132,8 @@ bool show_unmoved_orb;
 
 int reach_map_border_opacity;
 int reach_map_tint_opacity;
+int reach_map_darken_opacity;
+bool reach_map_darken_tex;
 
 //
 // Music constants
@@ -174,7 +177,6 @@ std::string default_color_list;
 //
 // Image constants
 //
-std::vector<std::string> foot_speed_prefix;
 
 std::string foot_teleport_enter;
 std::string foot_teleport_exit;
@@ -206,6 +208,7 @@ std::string
 	mouseover,
 	selected,
 	editor_brush,
+	unreachable,
 	linger,
 	// GUI elements
 	observer,
@@ -359,6 +362,7 @@ void load_config(const config &v)
 		mouseover    = i["mouseover"].str();
 		selected     = i["selected"].str();
 		editor_brush = i["editor_brush"].str();
+		unreachable  = i["unreachable"].str();
 		linger       = i["linger"].str();
 
 		observer   = i["observer"].str();
@@ -373,15 +377,16 @@ void load_config(const config &v)
 	hp_bar_scaling  = v["hp_bar_scaling"].to_double(0.666);
 	xp_bar_scaling  = v["xp_bar_scaling"].to_double(0.5);
 
-	foot_speed_prefix   = utils::split(v["footprint_prefix"]);
 	foot_teleport_enter = v["footprint_teleport_enter"].str();
 	foot_teleport_exit  = v["footprint_teleport_exit"].str();
 
 	shroud_prefix = v["shroud_prefix"].str();
 	fog_prefix    = v["fog_prefix"].str();
 	reach_map_prefix 	= v["reach_map_prefix"].str();
-	reach_map_border_opacity = v["reach_map_border_opacity"].to_int(100);
-	reach_map_tint_opacity   = v["reach_map_tint_opacity"].to_int(50);//tint is at 50% by default instead of 100% to allow players to make it more opaque than normal
+	reach_map_border_opacity = v["reach_map_border_opacity"].to_int(60);
+	reach_map_tint_opacity   = v["reach_map_tint_opacity"].to_int(30);
+	reach_map_darken_opacity = v["reach_map_darken_opacity"].to_int(60);
+	reach_map_darken_tex = v["reach_map_darken_tex"].to_bool(true);
 
 	add_color_info(game_config_view::wrap(v), true);
 
@@ -483,16 +488,22 @@ void add_color_info(const game_config_view& v, bool build_defaults)
 			}
 		}
 
-		team_rgb_range.emplace(id, color_range(temp));
+		std::optional<color_t> font_color = std::nullopt;
+		const config::attribute_value* fc = teamC.get("font_color");
+		if(fc) {
+			font_color = color_t::from_hex_string(fc->str());
+		}
+
+		team_rgb_range.emplace(id, color_range(temp, font_color));
 		team_rgb_name.emplace(id, teamC["name"].t_str());
 
 		LOG_NG << "registered color range '" << id << "': " << team_rgb_range[id].debug();
 
-		// Generate palette of same name;
+		// Generate palette of same name:
 		team_rgb_colors.emplace(id, generate_reference_palette(team_rgb_range[id]));
 
 		if(build_defaults && teamC["default"].to_bool()) {
-			default_colors.push_back(*a1);
+			default_colors.push_back(id);
 		}
 	}
 
@@ -537,7 +548,7 @@ const color_range& color_info(std::string_view name)
 		}
 	}
 
-	team_rgb_range.emplace(name, color_range(temp));
+	team_rgb_range.emplace(name, color_range(temp, std::nullopt));
 	return color_info(name);
 }
 

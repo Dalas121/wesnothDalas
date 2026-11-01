@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu-wesnoth\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-05-18 21:15-0500\n"
-"PO-Revision-Date: 2026-02-28 01:01+0100\n"
+"POT-Creation-Date: 2026-08-02 22:45-0500\n"
+"PO-Revision-Date: 2026-10-08 16:05+0200\n"
 "Last-Translator: Berda Jenő <big4billy@gmail.com>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
@@ -23,11 +23,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.03.70\n"
+"X-Generator: Poedit 3.5\n"
 
 #. [time]: id=underground
 #. [editor_times]: id=underground
-#: data/campaigns/Heir_To_The_Throne_Classic/utils/httt_utils.cfg:500
+#: data/campaigns/Heir_To_The_Throne_Classic/utils/httt_utils.cfg:499
 #: data/core/editor/time-of-day.cfg:41 data/core/macros/schedules.cfg:113
 msgid "Underground"
 msgstr "Föld alatt"
@@ -53,7 +53,7 @@ msgstr "vakmerő"
 #. [plague]: id=plague, type=Walking Corpse
 #: data/campaigns/Secrets_of_the_Ancients/gui/zombie_recruit_dialog.cfg:244
 #: data/campaigns/Secrets_of_the_Ancients/utils/zombie-utils.cfg:6
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:48
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:47
 #: data/core/macros/weapon_specials.cfg:71
 msgid "plague"
 msgstr "dögvész"
@@ -103,14 +103,14 @@ msgstr ""
 
 #. [resistance]: id=garak_steadfast
 #. [resistance]: id=steadfast
-#: data/campaigns/Under_the_Burning_Suns/scenarios/03_Stirring_in_the_Night.cfg:708
+#: data/campaigns/Under_the_Burning_Suns/scenarios/03_Stirring_in_the_Night.cfg:707
 #: data/core/macros/abilities.cfg:139
 msgid "steadfast"
 msgstr "rendíthetetlen"
 
 #. [resistance]: id=garak_steadfast
 #. [resistance]: id=steadfast
-#: data/campaigns/Under_the_Burning_Suns/scenarios/03_Stirring_in_the_Night.cfg:709
+#: data/campaigns/Under_the_Burning_Suns/scenarios/03_Stirring_in_the_Night.cfg:708
 #: data/core/macros/abilities.cfg:140
 msgid "female^steadfast"
 msgstr "rendíthetetlen"
@@ -279,7 +279,7 @@ msgstr "teleportáció"
 #. [artifact]
 #. [regenerate]: id=regenerates
 #: data/campaigns/World_Conquest/resources/data/artifacts.cfg:760
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:54
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:53
 #: data/core/macros/abilities.cfg:102
 msgid "regenerates"
 msgstr "regenerálódás"
@@ -313,91 +313,91 @@ msgid "leadership"
 msgstr "hadvezetés"
 
 #. [hides]: id=ambush
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:12
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:11
 #: data/core/macros/abilities.cfg:295
 msgid "ambush"
 msgstr "rajtaütés"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:15
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:14
 msgid "Castle"
 msgstr "Várkastély"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:18
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:17
 msgid "Cave"
 msgstr "Barlang"
 
 #. [hides]: id=concealment
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:21
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:20
 #: data/core/macros/abilities.cfg:358
 msgid "concealment"
 msgstr "rejtőzködés"
 
 #. [drains]: id=drains
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:24
-#: data/core/macros/weapon_specials.cfg:183
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:23
+#: data/core/macros/weapon_specials.cfg:184
 msgid "drains"
 msgstr "megcsapolás"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:27
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:26
 msgid "firststrike"
 msgstr "első ütés"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:30
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:29
 msgid "Forest"
 msgstr "Erdőség"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:33
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:32
 msgid "Frozen"
 msgstr "Jégmező"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:36
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:35
 msgid "Hills"
 msgstr "Dombság"
 
 #. [chance_to_hit]: id=marksman
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:39
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:38
 #: data/core/macros/weapon_specials.cfg:105
 msgid "marksman"
 msgstr "mesterlövész"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:42
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:41
 msgid "Mushroom Grove"
 msgstr "Gombamező"
 
 #. [hides]: id=nightstalk
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:45
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:44
 #: data/core/macros/abilities.cfg:338
 msgid "nightstalk"
 msgstr "éjszakai lopakodás"
 
 #. [poison]: id=poison
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:51
-#: data/core/macros/weapon_specials.cfg:205
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:50
+#: data/core/macros/weapon_specials.cfg:206
 msgid "poison"
 msgstr "mérgezés"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:57
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:56
 msgid "Sand"
 msgstr "Homok"
 
 #. [skirmisher]: id=skirmisher
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:60
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:59
 #: data/core/macros/abilities.cfg:229
 msgid "skirmisher"
 msgstr "portyázó"
 
 #. [slow]: id=slow
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:63
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:62
 #: data/core/macros/weapon_specials.cfg:83
 msgid "slows"
 msgstr "lassítás"
 
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:66
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:65
 msgid "Swamp"
 msgstr "Láp"
 
 #. [heals]: id=curing
-#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:69
+#: data/campaigns/World_Conquest/resources/strings/mainline.cfg:68
 #: data/core/macros/abilities.cfg:66
 msgid "cures"
 msgstr "méregűzés"
@@ -492,6 +492,15 @@ msgid ""
 "• Control+mouse click: Select the terrain under the mouse cursor, as if it "
 "had been selected on the terrain palette (picks up both base and overlay)."
 msgstr ""
+"A terep folytonos területeinek egy másikkal való kitöltése.\n"
+"A kitöltő eszköz a terep palettát használja.\n"
+"\n"
+"<header>Billentyűzetmódosítók</header>\n"
+"• Shift+egérkattintás: Ha egy alap terep van kiválasztva, az alap módosítása "
+"az átfedés módosítása nélkül. Ha egy átfedés van kiválasztva, az átfedés "
+"módosítása az alap módosítása nélkül.\n"
+"• Control+egérkattintás: Az egérkurzor alatti terep kijelölése, mintha a "
+"terep palettán lenne kiválasztva (mind az alapot, mind az átfedést felveszi)."
 
 #. [topic]: id=editor_tool_select
 #: data/core/editor/help.cfg:64
@@ -512,6 +521,17 @@ msgid ""
 "<b>Brush Sizes</b>\n"
 "The selected brush changes the size of the tool:"
 msgstr ""
+"Kijelöl mezők egy csoportját a menüsor alatti kivágás, másolás és kitöltési "
+"kijelölő gombokkal való használathoz.\n"
+"\n"
+"<header>Billentyűzetmódosítók</header>\n"
+"• Shift+egérkattintás: „Varázspálca” módban kijelöli az egérkurzor alatti "
+"mezőt, valamint az azonos tereptípusú szomszédos mezőket.\n"
+"\n"
+"• Ctrl+egérkattintás: A mezők kijelölésének megszüntetése.\n"
+"\n"
+"<b>Ecsetméretek</b>\n"
+"A kiválasztott ecset megváltoztatja az eszköz méretét:"
 
 #. [topic]: id=editor_tool_select
 #: data/core/editor/help.cfg:74
@@ -552,6 +572,16 @@ msgid ""
 "\n"
 "The paste tool also has some clipboard-manipulation functions:"
 msgstr ""
+"Terep forgatása, tükrözése és beillesztése a vágólapra\n"
+"A mezők kivághatók vagy másolhatók a vágólapra a <ref "
+"dst='editor_tool_select'>Kijelölő eszköz</ref> segítségével.\n"
+"\n"
+"A beillesztés eszköz a vágólap körvonalát mutatja, amelyet egérkattintással "
+"beilleszthet. Csak a körvonal látható, de a hibák kijavíthatók a visszavonás "
+"funkcióval, amely a Control+Z billentyűkombinációhoz és ugyanahhoz a "
+"billentyűhöz van kötve, mint a játékbeli visszavonás funkció.\n"
+"\n"
+"A beillesztés eszköznek van néhány vágólap-kezelési funkciója is:"
 
 #. [topic]: id=editor_tool_paste
 #: data/core/editor/help.cfg:94
@@ -584,12 +614,12 @@ msgstr "Kezdő helyszínek eszköz"
 msgid ""
 "Defines the side leader starting position.\n"
 "This tool sets the side leaders’ default starting locations, and named "
-"special locations. Both types of location are enabled in both <ref dst='.."
-"editor_mode_terrain'>Terrain Editor</ref> and <ref dst='.."
-"editor_mode_scenario'>Scenario Editor</ref> modes. The location names are "
-"shown as a list in the editor palette, clicking on the map will place that "
-"name on a hex, each location can only be placed on a single hex, and the "
-"editor will only allow one location per hex.\n"
+"special locations. Both types of location are enabled in both <ref "
+"dst='..editor_mode_terrain'>Terrain Editor</ref> and <ref "
+"dst='..editor_mode_scenario'>Scenario Editor</ref> modes. The location names "
+"are shown as a list in the editor palette, clicking on the map will place "
+"that name on a hex, each location can only be placed on a single hex, and "
+"the editor will only allow one location per hex.\n"
 "\n"
 "To add named special locations, click “Add” at the bottom of the editor "
 "palette, and enter the name. These names must start with a letter and may "
@@ -610,6 +640,35 @@ msgid ""
 "location for placing with a subsequent mouse click, as if it was selected in "
 "the editor palette."
 msgstr ""
+"Meghatározza a harcoló felek (oldalak) vezéreinek kezdőpozícióit.\n"
+"\n"
+"Ez az eszköz beállítja a vezérek alapértelmezett kezdőpozícióit és az "
+"elnevezett különleges helyszíneket. Mindkét helyszíntípus engedélyezett mind "
+"a <ref dst='..editor_mode_terrain'>Terepszerkesztő</ref>, mind a <ref "
+"dst='..editor_mode_scenario'>Küldetésszerkesztő</ref> módban. A "
+"helyszínnevek listaként jelennek meg a szerkesztőpalettán, a térképre "
+"kattintva a név egy mezőre kerül, minden helyszín csak egyetlen mezőre "
+"helyezhető, és a szerkesztő mezőnként csak egy helyszínt engedélyez.\n"
+"\n"
+"Elnevezett különleges helyszínek hozzáadásához kattints a szerkesztőpaletta "
+"alján található „Hozzáadás” gombra, és írjd be a nevet. Ezeknek a neveknek "
+"betűvel kell kezdődniük, és tartalmazhatnak számokat és aláhúzásjelet.\n"
+"\n"
+"Kilencnél több csapat is hozzáadható egy térképhez a „Hozzáadás” gombra "
+"kattintva és egy szám, például „10” beírásával. A felhasználói felület "
+"automatikusan „10-es játékosként” jeleníti meg ezt.\n"
+"\n"
+"A megnevezett helyszínek a WML-ből a Standard Helyszínszűrő <i>location_id=</"
+"i> használatával érhetők el. A játékosok kezdeti helyszínei szintén "
+"elérhetők a WML-ből a <i>location_id=1</i>, <i>location_id=2</i> stb. "
+"használatával — csak a számot használja, a „Játékos” szó hozzáadása nélkül a "
+"szám elé.\n"
+"\n"
+"<b>Billentyűzetmódosítók</b>\n"
+"\n"
+"• Control+egérkattintás egy olyan mezőre, amelynek már van helye: a "
+"következő egérkattintással kiválaszthatja ezt a helyet az elhelyezéshez, "
+"mintha a szerkesztő palettán lenne kiválasztva."
 
 #. [topic]: id=editor_terrain_overlays
 #: data/core/editor/help.cfg:125
@@ -635,9 +694,9 @@ msgstr ""
 #: data/core/editor/help.cfg:131
 msgid ""
 "editor^<header>Movement Overlays</header>\n"
-"<img src='terrain/grass/green.png~BLIT(terrain/impassable-editor."
-"png~O(0.5))'/><img src='terrain/grass/green.png~BLIT(terrain/unwalkable-"
-"editor.png~O(0.5))'/>\n"
+"<img src='terrain/grass/green.png~BLIT(terrain/impassable-"
+"editor.png~O(0.5))'/><img src='terrain/grass/green.png~BLIT(terrain/"
+"unwalkable-editor.png~O(0.5))'/>\n"
 "<b>Impassable and Unwalkable</b>\n"
 "\n"
 "While easily noticeable in the editor, these are invisible in the game, so "
@@ -646,9 +705,9 @@ msgid ""
 "respectively."
 msgstr ""
 "<header>Mozgás felületek</header>\n"
-"<img src='terrain/grass/green.png~BLIT(terrain/impassable-editor."
-"png~O(0.5))'/><img src='terrain/grass/green.png~BLIT(terrain/unwalkable-"
-"editor.png~O(0.5))'/>\n"
+"<img src='terrain/grass/green.png~BLIT(terrain/impassable-"
+"editor.png~O(0.5))'/><img src='terrain/grass/green.png~BLIT(terrain/"
+"unwalkable-editor.png~O(0.5))'/>\n"
 "<b>Áthatolhatatlan és járhatatlan</b>\n"
 "\n"
 "Bár a szerkesztőben könnyen észrevehetők, ezek láthatatlanok a játékban, így "
@@ -662,9 +721,9 @@ msgstr ""
 #: data/core/editor/help.cfg:140
 msgid ""
 "editor^<header>Castle Overlays</header>\n"
-"<img src='terrain/grass/green.png~BLIT(terrain/castle/castle-overlay-editor."
-"png~O(0.5))'/><img src='terrain/grass/green.png~BLIT(terrain/castle/keep-"
-"overlay-editor.png~O(0.5))'/>\n"
+"<img src='terrain/grass/green.png~BLIT(terrain/castle/castle-overlay-"
+"editor.png~O(0.5))'/><img src='terrain/grass/green.png~BLIT(terrain/castle/"
+"keep-overlay-editor.png~O(0.5))'/>\n"
 "Adding either of these overlays to a passable hex allows units to be "
 "recruited onto a hex. The keep also allows a leader to recruit from there.\n"
 "\n"
@@ -675,9 +734,9 @@ msgid ""
 "units being recruited onto them."
 msgstr ""
 "<header>Kastély felületek</header>\n"
-"<img src='terrain/grass/green.png~BLIT(terrain/castle/castle-overlay-editor."
-"png~O(0.5))'/><img src='terrain/grass/green.png~BLIT(terrain/castle/keep-"
-"overlay-editor.png~O(0.5))'/>\n"
+"<img src='terrain/grass/green.png~BLIT(terrain/castle/castle-overlay-"
+"editor.png~O(0.5))'/><img src='terrain/grass/green.png~BLIT(terrain/castle/"
+"keep-overlay-editor.png~O(0.5))'/>\n"
 "E felületek bármelyikének hozzáadása egy átjárható hatszöghöz, lehetővé "
 "teszi az egységek toborzását egy hatszögbe. A vártorony lehetővé teszi a "
 "vezető számára, hogy onnan toborozzon.\n"
@@ -806,7 +865,7 @@ msgstr ""
 #. [topic]: id=editor_terrain_elevation
 #: data/core/editor/help.cfg:184
 msgid "editor^How to Use"
-msgstr "Hogyan használd?"
+msgstr "Hogyan használd"
 
 #. [topic]: id=editor_terrain_elevation
 #: data/core/editor/help.cfg:186
@@ -866,8 +925,8 @@ msgstr "Elavult terep"
 #. The Xol and ^Efs terrains’ help pages aren’t given hyperlinks, because they both have hide_help enabled. Even when on a map with Xol on it, ctrl+t will show the hidden page but the ref still won’t link to it.
 #: data/core/editor/help.cfg:203
 msgid ""
-"editor^<img src='terrain/grass/green.png~BLIT(terrain/deprecated-editor."
-"png)'/>\n"
+"editor^<img src='terrain/grass/green.png~BLIT(terrain/deprecated-"
+"editor.png)'/>\n"
 "The magenta ‘D’ (for “Deprecated”).\n"
 "\n"
 "This is shown in the editor over deprecated terrain codes. Examples are:\n"
@@ -878,6 +937,17 @@ msgid ""
 "The help pages for these terrains may have additional text that’s only shown "
 "in the editor, describing the deprecation and the recommended replacements."
 msgstr ""
+"<img src='terrain/grass/green.png~BLIT(terrain/deprecated-editor.png)'/>\n"
+"A bíborvörös „D” (az „Elavult” /„Deprecated”/ szót jelenti).\n"
+"\n"
+"Ez a szerkesztőben az elavult terepkódok felett jelenik meg. Példák:\n"
+"• a <ref dst='terrain_fungus_grove_old'>„^Uf” gomba terep</ref>,\n"
+"• a „Xol” világító kőfal, amely elavult, mivel számos fal terep mostantól "
+"támogatja az „^Efs” gyertyatartó díszítést.\n"
+"\n"
+"Ezeknek a terepeknek a súgóoldalain további szövegek is szerepelhetnek, "
+"amelyek csak a szerkesztőben jelennek meg, és leírják az elavultságot és az "
+"ajánlott cseréket."
 
 #. [topic]: id=editor_tool_label
 #: data/core/editor/help.cfg:217
@@ -896,6 +966,16 @@ msgid ""
 "This tool is only available in Scenario Mode; the decorations are "
 "implemented in the scenario using WML’s <i>[label]</i> tag."
 msgstr ""
+"Szöveges címkék elhelyezése a térképen.\n"
+"\n"
+"• Bal kattintás esetén egy párbeszédpanel nyílik meg új címke létrehozásához "
+"vagy meglévő szerkesztéséhez.\n"
+"• Jobb kattintás esetén törléshez.\n"
+"• A bal egérgombbal történő húzással és elengedéssel mozgathatja a "
+"címkéket.\n"
+"\n"
+"Ez az eszköz csak Küldetés módban érhető el; a dekorációk a küldetésben a "
+"WML <i>[label]</i> címkével kerülnek elhelyezésre."
 
 #. [topic]: id=editor_tool_scenery
 #: data/core/editor/help.cfg:232
@@ -918,6 +998,18 @@ msgid ""
 "of the terrain and are implemented in the scenario using WML’s <i>[item]</i> "
 "tag."
 msgstr ""
+"A Tárgy eszköz lehetővé teszi dekorációk, például szélmalmok, könyvespolcok "
+"és monolitok elhelyezését.\n"
+"\n"
+"Több tárgy is elhelyezhető ugyanarra a mezőre.\n"
+"\n"
+"• Bal kattintás dekorációt helyez a kiválasztott mezőre.\n"
+"• Jobb kattintás eltávolítja a dekorációt.\n"
+"\n"
+"<b>Megjegyzés:</b> az eszköz nem támogatja a visszavonást.\n"
+"\n"
+"Ez az eszköz csak Küldetés módban érhető el; a dekorációk nem részei a "
+"terepnek, és a WML <i>[item]</i> címkéjével valósulnak meg a küldetésben."
 
 #. [topic]: id=editor_tool_village
 #: data/core/editor/help.cfg:250
@@ -937,6 +1029,18 @@ msgid ""
 "This tool is only available in Scenario Mode; ownership information is "
 "stored by adding WML <i>[village]</i> tags to the appropriate <i>[side]</i>."
 msgstr ""
+"Ez az eszköz a küldetés elején rendeli hozzá a falvak tulajdonjogát.\n"
+"\n"
+"A falvakat először a <ref dst='editor_tool_paint'>Festő eszközzel</ref> kell "
+"elhelyezni a terepen.\n"
+"\n"
+"• Bal kattintás a falut az aktuálisan kiválasztott oldalhoz (harcoló félhez) "
+"rendeli.\n"
+"• Jobb kattintás a falut visszaállítja tulajdonos nélküli állapotba.\n"
+"\n"
+"Ez az eszköz csak küldetés módban érhető el; A tulajdonjogi információkat a "
+"WML <i>[village]</i> címkék megfelelő <i>[side]</i>-hoz (harcoló félhez) "
+"való hozzáadásával tárolja a rendszer."
 
 #. [topic]: id=editor_tool_unit
 #: data/core/editor/help.cfg:266
@@ -955,6 +1059,14 @@ msgid ""
 "This tool is only available in Scenario Mode; it adds WML <i>[unit]</i> tags "
 "to the appropriate <i>[side]</i>."
 msgstr ""
+"Az aktuálisan kiválasztott harcoló félhez tartozó egységek elhelyezése.\n"
+"• Bal kattintás egységet helyez el.\n"
+"• Bal egérgombbal húzással már elhelyezett egységet lehet mozgatni.\n"
+"• Különböző műveletek adódnak hozzá a jobb gombbal megjelenő menühöz, ha a "
+"mezőn egység áll.\n"
+"\n"
+"Ez az eszköz csak Küldetés módban érhető el; WML <i>[unit]</i> címkéket ad a "
+"megfelelő <i>[side]</i> harcoló félhez."
 
 #. [topic]: id=editor_named_area
 #: data/core/editor/help.cfg:281
@@ -985,6 +1097,29 @@ msgid ""
 "generic and can be used for other purposes without needing to change the "
 "time-of-day schedule in the area."
 msgstr ""
+"Ez az eszköz olyan csempekészleteket hoz létre, amelyek használhatók a WML "
+"szkriptek standard helymeghatározó szűrőiben (a koncepció részletesen "
+"ismertetve a Wikin), a szűrő <i>area=</i> attribútumában található terület "
+"azonosítójának használatával. Például:\n"
+"\n"
+"• helyi időzóna hozzárendelése a mezők ezen halmazához\n"
+"• azon mezők halmazának szűrése, amelyek eseményt váltanak ki, amikor egy "
+"egység rájuk mozog\n"
+"\n"
+"Az eszköz használata:\n"
+"\n"
+"• a mezők kiválasztása a <ref dst='editor_tool_select'>kiválasztó eszközzel</"
+"ref>\n"
+"• a Területek menüben válaszd az Új terület hozzáadása lehetőséget\n"
+"• majd a Területek menüben válaszd a Kijelölés mentése területre "
+"lehetőséget\n"
+"• majd a Területek menüben válaszd a Kijelölt terület átnevezése "
+"lehetőséget, és válassz nevet a területnek\n"
+"\n"
+"Ez az eszköz csak Küldetés módban érhető el; WML <i>[time_area]</i> címkéket "
+"ad a küldetéshez. Bár a címke neve időt sugall, most már általánosabb, és "
+"más célokra is használható anélkül, hogy meg kellene változtatni a terület "
+"időbeosztását."
 
 #. [topic]: id=editor_playlist
 #: data/core/editor/help.cfg:303
@@ -1071,6 +1206,36 @@ msgid ""
 "at the start of the scenario. There’s also a <ref "
 "dst='editor_playlist'>playlist manager</ref> for the music."
 msgstr ""
+"A Wesnoth Térkép- és Küldetésszerkesztője lehetővé teszi a felhasználók "
+"számára, hogy létrehozzák és szerkeszthessék azokat a térképeket, amelyeken "
+"minden Wesnoth-küldetés játszódik. Korlátozott számú funkciót is biztosít "
+"egy alap küldetés beállításához, valamint egy kiegészítő (add-on) "
+"előkészítéséhez, amely a létrehozott küldetések összerendezésére "
+"használható.\n"
+"\n"
+"A szerkesztő a kezdőképernyőn található <i>Térképszerkesztő</i> "
+"kiválasztásával indítható el.\n"
+"\n"
+"<header>Szerkesztési módok</header>\n"
+"\n"
+"A szerkesztő két működési móddal rendelkezik: terep móddal és küldetés "
+"móddal.\n"
+"\n"
+"A <ref dst='..editor_mode_terrain'>Terep mód</ref> hasonló egy egyszerű "
+"rajzolóprogramhoz, eszközökkel a <ref dst='editor_tool_paint'>festéshez</"
+"ref>, <ref dst='editor_tool_fill'>kitöltéshez</ref>, <ref "
+"dst='editor_tool_select'>kijelöléshez (és másoláshoz)</ref>, valamint <ref "
+"dst='editor_tool_paste'>beillesztéshez</ref>. Tartalmaz továbbá egy eszközt "
+"a vezérek <ref dst='editor_tool_starting'>kezdőhelyeinek</ref> "
+"beállításához.\n"
+"\n"
+"A <ref dst='..editor_mode_scenario'>Küldetés mód</ref> a terep módban "
+"elérhető eszközök mellett támogatja a <ref dst='editor_tool_label'>címkék</"
+"ref>, <ref dst='editor_tool_scenery'>díszletelemek</ref>, <ref "
+"dst='editor_tool_unit'>egységek</ref> hozzáadását a vezéren kívül, valamint "
+"a <ref dst='editor_tool_village'>falu tulajdonjogának</ref> hozzárendelését "
+"a küldetés elején. Van egy <ref dst='editor_playlist'>lejátszási lista "
+"kezelő</ref> is a zenéhez."
 
 #. [topic]: id=..editor
 #: data/core/editor/help.cfg:346
@@ -1116,6 +1281,27 @@ msgid ""
 "have their own terrains will need that add-on to tell the editor about their "
 "terrains."
 msgstr ""
+"<header>Amit *nem* kapsz</header>\n"
+"\n"
+"• Pontosan ugyanolyan térképmegjelenítést, mint a játékban\n"
+"\n"
+"A térkép nem fog pontosan ugyanúgy kinézni a játékban, mint a szerkesztőben, "
+"mert ez a terepszabályoktól függ. Például, ha sok hegyi mező csoportosul "
+"egymásm ellett, akkor a terepszabályok megpróbálják őket hegyláncokká és "
+"nagyméretű, több mezőt átfogó grafikákká egyesíteni.\n"
+"\n"
+"• Eseménykezelők és szkriptek\n"
+"\n"
+"A szerkesztő nem a küldetés eseménykezelői szkriptelésének segédeszköze.\n"
+"\n"
+"• Végtelen visszafelé kompatibilitás\n"
+"\n"
+"A szerkesztő a legtöbb térképet be tudja tölteni a Wesnoth régebbi "
+"verzióiból, de nem az összeset. Az 1.3.2-es és újabb verziójú térképek "
+"általában támogatottak, kivéve, ha olyan terepeket használnak, amelyek már "
+"nem részei a Wesnoth fő verziójának. A kiegészítőkből származó térképekhez, "
+"amelyeknek saját terepeik vannak, szükség lesz az adott kiegészítőre, hogy "
+"tájékoztassa a szerkesztőt a terepeikről."
 
 #. [topic]: id=..editor_mode_terrain
 #: data/core/editor/help.cfg:368
@@ -1131,6 +1317,16 @@ msgid ""
 "resulting map can be found in the “Custom Maps” game type of the multiplayer "
 "“Create Game” dialog."
 msgstr ""
+"A terepszerkesztő működése és funkciói hasonlóak egy egyszerű "
+"rajzolóprograméhoz.\n"
+"\n"
+"A jobb oldali sáv fentről lefelé tartalmazza a minitérképet, az "
+"eszközkészletet (lásd az egyes eszközök oldalait), az eszközbeállításokat és "
+"a <ref dst='editor_palette'>palettát</ref>.\n"
+"\n"
+"Ha a „Térkép mentése másként” paranccsal mented el, és az alapértelmezett "
+"könyvtárba mented, az eredményül kapott térkép a többjátékos „Játék "
+"létrehozása” párbeszédpanel „Egyéni térképek” játéktípusában található."
 
 #. [topic]: id=..editor_mode_scenario
 #: data/core/editor/help.cfg:380
@@ -1187,8 +1383,8 @@ msgstr ""
 "\"Konvertálás küldetéssé\" parancsát; Ez küldetés módba vált.\n"
 "\n"
 "A küldetés-szerkesztőben létrehozott térkép betöltéséhez használd a \"Térkép "
-"betöltése\" parancsot a \"Fájl\" menüből, és válasszd ki a .cfg fájlt (nem ."
-"map fájlt)."
+"betöltése\" parancsot a \"Fájl\" menüből, és válasszd ki a .cfg fájlt "
+"(nem .map fájlt)."
 
 #. [topic]: id=..editor_mode_scenario
 #: data/core/editor/help.cfg:397
@@ -1198,14 +1394,27 @@ msgid ""
 "The map editor saves one file when in terrain mode (a .map) or two files "
 "when in scenario mode (both a .map and a .cfg).\n"
 "\n"
-"Loading a .cfg file has different results depending on the contents of the ."
-"cfg file. For .cfg files that were created by the scenario editor, it will "
-"open the .cfg in the scenario editor. However, for .cfg files that cannot be "
-"opened by the scenario editor, the editor will attempt to find the "
+"Loading a .cfg file has different results depending on the contents of "
+"the .cfg file. For .cfg files that were created by the scenario editor, it "
+"will open the .cfg in the scenario editor. However, for .cfg files that "
+"cannot be opened by the scenario editor, the editor will attempt to find the "
 "scenario’s map data and open the corresponding .map file in terrain-only "
 "mode, as if the .map file was chosen in the file selector. It is recommended "
 "in those cases to simply load the .map file directly instead."
 msgstr ""
+"<header>A .map és .cfg fájlok:</header>\n"
+"\n"
+"A térképszerkesztő egy fájlt ment terep módban (egy .map fájlt), vagy két "
+"fájlt küldetés módban (egy .map és egy .cfg fájlt).\n"
+"\n"
+"A .cfg fájl betöltése a .cfg fájl tartalmától függően eltérő eredményeket "
+"hoz. A küldetésszerkesztő által létrehozott .cfg fájlok esetében a .cfg fájl "
+"a küldetésszerkesztőben nyílik meg. Azoknál a .cfg fájloknál azonban, "
+"amelyeket a küldetésszerkesztő nem tud megnyitni, a szerkesztő megpróbálja "
+"megkeresni a küldetés térképadatait, és a megfelelő .map fájlt csak terep "
+"módban nyitja meg, mintha a .map fájlt választották volna ki a "
+"fájlválasztóban. Ilyen esetekben ajánlott egyszerűen közvetlenül betölteni "
+"a .map fájlt."
 
 #. [topic]: id=editor_separate_events_file
 #: data/core/editor/help.cfg:409
@@ -1247,6 +1456,40 @@ msgid ""
 "face='monospace'>include_file=&quot;other.cfg&quot;</span> to load the "
 "additional cfg file"
 msgstr ""
+"Egy .cfg fájl betöltésekor a küldetésszerkesztő értelmezni tudja a "
+"küldetésszerkesztővel létrehozott fájlokat, de valószínűleg nehézségei "
+"lesznek a kézzel szerkesztett fájlokkal.\n"
+"\n"
+"Az egyik lehetőség egy különálló WML-fájl létrehozása, szintén .cfg "
+"kiterjesztéssel, amely a WML előfeldolgozót használja a szerkesztő által "
+"létrehozott fájl beillesztéséhez. Ez a különálló fájl tartalmazza mind a "
+"<span face='monospace'>[scenario]</span> címkét, mind az esetleges kézzel "
+"szerkesztett WML-t, például az eseményeket. Ezzel a munkafolyamattal a "
+"bővítmény fájlszerkezete így nézhet ki:\n"
+"\n"
+"<header>Példa</header>\n"
+"Ha a bővítményt csak az 1.18-as és újabb verziókon fogják használni, akkor "
+"ajánlott az új include_file attribútum használata egy további WML-t "
+"tartalmazó .cfg fájl betöltéséhez a küldetésbe.\n"
+"\n"
+"\n"
+"• <span face='monospace'>_main.cfg</span>\n"
+"  ◦ a <span face='monospace'>[binary_path]</span> paranccsal adhatod hozzá a "
+"kiegészítők könyvtárait a bináris elérési úthoz, aminek hatására a "
+"„map_file” a „maps” könyvtárban keres.\n"
+"• <span face='monospace'>maps/first.map</span>\n"
+"  ◦ ez a küldetésszerkesztő által létrehozott .map fájl küldetés módban "
+"történő mentéskor.\n"
+"• <span face='monospace'>scenarios/other.cfg</span>\n"
+"  ◦ ez a .cfg fájl, amely mindent tartalmaz, amit a küldetésszerkesztő nem "
+"ért.\n"
+"• <span face='monospace'>scenarios/first.cfg</span>\n"
+"  ◦ a <span face='monospace'>[scenario]</span> elemen belül használd a <span "
+"face='monospace'>map_file=&quot;first.map&quot;</span> parancsot térképfájl "
+"betöltéséhez\n"
+"  ◦ a <span face='monospace'>[scenario]</span> elem esetén a <span "
+"face='monospace'>include_file=&quot;other.cfg&quot;</span> parancsot config-"
+"fájl betöltéséhez"
 
 #. [topic]: id=editor_masks
 #: data/core/editor/help.cfg:433
@@ -1279,6 +1522,13 @@ msgid ""
 "In scenario mode, the button accesses an editor for individual schedules for "
 "<ref dst='editor_named_area'>time areas</ref>."
 msgstr ""
+"Ez a gomb a képernyő jobb felső sarkában a napszak előnézetéhez és az "
+"ütemezés-szerkesztőhöz nyújt hozzáférést.\n"
+"Terep módban ez a gomb a térképet úgy jeleníti meg, ahogyan az a nap "
+"különböző időpontjaiban újraszíneződik.\n"
+"\n"
+"Küldetés módban a gomb egy szerkesztőt nyit meg az <ref "
+"dst='editor_named_area'>időzónák</ref> egyedi ütemezéseihez."
 
 #. [topic]: id=editor_palette
 #: data/core/editor/help.cfg:453
@@ -1301,6 +1551,17 @@ msgid ""
 "this is the leftmost of the four buttons at the top of the palette, and the "
 "graphic changes depending on what is selected. Examples:"
 msgstr ""
+"A szerkesztői paletta tartalmazza azokat az elemeket, amelyeket az "
+"aktuálisan kiválasztott eszközzel használhatsz. Például a Festő eszköz "
+"megjeleníti az összes elérhető terep teljes listáját, az Egység eszköz pedig "
+"az elérhető egységek listáját. A Kiinduló Helyszínek eszköz használatakor a "
+"paletta az „1. ​​játékos”, „2. játékos” stb. listára változik.\n"
+"\n"
+"<b>Szűrők</b>\n"
+"\n"
+"Van egy szűrőfunkció, amely csak az elérhető elemek egy részhalmazát "
+"jeleníti meg — ez a paletta tetején található négy gomb közül a bal szélső, "
+"és a grafika a kiválasztott elemtől függően változik. Példák:"
 
 #. [topic]: id=editor_palette
 #: data/core/editor/help.cfg:461
@@ -1352,11 +1613,38 @@ msgid ""
 "\n"
 "• <span face='monospace'>map_file=maps/01_First_Map.map</span> <i>— "
 "supported since Wesnoth 1.14</i>\n"
-"• <span face='monospace'>map_data=&quot;&#0x7B;maps/01_First_Map.map&#0x7D;"
-"&quot;</span> <i>— a WML preprocessor include</i>\n"
+"• <span face='monospace'>map_data=&quot;&#0x7B;maps/"
+"01_First_Map.map&#0x7D;&quot;</span> <i>— a WML preprocessor include</i>\n"
 "\n"
 "The <i>map_file</i> method is preferred over using a preprocessor include."
 msgstr ""
+"<header>Natív</header>\n"
+"\n"
+"Egy térképfájl vesszővel elválasztott terepkód-karakterláncokból álló "
+"sorokból áll. A térképszintaxis által biztosított egyetlen nem "
+"terepinformáció a <ref dst='editor_tool_starting'>Kezdőhelyszínek eszköz</"
+"ref> által létrehozott helyszínek halmaza. A fájlok általános célú "
+"szövegszerkesztővel szerkeszthetők.\n"
+"\n"
+"Ezek a fájlok közvetlenül használhatók többjátékos játékokhoz, a játékosok "
+"számát automatikusan a kezdőpozíciók száma határozza meg. Az alapértelmezett "
+"könyvtárba mentve a térkép a többjátékos „Játék létrehozása” párbeszédpanel "
+"„Egyéni térképek” játéktípusában található; előfordulhat, hogy frissíteni "
+"kell a gyorsítótárat (nyomja meg az F5 billentyűt a címképernyőn), mielőtt "
+"egy újonnan létrehozott térkép megjelenik.\n"
+"\n"
+"Ezek a fájlok egy küldetés .cfg fájljában használhatók, a küldetés WML-je "
+"további információkat nyújt, például csapatokról, egyéni eseményekről és "
+"összetett harcoló fél beállításokról. A .cfg fájl a következők egyikével "
+"tölti be a térképfájlt:\n"
+"\n"
+"• <span face='monospace'>map_file=maps/01_First_Map.map</span> <i>— Wesnoth "
+"1.14 óta támogatott</i>\n"
+"• <span face='monospace'>map_data=&quot;&#0x7B;maps/"
+"01_First_Map.map&#0x7D;&quot;</span> <i>— egy WML előfeldolgozó include</i>\n"
+"\n"
+"A <i>map_file</i> metódus előnyösebb az előfeldolgozó include használata "
+"helyett."
 
 #. [topic]: id=editor_map_format
 #: data/core/editor/help.cfg:492
@@ -1376,6 +1664,21 @@ msgid ""
 "this is rarely-used code. Maps opened this way are marked (E) in the Window "
 "menu."
 msgstr ""
+"<header>Beágyazott</header>\n"
+"\n"
+"A térképadatok a küldetés .cfg fájljának részeként tárolhatók, közvetlenül a "
+"<i>map_data</i> attribútumban. Más szóval, azon a helyen, ahová az "
+"előfeldolgozó beillesztené azokat az előfeldolgozó-include módszer "
+"használatakor.\n"
+"\n"
+"<header>Beágyazott formátum használata Terep módban</header>\n"
+"\n"
+"Ha szerkeszti a térképet, és nem használja a Küldetés mód támogatását, akkor "
+"triviális az adatokat egy natív térképfájlba áthelyezni, mielőtt megnyitná a "
+"szerkesztőben. Ez az átalakítás ajánlott – a szerkesztő támogatja a map_data "
+"tartalmának szerkesztését, miközben a fájl minden más részét érintetlenül "
+"hagyja, de ez ritkán használt kód. Az így megnyitott térképek (E) jelöléssel "
+"vannak ellátva az Ablak menüben."
 
 #. [topic]: id=editor_map_format
 #: data/core/editor/help.cfg:500
@@ -1429,12 +1732,12 @@ msgstr ""
 
 #. [section]: id=calendar
 #. [topic]: id=..calendar
-#: data/core/encyclopedia/calendar.cfg:5 data/core/encyclopedia/calendar.cfg:13
+#: data/core/encyclopedia/calendar.cfg:5 data/core/encyclopedia/calendar.cfg:12
 msgid "Calendar"
 msgstr "Naptár"
 
 #. [topic]: id=..calendar
-#: data/core/encyclopedia/calendar.cfg:14
+#: data/core/encyclopedia/calendar.cfg:13
 msgid ""
 "Each year in the Wesnothian calendar is composed of 12 months. These are, in "
 "order:\n"
@@ -1483,18 +1786,18 @@ msgstr ""
 
 #. [section]: id=geography
 #. [topic]: id=..geography
+#: data/core/encyclopedia/geography.cfg:5
 #: data/core/encyclopedia/geography.cfg:12
-#: data/core/encyclopedia/geography.cfg:19
 msgid "Geography"
 msgstr "Földrajz"
 
 #. [topic]: id=arkan_thoria
-#: data/core/encyclopedia/geography.cfg:26
+#: data/core/encyclopedia/geography.cfg:19
 msgid "Arkan-thoria"
 msgstr "Arkan-thoria"
 
 #. [topic]: id=arkan_thoria
-#: data/core/encyclopedia/geography.cfg:27
+#: data/core/encyclopedia/geography.cfg:20
 msgid ""
 "A river rising in the <ref dst='heart_mountains'>Heart Mountains</ref> and "
 "running east to the Listra."
@@ -1503,12 +1806,12 @@ msgstr ""
 "és a Listrába ömlik."
 
 #. [topic]: id=great_river
-#: data/core/encyclopedia/geography.cfg:32
+#: data/core/encyclopedia/geography.cfg:25
 msgid "Great River"
 msgstr "Nagy folyó"
 
 #. [topic]: id=great_river
-#: data/core/encyclopedia/geography.cfg:33
+#: data/core/encyclopedia/geography.cfg:26
 msgid ""
 "The Great River forms the boundary between the <ref "
 "dst='kingdom_wesnoth'>Kingdom of Wesnoth</ref> and the <ref "
@@ -1521,7 +1824,7 @@ msgstr ""
 "Óceánba</ref>."
 
 #. [topic]: id=great_river
-#: data/core/encyclopedia/geography.cfg:35
+#: data/core/encyclopedia/geography.cfg:28
 msgid ""
 "The Ford of Abez is a crossing between Wesnoth and the Northlands, and is "
 "the westernmost point where the Great River can be crossed without ships."
@@ -1530,12 +1833,12 @@ msgstr ""
 "pont, ahol a Nagy Folyón hajók nélkül lehet átkelni."
 
 #. [topic]: id=great_ocean
-#: data/core/encyclopedia/geography.cfg:40
+#: data/core/encyclopedia/geography.cfg:33
 msgid "Great Ocean"
 msgstr "Nagy óceán"
 
 #. [topic]: id=great_ocean
-#: data/core/encyclopedia/geography.cfg:41
+#: data/core/encyclopedia/geography.cfg:34
 msgid ""
 "Lies to the west of the <ref dst='great_continent'>continent</ref> and all "
 "rivers eventually flow to it. Far to the west in the Great Ocean is a huge "
@@ -1547,7 +1850,7 @@ msgstr ""
 
 #. [topic]: id=great_ocean
 #. Great Ocean
-#: data/core/encyclopedia/geography.cfg:45
+#: data/core/encyclopedia/geography.cfg:38
 msgid ""
 "The Drakes once called this ocean the World Ocean. They believe it to extend "
 "in every direction from Morogor until eventually flowing into the abyss as "
@@ -1558,12 +1861,12 @@ msgstr ""
 "vízesésként ömlik a végtelen mélységbe."
 
 #. [topic]: id=morogor
-#: data/core/encyclopedia/geography.cfg:50
+#: data/core/encyclopedia/geography.cfg:43
 msgid "Morogor"
 msgstr "Morogor"
 
 #. [topic]: id=morogor
-#: data/core/encyclopedia/geography.cfg:51
+#: data/core/encyclopedia/geography.cfg:44
 msgid ""
 "Archipelago, located somewhere in the <ref dst='great_ocean'>Great Ocean</"
 "ref> east of the <ref dst='green_isle'>Green Isle</ref> and west of the <ref "
@@ -1579,7 +1882,7 @@ msgstr ""
 
 #. [topic]: id=morogor
 #. Geography of Morogor
-#: data/core/encyclopedia/geography.cfg:57
+#: data/core/encyclopedia/geography.cfg:50
 msgid ""
 "<header>Notable land features:</header>\n"
 "    • Mount Morogor: The highest active volcanic mountain in the central "
@@ -1600,12 +1903,12 @@ msgstr ""
 "perzsekény sziget. Ez a Morogor-szigetcsoport legészakibb szigete."
 
 #. [topic]: id=green_isle
-#: data/core/encyclopedia/geography.cfg:65
+#: data/core/encyclopedia/geography.cfg:58
 msgid "Green Isle"
 msgstr "Zöld-sziget"
 
 #. [topic]: id=green_isle
-#: data/core/encyclopedia/geography.cfg:66
+#: data/core/encyclopedia/geography.cfg:59
 msgid ""
 "A bigger island lying in the <ref dst='great_ocean'>Great Ocean</ref>, "
 "formerly home to the Islefolk and Wesfolk."
@@ -1615,7 +1918,7 @@ msgstr ""
 
 #. [topic]: id=green_isle
 #. Geography of the Green Isle
-#: data/core/encyclopedia/geography.cfg:70
+#: data/core/encyclopedia/geography.cfg:63
 msgid ""
 "<header>Notable cities:</header>\n"
 "    • Southbay: The capital of the largest Islefolk kingdom.\n"
@@ -1639,7 +1942,7 @@ msgstr ""
 
 #. [topic]: id=green_isle
 #. Geography of the Green Isle
-#: data/core/encyclopedia/geography.cfg:79
+#: data/core/encyclopedia/geography.cfg:72
 msgid ""
 "<header>Notable land features:</header>\n"
 "    • Broken Mountains: A mighty mountain range that cuts through the Green "
@@ -1663,12 +1966,12 @@ msgstr ""
 "beszennyeződött a Wesfolk és az Islefolk közötti háborúkban."
 
 #. [topic]: id=old_continent
-#: data/core/encyclopedia/geography.cfg:88
+#: data/core/encyclopedia/geography.cfg:81
 msgid "Old Continent"
 msgstr "Óvilág"
 
 #. [topic]: id=old_continent
-#: data/core/encyclopedia/geography.cfg:89
+#: data/core/encyclopedia/geography.cfg:82
 msgid ""
 "Lies to the west of <ref dst='morogor'>Morogor</ref> and the <ref "
 "dst='green_isle'>Green Isle</ref> across the <ref dst='great_ocean'>Great "
@@ -1679,12 +1982,12 @@ msgstr ""
 "túloldalán. Ez az emberek és az orkok eredeti hazája."
 
 #. [topic]: id=great_continent
-#: data/core/encyclopedia/geography.cfg:94
+#: data/core/encyclopedia/geography.cfg:87
 msgid "Great Continent"
 msgstr "Nagy kontinens"
 
 #. [topic]: id=great_continent
-#: data/core/encyclopedia/geography.cfg:95
+#: data/core/encyclopedia/geography.cfg:88
 msgid ""
 "The continent on which the <ref dst='kingdom_wesnoth'>Kingdom of Wesnoth</"
 "ref> lies. Its west coast is surrounded by the <ref dst='great_ocean'>Great "
@@ -1695,12 +1998,12 @@ msgstr ""
 "körül."
 
 #. [topic]: id=irdya
-#: data/core/encyclopedia/geography.cfg:100
+#: data/core/encyclopedia/geography.cfg:93
 msgid "Irdya"
 msgstr "Irdya"
 
 #. [topic]: id=irdya
-#: data/core/encyclopedia/geography.cfg:101
+#: data/core/encyclopedia/geography.cfg:94
 msgid ""
 "The name of the world in which the kingdom of <ref "
 "dst='kingdom_wesnoth'>Wesnoth</ref> is situated is ‘Irdya’. This term is, "
@@ -1713,12 +2016,12 @@ msgstr ""
 "„a széles zöld világ” névvel illette."
 
 #. [topic]: id=kingdom_wesnoth
-#: data/core/encyclopedia/geography.cfg:106
+#: data/core/encyclopedia/geography.cfg:99
 msgid "Kingdom of Wesnoth"
 msgstr "Wesnoth Királyság"
 
 #. [topic]: id=kingdom_wesnoth
-#: data/core/encyclopedia/geography.cfg:107
+#: data/core/encyclopedia/geography.cfg:100
 msgid ""
 "The Kingdom of Wesnoth is located in the north-central portion of the <ref "
 "dst='great_continent'>Great Continent</ref>. Most of the mainline campaigns "
@@ -1748,7 +2051,7 @@ msgstr ""
 
 #. [topic]: id=kingdom_wesnoth
 #. Geography of Wesnoth
-#: data/core/encyclopedia/geography.cfg:113
+#: data/core/encyclopedia/geography.cfg:106
 msgid ""
 "<header>Notable cities:</header>\n"
 "    • Weldyn: The capital of Wesnoth.\n"
@@ -1789,7 +2092,7 @@ msgstr ""
 
 #. [topic]: id=kingdom_wesnoth
 #. Geography of Wesnoth
-#: data/core/encyclopedia/geography.cfg:127
+#: data/core/encyclopedia/geography.cfg:120
 msgid ""
 "<header>Notable land features:</header>\n"
 "    • Gryphon Mountain: Home of the fabled Gryphons.\n"
@@ -1852,12 +2155,12 @@ msgstr ""
 "észak-keletre."
 
 #. [topic]: id=elensefar
-#: data/core/encyclopedia/geography.cfg:144
+#: data/core/encyclopedia/geography.cfg:137
 msgid "Elensefar"
 msgstr "Elensefar"
 
 #. [topic]: id=elensefar
-#: data/core/encyclopedia/geography.cfg:145
+#: data/core/encyclopedia/geography.cfg:138
 msgid ""
 "Elensefar is at times a province of <ref dst='kingdom_wesnoth'>Wesnoth</"
 "ref>, at times an independent country, and at times in a treaty federation "
@@ -1875,7 +2178,7 @@ msgstr ""
 
 #. [topic]: id=elensefar
 #. Geography of Elensefar area
-#: data/core/encyclopedia/geography.cfg:149
+#: data/core/encyclopedia/geography.cfg:142
 msgid ""
 "<header>Notable cities:</header>\n"
 "    • Elensefar: The capital, located on an island in the Great River delta, "
@@ -1891,7 +2194,7 @@ msgstr ""
 "Wesnoth-tal."
 
 #. [topic]: id=elensefar
-#: data/core/encyclopedia/geography.cfg:154
+#: data/core/encyclopedia/geography.cfg:147
 msgid ""
 "<header>Notable land features:</header>\n"
 "    • <ref dst='great_river'>Great River</ref>: It is very wide at this "
@@ -1902,12 +2205,12 @@ msgstr ""
 "és csak hajók kelhetnek át rajta."
 
 #. [topic]: id=northlands
-#: data/core/encyclopedia/geography.cfg:160
+#: data/core/encyclopedia/geography.cfg:153
 msgid "Northlands"
 msgstr "Északfölde"
 
 #. [topic]: id=northlands
-#: data/core/encyclopedia/geography.cfg:161
+#: data/core/encyclopedia/geography.cfg:154
 msgid ""
 "The Northlands are filled with unstable clans in endless conflict. It is an "
 "unlawful and perilous place plagued by its cold, icy terrain and constant "
@@ -1939,7 +2242,7 @@ msgstr ""
 
 #. [topic]: id=northlands
 #. Geography of the Northlands
-#: data/core/encyclopedia/geography.cfg:167
+#: data/core/encyclopedia/geography.cfg:160
 msgid ""
 "<header>Notable cities:</header>\n"
 "    • Glamdrol: An Orcish tribal capital.\n"
@@ -1967,7 +2270,7 @@ msgstr ""
 
 #. [topic]: id=northlands
 #. Geography of the Northlands
-#: data/core/encyclopedia/geography.cfg:176
+#: data/core/encyclopedia/geography.cfg:169
 msgid ""
 "<header>Notable land features:</header>\n"
 "    • <ref dst='heart_mountains'>Heart Mountains</ref>: A virtually "
@@ -2013,12 +2316,12 @@ msgstr ""
 "valahol az északi területek keleti részén található."
 
 #. [topic]: id=southwest_elven_lands
-#: data/core/encyclopedia/geography.cfg:189
+#: data/core/encyclopedia/geography.cfg:182
 msgid "Southwest Elven Lands"
 msgstr "Délnyugati tünde területek"
 
 #. [topic]: id=southwest_elven_lands
-#: data/core/encyclopedia/geography.cfg:190
+#: data/core/encyclopedia/geography.cfg:183
 msgid ""
 "The Wood Elves are separate from those of the north, and have only "
 "intermittent relations with them and most other countries. Its borders are "
@@ -2033,11 +2336,11 @@ msgstr ""
 
 #. [topic]: id=southwest_elven_lands
 #. Geography of the Southwest
-#: data/core/encyclopedia/geography.cfg:194
+#: data/core/encyclopedia/geography.cfg:187
 msgid ""
 "<header>Notable land features:</header>\n"
-"    • Aethenwood: The largest southern forest, home to reclusive <ref dst='.."
-"race_elf'>elves</ref>.\n"
+"    • Aethenwood: The largest southern forest, home to reclusive <ref "
+"dst='..race_elf'>elves</ref>.\n"
 "    • Vale of Blossoming Trees: An elvish vale at the southern edge of the "
 "Aethenwood. It contains the sacred Isle of Elrath.\n"
 "    • Lake Aelin: An elvish lake at the edge of their territory along the "
@@ -2047,8 +2350,8 @@ msgid ""
 "enter it seldom return."
 msgstr ""
 "<header>Jelentős szárazföldi területek:</header>\n"
-"    • Aethen-erdő: A legnagyobb déli erdő, amely a visszahúzódó <ref dst='.."
-"race_elf'>tündéknek</ref> ad otthont.\n"
+"    • Aethen-erdő: A legnagyobb déli erdő, amely a visszahúzódó <ref "
+"dst='..race_elf'>tündéknek</ref> ad otthont.\n"
 "    • Virágzó fák völgye: Tünde völgy Aethen-erdő déli szélén. Itt található "
 "a szent Elrath-sziget.\n"
 "    • Aelin-tó: Tünde tó a területük szélén az Aithen folyó mentén.\n"
@@ -2057,14 +2360,14 @@ msgstr ""
 "akik belépnek, ritkán térnek vissza."
 
 #. [topic]: id=heart_mountains
-#: data/core/encyclopedia/geography.cfg:203
+#: data/core/encyclopedia/geography.cfg:196
 msgid "Heart Mountains"
 msgstr "Központi-hegység"
 
 #. [topic]: id=heart_mountains
 #. The Whitefang Clan’s primary description is in DiD
 #. Wesnoth 1.9.4 added Haggid-Dargor to the encyclopedia, but it has no other mention in mainline
-#: data/core/encyclopedia/geography.cfg:206
+#: data/core/encyclopedia/geography.cfg:199
 msgid ""
 "A virtually impassable barrier between the <ref dst='arkan_thoria'>river</"
 "ref> country and the <ref dst='far_north'>Northern Plains</ref>. The local "
@@ -2079,12 +2382,12 @@ msgstr ""
 "hegységnek neveznek."
 
 #. [topic]: id=far_north
-#: data/core/encyclopedia/geography.cfg:211
+#: data/core/encyclopedia/geography.cfg:204
 msgid "Far North"
 msgstr "messzi észak"
 
 #. [topic]: id=far_north
-#: data/core/encyclopedia/geography.cfg:212
+#: data/core/encyclopedia/geography.cfg:205
 msgid ""
 "Cold, harsh, and inaccessible, the Far North is the ancestral home of the "
 "Orcish Clannate. It lies north of the <ref dst='heart_mountains'>Heart "
@@ -2107,7 +2410,7 @@ msgstr ""
 
 #. [topic]: id=far_north
 #. Geography of the Far North
-#: data/core/encyclopedia/geography.cfg:216
+#: data/core/encyclopedia/geography.cfg:209
 msgid ""
 "<header>Notable cities:</header>\n"
 "    • Barag Gor: A city home to the Orcish Council.\n"
@@ -2143,7 +2446,7 @@ msgstr ""
 
 #. [topic]: id=far_north
 #. Geography of the Far North
-#: data/core/encyclopedia/geography.cfg:232
+#: data/core/encyclopedia/geography.cfg:225
 msgid ""
 "<header>Notable land features:</header>\n"
 "    • Desert of Death: An unusually dry desert in the Far North filled with "
@@ -2200,12 +2503,12 @@ msgstr ""
 "    • Kietlen-rónaság: Hatalmas, ritkán lakott havas tundra."
 
 #. [topic]: id=far_south
-#: data/core/encyclopedia/geography.cfg:249
+#: data/core/encyclopedia/geography.cfg:242
 msgid "Far South"
 msgstr "messzi dél"
 
 #. [topic]: id=far_south
-#: data/core/encyclopedia/geography.cfg:250
+#: data/core/encyclopedia/geography.cfg:243
 msgid ""
 "A vast region south of Kerlath home to many mysterious races, including jinn "
 "and wyverns. Very little is known for certain about what lies here."
@@ -2216,7 +2519,7 @@ msgstr ""
 
 #. [topic]: id=far_south
 #. Geography of the Far South
-#: data/core/encyclopedia/geography.cfg:254
+#: data/core/encyclopedia/geography.cfg:247
 msgid ""
 "<header>Notable land features:</header>\n"
 "    • Mountains of Peril: A tall and deadly mountain range in the Far South "
@@ -2369,6 +2672,25 @@ msgid ""
 "The <i>Battle for Wesnoth</i> project was begun in 2003, and has been worked "
 "on by a multitude of volunteers ever since."
 msgstr ""
+"A játék hatszögletű mezőkön zajlik, ahol az egységeid a számítógép által "
+"irányított egységekkel, vagy ugyanazon a számítógépen felváltva játszó "
+"barátokkal (hotseat játék), vagy ugyanazon a hálózaton lévő többi "
+"játékossal, vagy a világ minden tájáról érkező játékosokkal küzdenek "
+"többjátékos módban.\n"
+"\n"
+"Ezeket a csatákat <i>küldetés</i>-nak nevezik, amelyekből <i>hadjáratok</i> "
+"hozhatók létre. A játékkal együtt érkező hadjáratok mellett a Wesnoth "
+"támogatja a felhasználók által készített tartalmakat, és a kiegészítő (add-"
+"on) szerver több száz egyedi térképpel, hadjárattal, korszakkal, frakcióval "
+"és erőforrással büszkélkedhet.\n"
+"\n"
+"A játék tartalmaz egy könnyen olvasható jelölőnyelvet, a Wesnoth Markup "
+"Language-et (WML), amely lehetővé teszi a felhasználók számára, hogy könnyen "
+"létrehozzák saját tartalmaikat, valamint egy teljes értékű Térkép- és "
+"Küldetésszerkesztőt a saját csataterek megtervezéséhez.\n"
+"\n"
+"A <i>Harc Wesnothért</i> (Battle for Wesnoth) projektet 2003-ban indították "
+"el, és azóta számos önkéntes dolgozik rajta."
 
 #. [topic]: id=..units
 #: data/core/help.cfg:118
@@ -2496,6 +2818,41 @@ msgid ""
 "higher difficulties the enemy may have higher incomes, higher-level units, "
 "more castle hexes, and so on."
 msgstr ""
+"A Wesnoth csaták sorozatából, úgynevezett <i>küldetésekből</i> áll, "
+"amelyekben csapataid egy vagy több ellenfél csapatai ellen csapnak össze. "
+"Több, egymásra épülő küldetés, amelyek egy történetet mesélnek el, "
+"<i>hadjáratokat</i> alkotnak. Egy hadjáratban gyakran körültekintőbben kell "
+"játszani, és a legjobb csapataidat későbbi küldetésekben való felhasználásra "
+"megőrizni.\n"
+"\n"
+"Az interaktív oktató hadjárat, a <b>Déli Őrhely</b> egy hadjárat "
+"kontextusában mutatja be a Wesnoth játékmenetét. Az oktató hadjárat által "
+"lefedett témák nagy részét ezeken az oldalakon magyarázzuk el, így bármikor "
+"visszakereshetsz ide, ha valamit elfelejtesz.\n"
+"\n"
+"Miután elsajátítottad az alapokat, mindenképpen próbálj ki egy másik kezdő "
+"hadjáratot! Segíthetsz két testvérnek legyőzni egy halálos veszélyt a <i>Két "
+"testvér meséje</i> című játékban, segíthetsz Konrád hercegnek átjutni "
+"Wesnoth történelmének egy fordulópontján a <i>Trónörökös</i> című epikus "
+"hadjáratban, vagy kalauzolhatod Delfador mágust a legendává válás útján a "
+"hasonlóan epikus <i>Trónbitorló útja a hatalomba</i> című hadjáratban. A "
+"telepített hadjáratok teljes listáját a főmenü <b>Hadjáratok</b> opcióján "
+"keresztül találod meg, amely tele van ugyanolyan érdekes kalandokkal Wesnoth "
+"hosszú történelméből. Javasoljuk, hogy a felsorolásuk sorrendjében "
+"játsszátok le őket, de nyugodtan kihagyhatod azokat, amelyek nem a te "
+"ízlésednek valók!\n"
+"\n"
+"A hadjáratok <i>szint</i> és <i>nehézség</i> szerint vannak csoportosítva. "
+"Például a <i>Trónörökös</i> „Kezdő” szintű, és három nehézségi szinten "
+"játszható: „Kezdő”, „Normál” és „Kihívást jelentő”. Egy hadjárat szintje "
+"jelzi, hogy milyen mértékű jártasságot feltételez a játékos a "
+"játékmechanikában (például az <ref dst='movement'>ellenőrzött területekben</"
+"ref> és a <ref dst='time_of_day'>napszakokban</ref>). A nehézség jelzi, hogy "
+"mennyire lesznek kihívást jelentőek a küldetések: magasabb nehézségi "
+"szinteken a győzelemhez vezető akadályok is magasabbak lesznek, és "
+"leküzdésükhöz ügyesebb játékra lesz szükség. Például magasabb nehézségi "
+"szinteken az ellenségnek magasabb lehet a bevétele, magasabb szintűek az "
+"egységei, több vár-mezője és így tovább."
 
 #. [topic]: id=..gameplay
 #: data/core/help.cfg:175
@@ -2603,8 +2960,8 @@ msgid ""
 "Recruited units come with two random <ref dst='..traits_section'>traits</"
 "ref> which modify their statistics."
 msgstr ""
-"A toborzott egységeknek két véletlenszerű <ref dst='.."
-"traits_section'>jellemvonása</ref> lesz, amelyek módosítják a "
+"A toborzott egységeknek két véletlenszerű <ref "
+"dst='..traits_section'>jellemvonása</ref> lesz, amelyek módosítják a "
 "statisztikájukat."
 
 #. [topic]: id=recruit_and_recall
@@ -3059,7 +3416,7 @@ msgstr ""
 "tartod, hogy ez csak egy játék – ritkán jár büntetés azért, ha hagyod ezeket "
 "az egységeket meghalni, azon kívül, hogy a jövőbeni küldetésekben nem tudod "
 "visszahívni őket. A csatatervednek a kockázatokat aszerint kell kiosztania, "
-"hogy mely csapatokat szeretnéd később visszahívni.("
+"hogy mely csapatokat szeretnéd később visszahívni."
 
 #. [topic]: id=saveload
 #: data/core/help.cfg:303
@@ -3529,6 +3886,28 @@ msgid ""
 "• Enemy units normally don’t have orbs, however these can be enabled in the "
 "advanced preference “Customize orb colors”."
 msgstr ""
+"A jelölőgömbök mutatják, hogy az egység mozoghat-e vagy támadhat-e. Az "
+"állapotok és szabványos színeik a következők:\n"
+"• <b>Zöld</b>, ha ebben a körben még nem mozdult, és nem is támadott.\n"
+"• <b>Sárga</b>, ha mozgott (vagy támadott), és még mindig támadhat. "
+"Lehetséges az is, hogy még mindig képes tovább mozogni.\n"
+"• <b>Piros</b>, ha ebben a körben sem mozogni, sem támadni nem tud tovább.\n"
+"    • A piros színt az „egység körének vége” parancs után is használják, és\n"
+"    • amikor egy egység egy több körös mozgás közepén van (arra utasították, "
+"hogy messzebbre mozogjon, mint amennyit az aktuális körben tud).\n"
+"• <b>Piros és sárga</b>, ha mozgott (vagy támadott), de még mindig mozoghat, "
+"viszont már nem támadhat.\n"
+"    • Ez hadjáratonként változó események vagy képességek miatt történhet, "
+"például a <i>kikapcsolás</i> képesség az <i>Égő napok alatt</i> "
+"hadjáratban.\n"
+"• <b>Kék</b> a szövetséges egységeknél, kivéve a szövetséges saját körében.\n"
+"    • A szövetséges saját körében az egységei színekkel jelennek meg, "
+"amelyek azt mutatják, hogy az egységek mozoghatnak és támadhatnak-e még; "
+"azonban a mozgásuk és a hozzájuk tartozó gömbváltozások késleltetve vannak, "
+"ahogyan azt a <ref dst='shroud_and_fog'>A háború leple és köde</ref> részben "
+"ismertettük.\n"
+"• Az ellenséges egységeknek általában nincsenek jelzőgömbjeik, azonban ezek "
+"engedélyezhetők a „Gömbszínek testreszabása” speciális beállításokban."
 
 #. [topic]: id=orbs
 #: data/core/help.cfg:410
@@ -3884,10 +4263,11 @@ msgstr "Utószó"
 #: data/core/help.cfg:529
 msgid ""
 "This concludes the fundamentals of Wesnoth. You might want to read up on "
-"basic strategy, or familiarize yourself with <ref dst='.."
-"traits_section'>traits</ref> and <ref dst='..abilities_section'>abilities</"
-"ref>, but you now know everything you need to know to play the <i>Heir to "
-"the Throne</i> campaign. Have fun, and good luck!"
+"basic strategy, or familiarize yourself with <ref "
+"dst='..traits_section'>traits</ref> and <ref "
+"dst='..abilities_section'>abilities</ref>, but you now know everything you "
+"need to know to play the <i>Heir to the Throne</i> campaign. Have fun, and "
+"good luck!"
 msgstr ""
 "Ennyit a Wesnoth alapjairól. Biztosan szívesen olvasnál az alapvető "
 "stratégiáról, vagy jobban megismerkednél a <ref dst='..traits_section'> "
@@ -4314,6 +4694,26 @@ msgid ""
 "additional details about the add-on, such as its full description, "
 "installation status, and available translations."
 msgstr ""
+"A felhasználók által készített kiegészítők a főmenü <i>Kiegészítők</i> "
+"opcióján keresztül szerezhetők be és frissíthetők. Miután csatlakoztunk a "
+"kiegészítőszerverhez (alapértelmezés szerint <i>add-ons.wesnoth.org</i>), "
+"megjelenik a szerveren letölthető kiegészítők listája.\n"
+"\n"
+"Az egyes kiegészítők telepítési állapota az egyes bejegyzések alatt látható. "
+"A szerveren <i>frissíthető</i> vagy <i>elavult</i> kiegészítők esetében a "
+"telepített és közzétett verziók a <i>Verzió</i> oszlopban jelennek meg.\n"
+"\n"
+"A kiegészítők kulcsszavak szerinti kereséséhez írd be a releváns "
+"kifejezéseket tetszőleges sorrendben a keresőmezőbe, szóközökkel "
+"elválasztva. A kiegészítők listáját az oszlopfejlécekre kattintva is lehet "
+"rendezni. A <b>Típus</b> legördülő menüre kattintva az is kiválasztható, "
+"hogy csak bizonyos kategóriákba tartozó kiegészítők jelenjenek meg.\n"
+"\n"
+"Bővítmény telepítéséhez jelöld ki azt a listából, és kattints a <b>+</b> "
+"ikonra, vagy egyszerűen kattints duplán a bővítmény címére. Ha az ablak túl "
+"kicsi ahhoz, hogy a részleteket a sorban megjelenítse, a <b>Bővítmény "
+"részletei</b> gomb további részleteket jelenít meg a bővítményről, például a "
+"teljes leírását, a telepítési állapotát és az elérhető fordításokat."
 
 #. [topic]: id=removing_addons
 #: data/core/help.cfg:669
@@ -6065,7 +6465,7 @@ msgstr ""
 "de csak akkor, ha harcban használják."
 
 #. [drains]: id=drains
-#: data/core/macros/weapon_specials.cfg:184
+#: data/core/macros/weapon_specials.cfg:185
 msgid ""
 "This unit drains health from living units, healing itself for half the "
 "amount of damage it deals (rounded down)."
@@ -6074,12 +6474,12 @@ msgstr ""
 "(lefelé kerekítve) saját magát gyógyítja."
 
 #. [firststrike]: id=firststrike
-#: data/core/macros/weapon_specials.cfg:194
+#: data/core/macros/weapon_specials.cfg:195
 msgid "first strike"
 msgstr "első ütés"
 
 #. [firststrike]: id=firststrike
-#: data/core/macros/weapon_specials.cfg:195
+#: data/core/macros/weapon_specials.cfg:196
 msgid ""
 "This unit always strikes first with this attack, even if they are defending."
 msgstr ""
@@ -6087,7 +6487,7 @@ msgstr ""
 "támadták meg."
 
 #. [poison]: id=poison
-#: data/core/macros/weapon_specials.cfg:206
+#: data/core/macros/weapon_specials.cfg:207
 msgid ""
 "This attack poisons living targets. Poisoned units lose 8 HP every turn "
 "until they are cured or are reduced to 1 HP. Poison cannot, of itself, kill "
@@ -6098,12 +6498,12 @@ msgstr ""
 "életerejük 1-re nem csökken. Önmagában a méreg nem öl meg senkit."
 
 #. [stun]: id=stun
-#: data/core/macros/weapon_specials.cfg:216
+#: data/core/macros/weapon_specials.cfg:217
 msgid "stun"
 msgstr "kábít"
 
 #. [stun]: id=stun
-#: data/core/macros/weapon_specials.cfg:217
+#: data/core/macros/weapon_specials.cfg:218
 msgid ""
 "This attack hits so hard that the opponent is dazed and can no longer "
 "enforce a zone of control. The effect wears off on the opponent’s next turn."
@@ -6113,7 +6513,7 @@ msgstr ""
 "sorra kerül."
 
 #. [stun]: id=stun
-#: data/core/macros/weapon_specials.cfg:218
+#: data/core/macros/weapon_specials.cfg:219
 msgid ""
 "This unit is able to stun its enemies, disrupting their zones of control."
 msgstr ""
@@ -6121,12 +6521,12 @@ msgstr ""
 "gyorsaságát és sebzésüket a körük végéig."
 
 #. [damage_type]: id=arcane_damage
-#: data/core/macros/weapon_specials.cfg:227
+#: data/core/macros/weapon_specials.cfg:228
 msgid "arcane"
 msgstr "földöntúli"
 
 #. [damage_type]: id=arcane_damage
-#: data/core/macros/weapon_specials.cfg:228
+#: data/core/macros/weapon_specials.cfg:229
 msgid ""
 "This attack combines the arcane type with the type of weapon used so that "
 "resistance to the arcane type does not penalize the user."
@@ -6135,7 +6535,7 @@ msgstr ""
 "így a földöntúlival szembeni ellenállás nem sújtja a felhasználót."
 
 #. [damage_type]: id=arcane_damage
-#: data/core/macros/weapon_specials.cfg:229
+#: data/core/macros/weapon_specials.cfg:230
 msgid ""
 "This unit can use the arcane type when the opponent is particularly "
 "sensitive to it in relation to the weapon on which it is applied."
@@ -6230,22 +6630,22 @@ msgstr ""
 "néhány nagymacskát félelmetes szörnyetegnek tartanak."
 
 #. [race]: id=drake
-#: data/core/units.cfg:61
+#: data/core/units.cfg:59
 msgid "race^Drake"
 msgstr "Perzsekény"
 
 #. [race]: id=drake
-#: data/core/units.cfg:62
+#: data/core/units.cfg:60
 msgid "race+female^Drake"
 msgstr "Perzsekény"
 
 #. [race]: id=drake
-#: data/core/units.cfg:63
+#: data/core/units.cfg:61
 msgid "race^Drakes"
 msgstr "Perzsekények"
 
 #. [race]: id=drake
-#: data/core/units.cfg:64
+#: data/core/units.cfg:62
 msgid ""
 "Drakes are large, winged and fire-breathing creatures, reminiscent of true "
 "dragons. On average, an adult drake stands around three meters tall and "
@@ -6377,22 +6777,22 @@ msgstr ""
 "népesítették be a Nagy-Kontinens messze északon húzódó hegyeit."
 
 #. [race]: id=dwarf
-#: data/core/units.cfg:97
+#: data/core/units.cfg:82
 msgid "race^Dwarf"
 msgstr "Törp"
 
 #. [race]: id=dwarf
-#: data/core/units.cfg:98
+#: data/core/units.cfg:83
 msgid "race+female^Dwarf"
 msgstr "Törp"
 
 #. [race]: id=dwarf
-#: data/core/units.cfg:99
+#: data/core/units.cfg:84
 msgid "race^Dwarves"
 msgstr "Törpök"
 
 #. [race]: id=dwarf
-#: data/core/units.cfg:100
+#: data/core/units.cfg:85
 msgid ""
 "The dwarves are a race famed for their miners, blacksmiths, merchants and "
 "warriors. Considered as the third oldest race on the great continent after "
@@ -6489,22 +6889,22 @@ msgstr ""
 "megbűvölt tárgyaknak valamilyen tulajdonságát felerősítsék."
 
 #. [race]: id=elf
-#: data/core/units.cfg:117
+#: data/core/units.cfg:98
 msgid "race^Elf"
 msgstr "Tünde"
 
 #. [race]: id=elf
-#: data/core/units.cfg:118
+#: data/core/units.cfg:99
 msgid "race+female^Elf"
 msgstr "Tünde"
 
 #. [race]: id=elf
-#: data/core/units.cfg:119
+#: data/core/units.cfg:100
 msgid "race^Elves"
 msgstr "Tündék"
 
 #. [race]: id=elf
-#: data/core/units.cfg:121
+#: data/core/units.cfg:101
 msgid ""
 "Compared to humans, elves are somewhat taller, more agile but less sturdy. "
 "They have slightly pointy ears, pale skin and usually blond hair. Few "
@@ -6568,24 +6968,88 @@ msgid ""
 "tradition, in both Wesmere and Lintanir, an enchantress from the order of "
 "elven mystics is also called upon to facilitate the transition of power."
 msgstr ""
+"Az emberekhez képest a tündék valamivel magasabbak, fürgébbek, de kevésbé "
+"erősek. Kissé hegyes fülük, sápadt bőrük és általában szőke hajuk van. Az "
+"emberek és a tündék közötti kevés különbség hangsúlyosabb, mint a tündék "
+"szokatlanul hosszú élete – a legtöbben, hacsak betegség, baleset vagy háború "
+"nem szólítja el őket, legalább két teljes évszázadot élnek. Noha néhány "
+"magasszintű mágikus képességekkel rendelkező tündérről ismert, hogy ennél is "
+"tovább él, a legtöbb tündér 250 és 300 éves kora között kezd el fizikailag "
+"legyengülni és ezt követően viszonyleg gyorsan elhalálozik.\n"
+"\n"
+"A legtöbb tündét erős vonzalom fűzi az érintetlen természethez, és "
+"kényelmetlenül érzi magát a nyílt, növényzet nélküli helyeken. Elsősorban a "
+"Nagy Kontinens erdeiben élnek, a délnyugati Aethen-erdőben, az északnyugati "
+"Wesmere-ben és a nagy északi erdőkben, amelyeknek a Lintanir-erdő a "
+"legdélebbi széle.\n"
+"\n"
+"A tündék a kontinens legidősebb fajai közé tartoznak. Sok településük kora "
+"nem állapítható meg  biztosan, de kétségtelenül már több évezred óta "
+"léteznek.\n"
+"\n"
+"<header>text='Mágia'</header>\n"
+"Bár a tündék alapvetően különböznek a mesés tündérnéptől, mágiájuknak van "
+"némi kapcsolata a tündérekkel, és ez szokatlanul éles érzékeik, valamint "
+"hosszú életük forrása. A tündék mágiája két különböző útra oszlik, az egyik "
+"a hétköznapi vagy természeti világ befolyásolására, a másik pedig a "
+"földöntúli síkon való jövőbe látásra összpontosít. Ezek közül a gyakoribb "
+"mód a fizikai anyagok megváltoztatása, amelynek kézzelfoghatóbb hatásai "
+"vannak, mint a földöntúli ellentétpárjának. Bár a tündék természeti mágiája "
+"nem alkalmas harcra, a föld energiáinak igába hajtása és védelmi-óvó célú "
+"felhasználása hatalmas képességük és egyben ez az elsődleges oka a tündék "
+"gyógyítási hatékonyságának, valamint erdeik szépségének és vitalitásának.\n"
+"\n"
+"Azokat, akik a misztikus utat követik, más tündék is nagyra becsülik, de "
+"indítékaik és képességeik gyakran nem világosak a rendjükön kívüliek "
+"számára. Néhányan, akik messzire merészkednek a misztikus úton, "
+"tündérszerűbb tulajdonságokat öltenek magukra, rendkívüli tisztánlátásra és "
+"hosszú életre tesznek szert, de egyben érzékennyé válnak a rideg vas "
+"jelenlétére, sőt, meg is égetheti őket.\n"
+"\n"
+"<header>text='Kultúra'</header>\n"
+"A tündék idejük nagy részét tehetségük és képességeik csiszolásával töltik. "
+"Azok, akik nem jártasak a mágikus művészetekben, jellemzően fizikai "
+"képességeik csiszolásával töltik az idejüket, gyakran sport-jelleggel. Ennek "
+"eredményeként a tündék jeleskednek az íjászatban, egy olyan mesterségben, "
+"amelyet könnyen és hatékonyan alkalmaznak a hadviselésben. A tündék elismert "
+"zenészek is, különösen jártasak a fúvós és pengetős hangszereken kis "
+"együttesekben. Aethen-erdő tiszafából készült hárfái például legendásak "
+"lágy, szelíd hangjukról.\n"
+"\n"
+"<header>text='Társadalom'</header>\n"
+"A tündék társadalma nagyjából három csoportra oszlik: egy ál-katonai "
+"csoportra, amely az erdők védelméért felelős, békés civilekre, akik "
+"általában kézművesek és művészek, valamint gyógyítókra és misztikusokra, "
+"akik fenntartják a tündék kapcsolatát a tündérekkel. E különböző jellegű "
+"csoportok irányításáért a nemesség felelős, akiket a tágabb társadalmi rend "
+"szolgáiként kezelnek, nem pedig népük szigorú uralkodóiként. A nemesek "
+"kiválasztásának folyamata a különböző tünde tanácsokban eltérő, Wesmere "
+"kormányzótanácsát – a Ka’liant – megválasztják, Lintanir nemessége pedig "
+"általában öröklés útján újul meg.\n"
+"\n"
+"Viszályok idején a parancsnoki hierarchia rugalmasabbá válik, a hétköznapi "
+"arisztokrácia a harciasabb beállítottságú marsalloknak engedelmeskedik. A "
+"hagyomány szerint mind Wesmere-ben, mind Lintanirban egy, a tünde "
+"misztikusok rendjéből származó varázslónőt is felkérnek a hatalomátadás "
+"elősegítésére."
 
 #. [race]: id=falcon
-#: data/core/units.cfg:147
+#: data/core/units.cfg:127
 msgid "race^Falcon"
 msgstr "Sólyom"
 
 #. [race]: id=falcon
-#: data/core/units.cfg:148
+#: data/core/units.cfg:128
 msgid "race+female^Falcon"
 msgstr "Sólyom tojó"
 
 #. [race]: id=falcon
-#: data/core/units.cfg:149
+#: data/core/units.cfg:129
 msgid "race^Falcons"
 msgstr "Sólymok"
 
 #. [race]: id=falcon
-#: data/core/units.cfg:150
+#: data/core/units.cfg:130
 msgid ""
 "Falcons are birds of prey, noted for their exceptional speed and agility. "
 "Lighter and with less powerful talons than other raptors, falcons instead "
@@ -6607,22 +7071,22 @@ msgstr ""
 "szolgálatában."
 
 #. [race]: id=goblin
-#: data/core/units.cfg:158
+#: data/core/units.cfg:137
 msgid "race^Goblin"
 msgstr "Kobold"
 
 #. [race]: id=goblin
-#: data/core/units.cfg:159
+#: data/core/units.cfg:138
 msgid "race+female^Goblin"
 msgstr "Kobold"
 
 #. [race]: id=goblin
-#: data/core/units.cfg:160
+#: data/core/units.cfg:139
 msgid "race^Goblins"
 msgstr "Koboldok"
 
 #. [race]: id=goblin
-#: data/core/units.cfg:163
+#: data/core/units.cfg:142
 msgid ""
 "Goblins are puny and quite frail, rarely growing past the size and stature "
 "of a human child."
@@ -6631,7 +7095,7 @@ msgstr ""
 "gyermek méretén és termetén."
 
 #. [race]: id=goblin
-#: data/core/units.cfg:165
+#: data/core/units.cfg:144
 msgid ""
 "Goblins are born into a lifetime of near-slavery to their larger kin, and "
 "used as sword-fodder in battle. They thrive in spite of their tragic fate; "
@@ -6650,22 +7114,22 @@ msgstr ""
 "akikben az orkok kedvüket lelik, mint bátorságuk bizonyítékait."
 
 #. [race]: id=gryphon
-#: data/core/units.cfg:178
+#: data/core/units.cfg:156
 msgid "race^Gryphon"
 msgstr "Griffmadár"
 
 #. [race]: id=gryphon
-#: data/core/units.cfg:179
+#: data/core/units.cfg:157
 msgid "race+female^Gryphon"
 msgstr "Griffmadár"
 
 #. [race]: id=gryphon
-#: data/core/units.cfg:180
+#: data/core/units.cfg:158
 msgid "race^Gryphons"
 msgstr "Griffmadarak"
 
 #. [race]: id=gryphon
-#: data/core/units.cfg:181
+#: data/core/units.cfg:159
 msgid ""
 "Gryphons are broad, powerful beasts with traits shared from both terrestrial "
 "predators and birds of prey. While occasionally tamed and ridden by the "
@@ -6685,22 +7149,22 @@ msgstr ""
 "óta vita tárgya és ugyanolyan rejtélyes, mint eredetük."
 
 #. [race]: id=horse
-#: data/core/units.cfg:191
+#: data/core/units.cfg:169
 msgid "race^Horse"
 msgstr "Ló"
 
 #. [race]: id=horse
-#: data/core/units.cfg:192
+#: data/core/units.cfg:170
 msgid "race+female^Horse"
 msgstr "Ló"
 
 #. [race]: id=horse
-#: data/core/units.cfg:193
+#: data/core/units.cfg:171
 msgid "race^Horses"
 msgstr "Lovak"
 
 #. [race]: id=horse
-#: data/core/units.cfg:194
+#: data/core/units.cfg:172
 msgid ""
 "Domesticated horses come in many shapes and sizes, from mighty war chargers, "
 "to sturdy draught horses or agile stock horses. While they are more fragile "
@@ -6724,22 +7188,22 @@ msgstr ""
 "őszintén, hogy láttak ilyesmit."
 
 #. [race]: id=human
-#: data/core/units.cfg:211
+#: data/core/units.cfg:181
 msgid "race^Human"
 msgstr "Ember"
 
 #. [race]: id=human
-#: data/core/units.cfg:212
+#: data/core/units.cfg:182
 msgid "race+female^Human"
 msgstr "Ember"
 
 #. [race]: id=human
-#: data/core/units.cfg:213
+#: data/core/units.cfg:183
 msgid "race^Humans"
 msgstr "Emberek"
 
 #. [race]: id=human
-#: data/core/units.cfg:214
+#: data/core/units.cfg:184
 msgid ""
 "The race of men is an extremely diverse one. Although they originally came "
 "from the Old Continent, men have spread all over the world and split into "
@@ -6819,22 +7283,22 @@ msgstr ""
 "gyengeségei és erősségei jól kiegyensúlyozzák egymást."
 
 #. [race]: id=dunefolk
-#: data/core/units.cfg:229
+#: data/core/units.cfg:197
 msgid "race^Dunefolk Human"
 msgstr "Dűnelakó ember"
 
 #. [race]: id=dunefolk
-#: data/core/units.cfg:230
+#: data/core/units.cfg:198
 msgid "race+female^Dunefolk Human"
 msgstr "Dűnelakó nő"
 
 #. [race]: id=dunefolk
-#: data/core/units.cfg:231
+#: data/core/units.cfg:199
 msgid "race+plural^Dunefolk"
 msgstr "Dűnelakók"
 
 #. [race]: id=dunefolk
-#: data/core/units.cfg:233
+#: data/core/units.cfg:201
 msgid ""
 "An offshoot of a forgotten nomadic civilization, the Dunefolk lay claim to "
 "the river valleys and oases of the Sandy Wastes. How they came to inhabit "
@@ -6890,24 +7354,79 @@ msgid ""
 "The origins of this tradition likely lie in the heritage of the Dunefolk’s "
 "distant past in the exotic far corners of Irdya."
 msgstr ""
+"Egy elfeledett nomád civilizáció sarjaként a dűnék népe, más néven dűnelakók "
+"igényt tartottak a Homokos-sivatag folyóvölgyeire és oázisaira. Nem "
+"ismeretes, hogyan tudták benépesíteni a Nagy Kontinens e távoli szegletét. "
+"Legendáik számos hosszú és veszélyes utazásról mesélnek távoli vidékeken, de "
+"népük valódi eredete végtelen és heves vita tárgya még a legműveltebb "
+"tudósok között is.\n"
+"\n"
+"Bármi is legyen a származásuk, a dűnék népe virágzik. Nyüzsgő városok állnak "
+"büszkén a legtermékenyebb régiókban. Képzett kézművesek, jó kovácsok és "
+"gazdag kereskedők alkotják a városi gazdaság gerincét. E városok mindegyike "
+"bizonyos fokú függetlenséget élvez, ami kevésbé jellemző az északabbra "
+"fekvő, központosítottabb népekre, sokuk még saját állandó hadsereget is "
+"fenntart. Szükség idején azonban mindegyikük egy magasabb hatalom alá "
+"gyűlik, amelyet a nemzet legfőbb érdekeinek védelmére jelöltek ki.\n"
+"\n"
+"Azok, akik nem telepedtek le ezekben a városi központokban, továbbra is "
+"ragaszkodnak őseik életmódjához, a dűnéken barangolnak, és csordáikat egyik "
+"itatóhelyről a másikra vezetik. Legaktívabbak a kora hajnali órákban és az "
+"alkony beálltával, amikor a pusztaság sem túl meleg, sem túl hideg. A "
+"homokban való mozgásukban még a dűnelakók mércéjével is kiválóak. Bár városi "
+"társaik néha megvetéssel tekintenek rájuk, felbecsülhetetlen értékű "
+"szolgálatot nyújtanak mozgó könnyű csapatokként háborúban, vagy békeidőben a "
+"kereskedelmi karavánok kísérőjeként.\n"
+"\n"
+"A dűnelakók kereskedelem és felfedezés iránti hajlama lehetővé tette "
+"városaik számára, hogy hatalmas vagyonokat halmozzanak fel, amire más fajok "
+"csodálattal és irigységgel tekintenek. A kölcsönös érdekek mentén szívélyes "
+"kapcsolatokat alakítottak ki a szomszédos nága törzsekkel, de a titkosabb "
+"fajok, mint például a perzsekények és a tündék, mindig is túl tolakodónak "
+"tartották a dűnelakok expedícióit, különösen, ha azok a területeik "
+"határainak közelébe merészkedtek. Nem ritka, hogy a karavánok áldozatul "
+"esnek a lesben álló trolloknak a hegyekben, ami számtalan legendának adott "
+"alapot rejtett barlangokban felhalmozott elképzelhetetlen kincsekről.\n"
+"\n"
+"Mivel évszázadokig ellenséges környezetben éltek, a dűnelakók racionális "
+"kutatási módszereket fejlesztettek ki, amelyek révén folyamatosan fejlesztik "
+"a világról alkotott ismereteiket. A természetgyógyászat tanulmányozása "
+"frissen és egészségesen tartja harcosaikat és munkásaikat. Alkímiaismeretük "
+"lehetővé teszi számukra, hogy megszelídítsék a tüzet, és halálos fegyverként "
+"használják azt a csatában. Ugyanakkor ez az analitikus gondolkodásmód "
+"eltávolította őket a mágikus művészetektől; a racionális elme számára a "
+"mágia irányíthatatlan, kiszámíthatatlan, és ezért megbízhatatlan. Emiatt a "
+"dűnék népe más fajokhoz mérten is különösen gyűlöli a holtidézés és más "
+"sötét praktikák perverzióit.\n"
+"\n"
+"A dűnelakók kíváncsi és felfedező természete nem zárja ki a katonai erőt. "
+"Nemcsak fürge könnyű csapatokat, vérteslovasokat és nehézpáncélos "
+"gyalogságot állítanak fel, hanem a technológiai ismereteik is döntő előnyt "
+"biztosítanak számukra ellenfeleikkel szemben. Amikor azonban csatában a "
+"dűnék népével néznek szembe, a legfélelmetesebb látvány minden bizonnyal a "
+"vérszomjas és bizarr szörnyeik bevetése. A fenséges Rúkh-madaraktól az "
+"impozáns Sárkánygyíkokig, ezekkel a lényekkel való szinergiájuk nagy "
+"sokoldalúságot tesz lehetővé a harcban. Ennek a hagyománynak az eredete "
+"valószínűleg a dűnelakók távoli múltjának örökségében, Irdya egzotikus, "
+"távoli szegleteiben rejlik."
 
 #. [race]: id=lizard
-#: data/core/units.cfg:254
+#: data/core/units.cfg:221
 msgid "race^Saurian"
 msgstr "Gyík"
 
 #. [race]: id=lizard
-#: data/core/units.cfg:255
+#: data/core/units.cfg:222
 msgid "race+female^Saurian"
 msgstr "Gyík"
 
 #. [race]: id=lizard
-#: data/core/units.cfg:256
+#: data/core/units.cfg:223
 msgid "race^Saurians"
 msgstr "Gyíkok"
 
 #. [race]: id=lizard
-#: data/core/units.cfg:257
+#: data/core/units.cfg:224
 msgid ""
 "Saurians are lizard-like creatures. Smaller and more slender than humans, "
 "they rarely stand taller than a ten year old child, though from tip of snout "
@@ -6975,19 +7494,85 @@ msgid ""
 "eating carrion and even committing cannibalism, which are both regular "
 "occurrences."
 msgstr ""
+"A gyíkok, vagy szauriánok nevükből adódóan gyíkszerű lények. Kisebbek és "
+"karcsúbbak az embereknél, ritkán magasabbak egy tízéves gyermeknél, bár az "
+"orruk hegyétől a farkuk végéig egy gyík olyan hosszú lehet, mint egy átlagos "
+"ember. Könnyűek és fürgék, a harcosok szívesebben harcolnak vadászat közben "
+"– átsurrannak az ellenséges vonalakon, hogy a gyengéket és a sebesülteket "
+"célozzák meg, miközben kitérnek a támadóik elől.\n"
+"\n"
+"<header>text='Társadalom'</header>\n"
+"A gyíkok nagyon titokzatos lények, mivel hajlamosak mások számára "
+"barátságtalan területeken, például mocsarakban élni. Szélsőségesen "
+"fatalisták, mivel úgy vélik, hogy az élet minden eseménye megjósolható az "
+"asztrológia komplex formájának segítségével.\n"
+"\n"
+"A gyíkok kultúrája élesen elkülönül a nemek között. Mindkét nemen belül a "
+"tagok versengenek, és a képességek, az elszántság és a hírnév révén "
+"egyértelmű hierarchiát alakítanak ki, amelynek élén egy főnök áll. Azokban "
+"az esetekben, amikor a két nem kölcsönhatásba lép, nem a dominanciáért "
+"versengenek; ehelyett a helyzet határozza meg a domináns nemet. A hímek "
+"főnöke az alfahím a klán falujában vagy táborában, míg a nőstények főnöke "
+"mindenhol máshol domináns. Ez folytatódik a rangstruktúrában lefelé, ahol "
+"minden hím vagy nőstény domináns az ellenkező nemű, alacsonyabb rangú tagjai "
+"felett, és aláveti magát az ellenkező nemű, magasabb rangú tagjainak.\n"
+"\n"
+"A gyík társadalom szegregációja és váltakozó nemi dominanciája a világosan "
+"meghatározott nemi szerepeik következménye. A nőstény felelőssége a vadászat "
+"és az élelemkeresés, ezek a készségek végső soron harcosokká képezik őket: a "
+"más fajok által annyira rettegett csatárokká, oldalvédekké és lesből "
+"támadókká. A hímek eközben a fészekalj – a nőstények által hátrahagyott "
+"peték – őrzéséért felelősek. Bár ez időt hagy a hímeknek az asztrológia, a "
+"gyógyítás és a mágia művészetének fejlesztésére és csiszolására, jelentős "
+"veszélynek is kiteszi őket, mivel állandó célpontjai a gyík klán első számú "
+"ellenségeinek – a többi gyík klánnak.\n"
+"\n"
+"Új gyík klánok akkor jönnek létre, amikor a megfelelő asztrológiai jeleket "
+"kiolvassák. „Kikelésnek” nevezik, amikor minden, a bolygóegyüttálás által "
+"jelölt nőstény kiválaszt egy alacsonyabb rangú egyedekből álló csoportot, és "
+"elhagyja a forrásklánját. Gyakran az összes, egy adott tulajdonsággal "
+"rendelkező nőstény is megjelenik, ami azt eredményezi, hogy több klán is "
+"„kikel” egyszerre. A szelekció egyszerű folyamat: egyetlen távozó csoport "
+"sem lehet nagyobb, mint a másik, az összes csoport együttesen nem lehet "
+"nagyobb, mint a megmaradó csoport, és a magasabb rang lehetővé teszi egy "
+"nőstény számára, hogy felülbírálja egy másik nőstény döntését arról, hogy "
+"kit vesz magához.\n"
+"\n"
+"Gyors népességnövekedésük oka a klánok gyakori szétválása és az a tény, hogy "
+"a kannibalizmus nem tabu, az erőszak a gyík-élet egyik meghatározó "
+"jellemzője. Ez a gyík-kultúra növekedését szakaszosra korlátozza, mivel "
+"tudásuk nagy része szájhagyomány útján öröklődik, és javaiknak mobilnak kell "
+"lenniük.\n"
+"\n"
+"<header>text='Földrajz'</header>\n"
+"A gyíkok sokféle területen élhetnek, bár a mocsarak messze a leggyakoribb "
+"élőhelyük.\n"
+"\n"
+"<header>text='Biológia'</header>\n"
+"A gyíkok a legtöbb wesnoth-i fajhoz képest látványosan rövid életet élnek, "
+"három éven belül elérik a teljes felnőttkort, és gyakran 10-15 éves korukra "
+"elpusztulnak. Messze a leggyakoribb halálok az erőszak. A nőstény gyíkok "
+"nagyjából évente egyszer raknak körülbelül 20 petéből álló fészekaljakat, "
+"ami állandó populációs nyomást gyakorol, és a legtöbb húsevő "
+"táplálékellátását megterheli. Vadászok és dögevők is egyben a gyíkok, "
+"rendkívül erős állkapoccsal és nagyon hatékony emésztőrendszerrel "
+"rendelkeznek, amely erősen savas folyadékokkal rendelkezik, így képesek "
+"megenni és megemészteni az összes zsákmányukat, beleértve a bőrt, a fogakat, "
+"a szarvakat és a csontokat. Továbbá nem idegenkednek a dögevéstől, sőt a "
+"kannibalizmustól sem, melyek rendszeresen előfordulnak."
 
 #. [race]: id=mechanical
-#: data/core/units.cfg:283
+#: data/core/units.cfg:250
 msgid "race^Mechanical"
 msgstr "Mechanikus"
 
 #. [race]: id=mechanical
-#: data/core/units.cfg:284
+#: data/core/units.cfg:251
 msgid "race+plural^Mechanical"
 msgstr "Mechanikus"
 
 #. [race]: id=mechanical
-#: data/core/units.cfg:285
+#: data/core/units.cfg:252
 msgid ""
 "Animated neither by natural life nor by necromancy, the term "
 "<italic>text='mechanical'</italic> describes a created artifact of an "
@@ -7000,17 +7585,17 @@ msgstr ""
 "de néhányuk varázslat hatására képes ilyesmire."
 
 #. [race]: id=ship
-#: data/core/units.cfg:294
+#: data/core/units.cfg:261
 msgid "race^Ship"
 msgstr "Hajó"
 
 #. [race]: id=ship
-#: data/core/units.cfg:295
+#: data/core/units.cfg:262
 msgid "race+plural^Ships"
 msgstr "Hajók"
 
 #. [race]: id=ship
-#: data/core/units.cfg:296
+#: data/core/units.cfg:263
 msgid ""
 "Ships are not living beings, but they are crafted and (usually) controlled "
 "by living beings. Most ships neither move nor think on their own, but some "
@@ -7022,22 +7607,22 @@ msgstr ""
 "varázslat hatására képes ilyesmire."
 
 #. [race]: id=merman
-#: data/core/units.cfg:307
+#: data/core/units.cfg:273
 msgid "race^Merman"
 msgstr "Sellő"
 
 #. [race]: id=merman
-#: data/core/units.cfg:308
+#: data/core/units.cfg:274
 msgid "race^Mermaid"
 msgstr "Sellő"
 
 #. [race]: id=merman
-#: data/core/units.cfg:309
+#: data/core/units.cfg:275
 msgid "race^Merfolk"
 msgstr "Sellőnép"
 
 #. [race]: id=merman
-#: data/core/units.cfg:311
+#: data/core/units.cfg:276
 msgid ""
 "Something like a fusion between humans and fish, the merfolk are an "
 "enigmatic race with both piscine and humanoid attributes. They have strong "
@@ -7060,22 +7645,22 @@ msgstr ""
 "ha kemény, erdős terepen kell átkelniük."
 
 #. [race]: id=monster
-#: data/core/units.cfg:319
+#: data/core/units.cfg:284
 msgid "race^Monster"
 msgstr "Szörny"
 
 #. [race]: id=monster
-#: data/core/units.cfg:320
+#: data/core/units.cfg:285
 msgid "race+female^Monster"
 msgstr "Szörny"
 
 #. [race]: id=monster
-#: data/core/units.cfg:321
+#: data/core/units.cfg:286
 msgid "race^Monsters"
 msgstr "Szörnyek"
 
 #. [race]: id=monster
-#: data/core/units.cfg:322
+#: data/core/units.cfg:287
 msgid ""
 "The term “monster” incorporates many hideous beasts that haunt the caves, "
 "wilderness, ocean depths, and other climes of the world. They figure largely "
@@ -7086,22 +7671,22 @@ msgstr ""
 "kísértenek. Sokszor a helyiek történeteiben és rémálmaiban is megjelennek."
 
 #. [race]: id=naga
-#: data/core/units.cfg:329
+#: data/core/units.cfg:293
 msgid "race^Naga"
 msgstr "Naga"
 
 #. [race]: id=naga
-#: data/core/units.cfg:330
+#: data/core/units.cfg:294
 msgid "race^Nagini"
 msgstr "Naga"
 
 #. [race]: id=naga
-#: data/core/units.cfg:331
+#: data/core/units.cfg:295
 msgid "race^Nagas"
 msgstr "Nagák"
 
 #. [race]: id=naga
-#: data/core/units.cfg:332
+#: data/core/units.cfg:296
 msgid ""
 "The serpentine nagas are one of the least understood races of the Great "
 "Continent. Part of this is due to their xenophobic nature and part is due to "
@@ -7132,22 +7717,22 @@ msgstr ""
 "legalább annyira kedvelik a mocsarakat és a folyókat, mint a nyílt vizet."
 
 #. [race]: id=ogre
-#: data/core/units.cfg:340
+#: data/core/units.cfg:304
 msgid "race^Ogre"
 msgstr "Ogre"
 
 #. [race]: id=ogre
-#: data/core/units.cfg:341
+#: data/core/units.cfg:305
 msgid "race+female^Ogre"
 msgstr "Ogre"
 
 #. [race]: id=ogre
-#: data/core/units.cfg:342
+#: data/core/units.cfg:306
 msgid "race^Ogres"
 msgstr "Ogrék"
 
 #. [race]: id=ogre
-#: data/core/units.cfg:343
+#: data/core/units.cfg:307
 msgid ""
 "Ogres are a wild and uncivilized race who dwell mainly in the wilderness of "
 "the Great Continent. Physically, they resemble humans and orcs but are "
@@ -7180,22 +7765,22 @@ msgstr ""
 "kölcsönös kiaknázása-e."
 
 #. [race]: id=orc
-#: data/core/units.cfg:351
+#: data/core/units.cfg:314
 msgid "race^Orc"
 msgstr "Ork"
 
 #. [race]: id=orc
-#: data/core/units.cfg:352
+#: data/core/units.cfg:315
 msgid "race+female^Orc"
 msgstr "Ork"
 
 #. [race]: id=orc
-#: data/core/units.cfg:353
+#: data/core/units.cfg:316
 msgid "race^Orcs"
 msgstr "Orkok"
 
 #. [race]: id=orc
-#: data/core/units.cfg:354
+#: data/core/units.cfg:317
 msgid ""
 "In appearance, orcs resemble humans but with some bestial features. They are "
 "taller, sturdier and stronger than humans. They are warlike, savage, and "
@@ -7213,12 +7798,12 @@ msgstr ""
 "él fél tucatnál kisebb csoportokban."
 
 #. [race]: id=orc
-#: data/core/units.cfg:356
+#: data/core/units.cfg:319
 msgid "Society"
 msgstr "közösség"
 
 #. [race]: id=orc
-#: data/core/units.cfg:357
+#: data/core/units.cfg:320
 msgid ""
 "Almost every orc is a member of a tribe or a clan. Relations between "
 "neighboring tribes are usually violent, except in cases of a mutual enemy "
@@ -7242,7 +7827,7 @@ msgstr ""
 "közötti sértések vagy fenyegetések közlésére használják."
 
 #. [race]: id=orc
-#: data/core/units.cfg:359
+#: data/core/units.cfg:322
 msgid ""
 "Orc societies are based on little else but strength; might makes right, and "
 "a leader leads and survives only as long as no one manages to wrest the "
@@ -7265,7 +7850,7 @@ msgstr ""
 "hátbaszúrás teljesen működőképes eszközök a saját célok előmozdítására."
 
 #. [race]: id=orc
-#: data/core/units.cfg:361
+#: data/core/units.cfg:324
 msgid ""
 "Orcs mostly live in rural areas, often in foothills or mountainous regions, "
 "sometimes in caves. They grow no crops nor keep livestock, but are competent "
@@ -7291,7 +7876,7 @@ msgstr ""
 "horda áthelyezésére van szükség."
 
 #. [race]: id=orc
-#: data/core/units.cfg:363
+#: data/core/units.cfg:326
 msgid ""
 "The oldest known orcs have been around 50 to 60 years of age, but very few "
 "individuals ever live to see over two or three decades before meeting their "
@@ -7314,7 +7899,7 @@ msgstr ""
 "képest, és hiányzik belőlük a harci képesség."
 
 #. [race]: id=orc
-#: data/core/units.cfg:367
+#: data/core/units.cfg:330
 msgid ""
 "Orcs who were not the strongest of their litter tend to specialize in other "
 "skills, like archery or assassination."
@@ -7323,22 +7908,22 @@ msgstr ""
 "készségekre specializálódtak, mint például az íjászat vagy a gyilkosság."
 
 #. [race]: id=raven
-#: data/core/units.cfg:374
+#: data/core/units.cfg:337
 msgid "race^Raven"
 msgstr "Holló"
 
 #. [race]: id=raven
-#: data/core/units.cfg:375
+#: data/core/units.cfg:338
 msgid "race+female^Raven"
 msgstr "Holló"
 
 #. [race]: id=raven
-#: data/core/units.cfg:376
+#: data/core/units.cfg:339
 msgid "race^Ravens"
 msgstr "Hollók"
 
 #. [race]: id=raven
-#: data/core/units.cfg:377
+#: data/core/units.cfg:340
 msgid ""
 "Ravens are general scavengers, often associating with hunters or predators "
 "in the hope of sharing in the kill. They do not have the powerful beak or "
@@ -7374,22 +7959,22 @@ msgstr ""
 "a frissen elvetett magoktól, de mások örülnek, hogy őrként vannak körülöttük."
 
 #. [race]: id=troll
-#: data/core/units.cfg:388
+#: data/core/units.cfg:351
 msgid "race^Troll"
 msgstr "Troll"
 
 #. [race]: id=troll
-#: data/core/units.cfg:389
+#: data/core/units.cfg:352
 msgid "race+female^Troll"
 msgstr "Troll"
 
 #. [race]: id=troll
-#: data/core/units.cfg:390
+#: data/core/units.cfg:353
 msgid "race^Trolls"
 msgstr "Trollok"
 
 #. [race]: id=troll
-#: data/core/units.cfg:391
+#: data/core/units.cfg:354
 msgid ""
 "Trolls are ancient creatures, one of the oldest known races known to inhabit "
 "the Great Continent. They are large, slow, simple, and live extremely long "
@@ -7464,22 +8049,22 @@ msgstr ""
 "keletre fekvő hegyláncokon, meg persze ahol ork hordák járnak."
 
 #. [race]: id=undead
-#: data/core/units.cfg:411
+#: data/core/units.cfg:372
 msgid "race^Undead"
 msgstr "Élőholt"
 
 #. [race]: id=undead
-#: data/core/units.cfg:412
+#: data/core/units.cfg:373
 msgid "race+female^Undead"
 msgstr "Élőholt"
 
 #. [race]: id=undead
-#: data/core/units.cfg:413
+#: data/core/units.cfg:374
 msgid "race+plural^Undead"
 msgstr "Élőholtak"
 
 #. [race]: id=undead
-#: data/core/units.cfg:414
+#: data/core/units.cfg:375
 msgid ""
 "Undead are not really a single race of creatures, although often treated as "
 "such. Most ordinary creatures can, by a sufficiently skilled necromancer, be "
@@ -7541,22 +8126,22 @@ msgstr ""
 "voltak ismeretlenek."
 
 #. [race]: id=wolf
-#: data/core/units.cfg:427
+#: data/core/units.cfg:388
 msgid "race^Wolf"
 msgstr "Farkas"
 
 #. [race]: id=wolf
-#: data/core/units.cfg:428
+#: data/core/units.cfg:389
 msgid "race+female^Wolf"
 msgstr "Farkas"
 
 #. [race]: id=wolf
-#: data/core/units.cfg:429
+#: data/core/units.cfg:390
 msgid "race^Wolves"
 msgstr "Farkasok"
 
 #. [race]: id=wolf
-#: data/core/units.cfg:430
+#: data/core/units.cfg:391
 msgid ""
 "Wolves are predatory canines encountered frequently in the wilderness. "
 "Quick, tough, and durable, a solitary wolf suffices to maim or kill "
@@ -7574,17 +8159,17 @@ msgstr ""
 "bár, alkalmanként a közelbe merészkednek az állatállomány megdézsmálásához."
 
 #. [race]: id=wose
-#: data/core/units.cfg:439
+#: data/core/units.cfg:399
 msgid "race^Wose"
 msgstr "Fapásztor"
 
 #. [race]: id=wose
-#: data/core/units.cfg:440
+#: data/core/units.cfg:400
 msgid "race^Woses"
 msgstr "Fapásztorok"
 
 #. [race]: id=wose
-#: data/core/units.cfg:441
+#: data/core/units.cfg:401
 msgid ""
 "The mighty wose resides within the deepest forests of the known world. To "
 "the untrained eye, the wose appears to be nothing more than an oddly shaped, "
@@ -7624,6 +8209,44 @@ msgid ""
 "only to march to the defense of the natural world and the forests it calls "
 "home."
 msgstr ""
+"A hatalmas fapásztorok az ismert világ legmélyebb erdőiben élnek. A "
+"gyakorlatlan szem számára a fapásztorok nem tűnnek többnek, mint egy furcsa "
+"alakú, mégis nemes fának. Az erdő őreiként a fapásztorok mélyebb "
+"kapcsolatban állnak az erdőkkel, mint a tündék. Bár a fapásztorok békés faj, "
+"az általuk gondozott ősi erdők megzavarása a természet haragját vonja maga "
+"után. A fapásztorok lassan mozgó lények, amelyek évszázadokat tölthetnek egy "
+"helyben állva, az idő múlását figyelmen kívül hagyva.\n"
+"\n"
+"Bár nem gyakorolnak saját mágiát, a fapásztorok mély kapcsolatban állnak a "
+"tündérekkel. Ami keveset tudunk erről az ősi fajról, az a tünde tudósoktól "
+"származik, akik úgy vélik, hogy az a misztikus erő, amelynek elsajátítására "
+"a leghatalmasabb tündék szentelték életüket, a fapásztorok sajátja. Bár a "
+"fapásztorok hasonlítanak rájuk, nincsenek közös őseik a fákkal. Úgy tartják, "
+"hogy a fapásztorok a világ legősibb teremtményei közé tartoznak, talán még "
+"az erdőknél is ősibbek, amelyekben élnek, és úgy tartják, hogy a tündérek "
+"ereje örök feladatot adott ezeknek a lényeknek, hogy az erdő őreiként "
+"szolgáljanak.\n"
+"\n"
+"A fapásztorok egyáltalán nem harciasak, és rosszul szoktak harcolni. Erdős "
+"területük védelmében azonban válogatás nélküli erőszakkal válaszolnak. A "
+"fapásztorok lassan mozognak és az erdőktől távol sebezhetőek. A tündérekkel "
+"való szoros kapcsolatuk miatt a fapásztorok különösen érzékenyek a földön "
+"túli dolgokra. A keményfa, amely a fapásztorok szinte sebezhetetlenné teszi "
+"a fizikai támadásokkal szemben, rendkívül sebezhetővé tette őket a lángokkal "
+"szemben. Vastag kérgük és az a képességük, hogy a tündérek erejét "
+"kihasználva gyorsan regenerálódjanak sérülés esetén, lehetővé teszi a "
+"fapásztorok számára, hogy elég sokáig túléljék az ellenséges támadást ahhoz, "
+"hogy olyan megsemmisítő erővel válaszoljanak, ami meghazudtolja békés és "
+"nehézkes természetüket. Erdei otthonukban a fapásztorok képesek eltűnni a "
+"fák között, és még a legjobban képzett tünde felderítőt is lesből "
+"megtámadni.\n"
+"\n"
+"A fapásztorok élettartama ismeretlen, bár a faj legősibb tagjai több száz "
+"évet éltek, és hatalmas magasságokra nőttek. Úgy tartják, hogy hacsak egy "
+"fapásztor nem esik el csatában, nem éri utol természetes vég. Megelégszenek "
+"azzal, hogy évszázadokat töltsenek őrszemként állva, érdektelenül a "
+"civilizált világ történései iránt, és csak azért halnak meg, hogy a "
+"természet és az otthonuknak nevezett erdők védelmére induljanak."
 
 #. [language]
 #: data/english.cfg:39

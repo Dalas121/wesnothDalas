@@ -23,6 +23,7 @@
 #include "hotkey/hotkey_command.hpp"
 #include "key.hpp"
 #include "log.hpp"
+#include "preferences/preferences_list.hpp"
 #include "sdl/input.hpp" // for sdl::get_mods
 #include "serialization/unicode.hpp"
 #include "utils/general.hpp"
@@ -132,7 +133,7 @@ hotkey_ptr create_hotkey(const std::string& id, const SDL_Event& event)
 		if(mods & SDL_KMOD_CTRL || mods & SDL_KMOD_ALT || mods & SDL_KMOD_GUI || CKey::is_uncomposable(event.key)
 			|| command.toggle) {
 			auto keyboard = std::make_shared<hotkey_keyboard>();
-			base = std::dynamic_pointer_cast<hotkey_base>(keyboard);
+			base = keyboard;
 			SDL_Keycode code;
 			code = event.key.key;
 			keyboard->set_keycode(code);
@@ -145,7 +146,7 @@ hotkey_ptr create_hotkey(const std::string& id, const SDL_Event& event)
 			return nullptr;
 		}
 		auto keyboard = std::make_shared<hotkey_keyboard>();
-		base = std::dynamic_pointer_cast<hotkey_base>(keyboard);
+		base = keyboard;
 		std::string text = std::string(event.text.text);
 		keyboard->set_text(text);
 		if(text == ":" || text == "`") {
@@ -155,7 +156,7 @@ hotkey_ptr create_hotkey(const std::string& id, const SDL_Event& event)
 
 	case SDL_EVENT_MOUSE_BUTTON_UP: {
 		auto mouse = std::make_shared<hotkey_mouse>();
-		base = std::dynamic_pointer_cast<hotkey_base>(mouse);
+		base = mouse;
 		mouse->set_button(event.button.button);
 		mouse->set_clicks(event.button.clicks);
 		break;
@@ -180,7 +181,7 @@ hotkey_ptr load_from_config(const config& cfg)
 	const config::attribute_value& mouse_cfg = cfg["mouse"];
 	if(!mouse_cfg.empty()) {
 		auto mouse = std::make_shared<hotkey_mouse>();
-		base = std::dynamic_pointer_cast<hotkey_base>(mouse);
+		base = mouse;
 
 		if(mouse_cfg.to_int() == TOUCH_MOUSE_INDEX) {
 			mouse->set_button(TOUCH_MOUSE_INDEX);
@@ -196,7 +197,7 @@ hotkey_ptr load_from_config(const config& cfg)
 	const std::string& key_cfg = cfg["key"];
 	if(!key_cfg.empty()) {
 		auto keyboard = std::make_shared<hotkey_keyboard>();
-		base = std::dynamic_pointer_cast<hotkey_base>(keyboard);
+		base = keyboard;
 
 		SDL_Keycode keycode = SDL_GetKeyFromName(key_cfg.c_str());
 		if(keycode == SDLK_UNKNOWN) {
@@ -368,14 +369,10 @@ bool hotkey_keyboard::bindings_equal_helper(hotkey_ptr other) const
 void add_hotkey(hotkey_ptr item)
 {
 	if(item) {
-		auto iter = std::find_if(hotkeys_.begin(), hotkeys_.end(),
-			[&item](const hotkey::hotkey_ptr& hk) { return hk->bindings_equal(item); });
-
-		if(iter != hotkeys_.end()) {
-			iter->swap(item);
-		} else {
-			hotkeys_.push_back(std::move(item));
-		}
+		// More than one existing hot-key can match, since bindings_equal only checks for overlapping scopes.
+		// For example, a game+editor command bound to 's' matches both a game-only and an editor-only 's'.
+		utils::erase_if(hotkeys_, [&item](const hotkey::hotkey_ptr& hk) { return hk->bindings_equal(item); });
+		hotkeys_.push_back(std::move(item));
 	}
 }
 
@@ -410,7 +407,7 @@ const hotkey_ptr get_hotkey(const SDL_Event& event)
 void load_default_hotkeys(const game_config_view& cfg)
 {
 	hotkey_list new_hotkeys;
-	for(const config& hk : cfg.child_range("hotkey")) {
+	for(const config& hk : cfg.child_range(prefs_list::hotkey)) {
 		if(hotkey_ptr item = load_from_config(hk); !item->null()) {
 			new_hotkeys.push_back(std::move(item));
 		}
@@ -422,7 +419,7 @@ void load_default_hotkeys(const game_config_view& cfg)
 
 void load_custom_hotkeys(const game_config_view& cfg)
 {
-	for(const config& hk : cfg.child_range("hotkey")) {
+	for(const config& hk : cfg.child_range(prefs_list::hotkey)) {
 		if(hotkey_ptr item = load_from_config(hk); !item->null()) {
 			item->unset_default();
 			add_hotkey(item);
@@ -434,7 +431,7 @@ void reset_default_hotkeys()
 {
 	hotkeys_.clear();
 
-	if(!default_hotkey_cfg_.child_range("hotkey").empty()) {
+	if(!default_hotkey_cfg_.child_range(prefs_list::hotkey).empty()) {
 		load_default_hotkeys(default_hotkey_cfg_);
 	} else {
 		ERR_G << "no default hotkeys set yet; all hotkeys are now unassigned!";
@@ -448,11 +445,11 @@ const hotkey_list& get_hotkeys()
 
 void save_hotkeys(config& cfg)
 {
-	cfg.clear_children("hotkey");
+	cfg.clear_children(prefs_list::hotkey);
 
 	for(hotkey_ptr& item : hotkeys_) {
 		if((!item->is_default() && item->active()) || (item->is_default() && item->is_disabled())) {
-			item->save(cfg.add_child("hotkey"));
+			item->save(cfg.add_child(prefs_list::hotkey));
 		}
 	}
 }

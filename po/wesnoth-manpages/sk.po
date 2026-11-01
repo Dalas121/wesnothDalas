@@ -5,16 +5,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 1.3-dev\n"
-"POT-Creation-Date: 2025-04-27 22:22-0500\n"
-"PO-Revision-Date: 2023-10-02 15:41+0200\n"
-"Last-Translator: aceman <acelists@atlas.sk>\n"
+"POT-Creation-Date: 2026-08-02 22:46-0500\n"
+"PO-Revision-Date: 2026-10-03 22:37+0200\n"
+"Last-Translator: Stanislav Hoferek <shoferek@gmail.com>\n"
 "Language-Team: none\n"
 "Language: sk_SK\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.9\n"
 
 # type: TH
 #. type: TH
@@ -115,10 +115,9 @@ msgstr "MOŽNOSTI"
 # type: TP
 #. type: TP
 #: doc/man/wesnoth.6:45
-#, fuzzy, no-wrap
-#| msgid "B<--noaddons>"
+#, no-wrap
 msgid "B<--addon-info>"
-msgstr "B<--noaddons>"
+msgstr "B<--addon-info>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:48
@@ -126,6 +125,8 @@ msgid ""
 "Shows a button on the add-ons manager to query the add-ons server for "
 "various information."
 msgstr ""
+"Zobrazí v správcovi doplnkov tlačidlo na vyžiadanie rôznych informácií zo "
+"servera doplnkov."
 
 #. type: TP
 #: doc/man/wesnoth.6:48
@@ -205,12 +206,12 @@ msgstr "B<--clock>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:72
-#, fuzzy
-#| msgid "Adds the option to show a clock for testing the drawing timer."
 msgid ""
 "Adds the option to show a clock for testing the drawing timer. Also adds the "
 "option for showing the GUI Test Dialog."
-msgstr "Pridáva možnosť zobraziť hodiny na testovanie časovača kreslenia."
+msgstr ""
+"Pridáva možnosť zobraziť hodiny na otestovanie časovača vykresľovania. "
+"Taktiež pridáva možnosť zobraziť testovacie dialógové okno GUI."
 
 # type: TP
 #. type: TP
@@ -221,8 +222,6 @@ msgstr "B<--core>I<\\ id>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:75
-#, fuzzy
-#| msgid "overrides the loaded core with the one whose id is specified."
 msgid "Overrides the loaded core with the one whose id is specified."
 msgstr "prepíše načítané jadro jadrom, ktorého id je zadané."
 
@@ -238,6 +237,8 @@ msgid ""
 "Overrides the data directory with the one specified. The data directory is "
 "the one that contains subdirectories 'data', 'fonts', 'images' and others."
 msgstr ""
+"Nahradí dátový adresár zadaným adresárom. Dátový adresár je ten, ktorý "
+"obsahuje podadresáre „data“, „fonts“, „images“ a ďalšie."
 
 # type: TP
 #. type: TP
@@ -295,8 +296,7 @@ msgstr "znemožní používať zastarané Lua API volania"
 
 #. type: TP
 #: doc/man/wesnoth.6:92
-#, fuzzy, no-wrap
-#| msgid "B<-D,--diff>I<\\ left-file>B<\\ >I<right-file>"
+#, no-wrap
 msgid "B<-D,\\ --diff>I<\\ left-file>B<\\ >I<right-file>"
 msgstr "B<-D,--diff>I<\\ left-file>B<\\ >I<right-file>"
 
@@ -421,13 +421,6 @@ msgstr "B<--log->I<level>B<=>I<doména1>B<,>I<doména2>B<,>I<...>"
 # type: Plain text
 #. type: Plain text
 #: doc/man/wesnoth.6:151
-#, fuzzy
-#| msgid ""
-#| "sets the severity level of the log domains.  B<all> can be used to match "
-#| "any log domain. Available levels: B<error>,\\ B<warning>,\\ B<info>,\\ "
-#| "B<debug>,\\ B<none>.  By default the B<warning> level is used for most "
-#| "domains, but B<deprecation> defaults to B<none> unless combined with the "
-#| "B<-d> option."
 msgid ""
 "sets the severity level of the log domains. The wildcard B<*> may be used to "
 "match a subset of domains, e.g. gui/* or conf* or * (the latter matches all "
@@ -457,18 +450,12 @@ msgstr "zobrazuje časové pečiatky vo výstupe protokolu s väčšou presnosť
 # type: TP
 #. type: TP
 #: doc/man/wesnoth.6:154
-#, fuzzy, no-wrap
-#| msgid "B<--log-strict>"
+#, no-wrap
 msgid "B<--log-strict>I<\\ level>"
-msgstr "B<--log-strict>"
+msgstr "B<--log-strict>I<\\ level>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:163
-#, fuzzy
-#| msgid ""
-#| "sets the strict level of the logger. Any messages sent to log domains of "
-#| "this level or more severe will cause the unit test to fail regardless of "
-#| "the victory result. Only relevant when used with B<-u>."
 msgid ""
 "sets the strict I<level> of the logger. Any messages sent to log domains of "
 "this I<level> or more severe will cause the unit test to fail regardless of "
@@ -503,10 +490,6 @@ msgstr "B<--no-log-to-file>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:171
-#, fuzzy
-#| msgid ""
-#| "prevents redirecting logged output to a file. Log files are created in "
-#| "the logs directory under the userdata folder."
 msgid ""
 "prevents redirecting logged output to a file. The environment variable "
 "WESNOTH_NO_LOG_FILE can also be set as an alternative. Log files are created "
@@ -524,10 +507,6 @@ msgstr "B<--log-to-file>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:174
-#, fuzzy
-#| msgid ""
-#| "log output is written to a file in addition to standard output/error. "
-#| "Cancels the effect of --no-log-to-file whether implicit or explicit."
 msgid ""
 "log output is written to a file. Cancels the effect of --no-log-to-file "
 "whether implicit or explicit."
@@ -538,10 +517,9 @@ msgstr ""
 # type: TP
 #. type: TP
 #: doc/man/wesnoth.6:174
-#, fuzzy, no-wrap
-#| msgid "B<--no-log-to-file>"
+#, no-wrap
 msgid "B<--no-log-sanitize>"
-msgstr "B<--no-log-to-file>"
+msgstr "B<--no-log-sanitize>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:177
@@ -549,6 +527,8 @@ msgid ""
 "disables the anonymization that's normally applied when logging, for example "
 "replacing usernames with USER."
 msgstr ""
+"vypína anonymizáciu, ktorá sa bežne uplatňuje pri zaznamenávaní (napríklad "
+"nahradenie používateľských mien reťazcom USER)."
 
 # type: TP
 #. type: TP
@@ -765,26 +745,20 @@ msgstr "B<--plugin>I<\\ skript>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:239
-#, fuzzy
-#| msgid ""
-#| "(experimental) load a I<script> which defines a Wesnoth plugin. Similar "
-#| "to B<--script>, but Lua file should return a function which will be run "
-#| "as a coroutine and periodically woken up with updates."
 msgid ""
 "load a I<script> which defines a Wesnoth plugin. Lua file should return a "
 "function which will be run as a coroutine and periodically woken up with "
 "updates."
 msgstr ""
-"(experimentálne) načítajte I<script>, ktorý definuje doplnok Wesnoth. "
-"Podobne ako B<--script>, ale súbor Lua by mal vrátiť funkciu, ktorá sa "
-"spustí ako co-rutina a bude sa pravidelne prebúdzať s aktualizáciami."
+"Načítajte I<script>, ktorý definuje doplnok pre Wesnoth. Súbor Lua by mal "
+"vrátiť funkciu, ktorá sa spustí ako korutina a bude sa pravidelne aktivovať "
+"na spracovanie aktualizácií."
 
 #. type: TP
 #: doc/man/wesnoth.6:239
-#, fuzzy, no-wrap
-#| msgid "B<-P,--patch>I<\\ base-file>B<\\ >I<patch-file>"
+#, no-wrap
 msgid "B<-P,\\ --patch>I<\\ base-file>B<\\ >I<patch-file>"
-msgstr "B<-P,--patch>I<\\ základný súbor>B<\\ >I<patch-súbor>"
+msgstr "B<-P,\\ --patch>I<\\ base-file>B<\\ >I<patch-file>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:244
@@ -820,20 +794,20 @@ msgstr ""
 "je zadaný adresár, bude spracovaný rekurzívne podľa pravidiel preprocesora. "
 "Spoločné makrá z adresára \"data/core/macros\" budú spracované pred zadanými "
 "zdrojmi (resources). Príklad: B<-p ~/wesnoth/data/campaigns/tutorial ~/"
-"result>. Pre detailné informácie o preprocesore navštívte http://wiki."
-"wesnoth.org/PreprocessorRef#Command-line_preprocessor."
+"result>. Pre detailné informácie o preprocesore navštívte http://"
+"wiki.wesnoth.org/PreprocessorRef#Command-line_preprocessor."
 
 #. type: TP
 #: doc/man/wesnoth.6:254
-#, fuzzy, no-wrap
-#| msgid "B<--preprocess-input-macros>I<\\ source-file>"
+#, no-wrap
 msgid "B<--preprocess-string>I<\\ source-string>"
-msgstr "B<--preprocess-input-macros>I<\\ zdrojový súbor>"
+msgstr "B<--preprocess-string>I<\\ source-string>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:257
 msgid "preprocesses a given string and writes the output to stdout."
 msgstr ""
+"predspracuje zadaný reťazec a zapíše výstup na štandardný výstup (stdout)."
 
 #. type: TP
 #: doc/man/wesnoth.6:257
@@ -843,11 +817,6 @@ msgstr "B<--preprocess-defines=>I<DEFINE1>B<,>I<DEFINE2>B<,>I<...>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:266
-#, fuzzy
-#| msgid ""
-#| "comma separated list of defines to be used by the B<--preprocess> "
-#| "command. If B<SKIP_CORE> is in the define list the \"data/core\" "
-#| "directory won't be preprocessed."
 msgid ""
 "comma separated list of defines to be used by the B<--preprocess> or B<--"
 "preprocess-string> command. If B<SKIP_CORE> is in the define list the \"data/"
@@ -865,10 +834,6 @@ msgstr "B<--preprocess-input-macros>I<\\ zdrojový súbor>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:275
-#, fuzzy
-#| msgid ""
-#| "used only by the B<--preprocess> command. Specifies a file that contains "
-#| "B<[preproc_define]>s to be included before preprocessing."
 msgid ""
 "used only by the B<--preprocess> or B<--preprocess-string> command. "
 "Specifies a file that contains B<[preproc_define]>s to be included before "
@@ -886,13 +851,6 @@ msgstr "B<--preprocess-output-macros[>I<=cieľový-súbor>B<]>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:288
-#, fuzzy
-#| msgid ""
-#| "used only by the B<--preprocess> command. Will output all preprocessed "
-#| "macros in the target file. If the file is not specified the output will "
-#| "be file '_MACROS_.cfg' in the target directory of preprocess's command. "
-#| "The output file can be passed to B<--preprocess-input-macros>.  This "
-#| "switch should be typed before the B<--preprocess> command."
 msgid ""
 "used only by the B<--preprocess> command (But not by the B<--preprocess-"
 "string> command). Will output all preprocessed macros in the target file. If "
@@ -929,8 +887,8 @@ msgstr "B<--render-image>I<\\ image>B<\\ >I<output>"
 #: doc/man/wesnoth.6:296
 msgid ""
 "takes a valid wesnoth 'image path string' with image path functions, and "
-"outputs to a .png file. Image path functions are documented at https://wiki."
-"wesnoth.org/ImagePathFunctionWML."
+"outputs to a .png file. Image path functions are documented at https://"
+"wiki.wesnoth.org/ImagePathFunctionWML."
 msgstr ""
 "berie platný „reťazec cesty k obrázku“ spoločnosti wesnoth s funkciami cesty "
 "k obrázku a výstupom je súbor .png. Funkcie cesty k obrázku sú "
@@ -1088,15 +1046,12 @@ msgstr ""
 # type: TP
 #. type: TP
 #: doc/man/wesnoth.6:350
-#, fuzzy, no-wrap
-#| msgid "B<-S,--use-schema>I<\\ path>"
+#, no-wrap
 msgid "B<-S,\\ --use-schema>I<\\ path>"
-msgstr "B<-S,--use-schema>I<\\ cesta>"
+msgstr "B<-S,\\ --use-schema>I<\\ path>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:354
-#, fuzzy
-#| msgid "sets the WML schema for use with B<-V,--validate>."
 msgid "sets the WML schema for use with B<-V,\\ --validate>."
 msgstr "nastaví schému WML na použitie s B<-V,--validate>."
 
@@ -1188,10 +1143,9 @@ msgstr "validuje WML základu hry počas hrania."
 # type: TP
 #. type: TP
 #: doc/man/wesnoth.6:380
-#, fuzzy, no-wrap
-#| msgid "B<--validate-schema \\ path>"
+#, no-wrap
 msgid "B<--validate-schema>I<\\ path>"
-msgstr "B<—validate-schema \\ cesta>"
+msgstr "B<--validate-schema>I<\\ path>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:383
@@ -1532,12 +1486,12 @@ msgstr "Napísal David White E<lt>davidnwhite@verizon.netE<gt>."
 #. type: Plain text
 #: doc/man/wesnoth.6:497
 msgid ""
-"Edited by Nils Kneuper E<lt>crazy-ivanovic@gmx.netE<gt>, ott E<lt>ott@gaon."
-"netE<gt> and Soliton E<lt>soliton.de@gmail.comE<gt>."
+"Edited by Nils Kneuper E<lt>crazy-ivanovic@gmx.netE<gt>, ott "
+"E<lt>ott@gaon.netE<gt> and Soliton E<lt>soliton.de@gmail.comE<gt>."
 msgstr ""
-"Editovali Nils Kneuper E<lt>crazy-ivanovic@gmx.netE<gt>, ott E<lt>ott@gaon."
-"netE<gt> a Soliton E<lt>soliton@gmail.comE<gt>. Preložil Viliam Búr "
-"E<lt>viliam@bur.skE<gt>."
+"Editovali Nils Kneuper E<lt>crazy-ivanovic@gmx.netE<gt>, ott "
+"E<lt>ott@gaon.netE<gt> a Soliton E<lt>soliton@gmail.comE<gt>. Preložil "
+"Viliam Búr E<lt>viliam@bur.skE<gt>."
 
 # type: Plain text
 #. type: Plain text
@@ -1546,8 +1500,8 @@ msgid ""
 "This manual page was originally written by Cyril Bouthors "
 "E<lt>cyril@bouthors.orgE<gt>."
 msgstr ""
-"Túto stránku manuálu pôvodne napísal Cyril Bouthors E<lt>cyril@bouthors."
-"orgE<gt>."
+"Túto stránku manuálu pôvodne napísal Cyril Bouthors "
+"E<lt>cyril@bouthors.orgE<gt>."
 
 # type: Plain text
 #. type: Plain text
@@ -1565,12 +1519,9 @@ msgstr "COPYRIGHT"
 # type: Plain text
 #. type: Plain text
 #: doc/man/wesnoth.6:505 doc/man/wesnothd.6:286
-#, fuzzy
-#| msgid ""
-#| "Copyright \\(co 2003-2023 David White E<lt>davidnwhite@verizon.netE<gt>"
 msgid "Copyright \\(co 2003-2025 David White E<lt>davidnwhite@verizon.netE<gt>"
 msgstr ""
-"Copyright \\(co 2003-2023 David White E<lt>davidnwhite@verizon.netE<gt>"
+"Copyright \\(co 2003-2025 David White E<lt>davidnwhite@verizon.netE<gt>"
 
 # type: Plain text
 #. type: Plain text
@@ -1593,19 +1544,8 @@ msgid "SEE ALSO"
 msgstr "VIĎ AJ"
 
 # type: TH
-#.  This program is free software; you can redistribute it and/or modify
-#.  it under the terms of the GNU General Public License as published by
-#.  the Free Software Foundation; either version 2 of the License, or
-#.  (at your option) any later version.
-#.  This program is distributed in the hope that it will be useful,
-#.  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#.  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#.  GNU General Public License for more details.
-#.  You should have received a copy of the GNU General Public License
-#.  along with this program; if not, write to the Free Software
-#.  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #. type: Plain text
-#: doc/man/wesnothd.6:15
+#: doc/man/wesnoth.6:511
 msgid "B<wesnothd>(6)"
 msgstr "B<wesnothd>(6)"
 
@@ -1639,14 +1579,9 @@ msgstr "wesnothd - Démon na sieťovú hru Bitky o B<Wesnoth>"
 # type: Plain text
 #. type: Plain text
 #: doc/man/wesnothd.6:32
-#, fuzzy
-#| msgid ""
-#| "B<wesnothd> [\\|B<-dv>\\|] [\\|B<-c> I<path>\\|] [\\|B<-p> I<port>\\|] "
-#| "[\\|B<-t> I<number>\\|] [\\|B<-T> I<number>\\|]"
 msgid "B<wesnothd> [\\|B<-dvw>\\|] [\\|B<-c> I<path>\\|] [\\|B<-p> I<port>\\|]"
 msgstr ""
-"B<wesnothd> [\\|B<-dv>\\|] [\\|B<-c> I<cesta>\\|] [\\|B<-p> I<port>\\|] [\\|"
-"B<-t> I<číslo>\\|] [\\|B<-T> I<číslo>\\|]"
+"B<wesnothd> [\\|B<-dvw>\\|] [\\|B<-c> I<path>\\|] [\\|B<-p> I<port>\\|]"
 
 # type: Plain text
 #. type: Plain text
@@ -1662,9 +1597,10 @@ msgid ""
 "wiki/ServerAdministration on what commands the server accepts via the "
 "wesnoth client (/query ...) or the fifo."
 msgstr ""
-"Spravuje hry pre viacerých hráčov Bitky o Wesnoth. Na stránke https://www."
-"wesnoth.org/wiki/ServerAdministration nájdete informácie o tom, aké príkazy "
-"prijíma server prostredníctvom klienta wesnoth (/query ...) alebo fifo."
+"Spravuje hry pre viacerých hráčov Bitky o Wesnoth. Na stránke https://"
+"www.wesnoth.org/wiki/ServerAdministration nájdete informácie o tom, aké "
+"príkazy prijíma server prostredníctvom klienta wesnoth (/query ...) alebo "
+"fifo."
 
 # type: TP
 #. type: TP
@@ -1885,17 +1821,11 @@ msgstr "B<disallow_names>"
 # type: Plain text
 #. type: Plain text
 #: doc/man/wesnothd.6:118
-#, fuzzy
-#| msgid ""
-#| "Names/nicks that are not accepted by the server. B<*> and B<?> from "
-#| "wildcard patterns are supported. See B<glob>(7)  for more details.  "
-#| "Default values (used if nothing is specified) are: B<*admin*,*admln*,"
-#| "*server*,ai,ai?,computer,human,network,player>."
 msgid ""
 "Names/nicks that are not accepted by the server. B<*> and B<?> from wildcard "
 "patterns are supported. See B<glob>(7)  for more details.  Default values "
-"(used if nothing is specified) are: B<*admin*,*admln*,*moderator*,*server*,"
-"ai,ai?,computer,human,network,player>."
+"(used if nothing is specified) are: "
+"B<*admin*,*admln*,*moderator*,*server*,ai,ai?,computer,human,network,player>."
 msgstr ""
 "Mená/prezývky, ktoré server neprijíma. Podporujú sa zástupné znaky B<*> and "
 "B<?>. Pre ďalšie podrobnosti pozri B<glob>(7). Štandardné hodnoty (ak sa nič "
@@ -2378,17 +2308,12 @@ msgstr ""
 # type: TP
 #. type: TP
 #: doc/man/wesnothd.6:242
-#, fuzzy, no-wrap
-#| msgid "B<db_game_info_table>"
+#, no-wrap
 msgid "B<db_game_content_info_table>"
-msgstr "B<db_game_info_table>"
+msgstr "B<db_game_content_info_table>"
 
 #. type: Plain text
 #: doc/man/wesnothd.6:245
-#, fuzzy
-#| msgid ""
-#| "The name of the table in which wesnothd will save its own data about the "
-#| "modifications used in a game."
 msgid ""
 "The name of the table in which wesnothd will save its own data about game "
 "content (scenario/era/modifications) used in a game."
@@ -2418,10 +2343,9 @@ msgstr ""
 # type: TP
 #. type: TP
 #: doc/man/wesnothd.6:248
-#, fuzzy, no-wrap
-#| msgid "B<db_name>"
+#, no-wrap
 msgid "B<db_tournament_query>"
-msgstr "B<db_name>"
+msgstr "B<db_tournament_query>"
 
 #. type: Plain text
 #: doc/man/wesnothd.6:251
@@ -2429,6 +2353,8 @@ msgid ""
 "The SQL query to find tournaments to announce on login. Should return "
 "tournament B<title>, B<status> and B<url>."
 msgstr ""
+"SQL dopyt na vyhľadanie turnajov, ktoré sa majú oznámiť pri prihlásení. Mal "
+"by vrátiť B<title>, B<status> a B<url> turnaja."
 
 # type: TP
 #. type: TP
@@ -2500,16 +2426,12 @@ msgstr ""
 
 #. type: TP
 #: doc/man/wesnothd.6:263
-#, fuzzy, no-wrap
-#| msgid "B<mp_mod_group>"
+#, no-wrap
 msgid "B<forum_admin_group>"
-msgstr "B<mp_mod_group>"
+msgstr "B<forum_admin_group>"
 
 #. type: Plain text
 #: doc/man/wesnothd.6:266 doc/man/wesnothd.6:269
-#, fuzzy
-#| msgid ""
-#| "The ID of the forum group to be considered as having moderation authority."
 msgid ""
 "The ID of one of the forum groups to be considered as having admin authority "
 "on the add-ons server."
@@ -2519,10 +2441,9 @@ msgstr ""
 
 #. type: TP
 #: doc/man/wesnothd.6:266
-#, fuzzy, no-wrap
-#| msgid "B<mp_mod_group>"
+#, no-wrap
 msgid "B<site_admin_group>"
-msgstr "B<mp_mod_group>"
+msgstr "B<site_admin_group>"
 
 #. type: Plain text
 #: doc/man/wesnothd.6:274
@@ -2539,16 +2460,16 @@ msgstr ""
 msgid ""
 "Written by David White E<lt>davidnwhite@verizon.netE<gt>.  Edited by Nils "
 "Kneuper E<lt>crazy-ivanovic@gmx.netE<gt>, ott E<lt>ott@gaon.netE<gt>, "
-"Soliton E<lt>soliton.de@gmail.comE<gt> and Thomas Baumhauer E<lt>thomas."
-"baumhauer@gmail.comE<gt>.  This manual page was originally written by Cyril "
-"Bouthors E<lt>cyril@bouthors.orgE<gt>."
+"Soliton E<lt>soliton.de@gmail.comE<gt> and Thomas Baumhauer "
+"E<lt>thomas.baumhauer@gmail.comE<gt>.  This manual page was originally "
+"written by Cyril Bouthors E<lt>cyril@bouthors.orgE<gt>."
 msgstr ""
 "Napísal David White E<lt>davidnwhite@verizon.netE<gt>. Editovali Nils "
 "Kneuper E<lt>crazy-ivanovic@gmx.netE<gt>, ott E<lt>ott@gaon.netE<gt>, "
-"Soliton E<lt>soliton@gmail.comE<gt> a Thomas Baumhauer E<lt>thomas."
-"baumhauer@gmail.comE<gt>. Preložil Viliam Búr E<lt>viliam@bur.skE<gt>.  Túto "
-"manuálovú stránku pôvodne napísal Cyril Bouthors E<lt>cyril@bouthors."
-"orgE<gt>."
+"Soliton E<lt>soliton@gmail.comE<gt> a Thomas Baumhauer "
+"E<lt>thomas.baumhauer@gmail.comE<gt>. Preložil Viliam Búr "
+"E<lt>viliam@bur.skE<gt>.  Túto manuálovú stránku pôvodne napísal Cyril "
+"Bouthors E<lt>cyril@bouthors.orgE<gt>."
 
 # type: TH
 #. type: Plain text
@@ -2740,8 +2661,8 @@ msgstr "B<wesnoth>(6)"
 #~ "decompresses a file which should be in bzip2 format and stores it without "
 #~ "the .bz2 suffix. The I<infile.bz2> will be removed."
 #~ msgstr ""
-#~ "rozbalí súbor, ktorý by mal byť vo formáte bzip2, a uloží ho bez prípony ."
-#~ "bz2. Súbor I<vstupný_súbor.bz2> sa vymaže."
+#~ "rozbalí súbor, ktorý by mal byť vo formáte bzip2, a uloží ho bez "
+#~ "prípony .bz2. Súbor I<vstupný_súbor.bz2> sa vymaže."
 
 # type: TP
 #, no-wrap
@@ -2766,8 +2687,8 @@ msgstr "B<wesnoth>(6)"
 #~ "decompresses a file which should be in gzip format and stores it without "
 #~ "the .gz suffix. The I<infile.gz> will be removed."
 #~ msgstr ""
-#~ "rozbalí súbor, ktorý by mal byť vo formáte gzip, a uloží ho bez prípony ."
-#~ "gz. Súbor I<vstupný_súbor.gz> sa vymaže."
+#~ "rozbalí súbor, ktorý by mal byť vo formáte gzip, a uloží ho bez "
+#~ "prípony .gz. Súbor I<vstupný_súbor.gz> sa vymaže."
 
 # type: TP
 #, no-wrap

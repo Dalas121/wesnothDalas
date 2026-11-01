@@ -29,6 +29,7 @@
 #include "hotkey/hotkey_item.hpp"
 #include "lexical_cast.hpp"
 #include "resources.hpp"
+#include "sound.hpp"
 #include "theme.hpp"
 #include "video.hpp"
 
@@ -80,28 +81,11 @@ void disable_widget_on_toggle_inverted(window& window, widget& w, const std::str
 	window.find_widget<W>(id).set_active(!dynamic_cast<selectable_item&>(w).get_value_bool());
 }
 
-// Helper to make it easier to immediately apply sound toggles immediately.
-template<bool(*fptr)(bool)>
-void sound_toggle_on_change(window& window, const std::string& id_to_toggle, widget& w)
-{
-	std::invoke(fptr, dynamic_cast<selectable_item&>(w).get_value_bool());
-
-	// Toggle the corresponding slider.
-	disable_widget_on_toggle<slider>(window, w, id_to_toggle);
-}
-
-// Helper to make it easier to immediately apply volume (music, etc) setings on change.
-template<void(*fptr)(int)>
-void volume_setter_on_change(widget& w)
-{
-	std::invoke(fptr, dynamic_cast<integer_selector&>(w).get_value());
-}
-
 } // end anon namespace
 
 REGISTER_DIALOG(preferences_dialog)
 
-preferences_dialog::preferences_dialog(const pref_constants::PREFERENCE_VIEW initial_view)
+preferences_dialog::preferences_dialog(const pref_constants::PREFERENCE_VIEW initial_view, bool allow_gui2_theme_change)
 	: modal_dialog(window_id())
 	, resolutions_() // should be populated by set_resolution_list before use
 	, themes_() // populated by set_theme_list
@@ -109,6 +93,7 @@ preferences_dialog::preferences_dialog(const pref_constants::PREFERENCE_VIEW ini
 	, last_selected_item_(0)
 	, current_gui_theme_(0)
 	, is_reload_needed_(false)
+	, allow_gui2_theme_change_(allow_gui2_theme_change)
 	, accl_speeds_({0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 3, 4, 8, 16})
 	, visible_hotkeys_()
 	, visible_categories_()
@@ -344,56 +329,43 @@ void preferences_dialog::apply_pixel_scale()
 	events::raise_resize_event();
 }
 
-template<bool(*toggle_getter)(), bool(*toggle_setter)(bool), int(*vol_getter)(), void(*vol_setter)(int)>
-void preferences_dialog::initialize_sound_option_group(const std::string& id_suffix)
+template<typename ToggleGet, typename ToggleSet, typename VolumeGet, typename VolumeSet>
+void preferences_dialog::initialize_sound_option_group(
+	const std::string& id_suffix,
+	ToggleGet&& toggle_getter,
+	ToggleSet&& toggle_setter,
+	VolumeGet&& volume_getter,
+	VolumeSet&& volume_setter)
 {
 	const std::string toggle_widget_id = "sound_toggle_" + id_suffix;
 	const std::string volume_widget_id = "sound_volume_" + id_suffix;
 
-	const auto on_changed = [this, volume_widget_id](widget& w) {
-		sound_toggle_on_change<toggle_setter>(*this, volume_widget_id, w);
-	};
+	// Set up the volume slider.
+	register_integer(volume_widget_id, true, volume_getter, volume_setter);
+	auto& volume_slider = find_widget<slider>(volume_widget_id);
+
+	// Callback to actually immediately apply the volume effect. field_integer doesn't
+	// have a callback-on-changed mechanism. To add one would either mean adding it to
+	// the base field class or make it a proper class of is own.
+	connect_signal_notify_modified(volume_slider,
+		[=](widget& w, auto&&...) {
+			std::invoke(volume_setter, dynamic_cast<integer_selector&>(w).get_value());
+		});
+
+	const auto toggle_changed =
+		[=, &volume_slider](widget& w) {
+			const bool sound_enabled = dynamic_cast<selectable_item&>(w).get_value_bool();
+			std::invoke(toggle_setter, sound_enabled); // FIXME: we should use this return value
+			volume_slider.set_active(sound_enabled);
+		};
 
 	// Set up the toggle. We utilize field_bool's callback-on-changed mechanism instead
 	// of manually registering the callback. Since we want the effects to apply immediately,
 	// the callback the setter callback is duplicated in the on-change callback. The field
 	// class could possibly use some reworking to make this less redundant, but for now it
 	// works well enough.
-	register_bool(toggle_widget_id, true, toggle_getter, toggle_setter, on_changed, true);
-
-	// Set up the volume slider. integer_field doesn't have a callback-on-changed mechanism.
-	// To add one would either mean adding it to the base field class or make it a proper
-	// class of is own.
-	register_integer(volume_widget_id, true, vol_getter, vol_setter);
-
-	// Callback to actually immediately apply the volume effect.
-	connect_signal_notify_modified(find_widget<slider>(volume_widget_id),
-		[](widget& w, auto&&...) { volume_setter_on_change<vol_setter>(w); });
+	register_bool(toggle_widget_id, true, toggle_getter, toggle_setter, toggle_changed, true);
 }
-
-/* SOUND FX wrappers for template */
-static bool sound(){return prefs::get().sound();}
-static bool set_sound(bool v){return prefs::get().set_sound(v);}
-static int sound_volume(){return prefs::get().sound_volume();}
-static void set_sound_volume(int v){prefs::get().set_sound_volume(v);}
-
-/* MUSIC wrappers for template */
-static bool music_on(){return prefs::get().music_on();}
-static bool set_music(bool v){return prefs::get().set_music(v);}
-static int music_volume(){return prefs::get().music_volume();}
-static void set_music_volume(int v){prefs::get().set_music_volume(v);}
-
-/* TURN BELL wrappers for template */
-static bool turn_bell(){return prefs::get().turn_bell();}
-static bool set_turn_bell(bool v){return prefs::get().set_turn_bell(v);}
-static int bell_volume(){return prefs::get().bell_volume();}
-static void set_bell_volume(int v){prefs::get().set_bell_volume(v);}
-
-/* UI FX wrappers for template */
-static bool ui_sound_on(){return prefs::get().ui_sound_on();}
-static bool set_ui_sound(bool v){return prefs::get().set_ui_sound(v);}
-static int ui_volume(){return prefs::get().ui_volume();}
-static void set_ui_volume(int v){prefs::get().set_ui_volume(v);}
 
 /**
  * Sets up states and callbacks for each of the widgets
@@ -480,6 +452,12 @@ void preferences_dialog::initialize_callbacks()
 	connect_signal_mouse_left_click(find_widget<button>("cachemg"),
 		[](auto&&...) { dialogs::game_cache_options::display(); });
 
+	/* DISPLAY->ACCESSIBILITY */
+	connect_signal_mouse_left_click(find_widget<button>("custom_orb_color"),
+		[](auto&&...) { dialogs::select_orb_colors::display(); });
+	connect_signal_mouse_left_click(find_widget<button>("custom_reach_map"),
+		[](auto&&...) { dialogs::reachmap_options::display(); });
+
 	//
 	// DISPLAY PANEL
 	//
@@ -512,6 +490,15 @@ void preferences_dialog::initialize_callbacks()
 
 	connect_signal<event::SDL_VIDEO_RESIZE>(
 		[this, &res_list](auto&&...) { set_resolution_list(res_list); });
+
+	// Toggling full-screen via hot-key by-passes fullscreen_toggle_callback()
+	// So watch for the window actually entering/leaving full-screen to refresh
+	// resolution list enablement and full-screen status
+	connect_signal<event::SDL_WINDOW_ENTER_FULLSCREEN>(
+		[this](auto&&...) { fullscreen_entered_callback(); });
+
+	connect_signal<event::SDL_WINDOW_LEAVE_FULLSCREEN>(
+		[this](auto&&...) { fullscreen_left_callback(); });
 
 	/* PIXEL SCALE */
 	register_integer("pixel_scale_slider", true,
@@ -614,25 +601,49 @@ void preferences_dialog::initialize_callbacks()
 	connect_signal_mouse_left_click(apply_btn,
 		[this](auto&&...) { handle_gui2_theme_select(); });
 
+	if(!allow_gui2_theme_change_) {
+		// Switching the GUI2 theme only affects windows built afterwards, so it's only
+		// useful from the title screen, which rebuilds itself on RELOAD_UI. Elsewhere,
+		// leave the control visible but non-interactive rather than have it silently
+		// do nothing until the next restart.
+		gui2_theme_list.set_active(false);
+	}
+
 	//
 	// SOUND PANEL
 	//
 
 	/* SOUND FX */
-	initialize_sound_option_group<sound, set_sound, sound_volume, set_sound_volume>("sfx");
+	initialize_sound_option_group("sfx",
+		[]         { return prefs::get().sound(); },
+		[](bool v) { return prefs::get().set_sound(v); },
+		[]         { return prefs::get().sound_volume().as_percent(); },
+		[](int v)  {        prefs::get().set_sound_volume(sound::volume::from_percent(v)); });
 
 	/* MUSIC */
-	initialize_sound_option_group<music_on, set_music, music_volume, set_music_volume>("music");
+	initialize_sound_option_group("music",
+		[]         { return prefs::get().music_on(); },
+		[](bool v) { return prefs::get().set_music(v); },
+		[]         { return prefs::get().music_volume().as_percent(); },
+		[](int v)  {        prefs::get().set_music_volume(sound::volume::from_percent(v)); });
 
 	register_bool("sound_toggle_stop_music_in_background", true,
 		[]() {return prefs::get().stop_music_in_background();},
 		[](bool v) {prefs::get().set_stop_music_in_background(v);});
 
 	/* TURN BELL */
-	initialize_sound_option_group<turn_bell, set_turn_bell, bell_volume, set_bell_volume>("bell");
+	initialize_sound_option_group("bell",
+		[]         { return prefs::get().turn_bell(); },
+		[](bool v) { return prefs::get().set_turn_bell(v); },
+		[]         { return prefs::get().bell_volume().as_percent(); },
+		[](int v)  {        prefs::get().set_bell_volume(sound::volume::from_percent(v)); });
 
 	/* UI FX */
-	initialize_sound_option_group<ui_sound_on, set_ui_sound, ui_volume, set_ui_volume>("uisfx");
+	initialize_sound_option_group("uisfx",
+		[]         { return prefs::get().ui_sound_on(); },
+		[](bool v) { return prefs::get().set_ui_sound(v); },
+		[]         { return prefs::get().ui_volume().as_percent(); },
+		[](int v)  {        prefs::get().set_ui_volume(sound::volume::from_percent(v)); });
 
 	//
 	// MULTIPLAYER PANEL
@@ -819,7 +830,7 @@ void preferences_dialog::initialize_callbacks()
 	connect_signal_notify_modified(advanced,
 		[this, &advanced](auto&&...) { on_advanced_prefs_list_select(advanced); });
 
-	on_advanced_prefs_list_select(advanced);
+	on_advanced_prefs_list_select(advanced, true);
 
 	//
 	// HOTKEYS PANEL
@@ -983,6 +994,8 @@ void preferences_dialog::default_hotkey_callback()
 
 	prefs::get().clear_hotkeys();
 
+	find_widget<text_box>("filter").set_value("");
+
 	// Set up the list again and reselect the default sorting option.
 	listbox& hotkey_list = setup_hotkey_list();
 	hotkey_list.set_active_sorter("sort_0", sort_order::type::ascending, true);
@@ -1054,18 +1067,17 @@ void preferences_dialog::hotkey_filter_callback()
 	find_widget<listbox>("list_hotkeys").set_row_shown(res);
 }
 
-void preferences_dialog::on_advanced_prefs_list_select(listbox& list)
+void preferences_dialog::on_advanced_prefs_list_select(listbox& list, const bool initial)
 {
 	const int selected_row = list.get_selected_row();
 	const auto& pref = prefs::get().get_advanced_preferences()[selected_row];
 
-	if(pref.type == preferences::option::avd_type::SPECIAL) {
+	// In Japanese language sorting, Reach Map Options becomes the first item and is selected
+	// automatically before the user has made any choice. Skip SPECIAL preferences if
+	// Preferences is still being built (initial == true). GitHub #11136.
+	if(!initial && pref.type == preferences::option::avd_type::SPECIAL) {
 		if(pref.field == "logging") {
 			gui2::dialogs::log_settings::display();
-		} else if(pref.field == "orb_color") {
-			gui2::dialogs::select_orb_colors::display();
-		} else if(pref.field == "reach_map") {
-			gui2::dialogs::reachmap_options::display();
 		} else {
 			WRN_GUI_L << "Invalid or unimplemented custom advanced prefs option: " << pref.field;
 		}
@@ -1105,7 +1117,7 @@ void preferences_dialog::pre_show()
 	gui2::bind_default_status_label(find_widget<slider>("pixel_scale_slider"));
 }
 
-// Special fullsceen callback
+// Special fullscreen callback
 void preferences_dialog::fullscreen_toggle_callback()
 {
 	const bool ison = find_widget<toggle_button>("fullscreen").get_value_bool();
@@ -1115,6 +1127,26 @@ void preferences_dialog::fullscreen_toggle_callback()
 
 	set_resolution_list(res_list);
 	res_list.set_active(!ison);
+}
+
+void preferences_dialog::fullscreen_entered_callback()
+{
+	find_widget<toggle_button>("fullscreen").set_value(true);
+
+	menu_button& res_list = find_widget<menu_button>("resolution_set");
+
+	set_resolution_list(res_list);
+	res_list.set_active(false);
+}
+
+void preferences_dialog::fullscreen_left_callback()
+{
+	find_widget<toggle_button>("fullscreen").set_value(false);
+
+	menu_button& res_list = find_widget<menu_button>("resolution_set");
+
+	set_resolution_list(res_list);
+	res_list.set_active(true);
 }
 
 void preferences_dialog::handle_res_select()
